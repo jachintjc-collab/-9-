@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Beat Victor Gideon in Resident Evil Requiem — Final Boss Guide (RE9)</title>
+<meta name="description" content="Complete strategy guide on how to beat Victor Gideon, the final boss of Resident Evil Requiem (RE9). Both phases covered, with Insanity difficulty tips, weapon loadout, and no-damage strategy." />
+<meta name="keywords" content="Resident Evil Requiem, RE9, Victor Gideon, final boss, how to beat Victor Gideon, RE9 final boss, Insanity difficulty" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;
+  --border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);
+  --text:#f0ebe8;--text2:#b0a09a;--text3:#706056;
+  --gold:#ba7517;--blue:#69a8e0;
+}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.nav a:hover{color:var(--red);}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+.breadcrumb a{color:var(--text2);text-decoration:none;}
+.breadcrumb a:hover{color:var(--red);}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:8px;border-top:0.5px solid var(--border);padding-top:24px;}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.toc a:hover{color:var(--red);}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box strong{color:var(--text);}
+.tip-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:14px 0;}
+.tip-card{background:var(--surface);border-left:2px solid var(--red);padding:10px 14px;border-radius:0 4px 4px 0;}
+.tip-card h4{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.06em;margin-bottom:4px;}
+.tip-card p{font-size:13px;font-family:monospace;color:var(--text2);line-height:1.6;margin:0;}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+ol li strong{color:var(--text);}
+.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
+.boss-stats table{width:100%;font-size:13px;font-family:monospace;}
+.boss-stats td{padding:5px 0;color:var(--text2);}
+.boss-stats td:first-child{color:var(--text3);width:140px;}
+.boss-stats td strong{color:var(--text);}
+.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.cta a:hover{background:rgba(192,57,43,0.1);}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){
+  h1{font-size:22px;}
+  h2{font-size:17px;}
+  body{font-size:15px;}
+  p{font-size:14px;}
+}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="logo">RE<span>Requiem</span>.guide</div>
+  <a href="index.html">← All guides</a>
+</div>
+
+<div class="container">
+
+<div class="breadcrumb">HOME / BOSSES / VICTOR GIDEON</div>
+
+<h1>How to Beat Victor Gideon in Resident Evil Requiem — Final Boss Guide (RE9)</h1>
+
+<div class="meta">PUBLISHED MAY 2026 · <span>10 MIN READ</span> · DIFFICULTY: ★★★★ BRUTAL · SPOILERS AHEAD</div>
+
+<p class="lead">Dr. Victor Gideon is the true final boss of Resident Evil Requiem, and the toughest fight in the entire game. This complete guide walks you through both phases of the fight, exact attack patterns, weapon priorities, and Insanity difficulty tips — including a no-damage strategy that pro players use.</p>
+
+<div class="toc">
+  <div class="toc-title">Table of contents</div>
+  <ul>
+    <li><a href="#overview">Boss overview</a></li>
+    <li><a href="#prep">Pre-fight preparation</a></li>
+    <li><a href="#phase1">Phase 1: Mutated human form</a></li>
+    <li><a href="#phase2">Phase 2: Nemesis form</a></li>
+    <li><a href="#insanity">Insanity difficulty tips</a></li>
+    <li><a href="#nodmg">No-damage strategy</a></li>
+    <li><a href="#after">Rewards and post-fight</a></li>
+  </ul>
+</div>
+
+<h2 id="overview">Boss overview: Who is Victor Gideon?</h2>
+
+<p>Victor Gideon is the director of the Rhodes Hill Chronic Care Center and the antagonist who has been pulling strings throughout the entire campaign. Once Leon releases Elpis at the ARK terminal — which doubles as a cure for the T-Virus — Victor abandons his humanity entirely. He replaces his left arm with a massive mutated tentacle and takes one last stand at the bottom of the ARK Facility.</p>
+
+<p>This is a true two-phase final boss. Phase 1 is a controlled melee fight against a humanoid Victor with a tentacle arm. Phase 2 transforms him into a full Nemesis-clone with glowing red pustules across his body, sweeping arm attacks, and a tense QTE finisher.</p>
+
+<div class="boss-stats">
+  <table>
+    <tr><td>Location</td><td><strong>ARK Facility — final chamber</strong></td></tr>
+    <tr><td>Playable as</td><td><strong>Leon S. Kennedy</strong></td></tr>
+    <tr><td>Required ending</td><td><strong>Release Elpis</strong> (canon ending)</td></tr>
+    <tr><td>Phases</td><td><strong>2</strong> (Mutated human → Nemesis form)</td></tr>
+    <tr><td>Difficulty rating</td><td><strong>★★★★ Brutal</strong> — hardest fight in the game</td></tr>
+    <tr><td>Recommended weapons</td><td><strong>Mortal Edge Hatchet, Requiem Revolver, MSBG 500 Shotgun</strong></td></tr>
+  </table>
+</div>
+
+<h2 id="prep">Pre-fight preparation: Don't enter unprepared</h2>
+
+<p>If you have been hoarding magnum rounds, stacked grenades, and heavy medical injectors for the last ten hours, this is exactly where you burn them all. Victor Gideon is the last fight in the game — there is no reason to save resources past this point.</p>
+
+<p>Before entering the boss arena, do the following:</p>
+
+<ol>
+  <li><strong>Spend any remaining Antique Coins</strong> at the last Supply Box. Max out healing items, Requiem Bullets, and shotgun shells.</li>
+  <li><strong>Equip the Mortal Edge Hatchet</strong>. You should have picked this up after defeating The Commander earlier in the ARK. It is significantly better than Leon's default Hatchet and will be your primary parry-counter weapon. <em>If you skipped The Commander fight, go back and complete it before this point.</em></li>
+  <li><strong>Max out the Hatchet</strong> if you haven't already. The damage upgrade pays for itself within the first 30 seconds of this fight.</li>
+  <li><strong>Bring at least 2 Hand Grenades</strong>. Phase 2 has clustered weak points that grenades clear instantly.</li>
+  <li><strong>Stock up on First Aid Sprays</strong>. You will get hit. Carry at least 3.</li>
+</ol>
+
+<div class="warn-box gold">
+  ⚡ <strong>Cheat tip:</strong> If you have unlocked Infinite Ammo or the Infinite RPG from the Special Content Store, this fight becomes trivial. The RPG eliminates most boss phases in one hit. Cheats do <strong>NOT</strong> disable trophies — safe to use even on Insanity.
+</div>
+
+<h2 id="phase1">Phase 1: Mutated human form</h2>
+
+<p>After the platform collapses and Leon lands at the bottom of the ARK, Victor attacks in his humanoid form. He has a mutated tentacle arm, decent movement speed, and a tight arena filled with scrap metal piles that double as both cover and obstacles.</p>
+
+<h3>// ATTACK PATTERN OVERVIEW</h3>
+
+<p>Victor's tentacle arm gives him four primary melee attacks in this phase:</p>
+
+<ul class="normal">
+  <li><strong>Single swipe</strong> — fast horizontal strike, parry window is generous.</li>
+  <li><strong>Double swipe</strong> — two consecutive swipes; parry both, or parry the first and dodge the second.</li>
+  <li><strong>Three-hit combo</strong> — most damaging. Parry all three or roll out of the entire combo.</li>
+  <li><strong>Thrust attack</strong> — covers a long distance. Parry or sidestep at the last moment.</li>
+</ul>
+
+<p>Every single one of these attacks is heavily telegraphed. You will see the wind-up frame clearly. Use the <strong>Mortal Edge Hatchet</strong> to parry, then immediately follow up with shots from the Requiem Revolver or shotgun.</p>
+
+<h3>// THE ELECTRIC ATTACK — DO NOT GET CAUGHT</h3>
+
+<p>Periodically, Victor will leap onto one of the large scrap metal piles at the edge of the arena and begin channeling raw electricity. You will see a bright glowing line appear on the ground indicating the exact blast zone.</p>
+
+<p>You have two choices when this happens:</p>
+
+<ol>
+  <li><strong>Shoot him while he charges</strong> — this reduces the eventual blast power, but I find this to be a waste of good ammunition.</li>
+  <li><strong>Sprint out of the glowing zone</strong> — recommended. Watch the floor markers, get to a safe spot, and prepare for the follow-up jump-slam.</li>
+</ol>
+
+<p>After the electric blast, Victor lands in a "superhero pose" and stays motionless for about 2 full seconds. <strong>This is your biggest damage window of Phase 1.</strong> Empty Requiem rounds into his head while he is recovering.</p>
+
+<h3>// PHASE 1 STRATEGY</h3>
+
+<ol>
+  <li>Stay in the <strong>middle of the arena</strong> at all times. The center gives you 360° dodge space and lets you spot weak points faster.</li>
+  <li>Equip the <strong>shotgun or Requiem Revolver</strong> for sustained damage. Avoid handguns in this fight.</li>
+  <li>Wait for Victor to finish a melee combo, dump 3-4 shots into his chest or head, then back off before his next attack.</li>
+  <li>When he <strong>drops to one knee</strong> (stagger animation), do not keep shooting him. Instead, run around the arena and smash every wooden crate. You need to pull every shotgun shell, herb, and ammo pickup out of this arena before the environment gets destroyed in Phase 2.</li>
+  <li>Phase 1 ends when Victor takes enough damage and triggers the transformation cutscene.</li>
+</ol>
+
+<h2 id="phase2">Phase 2: Nemesis form</h2>
+
+<p>After the cutscene, Victor transforms into a full Nemesis-clone — a massive, pulsating monstrosity with glowing red pustules across his head, arms, and body. This phase functions almost identically to the Plant 43 boss fight earlier in the game, just with more weak points and harder-hitting attacks.</p>
+
+<h3>// THE PUSTULE SYSTEM</h3>
+
+<p>This phase is built around destroying glowing weak points in waves:</p>
+
+<ol>
+  <li><strong>Wave 1:</strong> 3 pustules on his head and arms. Use a precision weapon (Requiem or sniper) to pop them.</li>
+  <li><strong>Wave 2:</strong> After the first 3 are destroyed, the protective layer over his core peels back. Dump your heaviest firepower (shotgun, RPG if you have it, grenades) directly into the center.</li>
+  <li><strong>Wave 3:</strong> Dealing enough core damage causes Victor to collapse onto the platform. He spawns a cluster of new glowing orbs all over the floor around his base. <strong>You only have a few seconds.</strong> A grenade or two clears these instantly. Otherwise, machine gun fire works.</li>
+  <li><strong>Wave 4-5:</strong> Victor recovers, spawns a fresh wave of pustules (5 this time, then more). Repeat the process.</li>
+</ol>
+
+<h3>// PHASE 2 ATTACK PATTERNS</h3>
+
+<p>Victor only has a few attacks in this phase, all of which can be parried with the Mortal Edge Hatchet:</p>
+
+<ul class="normal">
+  <li><strong>Single arm smash</strong> — strafe left or right.</li>
+  <li><strong>Alternating double smash</strong> — keep moving, do not stop.</li>
+  <li><strong>Overhead two-arm smash</strong> — biggest damage, also biggest parry window.</li>
+  <li><strong>Rapid ground slam combo</strong> — happens after you destroy his lower-body pustules. Keep distance and wait it out.</li>
+</ul>
+
+<div class="tip-row">
+  <div class="tip-card"><h4>// KEY TIP</h4><p>Strafe left and right between attack waves. Standing still gets you flattened.</p></div>
+  <div class="tip-card"><h4>// AMMO PRIORITY</h4><p>Save Requiem Bullets for the head pustules. Grenades for clusters. Shotgun for the core.</p></div>
+</div>
+
+<h3>// THE GRAB AND QTE FINISHER</h3>
+
+<p>After you destroy enough waves of pustules, Victor will <strong>grab Leon</strong> with one of his arms. Don't panic — this is meant to happen. A series of button prompts will appear on screen. Tap the indicated buttons (default: square/X repeatedly, then triangle/Y) to escape.</p>
+
+<p>Successfully completing the QTE triggers the final cinematic kill sequence. Leon delivers a Hatchet finisher to Victor's exposed core, the screen cuts to black, the facility crumbles, and you have officially survived Resident Evil Requiem.</p>
+
+<h2 id="insanity">Insanity difficulty: What changes</h2>
+
+<div class="warn-box">
+  ⚠ Insanity unlocks after completing the game once on any difficulty — even Casual. On Insanity, one mistimed dodge can be a one-shot kill.
+</div>
+
+<p>The Victor Gideon fight on Insanity is brutal but not unfair. The same mechanics apply, but with these key differences:</p>
+
+<ul class="normal">
+  <li><strong>Damage multiplier ~3x</strong> — Phase 1 tentacle hits remove 70-80% of your health. Phase 2 ground slams can one-shot if you are below max HP.</li>
+  <li><strong>Reduced parry window</strong> — Mortal Edge is mandatory; the default Hatchet's parry window is too tight to react to consistently.</li>
+  <li><strong>Pustule HP increased</strong> — Phase 2 weak points take roughly double the damage to destroy. Bring more ammo.</li>
+  <li><strong>Electric attack tracking</strong> — the floor markers are slightly more aggressive. Sprint earlier, not later.</li>
+</ul>
+
+<p>For Insanity runs, the optimal strategy is to <strong>use Infinite Ammo on the Requiem Revolver</strong> (purchased from Special Content Store post-game). This trivializes the pustule destruction phase and lets you focus purely on dodging.</p>
+
+<h2 id="nodmg">No-damage strategy (advanced)</h2>
+
+<p>Pro players have completed this fight without taking a single hit on Standard difficulty. Here is the boiled-down approach:</p>
+
+<ol>
+  <li><strong>Phase 1 — never engage in melee.</strong> Only attack after a parry-counter or after the electric jump-slam recovery. Two safe attack windows per attack cycle.</li>
+  <li><strong>Stay at maximum range</strong> during pustule waves in Phase 2. Use the Marksman 1A or any sniper with a scope.</li>
+  <li><strong>Parry the overhead smash, dodge everything else.</strong> The overhead smash has the most generous parry window in the entire fight.</li>
+  <li><strong>For ground orb clusters</strong>, throw a grenade as soon as Victor collapses. This destroys all orbs in one shot and saves you the close-range exposure.</li>
+  <li><strong>Pre-position before each pustule wave.</strong> When Victor finishes recovering, you should already be at the edge of the arena with your scoped weapon equipped.</li>
+</ol>
+
+<h2 id="after">Rewards and what comes next</h2>
+
+<p>Defeating Victor Gideon completes the main story and unlocks several things at once:</p>
+
+<ul class="normal">
+  <li><strong>"Requiem Complete"</strong> — Gold Trophy.</li>
+  <li><strong>Insanity difficulty</strong> — selectable from the New Game menu.</li>
+  <li><strong>Special Content Store</strong> — opens with new weapons (Matilda IMP, Clatter Carbine, Ghost Grudge, Redemption) and Infinite Ammo unlocks.</li>
+  <li><strong>Concept art and bonus cosmetics</strong> — viewable in the Special Content menu.</li>
+</ul>
+
+<p>If this was your first playthrough, your next move should be a New Game+ run on Insanity using carry-over weapons and Infinite Requiem. With Infinite Ammo equipped, the entire game can be cleared in under 4 hours, unlocking the <em>Speedrunner</em> and <em>Remarkable Agent</em> trophies in a single run.</p>
+
+<div class="cta">
+  <div class="cta-title">RELATED GUIDES</div>
+  <a href="all-safe-codes.html">All safe codes (Normal + Insanity)</a>
+  <a href="mr-raccoon-locations.html">All 25 Mr. Raccoon locations</a>
+  <a href="all-bosses.html">All bosses ranked</a>
+  <a href="trophy-guide.html">Platinum trophy guide</a>
+</div>
+
+<div class="section-divider"></div>
+
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? Found something inaccurate? <a href="#" style="color:var(--red);">Let us know</a> — we update guides weekly based on community feedback.</p>
+
+</div>
+
+<div class="footer">RERequiem.guide · Fan-made guide · Not affiliated with Capcom · Updated May 2026</div>
+
+</body>
+</html>
