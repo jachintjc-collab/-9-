@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+<title>How to Beat Plant 43 in Resident Evil Requiem — Boss Guide (RE9)</title>
+<meta name="description" content="Complete strategy for the Plant 43 boss fight at the ARK entrance in Resident Evil Requiem. Weak points, attack patterns, explosive canister finisher, and Insanity tips." />
+<meta name="keywords" content="Plant 43, Resident Evil Requiem boss, RE9 ARK entrance, how to beat plant 43, plant boss" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;border-top:0.5px solid var(--border);padding-top:24px;}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box strong{color:var(--text);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+ol li strong{color:var(--text);}
+.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
+.boss-stats table{width:100%;font-size:13px;font-family:monospace;}
+.boss-stats td{padding:5px 0;color:var(--text2);}
+.boss-stats td:first-child{color:var(--text3);width:140px;}
+.boss-stats td strong{color:var(--text);}
+
+/* INFOGRAPHIC: Boss anatomy */
+.anatomy{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:20px;margin:18px 0;}
+.anatomy-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.1em;margin-bottom:14px;text-transform:uppercase;}
+.weakpoint-list{display:flex;flex-direction:column;gap:8px;}
+.wp-item{display:flex;align-items:flex-start;gap:12px;padding:10px 14px;background:var(--bg);border-left:2px solid var(--green);border-radius:0 3px 3px 0;}
+.wp-num{font-size:14px;font-family:monospace;color:var(--green);font-weight:bold;flex-shrink:0;width:22px;}
+.wp-info .wpn{font-size:13px;color:var(--text);margin-bottom:3px;}
+.wp-info .wpd{font-size:12px;font-family:monospace;color:var(--text2);line-height:1.6;}
+.wp-info .wpr{font-size:11px;font-family:monospace;color:var(--gold);margin-top:4px;}
+
+.tip-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:14px 0;}
+.tip-card{background:var(--surface);border-left:2px solid var(--red);padding:10px 14px;border-radius:0 4px 4px 0;}
+.tip-card h4{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.06em;margin-bottom:4px;}
+.tip-card p{font-size:13px;font-family:monospace;color:var(--text2);line-height:1.6;margin:0;}
+
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="logo">RE<span>Requiem</span>.guide</div><a href="index.html">← All guides</a></div>
+<div class="container">
+<div class="breadcrumb">HOME / BOSSES / PLANT 43</div>
+
+<h1>How to Beat Plant 43 in Resident Evil Requiem (RE9)</h1>
+<div class="meta">PUBLISHED MAY 2026 · <span>8 MIN READ</span> · DIFFICULTY: ★★★ MEDIUM · MILD SPOILERS</div>
+
+<p class="lead">Plant 43 is the boss guarding the entrance to the ARK Facility. This three-headed bioweapon hits hard but has clearly telegraphed weak points — and a satisfying explosive cinematic finisher. Complete strategy below.</p>
+
+<div class="boss-stats">
+  <table>
+    <tr><td>Location</td><td><strong>ARK Facility entrance courtyard</strong></td></tr>
+    <tr><td>Playable as</td><td><strong>Leon S. Kennedy</strong></td></tr>
+    <tr><td>Difficulty</td><td><strong>★★★ Medium</strong> (6.5/10)</td></tr>
+    <tr><td>Recommended weapons</td><td><strong>SMG, Shotgun, Marksman 1A</strong></td></tr>
+    <tr><td>Trophy reward</td><td><strong>"Botanical Disaster"</strong> (Bronze)</td></tr>
+    <tr><td>Phases</td><td><strong>1</strong> (with cinematic finisher)</td></tr>
+  </table>
+</div>
+
+<div class="toc">
+  <div class="toc-title">Table of contents</div>
+  <ul>
+    <li><a href="#overview">Boss overview</a></li>
+    <li><a href="#anatomy">Plant 43 anatomy</a></li>
+    <li><a href="#prep">Pre-fight preparation</a></li>
+    <li><a href="#strategy">Step-by-step strategy</a></li>
+    <li><a href="#finisher">The cinematic finisher</a></li>
+    <li><a href="#insanity">Insanity tips</a></li>
+  </ul>
+</div>
+
+<h2 id="overview">Boss overview: A modernized Plant 42</h2>
+
+<p>Long-time Resident Evil fans will recognize Plant 43's lineage — it's a clear callback to Plant 42 from the original Resident Evil. This iteration has been bioweaponized into something far more dangerous: a three-headed plant with snapping mandibles, a pulsing flower core, and explosive seed pods.</p>
+
+<p>You'll encounter Plant 43 immediately upon entering the ARK Facility courtyard. There's no warm-up — the cutscene rolls and the fight starts in seconds.</p>
+
+<h2 id="anatomy">Plant 43 anatomy and weak points</h2>
+
+<!-- INFOGRAPHIC: Weak points -->
+<div class="anatomy">
+  <div class="anatomy-title">// WEAK POINTS · DAMAGE PRIORITY</div>
+  <div class="weakpoint-list">
+    <div class="wp-item">
+      <div class="wp-num">1</div>
+      <div class="wp-info">
+        <div class="wpn">Side buds (left + right)</div>
+        <div class="wpd">Two snapping heads on either side. Destroy first to stun the central head.</div>
+        <div class="wpr">// PRIORITY: HIGH · Use SMG bursts</div>
+      </div>
+    </div>
+    <div class="wp-item">
+      <div class="wp-num">2</div>
+      <div class="wp-info">
+        <div class="wpn">Central flower core</div>
+        <div class="wpd">Glowing red flower in the center maw. Only exposed when the maw opens.</div>
+        <div class="wpr">// PRIORITY: HIGH · Use Requiem or shotgun</div>
+      </div>
+    </div>
+    <div class="wp-item">
+      <div class="wp-num">3</div>
+      <div class="wp-info">
+        <div class="wpn">Vine stalks</div>
+        <div class="wpd">Tertiary targets. Damaging these reduces Plant 43's mobility but is not necessary for the kill.</div>
+        <div class="wpr">// PRIORITY: LOW · Skip on first run</div>
+      </div>
+    </div>
+    <div class="wp-item">
+      <div class="wp-num">⚡</div>
+      <div class="wp-info">
+        <div class="wpn">EXPLOSIVE CANISTERS (truck)</div>
+        <div class="wpd">Phase 1 finisher trigger. After Plant 43 takes enough damage, it dislodges a truck full of canisters.</div>
+        <div class="wpr">// PRIORITY: KILL TRIGGER · Shoot for instant kill</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 id="prep">Pre-fight preparation</h2>
+
+<p>Before stepping into the ARK courtyard, prepare the following:</p>
+
+<ol>
+  <li><strong>Sweep the supply boxes</strong> — there are two destructible supply boxes on the right side of the arena. Get them at fight start.</li>
+  <li><strong>Equip the SMG</strong> as your primary — its high fire rate is perfect for shredding the side buds quickly.</li>
+  <li><strong>Have the Marksman 1A ready</strong> — single-shot precision rifle for the central flower.</li>
+  <li><strong>Stock at least 2 First Aid Sprays</strong> — Plant 43's middle-head rush deals significant damage if it connects.</li>
+  <li><strong>Reload everything</strong> before the cutscene triggers.</li>
+</ol>
+
+<div class="warn-box gold">
+  💡 <strong>Tip:</strong> If you have Hand Grenades, use them on the side buds. Two grenades can destroy both side buds simultaneously, dramatically shortening the fight.
+</div>
+
+<h2 id="strategy">Step-by-step strategy</h2>
+
+<h3>// PHASE 1: DESTROY SIDE BUDS</h3>
+
+<p>The fight begins with all three heads active. The two side buds will lunge at Leon with snapping bites. The central head spits seed projectiles.</p>
+
+<ol>
+  <li><strong>Sprint to the right side of the arena</strong> — destructible supply boxes are here.</li>
+  <li><strong>Stay mobile</strong> — circle the courtyard counter-clockwise to avoid the side buds' lunges.</li>
+  <li><strong>Focus fire on the LEFT side bud first</strong> — it has slightly less HP than the right.</li>
+  <li><strong>SMG bursts work best</strong> — empty 1-2 magazines per bud.</li>
+  <li><strong>Watch for the middle-head rush</strong> — when the central flower charges forward, sidestep immediately.</li>
+</ol>
+
+<h3>// PHASE 2: TARGET THE CENTRAL FLOWER</h3>
+
+<p>Once both side buds are destroyed, Plant 43 enters its vulnerable state. The central head's maw opens fully, exposing the glowing red flower.</p>
+
+<ol>
+  <li><strong>Switch to a precision weapon</strong> — Marksman 1A or fully-upgraded shotgun.</li>
+  <li><strong>Wait for the maw to open</strong> — the flower is only vulnerable when the mouth is fully extended.</li>
+  <li><strong>Land 3-4 precise shots</strong> on the flower core.</li>
+  <li><strong>Dodge the seed projectiles</strong> — Plant 43 spits clusters of explosive seeds during this phase.</li>
+</ol>
+
+<h2 id="finisher">The cinematic finisher</h2>
+
+<p>This is the highlight of the fight. After enough damage to the central flower, Plant 43 thrashes violently and vomits — dislodging a <strong>truck full of explosive canisters</strong> directly in front of Leon.</p>
+
+<div class="warn-box">
+  ⚠ <strong>Don't miss the cue:</strong> When the truck appears, you have a <strong>3-4 second window</strong> to shoot the canisters. If you miss it, Plant 43 recovers and you have to whittle it down conventionally — much slower.
+</div>
+
+<h3>// HOW TO TRIGGER THE FINISHER</h3>
+
+<ol>
+  <li><strong>Land enough flower shots</strong> — typically 3-4 hits with Requiem or 6-8 with handgun.</li>
+  <li><strong>Watch the cutscene briefly</strong> — Plant 43 will rear back and spit out the truck.</li>
+  <li><strong>Quickly aim at the canisters</strong> — they're labeled with hazard symbols, easy to spot.</li>
+  <li><strong>Fire one shot</strong> — any weapon works; the canisters are weak to all damage.</li>
+  <li><strong>Massive explosion = instant kill</strong>. Cinematic plays out automatically.</li>
+</ol>
+
+<div class="tip-row">
+  <div class="tip-card"><h4>// CANISTER SHOT</h4><p>Aim center-mass on the truck cluster. Even handgun rounds detonate them.</p></div>
+  <div class="tip-card"><h4>// IF YOU MISS</h4><p>Plant 43 recovers but doesn't gain HP. Just keep shooting the flower normally.</p></div>
+</div>
+
+<h2 id="insanity">Insanity difficulty tips</h2>
+
+<div class="warn-box">
+  ⚠ On Insanity, Plant 43's seed projectiles can deal 40-60% HP damage per hit. Movement is non-negotiable.
+</div>
+
+<p>Insanity-specific changes:</p>
+
+<ul class="normal">
+  <li><strong>Side bud HP scales ~2x</strong> — bring more SMG ammo or use Hand Grenades</li>
+  <li><strong>Seed projectile splash damage increases</strong> — keep moving even when reloading</li>
+  <li><strong>Middle-head rush one-shots if armor is broken</strong> — repair armor before this fight</li>
+  <li><strong>The canister finisher window is shorter</strong> — about 2.5 seconds. Don't hesitate.</li>
+  <li><strong>Infinite Ammo trivializes this fight</strong> — Infinite Requiem one-shots the flower core in 2 hits</li>
+</ul>
+
+<h2>What comes next</h2>
+
+<p>After Plant 43 falls, Leon enters the ARK Facility's interior corridors. Your next major encounter is <strong>The Commander</strong> — the second-hardest fight in the game and the source of the <em>Mortal Edge Hatchet</em> (mandatory for the Victor Gideon final boss).</p>
+
+<p>Don't skip Plant 43's drop pickups — Hand Grenades and Requiem Bullets sometimes drop from the corpse. Sweep the area before exiting.</p>
+
+<div class="cta">
+  <div class="cta-title">RELATED GUIDES</div>
+  <a href="how-to-beat-victor-gideon.html">How to Beat Victor Gideon</a>
+  <a href="how-to-beat-mr-x-super-tyrant.html">How to Beat Super Tyrant</a>
+  <a href="all-bosses-ranked-by-difficulty.html">All Bosses Ranked</a>
+  <a href="best-weapons-tier-list.html">Best Weapons Tier List</a>
+  <a href="index.html">All guides</a>
+</div>
+
+</div>
+<div class="footer">RERequiem.guide · Fan-made guide · Not affiliated with Capcom · Updated May 2026</div>
+</body>
+</html>

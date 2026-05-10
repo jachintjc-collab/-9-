@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+<title>Speedrun Guide — How to Beat Resident Evil Requiem in Under 4 Hours (RE9)</title>
+<meta name="description" content="Complete speedrun guide for Resident Evil Requiem. Sub-4-hour route, optimal weapons, skips, and Speedrunner trophy strategy using Infinite Ammo for maximum efficiency." />
+<meta name="keywords" content="RE9 speedrun, Resident Evil Requiem speedrun, sub 4 hours, Speedrunner trophy, fastest route" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;border-top:0.5px solid var(--border);padding-top:24px;}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+
+/* TIME SPLITS INFOGRAPHIC */
+.splits-chart{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:20px;margin:18px 0;}
+.splits-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.1em;margin-bottom:14px;text-transform:uppercase;}
+.split-row{display:grid;grid-template-columns:140px 1fr 70px 70px;gap:8px;align-items:center;padding:8px 0;border-bottom:0.5px dashed var(--border2);font-family:monospace;font-size:12px;}
+.split-row:last-child{border-bottom:none;font-weight:bold;border-top:1px solid var(--red);padding-top:10px;background:rgba(192,57,43,0.04);margin-top:4px;border-radius:0 0 3px 3px;}
+.split-name{color:var(--text);}
+.split-bar{height:10px;background:var(--bg);border-radius:2px;overflow:hidden;}
+.split-fill{height:100%;background:linear-gradient(90deg,var(--green) 0%,var(--gold) 50%,var(--red) 100%);}
+.split-target{color:var(--text3);text-align:right;}
+.split-cum{color:var(--red);text-align:right;font-weight:bold;}
+
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box.green{border-color:var(--green);background:rgba(90,138,74,0.07);}
+.warn-box strong{color:var(--text);}
+
+.skip-card{background:var(--surface);border-left:2px solid var(--gold);padding:10px 14px;border-radius:0 3px 3px 0;margin:8px 0;}
+.skip-name{font-size:13px;color:var(--text);margin-bottom:3px;}
+.skip-time{font-size:11px;font-family:monospace;color:var(--gold);margin-right:8px;}
+.skip-desc{font-size:12px;font-family:monospace;color:var(--text2);line-height:1.6;}
+
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}.split-row{grid-template-columns:90px 1fr 50px 60px;font-size:11px;}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="logo">RE<span>Requiem</span>.guide</div><a href="index.html">← All guides</a></div>
+<div class="container">
+<div class="breadcrumb">HOME / GUIDES / SPEEDRUN</div>
+
+<h1>How to Beat Resident Evil Requiem in Under 4 Hours — Speedrun Guide</h1>
+<div class="meta">PUBLISHED MAY 2026 · 12 MIN READ · SPEEDRUN STRATEGY</div>
+
+<p class="lead">A complete speedrun guide for Resident Evil Requiem. Target time: <em>under 4 hours</em>. Covers optimal route, mandatory skips, weapon loadout, boss strategies, and the easiest way to unlock the <strong>Speedrunner</strong> Silver trophy. Best paired with an Insanity playthrough using Infinite Requiem for the Gold trophy stack.</p>
+
+<!-- INFOGRAPHIC: Time splits -->
+<div class="splits-chart">
+  <div class="splits-title">// TARGET TIME SPLITS · SUB 4:00:00</div>
+  <div class="split-row">
+    <div class="split-name">Wrenwood (intro)</div>
+    <div class="split-bar"><div class="split-fill" style="width:8%;"></div></div>
+    <div class="split-target">12:00</div>
+    <div class="split-cum">0:12</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">Care Center (Grace)</div>
+    <div class="split-bar"><div class="split-fill" style="width:35%;"></div></div>
+    <div class="split-target">55:00</div>
+    <div class="split-cum">1:07</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">Care Center (Leon)</div>
+    <div class="split-bar"><div class="split-fill" style="width:18%;"></div></div>
+    <div class="split-target">25:00</div>
+    <div class="split-cum">1:32</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">Raccoon City</div>
+    <div class="split-bar"><div class="split-fill" style="width:30%;"></div></div>
+    <div class="split-target">60:00</div>
+    <div class="split-cum">2:32</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">ARK Facility</div>
+    <div class="split-bar"><div class="split-fill" style="width:38%;"></div></div>
+    <div class="split-target">55:00</div>
+    <div class="split-cum">3:27</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">Victor Gideon</div>
+    <div class="split-bar"><div class="split-fill" style="width:10%;"></div></div>
+    <div class="split-target">15:00</div>
+    <div class="split-cum">3:42</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">TOTAL TARGET</div>
+    <div class="split-bar"><div class="split-fill" style="width:100%;"></div></div>
+    <div class="split-target">─</div>
+    <div class="split-cum">3:42</div>
+  </div>
+</div>
+
+<h2>Speedrun setup requirements</h2>
+
+<div class="warn-box gold">
+  💡 <strong>Best speedrun stack:</strong> Run on <strong>Insanity with Infinite Requiem equipped</strong>. This satisfies the Speedrunner trophy (under 5 hours) AND the Remarkable Agent trophy (Insanity completion) in a single playthrough.
+</div>
+
+<h3>// PRE-RUN UNLOCKS</h3>
+
+<ol>
+  <li><strong>Complete the main story once</strong> — unlocks Insanity + Special Content Store</li>
+  <li><strong>Buy Infinite Requiem</strong> at Special Content Store (~6,000 CP)</li>
+  <li><strong>Optional: Buy Infinite RPG-7</strong> (~8,000 CP) for Victor backup</li>
+  <li><strong>Have Mortal Edge Hatchet</strong> from previous run (carries over via NG+)</li>
+</ol>
+
+<h3>// IN-GAME SETTINGS</h3>
+
+<ul class="normal">
+  <li>Set <strong>cutscene skip</strong> ON in options menu</li>
+  <li>Set <strong>auto-aim</strong> to STRONG (saves precious seconds)</li>
+  <li>Disable <strong>aim assist toggle</strong> for faster transitions</li>
+  <li>Bind <strong>quick-turn</strong> to a comfortable button</li>
+</ul>
+
+<h2>Mandatory skips (saves ~45 minutes total)</h2>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// SAVES 6 MIN</span>Skip all 25 Mr. Raccoons</div>
+  <div class="skip-desc">Don't bother. Speedrun routes don't need Tier 3 weapon upgrades. Skip every Memoriam unless it's directly on your path.</div>
+</div>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// SAVES 8 MIN</span>Skip 4 of 5 safes (only do Workshop Safe)</div>
+  <div class="skip-desc">The Workshop Safe (R60·L40·R80) gives the Raccoon Roundup Map — useless for speedrun. Skip all safes entirely; bypass the No Safe Is Safe trophy.</div>
+</div>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// SAVES 12 MIN</span>Skip optional bosses (Chef + Chunk #1)</div>
+  <div class="skip-desc">Don't fight. The Chef and Chunk #1 are completely skippable. The Eye Spy Charm is nice but not necessary with Infinite Requiem.</div>
+</div>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// SAVES 5 MIN</span>Skip all 75 Files</div>
+  <div class="skip-desc">Files don't gate any progression. Run past every single one. The "Case Closed!" trophy is for collection runs, not speedruns.</div>
+</div>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// SAVES 8 MIN</span>Skip the Garden side quest</div>
+  <div class="skip-desc">Plant Seedlings = optional. The Green Thumb trophy doesn't stack with Speedrunner.</div>
+</div>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// SAVES 6 MIN</span>Skip the Roulette Wheel easter egg</div>
+  <div class="skip-desc">RNG-dependent and saves only 1 Antique Coin. Not worth the time investment.</div>
+</div>
+
+<h2>Section-by-section route</h2>
+
+<h3>// WRENWOOD (TARGET: 12:00)</h3>
+
+<p>Linear opening. No skip opportunities — just play through the tutorial as fast as possible. Mash through dialogue, parry the tutorial enemy quickly, follow the corridor.</p>
+
+<ul class="normal">
+  <li>Skip cutscenes immediately (button prompt)</li>
+  <li>Don't pick up early ammo — you'll get plenty later</li>
+  <li>Run past zombies; don't engage</li>
+</ul>
+
+<h3>// CARE CENTER GRACE (TARGET: 55:00)</h3>
+
+<p>Longest section. <strong>Solve all 3 Quartz Puzzles fast</strong> — they're mandatory. Skip everything else.</p>
+
+<ol>
+  <li><strong>Sun Quartz</strong> (Lead Researcher's Office): Star · Sun · Moon · Sun</li>
+  <li><strong>Moon Quartz</strong> (Chairman's Office): Moon · Sun · Star · Moon</li>
+  <li><strong>Star Quartz</strong> (VIP Suite): Hourglass solution (commonly Sun · Star · Moon · Star)</li>
+</ol>
+
+<p>Critical: <strong>Solve Blood Specimen 1</strong> (Denatured) for Hemolytic Injectors — you'll need 2-3 of them later. Skip Specimens 2 and 3.</p>
+
+<h3>// CARE CENTER LEON (TARGET: 25:00)</h3>
+
+<p>Pick up MSBG 500 immediately at the Attic. Use Infinite Requiem to one-shot Chunk #2 in the Attic. Run straight to the courtyard exit.</p>
+
+<h3>// RACCOON CITY (TARGET: 60:00)</h3>
+
+<p>Multiple boss fights:</p>
+<ul class="normal">
+  <li><strong>Mr. X chase</strong> — Don't fight, just run the route (see Mr. X guide)</li>
+  <li><strong>Super Tyrant</strong> — Heart shots with Infinite Requiem. ~90 seconds</li>
+  <li><strong>Titan Spinner</strong> — Cover-and-burst with Infinite Requiem. ~3 minutes</li>
+</ul>
+
+<p>Critical: Don't waste time at Gun Shop Kendo's stash — your Infinite Requiem is all you need.</p>
+
+<h3>// ARK FACILITY (TARGET: 55:00)</h3>
+
+<p>Plant 43 → Commander → corridors → Victor:</p>
+<ul class="normal">
+  <li><strong>Plant 43</strong> — Aim for canister truck explosive finisher (skip phase 2)</li>
+  <li><strong>The Commander</strong> — Use Mortal Edge parries; on Insanity with Infinite Requiem, ~3 minutes</li>
+  <li><strong>ARK corridors</strong> — Pure run-through. No combat needed.</li>
+</ul>
+
+<h3>// VICTOR GIDEON (TARGET: 15:00)</h3>
+
+<p>Final boss. With Infinite Requiem:</p>
+<ol>
+  <li>Phase 1: Shoot purple charge crystals → 2 minutes</li>
+  <li>Phase 2: Destroy head pustules → core → 5-8 minutes</li>
+  <li>QTE finisher prompts</li>
+</ol>
+
+<h2>Loadout for sub-4-hour run</h2>
+
+<div class="warn-box green">
+  <strong>Optimal loadout:</strong><br>
+  Primary: <strong>Infinite Requiem Revolver</strong> (one-shots most enemies)<br>
+  Secondary: <strong>Infinite RPG-7</strong> (emergency boss damage)<br>
+  Melee: <strong>Mortal Edge Hatchet</strong> (parries only, never attacks)<br>
+  Charm: <strong>Eye Spy Charm</strong> if obtainable (random fatal save)
+</div>
+
+<h2>Save strategy</h2>
+
+<p>Speedruns benefit from <strong>fewer saves</strong>, not more:</p>
+
+<ul class="normal">
+  <li>Save only before each major boss (Mr. X, Plant 43, Commander, Victor)</li>
+  <li>Save before any RNG element (Hourglass puzzle)</li>
+  <li>Don't save during exploration — saves cost ~5 seconds each</li>
+  <li>Use the same slot — multi-slot saving wastes time</li>
+</ul>
+
+<h2>Common time-loss mistakes</h2>
+
+<ul class="normal">
+  <li><strong>Stopping to read Files</strong> — never. They're all skippable.</li>
+  <li><strong>Engaging optional zombies</strong> — run past them. Even one shot wastes 2-3 seconds.</li>
+  <li><strong>Picking up unneeded ammo</strong> — Infinite Requiem makes this pointless.</li>
+  <li><strong>Triggering side bosses accidentally</strong> — know the trigger zones for Chunk #1 and the Chef.</li>
+  <li><strong>Saving too often</strong> — each save adds 4-6 seconds.</li>
+  <li><strong>Solving Sun puzzle wrong</strong> — memorize the answer, don't re-read clues.</li>
+</ul>
+
+<h2>Top times benchmarks</h2>
+
+<ul class="normal">
+  <li><strong>Casual speedrun:</strong> 4:30-5:00 (just for Speedrunner trophy)</li>
+  <li><strong>Average Insanity speedrun:</strong> 3:40-4:00 (with Infinite Ammo)</li>
+  <li><strong>Optimized Insanity:</strong> 3:15-3:30 (community top times)</li>
+  <li><strong>World record (community-tracked):</strong> ~2:55 as of May 2026</li>
+</ul>
+
+<h2>Trophy stacking strategy</h2>
+
+<p>An efficient speedrun on Insanity unlocks <strong>three trophies in one playthrough</strong>:</p>
+
+<ul class="normal">
+  <li>"<strong>Remarkable Agent</strong>" Gold — Complete on Insanity</li>
+  <li>"<strong>Speedrunner</strong>" Silver — Under 5 hours</li>
+  <li>"<strong>Requiem Complete</strong>" Gold — Story complete (already done from your first run)</li>
+</ul>
+
+<div class="cta">
+  <div class="cta-title">RELATED GUIDES</div>
+  <a href="how-to-unlock-insanity-difficulty.html">How to Unlock Insanity</a>
+  <a href="all-49-trophies-platinum-guide.html">All 49 Trophies Guide</a>
+  <a href="how-to-beat-victor-gideon.html">How to Beat Victor Gideon</a>
+  <a href="best-weapons-tier-list.html">Best Weapons Tier List</a>
+  <a href="index.html">All guides</a>
+</div>
+
+</div>
+<div class="footer">RERequiem.guide · Fan-made guide · Not affiliated with Capcom · Updated May 2026</div>
+</body>
+</html>
