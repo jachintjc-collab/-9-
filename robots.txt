@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jachintjc-collab.github.io/-9-/sitemap.xml
+Sitemap: https://www.re9guide.it.com/sitemap.xml
