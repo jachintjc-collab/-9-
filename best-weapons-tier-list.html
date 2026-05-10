@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Best Weapons Tier List in Resident Evil Requiem (RE9) — Ranked &amp; Reviewed</title>
+<meta name="description" content="Complete tier list of all 17 weapons in Resident Evil Requiem ranked S to D. Best weapons for Grace and Leon, where to find them, and optimal upgrade paths for Insanity difficulty." />
+<meta name="keywords" content="Resident Evil Requiem weapons, RE9 tier list, best weapons, Requiem revolver, MSBG 500, Mortal Edge Hatchet" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--silver:#888780;--bronze:#8b5e2a;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;border-top:0.5px solid var(--border);padding-top:24px;}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+
+/* TIER */
+.tier-row{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:18px 20px;margin:16px 0;}
+.tier-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.tier-letter{font-size:28px;font-weight:bold;font-family:monospace;width:50px;height:50px;display:flex;align-items:center;justify-content:center;border-radius:6px;flex-shrink:0;}
+.tier-S{background:rgba(192,57,43,0.15);color:var(--red);border:1px solid var(--red);}
+.tier-A{background:rgba(186,117,23,0.15);color:var(--gold);border:1px solid rgba(186,117,23,0.5);}
+.tier-B{background:rgba(105,168,224,0.1);color:var(--blue);border:1px solid rgba(105,168,224,0.4);}
+.tier-C{background:rgba(136,135,128,0.12);color:var(--silver);border:1px solid rgba(136,135,128,0.4);}
+.tier-D{background:rgba(139,94,42,0.12);color:var(--bronze);border:1px solid rgba(139,94,42,0.4);}
+.tier-name{font-size:18px;color:var(--text);}
+.tier-desc{font-size:12px;font-family:monospace;color:var(--text3);margin-top:2px;}
+
+.weapon-item{padding:12px 0;border-bottom:0.5px dashed var(--border2);}
+.weapon-item:last-child{border-bottom:none;}
+.weapon-name{font-size:15px;color:var(--text);margin-bottom:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.char-tag{font-size:9px;font-family:monospace;padding:2px 6px;border-radius:2px;letter-spacing:0.04em;}
+.char-grace{background:rgba(186,117,23,0.12);color:var(--gold);border:0.5px solid rgba(186,117,23,0.3);}
+.char-leon{background:rgba(55,138,221,0.1);color:var(--blue);border:0.5px solid rgba(55,138,221,0.2);}
+.char-both{background:rgba(255,255,255,0.05);color:var(--text2);border:0.5px solid var(--border2);}
+.weapon-desc{font-size:13px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.weapon-desc strong{color:var(--text);}
+.weapon-meta{font-size:11px;font-family:monospace;color:var(--text3);margin-top:5px;}
+
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.cta a:hover{background:rgba(192,57,43,0.1);}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}.tier-letter{width:42px;height:42px;font-size:22px;}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="logo">RE<span>Requiem</span>.guide</div><a href="index.html">← All guides</a></div>
+<div class="container">
+<div class="breadcrumb">HOME / WEAPONS / TIER LIST</div>
+
+<h1>Best Weapons Tier List in Resident Evil Requiem (RE9)</h1>
+<div class="meta">PUBLISHED MAY 2026 · <span>11 MIN READ</span> · ALL 17 WEAPONS RANKED</div>
+
+<p class="lead">Every weapon in Resident Evil Requiem ranked S to D tier based on damage, ammo availability, upgrade ceiling, and effectiveness on Insanity difficulty. Use this tier list to prioritize which weapons to upgrade and which to leave behind.</p>
+
+<div class="toc">
+  <div class="toc-title">Jump to tier</div>
+  <ul>
+    <li><a href="#sTier">S Tier — must-have weapons</a></li>
+    <li><a href="#aTier">A Tier — strong all-rounders</a></li>
+    <li><a href="#bTier">B Tier — situational picks</a></li>
+    <li><a href="#cTier">C Tier — niche use</a></li>
+    <li><a href="#dTier">D Tier — skip or sell</a></li>
+    <li><a href="#loadout">Recommended loadout</a></li>
+    <li><a href="#upgrade">Upgrade priority</a></li>
+  </ul>
+</div>
+
+<h2>How this tier list is ranked</h2>
+
+<p>Weapons are evaluated on five criteria:</p>
+
+<ul class="normal">
+  <li><strong>Damage per shot</strong> — raw stopping power</li>
+  <li><strong>Ammo availability</strong> — how easily you can keep firing</li>
+  <li><strong>Upgrade ceiling</strong> — max stats with Tier 3 Advanced Tuning</li>
+  <li><strong>Boss effectiveness</strong> — performance against Super Tyrant, Plant 43, Victor Gideon</li>
+  <li><strong>Insanity viability</strong> — does it hold up on the hardest difficulty?</li>
+</ul>
+
+<div class="warn-box">
+  ⚡ <strong>Note:</strong> Grace's weapons cannot be upgraded — they are evaluated on baseline stats only. Leon's weapons can be upgraded at Supply Boxes using Credits, with <strong>Tier 3 Advanced Tuning</strong> unlocked after collecting all 25 Mr. Raccoon Memoriam.
+</div>
+
+<h2 id="sTier">S Tier — Must-have weapons</h2>
+
+<div class="tier-row">
+  <div class="tier-header">
+    <div class="tier-letter tier-S">S</div>
+    <div><div class="tier-name">S Tier</div><div class="tier-desc">// Game-changing weapons. Always equipped.</div></div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Requiem Revolver <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">The signature weapon of RE9 and the single best gun in the game. <strong>One-shot kills</strong> standard zombies and deals massive damage to boss weak points. Reserved for the final boss canon ending. Lost briefly during the Care Center sequence and regained in East Raccoon City.</div>
+    <div class="weapon-meta">Best for: Boss fights, weak point destruction · Where: Story automatic</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">MSBG 500 Shotgun <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">Leon's primary heavy weapon and the workhorse of every boss fight. Devastating close-range damage, generous ammo drops, and excellent upgrade ceiling. <strong>Pick this up immediately</strong> in the Care Center Attic during the second Chunk fight.</div>
+    <div class="weapon-meta">Best for: Bosses, hordes · Where: Care Center Attic (near second Chunk)</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Mortal Edge Hatchet <span class="char-tag char-both">BOTH</span></div>
+    <div class="weapon-desc">The upgraded Hatchet from defeating The Commander in the ARK. Significantly faster swings, larger parry window, and increased finisher damage. <strong>Mandatory for Insanity runs</strong> — the default Hatchet's parry timing is too tight on Insanity.</div>
+    <div class="weapon-meta">Best for: Parries, finishers · Where: Defeat The Commander (ARK)</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">990-TAC Semi-Auto Shotgun <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">Semi-automatic shotgun with 8-round capacity and excellent shot grouping. Accepts dot sight attachment. Outclasses both the W870 and MSBG 500 once fully upgraded. Costs 5,500 CP at Central Camp Supply Box — worth every coin.</div>
+    <div class="weapon-meta">Best for: Sustained boss DPS · Where: Central Camp Supply Box (5,500 CP)</div>
+  </div>
+</div>
+
+<h2 id="aTier">A Tier — Strong all-rounders</h2>
+
+<div class="tier-row">
+  <div class="tier-header">
+    <div class="tier-letter tier-A">A</div>
+    <div><div class="tier-name">A Tier</div><div class="tier-desc">// Reliable, versatile, well worth upgrading.</div></div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Silencer 9 Pistol <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">Built-in suppressor allows stealth kills on standard enemies — invaluable for ammo-conservation runs. High accuracy and decent damage. <strong>Outclasses every other handgun</strong> in Leon's arsenal.</div>
+    <div class="weapon-meta">Best for: Stealth, ammo conservation · Where: East Raccoon City Supply Box</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Marksman 1A Sniper Rifle <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">Bolt-action precision rifle with exceptional damage per shot. Essential for the long-distance Mr. Raccoon shots in Raccoon City. Single-shot capacity is a downside but headshots one-shot most enemies.</div>
+    <div class="weapon-meta">Best for: Precision boss damage, distant collectibles · Where: BSAA Container 03 (East Raccoon City)</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Matilda IMP <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">Three-round burst handgun, spiritual successor to RE2's Matilda. <strong>Highest DPS handgun</strong> in the game. Burns through ammo fast but is excellent for staggering enemies and boss weak points. Unlocks post-story.</div>
+    <div class="weapon-meta">Best for: Sustained DPS, staggers · Where: Special Content Store (500 CP, post-story)</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Clatter Carbine <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">The only Assault Rifle in Resident Evil Requiem. High fire rate and damage output for sustained combat. <strong>Insanity-tier weapon</strong> when fully upgraded — handles hordes and bosses equally well.</div>
+    <div class="weapon-meta">Best for: Insanity runs, hordes · Where: Special Content Store (6,000 CP, post-story)</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">W870 Police Shotgun <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">Higher ammo capacity than MSBG 500. Faster pump-action but slightly less damage per shot. <strong>Excellent backup shotgun</strong> for the Raccoon City and ARK sections. Found at Gun Shop Kendo.</div>
+    <div class="weapon-meta">Best for: Mid-game shotgun upgrade · Where: Gun Shop Kendo</div>
+  </div>
+</div>
+
+<h2 id="bTier">B Tier — Situational picks</h2>
+
+<div class="tier-row">
+  <div class="tier-header">
+    <div class="tier-letter tier-B">B</div>
+    <div><div class="tier-name">B Tier</div><div class="tier-desc">// Solid in specific scenarios, not always equipped.</div></div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Blacktail <span class="char-tag char-grace">GRACE</span></div>
+    <div class="weapon-desc">Grace's mid-game handgun upgrade. Reliable damage and accuracy at mid-range. Best handgun option for Grace, but limited by no upgrades.</div>
+    <div class="weapon-meta">Best for: Grace's secondary · Where: East Wing 2F</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">The Gal SMG <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">Hidden SMG in the flooded Underground Parking Garage. High fire rate with solid mid-game stats. Worth picking up but eventually outclassed by the Clatter Carbine.</div>
+    <div class="weapon-meta">Best for: Mid-game horde control · Where: Underground Parking Garage NW (battery area)</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Bell Tower Sniper <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">A high-damage hidden revolver inside the Raccoon City Bell Tower. Powerful but hard to find — easy to miss during the chaotic Bell Tower sequence.</div>
+    <div class="weapon-meta">Best for: Hidden powerhouse · Where: Raccoon City Central Bell Tower</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Stiri REVO3 A1 SMG <span class="char-tag char-both">BOTH</span></div>
+    <div class="weapon-desc">Lightweight SMG available to both characters. High fire rate but low damage per shot. Stock attachment significantly improves accuracy. Decent stop-gap weapon.</div>
+    <div class="weapon-meta">Best for: Early SMG option · Where: East Raccoon City Supply Box</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Redemption Rifle <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">Revolver-style rifle that uses Rifle Ammo. Unique hybrid feel but generally outclassed by both the Marksman 1A and Clatter Carbine. Good for thematic playthroughs.</div>
+    <div class="weapon-meta">Best for: Niche builds · Where: Special Content Store (3,500 CP, post-story)</div>
+  </div>
+</div>
+
+<h2 id="cTier">C Tier — Niche use</h2>
+
+<div class="tier-row">
+  <div class="tier-header">
+    <div class="tier-letter tier-C">C</div>
+    <div><div class="tier-name">C Tier</div><div class="tier-desc">// Underwhelming. Replace ASAP.</div></div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">S&amp;S M232 Pistol <span class="char-tag char-grace">GRACE</span></div>
+    <div class="weapon-desc">Grace's starter handgun. Decent for early Care Center but quickly outclassed by Blacktail. Useful only because Grace has no other options early.</div>
+    <div class="weapon-meta">Best for: Grace's first hour · Where: Near Bar &amp; Lounge safe</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Ghost Grudge <span class="char-tag char-leon">LEON</span></div>
+    <div class="weapon-desc">Special unlock weapon with unique mechanics. Cheap at 1,000 CP but stats are mediocre. Worth buying for collection completion only.</div>
+    <div class="weapon-meta">Best for: Collection · Where: Special Content Store (1,000 CP)</div>
+  </div>
+</div>
+
+<h2 id="dTier">D Tier — Skip or sell</h2>
+
+<div class="tier-row">
+  <div class="tier-header">
+    <div class="tier-letter tier-D">D</div>
+    <div><div class="tier-name">D Tier</div><div class="tier-desc">// Trash tier. Don't waste resources.</div></div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Default Hatchet <span class="char-tag char-both">BOTH</span></div>
+    <div class="weapon-desc">Replaced immediately by Mortal Edge Hatchet. Parry window is too tight for Insanity. Only useful in the early game before The Commander fight.</div>
+    <div class="weapon-meta">Best for: Until you get Mortal Edge · Where: Starting equipment</div>
+  </div>
+
+  <div class="weapon-item">
+    <div class="weapon-name">Rocket Launcher (consumable) <span class="char-tag char-both">BOTH</span></div>
+    <div class="weapon-desc">Limited single-use weapon. Save for boss finishers or emergencies — wasting it on regular enemies is a costly mistake. <strong>Not the same as the unlockable Infinite RPG.</strong></div>
+    <div class="weapon-meta">Best for: Emergency boss kills · Where: Limited drops in Raccoon City</div>
+  </div>
+</div>
+
+<h2 id="loadout">Recommended loadout by section</h2>
+
+<h3>// CARE CENTER (Grace)</h3>
+<ul class="normal">
+  <li><strong>Primary:</strong> Blacktail (when available) or S&amp;S M232</li>
+  <li><strong>Melee:</strong> Default Hatchet</li>
+  <li><strong>Crafting:</strong> Hemolytic Injector (Blood Specimen Denatured unlock)</li>
+</ul>
+
+<h3>// CARE CENTER (Leon, post-Chunk)</h3>
+<ul class="normal">
+  <li><strong>Primary:</strong> MSBG 500 Shotgun</li>
+  <li><strong>Secondary:</strong> Requiem Revolver (when available)</li>
+  <li><strong>Melee:</strong> Default Hatchet</li>
+</ul>
+
+<h3>// RACCOON CITY (Leon)</h3>
+<ul class="normal">
+  <li><strong>Primary:</strong> MSBG 500 → 990-TAC (after Central Camp)</li>
+  <li><strong>Secondary:</strong> Requiem Revolver</li>
+  <li><strong>Sidearm:</strong> Silencer 9 (after East Raccoon City)</li>
+  <li><strong>Long-range:</strong> Marksman 1A Rifle</li>
+</ul>
+
+<h3>// ARK FACILITY (Leon)</h3>
+<ul class="normal">
+  <li><strong>Primary:</strong> 990-TAC fully upgraded</li>
+  <li><strong>Boss damage:</strong> Requiem Revolver (max upgrades)</li>
+  <li><strong>Melee:</strong> Mortal Edge Hatchet (after The Commander)</li>
+</ul>
+
+<h2 id="upgrade">Upgrade priority — where to spend Credits</h2>
+
+<p>Credits are limited in a single playthrough. Here's the optimal upgrade order:</p>
+
+<ol>
+  <li><strong>MSBG 500 Shotgun (Tier 1)</strong> — your earliest workhorse. Damage upgrade first.</li>
+  <li><strong>Requiem Revolver (Tier 1-2)</strong> — boss-killing potential is massive when upgraded.</li>
+  <li><strong>Default Hatchet (Tier 1)</strong> — parry window improvement until Mortal Edge.</li>
+  <li><strong>990-TAC Shotgun (Tier 2-3)</strong> — once you reach Central Camp, this becomes your main shotgun.</li>
+  <li><strong>Marksman 1A (Tier 1)</strong> — capacity upgrade only; damage is already high.</li>
+  <li><strong>Silencer 9 (Tier 1)</strong> — accuracy upgrade for stealth headshots.</li>
+</ol>
+
+<div class="warn-box">
+  💡 <strong>Tier 3 Advanced Tuning unlock:</strong> Find all 25 Mr. Raccoon Memoriam to unlock the highest weapon upgrade tier. Without this, you cannot fully upgrade any weapon. Required for the "Fully Loaded" trophy.
+</div>
+
+<div class="cta">
+  <div class="cta-title">RELATED GUIDES</div>
+  <a href="all-25-mr-raccoon-locations.html">All 25 Mr. Raccoon Locations</a>
+  <a href="how-to-beat-victor-gideon.html">How to Beat Victor Gideon</a>
+  <a href="how-to-beat-mr-x-super-tyrant.html">How to Beat Super Tyrant</a>
+  <a href="all-5-safe-codes-guide.html">All 5 Safe Codes</a>
+  <a href="index.html">All guides home</a>
+</div>
+
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? <a href="#" style="color:var(--red);">Let us know</a> — we update tier rankings monthly based on community feedback and balance patches.</p>
+
+</div>
+<div class="footer">RERequiem.guide · Fan-made guide · Not affiliated with Capcom · Updated May 2026</div>
+</body>
+</html>

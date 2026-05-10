@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>All Quartz Puzzle Solutions in Resident Evil Requiem (RE9) — Sun, Moon, Star Boxes</title>
+<meta name="description" content="Complete solutions for all 3 Quartz Puzzle Boxes in Resident Evil Requiem. Sun, Moon, and Star puzzles with step-by-step instructions, locations, and how to unlock the Central Hall door." />
+<meta name="keywords" content="Resident Evil Requiem Quartz puzzle, RE9 puzzle solutions, Sun Moon Star puzzle, Care Center puzzles, Central Hall door" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;border-top:0.5px solid var(--border);padding-top:24px;}
+h2 .badge{font-size:10px;font-family:monospace;color:var(--red);border:0.5px solid var(--red);padding:2px 8px;border-radius:2px;margin-left:8px;letter-spacing:0.06em;vertical-align:middle;}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box.info{border-color:var(--blue);background:rgba(105,168,224,0.06);}
+.warn-box strong{color:var(--text);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+ol li strong{color:var(--text);}
+
+/* PUZZLE CARD */
+.puzzle-card{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:18px 22px;margin:16px 0;}
+.puzzle-num{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.08em;margin-bottom:6px;}
+.puzzle-title{font-size:18px;color:var(--text);margin-bottom:12px;}
+.puzzle-section{margin-bottom:14px;}
+.puzzle-label{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:5px;text-transform:uppercase;}
+.puzzle-solution{font-size:18px;font-family:monospace;color:var(--red);font-weight:bold;letter-spacing:0.08em;padding:10px 14px;background:rgba(192,57,43,0.08);border:0.5px solid var(--border);border-radius:3px;display:inline-block;}
+.puzzle-info{font-size:13px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.puzzle-info strong{color:var(--text);}
+.symbol-grid{display:flex;gap:10px;margin:12px 0;flex-wrap:wrap;}
+.symbol{width:54px;height:54px;border:0.5px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:22px;background:var(--surface2);}
+
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.cta a:hover{background:rgba(192,57,43,0.1);}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}.puzzle-solution{font-size:15px;}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="logo">RE<span>Requiem</span>.guide</div><a href="index.html">← All guides</a></div>
+<div class="container">
+<div class="breadcrumb">HOME / PUZZLES / QUARTZ PUZZLE SOLUTIONS</div>
+
+<h1>All Quartz Puzzle Solutions in Resident Evil Requiem (RE9)</h1>
+<div class="meta">PUBLISHED MAY 2026 · <span>9 MIN READ</span> · STORY-CRITICAL PUZZLES</div>
+
+<p class="lead">Complete solutions for all three Quartz Puzzle Boxes in the Rhodes Hill Care Center. The Sun, Moon, and Star puzzles each reward a Quartz crystal — collect all three to unlock the Central Hall door and progress the main story. This guide covers exact button sequences, locations, and where to find the visual clues.</p>
+
+<div class="toc">
+  <div class="toc-title">Table of contents</div>
+  <ul>
+    <li><a href="#how">How Quartz puzzles work</a></li>
+    <li><a href="#moon">Moon Quartz Box (Chairman's Office)</a></li>
+    <li><a href="#sun">Sun Quartz Box (Lead Researcher's Office)</a></li>
+    <li><a href="#star">Star Quartz Box (VIP Suite)</a></li>
+    <li><a href="#central">Unlocking the Central Hall door</a></li>
+    <li><a href="#bonus">Bonus: The Final Puzzle (NG+)</a></li>
+  </ul>
+</div>
+
+<h2 id="how">How Quartz puzzles work</h2>
+
+<p>Each Quartz Puzzle Box requires you to enter a 4-symbol sequence using three button options: <strong>Sun</strong>, <strong>Moon</strong>, and <strong>Star</strong>. The correct sequence is found by examining photos and visual clues scattered around the relevant room.</p>
+
+<div class="symbol-grid">
+  <div class="symbol">☀️</div>
+  <div class="symbol">🌙</div>
+  <div class="symbol">⭐</div>
+</div>
+
+<h3>// PUZZLE MECHANICS</h3>
+
+<ol>
+  <li><strong>Each puzzle box has a "theme symbol"</strong> — Sun, Moon, or Star — corresponding to the photos that contain its solution clue.</li>
+  <li><strong>Look for photos with that symbol</strong> in the puzzle room. The order of objects in the photos tells you the input sequence.</li>
+  <li><strong>Solving each box rewards 1 Quartz</strong> — collect all 3 to unlock the Central Hall.</li>
+  <li><strong>Wrong inputs do not penalize you</strong> — you can keep trying. But getting it right first try saves time on Insanity runs.</li>
+</ol>
+
+<div class="warn-box info">
+  ℹ <strong>Story note:</strong> All three Quartz puzzles are <strong>Grace-only</strong>. Leon cannot interact with them. They occur during Grace's first major Care Center exploration phase, before the story switches to Leon.
+</div>
+
+<h2 id="moon">Moon Quartz Box <span class="badge">// CHAIRMAN'S OFFICE</span></h2>
+
+<p>The first Quartz Puzzle Box you'll encounter, located in the Chairman's Office on the West Wing's second floor. The puzzle box sits on the desk near the window.</p>
+
+<div class="puzzle-card">
+  <div class="puzzle-num">// MOON QUARTZ</div>
+  <h3 class="puzzle-title" style="font-family:Georgia,serif;color:var(--text);">Chairman's Office Puzzle</h3>
+
+  <div class="puzzle-section">
+    <div class="puzzle-label">Solution sequence</div>
+    <div class="puzzle-solution">Moon · Sun · Star · Moon</div>
+  </div>
+
+  <div class="puzzle-info">
+    <strong>How to find the clue:</strong> Examine all the framed photos in the Chairman's Office. Look specifically for photos with a <strong>Moon symbol</strong> printed on them. These photos depict objects in a specific order:<br><br>
+    <strong>Photo 1:</strong> Crescent moon over a building → <em>Moon</em><br>
+    <strong>Photo 2:</strong> Sunrise scene → <em>Sun</em><br>
+    <strong>Photo 3:</strong> Star formation in the night sky → <em>Star</em><br>
+    <strong>Photo 4:</strong> Full moon close-up → <em>Moon</em><br><br>
+    <strong>Reward:</strong> 1× Moon Quartz (one of three needed for the Central Hall door)
+  </div>
+</div>
+
+<h3>// STEP-BY-STEP WALKTHROUGH</h3>
+
+<ol>
+  <li>Enter the Chairman's Office on the West Wing 2F.</li>
+  <li>Walk around the room and examine all photos on the walls and desk.</li>
+  <li>Filter for photos with the Moon symbol — these are your clues.</li>
+  <li>Approach the puzzle box on the desk.</li>
+  <li>Input: <strong>Moon → Sun → Star → Moon</strong></li>
+  <li>The box opens. Take the Moon Quartz.</li>
+</ol>
+
+<h2 id="sun">Sun Quartz Box <span class="badge">// LEAD RESEARCHER'S OFFICE</span></h2>
+
+<p>The Sun Quartz Box is in the Lead Researcher's Office, also on the West Wing's second floor. This puzzle requires an extra step — you must first acquire <strong>Corrosive Acid</strong> from the Conference Room to unlock the puzzle box's outer lock.</p>
+
+<div class="puzzle-card">
+  <div class="puzzle-num">// SUN QUARTZ</div>
+  <h3 class="puzzle-title" style="font-family:Georgia,serif;color:var(--text);">Lead Researcher's Office Puzzle</h3>
+
+  <div class="puzzle-section">
+    <div class="puzzle-label">Solution sequence</div>
+    <div class="puzzle-solution">Star · Sun · Moon · Sun</div>
+  </div>
+
+  <div class="puzzle-info">
+    <strong>Pre-step:</strong> Get Corrosive Acid from the Conference Room backroom (look for the lamp shining down on a small bottle). Use it on the puzzle box lock first.<br><br>
+    <strong>How to find the clue:</strong> Find photos with a <strong>Sun symbol</strong>. Look in three places:<br><br>
+    • <strong>On the desk</strong> — an unframed photo (often missed)<br>
+    • <strong>Wall-mounted framed photo</strong> near the window<br>
+    • <strong>Inside an open drawer</strong> on the right side of the desk<br><br>
+    The order shown: Star → Sun → Moon → Sun.<br><br>
+    <strong>Reward:</strong> 1× Sun Quartz + access to the ID Wristband path
+  </div>
+</div>
+
+<h3>// STEP-BY-STEP WALKTHROUGH</h3>
+
+<ol>
+  <li>Enter the Conference Room. Find the backroom — it has a hanging lamp shining onto a small bottle.</li>
+  <li>Pick up the <strong>Corrosive Acid</strong>.</li>
+  <li>Return to the Lead Researcher's Office. The puzzle box is in the upper-left corner.</li>
+  <li>Use the Corrosive Acid on the lock to dissolve it.</li>
+  <li>Examine all photos in the office, focusing on those marked with the Sun symbol.</li>
+  <li>Input: <strong>Star → Sun → Moon → Sun</strong></li>
+  <li>The box opens. Take the Sun Quartz.</li>
+</ol>
+
+<div class="warn-box gold">
+  💡 <strong>Tip:</strong> Don't forget to pick up the unframed photo on the desk. Many players miss this clue and waste time guessing the sequence.
+</div>
+
+<h2 id="star">Star Quartz Box <span class="badge">// VIP SUITE</span></h2>
+
+<p>The trickiest of the three. The Star Quartz Box uses an <strong>hourglass-based clue</strong> instead of photos. You must physically manipulate an hourglass to reveal the solution.</p>
+
+<div class="puzzle-card">
+  <div class="puzzle-num">// STAR QUARTZ</div>
+  <h3 class="puzzle-title" style="font-family:Georgia,serif;color:var(--text);">VIP Suite Hourglass Puzzle</h3>
+
+  <div class="puzzle-section">
+    <div class="puzzle-label">How to get the solution</div>
+    <div class="puzzle-info" style="background:rgba(192,57,43,0.08);border:0.5px solid var(--border);border-radius:3px;padding:10px 14px;">
+      Examine the hourglass → Remove the screws → Flip upside-down → Read the hidden code on the revealed face → Input that code into the puzzle box.
+    </div>
+  </div>
+
+  <div class="puzzle-info">
+    <strong>Why this is unique:</strong> The Star Quartz Box uses a <strong>physical interaction puzzle</strong> rather than a photo-based one. The hourglass on the VIP Suite's desk has the answer literally hidden inside it.<br><br>
+    <strong>Note:</strong> Each playthrough may have a slightly different code on the hourglass — Capcom randomized this slightly across save files. The general solution method is the same, but always verify the symbols on YOUR hourglass.<br><br>
+    <strong>Common solution (most playthroughs):</strong> Sun → Star → Moon → Star<br><br>
+    <strong>Reward:</strong> 1× Star Quartz
+  </div>
+</div>
+
+<h3>// STEP-BY-STEP WALKTHROUGH</h3>
+
+<ol>
+  <li>Enter the VIP Suite (West Wing 2F).</li>
+  <li>Find the hourglass on the desk near the window.</li>
+  <li>Examine it. The screws on the wooden frame can be removed.</li>
+  <li><strong>Remove all screws</strong> to free the hourglass from its mount.</li>
+  <li>Flip the hourglass upside-down. The sand falls and reveals symbols on the bottom face.</li>
+  <li>Memorize the symbol order shown in the sand (commonly Sun-Star-Moon-Star).</li>
+  <li>Approach the Star Puzzle Box.</li>
+  <li>Input the sequence revealed by the hourglass.</li>
+  <li>Take the Star Quartz.</li>
+</ol>
+
+<h2 id="central">Unlocking the Central Hall door</h2>
+
+<p>Once you have all three Quartz crystals (Sun, Moon, Star), return to the <strong>Central Hall door</strong> on the West Wing 1F.</p>
+
+<ol>
+  <li>The door has three slots — one for each Quartz.</li>
+  <li>Insert each Quartz into its matching slot.</li>
+  <li>The door unlocks. Story progression continues into the Care Center's restricted areas.</li>
+</ol>
+
+<div class="warn-box">
+  ⚠ <strong>Important:</strong> You cannot progress further in Grace's section without unlocking this door. All three Quartz puzzles are <strong>mandatory</strong>, not optional.
+</div>
+
+<h2 id="bonus">Bonus: The Final Puzzle (NG+ only)</h2>
+
+<p>After completing the main story, RE9 unlocks a hidden multi-step puzzle that uses elements from across the entire game. The Final Puzzle takes place in the same Lead Researcher's Office that housed the Sun Quartz Box, but only becomes accessible on a New Game+ run.</p>
+
+<h3>// FINAL PUZZLE OVERVIEW</h3>
+
+<ol>
+  <li><strong>Get Marie's Doll</strong> from the Collection &amp; Testing room in the Care Center Basement.</li>
+  <li><strong>Store Marie's Doll in Grace's item box</strong> immediately — it carries between playthroughs.</li>
+  <li><strong>Decode the Severed Hand RNA sequence</strong> using the Laser Microscope in the Blood Lab. The sequence is <strong>GGC-AAG-AUA-ACG-UGU-CAU</strong>.</li>
+  <li><strong>Complete the game once</strong>, then start NG+.</li>
+  <li><strong>Progress until you rescue Emily</strong> from the Care Center Basement.</li>
+  <li><strong>Re-analyze the Severed Hand</strong> on the Laser Microscope. The Sun Puzzle in the Lead Researcher's Office becomes interactable again.</li>
+  <li><strong>Bring Emily and Marie's Doll</strong> to the Sun Puzzle.</li>
+  <li><strong>Input the alternate sequence</strong>: Sun-Sun-Star → Sun-Moon-Star → Sun-Moon-Sun → Moon-Star-Moon.</li>
+</ol>
+
+<p>The Final Puzzle solution rewards a special ending dialogue and Easter egg, plus closes a major story thread between Marie, Emily, and "The Girl" antagonist. Highly recommended for completionists.</p>
+
+<div class="warn-box info">
+  ℹ <strong>Why is the RNA sequence relevant?</strong> The Severed Hand belongs to "The Girl" — a recurring antagonist in Grace's chapters. Her parting line "Let's play. GGC-AAG-AUA-ACG-UGU-CAU" connects to the puzzle's symbol decoding, where each letter (G/A/U/C) maps to a Sun/Moon/Star symbol via celestial distance clues hidden throughout the game.
+</div>
+
+<h2>Summary table</h2>
+
+<div style="background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;font-family:monospace;font-size:13px;color:var(--text2);line-height:1.9;">
+  <strong style="color:var(--text);">All Quartz Puzzle Solutions:</strong><br>
+  • <strong style="color:var(--red);">Moon Quartz</strong> (Chairman's Office): Moon · Sun · Star · Moon<br>
+  • <strong style="color:var(--red);">Sun Quartz</strong> (Lead Researcher's Office): Star · Sun · Moon · Sun<br>
+  • <strong style="color:var(--red);">Star Quartz</strong> (VIP Suite): Hourglass-revealed code (commonly Sun · Star · Moon · Star)<br>
+  • <strong style="color:var(--red);">Final Puzzle</strong> (NG+): Sun-Sun-Star · Sun-Moon-Star · Sun-Moon-Sun · Moon-Star-Moon
+</div>
+
+<div class="cta">
+  <div class="cta-title">RELATED PUZZLE GUIDES</div>
+  <a href="all-5-safe-codes-guide.html">All 5 Safe Codes</a>
+  <a href="all-25-mr-raccoon-locations.html">All 25 Mr. Raccoon Locations</a>
+  <a href="how-to-beat-victor-gideon.html">How to Beat Victor Gideon</a>
+  <a href="beginner-guide-resident-evil-requiem.html">Beginner's Guide</a>
+  <a href="index.html">All guides home</a>
+</div>
+
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? <a href="#" style="color:var(--red);">Let us know</a> — we update guides weekly.</p>
+
+</div>
+<div class="footer">RERequiem.guide · Fan-made guide · Not affiliated with Capcom · Updated May 2026</div>
+</body>
+</html>
