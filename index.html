@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resident Evil Requiem (RE9) Complete Guide — Walkthrough, Bosses, Collectibles</title>
+<meta name="description" content="Complete guide for Resident Evil Requiem (RE9) — boss strategies, all safe codes, 25 Mr. Raccoon locations, weapons, trophies, and walkthrough for Grace and Leon campaigns." />
+<meta name="keywords" content="Resident Evil Requiem, RE9, walkthrough, guide, boss, safe codes, Mr Raccoon, trophies, Victor Gideon" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;
+  --border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);
+  --text:#f0ebe8;--text2:#b0a09a;--text3:#706056;
+  --gold:#ba7517;--blue:#69a8e0;
+}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;min-height:100vh;}
+.container{max-width:900px;margin:0 auto;padding:0 18px;}
+
+/* NAV */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);background:#0d0808;position:sticky;top:0;z-index:10;}
+.logo{font-size:16px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav-links{display:flex;gap:14px;}
+.nav-links a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.nav-links a:hover{color:var(--red);}
+
+/* HERO */
+.hero{background:linear-gradient(180deg,#1a0505 0%,#0d0808 100%);padding:60px 20px 50px;text-align:center;border-bottom:0.5px solid var(--border);}
+.hero-tag{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.1em;border:0.5px solid var(--border);padding:4px 12px;border-radius:2px;display:inline-block;margin-bottom:16px;}
+.hero h1{font-size:36px;font-weight:normal;color:var(--text);margin-bottom:12px;line-height:1.2;}
+.hero p{font-size:16px;color:var(--text2);max-width:600px;margin:0 auto 24px;line-height:1.7;}
+.platforms{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;}
+.plat{font-size:11px;font-family:monospace;padding:4px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:2px;}
+
+/* SECTION */
+.section{padding:40px 20px;}
+.sec-title{font-size:12px;font-family:monospace;letter-spacing:0.1em;color:var(--text3);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:12px;}
+.sec-title::before{content:"";width:24px;height:0.5px;background:var(--red);}
+.hot-badge{font-size:10px;font-family:monospace;color:var(--red);border:0.5px solid var(--red);padding:2px 6px;border-radius:2px;margin-left:8px;}
+
+/* GUIDE CARDS - FEATURED */
+.featured-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;}
+.featured-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:24px 22px;text-decoration:none;color:inherit;display:block;transition:all 0.2s;}
+.featured-card:hover{border-color:var(--red);background:var(--surface2);transform:translateY(-2px);}
+.featured-icon{font-size:28px;color:var(--red);margin-bottom:12px;}
+.featured-card h3{font-size:18px;font-weight:normal;color:var(--text);margin-bottom:8px;}
+.featured-card p{font-size:13px;font-family:monospace;color:var(--text2);line-height:1.6;margin-bottom:10px;}
+.featured-meta{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.05em;}
+.featured-meta::after{content:" →";}
+
+/* CATEGORY GRID */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;}
+.cat-card{background:var(--surface);border:0.5px solid var(--border2);border-radius:4px;padding:18px 16px;text-decoration:none;color:inherit;transition:all 0.15s;display:block;}
+.cat-card:hover{border-color:var(--red);background:var(--surface2);}
+.cat-card .ci{font-size:22px;color:var(--red);margin-bottom:8px;}
+.cat-card h4{font-size:14px;font-weight:normal;color:var(--text);margin-bottom:4px;}
+.cat-card p{font-size:11px;font-family:monospace;color:var(--text2);line-height:1.5;}
+
+/* RECENT POSTS */
+.post-list{display:flex;flex-direction:column;gap:8px;}
+.post-item{background:var(--surface);border:0.5px solid var(--border2);border-radius:4px;padding:14px 18px;display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;transition:border-color 0.12s;}
+.post-item:hover{border-color:var(--red);}
+.post-icon{font-size:18px;color:var(--red);flex-shrink:0;}
+.post-info{flex:1;min-width:0;}
+.post-title{font-size:14px;color:var(--text);margin-bottom:3px;}
+.post-meta{font-size:11px;font-family:monospace;color:var(--text3);}
+.post-arrow{font-size:14px;color:var(--text3);flex-shrink:0;}
+
+/* AREAS */
+.area-tags{display:flex;gap:6px;flex-wrap:wrap;}
+.atag{font-size:13px;font-family:monospace;padding:6px 14px;border:0.5px solid var(--border2);color:var(--text2);border-radius:2px;}
+
+/* STATS */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;}
+.stat-card{background:var(--surface);border:0.5px solid var(--border2);border-radius:4px;padding:18px 14px;text-align:center;}
+.stat-num{font-size:28px;font-family:monospace;color:var(--red);font-weight:bold;margin-bottom:4px;}
+.stat-label{font-size:11px;font-family:monospace;color:var(--text2);}
+
+/* INFO BOX */
+.info-box{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:14px 0;}
+.info-box p{font-size:13px;font-family:monospace;color:var(--text2);margin:0;line-height:1.7;}
+.info-box strong{color:var(--text);}
+
+/* FOOTER */
+.footer{padding:30px 20px;text-align:center;font-size:12px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+.footer p{margin:5px 0;}
+
+@media (max-width:600px){
+  .hero h1{font-size:26px;}
+  .hero p{font-size:14px;}
+  .hero{padding:40px 16px 30px;}
+  .section{padding:28px 16px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">RE<span>Requiem</span>.guide</div>
+  <div class="nav-links">
+    <a href="how-to-beat-victor-gideon.html">Bosses</a>
+    <a href="all-25-mr-raccoon-locations.html">Collectibles</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">// RELEASED FEB 27, 2026 · RE9</div>
+  <h1>Resident Evil: Requiem<br>Complete Guide</h1>
+  <p>Walkthroughs, boss strategies, all safe codes, and 100% completion guides for Grace and Leon's campaigns.</p>
+  <div class="platforms">
+    <span class="plat">PS5</span>
+    <span class="plat">Xbox Series</span>
+    <span class="plat">Switch 2</span>
+    <span class="plat">PC / Steam</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- FEATURED GUIDES -->
+  <div class="section">
+    <div class="sec-title">Featured guides <span class="hot-badge">HOT</span></div>
+    <div class="featured-grid">
+      <a href="how-to-beat-victor-gideon.html" class="featured-card">
+        <div class="featured-icon">⚔️</div>
+        <h3>How to Beat Victor Gideon</h3>
+        <p>Complete strategy for the final boss — both phases, Insanity tips, and no-damage strategy. The hardest fight in the game, broken down step by step.</p>
+        <div class="featured-meta">10 MIN READ</div>
+      </a>
+      <a href="all-25-mr-raccoon-locations.html" class="featured-card">
+        <div class="featured-icon">🦝</div>
+        <h3>All 25 Mr. Raccoon Locations</h3>
+        <p>Every Mr. Raccoon Memoriam in story order. Care Center, Raccoon City, and ARK Facility — with character tags and missable warnings.</p>
+        <div class="featured-meta">15 MIN READ</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div class="section">
+    <div class="sec-title">Browse by category</div>
+    <div class="cat-grid">
+      <a href="how-to-beat-victor-gideon.html" class="cat-card">
+        <div class="ci">⚔️</div>
+        <h4>Boss guides</h4>
+        <p>8 main bosses + 2 optional</p>
+      </a>
+      <a href="all-25-mr-raccoon-locations.html" class="cat-card">
+        <div class="ci">📦</div>
+        <h4>Collectibles</h4>
+        <p>25 Mr. Raccoons · 22 coins · 75 files</p>
+      </a>
+      <a href="#" class="cat-card">
+        <div class="ci">🔓</div>
+        <h4>Safe codes</h4>
+        <p>All 5 safes · Normal &amp; Insanity</p>
+      </a>
+      <a href="#" class="cat-card">
+        <div class="ci">🧩</div>
+        <h4>Puzzles</h4>
+        <p>Quartz · Blood · Final Puzzle</p>
+      </a>
+      <a href="#" class="cat-card">
+        <div class="ci">🔫</div>
+        <h4>Weapons</h4>
+        <p>17 weapons · stats · upgrades</p>
+      </a>
+      <a href="#" class="cat-card">
+        <div class="ci">🏆</div>
+        <h4>Trophies</h4>
+        <p>All 49 + Platinum guide</p>
+      </a>
+      <a href="#" class="cat-card">
+        <div class="ci">🗺️</div>
+        <h4>Walkthrough</h4>
+        <p>4 areas, story progression</p>
+      </a>
+      <a href="#" class="cat-card">
+        <div class="ci">💡</div>
+        <h4>Beginner tips</h4>
+        <p>Saves · ammo · difficulty</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- LATEST POSTS -->
+  <div class="section">
+    <div class="sec-title">Latest guides</div>
+    <div class="post-list">
+      <a href="how-to-beat-victor-gideon.html" class="post-item">
+        <div class="post-icon">⚔️</div>
+        <div class="post-info">
+          <div class="post-title">How to Beat Victor Gideon — Final Boss Guide</div>
+          <div class="post-meta">May 2026 · Boss guide · 10 min read</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+      <a href="all-25-mr-raccoon-locations.html" class="post-item">
+        <div class="post-icon">🦝</div>
+        <div class="post-info">
+          <div class="post-title">All 25 Mr. Raccoon Memoriam Locations</div>
+          <div class="post-meta">May 2026 · Collectibles · 15 min read</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- GAME STATS -->
+  <div class="section">
+    <div class="sec-title">Game at a glance</div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Main areas</div></div>
+      <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">Bosses</div></div>
+      <div class="stat-card"><div class="stat-num">17</div><div class="stat-label">Weapons</div></div>
+      <div class="stat-card"><div class="stat-num">25</div><div class="stat-label">Mr. Raccoons</div></div>
+      <div class="stat-card"><div class="stat-num">49</div><div class="stat-label">Trophies</div></div>
+      <div class="stat-card"><div class="stat-num">75</div><div class="stat-label">Files</div></div>
+    </div>
+  </div>
+
+  <!-- AREAS -->
+  <div class="section">
+    <div class="sec-title">Areas covered</div>
+    <div class="area-tags">
+      <span class="atag">🌲 Wrenwood (intro)</span>
+      <span class="atag">🏥 Rhodes Hill Care Center</span>
+      <span class="atag">🏙️ Raccoon City</span>
+      <span class="atag">🚀 ARK Facility</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="section">
+    <div class="sec-title">About this guide</div>
+    <div class="info-box">
+      <p><strong>RERequiem.guide</strong> is a fan-made guide site for Resident Evil: Requiem (RE9), released February 27, 2026 by Capcom. We cover boss strategies, collectible locations, puzzle solutions, weapon stats, and trophy guides for both Grace Ashcroft and Leon S. Kennedy's campaigns. Updated regularly based on community feedback.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>RERequiem.guide · Fan-made guide · Not affiliated with Capcom</p>
+  <p>Resident Evil: Requiem © Capcom · Updated May 2026</p>
+</div>
+
+</body>
+</html>
