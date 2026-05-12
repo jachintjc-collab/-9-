@@ -1,1 +1,42 @@
-9d27a6ac02984586936874946902db8d
+KEY="9d27a6ac02984586936874946902db8d"
+
+curl -sS -w "\nHTTP:%{http_code}\n" -X POST "https://api.indexnow.org/indexnow" \
+  -H "Content-Type: application/json; charset=utf-8" \
+  -d @- <<EOF
+{
+  "host": "www.re9guide.it.com",
+  "key": "$KEY",
+  "keyLocation": "https://www.re9guide.it.com/${KEY}.txt",
+  "urlList": [
+    "https://www.re9guide.it.com/",
+    "https://www.re9guide.it.com/how-to-beat-victor-gideon.html",
+    "https://www.re9guide.it.com/how-to-beat-mr-x-super-tyrant.html",
+    "https://www.re9guide.it.com/how-to-beat-the-commander.html",
+    "https://www.re9guide.it.com/how-to-beat-plant-43.html",
+    "https://www.re9guide.it.com/all-bosses-ranked-by-difficulty.html",
+    "https://www.re9guide.it.com/all-25-mr-raccoon-locations.html",
+    "https://www.re9guide.it.com/all-22-antique-coins-locations.html",
+    "https://www.re9guide.it.com/all-5-safe-codes-guide.html",
+    "https://www.re9guide.it.com/all-quartz-puzzle-solutions.html",
+    "https://www.re9guide.it.com/ng-plus-final-puzzle-rna-solution.html",
+    "https://www.re9guide.it.com/best-weapons-tier-list.html",
+    "https://www.re9guide.it.com/best-crafting-recipes-ammo-guide.html",
+    "https://www.re9guide.it.com/grace-vs-leon-character-differences.html",
+    "https://www.re9guide.it.com/beginner-guide-resident-evil-requiem.html",
+    "https://www.re9guide.it.com/all-49-trophies-platinum-guide.html",
+    "https://www.re9guide.it.com/how-to-unlock-insanity-difficulty.html",
+    "https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html",
+    "https://www.re9guide.it.com/about.html",
+    "https://www.re9guide.it.com/contact.html",
+    "https://www.re9guide.it.com/privacy.html",
+    "https://www.re9guide.it.com/dmca.html",
+    "https://www.re9guide.it.com/spoiler-policy.html",
+    "https://www.re9guide.it.com/all-75-files-locations-guide.html",
+    "https://www.re9guide.it.com/bosses-hub.html",
+    "https://www.re9guide.it.com/collectibles-hub.html",
+    "https://www.re9guide.it.com/trophies-hub.html",
+    "https://www.re9guide.it.com/ark-facility-complete-walkthrough.html",
+    "https://www.re9guide.it.com/insanity-chapter-walkthrough.html"
+  ]
+}
+EOF
