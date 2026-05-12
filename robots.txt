@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.re9guide.it.com/sitemap.xml
+Sitemap: https://www.re9guide.it.com/sitemap-2026-05-12.xml
