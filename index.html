@@ -9,7 +9,6 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
-
 <!-- Open Graph + Twitter Card -->
 <meta property="og:title" content="Resident Evil Requiem (RE9) Complete Guide" />
 <meta property="og:description" content="Bosses, safe codes, puzzles, collectibles, trophy roadmap — updated weekly. Hand-written guides for RE9." />
@@ -24,29 +23,67 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Resident Evil Requiem (RE9) Complete Guide" />
 <meta name="twitter:description" content="Bosses, safe codes, puzzles, collectibles — updated weekly." />
-
 <title>Resident Evil Requiem (RE9) Complete Guide — Bosses, Safes, Trophies</title>
 <meta name="description" content="Resident Evil Requiem (RE9) complete guide. Boss strategies, safe codes, Mr. Raccoon locations, weapons tier list, trophy roadmap." />
 <meta name="keywords" content="Resident Evil Requiem, RE9, walkthrough, guide, boss, safe codes, Mr Raccoon, trophies, Victor Gideon, weapons, Insanity, speedrun" />
-
-<!-- Structured data: WebSite -->
+<!-- ============================================================ -->
+<!-- Structured data: WebSite + Organization + VideoGame (@graph)  -->
+<!-- ============================================================ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "re9guide.it.com",
-  "url": "https://www.re9guide.it.com/",
-  "description": "Complete guide site for Resident Evil: Requiem (RE9)",
-  "inLanguage": "en"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.re9guide.it.com/#website",
+      "url": "https://www.re9guide.it.com/",
+      "name": "re9guide.it.com",
+      "alternateName": "Resident Evil Requiem (RE9) Complete Guide",
+      "description": "Resident Evil Requiem (RE9) complete guide. Boss strategies, safe codes, Mr. Raccoon locations, weapons tier list, trophy roadmap.",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://www.re9guide.it.com/#publisher" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.google.com/search?q=site%3Are9guide.it.com+{search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.re9guide.it.com/#publisher",
+      "name": "re9guide.it.com",
+      "url": "https://www.re9guide.it.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.re9guide.it.com/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "founder": { "@id": "https://www.re9guide.it.com/about.html#person" },
+      "foundingDate": "2026-02",
+      "description": "Independent fan-made guide site for Resident Evil: Requiem (RE9), hand-written by Jachin from Seoul."
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://www.re9guide.it.com/#game",
+      "name": "Resident Evil: Requiem",
+      "alternateName": ["RE9", "Resident Evil 9"],
+      "gamePlatform": ["PlayStation 5", "Xbox Series X/S", "Nintendo Switch 2", "PC"],
+      "publisher": "Capcom",
+      "datePublished": "2026-02-27",
+      "genre": ["Survival Horror", "Action-Adventure"]
+    }
+  ]
 }
 </script>
-
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--red-bright:#e54c3a;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
 body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;min-height:100vh;}
 .container{max-width:980px;margin:0 auto;padding:0 18px;}
-
 /* NAV */
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);background:#0d0808;position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:8px;}
 .logo{font-size:16px;display:flex;align-items:center;gap:8px;}
@@ -54,7 +91,6 @@ body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-heigh
 .nav-links{display:flex;gap:14px;flex-wrap:wrap;}
 .nav-links a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
 .nav-links a:hover{color:var(--red);}
-
 /* SECTION 1: HERO */
 .hero{background:linear-gradient(180deg,#1a0505 0%,#0d0808 100%);padding:60px 20px 50px;text-align:center;border-bottom:0.5px solid var(--border);}
 .hero-tag{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.1em;border:0.5px solid var(--border);padding:4px 12px;border-radius:2px;display:inline-block;margin-bottom:16px;}
@@ -68,7 +104,6 @@ body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-heigh
 .btn-secondary:hover{border-color:var(--red);color:var(--red);}
 .platforms{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;}
 .plat{font-size:11px;font-family:monospace;padding:4px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:2px;}
-
 /* COMMON SECTION */
 .section{padding:42px 20px;}
 .sec-title{font-size:12px;font-family:monospace;letter-spacing:0.1em;color:var(--text3);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:12px;}
@@ -76,7 +111,6 @@ body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-heigh
 .sec-title-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:10px;}
 .sec-subtitle{font-size:13px;font-family:monospace;color:var(--text3);}
 .hot-badge{font-size:10px;font-family:monospace;color:var(--red);border:0.5px solid var(--red);padding:2px 6px;border-radius:2px;margin-left:8px;}
-
 /* SECTION 2: QUICK ACTIONS */
 .quick-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
 .quick-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:24px 22px;text-decoration:none;color:inherit;display:block;transition:all 0.15s;position:relative;overflow:hidden;}
@@ -86,7 +120,6 @@ body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-heigh
 .quick-icon{font-size:30px;margin-bottom:12px;display:inline-block;}
 .quick-q{font-size:13px;font-family:monospace;color:var(--text3);letter-spacing:0.04em;margin-bottom:6px;text-transform:uppercase;}
 .quick-action{font-size:16px;color:var(--text);font-weight:normal;}
-
 /* SECTION 3: FEATURED */
 .featured-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;}
 .featured-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:22px 20px;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:all 0.2s;}
@@ -97,7 +130,6 @@ body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-heigh
 .featured-meta{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.05em;margin-bottom:10px;}
 .featured-cta{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.06em;text-transform:uppercase;border-top:0.5px dashed var(--border);padding-top:10px;}
 .featured-cta::after{content:" →";}
-
 /* SECTION 4: GUIDES BY GOAL */
 .goal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
 .goal-col{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px 18px;}
@@ -109,7 +141,6 @@ body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-heigh
 .goal-list a{font-size:13px;color:var(--text2);text-decoration:none;display:flex;align-items:center;gap:6px;line-height:1.5;}
 .goal-list a:hover{color:var(--red);}
 .goal-list a::before{content:"›";color:var(--red);font-family:monospace;}
-
 /* SECTION 5: LATEST UPDATES */
 .update-feed{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:6px 0;}
 .update-row{display:flex;align-items:flex-start;gap:14px;padding:14px 22px;border-bottom:0.5px solid var(--border2);text-decoration:none;color:inherit;transition:background 0.1s;}
@@ -123,7 +154,6 @@ body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-heigh
 .update-text{font-size:14px;color:var(--text);line-height:1.5;margin-bottom:3px;}
 .update-text strong{color:var(--red);}
 .update-date{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.04em;}
-
 /* SECTION 6: STATS */
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;}
 .stat-card{background:var(--surface);border:0.5px solid var(--border2);border-radius:4px;padding:18px 14px;text-align:center;text-decoration:none;color:inherit;transition:all 0.15s;display:block;}
@@ -131,7 +161,6 @@ body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-heigh
 .stat-num{font-size:30px;font-family:monospace;color:var(--red);font-weight:bold;margin-bottom:4px;line-height:1;}
 .stat-label{font-size:11px;font-family:monospace;color:var(--text2);letter-spacing:0.04em;}
 .stat-hint{font-size:9px;font-family:monospace;color:var(--text3);margin-top:5px;}
-
 /* SECTION 7: ROADMAP */
 .roadmap-list{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:6px 0;}
 .roadmap-item{display:flex;align-items:flex-start;gap:14px;padding:14px 22px;border-bottom:0.5px solid var(--border2);}
@@ -143,366 +172,343 @@ body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-heigh
 .roadmap-content{flex:1;}
 .roadmap-title{font-size:14px;color:var(--text);margin-bottom:2px;}
 .roadmap-meta{font-size:10px;font-family:monospace;color:var(--text3);}
-
 /* SECTION 8: FEEDBACK CTA */
 .feedback-banner{background:linear-gradient(135deg,#1a0a0a 0%,#0d0808 100%);border:1px solid var(--red);border-radius:8px;padding:32px 30px;text-align:center;}
 .feedback-title{font-size:22px;color:var(--text);margin-bottom:10px;font-weight:normal;}
 .feedback-desc{font-size:14px;color:var(--text2);max-width:520px;margin:0 auto 22px;line-height:1.6;}
 .feedback-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;}
-
 /* SECTION 9: TRUST */
 .trust-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:14px;}
 .trust-pill{font-size:11px;font-family:monospace;padding:5px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:20px;}
 .trust-pill .green-dot{display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:6px;vertical-align:middle;}
 .trust-text{font-size:12px;font-family:monospace;color:var(--text3);text-align:center;line-height:1.7;}
 .trust-text strong{color:var(--text2);}
-
 /* FOOTER */
 .footer{padding:30px 20px;text-align:center;font-size:12px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
 .footer p{margin:5px 0;}
 .footer a{color:var(--text2);text-decoration:none;margin:0 8px;}
 .footer a:hover{color:var(--red);}
-
 @media (max-width:600px){
-  .hero h1{font-size:28px;}
-  .hero p{font-size:14px;}
-  .hero{padding:40px 16px 30px;}
-  .section{padding:30px 16px;}
-  .feedback-title{font-size:18px;}
+.hero h1{font-size:28px;}
+.hero p{font-size:14px;}
+.hero{padding:40px 16px 30px;}
+.section{padding:30px 16px;}
+.feedback-title{font-size:18px;}
 }
 </style>
 </head>
 <body>
-
 <!-- NAV -->
 <div class="nav">
-  <a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
-  <div class="nav-links">
-    <a href="bosses-hub.html">Bosses</a>
-    <a href="collectibles-hub.html">Collectibles</a>
-    <a href="trophies-hub.html">Trophies</a>
-    <a href="#updates">Updates</a>
-  </div>
+<a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
+<div class="nav-links">
+<a href="bosses-hub.html">Bosses</a>
+<a href="collectibles-hub.html">Collectibles</a>
+<a href="trophies-hub.html">Trophies</a>
+<a href="#updates">Updates</a>
 </div>
-
+</div>
 <!-- SECTION 1: HERO -->
 <div class="hero">
-  <div class="hero-tag">// RELEASED FEB 27, 2026 · RE9</div>
-  <h1>Resident Evil: Requiem<br>Complete Guide</h1>
-  <p>Bosses, safe codes, puzzles, collectibles, trophy roadmap — hand-written and updated weekly.</p>
-  <div class="hero-cta">
-    <a href="beginner-guide-resident-evil-requiem.html" class="btn btn-primary">Start with Beginner Guide</a>
-    <a href="#all-guides" class="btn btn-secondary">View All Guides</a>
-  </div>
-  <div class="platforms">
-    <span class="plat">PS5</span>
-    <span class="plat">Xbox Series</span>
-    <span class="plat">Switch 2</span>
-    <span class="plat">PC / Steam</span>
-  </div>
+<div class="hero-tag">// RELEASED FEB 27, 2026 · RE9</div>
+<h1>Resident Evil: Requiem<br>Complete Guide</h1>
+<p>Bosses, safe codes, puzzles, collectibles, trophy roadmap — hand-written and updated weekly.</p>
+<div class="hero-cta">
+<a href="beginner-guide-resident-evil-requiem.html" class="btn btn-primary">Start with Beginner Guide</a>
+<a href="#all-guides" class="btn btn-secondary">View All Guides</a>
 </div>
-
+<div class="platforms">
+<span class="plat">PS5</span>
+<span class="plat">Xbox Series</span>
+<span class="plat">Switch 2</span>
+<span class="plat">PC / Steam</span>
+</div>
+</div>
 <div class="container">
-
 <!-- SECTION 2: QUICK ACTIONS (task-oriented) -->
 <div class="section">
-  <div class="sec-title">Where do you want to go?</div>
-  <div class="quick-grid">
-    <a href="bosses-hub.html" class="quick-card">
-      <div class="quick-icon">⚔️</div>
-      <div class="quick-q">// I'M STUCK ON A BOSS</div>
-      <div class="quick-action">Boss strategies hub</div>
-    </a>
-    <a href="collectibles-hub.html" class="quick-card">
-      <div class="quick-icon">🦝</div>
-      <div class="quick-q">// I'M HUNTING COLLECTIBLES</div>
-      <div class="quick-action">Collectibles hub</div>
-    </a>
-    <a href="trophies-hub.html" class="quick-card">
-      <div class="quick-icon">🏆</div>
-      <div class="quick-q">// I WANT THE PLATINUM</div>
-      <div class="quick-action">Trophy roadmap</div>
-    </a>
-    <a href="speedrun-guide-sub-4-hours.html" class="quick-card">
-      <div class="quick-icon">⏱️</div>
-      <div class="quick-q">// I WANT A SUB-4H RUN</div>
-      <div class="quick-action">Speedrun guide</div>
-    </a>
-  </div>
+<div class="sec-title">Where do you want to go?</div>
+<div class="quick-grid">
+<a href="bosses-hub.html" class="quick-card">
+<div class="quick-icon">⚔️</div>
+<div class="quick-q">// I'M STUCK ON A BOSS</div>
+<div class="quick-action">Boss strategies hub</div>
+</a>
+<a href="collectibles-hub.html" class="quick-card">
+<div class="quick-icon">🦝</div>
+<div class="quick-q">// I'M HUNTING COLLECTIBLES</div>
+<div class="quick-action">Collectibles hub</div>
+</a>
+<a href="trophies-hub.html" class="quick-card">
+<div class="quick-icon">🏆</div>
+<div class="quick-q">// I WANT THE PLATINUM</div>
+<div class="quick-action">Trophy roadmap</div>
+</a>
+<a href="speedrun-guide-sub-4-hours.html" class="quick-card">
+<div class="quick-icon">⏱️</div>
+<div class="quick-q">// I WANT A SUB-4H RUN</div>
+<div class="quick-action">Speedrun guide</div>
+</a>
 </div>
-
+</div>
 <!-- SECTION 3: FEATURED GUIDES -->
 <div class="section">
-  <div class="sec-title-row">
-    <div class="sec-title" style="margin-bottom:0;">Featured guides <span class="hot-badge">HOT</span></div>
-  </div>
-  <div class="featured-grid">
-    <a href="how-to-beat-victor-gideon.html" class="featured-card">
-      <div class="featured-icon">⚔️</div>
-      <h3>How to Beat Victor Gideon</h3>
-      <div class="featured-tagline">Phase-by-phase strategy with weak points, parry timings, and Insanity tips for the final boss.</div>
-      <div class="featured-meta">UPDATED MAY 2026 · 10 MIN · BOSS</div>
-      <div class="featured-cta">Read guide</div>
-    </a>
-    <a href="all-49-trophies-platinum-guide.html" class="featured-card">
-      <div class="featured-icon">🏆</div>
-      <h3>All 49 Trophies Platinum Guide</h3>
-      <div class="featured-tagline">Complete roadmap with missable warnings, time estimates, and optimal Platinum path across two playthroughs.</div>
-      <div class="featured-meta">UPDATED MAY 2026 · 15 MIN · TROPHY</div>
-      <div class="featured-cta">Read guide</div>
-    </a>
-    <a href="all-75-files-locations-guide.html" class="featured-card">
-      <div class="featured-icon">📄</div>
-      <h3>All 75 Files Locations</h3>
-      <div class="featured-tagline">Every File location across 4 areas with missable warnings, character tags, and 3,000 CP reward path.</div>
-      <div class="featured-meta">NEW MAY 2026 · 20 MIN · COLLECTIBLES</div>
-      <div class="featured-cta">Read guide</div>
-    </a>
-  </div>
+<div class="sec-title-row">
+<div class="sec-title" style="margin-bottom:0;">Featured guides <span class="hot-badge">HOT</span></div>
 </div>
-
+<div class="featured-grid">
+<a href="how-to-beat-victor-gideon.html" class="featured-card">
+<div class="featured-icon">⚔️</div>
+<h3>How to Beat Victor Gideon</h3>
+<div class="featured-tagline">Phase-by-phase strategy with weak points, parry timings, and Insanity tips for the final boss.</div>
+<div class="featured-meta">UPDATED MAY 2026 · 10 MIN · BOSS</div>
+<div class="featured-cta">Read guide</div>
+</a>
+<a href="all-49-trophies-platinum-guide.html" class="featured-card">
+<div class="featured-icon">🏆</div>
+<h3>All 49 Trophies Platinum Guide</h3>
+<div class="featured-tagline">Complete roadmap with missable warnings, time estimates, and optimal Platinum path across two playthroughs.</div>
+<div class="featured-meta">UPDATED MAY 2026 · 15 MIN · TROPHY</div>
+<div class="featured-cta">Read guide</div>
+</a>
+<a href="all-75-files-locations-guide.html" class="featured-card">
+<div class="featured-icon">📄</div>
+<h3>All 75 Files Locations</h3>
+<div class="featured-tagline">Every File location across 4 areas with missable warnings, character tags, and 3,000 CP reward path.</div>
+<div class="featured-meta">NEW MAY 2026 · 20 MIN · COLLECTIBLES</div>
+<div class="featured-cta">Read guide</div>
+</a>
+</div>
+</div>
 <!-- SECTION 4: GUIDES BY GOAL -->
 <div class="section" id="all-guides">
-  <div class="sec-title-row">
-    <div class="sec-title" style="margin-bottom:0;">Guides by goal</div>
-    <div class="sec-subtitle">// 20 GUIDES TOTAL</div>
-  </div>
-  <div class="goal-grid">
-
-    <div class="goal-col">
-      <div class="goal-title"><span class="goal-icon">📖</span>Beat the Main Story</div>
-      <ul class="goal-list">
-        <li><a href="beginner-guide-resident-evil-requiem.html">Beginner's Guide</a></li>
-        <li><a href="grace-vs-leon-character-differences.html">Grace vs Leon</a></li>
-        <li><a href="best-weapons-tier-list.html">Best Weapons Tier List</a></li>
-        <li><a href="best-crafting-recipes-ammo-guide.html">Crafting &amp; Ammo Guide</a></li>
-      </ul>
-    </div>
-
-    <div class="goal-col" id="bosses">
-      <div class="goal-title"><span class="goal-icon">⚔️</span>Defeat Every Boss</div>
-      <ul class="goal-list">
-        <li><a href="how-to-beat-victor-gideon.html">Victor Gideon (final)</a></li>
-        <li><a href="how-to-beat-the-commander.html">The Commander</a></li>
-        <li><a href="how-to-beat-mr-x-super-tyrant.html">Mr. X / Super Tyrant</a></li>
-        <li><a href="how-to-beat-plant-43.html">Plant 43</a></li>
-        <li><a href="all-bosses-ranked-by-difficulty.html">All bosses ranked</a></li>
-      </ul>
-    </div>
-
-    <div class="goal-col" id="collectibles">
-      <div class="goal-title"><span class="goal-icon">🦝</span>100% Collectibles</div>
-      <ul class="goal-list">
-        <li><a href="all-25-mr-raccoon-locations.html">25 Mr. Raccoons</a></li>
-        <li><a href="all-22-antique-coins-locations.html">22 Antique Coins</a></li>
-        <li><a href="all-75-files-locations-guide.html">75 Files</a></li>
-        <li><a href="all-5-safe-codes-guide.html">5 Safe Codes</a></li>
-        <li><a href="all-quartz-puzzle-solutions.html">Quartz Puzzles</a></li>
-        <li><a href="ng-plus-final-puzzle-rna-solution.html">NG+ Final Puzzle</a></li>
-      </ul>
-    </div>
-
-    <div class="goal-col" id="trophies">
-      <div class="goal-title"><span class="goal-icon">🏆</span>Platinum &amp; Speedrun</div>
-      <ul class="goal-list">
-        <li><a href="all-49-trophies-platinum-guide.html">All 49 Trophies</a></li>
-        <li><a href="speedrun-guide-sub-4-hours.html">Sub 4 Hours Speedrun</a></li>
-        <li><a href="how-to-unlock-insanity-difficulty.html">Unlock Insanity</a></li>
-      </ul>
-    </div>
-
-  </div>
+<div class="sec-title-row">
+<div class="sec-title" style="margin-bottom:0;">Guides by goal</div>
+<div class="sec-subtitle">// 20 GUIDES TOTAL</div>
 </div>
-
+<div class="goal-grid">
+<div class="goal-col">
+<div class="goal-title"><span class="goal-icon">📖</span>Beat the Main Story</div>
+<ul class="goal-list">
+<li><a href="beginner-guide-resident-evil-requiem.html">Beginner's Guide</a></li>
+<li><a href="grace-vs-leon-character-differences.html">Grace vs Leon</a></li>
+<li><a href="best-weapons-tier-list.html">Best Weapons Tier List</a></li>
+<li><a href="best-crafting-recipes-ammo-guide.html">Crafting &amp; Ammo Guide</a></li>
+</ul>
+</div>
+<div class="goal-col" id="bosses">
+<div class="goal-title"><span class="goal-icon">⚔️</span>Defeat Every Boss</div>
+<ul class="goal-list">
+<li><a href="how-to-beat-victor-gideon.html">Victor Gideon (final)</a></li>
+<li><a href="how-to-beat-the-commander.html">The Commander</a></li>
+<li><a href="how-to-beat-mr-x-super-tyrant.html">Mr. X / Super Tyrant</a></li>
+<li><a href="how-to-beat-plant-43.html">Plant 43</a></li>
+<li><a href="all-bosses-ranked-by-difficulty.html">All bosses ranked</a></li>
+</ul>
+</div>
+<div class="goal-col" id="collectibles">
+<div class="goal-title"><span class="goal-icon">🦝</span>100% Collectibles</div>
+<ul class="goal-list">
+<li><a href="all-25-mr-raccoon-locations.html">25 Mr. Raccoons</a></li>
+<li><a href="all-22-antique-coins-locations.html">22 Antique Coins</a></li>
+<li><a href="all-75-files-locations-guide.html">75 Files</a></li>
+<li><a href="all-5-safe-codes-guide.html">5 Safe Codes</a></li>
+<li><a href="all-quartz-puzzle-solutions.html">Quartz Puzzles</a></li>
+<li><a href="ng-plus-final-puzzle-rna-solution.html">NG+ Final Puzzle</a></li>
+</ul>
+</div>
+<div class="goal-col" id="trophies">
+<div class="goal-title"><span class="goal-icon">🏆</span>Platinum &amp; Speedrun</div>
+<ul class="goal-list">
+<li><a href="all-49-trophies-platinum-guide.html">All 49 Trophies</a></li>
+<li><a href="speedrun-guide-sub-4-hours.html">Sub 4 Hours Speedrun</a></li>
+<li><a href="how-to-unlock-insanity-difficulty.html">Unlock Insanity</a></li>
+</ul>
+</div>
+</div>
+</div>
 <!-- SECTION 5: LATEST UPDATES -->
 <div class="section" id="updates">
-  <div class="sec-title-row">
-    <div class="sec-title" style="margin-bottom:0;">Latest updates</div>
-    <div class="sec-subtitle">// VERIFIED ON v1.02 PATCH</div>
-  </div>
-  <div class="update-feed">
-    <a href="insanity-chapter-walkthrough.html" class="update-row">
-      <span class="update-tag tag-new">NEW</span>
-      <div class="update-content">
-        <div class="update-text"><strong>Insanity chapter walkthrough</strong> — 7 chapters of survival strategies for Remarkable Agent trophy</div>
-        <div class="update-date">May 11, 2026</div>
-      </div>
-    </a>
-    <a href="ark-facility-complete-walkthrough.html" class="update-row">
-      <span class="update-tag tag-new">NEW</span>
-      <div class="update-content">
-        <div class="update-text"><strong>ARK Facility complete walkthrough</strong> — chapter-by-chapter from Plant 43 to Victor Gideon</div>
-        <div class="update-date">May 11, 2026</div>
-      </div>
-    </a>
-    <a href="all-75-files-locations-guide.html" class="update-row">
-      <span class="update-tag tag-new">NEW</span>
-      <div class="update-content">
-        <div class="update-text"><strong>All 75 Files locations guide</strong> — every File across 4 areas with missable warnings</div>
-        <div class="update-date">May 10, 2026</div>
-      </div>
-    </a>
-    <a href="all-bosses-ranked-by-difficulty.html" class="update-row">
-      <span class="update-tag tag-new">NEW</span>
-      <div class="update-content">
-        <div class="update-text"><strong>Boss difficulty ranking</strong> — all 10 bosses ranked from easiest to hardest</div>
-        <div class="update-date">May 10, 2026</div>
-      </div>
-    </a>
-    <a href="all-5-safe-codes-guide.html" class="update-row">
-      <span class="update-tag tag-verify">VERIFIED</span>
-      <div class="update-content">
-        <div class="update-text"><strong>Safe codes</strong> — verified for both Normal and Insanity on v1.02</div>
-        <div class="update-date">May 10, 2026</div>
-      </div>
-    </a>
-    <a href="how-to-beat-victor-gideon.html" class="update-row">
-      <span class="update-tag tag-update">UPDATED</span>
-      <div class="update-content">
-        <div class="update-text"><strong>Victor Gideon guide</strong> — added no-damage strategy and v1.02 patch notes</div>
-        <div class="update-date">May 10, 2026</div>
-      </div>
-    </a>
-    <a href="speedrun-guide-sub-4-hours.html" class="update-row">
-      <span class="update-tag tag-new">NEW</span>
-      <div class="update-content">
-        <div class="update-text"><strong>Speedrun guide</strong> — sub-4-hour route with mandatory skips and Insanity stack strategy</div>
-        <div class="update-date">May 10, 2026</div>
-      </div>
-    </a>
-    <a href="ng-plus-final-puzzle-rna-solution.html" class="update-row">
-      <span class="update-tag tag-new">NEW</span>
-      <div class="update-content">
-        <div class="update-text"><strong>NG+ Final Puzzle</strong> — Severed Hand RNA sequence decoded</div>
-        <div class="update-date">May 10, 2026</div>
-      </div>
-    </a>
-  </div>
+<div class="sec-title-row">
+<div class="sec-title" style="margin-bottom:0;">Latest updates</div>
+<div class="sec-subtitle">// VERIFIED ON v1.02 PATCH</div>
 </div>
-
+<div class="update-feed">
+<a href="insanity-chapter-walkthrough.html" class="update-row">
+<span class="update-tag tag-new">NEW</span>
+<div class="update-content">
+<div class="update-text"><strong>Insanity chapter walkthrough</strong> — 7 chapters of survival strategies for Remarkable Agent trophy</div>
+<div class="update-date">May 11, 2026</div>
+</div>
+</a>
+<a href="ark-facility-complete-walkthrough.html" class="update-row">
+<span class="update-tag tag-new">NEW</span>
+<div class="update-content">
+<div class="update-text"><strong>ARK Facility complete walkthrough</strong> — chapter-by-chapter from Plant 43 to Victor Gideon</div>
+<div class="update-date">May 11, 2026</div>
+</div>
+</a>
+<a href="all-75-files-locations-guide.html" class="update-row">
+<span class="update-tag tag-new">NEW</span>
+<div class="update-content">
+<div class="update-text"><strong>All 75 Files locations guide</strong> — every File across 4 areas with missable warnings</div>
+<div class="update-date">May 10, 2026</div>
+</div>
+</a>
+<a href="all-bosses-ranked-by-difficulty.html" class="update-row">
+<span class="update-tag tag-new">NEW</span>
+<div class="update-content">
+<div class="update-text"><strong>Boss difficulty ranking</strong> — all 10 bosses ranked from easiest to hardest</div>
+<div class="update-date">May 10, 2026</div>
+</div>
+</a>
+<a href="all-5-safe-codes-guide.html" class="update-row">
+<span class="update-tag tag-verify">VERIFIED</span>
+<div class="update-content">
+<div class="update-text"><strong>Safe codes</strong> — verified for both Normal and Insanity on v1.02</div>
+<div class="update-date">May 10, 2026</div>
+</div>
+</a>
+<a href="how-to-beat-victor-gideon.html" class="update-row">
+<span class="update-tag tag-update">UPDATED</span>
+<div class="update-content">
+<div class="update-text"><strong>Victor Gideon guide</strong> — added no-damage strategy and v1.02 patch notes</div>
+<div class="update-date">May 10, 2026</div>
+</div>
+</a>
+<a href="speedrun-guide-sub-4-hours.html" class="update-row">
+<span class="update-tag tag-new">NEW</span>
+<div class="update-content">
+<div class="update-text"><strong>Speedrun guide</strong> — sub-4-hour route with mandatory skips and Insanity stack strategy</div>
+<div class="update-date">May 10, 2026</div>
+</div>
+</a>
+<a href="ng-plus-final-puzzle-rna-solution.html" class="update-row">
+<span class="update-tag tag-new">NEW</span>
+<div class="update-content">
+<div class="update-text"><strong>NG+ Final Puzzle</strong> — Severed Hand RNA sequence decoded</div>
+<div class="update-date">May 10, 2026</div>
+</div>
+</a>
+</div>
+</div>
 <!-- SECTION 6: GAME AT A GLANCE (clickable) -->
 <div class="section">
-  <div class="sec-title">Game at a glance</div>
-  <div class="stats-grid">
-    <a href="all-bosses-ranked-by-difficulty.html" class="stat-card">
-      <div class="stat-num">10</div>
-      <div class="stat-label">BOSSES</div>
-      <div class="stat-hint">→ Ranked guide</div>
-    </a>
-    <a href="best-weapons-tier-list.html" class="stat-card">
-      <div class="stat-num">17</div>
-      <div class="stat-label">WEAPONS</div>
-      <div class="stat-hint">→ Tier list</div>
-    </a>
-    <a href="all-25-mr-raccoon-locations.html" class="stat-card">
-      <div class="stat-num">25</div>
-      <div class="stat-label">RACCOONS</div>
-      <div class="stat-hint">→ Locations</div>
-    </a>
-    <a href="all-49-trophies-platinum-guide.html" class="stat-card">
-      <div class="stat-num">49</div>
-      <div class="stat-label">TROPHIES</div>
-      <div class="stat-hint">→ Platinum path</div>
-    </a>
-    <a href="all-75-files-locations-guide.html" class="stat-card">
-      <div class="stat-num">75</div>
-      <div class="stat-label">FILES</div>
-      <div class="stat-hint">→ Case Closed</div>
-    </a>
-    <a href="all-22-antique-coins-locations.html" class="stat-card">
-      <div class="stat-num">22</div>
-      <div class="stat-label">COINS</div>
-      <div class="stat-hint">→ Coin Collector</div>
-    </a>
-  </div>
+<div class="sec-title">Game at a glance</div>
+<div class="stats-grid">
+<a href="all-bosses-ranked-by-difficulty.html" class="stat-card">
+<div class="stat-num">10</div>
+<div class="stat-label">BOSSES</div>
+<div class="stat-hint">→ Ranked guide</div>
+</a>
+<a href="best-weapons-tier-list.html" class="stat-card">
+<div class="stat-num">17</div>
+<div class="stat-label">WEAPONS</div>
+<div class="stat-hint">→ Tier list</div>
+</a>
+<a href="all-25-mr-raccoon-locations.html" class="stat-card">
+<div class="stat-num">25</div>
+<div class="stat-label">RACCOONS</div>
+<div class="stat-hint">→ Locations</div>
+</a>
+<a href="all-49-trophies-platinum-guide.html" class="stat-card">
+<div class="stat-num">49</div>
+<div class="stat-label">TROPHIES</div>
+<div class="stat-hint">→ Platinum path</div>
+</a>
+<a href="all-75-files-locations-guide.html" class="stat-card">
+<div class="stat-num">75</div>
+<div class="stat-label">FILES</div>
+<div class="stat-hint">→ Case Closed</div>
+</a>
+<a href="all-22-antique-coins-locations.html" class="stat-card">
+<div class="stat-num">22</div>
+<div class="stat-label">COINS</div>
+<div class="stat-hint">→ Coin Collector</div>
+</a>
 </div>
-
+</div>
 <!-- SECTION 7: ROADMAP (productized) -->
 <div class="section">
-  <div class="sec-title-row">
-    <div class="sec-title" style="margin-bottom:0;">What's coming next</div>
-    <div class="sec-subtitle">// UPDATED WEEKLY</div>
-  </div>
-  <div class="roadmap-list">
-    <div class="roadmap-item">
-      <span class="status-tag status-released">RELEASED</span>
-      <div class="roadmap-content">
-        <div class="roadmap-title">All 75 Files locations guide</div>
-        <div class="roadmap-meta">Q2 2026 · 18th article published</div>
-      </div>
-    </div>
-    <div class="roadmap-item">
-      <span class="status-tag status-released">RELEASED</span>
-      <div class="roadmap-content">
-        <div class="roadmap-title">Sub-4-hour speedrun guide</div>
-        <div class="roadmap-meta">Q2 2026 · with Infinite Ammo strategy</div>
-      </div>
-    </div>
-    <div class="roadmap-item">
-      <span class="status-tag status-released">RELEASED</span>
-      <div class="roadmap-content">
-        <div class="roadmap-title"><a href="ark-facility-complete-walkthrough.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">ARK Facility full walkthrough</a></div>
-        <div class="roadmap-meta">Q2 2026 · 15 min read · step-by-step</div>
-      </div>
-    </div>
-    <div class="roadmap-item">
-      <span class="status-tag status-released">RELEASED</span>
-      <div class="roadmap-content">
-        <div class="roadmap-title"><a href="insanity-chapter-walkthrough.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">Insanity difficulty walkthrough by chapter</a></div>
-        <div class="roadmap-meta">Q3 2026 · with parry windows · 7-chapter format</div>
-      </div>
-    </div>
-    <div class="roadmap-item">
-      <span class="status-tag status-planned">PLANNED</span>
-      <div class="roadmap-content">
-        <div class="roadmap-title">"Leon Must Die Forever" mode coverage</div>
-        <div class="roadmap-meta">Q3 2026 · roguelite mode</div>
-      </div>
-    </div>
-    <div class="roadmap-item">
-      <span class="status-tag status-planned">PLANNED</span>
-      <div class="roadmap-content">
-        <div class="roadmap-title">DLC same-day patch coverage</div>
-        <div class="roadmap-meta">When Capcom announces</div>
-      </div>
-    </div>
-  </div>
+<div class="sec-title-row">
+<div class="sec-title" style="margin-bottom:0;">What's coming next</div>
+<div class="sec-subtitle">// UPDATED WEEKLY</div>
 </div>
-
+<div class="roadmap-list">
+<div class="roadmap-item">
+<span class="status-tag status-released">RELEASED</span>
+<div class="roadmap-content">
+<div class="roadmap-title">All 75 Files locations guide</div>
+<div class="roadmap-meta">Q2 2026 · 18th article published</div>
+</div>
+</div>
+<div class="roadmap-item">
+<span class="status-tag status-released">RELEASED</span>
+<div class="roadmap-content">
+<div class="roadmap-title">Sub-4-hour speedrun guide</div>
+<div class="roadmap-meta">Q2 2026 · with Infinite Ammo strategy</div>
+</div>
+</div>
+<div class="roadmap-item">
+<span class="status-tag status-released">RELEASED</span>
+<div class="roadmap-content">
+<div class="roadmap-title"><a href="ark-facility-complete-walkthrough.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">ARK Facility full walkthrough</a></div>
+<div class="roadmap-meta">Q2 2026 · 15 min read · step-by-step</div>
+</div>
+</div>
+<div class="roadmap-item">
+<span class="status-tag status-released">RELEASED</span>
+<div class="roadmap-content">
+<div class="roadmap-title"><a href="insanity-chapter-walkthrough.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">Insanity difficulty walkthrough by chapter</a></div>
+<div class="roadmap-meta">Q3 2026 · with parry windows · 7-chapter format</div>
+</div>
+</div>
+<div class="roadmap-item">
+<span class="status-tag status-planned">PLANNED</span>
+<div class="roadmap-content">
+<div class="roadmap-title">"Leon Must Die Forever" mode coverage</div>
+<div class="roadmap-meta">Q3 2026 · roguelite mode</div>
+</div>
+</div>
+<div class="roadmap-item">
+<span class="status-tag status-planned">PLANNED</span>
+<div class="roadmap-content">
+<div class="roadmap-title">DLC same-day patch coverage</div>
+<div class="roadmap-meta">When Capcom announces</div>
+</div>
+</div>
+</div>
+</div>
 <!-- SECTION 8: FEEDBACK CTA -->
 <div class="section">
-  <div class="feedback-banner">
-    <h2 class="feedback-title">Spotted outdated info?</h2>
-    <p class="feedback-desc">Send corrections, missing items, or new strategies. We review community reports weekly and update guides based on what real players find.</p>
-    <div class="feedback-actions">
-      <a href="mailto:re9uiem@re9guide.it.com?subject=Site%20Feedback" class="btn btn-primary">📨 Send Feedback</a>
-      <a href="mailto:re9uiem@re9guide.it.com?subject=Missing%20Collectible" class="btn btn-secondary">Report Missing Collectible</a>
-    </div>
-  </div>
+<div class="feedback-banner">
+<h2 class="feedback-title">Spotted outdated info?</h2>
+<p class="feedback-desc">Send corrections, missing items, or new strategies. We review community reports weekly and update guides based on what real players find.</p>
+<div class="feedback-actions">
+<a href="mailto:re9uiem@re9guide.it.com?subject=Site%20Feedback" class="btn btn-primary">📨 Send Feedback</a>
+<a href="mailto:re9uiem@re9guide.it.com?subject=Missing%20Collectible" class="btn btn-secondary">Report Missing Collectible</a>
 </div>
-
+</div>
+</div>
 <!-- SECTION 9: TRUST & DISCLAIMER -->
 <div class="section">
-  <div class="trust-row">
-    <span class="trust-pill"><span class="green-dot"></span>Last site update: May 10, 2026</span>
-    <span class="trust-pill"><span class="green-dot"></span>Tested on: Normal &amp; Insanity</span>
-    <span class="trust-pill"><span class="green-dot"></span>Game version: v1.02</span>
-    <span class="trust-pill"><span class="green-dot"></span>Hand-written, no AI fluff</span>
-    <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" class="trust-pill" style="text-decoration:none;color:var(--gold);border-color:rgba(186,117,23,0.4);background:rgba(186,117,23,0.06);">☕ Support on Ko-fi</a>
-  </div>
-  <div class="trust-text">
-    <strong>re9guide.it.com</strong> is a fan-made guide for Resident Evil: Requiem (RE9), released February 27, 2026. We cover boss strategies, collectible locations, puzzle solutions, weapon stats, and trophy guides for both Grace Ashcroft and Leon S. Kennedy's campaigns. Hand-written, ad-light, updated weekly.
-  </div>
+<div class="trust-row">
+<span class="trust-pill"><span class="green-dot"></span>Last site update: May 10, 2026</span>
+<span class="trust-pill"><span class="green-dot"></span>Tested on: Normal &amp; Insanity</span>
+<span class="trust-pill"><span class="green-dot"></span>Game version: v1.02</span>
+<span class="trust-pill"><span class="green-dot"></span>Hand-written, no AI fluff</span>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" class="trust-pill" style="text-decoration:none;color:var(--gold);border-color:rgba(186,117,23,0.4);background:rgba(186,117,23,0.06);">☕ Support on Ko-fi</a>
 </div>
-
+<div class="trust-text">
+<strong>re9guide.it.com</strong> is a fan-made guide for Resident Evil: Requiem (RE9), released February 27, 2026. We cover boss strategies, collectible locations, puzzle solutions, weapon stats, and trophy guides for both Grace Ashcroft and Leon S. Kennedy's campaigns. Hand-written, ad-light, updated weekly.
 </div>
-
+</div>
+</div>
 <!-- FOOTER -->
 <div class="footer">
-  <p>re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
-  <p><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a> · <a href="dmca.html">DMCA</a> · <a href="spoiler-policy.html">Spoiler Policy</a></p>
-  <p style="font-size:10px;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
+<p>re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
+<p><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a> · <a href="dmca.html">DMCA</a> · <a href="spoiler-policy.html">Spoiler Policy</a></p>
+<p style="font-size:10px;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
 </div>
-
 </body>
 </html>
