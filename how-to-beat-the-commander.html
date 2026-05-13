@@ -84,58 +84,8 @@ ol li strong{color:var(--text);}
 @media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}.attack-row{grid-template-columns:90px 1fr 50px;}}
 </style>
 
-<!-- Structured data: Article schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "How to Beat The Commander (HUNK) — RE9",
-  "description": "Strategy for the HUNK-type boss with parry timing and Mortal Edge unlock.",
-  "image": "https://www.re9guide.it.com/og-image.png",
-  "author": {
-    "@type": "Person",
-    "name": "Jachin",
-    "url": "https://www.re9guide.it.com/about.html"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "re9guide.it.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.re9guide.it.com/og-image.png"
-    }
-  },
-  "datePublished": "2026-05-10",
-  "dateModified": "2026-05-10",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/how-to-beat-the-commander.html"
-  },
-  "wordCount": 1700,
-  "inLanguage": "en",
-  "about": {
-    "@type": "VideoGame",
-    "name": "Resident Evil: Requiem",
-    "alternateName": "Resident Evil 9",
-    "publisher": "Capcom"
-  }
-}
-</script>
 
-<!-- Structured data: BreadcrumbList -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.re9guide.it.com/"},
-    {"@type": "ListItem", "position": 2, "name": "Bosses Hub", "item": "https://www.re9guide.it.com/bosses-hub.html"},
-    {"@type": "ListItem", "position": 3, "name": "The Commander"}
-  ]
-}
-</script>
-
-<!-- ==== SEO structured data injected by transform.py ==== -->
+<!-- ==== Clean structured data (v2 cleanup, ISO 8601 + timezone) ==== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -164,7 +114,7 @@ ol li strong{color:var(--text);}
     }
   },
   "datePublished": "2026-05-01T00:00:00+09:00",
-  "dateModified": "2026-05-10T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/how-to-beat-the-commander.html"
@@ -210,7 +160,6 @@ ol li strong{color:var(--text);}
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "How to Beat The Commander in Resident Evil Requiem",
-  "description": "Strategy guide for The Commander, the mid-game boss in Resident Evil: Requiem (RE9).",
   "image": "https://www.re9guide.it.com/og-image.png",
   "totalTime": "PT12M",
   "estimatedCost": {
@@ -222,20 +171,17 @@ ol li strong{color:var(--text);}
     {
       "@type": "HowToStep",
       "name": "Pre-fight setup",
-      "text": "Stock up at the last Supply Box before the ARK descent. Equip your strongest hatchet for parry-counters.",
-      "url": "https://www.re9guide.it.com/how-to-beat-the-commander.html#step1"
+      "text": "Stock up at the last Supply Box before the ARK descent. Equip your strongest hatchet for parry-counters."
     },
     {
       "@type": "HowToStep",
       "name": "Phase 1 - Tactical engagement",
-      "text": "Stay mobile. The Commander telegraphs all melee attacks; parry the slow swings and counter with shotgun blasts.",
-      "url": "https://www.re9guide.it.com/how-to-beat-the-commander.html#step2"
+      "text": "Stay mobile. The Commander telegraphs all melee attacks; parry the slow swings and counter with shotgun blasts."
     },
     {
       "@type": "HowToStep",
       "name": "Phase 2 - Pressure window",
-      "text": "After staggering, dump heavy weapon damage. Mortal Edge Hatchet drops here as a reward — collect it before the door seals.",
-      "url": "https://www.re9guide.it.com/how-to-beat-the-commander.html#step3"
+      "text": "After staggering, dump heavy weapon damage. Mortal Edge Hatchet drops here as a reward — collect it before the door seals."
     }
   ],
   "supply": [
@@ -264,64 +210,6 @@ ol li strong{color:var(--text);}
     {
       "@type": "HowToTool",
       "name": "Default Hatchet"
-    }
-  ]
-}
-</script>
-
-<!-- ==== FAQPage schema ==== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is The Commander mandatory or can I skip him?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Commander is a story-required boss in the ARK descent and cannot be skipped. He drops the Mortal Edge Hatchet on defeat — this upgrade is functionally mandatory for the Victor Gideon final fight on Insanity. Even on Standard, skipping is impossible; the cutscene gates progress until he is defeated."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where exactly do I get the Mortal Edge Hatchet from him?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Mortal Edge Hatchet spawns as a body pickup at his death location — center of the ARK access bay. The pickup prompt appears immediately when the cutscene ends. If you accidentally walk past without collecting it, the item persists indefinitely on that spot — return any time before the ARK final platform collapses."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What's the best parry timing for his combo attacks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Parry the third hit of his three-hit combo, not the first or second. His third strike has a 28-frame parry window (about 0.5 seconds at 60fps) — twice as generous as the first two. Counter immediately with shotgun or Requiem Revolver for a guaranteed stagger."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can he be killed without taking damage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, on Standard difficulty. The no-damage strategy requires Mortal Edge Hatchet (impossible without it) and patience — only attack during parry-counter windows and during his post-charge stagger animation. Pro speedrunners clear him no-damage in roughly 7-9 minutes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does The Commander appear differently in Insanity?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Mechanically identical but damage is multiplied roughly 2.5x and his parry windows are reduced by ~6 frames. The combo timings are unchanged, so muscle memory from your Standard playthrough still works — you just punish failure more severely. Bring an extra First Aid Spray."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What weapons should I bring to The Commander fight?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Default Hatchet for parry-counters (Mortal Edge unlocks after this fight, not before), MSBG 500 Shotgun for stagger punishes, Requiem Revolver for ranged precision shots when he charges. Skip handguns and SMGs entirely — their damage output is too low to matter in the windows he gives you."
-      }
     }
   ]
 }
@@ -505,18 +393,6 @@ ol li strong{color:var(--text);}
 <p>After defeating The Commander, Leon proceeds deeper into the ARK Facility. Your final encounter is <strong>Dr. Victor Gideon</strong> — the true final boss and the hardest fight in the game.</p>
 
 <p>Before triggering Victor's cutscene, sweep the corridor for the Mr. Raccoon Memoriam (#23 in our locations guide), files, and any remaining ammo pickups. Once you enter Victor's chamber, there is no going back.</p>
-
-
-<!-- ==== FAQ section ==== -->
-<section id="faq" style="margin:32px 0 16px;">
-<h2 style="font-size:20px;font-weight:normal;color:#f0ebe8;margin:32px 0 14px;padding-top:24px;border-top:0.5px solid rgba(192,57,43,0.18);">Frequently asked questions</h2>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">Is The Commander mandatory or can I skip him?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">The Commander is a story-required boss in the ARK descent and cannot be skipped. He drops the Mortal Edge Hatchet on defeat — this upgrade is functionally mandatory for the Victor Gideon final fight on Insanity. Even on Standard, skipping is impossible; the cutscene gates progress until he is defeated.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">Where exactly do I get the Mortal Edge Hatchet from him?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">The Mortal Edge Hatchet spawns as a body pickup at his death location — center of the ARK access bay. The pickup prompt appears immediately when the cutscene ends. If you accidentally walk past without collecting it, the item persists indefinitely on that spot — return any time before the ARK final platform collapses.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">What's the best parry timing for his combo attacks?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Parry the third hit of his three-hit combo, not the first or second. His third strike has a 28-frame parry window (about 0.5 seconds at 60fps) — twice as generous as the first two. Counter immediately with shotgun or Requiem Revolver for a guaranteed stagger.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">Can he be killed without taking damage?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Yes, on Standard difficulty. The no-damage strategy requires Mortal Edge Hatchet (impossible without it) and patience — only attack during parry-counter windows and during his post-charge stagger animation. Pro speedrunners clear him no-damage in roughly 7-9 minutes.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">Does The Commander appear differently in Insanity?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Mechanically identical but damage is multiplied roughly 2.5x and his parry windows are reduced by ~6 frames. The combo timings are unchanged, so muscle memory from your Standard playthrough still works — you just punish failure more severely. Bring an extra First Aid Spray.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">What weapons should I bring to The Commander fight?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Default Hatchet for parry-counters (Mortal Edge unlocks after this fight, not before), MSBG 500 Shotgun for stagger punishes, Requiem Revolver for ranged precision shots when he charges. Skip handguns and SMGs entirely — their damage output is too low to matter in the windows he gives you.</p></details>
-</section>
 <div class="cta">
   <div class="cta-title">RELATED GUIDES</div>
   <a href="how-to-beat-victor-gideon.html">How to Beat Victor Gideon</a>

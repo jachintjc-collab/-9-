@@ -87,58 +87,8 @@ ol li strong{color:var(--text);}
 @media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}}
 </style>
 
-<!-- Structured data: Article schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "How to Beat Plant 43 — RE9 Boss Guide",
-  "description": "Plant 43 weak points, cinematic finisher, and Insanity tips.",
-  "image": "https://www.re9guide.it.com/og-image.png",
-  "author": {
-    "@type": "Person",
-    "name": "Jachin",
-    "url": "https://www.re9guide.it.com/about.html"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "re9guide.it.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.re9guide.it.com/og-image.png"
-    }
-  },
-  "datePublished": "2026-05-10",
-  "dateModified": "2026-05-10",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/how-to-beat-plant-43.html"
-  },
-  "wordCount": 1500,
-  "inLanguage": "en",
-  "about": {
-    "@type": "VideoGame",
-    "name": "Resident Evil: Requiem",
-    "alternateName": "Resident Evil 9",
-    "publisher": "Capcom"
-  }
-}
-</script>
 
-<!-- Structured data: BreadcrumbList -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.re9guide.it.com/"},
-    {"@type": "ListItem", "position": 2, "name": "Bosses Hub", "item": "https://www.re9guide.it.com/bosses-hub.html"},
-    {"@type": "ListItem", "position": 3, "name": "Plant 43"}
-  ]
-}
-</script>
-
-<!-- ==== SEO structured data injected by transform.py ==== -->
+<!-- ==== Clean structured data (v2 cleanup, ISO 8601 + timezone) ==== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -167,7 +117,7 @@ ol li strong{color:var(--text);}
     }
   },
   "datePublished": "2026-05-01T00:00:00+09:00",
-  "dateModified": "2026-05-10T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/how-to-beat-plant-43.html"
@@ -213,7 +163,6 @@ ol li strong{color:var(--text);}
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "How to Beat Plant 43 in Resident Evil Requiem",
-  "description": "Strategy guide for Plant 43, the mutated plant boss in Resident Evil: Requiem (RE9).",
   "image": "https://www.re9guide.it.com/og-image.png",
   "totalTime": "PT10M",
   "estimatedCost": {
@@ -225,20 +174,17 @@ ol li strong{color:var(--text);}
     {
       "@type": "HowToStep",
       "name": "Burn the pustules",
-      "text": "Fire damage destroys Plant 43 weak points 2x faster. Save your incendiary rounds for this fight.",
-      "url": "https://www.re9guide.it.com/how-to-beat-plant-43.html#step1"
+      "text": "Fire damage destroys Plant 43 weak points faster. Save your incendiary rounds for this fight."
     },
     {
       "@type": "HowToStep",
       "name": "Avoid root attacks",
-      "text": "Stay on platform edges. Center floor tiles will spawn root grabs during pustule waves.",
-      "url": "https://www.re9guide.it.com/how-to-beat-plant-43.html#step2"
+      "text": "Stay on platform edges. Center floor tiles will spawn root grabs during pustule waves."
     },
     {
       "@type": "HowToStep",
       "name": "Core damage phase",
-      "text": "Once 3 pustules are destroyed, the central core opens. Empty heavy weapon ammo here before the next wave.",
-      "url": "https://www.re9guide.it.com/how-to-beat-plant-43.html#step3"
+      "text": "Once the pustules are destroyed, the central core opens. Empty heavy weapon ammo here."
     }
   ],
   "supply": [
@@ -266,65 +212,7 @@ ol li strong{color:var(--text);}
     },
     {
       "@type": "HowToTool",
-      "name": "Flame Rounds (if available)"
-    }
-  ]
-}
-</script>
-
-<!-- ==== FAQPage schema ==== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why is fire damage so important against Plant 43?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Plant 43's pustules have a hidden 'plant tissue' damage type weakness — fire deals 2.2x damage versus normal ammo. Each pustule that takes 4 incendiary rounds would otherwise take 9 standard shotgun shells. On Insanity, fire damage is effectively required to stay within ammo budget."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where do I find incendiary rounds before this fight?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Two reliable sources: the Care Center Pharmacy unlocks 5 incendiary rounds via the Quartz Puzzle Box solution, and the optional Pump Room hidden cache (behind the breakable wooden wall) holds 8 more. Combined with crafting from Red Herb + Gunpowder, you can enter Plant 43 with 15+ incendiary rounds."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What's the safest way to handle the root grab attack?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Stay on the platform edge tiles — center floor tiles are the only ones that spawn root grabs. The visual tell is a yellow glow on the floor ~2 seconds before the root erupts; sprint perpendicular to the platform center to escape. Getting grabbed costs 30% HP and 4 seconds of recovery time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I beat Plant 43 without burning the pustules?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes but it doubles fight duration and triples ammo cost. Standard ammo against pustules works on Casual/Standard — on Hardcore and Insanity, it is mathematically impossible to clear all 3 pustule waves with conventional ammo unless you have the Infinite Requiem Revolver from a previous Platinum run."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What rewards does defeating Plant 43 unlock?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Access to the ARK Facility entry corridor (mandatory story progression), the 'Botanical Hazard' trophy (Bronze), and the unique 'Spore Lens' weapon scope that boosts ranged damage by 12% — equip this immediately and keep it for the rest of the game."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does this fight take on Insanity?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "10-14 minutes if you have full incendiary stock and the Spore Lens from a prior run. 18-25 minutes on a blind Insanity attempt with conventional ammo. Speedrunners with Infinite Ammo clear Plant 43 in 90 seconds — this is one of the biggest time skips in the sub-4-hour route."
-      }
+      "name": "Flame Rounds"
     }
   ]
 }
@@ -506,18 +394,6 @@ ol li strong{color:var(--text);}
 <p>After Plant 43 falls, Leon enters the ARK Facility's interior corridors. Your next major encounter is <strong>The Commander</strong> — the second-hardest fight in the game and the source of the <em>Mortal Edge Hatchet</em> (mandatory for the Victor Gideon final boss).</p>
 
 <p>Don't skip Plant 43's drop pickups — Hand Grenades and Requiem Bullets sometimes drop from the corpse. Sweep the area before exiting.</p>
-
-
-<!-- ==== FAQ section ==== -->
-<section id="faq" style="margin:32px 0 16px;">
-<h2 style="font-size:20px;font-weight:normal;color:#f0ebe8;margin:32px 0 14px;padding-top:24px;border-top:0.5px solid rgba(192,57,43,0.18);">Frequently asked questions</h2>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">Why is fire damage so important against Plant 43?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Plant 43's pustules have a hidden 'plant tissue' damage type weakness — fire deals 2.2x damage versus normal ammo. Each pustule that takes 4 incendiary rounds would otherwise take 9 standard shotgun shells. On Insanity, fire damage is effectively required to stay within ammo budget.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">Where do I find incendiary rounds before this fight?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Two reliable sources: the Care Center Pharmacy unlocks 5 incendiary rounds via the Quartz Puzzle Box solution, and the optional Pump Room hidden cache (behind the breakable wooden wall) holds 8 more. Combined with crafting from Red Herb + Gunpowder, you can enter Plant 43 with 15+ incendiary rounds.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">What's the safest way to handle the root grab attack?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Stay on the platform edge tiles — center floor tiles are the only ones that spawn root grabs. The visual tell is a yellow glow on the floor ~2 seconds before the root erupts; sprint perpendicular to the platform center to escape. Getting grabbed costs 30% HP and 4 seconds of recovery time.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">Can I beat Plant 43 without burning the pustules?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Yes but it doubles fight duration and triples ammo cost. Standard ammo against pustules works on Casual/Standard — on Hardcore and Insanity, it is mathematically impossible to clear all 3 pustule waves with conventional ammo unless you have the Infinite Requiem Revolver from a previous Platinum run.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">What rewards does defeating Plant 43 unlock?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Access to the ARK Facility entry corridor (mandatory story progression), the 'Botanical Hazard' trophy (Bronze), and the unique 'Spore Lens' weapon scope that boosts ranged damage by 12% — equip this immediately and keep it for the rest of the game.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">How long does this fight take on Insanity?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">10-14 minutes if you have full incendiary stock and the Spore Lens from a prior run. 18-25 minutes on a blind Insanity attempt with conventional ammo. Speedrunners with Infinite Ammo clear Plant 43 in 90 seconds — this is one of the biggest time skips in the sub-4-hour route.</p></details>
-</section>
 <div class="cta">
   <div class="cta-title">RELATED GUIDES</div>
   <a href="how-to-beat-victor-gideon.html">How to Beat Victor Gideon</a>

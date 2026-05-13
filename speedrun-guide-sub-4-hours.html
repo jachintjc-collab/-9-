@@ -77,58 +77,8 @@ ol li{padding:5px 0;font-size:15px;line-height:1.7;}
 @media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}.split-row{grid-template-columns:90px 1fr 50px 60px;font-size:11px;}}
 </style>
 
-<!-- Structured data: Article schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Speedrun Guide Sub 4 Hours — RE9",
-  "description": "Optimal speedrun route with mandatory skips and Insanity strategy.",
-  "image": "https://www.re9guide.it.com/og-image.png",
-  "author": {
-    "@type": "Person",
-    "name": "Jachin",
-    "url": "https://www.re9guide.it.com/about.html"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "re9guide.it.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.re9guide.it.com/og-image.png"
-    }
-  },
-  "datePublished": "2026-05-10",
-  "dateModified": "2026-05-10",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html"
-  },
-  "wordCount": 2000,
-  "inLanguage": "en",
-  "about": {
-    "@type": "VideoGame",
-    "name": "Resident Evil: Requiem",
-    "alternateName": "Resident Evil 9",
-    "publisher": "Capcom"
-  }
-}
-</script>
 
-<!-- Structured data: BreadcrumbList -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.re9guide.it.com/"},
-    {"@type": "ListItem", "position": 2, "name": "Trophies Hub", "item": "https://www.re9guide.it.com/trophies-hub.html"},
-    {"@type": "ListItem", "position": 3, "name": "Speedrun Guide"}
-  ]
-}
-</script>
-
-<!-- ==== SEO structured data injected by transform.py ==== -->
+<!-- ==== Clean structured data (v2 cleanup, ISO 8601 + timezone) ==== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -157,7 +107,7 @@ ol li{padding:5px 0;font-size:15px;line-height:1.7;}
     }
   },
   "datePublished": "2026-05-01T00:00:00+09:00",
-  "dateModified": "2026-05-10T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html"
@@ -203,7 +153,6 @@ ol li{padding:5px 0;font-size:15px;line-height:1.7;}
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "Sub-4-Hour Speedrun Route for Resident Evil Requiem",
-  "description": "Step-by-step speedrun route to clear Resident Evil: Requiem in under 4 hours.",
   "image": "https://www.re9guide.it.com/og-image.png",
   "totalTime": "PT4H",
   "estimatedCost": {
@@ -215,20 +164,17 @@ ol li{padding:5px 0;font-size:15px;line-height:1.7;}
     {
       "@type": "HowToStep",
       "name": "Skip optional collectibles",
-      "text": "Ignore Antique Coins, optional Files, and side conversations during the speedrun. Only collect mandatory items.",
-      "url": "https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html#step1"
+      "text": "Ignore Antique Coins, optional Files, and side conversations during the speedrun."
     },
     {
       "@type": "HowToStep",
-      "name": "Skip The Commander on first try",
-      "text": "If unable to beat The Commander cleanly, suffer the time loss vs reloading. The fight averages 8-12 minutes either way.",
-      "url": "https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html#step2"
+      "name": "Skip The Commander on first try if possible",
+      "text": "If unable to beat The Commander cleanly, the time loss vs reloading is similar."
     },
     {
       "@type": "HowToStep",
       "name": "Burn Infinite Ammo at Victor Gideon",
-      "text": "The final fight is the biggest single time sink. Use Infinite Requiem Revolver to nuke phase 2 pustules in seconds.",
-      "url": "https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html#step3"
+      "text": "The final fight is the biggest single time sink."
     }
   ],
   "supply": [
@@ -245,68 +191,6 @@ ol li{padding:5px 0;font-size:15px;line-height:1.7;}
     {
       "@type": "HowToTool",
       "name": "Mortal Edge Hatchet"
-    },
-    {
-      "@type": "HowToTool",
-      "name": "Marksman 1A"
-    }
-  ]
-}
-</script>
-
-<!-- ==== FAQPage schema ==== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What's the current world record speedrun time?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of v1.02 (May 2026), the verified Any% world record is 3h 22m 41s on PC by speedrunner 'reqRunner_2026'. The PS5 console record sits at 3h 41m 14s. Both runs use Infinite Requiem Revolver and the route detailed in this guide. Sub-4-hour clears are now considered the 'entry-level' speedrun bar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to use cheats for a sub-4 hour run?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Infinite Ammo (purchased from the Special Content Store after first clear) is functionally required for sub-4-hour pace. It is officially classified as 'Special Content' not a cheat — Capcom included it deliberately. Trophy progression is unaffected, so this is the recommended path."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can the Speedrunner trophy be done on Casual?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The Speedrunner trophy unlocks on ANY difficulty when the campaign is cleared under 5 hours. Stacking it on a Casual + Infinite Ammo run is the fastest path — you also get 'Apex Predator' if running Insanity. Casual is the 'cheap' trophy run for new speedrunners."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What's the most time-saving skip in the route?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Pump Room skip — entering at the precise jump-angle bypasses the entire optional sub-area (saves 6-8 minutes) without affecting any mandatory items. Frame-perfect on PS5 (1-frame window). PC players can map a macro for consistent execution. This skip alone is the difference between 4h 10m and sub-4h."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I pause the game during the speedrun timer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The in-game timer (visible from Special Content menu post-clear) does NOT pause during menus, cutscenes, or pause screen. Real-time clock runs unconditionally. For sub-4-hour pace, minimize all menu time — preset weapon shortcuts, never open the Map mid-run, and skip every skippable cutscene."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What's the optimal weapon to start with for speedruns?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Always start with the Requiem Revolver as your active weapon. The first 12 minutes of the campaign don't unlock anything stronger, so Revolver-first means you can immediately benefit from Infinite Ammo at the title screen (NG+ carryover). Switch to Mortal Edge Hatchet at the ARK descent for parries."
-      }
     }
   ]
 }
@@ -543,18 +427,6 @@ ol li{padding:5px 0;font-size:15px;line-height:1.7;}
   <li>"<strong>Speedrunner</strong>" Silver — Under 5 hours</li>
   <li>"<strong>Requiem Complete</strong>" Gold — Story complete (already done from your first run)</li>
 </ul>
-
-
-<!-- ==== FAQ section ==== -->
-<section id="faq" style="margin:32px 0 16px;">
-<h2 style="font-size:20px;font-weight:normal;color:#f0ebe8;margin:32px 0 14px;padding-top:24px;border-top:0.5px solid rgba(192,57,43,0.18);">Frequently asked questions</h2>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">What's the current world record speedrun time?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">As of v1.02 (May 2026), the verified Any% world record is 3h 22m 41s on PC by speedrunner 'reqRunner_2026'. The PS5 console record sits at 3h 41m 14s. Both runs use Infinite Requiem Revolver and the route detailed in this guide. Sub-4-hour clears are now considered the 'entry-level' speedrun bar.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">Do I need to use cheats for a sub-4 hour run?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Infinite Ammo (purchased from the Special Content Store after first clear) is functionally required for sub-4-hour pace. It is officially classified as 'Special Content' not a cheat — Capcom included it deliberately. Trophy progression is unaffected, so this is the recommended path.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">Can the Speedrunner trophy be done on Casual?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Yes. The Speedrunner trophy unlocks on ANY difficulty when the campaign is cleared under 5 hours. Stacking it on a Casual + Infinite Ammo run is the fastest path — you also get 'Apex Predator' if running Insanity. Casual is the 'cheap' trophy run for new speedrunners.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">What's the most time-saving skip in the route?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">The Pump Room skip — entering at the precise jump-angle bypasses the entire optional sub-area (saves 6-8 minutes) without affecting any mandatory items. Frame-perfect on PS5 (1-frame window). PC players can map a macro for consistent execution. This skip alone is the difference between 4h 10m and sub-4h.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">Can I pause the game during the speedrun timer?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">The in-game timer (visible from Special Content menu post-clear) does NOT pause during menus, cutscenes, or pause screen. Real-time clock runs unconditionally. For sub-4-hour pace, minimize all menu time — preset weapon shortcuts, never open the Map mid-run, and skip every skippable cutscene.</p></details>
-<details style="background:rgba(192,57,43,0.04);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px;padding:12px 18px;margin-bottom:8px;"><summary style="font-size:15px;color:#f0ebe8;list-style:none;position:relative;padding-right:22px;outline:none;cursor:pointer;"><strong style="color:#f0ebe8;font-weight:normal;">What's the optimal weapon to start with for speedruns?</strong></summary><p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed rgba(255,255,255,0.07);">Always start with the Requiem Revolver as your active weapon. The first 12 minutes of the campaign don't unlock anything stronger, so Revolver-first means you can immediately benefit from Infinite Ammo at the title screen (NG+ carryover). Switch to Mortal Edge Hatchet at the ARK descent for parries.</p></details>
-</section>
 <div class="cta">
   <div class="cta-title">RELATED GUIDES</div>
   <a href="how-to-unlock-insanity-difficulty.html">How to Unlock Insanity</a>
