@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/how-to-beat-victor-gideon.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-victor-gideon.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/how-to-beat-victor-gideon.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-victor-gideon.html" />
+<meta property="og:title" content="빅터 기드온 공략 (RE9 레퀴엠) — 최종 보스 가이드" />
+<meta property="og:description" content="레지던트 이블 레퀴엠(RE9) 최종 보스 빅터 기드온 공략. 두 페이즈, 인새니티 팁, 무기 구성, 노 데미지 전략." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-victor-gideon.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/infographic-victor-weakness.png" />
+<title>빅터 기드온 공략 (RE9 레퀴엠) — 최종 보스 가이드 (한국어)</title>
+<meta name="description" content="빅터 기드온 공략 — 레지던트 이블 레퀴엠(RE9)의 최종 보스. 두 페이즈, 인새니티 팁, 무기 구성, 노 데미지 전략. 한국어 공략." />
+<meta name="keywords" content="빅터 기드온 공략, RE9 최종 보스, 레지던트 이블 레퀴엠 보스, 인새니티 공략" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;}.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.lang-switch a{padding:3px 8px;border:0.5px solid var(--border);border-radius:3px;color:var(--text2);text-decoration:none;margin:0 2px;font-family:monospace;font-size:11px;}
+.lang-switch a.active{background:var(--red);color:#fff;border-color:var(--red);}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:26px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:28px 0 12px;padding-top:22px;border-top:0.5px solid var(--border);}
+h3{font-size:16px;color:var(--red);margin:18px 0 10px;font-family:monospace;letter-spacing:0.05em;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:20px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:bold;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}
+.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;color:var(--text2);line-height:1.5;flex-wrap:wrap;}
+.author-byline .byline-mark{font-size:11px;color:var(--text3);font-family:monospace;letter-spacing:0.08em;}
+.author-byline .byline-name{color:var(--text);}
+.author-byline .byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}
+.author-byline .byline-creds{color:var(--text3);font-size:12px;}
+.editorial-header{background:rgba(186,117,23,0.05);border:0.5px solid rgba(186,117,23,0.3);border-radius:4px;padding:10px 14px;margin:14px 0;font-size:11px;font-family:monospace;color:#b0a09a;line-height:1.7;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.8;}
+ol li strong{color:var(--text);}
+.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
+.boss-stats table{width:100%;font-size:14px;}
+.boss-stats td{padding:5px 0;color:var(--text2);}
+.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
+.boss-stats td strong{color:var(--text);}
+.tip-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:14px 0;}
+.tip-card{background:var(--surface);border-left:2px solid var(--red);padding:10px 14px;border-radius:0 4px 4px 0;}
+.tip-card h4{font-size:11px;font-family:monospace;color:var(--red);margin-bottom:4px;}
+.tip-card p{font-size:13px;color:var(--text2);line-height:1.7;margin:0;}
+.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
+.translation-note strong{color:var(--text);}
+.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
+.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+<!-- Korean Victor Gideon schemas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "빅터 기드온 공략 (RE9 레퀴엠) — 최종 보스 가이드",
+  "description": "레지던트 이블 레퀴엠(RE9)의 최종 보스 빅터 기드온 공략",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/infographic-victor-weakness.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-14T00:00:00+09:00",
+  "dateModified": "2026-05-14T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/ko/how-to-beat-victor-gideon.html"
+  },
+  "inLanguage": "ko-KR",
+  "translationOfWork": {
+    "@type": "CreativeWork",
+    "@id": "https://www.re9guide.it.com/how-to-beat-victor-gideon.html"
+  },
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem",
+    "alternateName": [
+      "RE9",
+      "레지던트 이블 레퀴엠"
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "홈",
+      "item": "https://www.re9guide.it.com/ko/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "보스",
+      "item": "https://www.re9guide.it.com/bosses-hub.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "빅터 기드온"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="nav">
+<a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
+<div style="display:flex;align-items:center;gap:14px;">
+<a href="index.html">← 모든 공략</a>
+<span class="lang-switch"><a href="https://www.re9guide.it.com/how-to-beat-victor-gideon.html">EN</a> <a href="" class="active">한국어</a></span>
+</div>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="../bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스 (영문)</a> / <span>빅터 기드온</span></div>
+<h1>빅터 기드온 공략 — 레지던트 이블: 레퀴엠 최종 보스 가이드 (RE9)</h1>
+<div class="meta">2026년 5월 14일 게시 · <span>10분 읽기</span> · 난이도: ★★★★ 잔혹 · 스포일러 포함</div>
+<div class="author-byline">
+<span class="byline-mark">// 작성자</span>
+<span class="byline-name"><a href="about.html">Jachin</a></span>
+<span class="byline-creds">· 서울 · v1.02 패치에서 모든 패리 윈도우 검증 · 한국어 직접 검수</span>
+</div>
+<div class="editorial-header">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:6px;">
+<div><span style="color:#706056;">편집자:</span> <span style="color:#f0ebe8;">Jachin (서울)</span></div>
+<div><span style="color:#706056;">게임 버전:</span> <span style="color:#f0ebe8;">v1.02 (2026년 5월 패치)</span></div>
+<div><span style="color:#706056;">최종 검증:</span> <span style="color:#ba7517;">2026-05-14</span></div>
+<div><span style="color:#706056;">분류:</span> <span style="color:#f0ebe8;">보스 공략 · 최종</span></div>
+</div>
+</div>
+<div class="translation-note"><strong>한국어판 안내:</strong> 이 공략은 영문 원본을 한국어로 옮기고 작성자(서울 거주)가 직접 검수했습니다. Mortal Edge, Insanity, NG+ 등 게임 내 영문 표기는 한국 RE 커뮤니티 관행에 따라 그대로 두었습니다.</div>
+<p class="lead">빅터 기드온 박사는 레지던트 이블: 레퀴엠의 진정한 최종 보스이며, 게임 전체에서 가장 어려운 전투입니다. 이 가이드는 두 페이즈, 정확한 공격 패턴, 무기 우선순위, 인새니티 난이도 팁 — 프로 플레이어가 사용하는 노 데미지 전략 포함 — 을 모두 다룹니다.</p>
+
+<div class="warn-box">
+⚠ 스포일러 등급: HIGH. 이 글은 RE9의 최종 보스를 다룹니다. 아직 게임을 클리어하지 않았다면 스포일러를 피하기 위해 먼저 플레이하시는 것을 권장합니다.
+</div>
+
+<div class="toc">
+<div class="toc-title">목차</div>
+<ul>
+<li><a href="#overview">보스 개요</a></li>
+<li><a href="#prep">전투 전 준비</a></li>
+<li><a href="#phase1">페이즈 1: 변이된 인간 형태</a></li>
+<li><a href="#phase2">페이즈 2: 네메시스 형태</a></li>
+<li><a href="#insanity">인새니티 난이도 팁</a></li>
+<li><a href="#nodmg">노 데미지 전략</a></li>
+<li><a href="#after">보상 및 후속 콘텐츠</a></li>
+</ul>
+</div>
+
+<h2 id="overview">보스 개요: 빅터 기드온은 누구인가?</h2>
+<p>빅터 기드온 박사는 로즈 힐 만성 케어 센터의 원장이자, 캠페인 전체에 걸쳐 배후에서 조종해 온 적대자입니다. 레온이 ARK 터미널에서 엘피스를 방출하면 — 그것이 동시에 T-바이러스의 치료제이기도 — 빅터는 인간성을 완전히 포기합니다. 왼팔을 거대한 변이 촉수로 교체하고 ARK 시설 바닥에서 마지막 결전을 펼칩니다.</p>
+<p>이 보스는 진정한 2단계 최종 보스입니다. 페이즈 1은 촉수 팔을 가진 인간형 빅터와의 통제된 근접전입니다. 페이즈 2는 그를 완전한 네메시스 클론으로 변신시킵니다 — 몸 전체에 빛나는 빨간 농포, 휩쓸어 치는 팔 공격, 긴장감 넘치는 QTE 피니셔.</p>
+
+<div class="boss-stats">
+<table>
+<tr><td>위치</td><td><strong>ARK 시설 — 최종 챔버</strong></td></tr>
+<tr><td>플레이 캐릭터</td><td><strong>레온 S. 케네디</strong></td></tr>
+<tr><td>필요 엔딩</td><td><strong>엘피스 방출</strong> (정통 엔딩)</td></tr>
+<tr><td>페이즈</td><td><strong>2</strong> (변이 인간 → 네메시스 형태)</td></tr>
+<tr><td>난이도</td><td><strong>★★★★ 잔혹</strong> — 게임 내 최난이도 보스전</td></tr>
+<tr><td>권장 무기</td><td><strong>모탈 엣지 손도끼, 레퀴엠 리볼버, MSBG 500 샷건</strong></td></tr>
+</table>
+</div>
+
+<h2 id="prep">전투 전 준비: 무방비로 들어가지 마세요</h2>
+<p>지난 10시간 동안 매그넘 탄환, 수류탄, 헤비 메디컬 인젝터를 모아 두셨다면, 바로 여기서 전부 소진하셔야 합니다. 빅터 기드온은 게임의 마지막 전투입니다 — 이 지점 이후로 자원을 아낄 이유가 없습니다.</p>
+<p>보스 아레나에 들어가기 전에 다음을 수행하세요:</p>
+<ol>
+<li><strong>남은 앤틱 코인을 모두 소비</strong>하세요. 마지막 보급 상자에서 회복 아이템, 레퀴엠 탄환, 샷건 셸을 최대한 채웁니다.</li>
+<li><strong>모탈 엣지 손도끼 장착</strong>. ARK에서 더 커맨더를 처치한 후 획득했어야 합니다. 레온의 기본 손도끼보다 훨씬 우수하며 주력 패리-카운터 무기가 됩니다. <em>커맨더 전을 건너뛰셨다면 이 시점 이전에 돌아가서 완료하세요.</em></li>
+<li><strong>손도끼를 최대 강화</strong>하세요. 데미지 업그레이드는 이 전투의 첫 30초 안에 본전을 뽑습니다.</li>
+<li><strong>최소 2개의 수류탄</strong>을 챙기세요. 페이즈 2에는 수류탄으로 즉시 정리할 수 있는 군집된 약점이 있습니다.</li>
+<li><strong>응급 처치 스프레이를 비축</strong>하세요. 맞을 겁니다. 최소 3개를 가지고 가세요.</li>
+</ol>
+
+<div class="warn-box gold">
+⚡ <strong>치트 팁:</strong> 스페셜 콘텐츠 스토어에서 무한 탄약 또는 무한 RPG를 해금했다면, 이 전투는 사소해집니다. RPG는 대부분의 보스 페이즈를 한 방에 제거합니다. 치트는 트로피를 무효화하지 <strong>않습니다</strong> — 인새니티에서도 안전하게 사용 가능합니다.
+</div>
+
+<h2 id="phase1">페이즈 1: 변이된 인간 형태</h2>
+<p>플랫폼이 무너지고 레온이 ARK 바닥에 착지하면, 빅터가 인간형으로 공격합니다. 변이된 촉수 팔, 적당한 이동 속도, 엄폐물과 장애물을 동시에 제공하는 고철 더미로 가득한 좁은 아레나를 가지고 있습니다.</p>
+
+<h3>// 공격 패턴 개요</h3>
+<p>빅터의 촉수 팔은 이 페이즈에서 4가지 주요 근접 공격을 제공합니다:</p>
+<ul class="normal">
+<li><strong>단일 휘두르기</strong> — 빠른 수평 공격, 패리 윈도우는 관대함.</li>
+<li><strong>이중 휘두르기</strong> — 연속 두 번 휘두르기; 둘 다 패리하거나, 첫 번째를 패리하고 두 번째를 회피.</li>
+<li><strong>3연타 콤보</strong> — 가장 큰 데미지. 셋 다 패리하거나 콤보 전체를 굴러서 피하세요.</li>
+<li><strong>찌르기 공격</strong> — 긴 거리를 커버. 마지막 순간에 패리하거나 옆으로 비키세요.</li>
+</ul>
+<p>이 모든 공격은 강하게 텔레그래프됩니다. 와인드업 프레임이 명확하게 보입니다. <strong>모탈 엣지 손도끼</strong>로 패리한 후, 즉시 레퀴엠 리볼버나 샷건의 사격으로 후속타를 넣으세요.</p>
+
+<h3>// 전기 공격 — 잡히지 마세요</h3>
+<p>주기적으로 빅터는 아레나 가장자리의 큰 고철 더미 위로 뛰어올라 순수 전기를 충전하기 시작합니다. 정확한 폭발 구역을 나타내는 밝게 빛나는 선이 바닥에 나타납니다.</p>
+<p>이 때 두 가지 선택이 있습니다:</p>
+<ol>
+<li><strong>충전 중 그를 사격</strong> — 결과적인 폭발 위력을 줄이지만, 좋은 탄약 낭비라고 봅니다.</li>
+<li><strong>빛나는 영역에서 스프린트로 빠져나가기</strong> — 권장. 바닥 마커를 보고, 안전한 지점으로 이동하고, 후속 점프-슬램에 대비하세요.</li>
+</ol>
+<p>전기 폭발 후, 빅터는 "슈퍼히어로 포즈"로 착지하고 약 2초간 움직이지 않습니다. <strong>이것이 페이즈 1의 가장 큰 데미지 윈도우입니다.</strong> 회복 중인 그의 머리에 레퀴엠 라운드를 비웁니다.</p>
+
+<h3>// 페이즈 1 전략</h3>
+<ol>
+<li>항상 <strong>아레나 중앙</strong>에 머무르세요. 중앙은 360° 회피 공간을 제공하고 약점을 더 빨리 발견할 수 있게 해줍니다.</li>
+<li>지속 데미지를 위해 <strong>샷건이나 레퀴엠 리볼버</strong>를 장착하세요. 이 전투에서는 핸드건을 피하세요.</li>
+<li>빅터가 근접 콤보를 끝낼 때까지 기다린 후, 그의 가슴이나 머리에 3-4발을 쏟아붓고, 다음 공격 전에 후퇴하세요.</li>
+<li>그가 <strong>한쪽 무릎을 꿇을 때</strong> (스태거 애니메이션), 계속 쏘지 마세요. 대신 아레나를 돌아다니며 모든 나무 상자를 부수세요. 페이즈 2에서 환경이 파괴되기 전에 모든 샷건 셸, 약초, 탄약 픽업을 이 아레나에서 꺼내야 합니다.</li>
+<li>빅터가 충분한 데미지를 받고 변신 컷씬이 트리거되면 페이즈 1이 끝납니다.</li>
+</ol>
+
+<h2 id="phase2">페이즈 2: 네메시스 형태</h2>
+<p>컷씬 후, 빅터는 완전한 네메시스 클론으로 변신합니다 — 머리, 팔, 몸 전체에 빛나는 빨간 농포가 있는 거대하고 맥동하는 괴물. 이 페이즈는 이전 게임의 플랜트 43 보스 전과 거의 동일하게 작동하며, 단지 더 많은 약점과 더 강한 공격을 가지고 있습니다.</p>
+
+<h3>// 농포 시스템</h3>
+<p>이 페이즈는 웨이브로 빛나는 약점을 파괴하는 것을 중심으로 구축됩니다:</p>
+<ol>
+<li><strong>웨이브 1:</strong> 머리와 팔에 3개의 농포. 정밀 무기(레퀴엠 또는 스나이퍼)를 사용하여 터뜨리세요.</li>
+<li><strong>웨이브 2:</strong> 처음 3개가 파괴된 후, 코어를 보호하는 층이 벗겨집니다. 가장 무거운 화력(샷건, RPG가 있다면, 수류탄)을 중앙에 직접 쏟아부으세요.</li>
+<li><strong>웨이브 3:</strong> 충분한 코어 데미지를 입히면 빅터가 플랫폼에 쓰러집니다. 그의 베이스 주위 바닥 전체에 새로운 빛나는 구체가 생성됩니다. <strong>몇 초밖에 없습니다.</strong> 수류탄 한두 개로 즉시 정리됩니다. 그렇지 않으면 기관총 사격이 효과적입니다.</li>
+<li><strong>웨이브 4-5:</strong> 빅터가 회복하고 새로운 농포 웨이브를 생성합니다 (이번에는 5개, 그 다음 더 많이). 과정을 반복합니다.</li>
+</ol>
+
+<h3>// 페이즈 2 공격 패턴</h3>
+<p>이 페이즈에서 빅터는 모탈 엣지 손도끼로 모두 패리할 수 있는 몇 가지 공격만 가지고 있습니다:</p>
+<ul class="normal">
+<li><strong>단일 팔 내려치기</strong> — 좌우로 비키세요.</li>
+<li><strong>교차 이중 내려치기</strong> — 계속 움직이세요, 멈추지 마세요.</li>
+<li><strong>오버헤드 양팔 내려치기</strong> — 가장 큰 데미지, 동시에 가장 큰 패리 윈도우.</li>
+<li><strong>빠른 지면 슬램 콤보</strong> — 그의 하반신 농포를 파괴한 후 발생. 거리를 두고 기다리세요.</li>
+</ul>
+
+<div class="tip-row">
+<div class="tip-card"><h4>// 핵심 팁</h4><p>공격 웨이브 사이에 좌우로 스트레이프하세요. 가만히 서 있으면 짓밟힙니다.</p></div>
+<div class="tip-card"><h4>// 탄약 우선순위</h4><p>레퀴엠 탄환은 머리 농포에 사용. 수류탄은 군집에. 샷건은 코어에.</p></div>
+</div>
+
+<h3>// 그랩 및 QTE 피니셔</h3>
+<p>충분한 농포 웨이브를 파괴하면, 빅터가 팔 중 하나로 <strong>레온을 잡습니다</strong>. 당황하지 마세요 — 이는 의도된 것입니다. 화면에 일련의 버튼 프롬프트가 나타납니다. 표시된 버튼을 탭하세요 (기본: 사각형/X 반복, 다음 삼각형/Y) 탈출.</p>
+<p>QTE를 성공적으로 완료하면 최종 시네마틱 킬 시퀀스가 트리거됩니다. 레온이 빅터의 노출된 코어에 손도끼 피니셔를 가하고, 화면이 검게 변하고, 시설이 무너지며, 공식적으로 레지던트 이블 레퀴엠을 생존하게 됩니다.</p>
+
+<h2 id="insanity">인새니티 난이도: 무엇이 달라지나</h2>
+<div class="warn-box">
+⚠ 인새니티는 어떤 난이도(캐주얼 포함)로든 한 번 클리어 후 해금됩니다. 인새니티에서 한 번의 잘못된 회피는 즉사일 수 있습니다.
+</div>
+<p>인새니티에서의 빅터 기드온 전투는 잔혹하지만 불공정하지 않습니다. 동일한 메커니즘이 적용되지만, 다음과 같은 주요 차이가 있습니다:</p>
+<ul class="normal">
+<li><strong>데미지 배율 ~3배</strong> — 페이즈 1 촉수 공격은 체력의 70-80%를 제거. 페이즈 2 지면 슬램은 최대 HP가 아니면 즉사 가능.</li>
+<li><strong>축소된 패리 윈도우</strong> — 모탈 엣지가 필수; 기본 손도끼의 패리 윈도우는 일관되게 반응하기 너무 빡빡합니다.</li>
+<li><strong>농포 HP 증가</strong> — 페이즈 2 약점 파괴에 약 두 배의 데미지가 필요. 더 많은 탄약을 챙기세요.</li>
+<li><strong>전기 공격 추적</strong> — 바닥 마커가 약간 더 공격적입니다. 일찍 스프린트, 늦게 X.</li>
+</ul>
+<p>인새니티 런의 경우, 최적 전략은 <strong>레퀴엠 리볼버에 무한 탄약 사용</strong>입니다 (포스트게임 스페셜 콘텐츠 스토어에서 구매). 이는 농포 파괴 페이즈를 사소화하고 회피에만 집중할 수 있게 해줍니다.</p>
+
+<h2 id="nodmg">노 데미지 전략 (고급)</h2>
+<p>프로 플레이어들은 표준 난이도에서 단 한 번도 맞지 않고 이 전투를 완료했습니다. 핵심 요약:</p>
+<ol>
+<li><strong>페이즈 1 — 절대 근접전에 참여하지 말 것.</strong> 패리-카운터 후 또는 전기 점프-슬램 회복 후에만 공격. 공격 사이클당 두 개의 안전 공격 윈도우.</li>
+<li>페이즈 2의 농포 웨이브 동안 <strong>최대 거리 유지</strong>. 마크스맨 1A 또는 스코프가 있는 모든 스나이퍼를 사용.</li>
+<li><strong>오버헤드 슬램 패리, 다른 모든 것 회피.</strong> 오버헤드 슬램은 전체 전투에서 가장 관대한 패리 윈도우를 가집니다.</li>
+<li><strong>지면 구체 군집의 경우</strong>, 빅터가 쓰러지자마자 수류탄을 던지세요. 한 번에 모든 구체를 파괴하고 근거리 노출을 피할 수 있습니다.</li>
+<li><strong>각 농포 웨이브 전에 사전 위치 잡기.</strong> 빅터가 회복을 끝낼 때, 이미 아레나 가장자리에 스코프 무기를 장착하고 있어야 합니다.</li>
+</ol>
+
+<h2 id="after">보상 및 후속 콘텐츠</h2>
+<p>빅터 기드온을 처치하면 메인 스토리가 완료되고 여러 항목이 한 번에 해금됩니다:</p>
+<ul class="normal">
+<li><strong>"레퀴엠 컴플리트"</strong> — 골드 트로피.</li>
+<li><strong>인새니티 난이도</strong> — 새 게임 메뉴에서 선택 가능.</li>
+<li><strong>스페셜 콘텐츠 스토어</strong> — 새 무기 (마틸다 IMP, 클래터 카빈, 고스트 그러지, 리뎀션) 및 무한 탄약 해금이 열림.</li>
+<li><strong>컨셉 아트 및 보너스 코스튬</strong> — 스페셜 콘텐츠 메뉴에서 볼 수 있음.</li>
+</ul>
+<p>이번이 첫 플레이였다면, 다음 단계는 캐리오버 무기와 무한 레퀴엠을 사용하는 인새니티 New Game+ 런이어야 합니다. 무한 탄약 장착 시, 전체 게임을 4시간 미만으로 클리어할 수 있고, 단일 런에서 <em>스피드러너</em>와 <em>리마커블 에이전트</em> 트로피를 해금할 수 있습니다.</p>
+
+<h2>FAQ — 빅터 기드온 자주 묻는 질문</h2>
+<div style="background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:6px 22px;">
+
+<details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
+<summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>모탈 엣지 손도끼 없이 빅터 기드온을 이길 수 있나요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">예, 가능하지만 기본 손도끼의 패리 윈도우는 매우 빡빡하며, 인새니티 난이도에서는 신뢰할 수 없게 됩니다. 더 커맨더 전을 건너뛰셨다면 (모탈 엣지가 보상으로 주어지는 곳), 빅터 기드온에 도전하기 전에 돌아가서 완료하세요 — 업그레이드는 첫 30초 안에 본전을 뽑습니다.</p>
+</details>
+
+<details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
+<summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>인새니티에서 무한 탄약이 필요한가요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">아니오, 무한 탄약은 필수가 아닙니다. 그러나 인새니티에서는 농포 HP가 약 두 배가 되고 한 번의 잘못된 회피가 즉사일 수 있으므로, 레퀴엠 리볼버에 무한 탄약을 장착하면 (첫 클리어 후 스페셜 콘텐츠 스토어에서 구매) 회피에만 집중할 수 있어 훨씬 쉬워집니다.</p>
+</details>
+
+<details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
+<summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>치트 사용이 트로피를 무효화하나요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">아니오. 무한 탄약, 무한 RPG, 모든 스페셜 콘텐츠 스토어 해금은 레지던트 이블 레퀴엠의 트로피를 무효화하지 않습니다. 인새니티 런에서도 안전하게 사용 가능합니다.</p>
+</details>
+
+<details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
+<summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>QTE 피니셔에서 죽을 수 있나요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">예 — 버튼 프롬프트를 실패하면 레온이 사망하고 페이즈 2 재시작을 강제합니다. 기본 매핑은 사각형/X 반복 후 삼각형/Y입니다. 버튼 프롬프트는 캠페인 전체에서 사용되는 동일한 패턴이므로 이전 QTE 순간에서 연습하여 근육 기억을 만드세요.</p>
+</details>
+
+</div>
+
+<div class="cta">
+<div class="cta-title">관련 공략</div>
+<a href="../all-5-safe-codes-guide.html">금고 비밀번호 (영문)</a>
+<a href="../all-25-mr-raccoon-locations.html">미스터 라쿤 위치 (영문)</a>
+<a href="../all-bosses-ranked-by-difficulty.html">전체 보스 랭킹 (영문)</a>
+<a href="../all-49-trophies-platinum-guide.html">플래티넘 트로피 (영문)</a>
+</div>
+<div class="section-divider"></div>
+<p style="font-size:13px;color:var(--text3);text-align:center;">한국어 번역에 어색한 부분이 있나요? <a href="mailto:re9uiem@re9guide.it.com?subject=한국어판%20피드백%20(빅터%20기드온)" style="color:var(--red);">알려주세요</a> — 검토 후 반영합니다.</p>
+</div>
+<div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
+<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.7;font-style:italic;">이 가이드가 도움이 되었다면 Ko-fi에서 한 잔 사 주시는 것을 고려해 주세요. <em style="color:#ba7517;font-style:normal;">작은 도움도 큰 의미가 있습니다.</em></p>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi 후원</a>
+</div>
+<div class="footer">
+<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="../contact.html">문의</a> · <a href="../privacy.html">개인정보</a> · <a href="../dmca.html">DMCA</a> · <a href="../spoiler-policy.html">스포일러 정책</a></p>
+<p style="margin:5px 0;font-size:10px;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+</div>
+</body>
+</html>

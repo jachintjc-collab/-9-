@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/index.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/index.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/index.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/index.html" />
+<meta property="og:title" content="레지던트 이블 레퀴엠 (RE9) 완벽 공략" />
+<meta property="og:description" content="레지던트 이블 레퀴엠(RE9) 완벽 공략. 보스 공략, 금고 비밀번호, 미스터 라쿤 위치, 무기 티어, 트로피 로드맵." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/index.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<title>레지던트 이블 레퀴엠 (RE9) 완벽 공략 — 보스 / 금고 / 트로피</title>
+<meta name="description" content="레지던트 이블 레퀴엠(RE9) 한국어 공략. 보스 공략, 금고 비밀번호, 미스터 라쿤 위치, 무기 티어 리스트, 트로피 로드맵 — 매주 업데이트." />
+<meta name="keywords" content="레지던트 이블 레퀴엠, 레지던트 이블 9, RE9 공략, 빅터 기드온 공략, 인새니티 공략, 트로피 가이드" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--red-bright:#e54c3a;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.nav a:hover{color:var(--red);}
+.lang-switch{font-size:11px;font-family:monospace;color:var(--text3);}
+.lang-switch a{padding:3px 8px;border:0.5px solid var(--border);border-radius:3px;color:var(--text2);text-decoration:none;margin:0 2px;}
+.lang-switch a.active{background:var(--red);color:#fff;border-color:var(--red);}
+.hero{background:linear-gradient(180deg,#1a0505 0%,#0d0808 100%);padding:60px 20px 50px;text-align:center;border-bottom:0.5px solid var(--border);}
+.hero-tag{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.1em;border:0.5px solid var(--border);padding:4px 12px;border-radius:2px;display:inline-block;margin-bottom:16px;}
+.hero h1{font-size:34px;font-weight:normal;color:var(--text);margin-bottom:12px;line-height:1.3;}
+.hero p{font-size:16px;color:var(--text2);max-width:580px;margin:0 auto 24px;line-height:1.7;}
+.btn{font-size:13px;font-family:monospace;text-decoration:none;padding:10px 20px;border-radius:3px;letter-spacing:0.04em;display:inline-block;}
+.btn-primary{background:var(--red);color:#fff;border:1px solid var(--red);}
+.btn-secondary{background:transparent;color:var(--text2);border:0.5px solid var(--border2);}
+.section{padding:36px 20px;}
+.sec-title{font-size:12px;font-family:monospace;letter-spacing:0.1em;color:var(--text3);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:12px;}
+.sec-title::before{content:"";width:24px;height:0.5px;background:var(--red);}
+.goal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
+.goal-col{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px 18px;}
+.goal-title{font-size:13px;color:var(--gold);margin-bottom:14px;padding-bottom:8px;border-bottom:0.5px solid var(--border);display:flex;align-items:center;gap:8px;font-weight:bold;}
+.goal-icon{font-size:16px;}
+.goal-list{list-style:none;padding:0;margin:0;}
+.goal-list li{padding:5px 0;border-bottom:0.5px dashed var(--border2);}
+.goal-list li:last-child{border-bottom:none;}
+.goal-list a{font-size:14px;color:var(--text2);text-decoration:none;display:flex;align-items:center;gap:6px;line-height:1.5;}
+.goal-list a:hover{color:var(--red);}
+.goal-list a::before{content:"›";color:var(--red);font-family:monospace;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+h2{font-size:21px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
+h3{font-size:16px;color:var(--red);margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
+strong{color:var(--text);font-weight:bold;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:17px;color:var(--text);margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;color:var(--text2);line-height:1.5;flex-wrap:wrap;}
+.author-byline .byline-mark{font-size:11px;color:var(--text3);letter-spacing:0.08em;font-family:monospace;}
+.author-byline .byline-name{color:var(--text);}
+.author-byline .byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}
+.author-byline .byline-creds{color:var(--text3);font-size:12px;}
+.editorial-header{background:rgba(186,117,23,0.05);border:0.5px solid rgba(186,117,23,0.3);border-radius:4px;padding:10px 14px;margin:14px 0;font-size:11px;font-family:monospace;color:#b0a09a;line-height:1.7;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.8;}
+ol li strong{color:var(--text);}
+.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
+.boss-stats table{width:100%;font-size:14px;}
+.boss-stats td{padding:5px 0;color:var(--text2);}
+.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
+.boss-stats td strong{color:var(--text);}
+.tip-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:14px 0;}
+.tip-card{background:var(--surface);border-left:2px solid var(--red);padding:10px 14px;border-radius:0 4px 4px 0;}
+.tip-card h4{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.06em;margin-bottom:4px;}
+.tip-card p{font-size:13px;color:var(--text2);line-height:1.7;margin:0;}
+.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
+.translation-note strong{color:var(--text);}
+.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
+.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+@media (max-width:600px){h1{font-size:22px;}h2{font-size:18px;}body{font-size:15px;}p{font-size:14px;}}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+<!-- Korean version structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "headline": "레지던트 이블 레퀴엠 (RE9) 완벽 공략",
+  "description": "RE9 한국어 종합 공략 사이트",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-14T00:00:00+09:00",
+  "dateModified": "2026-05-14T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/ko/index.html"
+  },
+  "inLanguage": "ko-KR",
+  "keywords": "레지던트 이블 레퀴엠, RE9, 공략",
+  "translationOfWork": {
+    "@type": "CreativeWork",
+    "@id": "https://www.re9guide.it.com/index.html"
+  },
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem",
+    "alternateName": [
+      "RE9",
+      "레지던트 이블 레퀴엠"
+    ],
+    "publisher": "Capcom"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "홈",
+      "item": "https://www.re9guide.it.com/ko/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "레지던트 이블 레퀴엠 (RE9) 완벽 공략"
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+<div class="nav">
+<a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
+<div style="display:flex;align-items:center;gap:14px;">
+<a href="index.html">← 모든 공략</a>
+<span class="lang-switch"><a href="https://www.re9guide.it.com/index.html">EN</a> <a href="" class="active">한국어</a></span>
+</div>
+</div>
+<div class="hero">
+<div class="hero-tag">// 2026년 2월 27일 발매 · RE9</div>
+<h1>레지던트 이블: 레퀴엠<br>완벽 공략</h1>
+<p>보스 공략, 금고 비밀번호, 퍼즐 풀이, 수집 요소, 트로피 로드맵 — 직접 플레이하며 작성, 매주 업데이트.</p>
+<div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:16px;">
+<a href="https://www.re9guide.it.com/ko/beginner-guide-resident-evil-requiem.html" class="btn btn-primary">초보자 가이드부터 시작</a>
+<a href="#all-guides" class="btn btn-secondary">전체 공략 보기</a>
+</div>
+<div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;">
+<span style="font-size:11px;font-family:monospace;padding:4px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:2px;">PS5</span>
+<span style="font-size:11px;font-family:monospace;padding:4px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:2px;">Xbox Series</span>
+<span style="font-size:11px;font-family:monospace;padding:4px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:2px;">Switch 2</span>
+<span style="font-size:11px;font-family:monospace;padding:4px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:2px;">PC / Steam</span>
+</div>
+</div>
+<div class="container">
+<div class="section">
+<div class="translation-note">
+<strong>한국어판 안내:</strong> 이 페이지는 영문 원본을 한국어로 번역한 것입니다. 작성자(서울 거주)가 직접 검수했으며, 일부 게임 용어(Mortal Edge, Insanity, NG+ 등)는 한국 RE 커뮤니티에서 통용되는 영문 표기를 그대로 사용했습니다. 번역에 대한 피드백은 메일로 알려주시면 반영하겠습니다.
+</div>
+</div>
+
+<!-- 카테고리별 공략 -->
+<div class="section" id="all-guides">
+<div class="sec-title">카테고리별 공략</div>
+<div class="goal-grid">
+
+<div class="goal-col">
+<div class="goal-title"><span class="goal-icon">⚔️</span>보스 공략</div>
+<ul class="goal-list">
+<li><a href="how-to-beat-victor-gideon.html">빅터 기드온 (최종 보스)</a></li>
+<li><a href="../how-to-beat-the-commander.html">더 커맨더 (영문)</a></li>
+<li><a href="../how-to-beat-mr-x-super-tyrant.html">미스터 X / 슈퍼 타이런트 (영문)</a></li>
+<li><a href="../how-to-beat-plant-43.html">플랜트 43 (영문)</a></li>
+<li><a href="../how-to-beat-the-girl.html">더 걸 (영문)</a></li>
+<li><a href="../how-to-beat-titan-spinner.html">타이탄 스피너 (영문)</a></li>
+<li><a href="../bosses-hub.html">전체 보스 허브 (영문)</a></li>
+</ul>
+</div>
+
+<div class="goal-col">
+<div class="goal-title"><span class="goal-icon">🦝</span>수집 요소</div>
+<ul class="goal-list">
+<li><a href="../all-25-mr-raccoon-locations.html">미스터 라쿤 25개 위치 (영문)</a></li>
+<li><a href="../all-22-antique-coins-locations.html">앤틱 코인 22개 (영문)</a></li>
+<li><a href="../all-75-files-locations-guide.html">파일 75개 위치 (영문)</a></li>
+<li><a href="../all-5-safe-codes-guide.html">금고 비밀번호 5개 (영문)</a></li>
+</ul>
+</div>
+
+<div class="goal-col">
+<div class="goal-title"><span class="goal-icon">🏆</span>트로피 / 스피드런</div>
+<ul class="goal-list">
+<li><a href="../all-49-trophies-platinum-guide.html">전체 49 트로피 + 플래티넘 (영문)</a></li>
+<li><a href="../speedrun-guide-sub-4-hours.html">4시간 미만 스피드런 루트 (영문)</a></li>
+<li><a href="../how-to-unlock-insanity-difficulty.html">인새니티 난이도 해금 (영문)</a></li>
+</ul>
+</div>
+
+<div class="goal-col">
+<div class="goal-title"><span class="goal-icon">📖</span>입문 / 캐릭터</div>
+<ul class="goal-list">
+<li><a href="beginner-guide-resident-evil-requiem.html">초보자 가이드 (한국어)</a></li>
+<li><a href="../grace-vs-leon-character-differences.html">그레이스 vs 레온 (영문)</a></li>
+<li><a href="../best-weapons-tier-list.html">무기 티어 리스트 (영문)</a></li>
+</ul>
+</div>
+
+<div class="goal-col">
+<div class="goal-title"><span class="goal-icon">🔥</span>리뷰 / 비교 분석</div>
+<ul class="goal-list">
+<li><a href="../re9-vs-re2-remake-which-to-play-first.html">RE9 vs RE2 리메이크 (영문)</a></li>
+<li><a href="../is-resident-evil-requiem-worth-playing.html">RE9 살 가치가 있나? (영문)</a></li>
+<li><a href="../all-resident-evil-games-ranked-2026.html">RE 시리즈 전작 랭킹 (영문)</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- 사이트 FAQ -->
+<div class="section">
+<div class="sec-title">자주 묻는 질문</div>
+<div style="background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:6px 22px;">
+
+<details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
+<summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>레지던트 이블 레퀴엠(RE9)이란 무엇인가요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">캡콤이 2026년 2월 27일 출시한 레지던트 이블 시리즈의 9번째 본편입니다. PS5, Xbox Series X|S, Nintendo Switch 2, PC(Steam · Epic Games Store)에서 플레이 가능합니다. FBI 요원 그레이스 애쉬크로프트와 베테랑 레온 S. 케네디가 등장하며 메타크리틱 88점으로 RE 본편 시리즈 20년 만의 최고 평점을 기록했습니다.</p>
+</details>
+
+<details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
+<summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>이 사이트는 캡콤 공식 사이트인가요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">아니요. re9guide.it.com은 캡콤과 무관한 독립 팬 메이드 공략 사이트입니다. 모든 상표, 캐릭터 이름, 게임 콘텐츠는 Capcom Co., Ltd.의 재산입니다. .it.com 도메인은 이 점을 솔직하게 반영합니다 — 대형 미디어가 아닌 작은 팬 프로젝트라는 신호입니다.</p>
+</details>
+
+<details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
+<summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>이 공략은 스포일러를 피할 수 있나요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">각 공략 페이지마다 3단계 스포일러 등급(LOW / MEDIUM / HIGH)이 표시됩니다. 초보자 가이드와 무기 티어 리스트는 첫 플레이 사용자를 위해 스포일러를 통제했습니다. 보스 전략 페이지와 플래티넘 트로피 로드맵은 후반부 스포일러를 포함하므로 명확히 표시되어 있습니다.</p>
+</details>
+
+<details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
+<summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>한국어 콘텐츠는 얼마나 있나요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">현재 핵심 페이지 (홈, 소개, 빅터 기드온 공략, 초보자 가이드 등)가 한국어로 제공되고 있으며, 단계적으로 모든 영문 공략을 한국어판으로 추가하고 있습니다. 한국 RE 커뮤니티에서 통용되는 표현을 우선 사용하며, 작성자가 서울에 거주하므로 직접 검수합니다. 번역 피드백은 메일로 환영합니다.</p>
+</details>
+
+<details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
+<summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>인새니티 난이도에서도 이 공략이 통하나요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">예. 모든 보스 공략과 워크스루에 인새니티 전용 팁, 데미지 배율 변화, 패리 윈도우 차이, 무한 탄약 권장 전략이 포함되어 있습니다. 인새니티는 어떤 난이도(캐주얼 포함)로든 한 번 클리어 후 해금됩니다. 무한 탄약을 포함한 치트는 인새니티 관련 트로피를 무효화하지 않습니다.</p>
+</details>
+
+<details style="padding:14px 0;">
+<summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>누가 이 공략을 작성하나요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">서울에 거주하는 RE 시리즈 오랜 팬 Jachin이 직접 작성합니다. 모든 전략은 PS5와 Steam에서 여러 난이도로 직접 플레이한 결과를 바탕으로 합니다. AI 도구는 노트 정리나 문법 검사에 활용할 수 있지만, 전략 / 위치 / 분석은 실제 플레이타임에서 나옵니다. 자세한 편집 원칙은 <a href="about.html" style="color:var(--red);">소개 페이지</a>를 참조하세요.</p>
+</details>
+
+</div>
+</div>
+
+<!-- 신뢰 / 공지 -->
+<div class="section">
+<div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:14px;">
+<span style="font-size:11px;font-family:monospace;padding:5px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:20px;"><span style="display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:6px;vertical-align:middle;"></span>최종 업데이트: 2026년 5월 14일</span>
+<span style="font-size:11px;font-family:monospace;padding:5px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:20px;"><span style="display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:6px;vertical-align:middle;"></span>테스트 환경: Normal &amp; Insanity</span>
+<span style="font-size:11px;font-family:monospace;padding:5px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:20px;"><span style="display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:6px;vertical-align:middle;"></span>게임 버전: v1.02</span>
+<span style="font-size:11px;font-family:monospace;padding:5px 12px;border:0.5px solid var(--border2);color:var(--text3);border-radius:20px;"><span style="display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:6px;vertical-align:middle;"></span>직접 작성, AI 콘텐츠 없음</span>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener" style="font-size:11px;font-family:monospace;padding:5px 12px;border:0.5px solid rgba(186,117,23,0.4);background:rgba(186,117,23,0.06);color:var(--gold);border-radius:20px;text-decoration:none;">☕ Ko-fi 후원</a>
+</div>
+<div style="font-size:13px;color:var(--text3);text-align:center;line-height:1.7;">
+<strong style="color:var(--text2);">re9guide.it.com</strong>은 2026년 2월 27일 출시된 레지던트 이블: 레퀴엠(RE9)에 대한 팬 메이드 공략 사이트입니다. 그레이스 애쉬크로프트와 레온 S. 케네디 양 캠페인의 보스 전략, 수집 요소 위치, 퍼즐 솔루션, 무기 통계, 트로피 가이드를 다룹니다. 손으로 직접 작성, 광고 최소화, 매주 업데이트.
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="../contact.html">문의</a> · <a href="../privacy.html">개인정보</a> · <a href="../dmca.html">DMCA</a> · <a href="../spoiler-policy.html">스포일러 정책</a></p>
+<p style="margin:5px 0;font-size:10px;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+</div>
+</body>
+</html>
