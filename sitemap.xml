@@ -281,4 +281,40 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://www.re9guide.it.com/re9-insanity-survival-guide.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-insanity-survival-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-insanity-survival-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-insanity-survival-guide.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/re9-boss-loadout-calculator.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/re9-insanity-survival-guide.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-insanity-survival-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-insanity-survival-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-insanity-survival-guide.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
+  </url>
 </urlset>
