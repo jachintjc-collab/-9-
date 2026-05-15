@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/how-to-beat-mr-x-super-tyrant.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/how-to-beat-mr-x-super-tyrant.html" />
+<link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-mr-x-super-tyrant.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-mr-x-super-tyrant.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0808" />
+<meta property="og:title" content="미스터 X / 슈퍼 타이런트 공략 (RE9) — 심장 전략 (한국어)">
+<meta property="og:description" content="RE9 미스터 X와 슈퍼 타이런트 변신 공략. 추격 회피 경로, 노출된 심장 사격, 매그넘 vs 레퀴엠 데미지 라우팅." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-mr-x-super-tyrant.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<title>미스터 X / 슈퍼 타이런트 공략 (RE9) — 심장 전략 (한국어)</title>
+<meta name="description" content="RE9 미스터 X와 슈퍼 타이런트 변신 공략. 추격 회피 경로, 노출된 심장 사격, 매그넘 vs 레퀴엠 데미지 라우팅." />
+<style>*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;}.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:26px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
+h3{font-size:16px;color:var(--red);margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
+strong{color:var(--text);font-weight:bold;}em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}
+.editorial-header{background:rgba(186,117,23,0.05);border:0.5px solid rgba(186,117,23,0.3);border-radius:4px;padding:10px 14px;margin:14px 0;font-size:11px;font-family:monospace;color:#b0a09a;line-height:1.7;}
+.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
+.translation-note strong{color:var(--text);}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.toc ul{list-style:none;padding:0;}.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
+.boss-stats table{width:100%;font-size:14px;}
+.boss-stats td{padding:5px 0;color:var(--text2);}
+.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
+.boss-stats td strong{color:var(--text);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15px;line-height:1.8;}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
+.boss-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0;}
+.boss-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px;text-decoration:none;color:inherit;transition:all 0.15s;}
+.boss-card:hover{border-color:var(--red);background:var(--surface2);transform:translateY(-2px);}
+.boss-card-title{font-size:16px;color:var(--text);margin-bottom:6px;}
+.boss-card-tagline{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.6;}
+.boss-card-meta{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.05em;}
+.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
+.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+<!-- Korean schemas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "미스터 X / 슈퍼 타이런트 공략 — RE9 심장 전략",
+  "description": "RE9 미스터 X와 슈퍼 타이런트 변신 공략. 추격 회피 경로, 노출된 심장 사격, 매그넘 vs 레퀴엠 데미지 라우팅.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-14T00:00:00+09:00",
+  "dateModified": "2026-05-14T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/ko/how-to-beat-mr-x-super-tyrant.html"
+  },
+  "inLanguage": "ko-KR",
+  "translationOfWork": {
+    "@type": "CreativeWork",
+    "@id": "https://www.re9guide.it.com/how-to-beat-mr-x-super-tyrant.html"
+  },
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem",
+    "alternateName": "Resident Evil 9"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "홈",
+      "item": "https://www.re9guide.it.com/ko/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "미스터 X / 슈퍼 타이런트 공략 — RE9 심장 전략"
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+<div class="nav">
+<a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
+<div style="display:flex;align-items:center;gap:14px;">
+<a href="index.html">← 모든 공략</a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
+<a href="/how-to-beat-mr-x-super-tyrant.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+</span>
+</div>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>미스터 X / 슈퍼 타이런트 공략 — RE9 심장 전략</span></div>
+<h1>미스터 X / 슈퍼 타이런트 공략 — RE9 심장 전략</h1>
+<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:18px;letter-spacing:0.05em;">2026년 5월 14일 게시 · 6분 읽기</div>
+<div class="editorial-header">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:6px;">
+<div><span style="color:#706056;">편집자:</span> <span style="color:#f0ebe8;">Jachin (서울)</span></div>
+<div><span style="color:#706056;">게임 버전:</span> <span style="color:#f0ebe8;">v1.02 (2026년 5월)</span></div>
+<div><span style="color:#706056;">최종 검증:</span> <span style="color:#ba7517;">2026-05-14</span></div>
+<div><span style="color:#706056;">플랫폼:</span> <span style="color:#f0ebe8;">PS5 / Steam</span></div>
+</div>
+</div>
+<div class="translation-note">
+<strong>한국어판 안내:</strong> 영문 원본의 한국어 번역. 작성자(서울 거주)가 직접 검수했으며, Mortal Edge / Insanity / NG+ 등 영문 표기는 한국 RE 커뮤니티 관행을 따라 그대로 사용했습니다.
+</div>
+<p class="lead">미스터 X와 그의 슈퍼 타이런트 변신은 라쿤 시티 센터에서 만나는 레온의 시그니처 추격+전투 보스입니다. 추격 페이즈는 회피로 통과, 슈퍼 타이런트 아레나에서는 노출된 심장만 노립니다 — 몸 사격은 거의 데미지가 없습니다.</p>
+
+<h2>두 페이즈 구조</h2>
+<p><strong>페이즈 1 — 미스터 X 추격:</strong> 케어 센터의 좁은 복도에서 만나는 스토커 페이즈. 직접 전투에 집중하지 않고 추격과 압박에 집중합니다. <strong>페이즈 2 — 슈퍼 타이런트:</strong> 보스 아레나에서 변신. 가슴 캐비티가 완전히 노출(심장 약점)되며, 더 빠른 이동, 4가지 주요 공격, 던지는 차.</p>
+
+<div class="boss-stats">
+<table>
+<tr><td>위치</td><td><strong>라쿤 시티 센터 (R.P.D. + 거리)</strong></td></tr>
+<tr><td>플레이 캐릭터</td><td><strong>레온 S. 케네디</strong></td></tr>
+<tr><td>약점</td><td><strong>가슴 캐비티의 심장</strong></td></tr>
+<tr><td>권장 무기</td><td>매그넘 (심장), 레퀴엠 리볼버, MSBG 500 샷건</td></tr>
+<tr><td>환경 활용</td><td>벽면 폭발 캔 4개 (한 번 사용)</td></tr>
+</table>
+</div>
+
+<h2>미스터 X 추격에서 살아남기</h2>
+<p>좁은 복도에서 스프린트, 웅크리지 마세요. 4미터 미만의 어떤 복도에서도 그가 레온의 스프린트 속도를 따라잡지 못합니다. 케어 센터 2층 서쪽 윙이 코너에 몰릴 수 있는 유일한 좁은 구역입니다 — 3개의 정비 사이드 룸 중 하나로 들어가 시야를 차단하고 8초간 기다리면 그가 디스폰합니다.</p>
+
+<h2>슈퍼 타이런트 약점</h2>
+<p>변신 후 노출된 심장이 유일한 의미 있는 약점입니다 — 몸 사격은 거의 등록되지 않습니다. <strong>매그넘 라운드</strong>가 심장에 일반 데미지의 약 3배를 입힙니다. 헤드샷은 피하세요 — 이 형태의 두개골 판이 들어오는 데미지의 60%를 무효화합니다.</p>
+
+<h2>아레나 활용</h2>
+<p>슈퍼 타이런트 아레나에는 4개의 폭발 캔이 벽에 장착되어 있습니다. 그가 2미터 이내에 있을 때 캔을 쏘면 큰 데미지를 입히고 5초 이상 스턴시킵니다. <strong>캔을 아끼세요</strong>: 심장 사격 윈도우 사이에 하나씩 사용하고, 절대 두 개를 연속으로 사용하지 마세요(두 번째 폭발이 스턴 윈도우를 낭비합니다).</p>
+
+<h2>스크립트 트리거</h2>
+<p>미스터 X는 케어 센터 1층의 차고 키 회수 후 첫 스폰이며, 슈퍼 타이런트 변신은 지하 원자로 룸 도달로 트리거됩니다. 이 스크립트 영역 외에서는 매복할 수 없습니다. 전략적으로 재시도하려면 각 트리거 포인트 전에 저장하세요.</p>
+
+<h2>인새니티 차이점</h2>
+<ul class="normal">
+<li>심장 사격이 표준에서는 7-9발로 처치, 인새니티에서는 12-15발 필요</li>
+<li>차 던지기가 더 자주 발생 — 항상 차 옆에서 멀리 떨어져 있으세요</li>
+<li>그랩 공격 즉사 가능 — 정면 접근 절대 금지</li>
+</ul>
+
+<div class="cta">
+<div class="cta-title">관련 한국어 공략</div>
+<a href="how-to-beat-victor-gideon.html">빅터 기드온 (최종 보스)</a>
+<a href="re9-boss-loadout-calculator.html">보스 무기 구성 계산기</a>
+<a href="re9-insanity-survival-guide.html">인새니티 생존 가이드</a>
+</div>
+
+<div class="footer">
+<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="/contact.html">문의</a> · <a href="/privacy.html">개인정보</a> · <a href="/dmca.html">DMCA</a></p>
+<p style="margin:5px 0;font-size:10px;">RE: Requiem © Capcom · 한국어판 · 2026년 5월</p>
+</div>
+</body>
+</html>

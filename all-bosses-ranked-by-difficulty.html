@@ -93,7 +93,6 @@ ul.normal li{padding:3px 0;font-size:15px;}
 @media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}.bar-name{width:100px;font-size:11px;}}
 </style>
 
-
 <!-- ==== Clean structured data (v2 cleanup, ISO 8601 + timezone) ==== -->
 <script type="application/ld+json">
 {
@@ -164,6 +163,92 @@ ul.normal li{padding:3px 0;font-size:15px;}
   ]
 }
 </script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
 </head>
 <body>
 <div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
@@ -177,7 +262,7 @@ ul.normal li{padding:3px 0;font-size:15px;}
 
 <h1>All 10 Boss Fights Ranked by Difficulty in Resident Evil Requiem</h1>
 <div class="meta">PUBLISHED MAY 2026 · <span>10 MIN READ</span> · BOSS DIFFICULTY GUIDE</div>
-<div style="display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid rgba(192,57,43,0.18);border-bottom:0.5px solid rgba(192,57,43,0.18);font-size:13px;font-family:monospace;color:#b0a09a;line-height:1.5;flex-wrap:wrap;"><span style="font-size:11px;color:#706056;letter-spacing:0.08em;">// AUTHORED BY</span> <span style="color:#f0ebe8;"><a href="about.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">Jachin</a></span> <span style="color:#706056;font-size:11px;">· Seoul, KR · Ranked from personal Insanity runs across all 10 bosses</span></div><!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(186,117,23,0.12);border:0.5px solid #ba7517;color:#ba7517;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ SPOILER LEVEL: MEDIUM</div>
+<!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(186,117,23,0.12);border:0.5px solid #ba7517;color:#ba7517;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ SPOILER LEVEL: MEDIUM</div>
 <!-- Editorial Info Card - Trust signal for guide credibility -->
 <div style="background:rgba(186,117,23,0.05);border:0.5px solid rgba(186,117,23,0.3);border-radius:4px;padding:10px 14px;margin:14px 0;font-size:11px;font-family:monospace;color:#b0a09a;line-height:1.7;">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:6px;">
@@ -187,7 +272,6 @@ ul.normal li{padding:3px 0;font-size:15px;}
     <div><span style="color:#706056;">PLATFORM TESTED:</span> <span style="color:#f0ebe8;">PS5 / Steam</span></div>
   </div>
 </div>
-
 
 <p class="lead">Every boss in Resident Evil Requiem ranked from hardest to easiest based on damage output, attack patterns, parry difficulty, and Insanity-mode performance. Use this ranking to know what's coming and how to prepare.</p>
 
@@ -406,7 +490,6 @@ ul.normal li{padding:3px 0;font-size:15px;}
   <a href="best-weapons-tier-list.html">Best Weapons Tier List</a>
   <a href="index.html">All guides</a>
 </div>
-
 
 <!-- Ko-fi support strip (subtle, end-of-article) -->
 <div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">

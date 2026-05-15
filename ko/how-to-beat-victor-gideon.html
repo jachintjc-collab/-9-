@@ -161,6 +161,92 @@ ol li strong{color:var(--text);}
   ]
 }
 </script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
 </head>
 <body>
 <div class="nav">
@@ -177,11 +263,6 @@ ol li strong{color:var(--text);}
 <div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="../bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스 (영문)</a> / <span>빅터 기드온</span></div>
 <h1>빅터 기드온 공략 — 레지던트 이블: 레퀴엠 최종 보스 가이드 (RE9)</h1>
 <div class="meta">2026년 5월 14일 게시 · <span>10분 읽기</span> · 난이도: ★★★★ 잔혹 · 스포일러 포함</div>
-<div class="author-byline">
-<span class="byline-mark">// 작성자</span>
-<span class="byline-name"><a href="about.html">Jachin</a></span>
-<span class="byline-creds">· 서울 · v1.02 패치에서 모든 패리 윈도우 검증 · 한국어 직접 검수</span>
-</div>
 <div class="editorial-header">
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:6px;">
 <div><span style="color:#706056;">편집자:</span> <span style="color:#f0ebe8;">Jachin (서울)</span></div>
