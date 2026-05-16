@@ -242,6 +242,13 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
 })();
 </script>
 
+
+<style>
+/* Phase 10 universal width fix — constrain orphan body children to article width */
+body > div:not(.nav):not(.hero):not(#spoiler-overlay-hint):not(.container){max-width:780px;margin-left:auto;margin-right:auto;padding-left:18px;padding-right:18px;box-sizing:border-box;}
+body > p, body > section, body > figure, body > ul, body > ol, body > h1, body > h2{max-width:780px;margin-left:auto;margin-right:auto;padding-left:18px;padding-right:18px;box-sizing:border-box;}
+</style>
+
 </head>
 <body>
 <div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
