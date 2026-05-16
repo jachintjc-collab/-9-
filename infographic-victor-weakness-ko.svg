@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" preserveAspectRatio="xMidYMid meet">
+  <title>빅터 기드온 약점 분석 — Victor Gideon Weakness Diagram (Korean)</title>
+  <desc>레지던트 이블 레퀴엠 (RE9) 최종 보스 빅터 기드온의 두 페이즈 약점 다이어그램. 한국어판.</desc>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0808"/>
+  <rect x="20" y="20" width="1160" height="590" fill="none" stroke="#c0392b" stroke-width="3" rx="4"/>
+
+  <!-- Title -->
+  <text x="600" y="65" font-family="-apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif" font-size="36" font-weight="bold" fill="#f0ebe8" text-anchor="middle">빅터 기드온 약점 분석</text>
+  <text x="600" y="95" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#b0a09a" text-anchor="middle">Victor Gideon Weak Point Analysis · Resident Evil Requiem (RE9)</text>
+
+  <!-- Center divider -->
+  <line x1="600" y1="130" x2="600" y2="570" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- ===== LEFT: PHASE 1 ===== -->
+  <text x="300" y="170" font-family="-apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="28" font-weight="bold" fill="#c0392b" text-anchor="middle">페이즈 1</text>
+  <text x="300" y="200" font-family="-apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="18" fill="#f0ebe8" text-anchor="middle">변이된 인간 형태</text>
+
+  <!-- Body diagram - humanoid -->
+  <!-- Head -->
+  <ellipse cx="300" cy="270" rx="35" ry="40" fill="none" stroke="#b0a09a" stroke-width="2"/>
+  <!-- Torso -->
+  <rect x="270" y="310" width="60" height="120" fill="none" stroke="#b0a09a" stroke-width="2"/>
+  <!-- Tentacle arm (left, mutated) -->
+  <path d="M 270 330 Q 220 360 200 400 Q 190 440 175 470" fill="none" stroke="#c0392b" stroke-width="4"/>
+  <text x="170" y="490" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#c0392b" text-anchor="middle">촉수 팔</text>
+  <!-- Normal arm (right) -->
+  <line x1="330" y1="330" x2="385" y2="385" stroke="#b0a09a" stroke-width="2"/>
+
+  <!-- Phase 1 Weak point: HEAD -->
+  <circle cx="300" cy="265" r="8" fill="#c0392b" stroke="#fff" stroke-width="2"/>
+  <line x1="310" y1="270" x2="395" y2="240" stroke="#c0392b" stroke-width="2"/>
+  <text x="405" y="240" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="16" font-weight="bold" fill="#c0392b">머리 — 관대한 패리</text>
+  <text x="405" y="260" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#b0a09a">Mortal Edge로 패리 후</text>
+  <text x="405" y="278" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#b0a09a">즉시 카운터 사격</text>
+
+  <!-- Phase 1 Weak point: CHEST -->
+  <circle cx="300" cy="350" r="8" fill="#ba7517" stroke="#fff" stroke-width="2"/>
+  <line x1="310" y1="350" x2="395" y2="370" stroke="#ba7517" stroke-width="2"/>
+  <text x="405" y="370" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="16" font-weight="bold" fill="#ba7517">가슴 — 주력 데미지</text>
+  <text x="405" y="390" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#b0a09a">샷건 / 레퀴엠 리볼버</text>
+
+  <!-- Phase 1 bottom note -->
+  <text x="300" y="540" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" font-weight="bold" fill="#ba7517" text-anchor="middle">⚡ 전기 공격 후 2초간 무방비</text>
+  <text x="300" y="558" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#706056" text-anchor="middle">슈퍼히어로 포즈 회복 시간 = 최대 데미지 윈도우</text>
+
+  <!-- ===== RIGHT: PHASE 2 ===== -->
+  <text x="900" y="170" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="28" font-weight="bold" fill="#c0392b" text-anchor="middle">페이즈 2</text>
+  <text x="900" y="200" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="18" fill="#f0ebe8" text-anchor="middle">네메시스 형태</text>
+
+  <!-- Body diagram - bigger monster -->
+  <!-- Head -->
+  <ellipse cx="900" cy="270" rx="45" ry="40" fill="none" stroke="#b0a09a" stroke-width="2"/>
+  <!-- Bulky torso (trapezoid) -->
+  <polygon points="855,310 945,310 970,440 830,440" fill="none" stroke="#b0a09a" stroke-width="2"/>
+  <!-- Big arms -->
+  <polygon points="830,330 760,390 740,470 805,420" fill="none" stroke="#b0a09a" stroke-width="2"/>
+  <polygon points="970,330 1040,390 1060,470 995,420" fill="none" stroke="#b0a09a" stroke-width="2"/>
+
+  <!-- Phase 2 weak points: 3 head pustules -->
+  <circle cx="875" cy="255" r="6" fill="#c0392b" stroke="#fff" stroke-width="1"/>
+  <circle cx="900" cy="245" r="6" fill="#c0392b" stroke="#fff" stroke-width="1"/>
+  <circle cx="925" cy="255" r="6" fill="#c0392b" stroke="#fff" stroke-width="1"/>
+  <line x1="900" y1="240" x2="900" y2="220" stroke="#c0392b" stroke-width="1"/>
+  <text x="900" y="215" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#c0392b" text-anchor="middle">머리 농포 ×3 (웨이브 1)</text>
+
+  <!-- Phase 2 weak point: CORE (main) -->
+  <circle cx="900" cy="380" r="20" fill="#c0392b" stroke="#fff" stroke-width="3"/>
+  <line x1="920" y1="380" x2="1010" y2="360" stroke="#c0392b" stroke-width="2"/>
+  <text x="1020" y="360" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="16" font-weight="bold" fill="#c0392b">코어 — 최대 화력</text>
+  <text x="1020" y="380" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#b0a09a">샷건 + 수류탄 + RPG</text>
+  <text x="1020" y="398" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#b0a09a">(웨이브 2)</text>
+
+  <!-- Phase 2 arm pustules -->
+  <circle cx="780" cy="400" r="6" fill="#c0392b" stroke="#fff" stroke-width="1"/>
+  <circle cx="1020" cy="400" r="6" fill="#c0392b" stroke="#fff" stroke-width="1"/>
+
+  <!-- Phase 2 bottom note -->
+  <text x="900" y="500" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" font-weight="bold" fill="#ba7517" text-anchor="middle">⚠ 농포를 웨이브로 파괴</text>
+  <text x="900" y="520" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#706056" text-anchor="middle">바닥 구체 군집은 수류탄 1개로 즉시 정리</text>
+  <text x="900" y="558" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#706056" text-anchor="middle">QTE 피니셔: 사각형/X → 삼각형/Y</text>
+
+  <!-- Footer attribution -->
+  <text x="600" y="600" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#706056" text-anchor="middle">re9guide.it.com · 한국어판 · v1.02 검증 · 2026년 5월</text>
+</svg>
