@@ -277,7 +277,7 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
 
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
 <a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
-<a href="/ko/index.html?from=all-25-mr-raccoon-locations" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+<a href="#" onclick="showKoPendingModal();return false;" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
 </span>
 </div>
 
@@ -592,6 +592,42 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
   <p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">About</a> · <a href="contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Contact</a> · <a href="privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Privacy</a> · <a href="dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Spoilers</a></p>
   <p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
 </div>
+
+
+<!-- Korean translation pending modal -->
+<div id="ko-pending-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:9999;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px);">
+  <div style="max-width:460px;background:#1e1212;border:1px solid #c0392b;border-radius:8px;padding:28px 32px;color:#f0ebe8;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;text-align:center;box-shadow:0 12px 60px rgba(0,0,0,0.5);">
+    <div style="font-size:36px;margin-bottom:14px;">📝</div>
+    <h3 style="font-size:18px;font-weight:normal;margin:0 0 14px;color:#ba7517;">한국어판 준비 중입니다</h3>
+    <p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:0 0 8px;">이 페이지의 한국어 버전은 아직 준비 중입니다.</p>
+    <p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:0 0 20px;">작성자가 우선순위에 따라 빠르게 추가하고 있으니 잠시만 기다려 주세요.</p>
+    <p style="font-size:12px;color:#706056;margin:0 0 22px;line-height:1.6;">Korean version coming soon — author is translating priority pages first.</p>
+    <button onclick="document.getElementById('ko-pending-modal').style.display='none';" style="padding:10px 28px;background:#c0392b;color:#fff;border:none;border-radius:4px;font-family:inherit;font-size:14px;cursor:pointer;letter-spacing:0.02em;">확인 (Close)</button>
+    <div style="margin-top:18px;font-size:12px;color:#706056;">
+      <a href="/ko/index.html" style="color:#69a8e0;text-decoration:none;border-bottom:0.5px dotted;">한국어 홈으로 이동 →</a>
+    </div>
+  </div>
+</div>
+<script>
+function showKoPendingModal(){
+  document.getElementById('ko-pending-modal').style.display='flex';
+}
+// Close on backdrop click
+document.addEventListener('DOMContentLoaded', function(){
+  var modal = document.getElementById('ko-pending-modal');
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal) modal.style.display = 'none';
+    });
+  }
+  // Close on Escape key
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal && modal.style.display === 'flex'){
+      modal.style.display = 'none';
+    }
+  });
+});
+</script>
 
 </body>
 </html>
