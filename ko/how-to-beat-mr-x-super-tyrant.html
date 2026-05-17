@@ -15,14 +15,13 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0d0808" />
-<meta property="og:title" content="미스터 X / 슈퍼 타이런트 완전 공략 (RE9) — 심장 전략">
-<meta property="og:description" content="RE9 미스터 X와 슈퍼 타이런트 변신 완전 공략. 추격 회피 경로, 노출된 심장 사격, 매그넘 vs 레퀴엠 데미지 라우팅, 인새니티 팁." />
+<meta property="og:title" content="미스터 X / 슈퍼 타이런트 공략 (RE9) — 심장 약점 전략">
+<meta property="og:description" content="RE9 미스터 X와 슈퍼 타이런트 완전 공략. RPD 추격 7단계 경로, 켄도 안전 구역 준비, 심장 사격 전략, 인새니티 난이도 팁." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-mr-x-super-tyrant.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
-<meta property="og:image" content="https://www.re9guide.it.com/infographic-mr-x-heart-ko.svg" />
-<title>미스터 X / 슈퍼 타이런트 완전 공략 (RE9) — 심장 전략</title>
-<meta name="description" content="RE9 미스터 X와 슈퍼 타이런트 변신 완전 공략. 추격 회피 경로, 노출된 심장 사격, 매그넘 vs 레퀴엠 데미지 라우팅, 인새니티 팁." />
+<title>미스터 X / 슈퍼 타이런트 공략 (RE9) — 심장 약점 전략</title>
+<meta name="description" content="RE9 미스터 X와 슈퍼 타이런트 완전 공략. RPD 추격 7단계 경로, 켄도 안전 구역 준비, 심장 사격 전략, 인새니티 난이도 팁." />
 <style>*{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
@@ -56,21 +55,97 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
 .tip-card{background:var(--surface);border-left:2px solid var(--red);padding:10px 14px;border-radius:0 4px 4px 0;}
 .tip-card h4{font-size:11px;font-family:monospace;color:var(--red);margin-bottom:4px;}
 .tip-card p{font-size:13px;color:var(--text2);line-height:1.7;margin:0;}
-.verdict-box{background:linear-gradient(135deg,rgba(186,117,23,0.08) 0%,rgba(192,57,43,0.04) 100%);border:1px solid var(--gold);border-radius:6px;padding:18px 22px;margin:24px 0;}
-.verdict-title{font-size:13px;font-family:monospace;color:var(--gold);margin-bottom:10px;letter-spacing:0.08em;}
 .cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
 .cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
 .cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
 .footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
 .footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
 </style>
+
+<style>
+/* Phase 16: smooth scroll + sticky/floating TOC */
+html { scroll-behavior: smooth; }
+
+/* Scroll offset for sticky nav so anchor links don't hide under it */
+h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
+
+/* Sticky TOC behavior */
+@media (min-width: 1100px) {
+  .toc { position: sticky; top: 70px; align-self: flex-start; }
+  body.has-floating-toc .container { position: relative; }
+  body.has-floating-toc .toc {
+    position: fixed;
+    top: 80px;
+    right: calc((100vw - 780px) / 2 - 280px);
+    width: 250px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    z-index: 50;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  body.has-floating-toc .toc::-webkit-scrollbar { width: 4px; }
+  body.has-floating-toc .toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
+  body.has-floating-toc .toc a.active {
+    color: #c0392b !important;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1099px) {
+  .toc { position: static !important; }
+}
+</style>
+<script>
+(function(){
+  function init(){
+    var toc = document.querySelector('.toc');
+    if(!toc) return;
+
+    // Wait until original TOC position is past viewport top, then add class
+    var tocOriginalTop = toc.offsetTop;
+    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+
+    function onScroll(){
+      if(window.innerWidth < 1100) {
+        document.body.classList.remove('has-floating-toc');
+        return;
+      }
+      if(window.scrollY > floatThreshold){
+        document.body.classList.add('has-floating-toc');
+      } else {
+        document.body.classList.remove('has-floating-toc');
+      }
+      // Highlight active TOC item based on visible section
+      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+      var active = null;
+      for(var i = 0; i < sections.length; i++){
+        var rect = sections[i].getBoundingClientRect();
+        if(rect.top < 150) active = sections[i];
+        else break;
+      }
+      if(active){
+        var links = toc.querySelectorAll('a');
+        links.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+        });
+      }
+    }
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "미스터 X / 슈퍼 타이런트 공략 — 레지던트 이블 레퀴엠(RE9)",
-  "description": "RE9 미스터 X와 슈퍼 타이런트 변신 완전 공략. 추격 회피 경로, 노출된 심장 사격, 매그넘 vs 레퀴엠 데미지 라우팅, 인새니티 팁.",
+  "description": "RE9 미스터 X와 슈퍼 타이런트 완전 공략. RPD 추격 7단계 경로, 켄도 안전 구역 준비, 심장 사격 전략, 인새니티 난이도 팁.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -129,7 +204,6 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
   ]
 }
 </script>
-
 </head>
 <body>
 <div class="nav">
@@ -143,283 +217,181 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
 </div>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>미스터 X / 슈퍼 타이런트 공략 — 레지던트 이블 레퀴엠(RE9)</span></div>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>미스터 X / 슈퍼 타이런트</span></div>
 <h1>미스터 X / 슈퍼 타이런트 공략 — 레지던트 이블 레퀴엠(RE9)</h1>
-<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:18px;letter-spacing:0.05em;">2026년 5월 16일 게시 · 8분 읽기</div>
+<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:18px;letter-spacing:0.05em;">2026년 5월 16일 게시 · 9분 읽기</div>
 <div class="translation-note">
 <strong>한국어판 안내:</strong> 영문 원본의 한국어 번역. 작성자(서울 거주)가 직접 검수했으며, Mortal Edge / Insanity / NG+ 등 영문 표기는 한국 RE 커뮤니티 관행을 따라 그대로 사용했습니다.
 </div>
-<p class="lead">미스터 X와 그의 슈퍼 타이런트 변신은 라쿤 시티 센터에서 만나는 레온의 시그니처 추격+전투 보스입니다. 추격 페이즈는 회피로 통과, 슈퍼 타이런트 아레나에서는 노출된 심장만 노립니다 — 몸 사격은 거의 데미지가 없습니다. 이 가이드는 두 단계 모두를 다루며 인새니티 난이도 전용 팁도 포함합니다.</p>
+<p class="lead">미스터 X는 RPD 추격 시퀀스 (싸울 수 없음)와 농구장 근처 슈퍼 타이런트 보스 전투 (가슴의 맥동하는 심장 사격) — 두 단계로 구성됩니다. 이 가이드는 정확한 7단계 추격 경로, 켄도 안전 구역 준비, 패리 → 심장 사격 사이클, 인새니티 난이도 팁을 다룹니다.</p>
+
+<div class="warn-box gold">ℹ <strong>스포일러 등급: MEDIUM.</strong> 이 가이드는 미스터 X 첫 등장 후 콘텐츠를 다룹니다. 케어 센터 초반을 아직 끝내지 않으셨다면 먼저 클리어하세요.</div>
 
 <figure style="margin:22px 0;text-align:center;">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;display:block;margin:0 auto;border:0.5px solid rgba(192,57,43,0.18);border-radius:6px;background:#0d0808;">
-  <title>미스터 X / 슈퍼 타이런트 약점 분석 — 심장 코어 위치</title>
-  <desc>슈퍼 타이런트 변신 후 노출된 가슴 캐비티의 심장 약점 위치와 데미지 라우팅 한국어 다이어그램.</desc>
-
-  <!-- Background + border -->
-  <rect width="1200" height="630" fill="#0d0808"/>
-  <rect x="20" y="20" width="1160" height="590" fill="none" stroke="#c0392b" stroke-width="3" rx="4"/>
-
-  <!-- Title -->
-  <text x="600" y="60" font-family="-apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif" font-size="32" font-weight="bold" fill="#f0ebe8" text-anchor="middle">미스터 X / 슈퍼 타이런트 약점 분석</text>
-  <text x="600" y="92" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#b0a09a" text-anchor="middle">Mr. X / Super Tyrant Heart Weakness · Resident Evil Requiem (RE9)</text>
-
-  <!-- Center divider -->
-  <line x1="600" y1="120" x2="600" y2="560" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,4"/>
-
-  <!-- ============== LEFT: BODY DIAGRAM ============== -->
-  <text x="300" y="145" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="22" font-weight="bold" fill="#c0392b" text-anchor="middle">변신 후 노출된 심장</text>
-
-  <!-- Tyrant body silhouette -->
-  <!-- Head -->
-  <ellipse cx="300" cy="200" rx="45" ry="50" fill="none" stroke="#b0a09a" stroke-width="2"/>
-  <!-- Neck -->
-  <rect x="285" y="245" width="30" height="20" fill="none" stroke="#b0a09a" stroke-width="2"/>
-  <!-- Torso (bulky trapezoid) -->
-  <polygon points="230,265 370,265 395,470 205,470" fill="none" stroke="#b0a09a" stroke-width="2"/>
-  <!-- Coat tatters indication -->
-  <path d="M 230 290 Q 235 320 245 350 Q 240 370 230 380" fill="none" stroke="#b0a09a" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M 370 290 Q 365 320 355 350 Q 360 370 370 380" fill="none" stroke="#b0a09a" stroke-width="1" stroke-dasharray="3,2"/>
-  <!-- Arms -->
-  <polygon points="205,280 145,380 130,490 195,400" fill="none" stroke="#b0a09a" stroke-width="2"/>
-  <polygon points="395,280 455,380 470,490 405,400" fill="none" stroke="#b0a09a" stroke-width="2"/>
-
-  <!-- Exposed chest cavity (the key visual) -->
-  <ellipse cx="300" cy="350" rx="40" ry="55" fill="rgba(192,57,43,0.15)" stroke="#c0392b" stroke-width="2"/>
-  <text x="300" y="287" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="11" fill="#b0a09a" text-anchor="middle">[가슴 캐비티 노출]</text>
-
-  <!-- The HEART itself (red pulsing circle) -->
-  <circle cx="300" cy="345" r="20" fill="#c0392b" stroke="#fff" stroke-width="3"/>
-  <circle cx="300" cy="345" r="14" fill="rgba(255,100,100,0.4)"/>
-
-  <!-- Pointer to heart -->
-  <line x1="320" y1="345" x2="420" y2="320" stroke="#c0392b" stroke-width="2"/>
-  <text x="430" y="320" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="18" font-weight="bold" fill="#c0392b">심장</text>
-  <text x="430" y="345" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#ba7517">유일한 의미 있는 약점</text>
-  <text x="430" y="365" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#b0a09a">매그넘 데미지 ~3.0배</text>
-
-  <!-- Skull plate marker (head with X = ineffective) -->
-  <line x1="290" y1="195" x2="310" y2="205" stroke="#706056" stroke-width="2"/>
-  <line x1="290" y1="205" x2="310" y2="195" stroke="#706056" stroke-width="2"/>
-  <line x1="345" y1="200" x2="420" y2="175" stroke="#706056" stroke-width="2"/>
-  <text x="430" y="170" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#706056">두개골 판 — 60% 무효화</text>
-  <text x="430" y="190" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#706056">헤드샷 피하세요</text>
-
-  <!-- ============== RIGHT: DAMAGE TABLE + STRATEGY ============== -->
-  <text x="900" y="145" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="22" font-weight="bold" fill="#c0392b" text-anchor="middle">데미지 라우팅</text>
-
-  <!-- Damage comparison table -->
-  <g transform="translate(680, 175)">
-    <!-- Header -->
-    <rect x="0" y="0" width="440" height="32" fill="rgba(192,57,43,0.15)"/>
-    <text x="15" y="22" font-family="monospace" font-size="13" font-weight="bold" fill="#f0ebe8">무기</text>
-    <text x="280" y="22" font-family="monospace" font-size="13" font-weight="bold" fill="#f0ebe8">심장 / 일반</text>
-
-    <!-- Rows -->
-    <line x1="0" y1="32" x2="440" y2="32" stroke="#c0392b" stroke-width="0.5"/>
-    <text x="15" y="55" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#b0a09a">매그넘</text>
-    <text x="280" y="55" font-family="monospace" font-size="14" fill="#c0392b" font-weight="bold">3.0×</text>
-    <text x="345" y="55" font-family="monospace" font-size="14" fill="#706056">/ 1.0×</text>
-    <line x1="0" y1="65" x2="440" y2="65" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
-
-    <text x="15" y="88" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#b0a09a">레퀴엠 리볼버</text>
-    <text x="280" y="88" font-family="monospace" font-size="14" fill="#c0392b" font-weight="bold">2.5×</text>
-    <text x="345" y="88" font-family="monospace" font-size="14" fill="#706056">/ 1.0×</text>
-    <line x1="0" y1="98" x2="440" y2="98" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
-
-    <text x="15" y="121" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#b0a09a">MSBG 500 샷건 (점블랭크)</text>
-    <text x="280" y="121" font-family="monospace" font-size="14" fill="#ba7517" font-weight="bold">2.2×</text>
-    <text x="345" y="121" font-family="monospace" font-size="14" fill="#706056">/ 0.8×</text>
-    <line x1="0" y1="131" x2="440" y2="131" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
-
-    <text x="15" y="154" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#b0a09a">핸드건</text>
-    <text x="280" y="154" font-family="monospace" font-size="14" fill="#706056">1.8×</text>
-    <text x="345" y="154" font-family="monospace" font-size="14" fill="#706056">/ 0.4×</text>
-    <line x1="0" y1="164" x2="440" y2="164" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
-
-    <text x="15" y="187" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#ba7517">RPG / 수류탄</text>
-    <text x="280" y="187" font-family="monospace" font-size="14" fill="#c0392b" font-weight="bold">4.0×</text>
-    <text x="345" y="187" font-family="monospace" font-size="14" fill="#706056">/ 1.5×</text>
-  </g>
-
-  <!-- Heart exposure timing -->
-  <g transform="translate(680, 400)">
-    <text x="0" y="0" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" font-weight="bold" fill="#c0392b">심장 노출 4가지 조건</text>
-    <text x="0" y="25" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">⚡ 정면을 향할 때</text>
-    <text x="0" y="45" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">⚡ 공격 후 회복 (1.5초)</text>
-    <text x="0" y="65" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">⚡ 폭발 캔 스턴 후 (5초)</text>
-    <text x="0" y="85" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">⚡ 차 던지기 후 (2초)</text>
-  </g>
-
-  <!-- Bottom warning -->
-  <rect x="60" y="500" width="1080" height="40" fill="rgba(186,117,23,0.08)" stroke="#ba7517" stroke-width="1"/>
-  <text x="600" y="525" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" font-weight="bold" fill="#ba7517" text-anchor="middle">⚠ 인새니티에서 심장 HP 약 2배 증가 — 무한 매그넘 사실상 필수</text>
-
-  <!-- Footer -->
-  <text x="600" y="585" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#706056" text-anchor="middle">re9guide.it.com · 한국어판 · v1.02 검증 · 2026년 5월</text>
+<title>슈퍼 타이런트 약점 분석</title>
+<rect width="1200" height="630" fill="#0d0808"/>
+<rect x="20" y="20" width="1160" height="590" fill="none" stroke="#c0392b" stroke-width="3" rx="4"/>
+<text x="600" y="60" font-family="-apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="32" font-weight="bold" fill="#f0ebe8" text-anchor="middle">슈퍼 타이런트 (미스터 X) — 약점</text>
+<text x="600" y="92" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#b0a09a" text-anchor="middle">// S-TIER BOSS · T-501 TYRANT · LATE-GAME LEON</text>
+<line x1="600" y1="120" x2="600" y2="560" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,4"/>
+<!-- LEFT: Body diagram -->
+<ellipse cx="300" cy="200" rx="45" ry="50" fill="none" stroke="#fff" stroke-width="2"/>
+<rect x="285" y="245" width="30" height="20" fill="none" stroke="#fff" stroke-width="2"/>
+<polygon points="230,265 370,265 395,470 205,470" fill="none" stroke="#fff" stroke-width="2"/>
+<polygon points="205,280 145,380 130,490 195,400" fill="none" stroke="#fff" stroke-width="2"/>
+<polygon points="395,280 455,380 470,490 405,400" fill="none" stroke="#fff" stroke-width="2"/>
+<!-- Heart -->
+<circle cx="300" cy="350" r="22" fill="#c0392b" stroke="#fff" stroke-width="3"/>
+<circle cx="300" cy="350" r="15" fill="rgba(255,100,100,0.5)"/>
+<line x1="322" y1="350" x2="700" y2="430" stroke="#c0392b" stroke-width="1.5"/>
+<!-- Head (post-parry) -->
+<circle cx="300" cy="200" r="12" fill="#ba7517" stroke="#fff" stroke-width="2"/>
+<line x1="345" y1="200" x2="700" y2="580" stroke="#ba7517" stroke-width="1.5"/>
+<!-- RIGHT: Labels -->
+<g transform="translate(700, 400)">
+  <rect x="0" y="0" width="450" height="100" fill="none" stroke="#c0392b" stroke-width="1.5" rx="3"/>
+  <text x="15" y="30" font-family="monospace" font-size="14" font-weight="bold" fill="#c0392b">❤ 맥동하는 심장</text>
+  <text x="15" y="55" font-family="monospace" font-size="11" fill="#ba7517">주력 약점</text>
+  <text x="15" y="75" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">유일하게 실질 데미지가 들어가는 표적.</text>
+  <text x="15" y="93" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">몸통 사격은 거의 통하지 않습니다.</text>
+</g>
+<g transform="translate(700, 540)">
+  <rect x="0" y="0" width="450" height="80" fill="none" stroke="#ba7517" stroke-width="1.5" rx="3"/>
+  <text x="15" y="25" font-family="monospace" font-size="14" font-weight="bold" fill="#ba7517">⚡ 머리 (패리 후)</text>
+  <text x="15" y="50" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">스태거 상태에서만 취약.</text>
+  <text x="15" y="68" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">Mortal Edge로 패리하여 노출.</text>
+</g>
+<g transform="translate(680, 130)">
+  <rect x="0" y="0" width="470" height="240" fill="none" stroke="#c0392b" stroke-width="1.5" rx="3"/>
+  <text x="15" y="28" font-family="monospace" font-size="14" font-weight="bold" fill="#c0392b">⚠ 패리 불가능</text>
+  <text x="15" y="58" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">• 차 던지기 (도망!)</text>
+  <text x="15" y="83" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">• 돌진 도약 (옆걸음)</text>
+  <text x="15" y="108" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">• 지면 강타 (점프 회피)</text>
+  <text x="15" y="133" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">• 광역 충격파 (뒤로 빠지기)</text>
+  <line x1="0" y1="155" x2="470" y2="155" stroke="#c0392b" stroke-width="0.5"/>
+  <text x="15" y="180" font-family="monospace" font-size="13" font-weight="bold" fill="#ba7517">// 최적 무기 구성</text>
+  <text x="15" y="200" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">1. 레퀴엠 (충전) — 심장 사격</text>
+  <text x="15" y="217" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">2. Mortal Edge Hatchet — 패리 윈도우</text>
+  <text x="15" y="234" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">3. 샷건 — 점블랭크 풀어내기</text>
+</g>
+<text x="600" y="600" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#706056" text-anchor="middle">re9guide.it.com · 한국어판 · v1.02 검증 · 2026년 5월</text>
 </svg>
-<figcaption style="font-size:11px;font-family:monospace;color:#706056;margin-top:8px;letter-spacing:0.04em;font-style:italic;">Fig 1. 슈퍼 타이런트의 노출된 심장 약점 + 무기별 데미지 라우팅 비교. 헤드샷은 두개골 판 때문에 피하세요.</figcaption>
+<figcaption style="font-size:11px;font-family:monospace;color:#706056;margin-top:8px;letter-spacing:0.04em;font-style:italic;">Fig 1. 슈퍼 타이런트 약점 다이어그램 — 맥동하는 심장 (주력) + 머리 (패리 후) + 패리 불가능 공격 목록.</figcaption>
 </figure>
-
-
-<div class="warn-box">⚠ <strong>스포일러 등급: 중간.</strong> 이 가이드는 미스터 X 첫 등장 이후 콘텐츠를 다룹니다. 케어 센터 초반을 아직 끝내지 않으셨다면 먼저 클리어하세요.</div>
 
 <div class="toc">
 <div class="toc-title">목차</div>
 <ul>
-<li><a href="#overview">보스 개요: 두 페이즈 구조</a></li>
-<li><a href="#chase">스테이지 1: 미스터 X 추격 시퀀스</a></li>
-<li><a href="#arena">스테이지 2: 슈퍼 타이런트 아레나</a></li>
-<li><a href="#heart">심장 약점 정확히 노리기</a></li>
-<li><a href="#environment">환경 활용 — 벽면 폭발 캔과 차량</a></li>
-<li><a href="#insanity">인새니티 난이도 차이점</a></li>
+<li><a href="#overview">보스 개요: 미스터 X의 귀환</a></li>
+<li><a href="#chase">RPD 추격 시퀀스 (페이즈 1) — 싸우지 마세요</a></li>
+<li><a href="#prep">전투 전 준비: 켄도 안전 구역</a></li>
+<li><a href="#phase2">슈퍼 타이런트 보스 전투 (페이즈 2)</a></li>
+<li><a href="#heart">약점: 심장을 노리세요</a></li>
+<li><a href="#insanity">인새니티 난이도 팁</a></li>
 <li><a href="#rewards">보상과 후속 콘텐츠</a></li>
 </ul>
 </div>
 
-<h2 id="overview">보스 개요: 두 페이즈 구조</h2>
-<p><strong>페이즈 1 — 미스터 X 추격:</strong> 케어 센터의 좁은 복도에서 만나는 스토커 페이즈. 직접 전투에 집중하지 않고 추격과 압박에 집중합니다. RE2 리메이크의 미스터 X와 동일한 디자인 철학이지만 더 빠른 속도와 새로운 공격 패턴을 가지고 있습니다.</p>
-<p><strong>페이즈 2 — 슈퍼 타이런트:</strong> 보스 아레나에서 변신. 가슴 캐비티가 완전히 노출(심장 약점)되며, 더 빠른 이동, 4가지 주요 공격, 던지는 차. 이전 RE 게임의 슈퍼 타이런트와 비교해 훨씬 위협적입니다.</p>
+<h2 id="overview">보스 개요: 미스터 X의 귀환</h2>
+<p>오랜 레지던트 이블 팬은 미스터 X를 즉시 알아볼 것입니다. 레온이 라쿤 시티에서 그레이스 애쉬크로프트와 재회한 후, 대머리 괴물이 라쿤 시티 경찰서 (RPD) 벽을 뚫고 등장합니다 — Zeno가 증원으로 불러낸 것입니다. 그는 모자를 쓸 시간도 없이 RE2에서 그대로 옮겨온 듯한 치명적인 추격에 레온을 끌어들입니다.</p>
+<p>이 조우는 두 개의 뚜렷한 단계로 구성됩니다: <strong>RPD 내부의 추격 시퀀스</strong> (미스터 X를 죽일 수 없음)와 농구장 근처 경찰서 외부의 <strong>본격적인 슈퍼 타이런트 보스 전투</strong>. 두 단계를 혼동하면 사망합니다. 추격은 탄약 0발이 필요합니다. 보스 전투는 가지고 있는 모든 헤비 무기가 필요합니다.</p>
 
 <div class="boss-stats"><table>
-<tr><td>위치</td><td><strong>라쿤 시티 센터 (R.P.D. + 정문 거리)</strong></td></tr>
+<tr><td>위치</td><td><strong>RPD 내부 → 농구장 (총포상 켄도 이후)</strong></td></tr>
 <tr><td>플레이 캐릭터</td><td><strong>레온 S. 케네디</strong></td></tr>
-<tr><td>약점</td><td><strong>가슴 캐비티의 심장</strong> (변신 후 노출)</td></tr>
-<tr><td>권장 무기</td><td>매그넘 (심장), 레퀴엠 리볼버, MSBG 500 샷건</td></tr>
-<tr><td>환경 활용</td><td>벽면 폭발 캔 4개, 주차된 차량 3대</td></tr>
-<tr><td>예상 시간</td><td>표준 12-15분 / 인새니티 20-28분</td></tr>
+<tr><td>페이즈</td><td><strong>2</strong> — 추격 시퀀스 후 오픈 아레나 전투</td></tr>
+<tr><td>약점</td><td>가슴의 <strong>맥동하는 심장</strong> (페이즈 2만)</td></tr>
+<tr><td>난이도</td><td><strong>★★★ 어려움</strong></td></tr>
+<tr><td>트로피 보상</td><td>"I Remember That, Too" (Bronze)</td></tr>
 </table></div>
 
-<h2 id="chase">스테이지 1: 미스터 X 추격에서 살아남기</h2>
-<p>미스터 X는 케어 센터 1층의 차고 키 회수 후 첫 스폰됩니다. 이 시점부터 보스 아레나 도달 전까지는 직접 전투가 아닌 회피와 위치 관리가 핵심입니다.</p>
+<h2 id="chase">RPD 추격 시퀀스 (페이즈 1) — 싸우지 마세요</h2>
+<div class="warn-box">⚠ <strong>중요 경고:</strong> 추격 중 단 한 발의 총알도 낭비하지 마세요. 미스터 X는 이 형태에서 처치할 수 없습니다. 그는 총격을 스폰지처럼 흡수하며, 그의 펀치는 치명적 데미지를 입힙니다. <strong>도망치세요, 싸우지 마세요.</strong></div>
 
-<h3>// 좁은 복도 회피 규칙</h3>
-<p>좁은 복도에서는 <strong>스프린트, 웅크리지 마세요</strong>. 4미터 미만의 어떤 복도에서도 미스터 X가 레온의 스프린트 속도를 따라잡지 못합니다. 이는 일반 좀비/감염체와 달리 그의 이동 속도는 코너에서 감소하기 때문입니다.</p>
-<p><strong>케어 센터 2층 서쪽 윙</strong>이 코너에 몰릴 수 있는 유일한 좁은 구역입니다. 이 곳에서 추격당하면:</p>
+<h3>// 정확한 생존 경로</h3>
+<p>타이런트 T-501이 경찰서 벽을 부수면 다음 정확한 경로를 따르세요:</p>
 <ol>
-<li>3개의 정비 사이드 룸 중 하나로 진입</li>
-<li>문 닫고 시야 차단</li>
-<li>8초간 기다림 → 그가 디스폰</li>
-<li>안전한 경로로 우회</li>
+<li>즉시 뒤돌아 왔던 길로 달려가세요. 벽의 구멍을 통과해 <strong>오른쪽으로</strong> 가세요.</li>
+<li>미스터 X가 문에 도달하기 전에 다음 벽을 펀치로 부숩니다. <strong>그를 우회</strong>하여 그가 방금 만든 새 구멍을 통과하세요.</li>
+<li>무너진 계단을 올라 앞쪽 복도로 가세요.</li>
+<li><strong>강철 빔이 갑자기 벽을 뚫고 나올 때</strong>, 즉시 빠르게 돌아 왔던 길로 스프린트하세요. <em>이 빔에 닿으면 즉사입니다.</em></li>
+<li>왼쪽 사이드 룸으로 들어가세요. 미스터 X가 다시 뚫고 들어옵니다 — 방 중앙의 잔해 더미를 사용해 그를 카이팅하세요.</li>
+<li>미스터 X를 원형 잔해 더미 주위로 걷게 하세요. 그가 휘두르기에 commit하면, 그의 사각으로 스프린트하여 메인 로비 쪽으로 돌아가세요.</li>
+<li>바닥의 작은 광원을 따라가세요 — 출구로 안내합니다. 문을 뚫고 경찰서를 떠나세요.</li>
+</ol>
+<p>어느 시점에서든 그가 코너로 몰면, 레퀴엠 리볼버 헤드샷 한 발이 그를 약 2초간 짧게 스턴시킵니다. 그 윈도우에 그의 어깨를 빠져나가 계속 이동하세요. <strong>헤드샷만</strong> — 몸통 사격은 효과가 없습니다.</p>
+
+<h2 id="prep">전투 전 준비: 켄도 안전 구역</h2>
+<p>추격에서 살아남으면 총포상 켄도 뒤의 골목길로 떨어집니다. <strong>이 구역을 서둘러 지나가지 마세요</strong>. 이는 실제 보스 전투를 위해 준비할 수 있도록 특별히 설계된 지정 안전 구역입니다.</p>
+<p>열린 공터로 들어서기 전에 다음을 수행하세요:</p>
+<ol>
+<li><strong>켄도의 보관함 방문.</strong> 헤비 라이플 탄약, 스나이퍼 라운드, 또는 레퀴엠 탄환을 비축해 두셨다면 지금 활성 인벤토리로 꺼내세요.</li>
+<li><strong>레온의 보디 아머 수리.</strong> 다가올 전투는 거대한 광역 데미지가 특징입니다. 깨진 아머로 가는 것은 치명적 실수입니다.</li>
+<li><strong>메인 공터로 들어가기 전에 오른쪽 농구장 확인.</strong> 숨겨진 회복 아이템과 탄약 픽업이 있습니다.</li>
+<li><strong>Eye Spy 부적 장착</strong> (가지고 있다면). 부적은 치명상 회피의 무작위 확률을 줍니다 — 슈퍼 타이런트에 대한 문자 그대로의 생명 구원자.</li>
+<li><strong>Hatchet 갈고 장착.</strong> 풀 업그레이드된 Hatchet은 더 관대한 패리 윈도우를 가지며 이 전투에 필수입니다.</li>
 </ol>
 
-<h3>// 그가 등장하는 정확한 스크립트 트리거</h3>
-<p>미스터 X는 무작위로 나타나지 않습니다. 다음 조건에서만 스폰:</p>
-<ul class="normal">
-<li><strong>차고 키 회수 직후</strong> — 케어 센터 1층 차고 키 픽업하면 카메라 컷씬 후 등장</li>
-<li><strong>리셉션 데스크 노트북 상호작용</strong> — 보안 영상 시청 시 트리거</li>
-<li><strong>지하 원자로 룸 도달</strong> — 슈퍼 타이런트 변신 트리거</li>
-</ul>
-<p>이 스크립트 외 영역에서는 매복할 수 없습니다. 전략적으로 재시도하려면 각 트리거 포인트 전에 저장하세요.</p>
+<div class="warn-box gold">💡 <strong>권장 무기 구성:</strong> 레퀴엠 리볼버 (심장 사격), MSBG 500 샷건 (근거리 압박), Marksman 1A 스나이퍼 (원거리 심장 사격), 그리고 패리용 풀 업그레이드 Hatchet. 응급 처치 스프레이 2개 이상 챙기세요.</div>
 
-<h3>// 추격 중 절대 하지 말아야 할 행동</h3>
-<div class="warn-box gold">
-⚡ <strong>절대 금지:</strong>
-<ul class="normal" style="margin-top:8px;">
-<li>레퀴엠 탄환으로 미스터 X 사격 — 그는 처치 불가능, 탄약 낭비</li>
-<li>핸드건 사격 — 같은 이유, 단 그가 1.5초 스턴 (긴급 회피 시 사용 가능)</li>
-<li>2층 발코니 시도 — 그가 점프해서 추격 가능</li>
-<li>차고로 다시 들어가기 — 함정, 출구 봉인됨</li>
+<h2 id="phase2">슈퍼 타이런트 보스 전투 (페이즈 2)</h2>
+<p>열린 공터로 발을 디디는 순간, 미스터 X가 근처 옥상에서 미사일을 발사하며 전투를 시작합니다. 폭발이 아레나를 화염으로 뒤덮습니다. 그런 다음 그가 뛰어내려 시그니처 코트를 벗고 최종 슈퍼 타이런트 형태로 변신합니다.</p>
+<p>아레나는 완전히 열려 있습니다 — 엄폐물도, 숨을 곳도 없습니다. 자리를 지키고 패리 메커니즘을 마스터해야 합니다.</p>
+
+<h3>// 공격 패턴 개요</h3>
+<p>슈퍼 타이런트는 네 가지 주요 공격을 가지고 있습니다:</p>
+<ul class="normal">
+<li><strong>돌진 공격</strong> — 거리를 빠르게 좁힙니다. 추적이 매우 정확. Hatchet (L1)으로 임팩트 직전 패리, 또는 마지막 순간에 옆걸음.</li>
+<li><strong>광범위 펀치 콤보</strong> — 근거리 근접. 모든 휘두름을 Hatchet으로 패리. 성공한 패리는 그를 짧게 스턴시킵니다.</li>
+<li><strong>차에서 다이빙 공격</strong> — 그가 부서진 차에 뛰어오를 때, 날아오는 바디 슬램을 예상하세요. <strong>패리 불가능</strong>. 발이 지면을 떠나는 순간 측면 이동.</li>
+<li><strong>차 던지기</strong> — 그가 차량 뒤로 걸어가 손을 금속에 박으면, 모든 것을 버리고 수평으로 스프린트하세요. <strong>패리 불가능</strong>. 한 번 직격이 체력 대부분을 제거합니다.</li>
 </ul>
+
+<div class="tip-row">
+<div class="tip-card"><h4>// 이것은 패리하세요</h4><p>돌진과 광범위 펀치만. 최대 레벨 Hatchet에서 패리 윈도우가 관대합니다.</p></div>
+<div class="tip-card"><h4>// 이것은 도망치세요</h4><p>차 던지기와 다이빙 도약 공격. 예외 없음.</p></div>
 </div>
 
-<h2 id="arena">스테이지 2: 슈퍼 타이런트 아레나</h2>
-<p>지하 원자로 룸 도달 시 미스터 X가 슈퍼 타이런트로 변신합니다. 코트 옷이 찢어지면서 가슴 캐비티가 노출되고, 빛나는 심장이 보입니다. 이때부터 본격적인 보스 전투가 시작됩니다.</p>
+<h2 id="heart">약점: 심장을 노리세요</h2>
+<p>슈퍼 타이런트는 명백한 약점 하나를 가지고 있습니다 — <strong>가슴 중앙에 노출된 거대한 맥동하는 심장</strong>. 다른 곳을 쏘는 것은 탄약의 완전한 낭비입니다. 심장 사격은 몸 사격의 약 5-6배 데미지를 입힙니다.</p>
 
-<h3>// 아레나 레이아웃</h3>
-<p>슈퍼 타이런트 아레나는 R.P.D. 외부 거리 — 3대의 주차된 차량, 4개의 벽면 폭발 캔, 그리고 가운데 광장. 이동 공간이 넓지만 그가 차를 던질 수 있어 위치 선정이 중요합니다.</p>
-
-<h3>// 첫 30초가 가장 중요</h3>
-<p>변신 컷씬이 끝나면 슈퍼 타이런트가 정면 돌진합니다. <strong>즉시 왼쪽 차량 뒤로 이동</strong>하여 첫 돌진을 피하세요. 이 첫 30초 동안 다음을 수행:</p>
+<h3>// 최적 데미지 전략</h3>
 <ol>
-<li><strong>매그넘 장착</strong> — 가장 강력한 데미지</li>
-<li><strong>심장이 노출되는 각도 확인</strong> — 그가 정면을 향할 때만</li>
-<li><strong>벽면 폭발 캔 위치 기억</strong> — 나중에 활용</li>
+<li><strong>공격 전 일시 정지를 주시하세요.</strong> 미스터 X는 모든 공격 전에 0.5초간 얼어붙습니다 — 이것이 신뢰할 수 있는 사격 윈도우입니다. 2-3발 명중시킨 후, 분리하세요. 네 번째 사격을 정조준하려 하지 마세요 — 그가 거리를 좁혀 처벌할 것입니다.</li>
+<li><strong>그의 돌진을 패리 → 스태거 중 심장 사격.</strong> 성공한 패리는 2-3초 스턴 윈도우를 만듭니다. 이 시간에 샷건이나 레퀴엠을 그의 노출된 심장에 비웁니다.</li>
+<li><strong>그가 차에 뛰어오를 때</strong>, 짧은 일시 정지를 사용해 다이빙 전에 직접 심장 사격을 명중시키세요.</li>
+<li><strong>QTE 프롬프트 주시.</strong> 충분한 심장 데미지 후 그가 무릎을 꿇으면 Hatchet 피니셔 프롬프트가 나타납니다. 즉시 눌러 Hatchet을 그의 심장에 박아 거대한 데미지 버스트를 발생시키세요.</li>
 </ol>
+<p>패리 → 심장 사격 → 피니셔 사이클을 미스터 X가 영구히 쓰러질 때까지 반복하세요. 전투는 일반적으로 표준 난이도에서 적절히 업그레이드된 무기 구성으로 4-6분 걸립니다.</p>
 
-<h2 id="heart">심장 약점 정확히 노리기</h2>
-<p>슈퍼 타이런트의 모든 데미지 라우팅은 심장 사격에 의존합니다. 다른 부위 사격은 거의 무의미합니다.</p>
+<h2 id="insanity">인새니티 난이도 팁</h2>
+<div class="warn-box">⚠ 인새니티에서 미스터 X는 게임에서 가장 어려운 전투 중 하나입니다. 데미지가 약 3배로 스케일링됩니다 — 정면으로 받으면 한 번의 차 던지기나 돌진이 레온을 즉사시킬 것입니다.</div>
 
-<h3>// 심장 노출 타이밍</h3>
-<p>심장은 <strong>다음 조건에서만 완전 노출</strong>됩니다:</p>
+<p>인새니티 전용 주요 조정:</p>
 <ul class="normal">
-<li>슈퍼 타이런트가 정면을 향할 때</li>
-<li>그의 공격 후 회복 애니메이션 (1.5초)</li>
-<li>벽면 폭발 캔 폭발 후 스턴 (5초)</li>
-<li>차 던지기 후 잠시 (2초)</li>
+<li><strong>Mortal Edge Hatchet이 필수.</strong> 기본 Hatchet의 패리 윈도우는 인새니티에서 너무 빡빡합니다. ARK에서 The Commander 전투를 완료해 Mortal Edge를 얻지 않으셨다면, 매우 어렵습니다.</li>
+<li><strong>심장 HP 스케일 업</strong> — 표준 대비 약 2배의 심장 사격을 명중시킬 것을 예상하세요. 더 많은 레퀴엠 라운드를 챙기세요.</li>
+<li><strong>해금되었다면 Infinite Ammo 사용.</strong> 치트는 트로피를 무효화하지 <strong>않습니다</strong>. Infinite 레퀴엠은 인새니티에서 이 전투를 사소화합니다.</li>
+<li><strong>보디 아머가 더 빨리 깨집니다.</strong> 켄도 보관함에서 전투 전 아머 수리는 협상 불가입니다.</li>
+<li><strong>미사일 일제 사격 전 사전 위치 잡기.</strong> 시작 옥상 미사일이 인새니티에서 심각한 데미지를 입힙니다. 전투가 시작되는 순간 안전한 곳으로 스프린트하세요.</li>
 </ul>
-
-<h3>// 데미지 라우팅 비교</h3>
-<div class="boss-stats"><table>
-<tr><td>무기</td><td>심장 데미지 / 일반 부위</td></tr>
-<tr><td>매그넘</td><td><strong>~3.0배</strong> / 1.0배</td></tr>
-<tr><td>레퀴엠 리볼버</td><td><strong>~2.5배</strong> / 1.0배</td></tr>
-<tr><td>MSBG 500 샷건 (점블랭크)</td><td><strong>~2.2배</strong> / 0.8배</td></tr>
-<tr><td>핸드건</td><td><strong>~1.8배</strong> / 0.4배</td></tr>
-<tr><td>RPG / 수류탄</td><td><strong>~4.0배</strong> / 1.5배</td></tr>
-</table></div>
-<p><strong>헤드샷은 피하세요</strong> — 이 형태의 두개골 판이 들어오는 데미지의 60%를 무효화합니다. 무릎이나 다리 사격도 ~0.3배밖에 안 됩니다.</p>
-
-<h2 id="environment">환경 활용 — 벽면 폭발 캔과 차량</h2>
-
-<h3>// 벽면 폭발 캔 (4개)</h3>
-<p>슈퍼 타이런트 아레나에는 4개의 폭발 캔이 벽에 장착되어 있습니다. 그가 2미터 이내에 있을 때 캔을 쏘면 큰 데미지를 입히고 5초 이상 스턴시킵니다. <strong>캔을 아끼세요</strong>:</p>
-<ul class="normal">
-<li>심장 사격 윈도우 사이에 하나씩 사용</li>
-<li>절대 두 개를 연속으로 사용하지 마세요 — 두 번째 폭발이 스턴 윈도우를 낭비</li>
-<li>그가 차 던지기 와인드업 중일 때 사용 = 던지기 취소</li>
-</ul>
-
-<h3>// 주차된 차량 (3대)</h3>
-<p>3대의 주차된 차량은 두 가지 역할:</p>
-<ol>
-<li><strong>엄폐물</strong> — 그가 돌진할 때 차량 뒤로 회피</li>
-<li><strong>던지기 무기</strong> — 그가 차를 던지면 즉사 위험. 차량 옆에서 멀리 떨어져 있을 것</li>
-</ol>
-<p>차를 던질 때 그가 2초간 무방비. 이 윈도우에 매그넘 라운드 2발 발사 가능 — 큰 데미지 윈도우.</p>
-
-<h2 id="insanity">인새니티 난이도 차이점</h2>
-<div class="warn-box">⚠ 인새니티에서는 한 번의 잘못된 회피가 즉사일 수 있습니다.</div>
-
-<ul class="normal">
-<li><strong>심장 HP 대폭 증가</strong>: 표준 7-9 매그넘 vs 인새니티 12-15 매그넘 필요</li>
-<li><strong>차 던지기 빈도 증가</strong>: 표준 2회 vs 인새니티 4-5회</li>
-<li><strong>그랩 공격 즉사 가능</strong>: 정면 접근 절대 금지</li>
-<li><strong>스턴 시간 감소</strong>: 폭발 캔 스턴이 5초 → 3.5초</li>
-<li><strong>벽면 캔 데미지 감소</strong>: ~25% 적은 데미지</li>
-</ul>
-
-<h3>// 인새니티 권장 전략</h3>
-<p>인새니티에서는 <strong>무한 매그넘</strong>(스페셜 콘텐츠 스토어 해금) 사용이 사실상 필수입니다:</p>
-<ol>
-<li>매그넘 무한 탄약 장착</li>
-<li>변신 컷씬 후 왼쪽 차량 뒤로 이동</li>
-<li>심장 노출 시 5-6발 연속 발사 (스턴 보장)</li>
-<li>그가 회복할 때 다음 차량 위치로 재배치</li>
-<li>벽면 캔은 마지막 25% 체력에서만 사용</li>
-</ol>
 
 <h2 id="rewards">보상과 후속 콘텐츠</h2>
-<p>미스터 X / 슈퍼 타이런트 처치 시:</p>
+<p>슈퍼 타이런트 처치 시 해금:</p>
 <ul class="normal">
-<li><strong>"미스터 X 처치"</strong> Silver 트로피</li>
-<li><strong>'Iron Bones' 무기 부품</strong> (매그넘 업그레이드 재료)</li>
-<li><strong>200 CP</strong> (Combat Points)</li>
-<li>다음 스토리 챕터 해금 — 블랙쏜 스테이션 → 플랜트 43</li>
+<li><strong>"I Remember That, Too"</strong> 트로피 — Bronze, 클래식 적을 쓰러뜨린 보상.</li>
+<li><strong>고아원으로의 경로</strong> — 스토리 진행 계속.</li>
+<li><strong>아레나의 자원 픽업</strong> — 계속 진행하기 전에 공터를 청소하여 탄약과 회복 아이템을 수집하세요.</li>
 </ul>
-<p>재플레이 가능한 조우가 없으므로, 컷씬 트리거 전에 모든 벽면 캔과 아이템 드롭을 수집하세요.</p>
-
-<div class="verdict-box">
-<div class="verdict-title">// 핵심 정리</div>
-<p>슈퍼 타이런트는 RE9에서 가장 만족스러운 보스 디자인 중 하나입니다 — 추격 페이즈로 긴장감 구축, 아레나 페이즈로 카타르시스 폭발. 핵심은 <strong>심장만 노리고, 환경을 활용하고, 절대 정면 접근하지 않는 것</strong>. 인새니티에서는 무한 매그넘 + 위치 선정이 절대적입니다.</p>
-</div>
+<p>여기서부터 스토리는 고아원과 블랙쏜 스테이션으로 이어지며, ARK 입구에서 플랜트 43을 마주하게 됩니다. 그 후 더 커맨더와 빅터 기드온이 기다립니다 — 게임의 가장 힘든 전투들.</p>
 
 <div class="cta">
 <div class="cta-title">관련 공략</div>
 <a href="how-to-beat-victor-gideon.html">빅터 기드온 (최종)</a>
 <a href="how-to-beat-plant-43.html">플랜트 43</a>
+<a href="how-to-beat-the-commander.html">더 커맨더</a>
 <a href="re9-boss-loadout-calculator.html">무기 구성 계산기</a>
-<a href="re9-insanity-survival-guide.html">인새니티 생존 가이드</a>
 </div>
 
 <div class="footer">

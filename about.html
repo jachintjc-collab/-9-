@@ -227,6 +227,84 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
 </script>
 
 
+
+<style>
+/* Phase 16: smooth scroll + sticky/floating TOC */
+html { scroll-behavior: smooth; }
+
+/* Scroll offset for sticky nav so anchor links don't hide under it */
+h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
+
+/* Sticky TOC behavior */
+@media (min-width: 1100px) {
+  .toc { position: sticky; top: 70px; align-self: flex-start; }
+  body.has-floating-toc .container { position: relative; }
+  body.has-floating-toc .toc {
+    position: fixed;
+    top: 80px;
+    right: calc((100vw - 780px) / 2 - 280px);
+    width: 250px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    z-index: 50;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  body.has-floating-toc .toc::-webkit-scrollbar { width: 4px; }
+  body.has-floating-toc .toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
+  body.has-floating-toc .toc a.active {
+    color: #c0392b !important;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1099px) {
+  .toc { position: static !important; }
+}
+</style>
+<script>
+(function(){
+  function init(){
+    var toc = document.querySelector('.toc');
+    if(!toc) return;
+
+    // Wait until original TOC position is past viewport top, then add class
+    var tocOriginalTop = toc.offsetTop;
+    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+
+    function onScroll(){
+      if(window.innerWidth < 1100) {
+        document.body.classList.remove('has-floating-toc');
+        return;
+      }
+      if(window.scrollY > floatThreshold){
+        document.body.classList.add('has-floating-toc');
+      } else {
+        document.body.classList.remove('has-floating-toc');
+      }
+      // Highlight active TOC item based on visible section
+      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+      var active = null;
+      for(var i = 0; i < sections.length; i++){
+        var rect = sections[i].getBoundingClientRect();
+        if(rect.top < 150) active = sections[i];
+        else break;
+      }
+      if(active){
+        var links = toc.querySelectorAll('a');
+        links.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+        });
+      }
+    }
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
+
 </head>
 <body>
 <div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
