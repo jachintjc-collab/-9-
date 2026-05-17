@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/how-to-beat-plant-43.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/how-to-beat-plant-43.html" />
+<link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-plant-43.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-plant-43.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0808" />
+<meta property="og:title" content="플랜트 43 공략 (RE9) — 식물 보스 화염 전략">
+<meta property="og:description" content="RE9 플랜트 43 공략. 화염 데미지 라우팅, 뿌리 공격 회피, 농포 웨이브 관리, 탄약 절약 팁." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-plant-43.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<title>플랜트 43 공략 (RE9) — 식물 보스 화염 전략</title>
+<meta name="description" content="RE9 플랜트 43 공략. 화염 데미지 라우팅, 뿌리 공격 회피, 농포 웨이브 관리, 탄약 절약 팁." />
+<style>*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;}.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:26px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
+h3{font-size:16px;color:var(--red);margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
+strong{color:var(--text);font-weight:bold;}em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}
+.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
+.translation-note strong{color:var(--text);}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.toc ul{list-style:none;padding:0;}.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
+.boss-stats table{width:100%;font-size:14px;}
+.boss-stats td{padding:5px 0;color:var(--text2);}
+.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
+.boss-stats td strong{color:var(--text);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15px;line-height:1.8;}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.boss-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0;}
+.boss-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px;text-decoration:none;color:inherit;transition:all 0.15s;}
+.boss-card:hover{border-color:var(--red);background:var(--surface2);}
+.boss-card-title{font-size:16px;color:var(--text);margin-bottom:6px;}
+.boss-card-tagline{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.6;}
+.boss-card-meta{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.05em;}
+.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
+.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+<!-- Korean schemas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "플랜트 43 공략 — 레지던트 이블 레퀴엠(RE9)",
+  "description": "RE9 플랜트 43 공략. 화염 데미지 라우팅, 뿌리 공격 회피, 농포 웨이브 관리, 탄약 절약 팁.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-14T00:00:00+09:00",
+  "dateModified": "2026-05-16T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/ko/how-to-beat-plant-43.html"
+  },
+  "inLanguage": "ko-KR",
+  "translationOfWork": {
+    "@type": "CreativeWork",
+    "@id": "https://www.re9guide.it.com/how-to-beat-plant-43.html"
+  },
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "홈",
+      "item": "https://www.re9guide.it.com/ko/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "플랜트 43 공략 — 레지던트 이블 레퀴엠(RE9)"
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+<div class="nav">
+<a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
+<div style="display:flex;align-items:center;gap:14px;">
+<a href="index.html">← 모든 공략</a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
+<a href="/how-to-beat-plant-43.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+</span>
+</div>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>플랜트 43 공략 — 레지던트 이블 레퀴엠(RE9)</span></div>
+<h1>플랜트 43 공략 — 레지던트 이블 레퀴엠(RE9)</h1>
+<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:18px;letter-spacing:0.05em;">2026년 5월 16일 게시 · 7분 읽기</div>
+<div class="translation-note">
+<strong>한국어판 안내:</strong> 영문 원본의 한국어 번역. 작성자(서울 거주)가 직접 검수했으며, Mortal Edge / Insanity / NG+ 등 영문 표기는 한국 RE 커뮤니티 관행을 따라 그대로 사용했습니다.
+</div>
+<p class="lead">플랜트 43은 ARK 입구 앞 블랙쏜 스테이션에서 만나는 레온의 거대 식물 보스입니다. 화염 데미지가 지배적이며, 입이 꽃잎 사이로 노출됐을 때만 약점, 폭발 캔 트럭으로 마무리.</p>
+
+<div class="boss-stats"><table>
+<tr><td>위치</td><td><strong>라쿤 시티 센터 — 블랙쏜 스테이션</strong></td></tr>
+<tr><td>플레이 캐릭터</td><td><strong>레온 S. 케네디</strong></td></tr>
+<tr><td>약점</td><td>꽃잎 열린 상태의 <strong>입</strong></td></tr>
+<tr><td>최적 데미지</td><td><strong>소이탄</strong> (2.2배 배율)</td></tr>
+<tr><td>마무리</td><td>오른쪽 빨간 폭발 캔</td></tr>
+</table></div>
+
+<h2>전투 메커니즘</h2>
+<p>플랜트 43은 농포로 덮인 거대한 식물입니다. 머리, 팔, 몸 전체에 빛나는 빨간 농포를 가지고 있으며 — 모든 농포에 화염 데미지가 ~2.2배 들어갑니다. 이는 소이탄을 보관해 두는 이유입니다.</p>
+
+<h3>// 농포 시스템</h3>
+<ol>
+<li><strong>웨이브 1:</strong> 머리와 팔의 농포 3개. 정밀 사격으로 터뜨림.</li>
+<li><strong>웨이브 2:</strong> 코어 보호층이 벗겨짐. 가장 무거운 화력을 중앙에 직접.</li>
+<li><strong>웨이브 3:</strong> 빅터 쓰러짐 → 바닥에 새 농포 군집. 수류탄 1-2개로 즉시 정리.</li>
+</ol>
+
+<h2>준비물</h2>
+<ul class="normal">
+<li><strong>소이탄</strong>: 약국 + 펌프 룸 캐시에서 확보. 15발 이상 비축 권장.</li>
+<li><strong>MSBG 500 샷건</strong>: 코어 데미지에 핵심.</li>
+<li><strong>레퀴엠 리볼버</strong>: 입 정밀 사격용.</li>
+<li><strong>수류탄 ×2 이상</strong>: 군집 정리.</li>
+<li><strong>응급 처치 스프레이 ×2</strong>.</li>
+</ul>
+
+<h2>핵심 전략</h2>
+<ol>
+<li><strong>중앙에 머무르지 마세요</strong> — 가장자리 타일이 안전. 중앙 바닥 타일이 뿌리 그랩을 스폰합니다.</li>
+<li><strong>꽃잎이 열렸을 때만 입에 사격</strong>. 닫힌 상태에서는 데미지가 통하지 않습니다.</li>
+<li><strong>좌우 촉수 슬램 회피</strong>. 아레나 양쪽 끝을 번갈아 이동.</li>
+<li><strong>코어 데미지 후 빨간 폭발 캔</strong>. 노출되면 즉시 사격으로 시네마틱 마무리.</li>
+</ol>
+
+<h2>인새니티 차이</h2>
+<ul class="normal">
+<li><strong>농포 HP 약 두 배</strong>. 소이탄 50% 더 비축.</li>
+<li><strong>v1.02 패치 이후 소이탄 배율 감소 보고됨</strong> (커뮤니티 미확인).</li>
+<li><strong>뿌리 그랩 즉사 가능</strong>. 중앙 타일 절대 금지.</li>
+</ul>
+
+<div class="cta">
+<div class="cta-title">관련 공략</div>
+<a href="how-to-beat-victor-gideon.html">빅터 기드온 (최종)</a>
+<a href="how-to-beat-the-girl.html">더 걸</a>
+<a href="re9-boss-loadout-calculator.html">무기 구성 계산기</a>
+</div>
+
+<div class="footer">
+<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="/contact.html">문의</a> · <a href="/privacy.html">개인정보</a> · <a href="/dmca.html">DMCA</a></p>
+<p style="margin:5px 0;font-size:10px;">RE: Requiem © Capcom · 한국어판 · 2026년 5월</p>
+</div>
+</body>
+</html>

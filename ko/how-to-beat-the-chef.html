@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/how-to-beat-the-chef.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/how-to-beat-the-chef.html" />
+<link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-the-chef.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-the-chef.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0808" />
+<meta property="og:title" content="더 셰프 공략 (RE9) — 선택 케어 센터 주방 보스">
+<meta property="og:description" content="RE9 더 셰프 공략. 케어 센터 주방의 선택 칼 보스. 팬트리 키 필요, 그레이스의 작은 부족 전투." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-the-chef.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<title>더 셰프 공략 (RE9) — 선택 케어 센터 주방 보스</title>
+<meta name="description" content="RE9 더 셰프 공략. 케어 센터 주방의 선택 칼 보스. 팬트리 키 필요, 그레이스의 작은 부족 전투." />
+<style>*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;}.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:26px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
+h3{font-size:16px;color:var(--red);margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
+strong{color:var(--text);font-weight:bold;}em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}
+.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
+.translation-note strong{color:var(--text);}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.toc ul{list-style:none;padding:0;}.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
+.boss-stats table{width:100%;font-size:14px;}
+.boss-stats td{padding:5px 0;color:var(--text2);}
+.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
+.boss-stats td strong{color:var(--text);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15px;line-height:1.8;}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.boss-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0;}
+.boss-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px;text-decoration:none;color:inherit;transition:all 0.15s;}
+.boss-card:hover{border-color:var(--red);background:var(--surface2);}
+.boss-card-title{font-size:16px;color:var(--text);margin-bottom:6px;}
+.boss-card-tagline{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.6;}
+.boss-card-meta{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.05em;}
+.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
+.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+<!-- Korean schemas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "더 셰프 공략 — 선택 케어 센터 주방 보스",
+  "description": "RE9 더 셰프 공략. 케어 센터 주방의 선택 칼 보스. 팬트리 키 필요, 그레이스의 작은 부족 전투.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-14T00:00:00+09:00",
+  "dateModified": "2026-05-16T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/ko/how-to-beat-the-chef.html"
+  },
+  "inLanguage": "ko-KR",
+  "translationOfWork": {
+    "@type": "CreativeWork",
+    "@id": "https://www.re9guide.it.com/how-to-beat-the-chef.html"
+  },
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "홈",
+      "item": "https://www.re9guide.it.com/ko/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "더 셰프 공략 — 선택 케어 센터 주방 보스"
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+<div class="nav">
+<a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
+<div style="display:flex;align-items:center;gap:14px;">
+<a href="index.html">← 모든 공략</a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
+<a href="/how-to-beat-the-chef.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+</span>
+</div>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>더 셰프 공략 — 선택 케어 센터 주방 보스</span></div>
+<h1>더 셰프 공략 — 선택 케어 센터 주방 보스</h1>
+<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:18px;letter-spacing:0.05em;">2026년 5월 16일 게시 · 4분 읽기</div>
+<div class="translation-note">
+<strong>한국어판 안내:</strong> 영문 원본의 한국어 번역. 작성자(서울 거주)가 직접 검수했으며, Mortal Edge / Insanity / NG+ 등 영문 표기는 한국 RE 커뮤니티 관행을 따라 그대로 사용했습니다.
+</div>
+<p class="lead">더 셰프는 케어 센터 주방의 선택 미니 보스 — 칼을 들고 약초/탄약 캐시를 지키는 변이 요리사. 메커니즘적으로 근접 중심, 칼 휘두르기 정면 회피. 팬트리 키 필요.</p>
+
+<div class="warn-box gold">ℹ 이는 <strong>선택 보스</strong>입니다 — 정상 플레이에서 완전히 건너뛸 수 있습니다. 케어 센터 주방을 조사하고 팬트리 키를 얻기로 결정한 경우에만 조우. 약초와 탄약 캐시 손실, 스토리 진행 차단 없음.</div>
+
+<div class="boss-stats"><table>
+<tr><td>위치</td><td><strong>케어 센터 주방</strong></td></tr>
+<tr><td>플레이 캐릭터</td><td><strong>그레이스 애쉬크로프트</strong></td></tr>
+<tr><td>보스 타입</td><td><strong>선택</strong> — 스토리 필수 아님</td></tr>
+<tr><td>무기</td><td><strong>칼</strong> — 근접만, 원거리 공격 없음</td></tr>
+<tr><td>필요 키</td><td><strong>팬트리 도어 키</strong> — 케어 센터 다른 위치에서 발견</td></tr>
+<tr><td>보상 타입</td><td>약초, 탄약, 서사 완료</td></tr>
+</table></div>
+
+<h2>조우 접근법</h2>
+<p>더 셰프는 케어 센터 주방의 잠긴 문 뒤에 봉인. 조우 트리거하려면 케어 센터 다른 곳에 숨겨진 <strong>팬트리 도어 키</strong> 먼저 획득.</p>
+
+<h2>전투 전략</h2>
+<p>좁은 공간의 직접적 근접 전투. 주방 레이아웃이 이동 제한, 적은 원거리 옵션 없음 — 위치 선정이 전부.</p>
+
+<h3>// 1단계 — 프렙 아일랜드 반대편 유지</h3>
+<p>주방 중앙에 자연 장벽 역할 프렙 아일랜드. 활용. 셰프와 사이에 아일랜드 유지, 그가 한 방향으로 회전하게 강제, 그가 commit할 때 사격.</p>
+
+<h3>// 2단계 — 머리 노리기</h3>
+<p>대부분의 RE: Requiem 변이 적과 마찬가지로 헤드샷이 가장 효율적 데미지. 핸드건 헤드샷은 스태거, 근거리 샷건 블래스트는 스태거 + 큰 체력 감소.</p>
+
+<h3>// 3단계 — 칼 돌진 회피</h3>
+<p>더 셰프의 주력 공격은 전방 칼 돌진 — 잘 텔레그래프되지만 매우 빠름. 와인드업 애니메이션 보이면 옆으로 회피, 뒤로 회피 금지. 뒤 회피는 그의 히트 콘에 머무름.</p>
+
+<h2>가치 있나?</h2>
+<p>첫 플레이: <strong>예</strong> — 조우가 서사적으로 완전(케어 센터 붕괴 맥락 추가), 팬트리 약초 캐시가 다가올 플랜트 43 전투에 의미.</p>
+<p>Platinum 런: <strong>예</strong> — 모든 선택 조우 완료가 베스티어리에 기여.</p>
+<p>4시간 미만 스피드런: <strong>아니오</strong> — 건너뛰세요. 6-8분 절약이 얻을 약초보다 가치 있음.</p>
+
+<h2>보상</h2>
+<ul class="normal">
+<li>팬트리 약초 (보통 그린 약초 2-3, 레드 약초 1)</li>
+<li>탄약 캐시 (핸드건 + 샷건)</li>
+<li>케어 센터 주방의 발병 타임라인 역할 설명 서사 문서</li>
+<li>선택 조우 베스티어리 카운트 기여</li>
+</ul>
+
+<div class="cta">
+<div class="cta-title">관련 공략</div>
+<a href="how-to-beat-victor-gideon.html">빅터 기드온 (최종)</a>
+<a href="how-to-beat-plant-43.html">플랜트 43</a>
+</div>
+
+<div class="footer">
+<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="/contact.html">문의</a> · <a href="/privacy.html">개인정보</a> · <a href="/dmca.html">DMCA</a></p>
+<p style="margin:5px 0;font-size:10px;">RE: Requiem © Capcom · 한국어판 · 2026년 5월</p>
+</div>
+</body>
+</html>
