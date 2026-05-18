@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;display:block;margin:0 auto;border:0.5px solid rgba(192,57,43,0.18);border-radius:6px;background:#0d0808;">
+  <title>미스터 X / 슈퍼 타이런트 약점 분석 — 심장 코어 위치</title>
+  <desc>슈퍼 타이런트 변신 후 노출된 가슴 캐비티의 심장 약점 위치와 데미지 라우팅 한국어 다이어그램.</desc>
+
+  <!-- Background + border -->
+  <rect width="1200" height="630" fill="#0d0808"/>
+  <rect x="20" y="20" width="1160" height="590" fill="none" stroke="#c0392b" stroke-width="3" rx="4"/>
+
+  <!-- Title -->
+  <text x="600" y="60" font-family="-apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif" font-size="32" font-weight="bold" fill="#f0ebe8" text-anchor="middle">미스터 X / 슈퍼 타이런트 약점 분석</text>
+  <text x="600" y="92" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#b0a09a" text-anchor="middle">Mr. X / Super Tyrant Heart Weakness · Resident Evil Requiem (RE9)</text>
+
+  <!-- Center divider -->
+  <line x1="600" y1="120" x2="600" y2="560" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- ============== LEFT: BODY DIAGRAM ============== -->
+  <text x="300" y="145" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="22" font-weight="bold" fill="#c0392b" text-anchor="middle">변신 후 노출된 심장</text>
+
+  <!-- Tyrant body silhouette -->
+  <!-- Head -->
+  <ellipse cx="300" cy="200" rx="45" ry="50" fill="none" stroke="#b0a09a" stroke-width="2"/>
+  <!-- Neck -->
+  <rect x="285" y="245" width="30" height="20" fill="none" stroke="#b0a09a" stroke-width="2"/>
+  <!-- Torso (bulky trapezoid) -->
+  <polygon points="230,265 370,265 395,470 205,470" fill="none" stroke="#b0a09a" stroke-width="2"/>
+  <!-- Coat tatters indication -->
+  <path d="M 230 290 Q 235 320 245 350 Q 240 370 230 380" fill="none" stroke="#b0a09a" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M 370 290 Q 365 320 355 350 Q 360 370 370 380" fill="none" stroke="#b0a09a" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Arms -->
+  <polygon points="205,280 145,380 130,490 195,400" fill="none" stroke="#b0a09a" stroke-width="2"/>
+  <polygon points="395,280 455,380 470,490 405,400" fill="none" stroke="#b0a09a" stroke-width="2"/>
+
+  <!-- Exposed chest cavity (the key visual) -->
+  <ellipse cx="300" cy="350" rx="40" ry="55" fill="rgba(192,57,43,0.15)" stroke="#c0392b" stroke-width="2"/>
+  <text x="300" y="287" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="11" fill="#b0a09a" text-anchor="middle">[가슴 캐비티 노출]</text>
+
+  <!-- The HEART itself (red pulsing circle) -->
+  <circle cx="300" cy="345" r="20" fill="#c0392b" stroke="#fff" stroke-width="3"/>
+  <circle cx="300" cy="345" r="14" fill="rgba(255,100,100,0.4)"/>
+
+  <!-- Pointer to heart -->
+  <line x1="320" y1="345" x2="420" y2="320" stroke="#c0392b" stroke-width="2"/>
+  <text x="430" y="320" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="18" font-weight="bold" fill="#c0392b">심장</text>
+  <text x="430" y="345" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#ba7517">유일한 의미 있는 약점</text>
+  <text x="430" y="365" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#b0a09a">매그넘 데미지 ~3.0배</text>
+
+  <!-- Skull plate marker (head with X = ineffective) -->
+  <line x1="290" y1="195" x2="310" y2="205" stroke="#706056" stroke-width="2"/>
+  <line x1="290" y1="205" x2="310" y2="195" stroke="#706056" stroke-width="2"/>
+  <line x1="345" y1="200" x2="420" y2="175" stroke="#706056" stroke-width="2"/>
+  <text x="430" y="170" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#706056">두개골 판 — 60% 무효화</text>
+  <text x="430" y="190" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#706056">헤드샷 피하세요</text>
+
+  <!-- ============== RIGHT: DAMAGE TABLE + STRATEGY ============== -->
+  <text x="900" y="145" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="22" font-weight="bold" fill="#c0392b" text-anchor="middle">데미지 라우팅</text>
+
+  <!-- Damage comparison table -->
+  <g transform="translate(680, 175)">
+    <!-- Header -->
+    <rect x="0" y="0" width="440" height="32" fill="rgba(192,57,43,0.15)"/>
+    <text x="15" y="22" font-family="monospace" font-size="13" font-weight="bold" fill="#f0ebe8">무기</text>
+    <text x="280" y="22" font-family="monospace" font-size="13" font-weight="bold" fill="#f0ebe8">심장 / 일반</text>
+
+    <!-- Rows -->
+    <line x1="0" y1="32" x2="440" y2="32" stroke="#c0392b" stroke-width="0.5"/>
+    <text x="15" y="55" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#b0a09a">매그넘</text>
+    <text x="280" y="55" font-family="monospace" font-size="14" fill="#c0392b" font-weight="bold">3.0×</text>
+    <text x="345" y="55" font-family="monospace" font-size="14" fill="#706056">/ 1.0×</text>
+    <line x1="0" y1="65" x2="440" y2="65" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+
+    <text x="15" y="88" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#b0a09a">레퀴엠 리볼버</text>
+    <text x="280" y="88" font-family="monospace" font-size="14" fill="#c0392b" font-weight="bold">2.5×</text>
+    <text x="345" y="88" font-family="monospace" font-size="14" fill="#706056">/ 1.0×</text>
+    <line x1="0" y1="98" x2="440" y2="98" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+
+    <text x="15" y="121" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#b0a09a">MSBG 500 샷건 (점블랭크)</text>
+    <text x="280" y="121" font-family="monospace" font-size="14" fill="#ba7517" font-weight="bold">2.2×</text>
+    <text x="345" y="121" font-family="monospace" font-size="14" fill="#706056">/ 0.8×</text>
+    <line x1="0" y1="131" x2="440" y2="131" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+
+    <text x="15" y="154" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#b0a09a">핸드건</text>
+    <text x="280" y="154" font-family="monospace" font-size="14" fill="#706056">1.8×</text>
+    <text x="345" y="154" font-family="monospace" font-size="14" fill="#706056">/ 0.4×</text>
+    <line x1="0" y1="164" x2="440" y2="164" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+
+    <text x="15" y="187" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" fill="#ba7517">RPG / 수류탄</text>
+    <text x="280" y="187" font-family="monospace" font-size="14" fill="#c0392b" font-weight="bold">4.0×</text>
+    <text x="345" y="187" font-family="monospace" font-size="14" fill="#706056">/ 1.5×</text>
+  </g>
+
+  <!-- Heart exposure timing -->
+  <g transform="translate(680, 400)">
+    <text x="0" y="0" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14" font-weight="bold" fill="#c0392b">심장 노출 4가지 조건</text>
+    <text x="0" y="25" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">⚡ 정면을 향할 때</text>
+    <text x="0" y="45" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">⚡ 공격 후 회복 (1.5초)</text>
+    <text x="0" y="65" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">⚡ 폭발 캔 스턴 후 (5초)</text>
+    <text x="0" y="85" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">⚡ 차 던지기 후 (2초)</text>
+  </g>
+
+  <!-- Bottom warning -->
+  <rect x="60" y="500" width="1080" height="40" fill="rgba(186,117,23,0.08)" stroke="#ba7517" stroke-width="1"/>
+  <text x="600" y="525" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" font-weight="bold" fill="#ba7517" text-anchor="middle">⚠ 인새니티에서 심장 HP 약 2배 증가 — 무한 매그넘 사실상 필수</text>
+
+  <!-- Footer -->
+  <text x="600" y="585" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#706056" text-anchor="middle">re9guide.it.com · 한국어판 · v1.02 검증 · 2026년 5월</text>
+</svg>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://www.re9guide.it.com/beginner-guide-resident-evil-requiem.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0808" />
+<meta name="msapplication-TileColor" content="#0d0808" />
+<!-- Open Graph + Twitter Card -->
+<meta property="og:title" content="RE9 Beginner's Guide — Resident Evil Requiem Tips" />
+<meta property="og:description" content="Beginner's guide to Resident Evil Requiem (RE9). Difficulty selection, Grace vs Leon, RE2 Remake context, Steam Deck settings, story length." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.re9guide.it.com/beginner-guide-resident-evil-requiem.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="re9guide.it.com - Resident Evil Requiem complete guide" />
+<meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:site_name" content="re9guide.it.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="RE9 Beginner's Guide — Resident Evil Requiem Tips" />
+<meta name="twitter:description" content="Beginner's guide to Resident Evil Requiem (RE9). Difficulty selection, Grace vs Leon, RE2 Remake context, Steam Deck settings, story length." />
+<title>RE9 Beginner's Guide — Resident Evil Requiem Tips</title>
+<meta name="description" content="Beginner's guide to Resident Evil Requiem (RE9). Difficulty selection, Grace vs Leon, RE2 Remake context, Steam Deck settings, story length." />
+<meta name="keywords" content="Resident Evil Requiem beginner guide, RE9 tips, how to start, difficulty, save strategy, parry, ammo crafting" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;border-top:0.5px solid var(--border);padding-top:24px;}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box.info{border-color:var(--blue);background:rgba(105,168,224,0.06);}
+.warn-box strong{color:var(--text);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+ol li strong{color:var(--text);}
+
+.tip-list{display:flex;flex-direction:column;gap:10px;margin:14px 0;}
+.tip-item{background:var(--surface);border:0.5px solid var(--border2);border-radius:4px;padding:14px 18px;display:flex;gap:14px;align-items:flex-start;}
+.tip-num{font-size:14px;font-family:monospace;color:var(--red);font-weight:bold;min-width:30px;flex-shrink:0;padding-top:2px;}
+.tip-content{flex:1;}
+.tip-title-text{font-size:14px;color:var(--text);margin-bottom:4px;}
+.tip-detail{font-size:13px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.tip-detail strong{color:var(--text);}
+
+.diff-table{width:100%;border-collapse:collapse;font-size:13px;font-family:monospace;margin:14px 0;}
+.diff-table th{text-align:left;color:var(--text3);padding:8px;border-bottom:0.5px solid var(--border);font-weight:normal;background:var(--surface);}
+.diff-table td{padding:9px 8px;border-bottom:0.5px solid var(--border2);color:var(--text2);vertical-align:top;}
+.diff-table tr:hover td{color:var(--text);background:rgba(255,255,255,0.02);}
+.diff-name{color:var(--text)!important;}
+
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.cta a:hover{background:rgba(192,57,43,0.1);}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+
+<!-- ==== Clean structured data (v2 cleanup, ISO 8601 + timezone) ==== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Resident Evil Requiem Beginner's Guide — Tips, Tricks &amp; Mistakes to Avoid (RE9)",
+  "description": "Complete beginner",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-01T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/beginner-guide-resident-evil-requiem.html"
+  },
+  "inLanguage": "en-US",
+  "articleSection": "Beginner Guides",
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem",
+    "alternateName": "Resident Evil 9",
+    "publisher": "Capcom"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.re9guide.it.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Beginner's Guide"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
+
+
+<style>
+/* Phase 16: smooth scroll + sticky/floating TOC */
+html { scroll-behavior: smooth; }
+
+/* Scroll offset for sticky nav so anchor links don't hide under it */
+h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
+
+/* Sticky TOC behavior */
+@media (min-width: 1100px) {
+  .toc { position: sticky; top: 70px; align-self: flex-start; }
+  body.has-floating-toc .container { position: relative; }
+  body.has-floating-toc .toc {
+    position: fixed;
+    top: 80px;
+    right: calc((100vw - 780px) / 2 - 280px);
+    width: 250px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    z-index: 50;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  body.has-floating-toc .toc::-webkit-scrollbar { width: 4px; }
+  body.has-floating-toc .toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
+  body.has-floating-toc .toc a.active {
+    color: #c0392b !important;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1099px) {
+  .toc { position: static !important; }
+}
+</style>
+<script>
+(function(){
+  function init(){
+    var toc = document.querySelector('.toc');
+    if(!toc) return;
+
+    // Wait until original TOC position is past viewport top, then add class
+    var tocOriginalTop = toc.offsetTop;
+    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+
+    function onScroll(){
+      if(window.innerWidth < 1100) {
+        document.body.classList.remove('has-floating-toc');
+        return;
+      }
+      if(window.scrollY > floatThreshold){
+        document.body.classList.add('has-floating-toc');
+      } else {
+        document.body.classList.remove('has-floating-toc');
+      }
+      // Highlight active TOC item based on visible section
+      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+      var active = null;
+      for(var i = 0; i < sections.length; i++){
+        var rect = sections[i].getBoundingClientRect();
+        if(rect.top < 150) active = sections[i];
+        else break;
+      }
+      if(active){
+        var links = toc.querySelectorAll('a');
+        links.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+        });
+      }
+    }
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
+
+</head>
+<body>
+<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="/ko/beginner-guide-resident-evil-requiem.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+</span>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">GUIDES</a> / <span>BEGINNER'S GUIDE</span></div>
+
+<h1>Resident Evil Requiem Beginner's Guide — 15 Essential Tips</h1>
+<div class="meta">PUBLISHED MAY 2026 · <span>12 MIN READ</span> · NO SPOILERS</div>
+<!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(90,138,74,0.12);border:0.5px solid #5a8a4a;color:#5a8a4a;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">✓ SPOILER LEVEL: LOW</div>
+<!-- Editorial Info Card - Trust signal for guide credibility -->
+
+
+<p class="lead">Starting Resident Evil Requiem (RE9)? This complete beginner's guide covers everything you need to know before your first playthrough — from difficulty selection to save strategy, parry mechanics, and the 15 most common mistakes new players make. Spoiler-free.</p>
+
+<div class="toc">
+  <div class="toc-title">Table of contents</div>
+  <ul>
+    <li><a href="#difficulty">Picking the right difficulty</a></li>
+    <li><a href="#characters">Grace vs Leon — what's the difference?</a></li>
+    <li><a href="#saves">Save strategy and missables</a></li>
+    <li><a href="#combat">Combat fundamentals</a></li>
+    <li><a href="#tips15">15 essential tips</a></li>
+    <li><a href="#mistakes">Common beginner mistakes</a></li>
+  </ul>
+</div>
+
+<h2 id="difficulty">Picking the right difficulty</h2>
+
+<p>Resident Evil Requiem has four difficulty options, plus a hidden Insanity mode. Choosing the right one for your first run dramatically affects the experience.</p>
+
+<table class="diff-table">
+  <thead>
+    <tr><th>Difficulty</th><th>Save system</th><th>Combat</th><th>Best for</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="diff-name">Casual</td>
+      <td>Anywhere</td>
+      <td>Generous</td>
+      <td>Story-focused players, RE newcomers</td>
+    </tr>
+    <tr>
+      <td class="diff-name">Standard (Modern)</td>
+      <td>Anywhere</td>
+      <td>Balanced</td>
+      <td><strong>Most first-time players</strong></td>
+    </tr>
+    <tr>
+      <td class="diff-name">Standard (Classic)</td>
+      <td>Ink Ribbons required</td>
+      <td>Balanced + tense saves</td>
+      <td>RE veterans seeking the classic feel</td>
+    </tr>
+    <tr>
+      <td class="diff-name">Insanity</td>
+      <td>Anywhere</td>
+      <td>Brutal — one-shots common</td>
+      <td>Post-game challenge only</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="warn-box">
+  💡 <strong>Recommendation:</strong> Start with <strong>Standard (Modern)</strong>. Casual is too easy and undersells the survival horror feel. Classic's Ink Ribbon save system adds frustration without much benefit on a first run. Insanity unlocks after any first completion, including Casual.
+</div>
+
+<h2 id="characters">Grace vs Leon — what's the difference?</h2>
+
+<p>RE9 features two playable characters with completely different skillsets. The story alternates between them automatically.</p>
+
+<h3>// GRACE ASHCROFT</h3>
+
+<ul class="normal">
+  <li><strong>Blood Crafting</strong> — uses the Blood Collector to harvest Infected Blood from enemies, then crafts ammo, healing items, and Hemolytic Injectors (instant-kill items)</li>
+  <li><strong>Safe-cracking</strong> — only Grace can open the 5 locked safes in the game</li>
+  <li><strong>No weapon upgrades</strong> — her weapons are fixed at baseline stats</li>
+  <li><strong>Stealth-focused</strong> — many of Grace's encounters are designed around avoidance, not combat</li>
+</ul>
+
+<h3>// LEON S. KENNEDY</h3>
+
+<ul class="normal">
+  <li><strong>Weapon upgrades</strong> — uses Credits at Supply Boxes to improve weapon stats up to Tier 3</li>
+  <li><strong>Hatchet finishers</strong> — performs powerful hatchet executions on staggered enemies</li>
+  <li><strong>Heavy weapons</strong> — access to shotguns, sniper rifles, assault rifles</li>
+  <li><strong>Combat-focused</strong> — Leon's sections feature most boss fights and intense combat sequences</li>
+</ul>
+
+<div class="warn-box info">
+  ℹ <strong>Pro tip:</strong> Solve the <strong>Blood Specimen (Denatured) puzzle in the Blood Lab</strong> as soon as possible. It unlocks the Hemolytic Injector recipe — these instantly kill mini-bosses like Chunk and the Chef when used from behind.
+</div>
+
+<h2 id="saves">Save strategy and missables</h2>
+
+<p>Resident Evil Requiem is <strong>completely linear</strong>. There is no chapter select, no free-roam after credits, and no way to revisit areas once you progress past a point of no return. This makes save strategy critical.</p>
+
+<h3>// THE 12-SLOT MANUAL SAVE RULE</h3>
+
+<p>You have <strong>12 manual save slots</strong>. Use them all. The recommended save strategy:</p>
+
+<ol>
+  <li><strong>Save at the start of every new area.</strong> If you miss a collectible, you can reload to that exact point.</li>
+  <li><strong>Save before any boss fight.</strong> Mistakes happen — having a clean retry save prevents 30-minute losses.</li>
+  <li><strong>Save before puzzle inputs.</strong> The Roulette Wheel easter egg, for example, has a random element. Save first, retry if needed.</li>
+  <li><strong>Rotate your saves.</strong> Don't overwrite the same slot — keep at least 3 different points so you can backtrack further if needed.</li>
+</ol>
+
+<h3>// MISSABLE COLLECTIBLES</h3>
+
+<p>Several collectibles are missable if you progress too far:</p>
+
+<ul class="normal">
+  <li><strong>Mr. Raccoon Memoriam #5</strong> (Medication Room) — requires Level 3 Wristband, missed by most first-time players</li>
+  <li><strong>Mr. Raccoon Memoriam #9</strong> (Private Lab) — last chance before Leon's chapter starts</li>
+  <li><strong>Mr. Raccoon Memoriam #25</strong> (ARK Operations Room) — last chance before Victor Gideon</li>
+  <li><strong>Files in story-locked rooms</strong> — many areas seal permanently after story progression</li>
+  <li><strong>Optional bosses</strong> (Chef, Chunk #1) — disappear after their respective story beats</li>
+</ul>
+
+<h2 id="combat">Combat fundamentals</h2>
+
+<h3>// THE PARRY SYSTEM</h3>
+
+<p>The Hatchet parry is the single most important combat mechanic in RE9. Master it early.</p>
+
+<ol>
+  <li><strong>Press L1/LB just before an enemy attack lands.</strong> Successful parries stagger the enemy and create a damage window.</li>
+  <li><strong>You can shoot OR melee finish after a parry.</strong> Don't feel locked into using the Hatchet counter — shooting immediately also works and conserves stamina.</li>
+  <li><strong>Most enemy attacks are parryable.</strong> Exceptions: thrown objects (cars from Mr. X), leap attacks, and electric/elemental attacks.</li>
+  <li><strong>Tutorial parry unlocks "Untouchable" trophy.</strong> Auto-unlocks during the opening sequence.</li>
+</ol>
+
+<h3>// HATCHET FINISHERS</h3>
+
+<p>When an enemy is staggered (low HP or post-parry), a Hatchet finisher prompt appears. Press it for an instant-kill execution. Three hatchet finishers unlock the <strong>"Chop Chop"</strong> trophy. Comes naturally in the early game.</p>
+
+<h3>// AMMO MANAGEMENT</h3>
+
+<p>Ammo is tight on Standard and brutal on Insanity. Conserve it:</p>
+
+<ul class="normal">
+  <li><strong>Don't shoot retreating enemies</strong> — they're not a threat, save the bullet</li>
+  <li><strong>Use the knife for low-HP zombies</strong> — finisher animation is faster than reloading</li>
+  <li><strong>Save Requiem Bullets for boss weak points only</strong> — never waste them on standard enemies</li>
+  <li><strong>Craft as Grace</strong> — the Blood Collector + Scrap creates pistol ammo and Hemolytic Injectors</li>
+</ul>
+
+<h2 id="tips15">15 essential tips for new players</h2>
+
+<div class="tip-list">
+  <div class="tip-item">
+    <div class="tip-num">01</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Wear headphones</div>
+      <div class="tip-detail">Mr. Raccoon Memoriams emit a faint chime within 5 meters. Audio cues hint at hidden enemies. Headphones are a noticeable advantage on every difficulty.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">02</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Solve the Blood Specimen puzzle FIRST</div>
+      <div class="tip-detail">In the Blood Lab as Grace, solve Specimen 1 (click middle square — 1 step). This unlocks Hemolytic Injector crafting, which one-shots the Chef and Chunk mini-bosses.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">03</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Pick up the MSBG 500 immediately</div>
+      <div class="tip-detail">As Leon in the Care Center Attic, grab the shotgun beside the corpse the second Chunk was feeding on. This is your primary weapon for the entire mid-game.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">04</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Open the Workshop safe for the Raccoon Roundup map</div>
+      <div class="tip-detail">Combination R60·L40·R80 in the Care Center Basement Workshop. The map highlights all 9 Care Center Mr. Raccoon locations on your in-game map.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">05</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Don't fight Mr. X in the RPD</div>
+      <div class="tip-detail">The first Mr. X encounter is a chase sequence — he cannot be killed in this form. Run, don't shoot. The real boss fight comes after Gun Shop Kendo.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">06</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Spend Antique Coins at the Parlor</div>
+      <div class="tip-detail">The Parlor merchant in the West Wing offers weapon attachments, healing items, and crafting materials. Antique Coins from safes are easily replaced — don't hoard them.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">07</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Kill Chunk for the Eye Spy Charm</div>
+      <div class="tip-detail">Optional but recommended. The Eye Spy Charm gives Grace a chance to survive fatal damage. 3× Hemolytic Injector from behind = instant kill.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">08</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Master the parry before the Care Center ends</div>
+      <div class="tip-detail">Practice on standard zombies. By the time you reach Mr. X and The Commander, parry timing should be second nature.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">09</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Repair body armor before every boss</div>
+      <div class="tip-detail">Visit Supply Boxes or the Stash Box at Kendo's. Broken armor in a boss fight is a guaranteed death.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">10</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Always quick-turn in tight corridors</div>
+      <div class="tip-detail">Tap the back-step button to instantly 180. Critical for surviving Mr. X chases and Tyrant encounters.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">11</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Loot every body for Tracking Modules</div>
+      <div class="tip-detail">Tracking Modules drop from enemies and convert to Credits. Higher rarity (Rare, Epic, Legendary) drops mostly from mini-bosses.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">12</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Read every File you find</div>
+      <div class="tip-detail">Files contain story lore but also puzzle hints — including safe code clues and Quartz Puzzle solutions. Reading them all unlocks the "Archivist" trophy.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">13</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Defeat The Commander for Mortal Edge</div>
+      <div class="tip-detail">In the ARK Facility. The Mortal Edge Hatchet replaces your default Hatchet with significantly better stats. Mandatory for the Victor Gideon final boss.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">14</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Don't waste the Rocket Launcher</div>
+      <div class="tip-detail">The single-use RPG drops in Raccoon City. Save it for an emergency boss kill — wasting it on regular enemies is a costly mistake. Note: this is NOT the unlockable Infinite RPG.</div>
+    </div>
+  </div>
+
+  <div class="tip-item">
+    <div class="tip-num">15</div>
+    <div class="tip-content">
+      <div class="tip-title-text">Aim for the heart on Super Tyrant</div>
+      <div class="tip-detail">Mr. X's pulsating heart is his only weak point. Body shots do almost no damage. Save Requiem rounds for heart shots only.</div>
+    </div>
+  </div>
+</div>
+
+<h2 id="mistakes">Common beginner mistakes</h2>
+
+<div class="warn-box">
+  <strong>❌ Mistake #1:</strong> Trying to kill Mr. X during the RPD chase sequence. He cannot die in this form — running is the only option.
+</div>
+
+<div class="warn-box">
+  <strong>❌ Mistake #2:</strong> Skipping Blood Specimen analysis. Without Hemolytic Injectors, optional bosses become significantly harder.
+</div>
+
+<div class="warn-box">
+  <strong>❌ Mistake #3:</strong> Only using one save slot. If a missable collectible passes you by, you cannot recover without restarting the game.
+</div>
+
+<div class="warn-box">
+  <strong>❌ Mistake #4:</strong> Using Requiem Bullets on regular enemies. Requiem has limited supply and is reserved for boss weak points.
+</div>
+
+<div class="warn-box">
+  <strong>❌ Mistake #5:</strong> Trying to parry thrown cars or leap attacks. These cannot be parried — you must dodge.
+</div>
+
+<div class="warn-box">
+  <strong>❌ Mistake #6:</strong> Avoiding the Chef and Chunk fights to "save resources." Both drop valuable items (Pantry Key, Eye Spy Charm) — they're worth the fight.
+</div>
+
+<div class="warn-box">
+  <strong>❌ Mistake #7:</strong> Selecting Standard (Classic) for a first run without RE experience. The Ink Ribbon save system creates frustration that overshadows the gameplay.
+</div>
+
+<h2 id="next">What to do after you finish</h2>
+
+<p>Completing the main story unlocks several post-game features:</p>
+
+<ul class="normal">
+  <li><strong>Insanity difficulty</strong> — selectable from New Game</li>
+  <li><strong>Special Content Store</strong> — buy new weapons (Matilda IMP, Clatter Carbine, Ghost Grudge)</li>
+  <li><strong>Infinite Ammo unlocks</strong> — including Infinite Requiem and Infinite RPG (does not void trophies)</li>
+  <li><strong>Concept art and bonus cosmetics</strong> — viewable in Special Content menu</li>
+  <li><strong>The Final Puzzle</strong> — multi-step NG+ puzzle involving Marie's Doll and the Severed Hand RNA sequence</li>
+</ul>
+
+<p>For Platinum trophy hunters, the typical path is: Casual or Standard first run for story → 100% collectible cleanup → Insanity speedrun with Infinite Requiem.</p>
+<div class="cta">
+  <div class="cta-title">RECOMMENDED NEXT</div>
+  <a href="best-weapons-tier-list.html">Best Weapons Tier List</a>
+  <a href="all-5-safe-codes-guide.html">All 5 Safe Codes</a>
+  <a href="all-25-mr-raccoon-locations.html">All 25 Mr. Raccoon Locations</a>
+  <a href="how-to-beat-mr-x-super-tyrant.html">How to Beat Super Tyrant</a>
+  <a href="index.html">All guides home</a>
+</div>
+
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? <a href="#" style="color:var(--red);">Let us know</a> — we update guides weekly based on community feedback.</p>
+
+<!-- Ko-fi support strip (subtle, end-of-article) -->
+<div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
+  <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">If this guide helped, consider supporting more guides like this on Ko-fi. <em style="color:#ba7517;font-style:normal;">Every little bit means the world.</em></p>
+  <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Support on Ko-fi</a>
+</div>
+
+</div>
+<div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
+  <p style="margin:5px 0;">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
+  <p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">About</a> · <a href="contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Contact</a> · <a href="privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Privacy</a> · <a href="dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Spoilers</a></p>
+  <p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
+</div>
+</body>
+</html>

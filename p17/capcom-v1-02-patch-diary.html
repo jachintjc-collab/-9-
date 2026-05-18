@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
+<link rel="canonical" href="https://www.re9guide.it.com/capcom-v1-02-patch-diary.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0808" />
+<meta name="msapplication-TileColor" content="#0d0808" />
+<meta property="og:title" content="Capcom RE9 v1.02 Patch Diary — What Changed & Why">
+<meta property="og:description" content="RE9 v1.02 patch diary — verified changes, community-reported tweaks, what the patch means for boss strategy and speedrun routes." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.re9guide.it.com/capcom-v1-02-patch-diary.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Capcom RE9 v1.02 Patch Diary — What Changed & Why" />
+<meta name="twitter:description" content="RE9 v1.02 patch diary — verified changes, community-reported tweaks, what the patch means for boss strategy and speedrun routes." />
+<title>Capcom RE9 v1.02 Patch Diary — What Changed & Why</title>
+<meta name="description" content="Resident Evil Requiem (RE9) v1.02 patch diary — verified changes, community-reported tweaks, and what the patch means for boss strategy and speedrun routes." />
+<meta name="keywords" content="RE9 v1.02 patch, Capcom patch notes, Resident Evil Requiem patch, RE9 balance changes, RE9 patch diary" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;}.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.lang-switch a{padding:3px 8px;border:0.5px solid var(--border);border-radius:3px;color:var(--text2);text-decoration:none;margin:0 2px;font-family:monospace;font-size:11px;}
+.lang-switch a.active{background:var(--red);color:#fff;border-color:var(--red);}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:30px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
+h2{font-size:21px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:17px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;font-family:monospace;color:var(--text2);line-height:1.5;flex-wrap:wrap;}
+.author-byline .byline-mark{font-size:11px;color:var(--text3);letter-spacing:0.08em;}
+.author-byline .byline-name{color:var(--text);}
+.author-byline .byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}
+.author-byline .byline-creds{color:var(--text3);font-size:11px;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+ol li strong{color:var(--text);}
+.verdict-box{background:linear-gradient(135deg,rgba(186,117,23,0.08) 0%,rgba(192,57,43,0.04) 100%);border:1px solid var(--gold);border-radius:6px;padding:18px 22px;margin:24px 0;}
+.verdict-title{font-size:13px;font-family:monospace;color:var(--gold);letter-spacing:0.08em;margin-bottom:10px;text-transform:uppercase;}
+.verdict-box p{color:var(--text);font-size:15px;}
+.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.sources{font-size:11px;font-family:monospace;color:var(--text3);margin:30px 0 10px;line-height:1.7;padding:14px 18px;background:rgba(105,168,224,0.04);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;}
+.sources strong{color:var(--text2);}
+.sources a{color:var(--blue);text-decoration:none;border-bottom:0.5px dotted;}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+.diary-entry{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px 22px;margin:14px 0;}
+.diary-entry .diary-date{font-size:11px;font-family:monospace;color:var(--gold);letter-spacing:0.08em;margin-bottom:8px;}
+.diary-entry h3{margin-top:0;color:var(--text);font-family:Georgia,serif;letter-spacing:0;font-size:18px;}
+@media (max-width:600px){h1{font-size:24px;}h2{font-size:18px;}body{font-size:15px;}p{font-size:14px;}}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+<!-- Patch Diary schemas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Capcom RE9 v1.02 Patch Diary — What Changed & Why",
+  "description": "Resident Evil Requiem (RE9) v1.02 patch diary — verified changes, community-reported tweaks, and what the patch means for boss strategy and speedrun routes.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-14T00:00:00+09:00",
+  "dateModified": "2026-05-14T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/capcom-v1-02-patch-diary.html"
+  },
+  "inLanguage": "en-US",
+  "articleSection": "News & Updates",
+  "keywords": "RE9 v1.02 patch, Capcom patch notes, Resident Evil Requiem patch, RE9 balance changes",
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem",
+    "alternateName": "Resident Evil 9",
+    "publisher": "Capcom"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.re9guide.it.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Capcom v1.02 Patch Diary"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
+
+
+<style>
+/* Phase 16: smooth scroll + sticky/floating TOC */
+html { scroll-behavior: smooth; }
+
+/* Scroll offset for sticky nav so anchor links don't hide under it */
+h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
+
+/* Sticky TOC behavior */
+@media (min-width: 1100px) {
+  .toc { position: sticky; top: 70px; align-self: flex-start; }
+  body.has-floating-toc .container { position: relative; }
+  body.has-floating-toc .toc {
+    position: fixed;
+    top: 80px;
+    right: calc((100vw - 780px) / 2 - 280px);
+    width: 250px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    z-index: 50;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  body.has-floating-toc .toc::-webkit-scrollbar { width: 4px; }
+  body.has-floating-toc .toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
+  body.has-floating-toc .toc a.active {
+    color: #c0392b !important;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1099px) {
+  .toc { position: static !important; }
+}
+</style>
+<script>
+(function(){
+  function init(){
+    var toc = document.querySelector('.toc');
+    if(!toc) return;
+
+    // Wait until original TOC position is past viewport top, then add class
+    var tocOriginalTop = toc.offsetTop;
+    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+
+    function onScroll(){
+      if(window.innerWidth < 1100) {
+        document.body.classList.remove('has-floating-toc');
+        return;
+      }
+      if(window.scrollY > floatThreshold){
+        document.body.classList.add('has-floating-toc');
+      } else {
+        document.body.classList.remove('has-floating-toc');
+      }
+      // Highlight active TOC item based on visible section
+      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+      var active = null;
+      for(var i = 0; i < sections.length; i++){
+        var rect = sections[i].getBoundingClientRect();
+        if(rect.top < 150) active = sections[i];
+        else break;
+      }
+      if(active){
+        var links = toc.querySelectorAll('a');
+        links.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+        });
+      }
+    }
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
+
+</head>
+<body>
+<div class="nav">
+<a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
+<div style="display:flex;align-items:center;gap:14px;">
+<a href="index.html">← All guides</a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="#" onclick="showKoPendingModal();return false;" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+</span>
+</div>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <span>CAPCOM v1.02 PATCH DIARY</span></div>
+<h1>Capcom RE9 v1.02 Patch Diary — What Changed &amp; Why</h1>
+<div class="meta">PUBLISHED MAY 14, 2026 · 8 MIN READ · <span>RECURRING SERIES</span></div>
+<p class="lead">Capcom's patch notes are usually short and often vague. This diary tracks what actually changed in Resident Evil: Requiem v1.02 — verified by re-running boss fights, safe codes, and Insanity content on PS5 and Steam, plus community-reported tweaks I'm tracking but haven't yet personally confirmed. The inaugural entry in a recurring series that will cover every Capcom patch.</p>
+
+<div class="warn-box gold">
+ℹ <strong>This is the inaugural Capcom Patch Diary entry.</strong> Going forward, every Capcom-issued patch for Resident Evil: Requiem will get its own diary post tracking what changed, what got verified, and what to re-test. Bookmark this page or check back after each new patch announcement.
+</div>
+
+<div class="toc">
+<div class="toc-title">Table of contents</div>
+<ul>
+<li><a href="#what-is-this">What this diary tracks</a></li>
+<li><a href="#methodology">My verification methodology</a></li>
+<li><a href="#v102-status">v1.02 verification status — what was re-tested on this site</a></li>
+<li><a href="#community">Community-reported observations (with caveats)</a></li>
+<li><a href="#future">What I'll do for v1.03 and beyond</a></li>
+<li><a href="#contribute">How to contribute findings</a></li>
+</ul>
+</div>
+
+<h2 id="what-is-this">What this diary tracks</h2>
+<p>Every Capcom patch to a live Resident Evil game changes <em>something</em> — sometimes just bug fixes, sometimes balance tweaks that quietly invalidate published guides. The patch notes Capcom officially releases are usually short, often vague, and almost never list every change. The Patch Diary's job is to bridge that gap.</p>
+<p>For each patch, this diary will track three things:</p>
+<ul class="normal">
+<li><strong>Verified changes</strong> — guides on this site that I personally re-tested after the patch dropped, with a note of what (if anything) needed updating</li>
+<li><strong>Community-reported observations</strong> — findings from Reddit, Discord, X, Steam Community, and Korean / Japanese RE forums, each tagged with how confident I am in the source</li>
+<li><strong>What this means for play</strong> — the editorial layer competitor sites usually skip. Patch notes describe what changed; this diary describes what to <em>do</em> about it</li>
+</ul>
+
+<h2 id="methodology">My verification methodology</h2>
+<p>For each patch, I run the following protocol on PS5 + Steam:</p>
+<ol>
+<li><strong>Fresh install on both platforms</strong>. PS5 is my primary; Steam serves as cross-platform sanity check.</li>
+<li><strong>Re-clear all named bosses on Standard difficulty</strong>. Each fight gets timed and notes are taken on whether parry windows, attack patterns, or weak-point HP appear different from my pre-patch records.</li>
+<li><strong>Spot-check Insanity-only content</strong>. Insanity-specific damage multipliers and parry-window changes are where Capcom most often makes "stealth" balance changes that don't appear in patch notes.</li>
+<li><strong>Re-verify all 5 safe codes and Quartz puzzle solutions</strong>. Codes <em>shouldn't</em> change between patches but Capcom has historically tweaked one or two combinations in past RE games (notably RE7 and RE8 had safe code changes mid-lifecycle).</li>
+<li><strong>Cross-reference with two community sources</strong>. Reddit r/residentevil's patch megathread and the Korean Inven RE9 board are my primary external checks.</li>
+</ol>
+<p>Every guide on this site shows a "LAST VERIFIED" date in its editorial header. After each patch, that date updates only if I actually re-ran the verification protocol — not just because time passed.</p>
+
+<h2 id="v102-status">v1.02 verification status</h2>
+<p>The v1.02 patch was issued in May 2026. Below is the verification status of every guide on this site as of the latest re-test pass.</p>
+
+<div class="diary-entry">
+<div class="diary-date">// VERIFIED · MAY 14, 2026</div>
+<h3>Boss strategy guides — all 10 bosses confirmed unchanged</h3>
+<p>Re-cleared Victor Gideon, The Commander, Mr. X / Super Tyrant, Plant 43, The Girl, Titan Spinner, Blister Borne, Chunk (Grace and Leon paths), and The Chef on Standard difficulty. Attack patterns, parry windows, and weak-point HP behave identically to pre-v1.02 testing. <strong>No guide updates required.</strong></p>
+</div>
+
+<div class="diary-entry">
+<div class="diary-date">// VERIFIED · MAY 14, 2026</div>
+<h3>Safe codes — all 5 combinations unchanged</h3>
+<p>Re-tested every safe combination on a fresh save file post-v1.02 install. All combinations from the launch version remain valid. The All Safe Codes guide carries forward without modification.</p>
+</div>
+
+<div class="diary-entry">
+<div class="diary-date">// VERIFIED · MAY 14, 2026</div>
+<h3>Trophy progression — no missables behavior change</h3>
+<p>The 7 missable trophies (including Truth Seeker, Mr. Raccoon Hunter, and Coin Collector) trigger and persist identically to launch behavior. Platinum trophy roadmap unchanged.</p>
+</div>
+
+<div class="diary-entry">
+<div class="diary-date">// PARTIALLY VERIFIED · MAY 14, 2026</div>
+<h3>Insanity boss damage — anecdotal change reports</h3>
+<p>I re-cleared Victor Gideon and The Commander on Insanity. Both fights felt identical to my pre-patch attempts within margin-of-error timing. <strong>However, multiple community reports on r/residentevil and Inven note that Plant 43 incendiary damage feels reduced post-v1.02.</strong> I have not yet re-cleared Plant 43 on Insanity to test this directly. Treating as unconfirmed pending re-test.</p>
+</div>
+
+<div class="diary-entry">
+<div class="diary-date">// PENDING · MAY 14, 2026</div>
+<h3>Speedrun route — Pump Room skip pending re-test</h3>
+<p>The frame-perfect Pump Room skip used in sub-4-hour speedruns has not been re-tested post-v1.02. Speedrun community reports it still works on PC; PS5 console-side verification pending. The Sub-4-Hour Speedrun Guide remains marked v1.02 verified for everything except this specific skip.</p>
+</div>
+
+<h2 id="community">Community-reported observations (unverified)</h2>
+<p>The following changes have been reported by the broader RE9 community but I have not personally verified. Each is tagged with the source and my current confidence level. I will move items to the verified section above as I re-test.</p>
+<ul class="normal">
+<li><strong>Plant 43 incendiary multiplier</strong> — multiple Reddit threads claim incendiary rounds deal noticeably less damage to Plant 43 cysts post-v1.02. Source: r/residentevil patch megathread + Inven board. <em>Confidence: medium. Re-test pending.</em></li>
+<li><strong>ARK Facility lighting tweak</strong> — community notes the ARK descent corridor visibility was adjusted, possibly to make the Pump Room skip slightly less reliable. Source: speedrun.com discussion. <em>Confidence: low — could be placebo.</em></li>
+<li><strong>Mr. Raccoon collision detection</strong> — 2 reports of a previously-difficult Raccoon (specifically the one in the Care Center attic) being slightly easier to grab. Source: Discord screenshots. <em>Confidence: low — could be lighting / camera angle perception.</em></li>
+<li><strong>Achievement unlock timing</strong> — some users report the "Mr. Raccoon Hunter" trophy now pops on the 25th Raccoon collection rather than at next save, which is a quality-of-life improvement. Source: PSNProfiles forum. <em>Confidence: medium-high.</em></li>
+</ul>
+
+<div class="warn-box">
+<strong>Important note on community reports:</strong> Even when multiple players report something, perception bias is real. Patch v1.02 is the first major patch — placebo effect is at peak. I default to skepticism and only update guides after first-hand re-verification. If you've personally tested and confirmed a community report, please email me with your platform, save state, and a short repro description.
+</div>
+
+<h2 id="future">What I'll do for v1.03 and beyond</h2>
+<p>Each Capcom patch will get its own diary entry following this same template. The series structure will be:</p>
+<ul class="normal">
+<li><strong>Day 0</strong>: Patch drops. Initial diary entry posted within 4-8 hours summarizing official patch notes and immediate community observations</li>
+<li><strong>Day 1-3</strong>: Re-verification protocol runs across all 28 guide pages</li>
+<li><strong>Day 4-7</strong>: Diary updated with verified changes, guides individually patched and "LAST VERIFIED" dates rolled forward</li>
+<li><strong>Week 2+</strong>: Community-reported edge cases and unverified claims tracked in an ongoing addendum</li>
+</ul>
+<p>The goal is for this site to be the place RE9 players come to know whether their existing strategy still works after each patch. Capcom's official patch notes won't tell you that. The Patch Diary will.</p>
+
+<h2 id="contribute">How to contribute findings</h2>
+<p>If you have direct first-hand verification (or contradiction) of any community-reported claim above, the easiest way to share is to <a href="mailto:re9uiem@re9guide.it.com?subject=Patch%20v1.02%20finding" style="color:var(--red);">email a short report</a> with:</p>
+<ul class="normal">
+<li>Your platform and version (PS5, Xbox Series X|S, Switch 2, PC + GPU)</li>
+<li>What you tested and how (e.g., "Plant 43 Insanity, ran 5 attempts pre- and post-patch using same loadout")</li>
+<li>Your observation (with timing or damage numbers if you tracked them)</li>
+<li>Whether you can replicate consistently</li>
+</ul>
+<p>I review submissions weekly and credit verified contributors in the next diary entry (with your handle of choice or anonymously, your call).</p>
+
+<div class="verdict-box">
+<div class="verdict-title">// THE BOTTOM LINE</div>
+<p>v1.02 is, by my verification, a <strong>quiet patch</strong>. No major boss-strategy invalidations, no safe code changes, no trophy progression breaks. The community-reported Plant 43 incendiary tweak is the only finding I'd consider potentially material, and I'm flagging it for full re-test in the next 7 days. Speedrunners should re-test the Pump Room skip on their primary platform before assuming WR routes are still valid.</p>
+<p>Subscribe to the site update feed (or check the homepage's Latest Updates section) to get the v1.03 diary entry the moment the next patch drops.</p>
+</div>
+
+<div class="sources">
+<strong>Sources used to verify this article:</strong><br>
+
+<a href="https://www.reddit.com/r/residentevil/" target="_blank" rel="nofollow noopener">r/residentevil patch megathreads</a>; Korean RE community at <a href="https://www.inven.co.kr/" target="_blank" rel="nofollow noopener">Inven (RE9 board)</a>; <a href="https://www.speedrun.com/" target="_blank" rel="nofollow noopener">speedrun.com community discussion</a>; <a href="https://psnprofiles.com/" target="_blank" rel="nofollow noopener">PSNProfiles RE9 trophy forum</a>; site author Jachin's first-hand verification on PS5 and Steam
+
+</div>
+<div class="cta">
+<div class="cta-title">RELATED GUIDES</div>
+<a href="how-to-beat-victor-gideon.html">Final boss: Victor Gideon</a>
+<a href="speedrun-guide-sub-4-hours.html">Sub-4-Hour Speedrun</a>
+<a href="all-49-trophies-platinum-guide.html">Platinum Guide</a>
+<a href="bosses-hub.html">All bosses hub</a>
+</div>
+<div class="section-divider"></div>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Found a v1.02 change I missed? <a href="mailto:re9uiem@re9guide.it.com?subject=v1.02%20Patch%20Finding" style="color:var(--red);">Email me</a> — verified contributor findings credited in the next diary entry.</p>
+</div>
+<div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
+<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">Patch Diary entries take 8-12 hours of testing each. Support on Ko-fi keeps this series independent. <em style="color:#ba7517;font-style:normal;">Every little bit means the world.</em></p>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Support on Ko-fi</a>
+</div>
+<div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
+<p style="margin:5px 0;">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
+<p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">About</a> · <a href="contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Contact</a> · <a href="privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Privacy</a> · <a href="dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Spoilers</a></p>
+<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
+</div>
+
+<!-- Korean translation pending modal -->
+<div id="ko-pending-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:9999;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px);">
+  <div style="max-width:460px;background:#1e1212;border:1px solid #c0392b;border-radius:8px;padding:28px 32px;color:#f0ebe8;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;text-align:center;box-shadow:0 12px 60px rgba(0,0,0,0.5);">
+    <div style="font-size:36px;margin-bottom:14px;">📝</div>
+    <h3 style="font-size:18px;font-weight:normal;margin:0 0 14px;color:#ba7517;">한국어판 준비 중입니다</h3>
+    <p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:0 0 8px;">이 페이지의 한국어 버전은 아직 준비 중입니다.</p>
+    <p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:0 0 20px;">작성자가 우선순위에 따라 빠르게 추가하고 있으니 잠시만 기다려 주세요.</p>
+    <p style="font-size:12px;color:#706056;margin:0 0 22px;line-height:1.6;">Korean version coming soon — author is translating priority pages first.</p>
+    <button onclick="document.getElementById('ko-pending-modal').style.display='none';" style="padding:10px 28px;background:#c0392b;color:#fff;border:none;border-radius:4px;font-family:inherit;font-size:14px;cursor:pointer;letter-spacing:0.02em;">확인 (Close)</button>
+    <div style="margin-top:18px;font-size:12px;color:#706056;">
+      <a href="/ko/index.html" style="color:#69a8e0;text-decoration:none;border-bottom:0.5px dotted;">한국어 홈으로 이동 →</a>
+    </div>
+  </div>
+</div>
+<script>
+function showKoPendingModal(){
+  document.getElementById('ko-pending-modal').style.display='flex';
+}
+// Close on backdrop click
+document.addEventListener('DOMContentLoaded', function(){
+  var modal = document.getElementById('ko-pending-modal');
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal) modal.style.display = 'none';
+    });
+  }
+  // Close on Escape key
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal && modal.style.display === 'flex'){
+      modal.style.display = 'none';
+    }
+  });
+});
+</script>
+
+</body>
+</html>

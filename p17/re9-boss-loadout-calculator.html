@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
+<link rel="canonical" href="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
+<link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0808" />
+<meta name="msapplication-TileColor" content="#0d0808" />
+<meta property="og:title" content="RE9 Boss Loadout Calculator — Tested Weapon Recommendations">
+<meta property="og:description" content="Interactive boss loadout calculator for Resident Evil Requiem (RE9). Pick boss + difficulty, get tested weapon and consumable recommendations." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="RE9 Boss Loadout Calculator — Tested Weapon Recommendations" />
+<meta name="twitter:description" content="Interactive boss loadout calculator for Resident Evil Requiem (RE9). Pick boss + difficulty, get tested weapon and consumable recommendations." />
+<title>RE9 Boss Loadout Calculator — Tested Weapon Recommendations</title>
+<meta name="description" content="Interactive boss loadout calculator for Resident Evil Requiem (RE9). Pick boss + difficulty, get tested weapon and consumable recommendations." />
+<style>*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;}.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.lang-switch a{padding:3px 8px;border:0.5px solid var(--border);border-radius:3px;color:var(--text2);text-decoration:none;margin:0 2px;font-family:monospace;font-size:11px;}
+.lang-switch a.active{background:var(--red);color:#fff;border-color:var(--red);font-weight:bold;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:17px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;font-family:monospace;color:var(--text2);line-height:1.5;flex-wrap:wrap;}
+.author-byline .byline-mark{font-size:11px;color:var(--text3);letter-spacing:0.08em;}
+.author-byline .byline-name{color:var(--text);}
+.author-byline .byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}
+.author-byline .byline-creds{color:var(--text3);font-size:11px;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;}
+.toc ul{list-style:none;padding:0;}.toc li{font-size:13px;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.lesson{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px 22px;margin:14px 0;}
+.lesson .lesson-num{display:inline-block;font-family:monospace;color:var(--red);font-size:13px;letter-spacing:0.06em;margin-right:8px;}
+.lesson h3{margin-top:0;color:var(--text);font-family:Georgia,serif;letter-spacing:0;font-size:18px;display:inline;}
+.lesson p{margin-top:10px;font-size:14px;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.7;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+.verdict-box{background:linear-gradient(135deg,rgba(186,117,23,0.08) 0%,rgba(192,57,43,0.04) 100%);border:1px solid var(--gold);border-radius:6px;padding:18px 22px;margin:24px 0;}
+.verdict-title{font-size:13px;font-family:monospace;color:var(--gold);letter-spacing:0.08em;margin-bottom:10px;}
+.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.sources{font-size:11px;font-family:monospace;color:var(--text3);margin:30px 0 10px;line-height:1.7;padding:14px 18px;background:rgba(105,168,224,0.04);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;}
+.sources a{color:var(--blue);text-decoration:none;border-bottom:0.5px dotted;}
+.footer{padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
+.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+<!-- Phase 5 schemas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "RE9 Boss Loadout Calculator",
+  "description": "Interactive boss loadout calculator for RE9",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-14T00:00:00+09:00",
+  "dateModified": "2026-05-14T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/re9-boss-loadout-calculator.html"
+  },
+  "inLanguage": "en-US",
+  "articleSection": "Strategy & Tools",
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem",
+    "alternateName": "Resident Evil 9",
+    "publisher": "Capcom"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.re9guide.it.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "RE9 Boss Loadout Calculator"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
+
+
+<style>
+/* Phase 16: smooth scroll + sticky/floating TOC */
+html { scroll-behavior: smooth; }
+
+/* Scroll offset for sticky nav so anchor links don't hide under it */
+h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
+
+/* Sticky TOC behavior */
+@media (min-width: 1100px) {
+  .toc { position: sticky; top: 70px; align-self: flex-start; }
+  body.has-floating-toc .container { position: relative; }
+  body.has-floating-toc .toc {
+    position: fixed;
+    top: 80px;
+    right: calc((100vw - 780px) / 2 - 280px);
+    width: 250px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    z-index: 50;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  body.has-floating-toc .toc::-webkit-scrollbar { width: 4px; }
+  body.has-floating-toc .toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
+  body.has-floating-toc .toc a.active {
+    color: #c0392b !important;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1099px) {
+  .toc { position: static !important; }
+}
+</style>
+<script>
+(function(){
+  function init(){
+    var toc = document.querySelector('.toc');
+    if(!toc) return;
+
+    // Wait until original TOC position is past viewport top, then add class
+    var tocOriginalTop = toc.offsetTop;
+    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+
+    function onScroll(){
+      if(window.innerWidth < 1100) {
+        document.body.classList.remove('has-floating-toc');
+        return;
+      }
+      if(window.scrollY > floatThreshold){
+        document.body.classList.add('has-floating-toc');
+      } else {
+        document.body.classList.remove('has-floating-toc');
+      }
+      // Highlight active TOC item based on visible section
+      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+      var active = null;
+      for(var i = 0; i < sections.length; i++){
+        var rect = sections[i].getBoundingClientRect();
+        if(rect.top < 150) active = sections[i];
+        else break;
+      }
+      if(active){
+        var links = toc.querySelectorAll('a');
+        links.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+        });
+      }
+    }
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
+
+</head>
+<body>
+<div class="nav">
+<a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
+<div style="display:flex;align-items:center;gap:14px;">
+<a href="index.html">← All guides</a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="/ko/re9-boss-loadout-calculator.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+</span>
+</div>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <span>RE9 BOSS LOADOUT CALCULATOR</span></div>
+<h1>RE9 Boss Loadout Calculator</h1>
+<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;">PUBLISHED MAY 14, 2026 · 3 MIN INTERACTIVE</div>
+<p class="lead">Pick a boss and difficulty — get the verified loadout that this site recommends, with primary weapon, backup, consumables, and tactical notes. Cross-references every boss-specific guide on this site.</p>
+
+<div class="warn-box gold">
+ℹ <strong>This is an interactive calculator.</strong> Pick the boss and difficulty, get a tested loadout recommendation. All recommendations cross-reference the boss-specific guides on this site. No data collected — runs entirely in your browser.
+</div>
+
+<div id="calc" style="background:var(--surface);border:0.5px solid var(--border);border-radius:8px;padding:24px 28px;margin:24px 0;">
+<div style="font-size:13px;font-family:monospace;color:var(--text3);letter-spacing:0.06em;margin-bottom:6px;">// SELECT BOSS</div>
+<select id="boss" style="width:100%;padding:10px 14px;background:#0d0808;border:0.5px solid rgba(192,57,43,0.4);color:#f0ebe8;font-family:Georgia,serif;font-size:15px;border-radius:4px;margin-bottom:18px;">
+<option value="victor-gideon">Victor Gideon (Final Boss)</option>
+<option value="commander">The Commander</option>
+<option value="mr-x">Mr. X / Super Tyrant</option>
+<option value="plant-43">Plant 43</option>
+<option value="the-girl">The Girl (Grace)</option>
+<option value="titan-spinner">Titan Spinner</option>
+<option value="blister-borne">Blister Borne</option>
+<option value="chunk">Chunk</option>
+<option value="the-chef">The Chef (Optional)</option>
+</select>
+
+<div style="font-size:13px;font-family:monospace;color:var(--text3);letter-spacing:0.06em;margin-bottom:6px;">// SELECT DIFFICULTY</div>
+<select id="difficulty" style="width:100%;padding:10px 14px;background:#0d0808;border:0.5px solid rgba(192,57,43,0.4);color:#f0ebe8;font-family:Georgia,serif;font-size:15px;border-radius:4px;margin-bottom:18px;">
+<option value="standard">Standard</option>
+<option value="hardcore">Hardcore</option>
+<option value="insanity">Insanity</option>
+</select>
+
+<button id="show" style="width:100%;padding:12px 14px;background:#c0392b;color:#fff;border:none;font-family:monospace;font-size:14px;letter-spacing:0.06em;border-radius:4px;cursor:pointer;">SHOW RECOMMENDED LOADOUT →</button>
+</div>
+
+<div id="result" style="display:none;background:linear-gradient(135deg,rgba(186,117,23,0.08) 0%,rgba(192,57,43,0.04) 100%);border:1px solid var(--gold);border-radius:8px;padding:24px 28px;margin:24px 0;">
+<div id="result-header" style="font-size:13px;font-family:monospace;color:var(--gold);letter-spacing:0.08em;margin-bottom:14px;"></div>
+<div id="result-body" style="color:var(--text);font-size:15px;line-height:1.8;"></div>
+<a id="result-link" href="" style="display:inline-block;margin-top:18px;font-size:12px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;">Read full strategy →</a>
+</div>
+
+<script>
+const data = {
+  "victor-gideon": {
+    name: "Dr. Victor Gideon", link: "how-to-beat-victor-gideon.html",
+    standard: {
+      primary: "Mortal Edge Hatchet (maxed)",
+      secondary: "Requiem Revolver",
+      tertiary: "MSBG 500 Shotgun",
+      consumables: "Hand Grenade ×2, First Aid Spray ×3, Antique Coin spend before entry",
+      notes: "Mortal Edge for parry-counters in both phases. Requiem for Phase 2 head pustules. Shotgun + grenades for Phase 2 core damage. Save grenades for ground orb cluster wave."
+    },
+    insanity: {
+      primary: "Mortal Edge Hatchet (maxed)",
+      secondary: "Requiem Revolver with Infinite Ammo",
+      tertiary: "MSBG 500 Shotgun + RPG (if unlocked)",
+      consumables: "Hand Grenade ×3, First Aid Spray ×4, Body Armor ×2",
+      notes: "Infinite Requiem trivializes Phase 2 pustules. RPG one-shots most phases. Mortal Edge mandatory — default Hatchet parry window too tight on Insanity. Pre-position center-arena before cutscene ends."
+    }
+  },
+  "commander": {
+    name: "The Commander", link: "how-to-beat-the-commander.html",
+    standard: {
+      primary: "Default Hatchet (maxed)",
+      secondary: "MSBG 500 Shotgun",
+      tertiary: "Requiem Revolver (precision shots)",
+      consumables: "First Aid Spray ×2, no grenades needed",
+      notes: "Knife-fight-focused. Parry the third hit of his combo (most generous window). Reward: Mortal Edge Hatchet — you need it for Victor Gideon next."
+    },
+    insanity: {
+      primary: "Default Hatchet (maxed) — you don't have Mortal Edge yet",
+      secondary: "MSBG 500 Shotgun",
+      tertiary: "Requiem Revolver",
+      consumables: "First Aid Spray ×3, Body Armor ×1",
+      notes: "Insanity Commander is the hardest fight before getting Mortal Edge. Practice the third-hit parry on Standard first. Be patient — chip damage from his stunlock is one of the few unfair Insanity moments in the game."
+    }
+  },
+  "mr-x": {
+    name: "Mr. X / Super Tyrant", link: "how-to-beat-mr-x-super-tyrant.html",
+    standard: {
+      primary: "Magnum (heart shots)",
+      secondary: "Requiem Revolver",
+      tertiary: "MSBG 500 Shotgun (close range)",
+      consumables: "First Aid Spray ×2, Hand Grenade ×1",
+      notes: "Heart is the only weak point that matters — body shots barely register. Use parked cars for cover when he throws cars."
+    },
+    insanity: {
+      primary: "Magnum with Infinite Ammo (if unlocked)",
+      secondary: "Requiem Revolver",
+      tertiary: "MSBG 500 Shotgun",
+      consumables: "First Aid Spray ×3, wall canisters in arena (use only when boss is stationary)",
+      notes: "Mr. X chase can be skipped without ammo. Super Tyrant arena: prioritize heart shots, never engage when he's near a car. Wall canisters are limited — save for guaranteed hits."
+    }
+  },
+  "plant-43": {
+    name: "Plant 43", link: "how-to-beat-plant-43.html",
+    standard: {
+      primary: "Incendiary rounds (Pharmacy + Pump Room caches)",
+      secondary: "MSBG 500 Shotgun",
+      tertiary: "Requiem Revolver (mouth precision)",
+      consumables: "First Aid Spray ×2, Hand Grenade ×1",
+      notes: "Fire damage dominates. The mouth is only vulnerable when petals open — wait for the timing. Explosive canister truck ends the fight."
+    },
+    insanity: {
+      primary: "Incendiary rounds (15+ stockpile required)",
+      secondary: "Requiem Revolver with Infinite Ammo",
+      tertiary: "Spore Lens scope (if equipped)",
+      consumables: "First Aid Spray ×3, Hand Grenade ×2",
+      notes: "Community-reported: incendiary multiplier may be reduced post-v1.02 patch (unverified). Bring 50% more incendiary than you think you need."
+    }
+  },
+  "the-girl": {
+    name: "The Girl (Grace)", link: "how-to-beat-the-girl.html",
+    standard: {
+      primary: "Floodlights (single-use, plan order)",
+      secondary: "Requiem Revolver (4+ rounds for stuns)",
+      tertiary: "Crank Lever (key item, not weapon)",
+      consumables: "First Aid Spray ×2",
+      notes: "This fight is positional, not weapon-based. You don't kill her with damage — you kill her with sunlight from the upper hatch. Don't waste Requiem rounds when game prompts to shoot."
+    },
+    insanity: {
+      primary: "Floodlights (still single-use)",
+      secondary: "Requiem Revolver (6+ rounds — she's faster on Insanity)",
+      tertiary: "—",
+      consumables: "First Aid Spray ×3, Body Armor",
+      notes: "Same mechanic as Standard but her movement is faster. Pre-plan all three distribution unit routes before triggering the first one."
+    }
+  },
+  "titan-spinner": {
+    name: "Titan Spinner", link: "how-to-beat-titan-spinner.html",
+    standard: {
+      primary: "Sniper rifle (mouth + rear cluster)",
+      secondary: "SMG (baby spider waves)",
+      tertiary: "MSBG 500 Shotgun (close range)",
+      consumables: "Hand Grenade ×2, First Aid Spray ×2",
+      notes: "Skip the chase phase — don't waste ammo. In arena: use vertical ladders for sniper angles. Save explosive canisters for stationary moments."
+    },
+    insanity: {
+      primary: "Sniper rifle with Infinite Ammo",
+      secondary: "SMG",
+      tertiary: "Requiem (rear cluster)",
+      consumables: "Hand Grenade ×3, First Aid Spray ×3",
+      notes: "Baby spider swarms are the Insanity death trap — clear immediately, never let them stack. Hard shell deflects 60% of non-direct shots, mouth-only on Insanity."
+    }
+  },
+  "blister-borne": {
+    name: "Blister Borne", link: "how-to-beat-blister-borne.html",
+    standard: {
+      primary: "MSBG 500 Shotgun (cysts at point-blank)",
+      secondary: "Hand Grenades (cluster cysts)",
+      tertiary: "Pipe bombs / thrown explosives",
+      consumables: "First Aid Spray ×2",
+      notes: "Pop cysts ONE AT A TIME or you'll be overwhelmed by Blister Heads. Funnel Blister Heads through chokepoints, never melee them."
+    },
+    insanity: {
+      primary: "MSBG 500 Shotgun + Infinite Ammo",
+      secondary: "Hand Grenades ×4",
+      tertiary: "RPG (if unlocked, one-shot the boss)",
+      consumables: "First Aid Spray ×4",
+      notes: "Insanity Blister Heads explode for 80%+ HP — never get within 5 meters when one dies. Use Blister Heads as living explosives by luring them next to the Blister Borne."
+    }
+  },
+  "chunk": {
+    name: "Chunk", link: "how-to-beat-chunk.html",
+    standard: {
+      primary: "MSBG 500 Shotgun (head + belly)",
+      secondary: "Hemolytic Injector ×3 (if Grace ambush path)",
+      tertiary: "Default Hatchet (finisher)",
+      consumables: "First Aid Spray ×1",
+      notes: "Grace path: 3 injectors from behind = instant kill. Leon Attic path: pickup MSBG immediately, use upper ladder for height advantage."
+    },
+    insanity: {
+      primary: "MSBG 500 Shotgun",
+      secondary: "Hand Grenade ×2",
+      tertiary: "Mortal Edge Hatchet (finisher)",
+      consumables: "First Aid Spray ×2",
+      notes: "Grace ambush path is significantly safer on Insanity — invest the time to find Hemolytic Injector materials. Leon path Insanity HP increase ~80%."
+    }
+  },
+  "the-chef": {
+    name: "The Chef (Optional)", link: "how-to-beat-the-chef.html",
+    standard: {
+      primary: "Handgun (head shots)",
+      secondary: "MSBG 500 Shotgun (close range)",
+      tertiary: "—",
+      consumables: "—",
+      notes: "Easiest 'boss' in the game. Use the prep island as cover. Sideways dodge his cleaver lunge."
+    },
+    insanity: {
+      primary: "Handgun (still sufficient)",
+      secondary: "MSBG 500 Shotgun",
+      tertiary: "Hemolytic Injector ×1 (instant kill)",
+      consumables: "—",
+      notes: "Even on Insanity, The Chef is barely a threat. One Hemolytic Injector instant-kills him if you have one to spare."
+    }
+  }
+};
+
+document.getElementById('show').onclick = () => {
+  const boss = document.getElementById('boss').value;
+  const diff = document.getElementById('difficulty').value;
+  const d = data[boss];
+  const cfg = d[diff] || d.standard;
+  const diffName = diff.charAt(0).toUpperCase() + diff.slice(1);
+  document.getElementById('result-header').textContent = `// LOADOUT FOR ${d.name.toUpperCase()} (${diffName.toUpperCase()})`;
+  document.getElementById('result-body').innerHTML = `
+<p><strong>Primary:</strong> ${cfg.primary}</p>
+<p><strong>Secondary:</strong> ${cfg.secondary}</p>
+<p><strong>Tertiary:</strong> ${cfg.tertiary}</p>
+<p><strong>Consumables:</strong> ${cfg.consumables}</p>
+<p style="margin-top:12px;font-style:italic;color:#b0a09a;">${cfg.notes}</p>`;
+  document.getElementById('result-link').href = d.link;
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('result').scrollIntoView({behavior:'smooth', block:'nearest'});
+};
+</script>
+
+<h2>How this calculator was built</h2>
+<p>Loadout recommendations cross-reference every boss-specific strategy guide on this site, plus the All Bosses Ranked tier list. Each weapon-to-boss recommendation has been verified through actual playthroughs on PS5 and Steam, with Insanity loadouts re-tested after the v1.02 patch verification pass (see <a href="capcom-v1-02-patch-diary.html">v1.02 Patch Diary</a>).</p>
+<p>The Insanity loadouts assume you have access to Infinite Ammo from the Special Content Store (post-clear unlock). If you're attempting Insanity without Infinite Ammo as a personal challenge, expect each boss to take 2-3x longer and require 50% more consumables.</p>
+
+<div class="sources">
+<strong>Sources used to verify this article:</strong><br>
+Cross-referenced from this site's boss guides: <a href="how-to-beat-victor-gideon.html">Victor Gideon</a>, <a href="how-to-beat-the-commander.html">The Commander</a>, <a href="how-to-beat-mr-x-super-tyrant.html">Mr. X / Super Tyrant</a>, <a href="how-to-beat-plant-43.html">Plant 43</a>, <a href="how-to-beat-the-girl.html">The Girl</a>, <a href="how-to-beat-titan-spinner.html">Titan Spinner</a>, <a href="how-to-beat-blister-borne.html">Blister Borne</a>, <a href="how-to-beat-chunk.html">Chunk</a>, <a href="how-to-beat-the-chef.html">The Chef</a>; verified post-v1.02 patch (<a href="capcom-v1-02-patch-diary.html">Patch Diary</a>)
+</div>
+<div class="cta">
+<div class="cta-title">RELATED GUIDES</div>
+<a href="how-to-beat-victor-gideon.html">Victor Gideon strategy</a>
+<a href="all-49-trophies-platinum-guide.html">Platinum guide</a>
+<a href="capcom-v1-02-patch-diary.html">v1.02 Patch Diary</a>
+<a href="bosses-hub.html">Boss hub</a>
+</div>
+<div class="section-divider"></div>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Disagree with these recommendations? <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20re9-boss-loadout-calculator.html" style="color:var(--red);">Email me</a> — I update articles weekly.</p>
+</div>
+<div class="footer">
+<p style="margin:5px 0;">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
+<p style="margin:5px 0;"><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a> · <a href="dmca.html">DMCA</a> · <a href="spoiler-policy.html">Spoilers</a></p>
+<p style="margin:5px 0;font-size:10px;">Resident Evil: Requiem © Capcom · Updated May 2026</p>
+</div>
+</body>
+</html>

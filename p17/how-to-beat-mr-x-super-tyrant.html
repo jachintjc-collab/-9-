@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://www.re9guide.it.com/how-to-beat-mr-x-super-tyrant.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0808" />
+<meta name="msapplication-TileColor" content="#0d0808" />
+<!-- Open Graph + Twitter Card -->
+<meta property="og:title" content="Mr. X / Super Tyrant Boss Guide — RE9 Heart Strategy" />
+<meta property="og:description" content="Beat Mr. X and his Super Tyrant transformation in RE9. Chase escape route, exposed-heart targeting, and Magnum vs Requiem damage routing." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.re9guide.it.com/how-to-beat-mr-x-super-tyrant.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="re9guide.it.com - Resident Evil Requiem complete guide" />
+<meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:site_name" content="re9guide.it.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Mr. X / Super Tyrant Boss Guide — RE9 Heart Strategy" />
+<meta name="twitter:description" content="Beat Mr. X and his Super Tyrant transformation in RE9. Chase escape route, exposed-heart targeting, and Magnum vs Requiem damage routing." />
+<title>Mr. X / Super Tyrant Boss Guide — RE9 Heart Strategy</title>
+<meta name="description" content="Beat Mr. X and his Super Tyrant transformation in RE9. Chase escape route, exposed-heart targeting, and Magnum vs Requiem damage routing." />
+<meta name="keywords" content="Resident Evil Requiem, RE9, Mr X, Super Tyrant, Tyrant T-501, how to beat Mr X, RPD chase, RE9 boss" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.nav a:hover{color:var(--red);}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;border-top:0.5px solid var(--border);padding-top:24px;}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.toc a:hover{color:var(--red);}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box strong{color:var(--text);}
+.tip-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:14px 0;}
+.tip-card{background:var(--surface);border-left:2px solid var(--red);padding:10px 14px;border-radius:0 4px 4px 0;}
+.tip-card h4{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.06em;margin-bottom:4px;}
+.tip-card p{font-size:13px;font-family:monospace;color:var(--text2);line-height:1.6;margin:0;}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+ol li strong{color:var(--text);}
+.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
+.boss-stats table{width:100%;font-size:13px;font-family:monospace;}
+.boss-stats td{padding:5px 0;color:var(--text2);}
+.boss-stats td:first-child{color:var(--text3);width:140px;}
+.boss-stats td strong{color:var(--text);}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.cta a:hover{background:rgba(192,57,43,0.1);}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+
+<!-- ==== Clean structured data (v2 cleanup, ISO 8601 + timezone) ==== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Beat Super Tyrant (Mr. X) in Resident Evil Requiem — Boss Guide (RE9)",
+  "description": "Complete strategy for the Super Tyrant Mr. X boss in Resident Evil Requiem. RPD chase walkthrough, weak point, weapons, and Insanity difficulty tips for the iconic Tyrant T-501.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-01T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/how-to-beat-mr-x-super-tyrant.html"
+  },
+  "inLanguage": "en-US",
+  "articleSection": "Guides",
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem",
+    "alternateName": "Resident Evil 9",
+    "publisher": "Capcom"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.re9guide.it.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Bosses",
+      "item": "https://www.re9guide.it.com/bosses-hub.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Mr. X / Super Tyrant"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Beat Mr. X / Super Tyrant in Resident Evil Requiem",
+  "image": "https://www.re9guide.it.com/og-image.png",
+  "totalTime": "PT15M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "0"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Stage 1 - Mr. X chase",
+      "text": "Don't engage in confined spaces. Keep moving through the Care Center; he cannot keep pace through tight corridors."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Stage 2 - Super Tyrant arena",
+      "text": "Target the exposed heart between attack cycles. Magnum rounds to the chest cavity drop him faster than headshots."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Stage 3 - Finisher",
+      "text": "When he kneels, use the heaviest weapon you have."
+    }
+  ],
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "Magnum rounds"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "First Aid Sprays (×3)"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Hand Grenades (×2)"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Requiem Revolver"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Magnum"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Mortal Edge Hatchet"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
+
+
+<style>
+/* Phase 16: smooth scroll + sticky/floating TOC */
+html { scroll-behavior: smooth; }
+
+/* Scroll offset for sticky nav so anchor links don't hide under it */
+h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
+
+/* Sticky TOC behavior */
+@media (min-width: 1100px) {
+  .toc { position: sticky; top: 70px; align-self: flex-start; }
+  body.has-floating-toc .container { position: relative; }
+  body.has-floating-toc .toc {
+    position: fixed;
+    top: 80px;
+    right: calc((100vw - 780px) / 2 - 280px);
+    width: 250px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    z-index: 50;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  body.has-floating-toc .toc::-webkit-scrollbar { width: 4px; }
+  body.has-floating-toc .toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
+  body.has-floating-toc .toc a.active {
+    color: #c0392b !important;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1099px) {
+  .toc { position: static !important; }
+}
+</style>
+<script>
+(function(){
+  function init(){
+    var toc = document.querySelector('.toc');
+    if(!toc) return;
+
+    // Wait until original TOC position is past viewport top, then add class
+    var tocOriginalTop = toc.offsetTop;
+    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+
+    function onScroll(){
+      if(window.innerWidth < 1100) {
+        document.body.classList.remove('has-floating-toc');
+        return;
+      }
+      if(window.scrollY > floatThreshold){
+        document.body.classList.add('has-floating-toc');
+      } else {
+        document.body.classList.remove('has-floating-toc');
+      }
+      // Highlight active TOC item based on visible section
+      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+      var active = null;
+      for(var i = 0; i < sections.length; i++){
+        var rect = sections[i].getBoundingClientRect();
+        if(rect.top < 150) active = sections[i];
+        else break;
+      }
+      if(active){
+        var links = toc.querySelectorAll('a');
+        links.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+        });
+      }
+    }
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
+
+</head>
+<body>
+<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="/ko/how-to-beat-mr-x-super-tyrant.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+</span>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">BOSSES</a> / <span>SUPER TYRANT (MR. X)</span></div>
+
+<h1>How to Beat Super Tyrant (Mr. X) in Resident Evil Requiem</h1>
+<div class="meta">PUBLISHED MAY 2026 · <span>9 MIN READ</span> · DIFFICULTY: ★★★ HARD · SPOILERS AHEAD</div>
+<!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #c0392b;color:#c0392b;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ SPOILER LEVEL: HIGH</div>
+<!-- Editorial Info Card - Trust signal for guide credibility -->
+
+
+<p class="lead">Mr. X — officially Tyrant T-501 — is one of Resident Evil Requiem's most iconic boss encounters. This complete guide covers the RPD chase sequence, the Super Tyrant boss fight, weak points, parry strategy, and Insanity difficulty tips. If you've been one-shot by a thrown car, this guide is for you.</p>
+<!-- ORIGINAL INFOGRAPHIC -->
+<figure style="margin:22px 0;text-align:center;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;display:block;margin:0 auto;border:0.5px solid rgba(192,57,43,0.18);border-radius:6px;background:#0d0808;">
+<title>Super Tyrant (Mr. X) Weak Points Diagram</title>
+<rect width="1200" height="630" fill="#0d0808"/>
+<rect x="20" y="20" width="1160" height="590" fill="none" stroke="#c0392b" stroke-width="3" rx="4"/>
+<text x="600" y="60" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#f0ebe8" text-anchor="middle">SUPER TYRANT (MR. X) — WEAK POINTS</text>
+<text x="600" y="92" font-family="monospace" font-size="13" fill="#c0392b" text-anchor="middle">// S-TIER BOSS · T-501 TYRANT · LATE-GAME LEON</text>
+<line x1="600" y1="120" x2="600" y2="560" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,4"/>
+<!-- LEFT: Body diagram (clean, no overlap) -->
+<ellipse cx="300" cy="200" rx="42" ry="50" fill="none" stroke="#fff" stroke-width="2"/>
+<rect x="285" y="245" width="30" height="20" fill="none" stroke="#fff" stroke-width="2"/>
+<polygon points="230,265 370,265 395,440 205,440" fill="none" stroke="#fff" stroke-width="2"/>
+<polygon points="205,280 145,380 130,450 195,400" fill="none" stroke="#fff" stroke-width="2"/>
+<polygon points="395,280 455,380 470,450 405,400" fill="none" stroke="#fff" stroke-width="2"/>
+<!-- Heart (red pulsing) -->
+<circle cx="300" cy="345" r="22" fill="#c0392b" stroke="#fff" stroke-width="3"/>
+<circle cx="300" cy="345" r="15" fill="rgba(255,100,100,0.5)"/>
+<line x1="322" y1="345" x2="690" y2="430" stroke="#c0392b" stroke-width="1.5"/>
+<!-- Head highlight (post-parry) -->
+<circle cx="300" cy="195" r="10" fill="#ba7517" stroke="#fff" stroke-width="2"/>
+<line x1="342" y1="195" x2="690" y2="580" stroke="#ba7517" stroke-width="1.5"/>
+<!-- RIGHT: Labels (placed safely away from drawing) -->
+<g transform="translate(680, 400)">
+  <rect x="0" y="0" width="450" height="100" fill="none" stroke="#c0392b" stroke-width="1.5" rx="3"/>
+  <text x="15" y="30" font-family="monospace" font-size="14" font-weight="bold" fill="#c0392b">❤ PULSATING HEART</text>
+  <text x="15" y="52" font-family="monospace" font-size="11" fill="#ba7517">PRIMARY WEAK POINT</text>
+  <text x="15" y="74" font-family="Georgia, serif" font-size="13" fill="#f0ebe8">Only target that deals real damage.</text>
+  <text x="15" y="92" font-family="Georgia, serif" font-size="13" fill="#f0ebe8">Body shots barely scratch him.</text>
+</g>
+<g transform="translate(680, 540)">
+  <rect x="0" y="0" width="450" height="80" fill="none" stroke="#ba7517" stroke-width="1.5" rx="3"/>
+  <text x="15" y="25" font-family="monospace" font-size="14" font-weight="bold" fill="#ba7517">⚡ HEAD (POST-PARRY)</text>
+  <text x="15" y="50" font-family="Georgia, serif" font-size="13" fill="#f0ebe8">Only vulnerable when staggered.</text>
+  <text x="15" y="68" font-family="Georgia, serif" font-size="13" fill="#f0ebe8">Parry with Mortal Edge to expose.</text>
+</g>
+<g transform="translate(680, 130)">
+  <rect x="0" y="0" width="450" height="240" fill="none" stroke="#c0392b" stroke-width="1.5" rx="3"/>
+  <text x="15" y="28" font-family="monospace" font-size="14" font-weight="bold" fill="#c0392b">⚠ CANNOT BE PARRIED</text>
+  <text x="15" y="58" font-family="Georgia, serif" font-size="13" fill="#f0ebe8">• Thrown car attack (run!)</text>
+  <text x="15" y="83" font-family="Georgia, serif" font-size="13" fill="#f0ebe8">• Charging leap (sidestep)</text>
+  <text x="15" y="108" font-family="Georgia, serif" font-size="13" fill="#f0ebe8">• Ground pound (jump away)</text>
+  <text x="15" y="133" font-family="Georgia, serif" font-size="13" fill="#f0ebe8">• AOE shockwave (stay back)</text>
+  <line x1="0" y1="155" x2="450" y2="155" stroke="#c0392b" stroke-width="0.5"/>
+  <text x="15" y="180" font-family="monospace" font-size="13" font-weight="bold" fill="#ba7517">// OPTIMAL LOADOUT</text>
+  <text x="15" y="200" font-family="Georgia, serif" font-size="12" fill="#b0a09a">1. Requiem (charged) — heart shots</text>
+  <text x="15" y="217" font-family="Georgia, serif" font-size="12" fill="#b0a09a">2. Mortal Edge Hatchet — parry openings</text>
+  <text x="15" y="234" font-family="Georgia, serif" font-size="12" fill="#b0a09a">3. Shotgun — point-blank finishers</text>
+</g>
+<text x="600" y="600" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#706056" text-anchor="middle">re9guide.it.com · v1.02 verified · Updated May 2026</text>
+</svg>
+  <figcaption style="font-size:11px;font-family:monospace;color:#706056;margin-top:8px;letter-spacing:0.04em;font-style:italic;">Fig 1. Super Tyrant weak points — heart shots are the only way to deal real damage. Body shots barely scratch him.</figcaption>
+</figure>
+
+<div class="toc">
+  <div class="toc-title">Table of contents</div>
+  <ul>
+    <li><a href="#overview">Boss overview</a></li>
+    <li><a href="#chase">RPD chase sequence (Phase 1)</a></li>
+    <li><a href="#prep">Pre-fight preparation</a></li>
+    <li><a href="#fight">Super Tyrant boss fight (Phase 2)</a></li>
+    <li><a href="#weakpoint">Weak point and damage strategy</a></li>
+    <li><a href="#insanity">Insanity difficulty tips</a></li>
+    <li><a href="#rewards">Rewards</a></li>
+  </ul>
+</div>
+
+<h2 id="overview">Boss overview: Mr. X returns</h2>
+
+<p>Long-time Resident Evil fans will recognize Mr. X immediately. After Leon reunites with Grace Ashcroft in Raccoon City, the bald-headed monstrosity bursts through the walls of the Raccoon City Police Department, called in by Zeno as reinforcements. He barely has time to put on his hat before engaging Leon in a deadly chase straight out of RE2.</p>
+
+<p>The encounter has two distinct stages: a <strong>chase sequence inside the RPD</strong> where Mr. X cannot be killed, and a <strong>full Super Tyrant boss fight</strong> outside the precinct near the Basketball Court. Confusing the two will get you killed. The chase requires zero ammo. The boss fight requires every heavy weapon you've got.</p>
+
+<div class="boss-stats">
+  <table>
+    <tr><td>Location</td><td><strong>RPD interior → Basketball Court (after Gun Shop Kendo)</strong></td></tr>
+    <tr><td>Playable as</td><td><strong>Leon S. Kennedy</strong></td></tr>
+    <tr><td>Phases</td><td><strong>2</strong> — chase sequence then open arena fight</td></tr>
+    <tr><td>Weak point</td><td><strong>Pulsating heart</strong> on chest (Phase 2 only)</td></tr>
+    <tr><td>Difficulty rating</td><td><strong>★★★ Hard</strong></td></tr>
+    <tr><td>Trophy reward</td><td><strong>"I Remember That, Too"</strong> (Bronze)</td></tr>
+  </table>
+</div>
+
+<h2 id="chase">RPD chase sequence (Phase 1) — DON'T fight</h2>
+
+<div class="warn-box">
+  ⚠ <strong>Critical warning:</strong> Do not waste a single bullet during the chase. Mr. X cannot be killed in this form. He absorbs gunfire like a sponge, and his punches deal catastrophic damage. <strong>Run, don't fight.</strong>
+</div>
+
+<h3>// EXACT PATHING TO SURVIVE</h3>
+
+<p>When Tyrant T-501 shatters the precinct wall, follow this exact route:</p>
+
+<ol>
+  <li>Turn around immediately and run back the way you came. Head through the hole in the wall and <strong>turn right</strong>.</li>
+  <li>Mr. X punches through the next wall before you can reach the door. <strong>Loop around him</strong> and proceed through the new hole he just made.</li>
+  <li>Head up the collapsed staircase and through the corridor ahead.</li>
+  <li>When a <strong>steel beam suddenly bursts through the wall</strong>, immediately quick-turn and sprint back the way you came. <em>Touching this beam is instant death.</em></li>
+  <li>Duck into the side room on the left. Mr. X will burst through again — use the rubble pile in the center of the room to kite him.</li>
+  <li>Walk Mr. X around the circular debris pile. When he commits to a swing, sprint past his blind side back toward the main lobby.</li>
+  <li>Follow the small light sources on the floor — they guide you to the exit. Burst through the doors and leave the precinct behind.</li>
+</ol>
+
+<p>If he corners you at any point, a single Requiem revolver headshot will briefly stun him for about two seconds. Use that window to slip past his shoulders and keep moving. <strong>Headshot only — body shots do nothing.</strong></p>
+
+<h2 id="prep">Pre-fight preparation: The Kendo safe zone</h2>
+
+<p>Surviving the chase drops you into the alleyways behind Gun Shop Kendo. <strong>Do not rush through this area.</strong> This is a designated safe zone designed specifically to let you prep for the actual boss fight.</p>
+
+<p>Before stepping into the open lot, do the following:</p>
+
+<ol>
+  <li><strong>Visit Kendo's stash box.</strong> If you've been hoarding heavy rifle ammo, sniper rounds, or Requiem bullets, pull them into your active inventory now.</li>
+  <li><strong>Repair Leon's body armor.</strong> The upcoming fight features massive area-of-effect damage. Going in with broken armor is a fatal mistake.</li>
+  <li><strong>Check the Basketball Court</strong> on the right before entering the main lot. It contains hidden healing items and ammo pickups.</li>
+  <li><strong>Equip the Eye Spy Charm</strong> if you have it. The charm gives you a random chance to survive fatal damage — a literal lifesaver against a Super Tyrant.</li>
+  <li><strong>Sharpen and equip the Hatchet.</strong> A fully upgraded Hatchet has a more forgiving parry window and is essential for this fight.</li>
+</ol>
+
+<div class="warn-box gold">
+  💡 <strong>Recommended loadout:</strong> Requiem Revolver (heart shots), MSBG 500 Shotgun (close-range pressure), Marksman 1A Sniper (heart shots from range), and a fully upgraded Hatchet for parries. Bring 2+ First Aid Sprays.
+</div>
+
+<h2 id="fight">Super Tyrant boss fight (Phase 2)</h2>
+
+<p>The moment you step into the open lot, Mr. X opens the fight by hurling missiles from a nearby rooftop. The explosions cover the arena in lingering fire. He then leaps down, sheds his iconic coat, and mutates into his final Super Tyrant form. The arena is completely open — no cover, no hiding. You must stand your ground and master the parry mechanic.</p>
+
+<h3>// ATTACK PATTERN OVERVIEW</h3>
+
+<p>The Super Tyrant has four primary attacks:</p>
+
+<ul class="normal">
+  <li><strong>Charging attack</strong> — closes distance fast. Tracking is highly accurate. Parry with Hatchet (L1) just before impact, or sidestep at the last moment.</li>
+  <li><strong>Wide punch combo</strong> — close-range melee. Parry every swing with the Hatchet. Successful parries stun him briefly.</li>
+  <li><strong>Diving attack from cars</strong> — when he leaps onto a ruined car, expect a flying body slam. <em>Cannot be parried.</em> Move laterally the instant his feet leave the ground.</li>
+  <li><strong>Thrown car</strong> — if he walks behind a vehicle and digs his hands into the metal, drop everything and sprint horizontally. <em>Cannot be parried.</em> One direct hit removes most of your health.</li>
+</ul>
+
+<div class="tip-row">
+  <div class="tip-card"><h4>// PARRY THESE</h4><p>Charges and wide punches only. Parry window is generous on a max-level Hatchet.</p></div>
+  <div class="tip-card"><h4>// RUN FROM THESE</h4><p>Thrown cars and diving leap attacks. No exceptions.</p></div>
+</div>
+
+<h2 id="weakpoint">Weak point: Aim for the heart</h2>
+
+<p>The Super Tyrant has one obvious weak point — a <strong>massive pulsating heart exposed in the center of his chest</strong>. Shooting him anywhere else is a complete waste of ammunition. Heart shots deal roughly 5-6x the damage of body shots.</p>
+
+<h3>// OPTIMAL DAMAGE STRATEGY</h3>
+
+<ol>
+  <li><strong>Watch for the pre-attack pause.</strong> Mr. X freezes for a half-second before every attack — this is your reliable shooting window.</li>
+  <li><strong>Land 2-3 shots, then disengage.</strong> Don't try to line up a fourth shot — he'll close the distance and punish you.</li>
+  <li><strong>Parry his charge → shoot his heart while staggered.</strong> A successful parry creates a 2-3 second stun window. Empty your shotgun or Requiem into his exposed heart during this time.</li>
+  <li><strong>When he leaps onto a car</strong>, use the brief pause to land direct heart shots before he dives.</li>
+  <li><strong>Watch for the QTE prompt.</strong> When he kneels after sufficient heart damage, a Hatchet finisher prompt appears. Press it immediately to drive the Hatchet into his heart for a massive damage burst.</li>
+</ol>
+
+<p>Repeat the parry → shoot heart → finisher cycle until Mr. X drops permanently. The fight typically takes 4-6 minutes on Standard difficulty with a properly upgraded loadout.</p>
+
+<h2 id="insanity">Insanity difficulty tips</h2>
+
+<div class="warn-box">
+  ⚠ On Insanity, Mr. X is one of the toughest fights in the game. Damage scales roughly 3x — a single thrown car or charge will one-shot Leon if you take it head-on.
+</div>
+
+<p>Key Insanity-specific adjustments:</p>
+
+<ul class="normal">
+  <li><strong>Mortal Edge Hatchet is mandatory.</strong> The default Hatchet's parry window is too tight on Insanity. If you haven't completed The Commander fight in the ARK to get Mortal Edge, this is incredibly difficult.</li>
+  <li><strong>Heart HP scales up</strong> — expect to land roughly 2x the heart shots compared to Standard. Bring more Requiem rounds.</li>
+  <li><strong>Use Infinite Ammo if unlocked.</strong> Cheats do NOT void trophies. The Infinite Requiem trivializes this fight on Insanity.</li>
+  <li><strong>Body armor breaks faster.</strong> Pre-fight armor repair at Kendo's stash is non-negotiable.</li>
+  <li><strong>Pre-position before the missile barrage.</strong> The opening rooftop missiles deal severe damage on Insanity. Sprint to a safe spot the moment the fight starts.</li>
+</ul>
+
+<h2 id="rewards">Rewards and what comes next</h2>
+
+<p>Defeating the Super Tyrant unlocks:</p>
+
+<ul class="normal">
+  <li><strong>"I Remember That, Too" trophy</strong> — Bronze, your reward for putting down a classic enemy.</li>
+  <li><strong>Path to the Orphanage</strong> — story progression continues.</li>
+  <li><strong>Resource pickups in the arena</strong> — sweep the lot for ammo and healing items before continuing.</li>
+</ul>
+
+<p>From here, the story leads through the Orphanage and into Blackthorn Station, where you'll face <strong>Plant 43</strong> at the entrance to the ARK. After that, The Commander and Victor Gideon await — the toughest fights of the game.</p>
+<div class="cta">
+  <div class="cta-title">RELATED GUIDES</div>
+  <a href="how-to-beat-victor-gideon.html">How to Beat Victor Gideon</a>
+  <a href="all-25-mr-raccoon-locations.html">All 25 Mr. Raccoon Locations</a>
+  <a href="index.html">All guides home</a>
+</div>
+
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? <a href="#" style="color:var(--red);">Let us know</a> — we update guides weekly based on community feedback.</p>
+
+<!-- Ko-fi support strip (subtle, end-of-article) -->
+<div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
+  <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">If this guide helped, consider supporting more guides like this on Ko-fi. <em style="color:#ba7517;font-style:normal;">Every little bit means the world.</em></p>
+  <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Support on Ko-fi</a>
+</div>
+
+</div>
+<div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
+  <p style="margin:5px 0;">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
+  <p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">About</a> · <a href="contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Contact</a> · <a href="privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Privacy</a> · <a href="dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Spoilers</a></p>
+  <p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
+</div>
+</body>
+</html>

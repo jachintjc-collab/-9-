@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/how-to-beat-titan-spinner.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/how-to-beat-titan-spinner.html" />
+<link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-titan-spinner.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-titan-spinner.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0808" />
+<meta property="og:title" content="타이탄 스피너 공략 (RE9) — 거대 거미 보스 전략">
+<meta property="og:description" content="RE9 타이탄 스피너 공략. 입 + 후방 클러스터 약점, 폭발 캔 활용, 베이비 스파이더 군중 제어. 추격 페이즈는 사격 금지." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-titan-spinner.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<title>타이탄 스피너 공략 (RE9) — 거대 거미 보스 전략</title>
+<meta name="description" content="RE9 타이탄 스피너 공략. 입 + 후방 클러스터 약점, 폭발 캔 활용, 베이비 스파이더 군중 제어. 추격 페이즈는 사격 금지." />
+<style>*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;}.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:26px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
+h3{font-size:16px;color:var(--red);margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
+strong{color:var(--text);font-weight:bold;}em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}
+.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
+.translation-note strong{color:var(--text);}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.toc ul{list-style:none;padding:0;}.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
+.boss-stats table{width:100%;font-size:14px;}
+.boss-stats td{padding:5px 0;color:var(--text2);}
+.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
+.boss-stats td strong{color:var(--text);}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15px;line-height:1.8;}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
+.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.boss-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0;}
+.boss-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px;text-decoration:none;color:inherit;transition:all 0.15s;}
+.boss-card:hover{border-color:var(--red);background:var(--surface2);}
+.boss-card-title{font-size:16px;color:var(--text);margin-bottom:6px;}
+.boss-card-tagline{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.6;}
+.boss-card-meta{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.05em;}
+.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
+.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+<!-- Korean schemas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "타이탄 스피너 공략 — RE9 거대 거미 보스 전략",
+  "description": "RE9 타이탄 스피너 공략. 입 + 후방 클러스터 약점, 폭발 캔 활용, 베이비 스파이더 군중 제어. 추격 페이즈는 사격 금지.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-14T00:00:00+09:00",
+  "dateModified": "2026-05-16T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/ko/how-to-beat-titan-spinner.html"
+  },
+  "inLanguage": "ko-KR",
+  "translationOfWork": {
+    "@type": "CreativeWork",
+    "@id": "https://www.re9guide.it.com/how-to-beat-titan-spinner.html"
+  },
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "홈",
+      "item": "https://www.re9guide.it.com/ko/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "타이탄 스피너 공략 — RE9 거대 거미 보스 전략"
+    }
+  ]
+}
+</script>
+
+
+<style>
+/* Phase 16: smooth scroll + sticky/floating TOC */
+html { scroll-behavior: smooth; }
+
+/* Scroll offset for sticky nav so anchor links don't hide under it */
+h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
+
+/* Sticky TOC behavior */
+@media (min-width: 1100px) {
+  .toc { position: sticky; top: 70px; align-self: flex-start; }
+  body.has-floating-toc .container { position: relative; }
+  body.has-floating-toc .toc {
+    position: fixed;
+    top: 80px;
+    right: calc((100vw - 780px) / 2 - 280px);
+    width: 250px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    z-index: 50;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  body.has-floating-toc .toc::-webkit-scrollbar { width: 4px; }
+  body.has-floating-toc .toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
+  body.has-floating-toc .toc a.active {
+    color: #c0392b !important;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1099px) {
+  .toc { position: static !important; }
+}
+</style>
+<script>
+(function(){
+  function init(){
+    var toc = document.querySelector('.toc');
+    if(!toc) return;
+
+    // Wait until original TOC position is past viewport top, then add class
+    var tocOriginalTop = toc.offsetTop;
+    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+
+    function onScroll(){
+      if(window.innerWidth < 1100) {
+        document.body.classList.remove('has-floating-toc');
+        return;
+      }
+      if(window.scrollY > floatThreshold){
+        document.body.classList.add('has-floating-toc');
+      } else {
+        document.body.classList.remove('has-floating-toc');
+      }
+      // Highlight active TOC item based on visible section
+      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+      var active = null;
+      for(var i = 0; i < sections.length; i++){
+        var rect = sections[i].getBoundingClientRect();
+        if(rect.top < 150) active = sections[i];
+        else break;
+      }
+      if(active){
+        var links = toc.querySelectorAll('a');
+        links.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+        });
+      }
+    }
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
+
+</head>
+<body>
+<div class="nav">
+<a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
+<div style="display:flex;align-items:center;gap:14px;">
+<a href="index.html">← 모든 공략</a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
+<a href="/how-to-beat-titan-spinner.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+</span>
+</div>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>타이탄 스피너 공략 — RE9 거대 거미 보스 전략</span></div>
+<h1>타이탄 스피너 공략 — RE9 거대 거미 보스 전략</h1>
+<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:18px;letter-spacing:0.05em;">2026년 5월 16일 게시 · 7분 읽기</div>
+<div class="translation-note">
+<strong>한국어판 안내:</strong> 영문 원본의 한국어 번역. 작성자(서울 거주)가 직접 검수했으며, Mortal Edge / Insanity / NG+ 등 영문 표기는 한국 RE 커뮤니티 관행을 따라 그대로 사용했습니다.
+</div>
+<p class="lead">타이탄 스피너는 동 라쿤 시티에서 만나는 레온의 거대 거미 보스 — 수직 거미줄 이동, 베이비 스파이더 군집 스폰. 추격 페이즈는 회피 전용, 아레나에서 폭발 캔과 정밀 약점 사격으로 승부.</p>
+
+<div class="warn-box">⚠ 거미 공포증 주의 — 거대 거미 디자인입니다. 추격 페이즈는 사격 없이 통과 가능.</div>
+
+<div class="boss-stats"><table>
+<tr><td>위치</td><td><strong>동 라쿤 시티 — 폐허 빌딩 옥상</strong></td></tr>
+<tr><td>플레이 캐릭터</td><td><strong>레온 S. 케네디</strong></td></tr>
+<tr><td>페이즈</td><td><strong>2</strong> (추격 시퀀스 → 보스 아레나)</td></tr>
+<tr><td>주력 약점</td><td><strong>입</strong> (정면), <strong>후방 주황 클러스터</strong></td></tr>
+<tr><td>환경 위험</td><td>베이비 스파이더 군집</td></tr>
+</table></div>
+
+<h2>추격 페이즈: 사격 금지</h2>
+<p>전투 시작 시 타이탄 스피너가 레온을 추격합니다 — 빌딩 하층에서 옥상으로. <strong>이 페이즈에서 탄약을 낭비하지 마세요</strong>. 거미는 추격 중에는 처치 불가능. 모든 사격은 아레나에서 필요한 탄약 낭비입니다.</p>
+<p>이동에만 집중: 각 층의 사다리/계단으로 스프린트, 거미 도약 무시, 멈추지 마세요. 옥상 보스 아레나 도달 시 자동으로 추격 종료.</p>
+
+<h2>아레나 전략</h2>
+<p>아레나는 케어 센터 다락방의 청크 전투와 비슷한 구조 — 수직 사다리와 제한된 엄폐물의 작은 공간. 활용하세요.</p>
+
+<h3>// 사다리와 높이 관리</h3>
+<p>사다리로 상층 플랫폼 등반. 거미와의 물리적 거리 확보 → 정밀 사격 윈도우 확보. 거미는 거미줄 이동으로 따라잡으려 함 — <strong>위쪽 벽의 그림자를 보고 위치 추적</strong>. 자신과 같은 층으로 등반하면 반대편으로 드롭하여 재배치.</p>
+
+<h3>// 폭발 캔</h3>
+<p>아레나 주위에 폭발 캔 여러 개. 타이탄 스피너가 인접할 때 캔 사격 → 스턴 + 약점 완전 노출. <strong>캔은 재충전 없음</strong> — 정지 상태나 재배치 시점에만 사용, 도약 중간엔 낭비.</p>
+
+<h3>// 베이비 스파이더 웨이브</h3>
+<p>주기적으로 작은 거미 졸개 스폰. 무시하면 군집해서 레온 이동 속도 저하 → 부모 거미가 명중. <strong>SMG 점사나 수류탄으로 즉시 정리</strong>. 손도끼도 가능하지만 부모 거미가 활성 상태일 때 근접은 위험.</p>
+
+<h2>약점 라우팅</h2>
+
+<h3>// 입 (주력)</h3>
+<p>타이탄 스피너의 입은 정면을 향할 때만 취약 — 보통 도약 와인드업이나 거미줄 이동 착지 후. 머리와 다리의 하드 셸이 비-직접 사격을 반사하므로 스프레이 금지, 명확한 각도 대기.</p>
+
+<h3>// 후방 주황 클러스터</h3>
+<p>거미 복부의 주황 클러스터는 명중 시 고데미지 약점. 두 가지 접근:</p>
+<ul class="normal">
+<li>하층에서 거미 뒤로 재배치 → 정면 사격</li>
+<li>상층 플랫폼에서 거미가 거미줄로 등을 노출할 때 스나이퍼 사격</li>
+</ul>
+<p>PCGamesN 가이드에 따르면 거미가 종종 플레이어가 반대 사다리 사용 후 코너 거미줄로 내려옴 → 후방 클러스터 사격 윈도우. 이 패턴 활용.</p>
+
+<h3>// 레퀴엠으로 등 낭종</h3>
+<p>GameRant 전략은 레퀴엠으로 등 낭종 추가 데미지 가능. 아껴 사용 — 레퀴엠은 슈퍼 타이런트와 빅터 기드온에 더 중요.</p>
+
+<div class="cta">
+<div class="cta-title">관련 공략</div>
+<a href="how-to-beat-mr-x-super-tyrant.html">미스터 X / 슈퍼 타이런트</a>
+<a href="re9-boss-loadout-calculator.html">무기 구성 계산기</a>
+</div>
+
+<div class="footer">
+<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="/contact.html">문의</a> · <a href="/privacy.html">개인정보</a> · <a href="/dmca.html">DMCA</a></p>
+<p style="margin:5px 0;font-size:10px;">RE: Requiem © Capcom · 한국어판 · 2026년 5월</p>
+</div>
+</body>
+</html>
