@@ -229,51 +229,51 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 
 <figure style="margin:22px 0;text-align:center;">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;display:block;margin:0 auto;border:0.5px solid rgba(192,57,43,0.18);border-radius:6px;background:#0d0808;">
-<title>슈퍼 타이런트 약점 분석</title>
+<title>슈퍼 타이런트 (미스터 X) 약점 다이어그램</title>
 <rect width="1200" height="630" fill="#0d0808"/>
 <rect x="20" y="20" width="1160" height="590" fill="none" stroke="#c0392b" stroke-width="3" rx="4"/>
-<text x="600" y="60" font-family="-apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="32" font-weight="bold" fill="#f0ebe8" text-anchor="middle">슈퍼 타이런트 (미스터 X) — 약점</text>
-<text x="600" y="92" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#b0a09a" text-anchor="middle">// S-TIER BOSS · T-501 TYRANT · LATE-GAME LEON</text>
+<text x="600" y="60" font-family="-apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="30" font-weight="bold" fill="#f0ebe8" text-anchor="middle">슈퍼 타이런트 (미스터 X) — 약점</text>
+<text x="600" y="92" font-family="monospace" font-size="13" fill="#c0392b" text-anchor="middle">// S-TIER BOSS · T-501 TYRANT · LATE-GAME LEON</text>
 <line x1="600" y1="120" x2="600" y2="560" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,4"/>
-<!-- LEFT: Body diagram -->
-<ellipse cx="300" cy="200" rx="45" ry="50" fill="none" stroke="#fff" stroke-width="2"/>
+<!-- LEFT: Body diagram (clean, no overlap) -->
+<ellipse cx="300" cy="200" rx="42" ry="50" fill="none" stroke="#fff" stroke-width="2"/>
 <rect x="285" y="245" width="30" height="20" fill="none" stroke="#fff" stroke-width="2"/>
-<polygon points="230,265 370,265 395,470 205,470" fill="none" stroke="#fff" stroke-width="2"/>
-<polygon points="205,280 145,380 130,490 195,400" fill="none" stroke="#fff" stroke-width="2"/>
-<polygon points="395,280 455,380 470,490 405,400" fill="none" stroke="#fff" stroke-width="2"/>
-<!-- Heart -->
-<circle cx="300" cy="350" r="22" fill="#c0392b" stroke="#fff" stroke-width="3"/>
-<circle cx="300" cy="350" r="15" fill="rgba(255,100,100,0.5)"/>
-<line x1="322" y1="350" x2="700" y2="430" stroke="#c0392b" stroke-width="1.5"/>
-<!-- Head (post-parry) -->
-<circle cx="300" cy="200" r="12" fill="#ba7517" stroke="#fff" stroke-width="2"/>
-<line x1="345" y1="200" x2="700" y2="580" stroke="#ba7517" stroke-width="1.5"/>
-<!-- RIGHT: Labels -->
-<g transform="translate(700, 400)">
+<polygon points="230,265 370,265 395,440 205,440" fill="none" stroke="#fff" stroke-width="2"/>
+<polygon points="205,280 145,380 130,450 195,400" fill="none" stroke="#fff" stroke-width="2"/>
+<polygon points="395,280 455,380 470,450 405,400" fill="none" stroke="#fff" stroke-width="2"/>
+<!-- Heart (red pulsing) -->
+<circle cx="300" cy="345" r="22" fill="#c0392b" stroke="#fff" stroke-width="3"/>
+<circle cx="300" cy="345" r="15" fill="rgba(255,100,100,0.5)"/>
+<line x1="322" y1="345" x2="670" y2="430" stroke="#c0392b" stroke-width="1.5"/>
+<!-- Head highlight (post-parry) -->
+<circle cx="300" cy="195" r="10" fill="#ba7517" stroke="#fff" stroke-width="2"/>
+<line x1="342" y1="195" x2="670" y2="570" stroke="#ba7517" stroke-width="1.5"/>
+<!-- RIGHT: Labels (placed safely away from drawing) -->
+<g transform="translate(680, 400)">
   <rect x="0" y="0" width="450" height="100" fill="none" stroke="#c0392b" stroke-width="1.5" rx="3"/>
   <text x="15" y="30" font-family="monospace" font-size="14" font-weight="bold" fill="#c0392b">❤ 맥동하는 심장</text>
-  <text x="15" y="55" font-family="monospace" font-size="11" fill="#ba7517">주력 약점</text>
-  <text x="15" y="75" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">유일하게 실질 데미지가 들어가는 표적.</text>
-  <text x="15" y="93" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">몸통 사격은 거의 통하지 않습니다.</text>
+  <text x="15" y="52" font-family="monospace" font-size="11" fill="#ba7517">주력 약점 (PRIMARY)</text>
+  <text x="15" y="74" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">유효한 데미지가 들어가는 유일한 표적.</text>
+  <text x="15" y="92" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">몸통 사격은 거의 통하지 않습니다.</text>
 </g>
-<g transform="translate(700, 540)">
+<g transform="translate(680, 540)">
   <rect x="0" y="0" width="450" height="80" fill="none" stroke="#ba7517" stroke-width="1.5" rx="3"/>
   <text x="15" y="25" font-family="monospace" font-size="14" font-weight="bold" fill="#ba7517">⚡ 머리 (패리 후)</text>
-  <text x="15" y="50" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">스태거 상태에서만 취약.</text>
+  <text x="15" y="50" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">경직 상태에서만 취약.</text>
   <text x="15" y="68" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">Mortal Edge로 패리하여 노출.</text>
 </g>
 <g transform="translate(680, 130)">
-  <rect x="0" y="0" width="470" height="240" fill="none" stroke="#c0392b" stroke-width="1.5" rx="3"/>
+  <rect x="0" y="0" width="450" height="240" fill="none" stroke="#c0392b" stroke-width="1.5" rx="3"/>
   <text x="15" y="28" font-family="monospace" font-size="14" font-weight="bold" fill="#c0392b">⚠ 패리 불가능</text>
-  <text x="15" y="58" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">• 차 던지기 (도망!)</text>
-  <text x="15" y="83" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">• 돌진 도약 (옆걸음)</text>
+  <text x="15" y="58" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">• 차 던지기 (도망쳐!)</text>
+  <text x="15" y="83" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">• 돌진 도약 (옆걸음 회피)</text>
   <text x="15" y="108" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">• 지면 강타 (점프 회피)</text>
   <text x="15" y="133" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#f0ebe8">• 광역 충격파 (뒤로 빠지기)</text>
-  <line x1="0" y1="155" x2="470" y2="155" stroke="#c0392b" stroke-width="0.5"/>
+  <line x1="0" y1="155" x2="450" y2="155" stroke="#c0392b" stroke-width="0.5"/>
   <text x="15" y="180" font-family="monospace" font-size="13" font-weight="bold" fill="#ba7517">// 최적 무기 구성</text>
   <text x="15" y="200" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">1. 레퀴엠 (충전) — 심장 사격</text>
-  <text x="15" y="217" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">2. Mortal Edge Hatchet — 패리 윈도우</text>
-  <text x="15" y="234" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">3. 샷건 — 점블랭크 풀어내기</text>
+  <text x="15" y="217" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">2. Mortal Edge Hatchet — 패리 윈도우 열기</text>
+  <text x="15" y="234" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="12" fill="#b0a09a">3. 샷건 — 근접 마무리</text>
 </g>
 <text x="600" y="600" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#706056" text-anchor="middle">re9guide.it.com · 한국어판 · v1.02 검증 · 2026년 5월</text>
 </svg>
