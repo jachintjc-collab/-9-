@@ -9,68 +9,110 @@
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-blister-borne.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-blister-borne.html" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0d0808" />
-<meta property="og:title" content="블리스터 본 공략 (RE9) — 낭종 보스 + 군중 제어">
-<meta property="og:description" content="RE9 블리스터 본 공략. 4 낭종 약점, 블리스터 헤드 스폰 관리, 수류탄 라우팅. Care Center 코트야드와 하수 시설." />
+<meta name="msapplication-TileColor" content="#0d0808" />
+<meta property="og:title" content="Blister Borne Boss Guide — RE9 Cyst & Blister Heads" />
+<meta property="og:description" content="레지던트 이블 레퀴엠(RE9)에서 블리스터-본 격파법 — 낭종 4개, 블리스터 헤드 스폰, 수류탄 운용. 케어 센터 안뜰과 하수처리장 조우." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-blister-borne.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/how-to-beat-blister-borne.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
-<title>블리스터 본 공략 (RE9) — 낭종 보스 + 군중 제어</title>
-<meta name="description" content="RE9 블리스터 본 공략. 4 낭종 약점, 블리스터 헤드 스폰 관리, 수류탄 라우팅. Care Center 코트야드와 하수 시설." />
-<style>*{box-sizing:border-box;margin:0;padding:0;}
-:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="re9guide.it.com - 레지던트 이블 레퀴엠 블리스터-본 격파법 (RE9)" />
+<meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:site_name" content="re9guide.it.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Blister Borne Boss Guide — RE9 Cyst & Blister Heads" />
+<meta name="twitter:description" content="레지던트 이블 레퀴엠(RE9)에서 블리스터-본 격파법 — 낭종 4개, 블리스터 헤드 스폰, 수류탄 운용. 케어 센터 안뜰과 하수처리장 조우." />
+<title>Blister Borne Boss Guide — RE9 Cyst & Blister Heads</title>
+<meta name="description" content="레지던트 이블 레퀴엠(RE9)에서 블리스터-본 격파법 — 낭종 4개, 블리스터 헤드 스폰, 수류탄 운용. 케어 센터 안뜰과 하수처리장 조우." />
+<meta name="keywords" content="블리스터-본 RE9, 레지던트 이블 레퀴엠 블리스터-본, 낭종 보스, 블리스터 헤드, 케어 센터 안뜰" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;
+--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);
+--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;
+--gold:#ba7517;--blue:#69a8e0;
+}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
-.logo{font-size:15px;}.logo span{color:var(--red);}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
 .nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.nav a:hover{color:var(--red);}
 .breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
-h1{font-size:26px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+.breadcrumb a{color:var(--text2);text-decoration:none;}
+.breadcrumb a:hover{color:var(--red);}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
 h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
-h3{font-size:16px;color:var(--red);margin:20px 0 10px;}
-p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
-strong{color:var(--text);font-weight:bold;}em{color:var(--gold);font-style:normal;}
-.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}
-.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
-.translation-note strong{color:var(--text);}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;font-family:monospace;color:var(--text2);line-height:1.5;flex-wrap:wrap;}
+.author-byline .byline-mark{font-size:11px;color:var(--text3);letter-spacing:0.08em;}
+.author-byline .byline-name{color:var(--text);}
+.author-byline .byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}
+.author-byline .byline-name a:hover{color:var(--red);}
+.author-byline .byline-creds{color:var(--text3);font-size:11px;}
 .toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
-.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
-.toc ul{list-style:none;padding:0;}.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
-.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}
-.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.toc a:hover{color:var(--red);}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
 .warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box strong{color:var(--text);}
 .boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
-.boss-stats table{width:100%;font-size:14px;}
+.boss-stats table{width:100%;font-size:13px;font-family:monospace;}
 .boss-stats td{padding:5px 0;color:var(--text2);}
-.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
+.boss-stats td:first-child{color:var(--text3);width:140px;}
 .boss-stats td strong{color:var(--text);}
-ul.normal{margin:10px 0 14px 18px;color:var(--text2);}ul.normal li{padding:3px 0;font-size:15px;}
-ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15px;line-height:1.8;}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+ol li strong{color:var(--text);}
+.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
 .cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
-.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
-.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
-.boss-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0;}
-.boss-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px;text-decoration:none;color:inherit;transition:all 0.15s;}
-.boss-card:hover{border-color:var(--red);background:var(--surface2);}
-.boss-card-title{font-size:16px;color:var(--text);margin-bottom:6px;}
-.boss-card-tagline{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.6;}
-.boss-card-meta{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.05em;}
-.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
-.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.cta a:hover{background:rgba(192,57,43,0.1);}
+.sources{font-size:11px;font-family:monospace;color:var(--text3);margin:30px 0 10px;line-height:1.7;padding:14px 18px;background:rgba(105,168,224,0.04);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;}
+.sources strong{color:var(--text2);}
+.sources a{color:var(--blue);text-decoration:none;border-bottom:0.5px dotted;}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){
+h1{font-size:22px;}
+h2{font-size:17px;}
+body{font-size:15px;}
+p{font-size:14px;}
+}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
-<!-- Korean schemas -->
+<!-- ==== SEO structured data ==== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "블리스터 본 공략 — 레지던트 이블 레퀴엠(RE9)",
-  "description": "RE9 블리스터 본 공략. 4 낭종 약점, 블리스터 헤드 스폰 관리, 수류탄 라우팅. Care Center 코트야드와 하수 시설.",
+  "headline": "레지던트 이블 레퀴엠에서 블리스터-본 격파법 (RE9)",
+  "description": "레지던트 이블 레퀴엠(RE9)에서 블리스터-본 격파법. 네 개의 낭종 약점, 블리스터 헤드 군중 제어, 그리고 수류탄 운용 전략.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -92,21 +134,21 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
       "url": "https://www.re9guide.it.com/og-image.png"
     }
   },
-  "datePublished": "2026-05-14T00:00:00+09:00",
-  "dateModified": "2026-05-16T00:00:00+09:00",
+  "datePublished": "2026-05-13T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/ko/how-to-beat-blister-borne.html"
-  },
-  "inLanguage": "ko-KR",
-  "translationOfWork": {
-    "@type": "CreativeWork",
     "@id": "https://www.re9guide.it.com/how-to-beat-blister-borne.html"
   },
+  "inLanguage": "ko-KR",
+  "articleSection": "Boss Guides",
+  "keywords": "블리스터-본 RE9, 레지던트 이블 레퀴엠 블리스터-본, 낭종 보스, 블리스터 헤드, 케어 센터 안뜰",
   "about": {
     "@type": "VideoGame",
     "@id": "https://www.re9guide.it.com/#game",
-    "name": "Resident Evil: Requiem"
+    "name": "Resident Evil: Requiem",
+    "alternateName": "Resident Evil 9",
+    "publisher": "Capcom"
   }
 }
 </script>
@@ -118,17 +160,178 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "홈",
-      "item": "https://www.re9guide.it.com/ko/"
+      "name": "Home",
+      "item": "https://www.re9guide.it.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "블리스터 본 공략 — 레지던트 이블 레퀴엠(RE9)"
+      "name": "보스",
+      "item": "https://www.re9guide.it.com/bosses-hub.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "the Blister Borne"
     }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "레지던트 이블 레퀴엠에서 블리스터-본 격파법",
+  "description": "블리스터 헤드 졸개 스폰을 관리하면서 네 개의 낭종을 하나씩 터뜨려 블리스터-본을 처치하세요.",
+  "image": "https://www.re9guide.it.com/og-image.png",
+  "totalTime": "PT10M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "0"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Maintain distance and outwalk the boss",
+      "text": "The Blister Borne is slow on patrol. Stay outside its melee range and watch for the unstoppable charge wind-up."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Pop cysts one at a time",
+      "text": "Target chest cysts first. Pop one, retreat, clear the Blister Heads that spawn, then return for the next cyst."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Use thrown explosives for cyst clusters",
+      "text": "A single grenade can rupture 2-3 chest cysts at once — useful if you have crowd control to handle the resulting Blister Head wave."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Funnel Blister Heads through chokepoints",
+      "text": "Fight them one-by-one through narrow passages. Shoot from 5-7 meters to avoid death explosions."
+    }
+  ],
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "Shotgun shells"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Hand Grenades (2+)"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Thrown explosives"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "First Aid Spray"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "MSBG 500 Shotgun"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Hand Grenades"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Hatchet (emergency)"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
 
 
 <style>
@@ -212,74 +415,116 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 <body>
 <div class="nav">
 <a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
-<div style="display:flex;align-items:center;gap:14px;">
 <a href="index.html">← 모든 공략</a>
+
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
 <a href="/how-to-beat-blister-borne.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
 <a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
 </span>
 </div>
-</div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>블리스터 본 공략 — 레지던트 이블 레퀴엠(RE9)</span></div>
-<h1>블리스터 본 공략 — 레지던트 이블 레퀴엠(RE9)</h1>
-<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:18px;letter-spacing:0.05em;">2026년 5월 16일 게시 · 6분 읽기</div>
-<div class="translation-note">
-<strong>한국어판 안내:</strong> 영문 원본의 한국어 번역. 작성자(서울 거주)가 직접 검수했으며, Mortal Edge / Insanity / NG+ 등 영문 표기는 한국 RE 커뮤니티 관행을 따라 그대로 사용했습니다.
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>블리스터-본</span></div>
+<h1>블리스터-본 격파법 — 레지던트 이블 레퀴엠 (RE9)</h1>
+<div class="meta">2026년 5월 게시 · <span>8 분 읽기</span> · 난이도: ★★★ 어려움 · 스포일러 포함</div>
+<div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #ba7517;color:#ba7517;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ 스포일러 수위: 중간</div>
+<p class="lead">블리스터-본은 낭종으로 뒤덮인 레온의 거대 보스로, 케어 센터 안뜰에서 처음 마주치고 이스트 라쿤 시티 하수처리장에서 다시 만나게 됩니다. 낭종을 파괴할 때마다 블리스터 헤드가 생성되어 데미지 레이스이자 군중 제어 조우가 됩니다.</p>
+
+<div class="toc">
+<div class="toc-title">목차</div>
+<ul>
+<li><a href="#overview">보스 개요: 블리스터-본은 무엇인가</a></li>
+<li><a href="#cysts">낭종 시스템 — 주요 약점</a></li>
+<li><a href="#strategy">전투 전략과 탄약 운용</a></li>
+<li><a href="#blisterheads">블리스터 헤드 — 부차적 위협</a></li>
+<li><a href="#after">보상과 다음 단계</a></li>
+</ul>
 </div>
-<p class="lead">블리스터 본은 거대한 낭종 덮인 보스로, 케어 센터 코트야드와 하수 시설에서 만납니다. 4개 낭종이 약점이지만 각 낭종 파괴 시 블리스터 헤드를 스폰 — 데미지 레이스 + 군중 제어 동시 진행.</p>
 
-<div class="boss-stats"><table>
-<tr><td>위치</td><td><strong>케어 센터 코트야드, 하수 시설</strong></td></tr>
+<h2 id="overview">보스 개요: 블리스터-본은 무엇인가</h2>
+<p>블리스터-본은 <em>레지던트 이블 레퀴엠</em>에서 시각적으로 가장 충격적인 적 중 하나입니다 — 맥동하는 낭종으로 뒤덮인 거대하고 느리게 움직이는 괴물입니다. 레온의 캠페인 중 두 마리가 등장합니다: 첫 번째는 <strong>케어 센터 안뜰</strong>에서, 두 번째는 <strong>이스트 라쿤 시티 하수처리장</strong>에서입니다.</p>
+<p>첫 번째 조우가 더 어렵습니다. 메커니즘에 대한 입문이기 때문입니다. 낭종 조준과 블리스터 헤드 스폰 패턴을 이해하고 나면 두 번째 블리스터-본은 상당히 쉬워집니다.</p>
+<p>블리스터-본의 가장 위험한 특성은 순수 데미지가 아닙니다 — 낭종이 터질 때 <strong>근처의 좀비를 변이시키고 시체를 블리스터 헤드로 되살리는 능력</strong>입니다. 이는 보스 전투가 동시에 군중 제어 전투임을 의미합니다.</p>
+
+<div class="boss-stats">
+<table>
+<tr><td>위치</td><td><strong>케어 센터 안뜰</strong> (첫 번째), <strong>이스트 라쿤 시티 하수처리장</strong> (두 번째)</td></tr>
 <tr><td>플레이 캐릭터</td><td><strong>레온 S. 케네디</strong></td></tr>
-<tr><td>약점</td><td><strong>4 낭종</strong> (등 1, 가슴/배 3)</td></tr>
-<tr><td>위험 요소</td><td>각 낭종 파괴 시 <strong>블리스터 헤드</strong> 스폰</td></tr>
-<tr><td>권장 무기</td><td>샷건, 수류탄, 투척 폭탄</td></tr>
-</table></div>
+<tr><td>페이즈</td><td><strong>1</strong>개 페이즈 + 낭종 기반 세부 목표</td></tr>
+<tr><td>주요 약점</td><td><strong>낭종 4개</strong> — 등에 1개, 가슴/복부에 3개</td></tr>
+<tr><td>위험</td><td>파괴된 낭종마다 <strong>블리스터 헤드</strong> 스폰</td></tr>
+<tr><td>권장 무기</td><td><strong>샷건, 수류탄, 투척 폭발물</strong></td></tr>
+</table>
+</div>
 
-<h2>낭종 시스템</h2>
-<p>블리스터 본의 4개 낭종은 체력 게이트이자 졸개 스포너입니다:</p>
+<h2 id="cysts">낭종 시스템 — 주요 약점</h2>
+<p>블리스터-본에게는 체력 게이트이자 졸개 스포너 역할을 하는 낭종 4개가 있습니다:</p>
 <ul class="normal">
-<li><strong>등 낭종 1개</strong> — 보스가 추격할 때 노출.</li>
-<li><strong>가슴/배 낭종 3개</strong> — 정면에 보일 때.</li>
+<li><strong>등의 낭종 1개</strong> — 보스가 추격하기 위해 돌아서거나 옆으로 돌진할 때 주로 노출됩니다</li>
+<li><strong>복부와 가슴의 낭종 3개</strong> — 보스가 정면을 향할 때 보입니다</li>
 </ul>
-<p>각 낭종에 집중 사격이 필요합니다. 점블랭크 샷건 블래스트는 1-2발에 터트리지만, 정밀 무기는 3-4발. 손도끼 근접은 위험 — 낭종 터지면 블리스터 헤드가 바로 옆에 스폰됩니다.</p>
+<p>각 낭종은 집중 사격으로 파괴할 수 있습니다. 영거리 샷건은 1-2발에 터뜨립니다. 정밀 무기는 낭종당 3-4발이 필요합니다. 해칫 근접 공격도 기술적으로는 가능하지만 위험을 감수할 가치가 없습니다 — 낭종이 터질 때 보스 인접 거리에 있으면 바로 옆에 블리스터 헤드가 스폰됩니다.</p>
 
-<h2>핵심 전략</h2>
+<h2 id="strategy">전투 전략과 탄약 운용</h2>
+
+<h3>// 1단계 — 최대 거리 유지</h3>
+<p>블리스터-본은 일반 순찰 중에는 느리게 움직입니다 — 레온은 무한정 도보로 앞지를 수 있습니다. 위험은 <strong>막을 수 없는 돌진 공격</strong>에서 옵니다. 준비 동작 애니메이션으로 예고됩니다. 돌진이 보이면 진로에서 멀어지지 말고 진로에 수직으로 달리세요. 정면으로 도망치면 데미지 콘 안에 머물게 됩니다.</p>
+
+<h3>// 2단계 — 가슴 낭종부터 하나씩</h3>
+<p>낭종 파열마다 블리스터 헤드가 생성되므로 빠르게 연속으로 여러 개를 파괴하면 좀비에게 압도당합니다. 낭종 하나를 터뜨리고 후퇴해 생성된 블리스터 헤드를 정리한 뒤, 다음 낭종을 위해 돌아오세요.</p>
+<p>이 분산 접근법은 웨이브 사이에 탄약 회수 시간을 줍니다 — 케어 센터 안뜰 아레나에는 특히 페이즈 사이에 재스폰되는 여러 보급 상자가 있습니다.</p>
+
+<h3>// 3단계 — 폭발 공격과 투척 무기 활용</h3>
+<p>수류탄, 파이프 폭탄, 그리고 인벤토리에 있는 다른 모든 투척 폭발물이 여기서 위력을 발휘합니다. 가슴에 던진 수류탄 하나가 동시에 2-3개의 낭종을 파열시킬 수 있습니다 — 한 번에 블리스터 헤드 2-3마리를 스폰시키지만, 동시에 보스의 약점 절반을 한 동작으로 제거합니다.</p>
+<p>이전 해금에서 얻은 RPG나 다른 중화기를 가지고 있다면, 블리스터-본은 사용하기 가장 안전한 장소 중 하나입니다. 가슴은 큰 히트박스라 빗나가는 것이 거의 불가능합니다.</p>
+
+<h2 id="blisterheads">블리스터 헤드 — 부차적 위협</h2>
+<p>파열된 낭종마다 근처의 좀비(그리고 시체)를 블리스터 헤드로 변형시킵니다 — 빠르게 움직이고 머리가 맥동하는 변종으로, 죽을 때 폭발해 작은 반경에서 상당한 데미지를 줍니다.</p>
+
+<h3>// 블리스터 헤드 안전하게 정리하기</h3>
+<p>블리스터 헤드를 다루는 잘못된 방법은 근접 공격하는 것입니다 — 죽음의 폭발이 당신을 강타합니다. 대신:</p>
 <ol>
-<li><strong>최대 거리 유지</strong>. 블리스터 본은 일반 패트롤 때 느림. 충돌 공격을 텔레그래프로 본 후 수직 회피.</li>
-<li><strong>가슴 낭종 하나씩 처리</strong>. 한 번 터트림 → 블리스터 헤드 정리 → 다음 낭종. 절대 연속으로 터트리지 마세요.</li>
-<li><strong>폭발물로 군집 처리</strong>. 수류탄 하나가 가슴 낭종 2-3개를 동시 파괴 가능 — 트레이드오프: 블리스터 헤드 2-3개 동시 스폰.</li>
-<li><strong>RPG 보유 시</strong>: 블리스터 본은 RPG 사용에 가장 안전한 곳. 가슴이 큰 히트박스.</li>
+<li><strong>중간 거리(5-7m)에서 사격</strong> — 폭발을 피하기에 충분히 멀고, 헤드샷을 명중시키기에 충분히 가깝습니다</li>
+<li><strong>해칫은 최후의 수단으로만 사용</strong> — 다른 적과 떨어진 블리스터 헤드에만 사용하세요</li>
+<li><strong>병목 지점으로 유도</strong> — 케어 센터 안뜰에는 무리가 아닌 일대일로 싸우게 해주는 자연 협소 통로가 있습니다</li>
 </ol>
 
-<h2>블리스터 헤드 관리</h2>
-<p>블리스터 헤드는 빠르게 움직이고 죽을 때 폭발 — 작은 반경에 큰 데미지. 처리법:</p>
-<ol>
-<li><strong>5-7미터에서 사격</strong> — 폭발 회피하면서 헤드샷 가능.</li>
-<li><strong>손도끼는 마지막 수단</strong> — 격리된 블리스터 헤드에만.</li>
-<li><strong>좁은 통로로 유도</strong> — 케어 센터 코트야드의 자연 좁은 통로 활용해 1대1로 싸움.</li>
-</ol>
+<h3>// 2차 활용: 블리스터 헤드를 무기로</h3>
+<p>고급 기술 하나: 블리스터 헤드 2-3마리를 블리스터-본 자체로 유인한 뒤, 인접해 있을 때 쏘세요. 그들의 폭발이 보스에게 직접 데미지를 줍니다. 좋은 포지셔닝이 필요하지만 상당한 탄약을 절약할 수 있습니다.</p>
 
-<h3>고급 기법</h3>
-<p>블리스터 헤드 2-3마리를 블리스터 본 옆으로 유인 → 사격하면 폭발이 보스에게도 데미지. 위치 정확하면 탄약 크게 절약.</p>
-
-<h2>인새니티 차이</h2>
+<h2 id="after">보상과 다음 단계</h2>
+<p>블리스터-본을 처치하면 다음이 해금됩니다:</p>
 <ul class="normal">
-<li><strong>블리스터 헤드 폭발이 80% HP+</strong> — 5미터 이내 절대 금지.</li>
-<li><strong>두 번째 보스 (하수 시설)</strong>는 같은 메커니즘. 한 번 익히면 시간 절반.</li>
+<li>고아원 / 라쿤 경찰서 구역으로 이어지는 스토리 진행</li>
+<li>아레나의 잔여 전리품 — 케어 센터 안뜰에는 일반적으로 3-5개의 약초 스폰과 동쪽 출구 근처의 샷건 셸 보급함이 있습니다</li>
+<li>도감 완료 진행 (블리스터-본 2번 조우 중 1번)</li>
 </ul>
+<p>하수처리장의 두 번째 블리스터-본은 정확히 같은 메커니즘을 사용합니다. 여기서 낭종 페이싱과 블리스터 헤드 군중 제어를 숙달하고 나면, 두 번째는 대략 절반의 시간에 쓰러집니다.</p>
 
+<div class="sources">
+<strong>이 가이드 검증에 사용된 출처:</strong><br>
+
+<a href="https://gamerant.com/resident-evil-requiem-all-boss-fights-boss-list-re9/" target="_blank" rel="nofollow noopener">GameRant — 전체 보스 격파법 (Blister Borne section)</a>; 사이트 작성자 Jachin의 PS5 / v1.02 검증 플레이스루
+
+</div>
 <div class="cta">
 <div class="cta-title">관련 공략</div>
-<a href="how-to-beat-victor-gideon.html">빅터 기드온 (최종)</a>
-<a href="re9-boss-loadout-calculator.html">무기 구성 계산기</a>
+<a href="how-to-beat-victor-gideon.html">최종 보스: 빅터 기드온</a>
+<a href="all-bosses-ranked-by-difficulty.html">전체 보스 난이도 랭킹</a>
+<a href="/all-49-trophies-platinum-guide.html">플래티넘 트로피 공략</a>
+<a href="/bosses-hub.html">보스 전략 허브</a>
+</div>
+<div class="section-divider"></div>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">이 가이드가 도움이 되셨나요? 잘못된 내용을 발견하셨다면 <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20how-to-beat-blister-borne.html" style="color:var(--red);">알려 주세요</a>  — 커뮤니티 피드백을 바탕으로 매주 가이드를 업데이트합니다.</p>
+<div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
+<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 가이드가 도움이 되셨다면, Ko-fi에서 더 많은 가이드 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+</div>
+<div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
+<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+<p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
+<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+</div>
 </div>
 
-<div class="footer">
-<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
-<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="/contact.html">문의</a> · <a href="/privacy.html">개인정보</a> · <a href="/dmca.html">DMCA</a></p>
-<p style="margin:5px 0;font-size:10px;">RE: Requiem © Capcom · 한국어판 · 2026년 5월</p>
-</div>
 </body>
 </html>

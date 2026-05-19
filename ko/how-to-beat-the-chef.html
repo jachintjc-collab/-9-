@@ -9,68 +9,110 @@
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-the-chef.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-the-chef.html" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0d0808" />
-<meta property="og:title" content="더 셰프 공략 (RE9) — 선택 케어 센터 주방 보스">
-<meta property="og:description" content="RE9 더 셰프 공략. 케어 센터 주방의 선택 칼 보스. 팬트리 키 필요, 그레이스의 작은 부족 전투." />
+<meta name="msapplication-TileColor" content="#0d0808" />
+<meta property="og:title" content="더 셰프 보스 공략 — RE9 선택적 주방 보스" />
+<meta property="og:description" content="레지던트 이블 레퀴엠(RE9)에서 더 셰프 격파법 — 케어 센터 주방의 선택적 클리버 보스. 식료품실 문 열쇠, 헤드 조준 전략, 약초 보급함 보상까지." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-the-chef.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/how-to-beat-the-chef.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
-<title>더 셰프 공략 (RE9) — 선택 케어 센터 주방 보스</title>
-<meta name="description" content="RE9 더 셰프 공략. 케어 센터 주방의 선택 칼 보스. 팬트리 키 필요, 그레이스의 작은 부족 전투." />
-<style>*{box-sizing:border-box;margin:0;padding:0;}
-:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="re9guide.it.com - 레지던트 이블 레퀴엠 더 셰프 격파법 (RE9)" />
+<meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:site_name" content="re9guide.it.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="더 셰프 보스 공략 — RE9 선택적 주방 보스" />
+<meta name="twitter:description" content="레지던트 이블 레퀴엠(RE9)에서 더 셰프 격파법 — 케어 센터 주방의 선택적 클리버 보스. 식료품실 문 열쇠, 헤드 조준 전략, 약초 보급함 보상까지." />
+<title>더 셰프 보스 공략 — RE9 선택적 주방 보스</title>
+<meta name="description" content="레지던트 이블 레퀴엠(RE9)에서 더 셰프 격파법 — 케어 센터 주방의 선택적 클리버 보스. 식료품실 문 열쇠, 헤드 조준 전략, 약초 보급함 보상까지." />
+<meta name="keywords" content="더 셰프 RE9, 레지던트 이블 레퀴엠 선택 보스, 케어 센터 주방, 식료품실 문 열쇠, 클리버 보스" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;
+--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);
+--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;
+--gold:#ba7517;--blue:#69a8e0;
+}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
-.logo{font-size:15px;}.logo span{color:var(--red);}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
 .nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.nav a:hover{color:var(--red);}
 .breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
-h1{font-size:26px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+.breadcrumb a{color:var(--text2);text-decoration:none;}
+.breadcrumb a:hover{color:var(--red);}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
 h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
-h3{font-size:16px;color:var(--red);margin:20px 0 10px;}
-p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
-strong{color:var(--text);font-weight:bold;}em{color:var(--gold);font-style:normal;}
-.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}
-.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
-.translation-note strong{color:var(--text);}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;font-family:monospace;color:var(--text2);line-height:1.5;flex-wrap:wrap;}
+.author-byline .byline-mark{font-size:11px;color:var(--text3);letter-spacing:0.08em;}
+.author-byline .byline-name{color:var(--text);}
+.author-byline .byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}
+.author-byline .byline-name a:hover{color:var(--red);}
+.author-byline .byline-creds{color:var(--text3);font-size:11px;}
 .toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
-.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
-.toc ul{list-style:none;padding:0;}.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
-.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}
-.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.toc a:hover{color:var(--red);}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
 .warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box strong{color:var(--text);}
 .boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
-.boss-stats table{width:100%;font-size:14px;}
+.boss-stats table{width:100%;font-size:13px;font-family:monospace;}
 .boss-stats td{padding:5px 0;color:var(--text2);}
-.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
+.boss-stats td:first-child{color:var(--text3);width:140px;}
 .boss-stats td strong{color:var(--text);}
-ul.normal{margin:10px 0 14px 18px;color:var(--text2);}ul.normal li{padding:3px 0;font-size:15px;}
-ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15px;line-height:1.8;}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+ol li strong{color:var(--text);}
+.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
 .cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
-.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
-.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
-.boss-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0;}
-.boss-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px;text-decoration:none;color:inherit;transition:all 0.15s;}
-.boss-card:hover{border-color:var(--red);background:var(--surface2);}
-.boss-card-title{font-size:16px;color:var(--text);margin-bottom:6px;}
-.boss-card-tagline{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.6;}
-.boss-card-meta{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.05em;}
-.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
-.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.cta a:hover{background:rgba(192,57,43,0.1);}
+.sources{font-size:11px;font-family:monospace;color:var(--text3);margin:30px 0 10px;line-height:1.7;padding:14px 18px;background:rgba(105,168,224,0.04);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;}
+.sources strong{color:var(--text2);}
+.sources a{color:var(--blue);text-decoration:none;border-bottom:0.5px dotted;}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){
+h1{font-size:22px;}
+h2{font-size:17px;}
+body{font-size:15px;}
+p{font-size:14px;}
+}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
-<!-- Korean schemas -->
+<!-- ==== SEO structured data ==== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "더 셰프 공략 — 선택 케어 센터 주방 보스",
-  "description": "RE9 더 셰프 공략. 케어 센터 주방의 선택 칼 보스. 팬트리 키 필요, 그레이스의 작은 부족 전투.",
+  "headline": "레지던트 이블 레퀴엠에서 더 셰프 격파법 (RE9)",
+  "description": "레지던트 이블 레퀴엠(RE9)에서 선택적 클리버 요리사 더 셰프 격파법. 식료품실 문 열쇠 필요. 그레이스의 주방 조우 전술.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -92,21 +134,21 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
       "url": "https://www.re9guide.it.com/og-image.png"
     }
   },
-  "datePublished": "2026-05-14T00:00:00+09:00",
-  "dateModified": "2026-05-16T00:00:00+09:00",
+  "datePublished": "2026-05-13T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/ko/how-to-beat-the-chef.html"
-  },
-  "inLanguage": "ko-KR",
-  "translationOfWork": {
-    "@type": "CreativeWork",
     "@id": "https://www.re9guide.it.com/how-to-beat-the-chef.html"
   },
+  "inLanguage": "ko-KR",
+  "articleSection": "Boss Guides",
+  "keywords": "더 셰프 RE9, 레지던트 이블 레퀴엠 선택 보스, 케어 센터 주방, 식료품실 문 열쇠, 클리버 보스",
   "about": {
     "@type": "VideoGame",
     "@id": "https://www.re9guide.it.com/#game",
-    "name": "Resident Evil: Requiem"
+    "name": "Resident Evil: Requiem",
+    "alternateName": "Resident Evil 9",
+    "publisher": "Capcom"
   }
 }
 </script>
@@ -118,17 +160,174 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "홈",
-      "item": "https://www.re9guide.it.com/ko/"
+      "name": "Home",
+      "item": "https://www.re9guide.it.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "더 셰프 공략 — 선택 케어 센터 주방 보스"
+      "name": "보스",
+      "item": "https://www.re9guide.it.com/bosses-hub.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "더 셰프"
     }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "레지던트 이블 레퀴엠에서 더 셰프 격파법",
+  "description": "케어 센터 주방의 선택 보스 더 셰프를 처치해 식료품실의 약초와 탄약 보급함에 접근하세요.",
+  "image": "https://www.re9guide.it.com/og-image.png",
+  "totalTime": "PT5M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "0"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Find the Pantry Door Key",
+      "text": "The key is hidden elsewhere in the Care Center. Without it, the fight cannot be triggered."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Stay on opposite side of the prep island",
+      "text": "The central kitchen island gives Grace permanent cover. Force the Chef to circle while you fire."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Target the head",
+      "text": "Headshots stagger him reliably. Shotgun blasts at close range drop large health chunks per shot."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Dodge the cleaver lunge sideways",
+      "text": "Backward dodges keep you in his hit cone. Sideways dodges escape it cleanly."
+    }
+  ],
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "Handgun rounds"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Shotgun shells"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Pantry Door Key"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Handgun"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Shotgun"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Hatchet"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
 
 
 <style>
@@ -212,72 +411,109 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 <body>
 <div class="nav">
 <a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
-<div style="display:flex;align-items:center;gap:14px;">
 <a href="index.html">← 모든 공략</a>
+
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
 <a href="/how-to-beat-the-chef.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
 <a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
 </span>
 </div>
-</div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>더 셰프 공략 — 선택 케어 센터 주방 보스</span></div>
-<h1>더 셰프 공략 — 선택 케어 센터 주방 보스</h1>
-<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:18px;letter-spacing:0.05em;">2026년 5월 16일 게시 · 4분 읽기</div>
-<div class="translation-note">
-<strong>한국어판 안내:</strong> 영문 원본의 한국어 번역. 작성자(서울 거주)가 직접 검수했으며, Mortal Edge / Insanity / NG+ 등 영문 표기는 한국 RE 커뮤니티 관행을 따라 그대로 사용했습니다.
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>더 셰프</span></div>
+<h1>더 셰프 격파법 — 레지던트 이블 레퀴엠 (RE9)</h1>
+<div class="meta">2026년 5월 게시 · <span>5 분 읽기</span> · 난이도: ★ 쉬움 · 스포일러 포함</div>
+<div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #5a8a4a;color:#5a8a4a;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ 스포일러 수위: 낮음</div>
+<p class="lead">더 셰프는 케어 센터 주방에 있는 선택적 미니 보스입니다 — 클리버를 휘두르는 변이된 요리사로, 약초와 탄약이 든 작은 보급함을 지키고 있습니다. 이 가이드는 식료품실 문 열쇠 요구 사항, 전투 전술, 그리고 다양한 플레이 유형에서 이 전투가 시간을 들일 가치가 있는지 다룹니다.</p>
+
+<div class="warn-box gold">
+ℹ <strong>이 보스는 선택 사항입니다</strong> — 일반 플레이스루에서는 더 셰프를 완전히 건너뛸 수 있습니다. 케어 센터 주방을 조사해 식료품실 문 열쇠를 획득하기로 선택해야만 만나게 됩니다. 건너뛰면 약초와 탄약 보급함을 포함한 몇 가지 유용한 아이템을 놓치지만 스토리 진행은 막히지 않습니다.
 </div>
-<p class="lead">더 셰프는 케어 센터 주방의 선택 미니 보스 — 칼을 들고 약초/탄약 캐시를 지키는 변이 요리사. 메커니즘적으로 근접 중심, 칼 휘두르기 정면 회피. 팬트리 키 필요.</p>
 
-<div class="warn-box gold">ℹ 이는 <strong>선택 보스</strong>입니다 — 정상 플레이에서 완전히 건너뛸 수 있습니다. 케어 센터 주방을 조사하고 팬트리 키를 얻기로 결정한 경우에만 조우. 약초와 탄약 캐시 손실, 스토리 진행 차단 없음.</div>
-
-<div class="boss-stats"><table>
-<tr><td>위치</td><td><strong>케어 센터 주방</strong></td></tr>
-<tr><td>플레이 캐릭터</td><td><strong>그레이스 애쉬크로프트</strong></td></tr>
-<tr><td>보스 타입</td><td><strong>선택</strong> — 스토리 필수 아님</td></tr>
-<tr><td>무기</td><td><strong>칼</strong> — 근접만, 원거리 공격 없음</td></tr>
-<tr><td>필요 키</td><td><strong>팬트리 도어 키</strong> — 케어 센터 다른 위치에서 발견</td></tr>
-<tr><td>보상 타입</td><td>약초, 탄약, 서사 완료</td></tr>
-</table></div>
-
-<h2>조우 접근법</h2>
-<p>더 셰프는 케어 센터 주방의 잠긴 문 뒤에 봉인. 조우 트리거하려면 케어 센터 다른 곳에 숨겨진 <strong>팬트리 도어 키</strong> 먼저 획득.</p>
-
-<h2>전투 전략</h2>
-<p>좁은 공간의 직접적 근접 전투. 주방 레이아웃이 이동 제한, 적은 원거리 옵션 없음 — 위치 선정이 전부.</p>
-
-<h3>// 1단계 — 프렙 아일랜드 반대편 유지</h3>
-<p>주방 중앙에 자연 장벽 역할 프렙 아일랜드. 활용. 셰프와 사이에 아일랜드 유지, 그가 한 방향으로 회전하게 강제, 그가 commit할 때 사격.</p>
-
-<h3>// 2단계 — 머리 노리기</h3>
-<p>대부분의 RE: Requiem 변이 적과 마찬가지로 헤드샷이 가장 효율적 데미지. 핸드건 헤드샷은 스태거, 근거리 샷건 블래스트는 스태거 + 큰 체력 감소.</p>
-
-<h3>// 3단계 — 칼 돌진 회피</h3>
-<p>더 셰프의 주력 공격은 전방 칼 돌진 — 잘 텔레그래프되지만 매우 빠름. 와인드업 애니메이션 보이면 옆으로 회피, 뒤로 회피 금지. 뒤 회피는 그의 히트 콘에 머무름.</p>
-
-<h2>가치 있나?</h2>
-<p>첫 플레이: <strong>예</strong> — 조우가 서사적으로 완전(케어 센터 붕괴 맥락 추가), 팬트리 약초 캐시가 다가올 플랜트 43 전투에 의미.</p>
-<p>Platinum 런: <strong>예</strong> — 모든 선택 조우 완료가 베스티어리에 기여.</p>
-<p>4시간 미만 스피드런: <strong>아니오</strong> — 건너뛰세요. 6-8분 절약이 얻을 약초보다 가치 있음.</p>
-
-<h2>보상</h2>
-<ul class="normal">
-<li>팬트리 약초 (보통 그린 약초 2-3, 레드 약초 1)</li>
-<li>탄약 캐시 (핸드건 + 샷건)</li>
-<li>케어 센터 주방의 발병 타임라인 역할 설명 서사 문서</li>
-<li>선택 조우 베스티어리 카운트 기여</li>
+<div class="toc">
+<div class="toc-title">목차</div>
+<ul>
+<li><a href="#overview">보스 개요: 더 셰프는 누구인가</a></li>
+<li><a href="#access">조우에 진입하는 방법</a></li>
+<li><a href="#strategy">전투 전략</a></li>
+<li><a href="#worth">더 셰프와 싸울 가치가 있나</a></li>
+<li><a href="#after">보상과 다음 단계</a></li>
 </ul>
+</div>
 
+<h2 id="overview">보스 개요: 더 셰프는 누구인가</h2>
+<p>더 셰프는 케어 센터 주방 안쪽에 숨겨진 선택적 미니 보스로, 그레이스 구간 초반에 마주칩니다. 거대한 클리버를 휘두르는 바이러스 변이 요리사로 묘사되며, 약초와 탄약을 포함한 유용한 아이템 보급함을 지키고 있습니다.</p>
+<p>메커니즘상 그는 근접 중심 조우입니다 — 근거리에서 빠른 클리버 휘두르기, 좁은 주방 환경에서 그레이스의 매우 제한적인 이동 옵션, 그리고 원거리 공격 없음. 위험-보상 계산은 단순합니다: 탄약을 쓰고 약간의 데미지를 감수하는 대가로 제작 재료와 케어 센터의 서사를 보완하는 사이드 노트를 얻는 것입니다.</p>
+
+<div class="boss-stats">
+<table>
+<tr><td>위치</td><td><strong>케어 센터 주방</strong></td></tr>
+<tr><td>플레이 캐릭터</td><td><strong>그레이스 애시크로프트</strong></td></tr>
+<tr><td>보스 유형</td><td><strong>선택</strong> — 스토리 필수 아님</td></tr>
+<tr><td>무기</td><td><strong>클리버</strong> — 근접 전용, 원거리 공격 없음</td></tr>
+<tr><td>필요 열쇠</td><td><strong>식료품실 문 열쇠</strong> — 케어 센터 인근에서 발견</td></tr>
+<tr><td>보상 유형</td><td>약초, 탄약, 서사 보완</td></tr>
+</table>
+</div>
+
+<h2 id="access">조우에 진입하는 방법</h2>
+<p>더 셰프는 케어 센터 주방의 잠긴 문 뒤에 봉인되어 있습니다. 조우를 발동시키려면 먼저 케어 센터의 다른 곳에 숨겨진 <strong>식료품실 문 열쇠</strong>를 획득해야 합니다.</p>
+<p>완벽주의 플레이를 하고 있다면 식료품실 문 열쇠는 케어 센터 100% 체크리스트의 일부입니다. 스피드런 중이라면 가장 먼저 건너뛸 항목 중 하나입니다 — 열쇠를 찾고 조우를 처리하는 시간 비용이 자원 획득량보다 큽니다.</p>
+
+<h2 id="strategy">전투 전략</h2>
+<p>더 셰프는 좁은 공간에서 벌어지는 단순한 근접 전투입니다. 주방 구조는 이동을 제한하지만 적에게는 원거리 옵션이 없으므로 포지셔닝이 전투의 전부입니다.</p>
+
+<h3>// 1단계 — 조리 아일랜드 반대편에 위치</h3>
+<p>주방에는 자연 장벽 역할을 하는 중앙 조리 아일랜드가 있습니다. 이를 활용하세요. 아일랜드를 자신과 더 셰프 사이에 두고 그가 한 방향으로 돌도록 강제한 뒤, 한쪽으로 방향을 잡았을 때 사격하세요.</p>
+
+<h3>// 2단계 — 머리를 노릴 것</h3>
+<p><em>레지던트 이블 레퀴엠</em>의 대부분 변이 적과 마찬가지로 헤드샷이 가장 효율적인 데미지 유형입니다. 핸드건 헤드샷은 경직을 유발하고, 머리에 맞은 샷건은 경직과 함께 매 발마다 큰 체력 덩어리를 깎아냅니다.</p>
+
+<h3>// 3단계 — 클리버 돌진 회피</h3>
+<p>더 셰프의 주 공격은 앞으로의 클리버 돌진입니다 — 예고 동작이 분명하지만 매우 빠릅니다. 준비 동작 애니메이션이 보이면 뒤로가 아니라 옆으로 회피하세요. 뒤로 회피하면 그의 공격 콘 안에 머물게 됩니다.</p>
+
+<h3>// 탄약 권장 사항</h3>
+<p>이 전투는 케어 센터 후반 조우를 위한 연습으로 여기세요. Requiem 같은 프리미엄 탄약을 낭비하지 마세요 — 핸드건 탄과 표준 샷건 셸로 충분합니다. 전투 전체에서 총 탄약 소모량은 8-12발이 적당합니다.</p>
+
+<h2 id="worth">더 셰프와 싸울 가치가 있나</h2>
+<p>첫 플레이스루라면 <strong>예</strong> — 조우는 서사적으로 완결되어 있고 (케어 센터 붕괴에 맥락을 더함), 식료품실 안의 약초 보급함은 이후 다가올 플랜트 43 전투에 의미가 있습니다.</p>
+<p>플래티넘 런이라면 <strong>예</strong> — 모든 선택 조우 완료는 도감에 기여하고 사이드 콘텐츠 트로피를 뒷받침합니다.</p>
+<p>4시간 미만 스피드런이라면 <strong>아니오</strong> — 건너뛰세요. 절약하는 6-8분이 얻을 약초보다 더 가치 있습니다.</p>
+
+<h2 id="after">보상과 다음 단계</h2>
+<p>더 셰프를 처치하면 다음이 주어집니다:</p>
+<ul class="normal">
+<li>약초가 있는 식료품실 접근 (일반적으로 초록 약초 2-3개와 빨간 약초 1개)</li>
+<li>탄약 보급함 (핸드건과 샷건 탄)</li>
+<li>아웃브레이크 타임라인에서 케어 센터 주방의 역할을 설명하는 서사 문서</li>
+<li>선택 조우 도감 카운트 기여</li>
+</ul>
+<p>약초가 특히 유용합니다 — 케어 센터 전반에서 초록과 빨간 약초를 비축하면, 데미지를 피하기 어려운 정수처리장의 더 걸 조우를 대비해 강화된 회복 아이템을 제작할 수 있습니다.</p>
+
+<div class="sources">
+<strong>이 가이드 검증에 사용된 출처:</strong><br>
+
+<a href="https://gamerant.com/resident-evil-requiem-pantry-key-location-how-to-kill-chef/" target="_blank" rel="nofollow noopener">GameRant — 식료품실 문 열쇠 / 더 셰프 처치법</a>; <a href="https://gamerant.com/resident-evil-requiem-all-boss-fights-boss-list-re9/" target="_blank" rel="nofollow noopener">GameRant — 전체 보스 개요</a>; 사이트 작성자 Jachin의 PS5 / v1.02 검증 플레이스루
+
+</div>
 <div class="cta">
 <div class="cta-title">관련 공략</div>
-<a href="how-to-beat-victor-gideon.html">빅터 기드온 (최종)</a>
-<a href="how-to-beat-plant-43.html">플랜트 43</a>
+<a href="how-to-beat-victor-gideon.html">최종 보스: 빅터 기드온</a>
+<a href="all-bosses-ranked-by-difficulty.html">전체 보스 난이도 랭킹</a>
+<a href="/all-49-trophies-platinum-guide.html">플래티넘 트로피 공략</a>
+<a href="/bosses-hub.html">보스 전략 허브</a>
+</div>
+<div class="section-divider"></div>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">이 가이드가 도움이 되셨나요? 잘못된 내용을 발견하셨다면 <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20how-to-beat-the-chef.html" style="color:var(--red);">알려 주세요</a>  — 커뮤니티 피드백을 바탕으로 매주 가이드를 업데이트합니다.</p>
+<div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
+<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 가이드가 도움이 되셨다면, Ko-fi에서 더 많은 가이드 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+</div>
+<div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
+<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+<p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
+<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+</div>
 </div>
 
-<div class="footer">
-<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
-<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="/contact.html">문의</a> · <a href="/privacy.html">개인정보</a> · <a href="/dmca.html">DMCA</a></p>
-<p style="margin:5px 0;font-size:10px;">RE: Requiem © Capcom · 한국어판 · 2026년 5월</p>
-</div>
 </body>
 </html>

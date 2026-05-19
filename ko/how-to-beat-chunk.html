@@ -9,68 +9,110 @@
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-chunk.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-chunk.html" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0d0808" />
-<meta property="og:title" content="청크 공략 (RE9) — Care Center 보스 (양 경로)">
-<meta property="og:description" content="RE9 청크 공략. 그레이스 선택 헤모리틱 인젝터 매복 경로 + 레온 필수 다락방 MSBG 500 샷건 전투. Grace and Goliath 도전." />
+<meta name="msapplication-TileColor" content="#0d0808" />
+<meta property="og:title" content="청크 보스 공략 — RE9 케어 센터 전략 (양 경로)" />
+<meta property="og:description" content="레지던트 이블 레퀴엠(RE9)에서 청크 격파법 — 용혈 주사기를 사용하는 그레이스 선택 경로, MSBG 500 샷건을 사용하는 레온의 필수 다락방 전투. Grace and Goliath 코스메틱 공략." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-chunk.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/how-to-beat-chunk.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
-<title>청크 공략 (RE9) — Care Center 보스 (양 경로)</title>
-<meta name="description" content="RE9 청크 공략. 그레이스 선택 헤모리틱 인젝터 매복 경로 + 레온 필수 다락방 MSBG 500 샷건 전투. Grace and Goliath 도전." />
-<style>*{box-sizing:border-box;margin:0;padding:0;}
-:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="re9guide.it.com - 레지던트 이블 레퀴엠 청크 격파법 (RE9)" />
+<meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:site_name" content="re9guide.it.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="청크 보스 공략 — RE9 케어 센터 전략 (양 경로)" />
+<meta name="twitter:description" content="레지던트 이블 레퀴엠(RE9)에서 청크 격파법 — 용혈 주사기를 사용하는 그레이스 선택 경로, MSBG 500 샷건을 사용하는 레온의 필수 다락방 전투. Grace and Goliath 코스메틱 공략." />
+<title>청크 보스 공략 — RE9 케어 센터 전략 (양 경로)</title>
+<meta name="description" content="레지던트 이블 레퀴엠(RE9)에서 청크 격파법 — 용혈 주사기를 사용하는 그레이스 선택 경로, MSBG 500 샷건을 사용하는 레온의 필수 다락방 전투. Grace and Goliath 코스메틱 공략." />
+<meta name="keywords" content="청크 RE9, 레지던트 이블 레퀴엠 청크, Grace and Goliath, 다락방 보스, MSBG 500 샷건, 용혈 주사기" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;
+--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);
+--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;
+--gold:#ba7517;--blue:#69a8e0;
+}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
-.logo{font-size:15px;}.logo span{color:var(--red);}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
 .nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.nav a:hover{color:var(--red);}
 .breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
-h1{font-size:26px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+.breadcrumb a{color:var(--text2);text-decoration:none;}
+.breadcrumb a:hover{color:var(--red);}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
 h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
-h3{font-size:16px;color:var(--red);margin:20px 0 10px;}
-p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
-strong{color:var(--text);font-weight:bold;}em{color:var(--gold);font-style:normal;}
-.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}
-.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
-.translation-note strong{color:var(--text);}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;font-family:monospace;color:var(--text2);line-height:1.5;flex-wrap:wrap;}
+.author-byline .byline-mark{font-size:11px;color:var(--text3);letter-spacing:0.08em;}
+.author-byline .byline-name{color:var(--text);}
+.author-byline .byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}
+.author-byline .byline-name a:hover{color:var(--red);}
+.author-byline .byline-creds{color:var(--text3);font-size:11px;}
 .toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
-.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
-.toc ul{list-style:none;padding:0;}.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
-.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}
-.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.toc a:hover{color:var(--red);}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
 .warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box strong{color:var(--text);}
 .boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
-.boss-stats table{width:100%;font-size:14px;}
+.boss-stats table{width:100%;font-size:13px;font-family:monospace;}
 .boss-stats td{padding:5px 0;color:var(--text2);}
-.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
+.boss-stats td:first-child{color:var(--text3);width:140px;}
 .boss-stats td strong{color:var(--text);}
-ul.normal{margin:10px 0 14px 18px;color:var(--text2);}ul.normal li{padding:3px 0;font-size:15px;}
-ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15px;line-height:1.8;}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+ol li strong{color:var(--text);}
+.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
 .cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
-.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
-.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
-.boss-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0;}
-.boss-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px;text-decoration:none;color:inherit;transition:all 0.15s;}
-.boss-card:hover{border-color:var(--red);background:var(--surface2);}
-.boss-card-title{font-size:16px;color:var(--text);margin-bottom:6px;}
-.boss-card-tagline{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.6;}
-.boss-card-meta{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.05em;}
-.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
-.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.cta a:hover{background:rgba(192,57,43,0.1);}
+.sources{font-size:11px;font-family:monospace;color:var(--text3);margin:30px 0 10px;line-height:1.7;padding:14px 18px;background:rgba(105,168,224,0.04);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;}
+.sources strong{color:var(--text2);}
+.sources a{color:var(--blue);text-decoration:none;border-bottom:0.5px dotted;}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){
+h1{font-size:22px;}
+h2{font-size:17px;}
+body{font-size:15px;}
+p{font-size:14px;}
+}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
-<!-- Korean schemas -->
+<!-- ==== SEO structured data ==== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "청크 공략 — 레지던트 이블 레퀴엠(RE9) 양 경로",
-  "description": "RE9 청크 공략. 그레이스 선택 헤모리틱 인젝터 매복 경로 + 레온 필수 다락방 MSBG 500 샷건 전투. Grace and Goliath 도전.",
+  "headline": "레지던트 이블 레퀴엠에서 청크 격파법 (RE9)",
+  "description": "레지던트 이블 레퀴엠(RE9)에서 청크 격파법. 용혈 주사기를 사용하는 그레이스의 선택적 처치와 MSBG 500 샷건을 사용하는 레온의 필수 다락방 전투.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -92,21 +134,21 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
       "url": "https://www.re9guide.it.com/og-image.png"
     }
   },
-  "datePublished": "2026-05-14T00:00:00+09:00",
-  "dateModified": "2026-05-16T00:00:00+09:00",
+  "datePublished": "2026-05-13T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/ko/how-to-beat-chunk.html"
-  },
-  "inLanguage": "ko-KR",
-  "translationOfWork": {
-    "@type": "CreativeWork",
     "@id": "https://www.re9guide.it.com/how-to-beat-chunk.html"
   },
+  "inLanguage": "ko-KR",
+  "articleSection": "Boss Guides",
+  "keywords": "청크 RE9, 레지던트 이블 레퀴엠 청크, Grace and Goliath, 다락방 보스, MSBG 500 샷건, 용혈 주사기",
   "about": {
     "@type": "VideoGame",
     "@id": "https://www.re9guide.it.com/#game",
-    "name": "Resident Evil: Requiem"
+    "name": "Resident Evil: Requiem",
+    "alternateName": "Resident Evil 9",
+    "publisher": "Capcom"
   }
 }
 </script>
@@ -118,17 +160,170 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "홈",
-      "item": "https://www.re9guide.it.com/ko/"
+      "name": "Home",
+      "item": "https://www.re9guide.it.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "청크 공략 — 레지던트 이블 레퀴엠(RE9) 양 경로"
+      "name": "보스",
+      "item": "https://www.re9guide.it.com/bosses-hub.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "청크"
     }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "레지던트 이블 레퀴엠에서 청크 격파법",
+  "description": "그레이스(선택) 또는 레온(필수)으로 청크를 처치하세요. 권장: Grace and Goliath 코스메틱을 위해 그레이스로 처치.",
+  "image": "https://www.re9guide.it.com/og-image.png",
+  "totalTime": "PT8M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "0"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Grace path: ambush from behind",
+      "text": "Head to East Wing (2F). Sneak up on Chunk and use 3 Hemolytic Injectors in succession — kills him outright and earns Grace and Goliath."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Leon path: grab the shotgun first",
+      "text": "When the Attic fight starts, sprint to the MSBG 500 Shotgun on the floor. Don't engage with handgun damage."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Leon path: use upper ladders",
+      "text": "Climb the yellow ladders to reach the upper level. Shoot Chunk's head and hands until he stumbles back to the lower level."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Leon path: trigger the finisher",
+      "text": "When Chunk is stunned, drop down and sprint to his head for the finisher prompt. Once he spews blood, back away and let him explode."
+    }
+  ],
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "3 Hemolytic Injectors (Grace path)"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "MSBG 500 Shotgun shells (Leon path)"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Hemolytic Injector"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "MSBG 500 Shotgun"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Default Hatchet"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
 
 
 <style>
@@ -212,69 +407,110 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 <body>
 <div class="nav">
 <a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
-<div style="display:flex;align-items:center;gap:14px;">
 <a href="index.html">← 모든 공략</a>
+
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
 <a href="/how-to-beat-chunk.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
 <a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
 </span>
 </div>
-</div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>청크 공략 — 레지던트 이블 레퀴엠(RE9) 양 경로</span></div>
-<h1>청크 공략 — 레지던트 이블 레퀴엠(RE9) 양 경로</h1>
-<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:18px;letter-spacing:0.05em;">2026년 5월 16일 게시 · 5분 읽기</div>
-<div class="translation-note">
-<strong>한국어판 안내:</strong> 영문 원본의 한국어 번역. 작성자(서울 거주)가 직접 검수했으며, Mortal Edge / Insanity / NG+ 등 영문 표기는 한국 RE 커뮤니티 관행을 따라 그대로 사용했습니다.
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>청크</span></div>
+<h1>청크 격파법 — 레지던트 이블 레퀴엠 (RE9)</h1>
+<div class="meta">2026년 5월 게시 · <span>7 분 읽기</span> · 난이도: ★★ 보통 · 스포일러 포함</div>
+<div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #ba7517;color:#ba7517;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ 스포일러 수위: 중간</div>
+<p class="lead">청크는 케어 센터에서 두 번 등장합니다 — 그레이스로 동쪽 동에서 선택적으로, 그리고 그레이스가 먼저 처치하지 않았다면 레온으로 다락방에서 필수적으로 등장합니다. 이 가이드는 두 조우, 용혈 주사기 방법, 그리고 최적의 레온 다락방 전략을 다룹니다.</p>
+
+<div class="toc">
+<div class="toc-title">목차</div>
+<ul>
+<li><a href="#overview">보스 개요: 청크는 누구인가</a></li>
+<li><a href="#grace">그레이스로: 선택적 처치 (권장)</a></li>
+<li><a href="#leon">레온으로: 필수 다락방 전투</a></li>
+<li><a href="#after">보상과 다음 단계</a></li>
+</ul>
 </div>
-<p class="lead">청크는 케어 센터에서 두 번 등장 — 그레이스의 동 윙에서 선택적으로, 레온의 다락방에서 필수적으로 (그레이스가 죽이지 않은 경우). 가장 효율적인 처치는 그레이스 매복 — Grace and Goliath 도전 + 독특한 부적.</p>
 
-<div class="boss-stats"><table>
-<tr><td>위치</td><td><strong>케어 센터 동 윙 (2층) + 다락방</strong></td></tr>
-<tr><td>플레이 캐릭터</td><td><strong>그레이스</strong> (선택) + <strong>레온</strong> (필수)</td></tr>
-<tr><td>약점</td><td><strong>머리와 배</strong> — 샷건 블래스트 이상적</td></tr>
-<tr><td>그레이스 선택</td><td><strong>헤모리틱 인젝터 ×3</strong> = 즉사</td></tr>
-<tr><td>레온 주력</td><td><strong>MSBG 500 샷건</strong> (전투 시작 시 스폰)</td></tr>
-</table></div>
+<h2 id="overview">보스 개요: 청크는 누구인가</h2>
+<p>청크는 로즈 힐 클리닉의 복도와 다락방을 떠도는 입이 거친 변이 "아기"입니다. 그로테스크하고 거대한 외형에도 불구하고 청크는 느리게 움직입니다 — 하지만 표준 감염체를 밀어붙이고, 좁은 복도를 비집고 들어가며, 근접에서 잡히면 한 방에 죽일 수 있습니다.</p>
+<p>청크의 특이점은 <strong>그레이스와 레온 양쪽 모두에게 등장한다는 것</strong>입니다: 그레이스의 케어 센터 구간에서는 선택적으로, 레온이 나중에 다락방을 거쳐 돌아올 때는 필수 보스로 등장합니다. 그레이스로 처치하면 레온의 조우가 선택 사항이 되지만, 양쪽 다 처치하면 고유 코스메틱을 보상으로 받습니다.</p>
 
-<h2>그레이스 선택 처치 (권장)</h2>
-<p>그레이스 청크는 완전 선택. <strong>동 윙 (2층)</strong>으로 가서 Wristband ID (Level 1) 위치 복도. 느리게 움직이므로 뒤에서 매복 가능.</p>
+<div class="boss-stats">
+<table>
+<tr><td>위치</td><td><strong>케어 센터 동쪽 동 (2층)과 다락방</strong></td></tr>
+<tr><td>플레이 캐릭터</td><td><strong>그레이스</strong> (선택) 및 <strong>레온</strong> (필수)</td></tr>
+<tr><td>페이즈</td><td><strong>1</strong>개 — 직선 데미지 레이스, 변신 없음</td></tr>
+<tr><td>약점</td><td><strong>머리와 복부</strong> — 샷건이 이상적</td></tr>
+<tr><td>선택적 그레이스 처치</td><td><strong>용혈 주사기 3개</strong> 또는 Requiem 탄 2-3발</td></tr>
+<tr><td>레온의 주 무기</td><td><strong>MSBG 500 샷건</strong> (전투 시작 시 픽업 스폰)</td></tr>
+</table>
+</div>
 
-<h3>// 헤모리틱 인젝터 방법 (권장)</h3>
-<p>그레이스가 레퀴엠 혈액 분석기 퍼즐 풀고 나면 헤모리틱 인젝터 제작 가능. <strong>3개 인젝터 = 즉사</strong> — 뒤에서 몰래 접근 후 빠르게 트리거.</p>
-<p>이게 자원 효율적입니다. 3개 인젝터 제작 < 2-3 레퀴엠 탄환, 그리고 레퀴엠은 후반에 더 희귀.</p>
+<h2 id="grace">그레이스로: 선택적 처치 (권장)</h2>
+<p>그레이스에게 청크 조우는 완전한 선택 사항입니다. <strong>동쪽 동 (2층)</strong>으로 가서 손목띠 ID (레벨 1) 위치로 이어지는 복도를 따라가면 찾을 수 있습니다. 충분히 느리게 움직이므로 뒤에서 기습이 안정적으로 가능합니다.</p>
 
-<h3>// 왜 그레이스가 처치해야</h3>
-<p>그레이스로 처치 시 <strong>Grace and Goliath</strong> 도전 완료 → 독특한 부적 보상. 또한 레온의 다락방 조우가 선택적으로 변경 — Platinum 런에서 8-12분 절약.</p>
+<h3>// 용혈 주사기 방법 (권장)</h3>
+<p>그레이스가 Requiem 혈액 분석기 퍼즐을 풀면 용혈 주사기를 제작하는 능력을 얻습니다. 잠입 상태에서 사용하면 <strong>주사기 3개로 청크를 즉시 처치</strong>할 수 있습니다 — 그의 뒤로 몰래 다가가 주사기를 연속해서 빠르게 작동시키세요.</p>
+<p>자원 효율이 좋은 선택지입니다. 주사기 3개 제작은 Requiem 탄 2-3발을 소비하는 것보다 비용이 적고, Requiem 탄약은 후반부에 훨씬 희귀합니다.</p>
 
-<h2>레온 필수 다락방 전투</h2>
-<p>그레이스가 청크를 죽이지 않으면 레온이 다락방에서 직면. 전형적 RE 보스 아레나 — 좁은 방, 사다리 수직 이동, 제한된 보급.</p>
+<h3>// Requiem 탄 대안</h3>
+<p>혈액 분석기 퍼즐을 아직 풀지 않았거나 그레이스 구간을 서둘러 진행 중이라면, 머리에 Requiem 탄 2-3발도 일을 처리합니다. 더 빠르지만 나중에 필요할 탄약을 소진합니다.</p>
 
-<h3>// 1단계 — 샷건 즉시 픽업</h3>
-<p>조우 시작 순간 입구 근처 바닥의 <strong>MSBG 500 샷건</strong>으로 스프린트. 가장 중요한 행동 — 핸드건 데미지는 청크 덩치에 무의미.</p>
+<h3>// 그레이스가 처치해야 하는 이유</h3>
+<p>그레이스로 청크를 처치하면 <strong>Grace and Goliath</strong> 챌린지가 완료되어 고유 참 코스메틱을 보상으로 받습니다. 또한 레온의 다락방 조우를 필수가 아닌 선택으로 만들어 플래티넘 런에서 약 8-12분의 플레이타임을 절약합니다. 강력히 권장합니다.</p>
 
-<h3>// 2단계 — 머리/배 타격</h3>
-<p>주로 청크 머리, 정면 때 배가 보조. 점블랭크 샷건이 큰 데미지. 사격 사이 이동 — 가만히 서면 그랩 당함.</p>
+<h2 id="leon">레온으로: 필수 다락방 전투</h2>
+<p>그레이스가 청크를 처치하지 않았다면 레온이 다락방에서 그와 맞서야 합니다. 이는 전통적인 <em>레지던트 이블</em> 보스 아레나입니다: 얽힌 경로, 수직 사다리 이동, 제한된 보급품이 있는 작은 방.</p>
 
-<h3>// 3단계 — 노란 사다리로 상층</h3>
-<p>다락방의 노란 사다리로 상층 플랫폼 접근. 등반 후 청크가 따라오기 시도할 때까지 대기 → 머리와 손에 샷건 발사. 그를 스태거시키고 하층으로 떨어뜨림 → 잠깐 스턴.</p>
+<h3>// 1단계 — 즉시 샷건을 챙길 것</h3>
+<p>조우가 시작되는 즉시 입구 근처 바닥에 스폰된 <strong>MSBG 500 샷건</strong>으로 달려가세요. 이 픽업은 전투의 가장 중요한 단일 행동입니다 — 청크의 덩치에 비해 핸드건 데미지는 미미하고, 다락방 바닥에 추가 샷건 셸이 흩뿌려져 있는 것은 정확히 이 무기를 중심으로 전투가 설계되었기 때문입니다.</p>
 
-<h3>// 4단계 — 피니셔</h3>
-<p>하층 스턴 상태에서 빠르게 드롭 → 머리로 스프린트 → 근접 피니셔 프롬프트. 큰 추가 데미지.</p>
+<h3>// 2단계 — 머리와 복부를 노릴 것</h3>
+<p>주로 청크의 머리를 조준하고, 정면을 향할 때는 복부 사격을 보조로 사용하세요. 근거리에서 잘 맞춘 샷건 한 발마다 큰 데미지를 줍니다. 사격 사이에 움직이세요 — 가만히 서 있으면 잡힙니다.</p>
+
+<h3>// 3단계 — 노란 사다리로 상층 도달</h3>
+<p>다락방에는 머리 위 높은 플랫폼으로 접근할 수 있는 노란 사다리가 있습니다. 올라간 뒤 청크가 따라오려 시도하기를 기다렸다가 그의 머리와 손에 샷건을 퍼붓습니다. 이로 인해 그는 경직되어 하층으로 떨어지며 잠시 기절합니다.</p>
+
+<h3>// 4단계 — 마무리</h3>
+<p>청크가 하층에서 기절했을 때, 신속하게 뛰어내려 그의 머리로 달려가 근접 마무리 프롬프트를 발동시키세요. 이는 막대한 추가 데미지를 입히며 그의 체력 바를 깨는 가장 빠른 방법입니다.</p>
 
 <h3>// 종료 신호</h3>
-<p>청크가 <strong>몸 전체 구멍에서 피를 뿜기 시작</strong>하면 전투 사실상 종료. 계속 쏘지 마세요 — 후퇴 후 자체 폭발 대기. 폭발 시 너무 가까이 있으면 체력 감소, 방 가장자리로.</p>
+<p>청크가 <strong>몸 곳곳의 구멍에서 피를 뿜기 시작</strong>하면, 전투는 사실상 끝난 것입니다 — 그의 체력이 소진된 상태입니다. 계속 쏠 필요는 없습니다. 물러서서 그가 스스로 폭발하기를 기다리세요. 폭발 시 너무 가까이 있으면 체력이 깎일 수 있으니 방 가장자리로 후퇴하세요.</p>
 
+<h2 id="after">보상과 다음 단계</h2>
+<p>청크를 처치하면 다음이 주어집니다:</p>
+<ul class="normal">
+<li>다락방을 통과해 레온의 경로를 이어가는 <strong>스토리 진행</strong></li>
+<li>아레나의 파괴 가능한 나무 기둥에서 얻는 <strong>샷건 탄약 보충</strong> (떠나기 전 모두 회수)</li>
+<li>이전에 그레이스로 처치했다면 <strong>Grace and Goliath 고유 참</strong></li>
+</ul>
+<p>파괴 가능한 나무 기둥은 놓치기 쉽습니다 — 장식용 들보처럼 보입니다. 다락방을 나가기 전, 떨어지는 기둥을 유인하거나 직접 쏴서 추가 셸을 수확하세요. 곧이어 이어지는 플랜트 43 전투를 위해 한 발 한 발이 모두 필요합니다.</p>
+
+<div class="sources">
+<strong>이 가이드 검증에 사용된 출처:</strong><br>
+
+<a href="https://www.pcgamesn.com/resident-evil-requiem/bosses" target="_blank" rel="nofollow noopener">PCGamesN — 레지던트 이블 레퀴엠 전체 보스</a>; <a href="https://gamerant.com/resident-evil-requiem-all-boss-fights-boss-list-re9/" target="_blank" rel="nofollow noopener">GameRant — 전체 보스 격파법</a>; 사이트 작성자 Jachin의 PS5 / v1.02 검증 플레이스루
+
+</div>
 <div class="cta">
 <div class="cta-title">관련 공략</div>
-<a href="how-to-beat-the-girl.html">더 걸 (그레이스)</a>
-<a href="re9-boss-loadout-calculator.html">무기 구성 계산기</a>
+<a href="how-to-beat-victor-gideon.html">최종 보스: 빅터 기드온</a>
+<a href="all-bosses-ranked-by-difficulty.html">전체 보스 난이도 랭킹</a>
+<a href="/all-49-trophies-platinum-guide.html">플래티넘 트로피 공략</a>
+<a href="/bosses-hub.html">보스 전략 허브</a>
+</div>
+<div class="section-divider"></div>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">이 가이드가 도움이 되셨나요? 잘못된 내용을 발견하셨다면 <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20how-to-beat-chunk.html" style="color:var(--red);">알려 주세요</a>  — 커뮤니티 피드백을 바탕으로 매주 가이드를 업데이트합니다.</p>
+<div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
+<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 가이드가 도움이 되셨다면, Ko-fi에서 더 많은 가이드 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+</div>
+<div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
+<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+<p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
+<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+</div>
 </div>
 
-<div class="footer">
-<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
-<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="/contact.html">문의</a> · <a href="/privacy.html">개인정보</a> · <a href="/dmca.html">DMCA</a></p>
-<p style="margin:5px 0;font-size:10px;">RE: Requiem © Capcom · 한국어판 · 2026년 5월</p>
-</div>
 </body>
 </html>

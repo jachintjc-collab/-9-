@@ -9,70 +9,110 @@
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-the-girl.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-the-girl.html" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0d0808" />
-<meta property="og:title" content="더 걸 공략 (RE9) — 워터 트리트먼트 보스 (한국어)">
-<meta property="og:description" content="RE9 더 걸 공략. 그레이스의 반복적 적, 광선 약점, 워터 트리트먼트 시설의 3개 전력 분배 유닛 전략." />
+<meta name="msapplication-TileColor" content="#0d0808" />
+<meta property="og:title" content="더 걸 보스 공략 — RE9 정수처리장 전략" />
+<meta property="og:description" content="레지던트 이블 레퀴엠(RE9)에서 더 걸 격파법 — 그레이스의 주적. 빛 약점 활용, 세 개의 배전반, 상층 해치 햇빛 처치까지." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-the-girl.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/how-to-beat-the-girl.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
-<title>더 걸 공략 (RE9) — 워터 트리트먼트 보스 (한국어)</title>
-<meta name="description" content="RE9 더 걸 공략. 그레이스의 반복적 적, 광선 약점, 워터 트리트먼트 시설의 3개 전력 분배 유닛 전략." />
-<style>*{box-sizing:border-box;margin:0;padding:0;}
-:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="re9guide.it.com - 레지던트 이블 레퀴엠 더 걸 격파법 (RE9)" />
+<meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:site_name" content="re9guide.it.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="더 걸 보스 공략 — RE9 정수처리장 전략" />
+<meta name="twitter:description" content="레지던트 이블 레퀴엠(RE9)에서 더 걸 격파법 — 그레이스의 주적. 빛 약점 활용, 세 개의 배전반, 상층 해치 햇빛 처치까지." />
+<title>더 걸 보스 공략 — RE9 정수처리장 전략</title>
+<meta name="description" content="레지던트 이블 레퀴엠(RE9)에서 더 걸 격파법 — 그레이스의 주적. 빛 약점 활용, 세 개의 배전반, 상층 해치 햇빛 처치까지." />
+<meta name="keywords" content="더 걸 RE9, 레지던트 이블 레퀴엠 더 걸, 정수처리장 보스, 그레이스 애시크로프트 보스, 배전반" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;
+--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);
+--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;
+--gold:#ba7517;--blue:#69a8e0;
+}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
-.logo{font-size:15px;}.logo span{color:var(--red);}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
 .nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.nav a:hover{color:var(--red);}
 .breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
-h1{font-size:26px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
+.breadcrumb a{color:var(--text2);text-decoration:none;}
+.breadcrumb a:hover{color:var(--red);}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
 h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
-h3{font-size:16px;color:var(--red);margin:20px 0 10px;}
-p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
-strong{color:var(--text);font-weight:bold;}em{color:var(--gold);font-style:normal;}
-.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}
-.editorial-header{background:rgba(186,117,23,0.05);border:0.5px solid rgba(186,117,23,0.3);border-radius:4px;padding:10px 14px;margin:14px 0;font-size:11px;font-family:monospace;color:#b0a09a;line-height:1.7;}
-.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
-.translation-note strong{color:var(--text);}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;font-family:monospace;color:var(--text2);line-height:1.5;flex-wrap:wrap;}
+.author-byline .byline-mark{font-size:11px;color:var(--text3);letter-spacing:0.08em;}
+.author-byline .byline-name{color:var(--text);}
+.author-byline .byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}
+.author-byline .byline-name a:hover{color:var(--red);}
+.author-byline .byline-creds{color:var(--text3);font-size:11px;}
 .toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
-.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
-.toc ul{list-style:none;padding:0;}.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
-.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}
-.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.toc a:hover{color:var(--red);}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
 .warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box strong{color:var(--text);}
 .boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
-.boss-stats table{width:100%;font-size:14px;}
+.boss-stats table{width:100%;font-size:13px;font-family:monospace;}
 .boss-stats td{padding:5px 0;color:var(--text2);}
-.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
+.boss-stats td:first-child{color:var(--text3);width:140px;}
 .boss-stats td strong{color:var(--text);}
-ul.normal{margin:10px 0 14px 18px;color:var(--text2);}ul.normal li{padding:3px 0;font-size:15px;}
-ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15px;line-height:1.8;}
-.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
-.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
-.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+ol li strong{color:var(--text);}
 .section-divider{height:0.5px;background:var(--border);margin:28px 0;}
-.boss-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0;}
-.boss-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px;text-decoration:none;color:inherit;transition:all 0.15s;}
-.boss-card:hover{border-color:var(--red);background:var(--surface2);transform:translateY(-2px);}
-.boss-card-title{font-size:16px;color:var(--text);margin-bottom:6px;}
-.boss-card-tagline{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.6;}
-.boss-card-meta{font-size:10px;font-family:monospace;color:var(--text3);letter-spacing:0.05em;}
-.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
-.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.cta a:hover{background:rgba(192,57,43,0.1);}
+.sources{font-size:11px;font-family:monospace;color:var(--text3);margin:30px 0 10px;line-height:1.7;padding:14px 18px;background:rgba(105,168,224,0.04);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;}
+.sources strong{color:var(--text2);}
+.sources a{color:var(--blue);text-decoration:none;border-bottom:0.5px dotted;}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){
+h1{font-size:22px;}
+h2{font-size:17px;}
+body{font-size:15px;}
+p{font-size:14px;}
+}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
-<!-- Korean schemas -->
+<!-- ==== SEO structured data ==== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "더 걸 공략 — 레지던트 이블 레퀴엠(RE9)",
-  "description": "RE9 더 걸 공략. 그레이스의 반복적 적, 광선 약점, 워터 트리트먼트 시설의 3개 전력 분배 유닛 전략.",
+  "headline": "레지던트 이블 레퀴엠에서 더 걸 격파법 (RE9)",
+  "description": "레지던트 이블 레퀴엠(RE9)에서 더 걸 격파법. 그레이스의 주적, 빛 약점, 세 개의 배전반 전략.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -94,22 +134,21 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
       "url": "https://www.re9guide.it.com/og-image.png"
     }
   },
-  "datePublished": "2026-05-14T00:00:00+09:00",
-  "dateModified": "2026-05-14T00:00:00+09:00",
+  "datePublished": "2026-05-13T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/ko/how-to-beat-the-girl.html"
-  },
-  "inLanguage": "ko-KR",
-  "translationOfWork": {
-    "@type": "CreativeWork",
     "@id": "https://www.re9guide.it.com/how-to-beat-the-girl.html"
   },
+  "inLanguage": "ko-KR",
+  "articleSection": "Boss Guides",
+  "keywords": "더 걸 RE9, 레지던트 이블 레퀴엠 더 걸, 정수처리장 보스, 그레이스 애시크로프트 보스, 배전반",
   "about": {
     "@type": "VideoGame",
     "@id": "https://www.re9guide.it.com/#game",
     "name": "Resident Evil: Requiem",
-    "alternateName": "Resident Evil 9"
+    "alternateName": "Resident Evil 9",
+    "publisher": "Capcom"
   }
 }
 </script>
@@ -121,16 +160,168 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "홈",
-      "item": "https://www.re9guide.it.com/ko/"
+      "name": "Home",
+      "item": "https://www.re9guide.it.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "더 걸 공략 — 레지던트 이블 레퀴엠(RE9)"
+      "name": "보스",
+      "item": "https://www.re9guide.it.com/bosses-hub.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "더 걸"
     }
   ]
 }
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "레지던트 이블 레퀴엠에서 더 걸 격파법",
+  "description": "조명등과 세 개의 배전반을 활용해 정수처리장에서 더 걸을 처치하세요.",
+  "image": "https://www.re9guide.it.com/og-image.png",
+  "totalTime": "PT15M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "0"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Restart Storage distribution unit",
+      "text": "Use the floodlight near the barrels to stun The Girl, then maneuver around her to activate the unit."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Restart Sedimentation via Filing Room",
+      "text": "Pick up the Crank Lever in Filing Room. Lure The Girl in, loop around her, return to the Control Room to use the lever on the Sedimentation unit."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Restart Chemical Treatment",
+      "text": "Lure The Girl to the floodlight on the other side of the window. Trigger it and use the right-hand path to reach the unit. Hold the activation for 10 seconds."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Use the upper-level hatch",
+      "text": "Take the elevator up, use the final floodlight to stun her one last time, then open the hatch. Maintain distance and let sunlight kill her — do not shoot."
+    }
+  ],
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "Requiem bullets (4+)"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "First Aid Sprays (2+)"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Crank Lever"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Floodlights (single-use)"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Power distribution units"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
 </script>
 
 
@@ -216,74 +407,119 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 <body>
 <div class="nav">
 <a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
-<div style="display:flex;align-items:center;gap:14px;">
 <a href="index.html">← 모든 공략</a>
+
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
 <a href="/how-to-beat-the-girl.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
 <a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
 </span>
 </div>
-</div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>더 걸 공략 — 레지던트 이블 레퀴엠(RE9)</span></div>
-<h1>더 걸 공략 — 레지던트 이블 레퀴엠(RE9)</h1>
-<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:18px;letter-spacing:0.05em;">2026년 5월 14일 게시 · 7분 읽기</div>
-<div class="translation-note">
-<strong>한국어판 안내:</strong> 영문 원본의 한국어 번역. 작성자(서울 거주)가 직접 검수했으며, Mortal Edge / Insanity / NG+ 등 영문 표기는 한국 RE 커뮤니티 관행을 따라 그대로 사용했습니다.
-</div>
-<p class="lead">더 걸은 그레이스 애쉬크로프트가 케어 센터 전체에서 만나는 반복적 적입니다. 마침내 워터 트리트먼트 시설에서 광선 약점을 활용해 처치 가능합니다. 이 가이드는 3개의 전력 분배 유닛, 플러드라이트 관리, 마지막 해치 시퀀스를 다룹니다.</p>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>더 걸</span></div>
+<h1>더 걸 격파법 — 레지던트 이블 레퀴엠 (RE9)</h1>
+<div class="meta">2026년 5월 게시 · <span>8 분 읽기</span> · 난이도: ★★ 보통 · 스포일러 포함</div>
+<div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #ba7517;color:#ba7517;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ 스포일러 수위: 중간</div>
+<p class="lead">더 걸은 케어 센터 전반에 걸쳐 그레이스 애시크로프트를 끈질기게 따라다니는 주적으로, 정수처리장에서 빛 약점을 활용해 마침내 처치할 수 있습니다. 이 가이드는 세 개의 배전반, 조명등 관리, 그리고 마지막 해치 시퀀스까지 모두 다룹니다.</p>
 
-<div class="warn-box">
-⚠ 첫 두 번의 조우에서는 더 걸을 죽일 수 없습니다 — 회피 / 스텔스 세그먼트입니다.
+<div class="toc">
+<div class="toc-title">목차</div>
+<ul>
+<li><a href="#overview">보스 개요</a></li>
+<li><a href="#early">첫 두 번의 조우: 회피하고 교전하지 말 것</a></li>
+<li><a href="#prep">전투 전 준비</a></li>
+<li><a href="#strategy">정수처리장 전략</a></li>
+<li><a href="#units">세 개의 배전반 재시동</a></li>
+<li><a href="#after">보상과 다음 단계</a></li>
+</ul>
 </div>
 
-<h2>보스 개요</h2>
-<p>더 걸은 케어 센터에서 그레이스가 만나는 적대자입니다. 케어 센터 너스 스테이션, 케어 센터 지하실, 워터 트리트먼트 시설을 포함해 여러 번 조우합니다. 광선이 그녀의 살을 태우고 도망치게 합니다 — 보스전이 회전하는 메커니즘입니다.</p>
-<p>중요: <strong>첫 두 번의 조우에서는 더 걸을 죽일 수 없습니다</strong>. 처음 두 번은 <em>레퀴엠 퓨즈</em>와 <em>지게차 키</em> 같은 아이템을 수집하는 동안 스텔스/회피 세그먼트입니다. 진짜 보스전은 워터 트리트먼트 시설에 도달하여 그레이스가 산업용 작업등과 상층 해치에 접근할 수 있을 때만 시작됩니다.</p>
+<h2 id="overview">보스 개요: 더 걸은 누구인가</h2>
+<p>더 걸은 케어 센터 구간에서 그레이스 애시크로프트가 여러 번 마주치는 주적입니다 — 케어 센터 간호사실과 지하실을 포함해서요. 그녀에게는 빛에 대한 치명적인 약점이 있습니다 — 강한 조명 아래에서는 피부가 타들어 가며 도망칩니다. 보스전은 바로 이 메커니즘을 중심으로 돌아갑니다.</p>
+<p>핵심: <strong>처음 두 번의 조우에서는 더 걸을 처치할 수 없습니다</strong>. 첫 두 번은 <em>Requiem 퓨즈</em>와 <em>지게차 키</em> 같은 아이템을 수집하는 잠입/회피 구간입니다. 실제 보스 전투는 그레이스가 정수처리장에 도달해 산업용 작업등과 상층 해치에 접근할 수 있게 된 이후에야 시작됩니다.</p>
 
 <div class="boss-stats">
 <table>
-<tr><td>위치</td><td><strong>워터 트리트먼트 시설 (하층)</strong></td></tr>
-<tr><td>플레이 캐릭터</td><td><strong>그레이스 애쉬크로프트</strong></td></tr>
-<tr><td>약점</td><td><strong>광선</strong> — 플러드라이트로 스턴, 햇빛으로 사살</td></tr>
-<tr><td>필요 키 아이템</td><td><strong>크랭크 레버</strong> (파일링 룸에서 발견)</td></tr>
+<tr><td>위치</td><td><strong>정수처리장 (하층)</strong></td></tr>
+<tr><td>플레이 캐릭터</td><td><strong>그레이스 애시크로프트</strong></td></tr>
+<tr><td>이전 조우</td><td>케어 센터 간호사실과 지하실 (아직 처치 불가)</td></tr>
+<tr><td>페이즈</td><td><strong>1</strong>개 페이즈 + 3개 세부 목표 (배전반)</td></tr>
+<tr><td>약점</td><td><strong>빛</strong> — 조명등은 기절, 햇빛은 처치</td></tr>
+<tr><td>필수 아이템</td><td><strong>크랭크 레버</strong> (문서 보관실에서 획득)</td></tr>
 </table>
 </div>
 
-<h2>전투 전 준비</h2>
+<h2 id="early">첫 두 번의 조우: 회피하고 교전하지 말 것</h2>
+<p>케어 센터 간호사실과 지하실에서 더 걸은 전투가 아닌 잠입 퍼즐입니다. Requiem으로 일시적으로 기절시킬 수는 있지만 이 구역에서는 처치할 수 없습니다. Requiem 탄약은 반드시 필요할 때만 사용하세요 — 예를 들어 지하실에서 세 개의 조인트 플러그를 회수하기 위해 그녀가 막고 있는 복도를 지나야 할 때입니다.</p>
+<p>그녀를 발견하면 곧바로 조명이 밝은 방으로 달려가세요. 케어 센터에는 곳곳에 작업등과 천장 조명이 있어 잠깐 동안 그녀를 후퇴시킬 수 있습니다. 이렇게 확보한 몇 초가 그녀를 우회하는 데 필요한 시간을 만들어 줍니다.</p>
+
+<h2 id="prep">전투 전 준비</h2>
+<p>본격적인 보스 전투를 위해 정수처리장 하층으로 내려가기 전에:</p>
 <ol>
-<li><strong>레퀴엠 탄환 4발 이상 휴대</strong>. 백업 스턴용으로. 플러드라이트가 주력이지만 라이트 사이에 잡히면 안전망입니다.</li>
-<li><strong>응급 처치 스프레이 2개 이상</strong>. 그녀의 공격은 큰 데미지 — 한 번의 그랩이 체력의 40-50%를 가져갑니다.</li>
-<li><strong>플러드라이트 순서 사전 계획</strong> — 영역 전체에서 3번 트리거하며, 한 번 사용하면 재충전되지 않습니다.</li>
+<li><strong>최소 4발의 Requiem 탄약을 비상 기절용으로 휴대</strong>하세요. 기본적으로 조명등에 의존하겠지만, 조명 사이에 끼였을 때 Requiem 탄약이 안전망이 되어 줍니다.</li>
+<li><strong>응급 처치 스프레이 최소 2개</strong>를 준비하세요. 더 걸의 공격은 큰 데미지를 주며, 잡기 한 번에도 체력의 40-50%가 깎입니다.</li>
+<li><strong>조명등 사용 순서를 미리 계획</strong>하세요 — 구역 전체에 걸쳐 세 번 작동시킬 텐데, 한 번 사용한 조명등은 재사용할 수 없습니다.</li>
 </ol>
 
-<h2>3개의 전력 분배 유닛 재시작</h2>
+<h2 id="strategy">정수처리장 전략</h2>
+<p>보스 전투는 그레이스가 해치 컨트롤에 전력을 재분배하기 위해 하층으로 내려가는 순간 시작됩니다. 더 걸은 이 구역을 끊임없이 순찰하며, 잠입 우선 접근법을 강력히 권장합니다.</p>
+<p>세 개의 배전반은 지도에 목표 지점으로 표시되어 있으며 세 개의 특정 방에 위치합니다: <strong>창고</strong>, <strong>침전조</strong>, <strong>약품 처리실</strong>입니다. 엘리베이터를 타고 상층으로 돌아가 해치 햇빛을 작동시키려면 세 곳 모두 재가동해야 합니다.</p>
 
-<h3>// 유닛 1 — 스토리지</h3>
-<p>스토리지 유닛은 배럴 더미 옆에 있습니다. 그레이스가 접근하면 더 걸이 배럴을 쓰러뜨리고 등장합니다. 근처 플러드라이트를 켜서 그녀를 스턴시키고, 그녀의 몸을 돌아 분배 유닛에 도달해 활성화하세요.</p>
+<h3>// 조명등 — 당신의 주력 무기</h3>
+<p>시설 곳곳에 산업용 조명등이 설치되어 있습니다. 상호작용해 켜면 더 걸을 약 15초간 기절시킵니다. 중요한 제약 사항:</p>
+<ul class="normal">
+<li><strong>각 조명등은 1회용</strong> — 한 번 작동시키면 재사용 불가.</li>
+<li><strong>작동 전에 탈출 경로를 계획</strong>하세요 — 빛이 사라질 때 잡히면 사형 선고입니다.</li>
+<li><strong>조명등을 낭비하지 마세요</strong> — 그녀가 적극적으로 추격 중이거나 목표 지점으로 가는 길을 막고 있을 때만 사용하세요.</li>
+</ul>
 
-<h3>// 유닛 2 — 세디멘테이션 (컨트롤 룸 + 파일링 룸)</h3>
-<p>스토리지에서 컨트롤 룸으로 가서 분배 유닛을 지나 인접한 파일링 룸으로 들어갑니다. 선반에서 <strong>크랭크 레버</strong>를 픽업하세요. 더 걸이 파일링 룸으로 따라옵니다 — 그녀가 들어오기를 기다린 후, 그녀를 돌아서 나갑니다. 컨트롤 룸으로 돌아가 방금 회수한 크랭크 레버로 세디멘테이션 분배 유닛과 상호작용하세요.</p>
+<h2 id="units">세 개의 배전반 재시동</h2>
 
-<h3>// 유닛 3 — 케미컬 트리트먼트</h3>
-<p>마지막 분배 유닛은 막혀 있어 활성화에 <strong>10초 홀드</strong>가 필요합니다. 가장 위험한 유닛입니다 — 상호작용을 중간에 끊을 수 없기 때문입니다.</p>
-<p>구분 창문 반대편의 플러드라이트로 더 걸을 유인한 후, 라이트를 트리거하고, 오른쪽 경로를 사용하여 그녀가 스턴되어 있는 동안 그녀를 돌아갑니다. 스턴이 풀리기 전에 케미컬 트리트먼트 유닛에 도달해 10초 홀드를 완료할 만큼의 윈도우가 있습니다.</p>
+<h3>// 1번 — 창고</h3>
+<p>창고의 배전반은 드럼통 더미 옆에 있습니다. 그레이스가 접근하면 더 걸이 드럼통을 쓰러뜨리며 등장합니다. 근처의 조명등을 켜서 그녀를 기절시킨 뒤, 몸을 우회해 배전반에 도달해 작동시키세요.</p>
+
+<h3>// 2번 — 침전조 (관제실 + 문서 보관실)</h3>
+<p>창고에서 관제실로 향한 다음, 그곳의 배전반을 지나 인접한 문서 보관실로 들어가세요. 그곳 선반에서 <strong>크랭크 레버</strong>를 챙기세요. 더 걸이 문서 보관실까지 따라올 텐데 — 그녀가 들어오기를 기다렸다가 우회해서 나오세요. 관제실로 돌아와 방금 회수한 크랭크 레버로 침전조 배전반과 상호작용하세요.</p>
+
+<h3>// 3번 — 약품 처리실</h3>
+<p>마지막 배전반은 막혀 있어 작동에 <strong>10초간 상호작용 버튼 누르기</strong>가 필요합니다. 중간에 중단할 수 없기 때문에 가장 위험한 배전반입니다.</p>
+<p>더 걸을 분리 유리 반대편 조명등 쪽으로 유인한 뒤 조명을 작동시키고, 그녀가 기절한 사이 오른쪽 경로를 통해 우회하세요. 기절이 풀리기 전에 약품 처리실 배전반에 도달해 10초 누르기를 완료할 시간이 가까스로 확보됩니다.</p>
 
 <h3>// 마지막 해치</h3>
-<p>3개 유닛이 모두 온라인이면 엘리베이터를 타고 상층으로 돌아갑니다. 더 걸이 추격합니다. 상층 플러드라이트를 사용하여 그녀를 마지막으로 스턴시키고 해치 스위치를 활성화합니다. 머리 위에서 해치가 열립니다.</p>
-<p><strong>게임이 그녀를 사격하라고 프롬프트합니다 — 탄약을 낭비하지 마세요.</strong> 거리를 유지하고, 열린 해치를 통해 쏟아지는 여과되지 않은 햇빛이 일을 하도록 두세요. 더 걸이 빛에 남은 살이 타면서 녹습니다.</p>
+<p>세 개의 배전반이 모두 가동되면 엘리베이터를 타고 상층으로 돌아갑니다. 더 걸이 추격합니다. 상층의 조명등을 사용해 마지막으로 한 번 더 기절시킨 뒤 해치 스위치를 작동시키세요. 머리 위로 해치가 열립니다.</p>
+<p><strong>게임이 그녀를 쏘라고 안내하지만 — 절대 탄약을 낭비하지 마세요.</strong> 거리를 유지하고 열린 해치를 통해 쏟아지는 여과되지 않은 햇빛이 일을 처리하게 두세요. 빛이 남은 살을 태우며 더 걸이 녹아내립니다.</p>
 
-<div class="cta">
-<div class="cta-title">관련 한국어 공략</div>
-<a href="how-to-beat-victor-gideon.html">빅터 기드온 (최종 보스)</a>
-<a href="re9-boss-loadout-calculator.html">보스 무기 구성 계산기</a>
-<a href="re9-insanity-survival-guide.html">인새니티 생존 가이드</a>
+<h2 id="after">보상과 다음 단계</h2>
+<p>더 걸을 처치하면 다음이 해금됩니다:</p>
+<ul class="normal">
+<li>정수처리장을 넘어 다음 스토리 구간으로의 진행</li>
+<li>케어 센터 탈출 경로 확정</li>
+<li>그레이스와 레온의 시점이 교차되는 이후 구역으로의 접근</li>
+</ul>
+<p>이 전투는 <em>레지던트 이블 레퀴엠</em>에서 탄약 절약보다 공간 인지가 더 중요한 몇 안 되는 보스전 중 하나입니다. 여기서는 순수 데미지가 아니라 조명등 관리가 성패를 좌우합니다.</p>
+
+<div class="sources">
+<strong>이 가이드 검증에 사용된 출처:</strong><br>
+
+<a href="https://www.pcgamesn.com/resident-evil-requiem/bosses" target="_blank" rel="nofollow noopener">PCGamesN — 레지던트 이블 레퀴엠 전체 보스</a>; <a href="https://gamerant.com/resident-evil-requiem-all-boss-fights-boss-list-re9/" target="_blank" rel="nofollow noopener">GameRant — 전체 보스 격파법</a>; 사이트 작성자 Jachin의 PS5 / v1.02 검증 플레이스루
+
 </div>
-
-<div class="footer">
+<div class="cta">
+<div class="cta-title">관련 공략</div>
+<a href="how-to-beat-victor-gideon.html">최종 보스: 빅터 기드온</a>
+<a href="all-bosses-ranked-by-difficulty.html">전체 보스 난이도 랭킹</a>
+<a href="/all-49-trophies-platinum-guide.html">플래티넘 트로피 공략</a>
+<a href="/bosses-hub.html">보스 전략 허브</a>
+</div>
+<div class="section-divider"></div>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">이 가이드가 도움이 되셨나요? 잘못된 내용을 발견하셨다면 <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20how-to-beat-the-girl.html" style="color:var(--red);">알려 주세요</a>  — 커뮤니티 피드백을 바탕으로 매주 가이드를 업데이트합니다.</p>
+<div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
+<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 가이드가 도움이 되셨다면, Ko-fi에서 더 많은 가이드 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+</div>
+<div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
 <p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
-<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="/contact.html">문의</a> · <a href="/privacy.html">개인정보</a> · <a href="/dmca.html">DMCA</a></p>
-<p style="margin:5px 0;font-size:10px;">RE: Requiem © Capcom · 한국어판 · 2026년 5월</p>
+<p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
+<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
 </div>
 </div>
 </body>
