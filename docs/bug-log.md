@@ -7,6 +7,74 @@
 
 ## 1. 历史 bug 索引（按发现日期倒序）
 
+### 2026-05-19 · 用户抽查 3 个 bug（Phase 21）
+
+#### Bug 21.1 — Mr. X SVG 底部标签框被外边框裁切
+**现象：** `/ko/how-to-beat-mr-x-super-tyrant.html`（及 EN 同款）SVG 底部第三个标签框 "머리 (패리 후)" 框的下边沿超出外层 viewBox 红色 border，最后一行文字 "Mortal Edge로 패리하여 노출" 与底部 border 视觉粘连/重叠；同时与 footer attribution 文字 "re9guide.it.com · 한국어판 · v1.02 검증 · 2026" 出现叠加。
+
+**根因（坐标算错）：**
+- viewBox 上限 `0 0 1200 630`，外层 border `rect x="20" y="20" width="1160" height="590"` → bottom 边在 y=610
+- 底部标签框 `transform="translate(680, 540)"` + `rect height="80"` → 框底在 y=620（**超出 border 10px**）
+- 框最后一行文字 y=68 偏移 → 绝对 y=608（紧贴 border）
+- footer text 在 y=600 → 落在底部框内部（y=540-620 范围），叠加
+
+**修复（已应用）：**
+- 底部框上移 30px：`translate(680, 540)` → `translate(680, 510)`
+- 头部引线 y 终点 580 → 540（仍指向新位置的底部框）
+- 新布局：底部框 y=510-590（margin 20px 距 border），footer text y=600 落在框下方安全区
+- EN/KO 两版同步修改，几何完全一致
+
+**规则（追加进 SVG checklist）：**
+> SVG 内任何 `<g transform="translate(x,y)">` + 子 `<rect height="h">` 必须满足：
+> - `y + h ≤ outerBorderBottom − 10`（至少 10px 安全间距）
+> - 引线 `<line>` 的 `x2/y2` 终点必须落在目标框 padding 内部（不要正好打在 border 上）
+> - footer attribution `<text>` 的 y 坐标必须 > 所有 `<g>` 框的 `y + height`，且 < 外层 border y
+
+#### Bug 21.2 — "영문" 标签使用不规范 + 已翻译页面未升级标签
+**现象：**
+- 全站使用 "영문" 一词，应统一为 "영어"（用户母语规范）
+- bosses-hub.html / 等 KO 页面的 boss-card 标题仍标 `(영어)` 或裸标题，应统一为 `(영어/한국어)` 当 KO 版本存在时
+
+**根因：** 早期翻译批次用了 "영문" 这个相对生硬的书面语；后续翻译进度更新时未同步刷新各 hub 页的卡片标签。
+
+**修复（已应用）：**
+1. 全局替换 `(영문)` → `(영어)` 或 `(영어/한국어)`：14 个 KO 文件,50 处替换
+2. about.html 叙述性文字：`영문 위주`/`영문권`/`영문에서 단순` → `영어 위주`/`영어권`/`영어에서 단순`
+3. bosses-hub.html 等所有卡片：href 指向 KO-existing 页面的,标签升级为 `(영어/한국어)`,共 10 张 boss 卡片全部对齐
+4. **0 处 "영문" 残留**(grep 验证)
+
+**规则（追加）：**
+> - 韩文文档中表示语言时,**禁止用** "영문"。使用 "영어"
+> - 任何 boss / guide / hub 卡片(`boss-card` / `hub-card` / `guide-card` / `coll-card` / `update-row`)的标题必须带语言标签:
+>   - KO 不存在: `(영어)`
+>   - KO 存在: `(영어/한국어)`
+>   - **不允许** 裸标题(无标签)
+> - 新翻译页面交付前,必须跑 `scripts/refresh-card-labels.py`(本仓库自带)同步所有卡片标签
+
+#### Bug 21.3 — Bing IndexNow 未设置（影响 Bing 索引速度）
+**现象：** Bing Webmaster Tools 报告 "Your site lacks inbound links from high-quality domains"（Moderate 严重度）。除外部反向链接外,关键短板是**未启用 IndexNow** → Bing 只能靠周期性爬取发现新页面,新发布内容索引延迟 1-4 周。
+
+**修复（已应用）：**
+1. 在站根创建 IndexNow key file：`/cebd0f739339490594ae3738f31b5ed0.txt`（内容 = key 本身）
+2. 添加 helper script `docs/indexnow-ping.sh`：
+   ```bash
+   ./indexnow-ping.sh                          # ping all sitemap URLs
+   ./indexnow-ping.sh <url1> <url2> ...        # ping specific URLs
+   ```
+3. 脚本会自动构造 POST request 到 `https://api.indexnow.org/indexnow`,处理常见 HTTP 状态码
+
+**部署清单（用户需在 Cloudflare/Hosting 端确认）：**
+- [ ] key file `cebd0f739339490594ae3738f31b5ed0.txt` 部署到生产站点根目录,可访问 `https://www.re9guide.it.com/cebd0f739339490594ae3738f31b5ed0.txt`
+- [ ] 第一次手动跑 `bash docs/indexnow-ping.sh` 提交全 sitemap
+- [ ] 后续每次发布新页面,在 CI / pre-push hook 中调用 `./indexnow-ping.sh <new-url>`
+- [ ] (可选) 在 Bing Webmaster Tools → "URL Submission" 标签验证 IndexNow 已激活
+- [ ] Cloudflare 等 CDN 不要对 IndexNow key file 做 redirect / rewrite,直接静态返回
+
+**规则（追加进发布 SOP）：**
+> 每次新页面发布,必须执行 IndexNow ping（同时也可考虑 Google Search Console 的 "URL Inspection" + "Request Indexing"）。新页面进入 Bing 索引时间从 1-4 周降到 < 24 小时。
+
+---
+
 ### 2026-05-19 · 用户抽查 3 个 bug（Phase 20）
 
 #### Bug 20.1 — KO 首页 "카테고리별 공략" 链接标签错误
@@ -295,6 +363,9 @@ PY
 
 | 日期 | Phase | Bug | 状态 |
 |---|---|---|---|
+| 2026-05-19 | 21 | Mr. X SVG 底部框被外 border 裁切 | ✓ 修复（box 上移 30px） |
+| 2026-05-19 | 21 | "영문" 应改为 "영어" + KO 已译页签升级 | ✓ 修复（50 处替换 + 10 卡片对齐） |
+| 2026-05-19 | 21 | Bing IndexNow 未启用 | ✓ key file + ping 脚本就绪（生产端需部署） |
 | 2026-05-19 | 20 | KO index (영문) 标签未同步 | ✓ 修复（12 条更新） |
 | 2026-05-19 | 20 | Mr. X KO SVG 边框重叠 | ✓ 修复（沿用 EN 几何） |
 | 2026-05-19 | 20 | Victor Gideon EN/KO 图风格不一致 | ✓ 修复（EN 改 inline SVG） |
