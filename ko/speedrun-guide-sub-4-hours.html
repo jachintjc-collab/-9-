@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/speedrun-guide-sub-4-hours.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html" />
+<link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/speedrun-guide-sub-4-hours.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0808" />
+<meta name="msapplication-TileColor" content="#0d0808" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+
+<!-- Open Graph + Twitter Card -->
+<meta property="og:title" content="RE9 스피드런 공략 — 4시간 미만 루트 (무한 탄약)" />
+<meta property="og:description" content="레지던트 이블 레퀴엠(RE9)의 4시간 미만 스피드런 루트. 필수 스킵, 펌프룸 스킵, 스피드러너 트로피 전략, 무한 레퀴엠 활용법." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/speedrun-guide-sub-4-hours.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="re9guide.it.com - Resident Evil Requiem complete guide" />
+<meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:site_name" content="re9guide.it.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="RE9 스피드런 공략 — 4시간 미만 루트 (무한 탄약)" />
+<meta name="twitter:description" content="레지던트 이블 레퀴엠(RE9)의 4시간 미만 스피드런 루트. 필수 스킵, 펌프룸 스킵, 스피드러너 트로피 전략, 무한 레퀴엠 활용법." />
+<title>RE9 스피드런 공략 — 4시간 미만 루트 (무한 탄약)</title>
+<meta name="description" content="레지던트 이블 레퀴엠(RE9)의 4시간 미만 스피드런 루트. 필수 스킵, 펌프룸 스킵, 스피드러너 트로피 전략, 무한 레퀴엠 활용법." />
+<meta name="keywords" content="RE9 스피드런, 레지던트 이블 레퀴엠 스피드런, 4시간 미만, 스피드러너 트로피, 최단 루트" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;border-top:0.5px solid var(--border);padding-top:24px;}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+ol{margin:10px 0 14px 22px;color:var(--text2);}
+ol li{padding:5px 0;font-size:15px;line-height:1.7;}
+
+/* TIME SPLITS INFOGRAPHIC */
+.splits-chart{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:20px;margin:18px 0;}
+.splits-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.1em;margin-bottom:14px;text-transform:uppercase;}
+.split-row{display:grid;grid-template-columns:140px 1fr 70px 70px;gap:8px;align-items:center;padding:8px 0;border-bottom:0.5px dashed var(--border2);font-family:monospace;font-size:12px;}
+.split-row:last-child{border-bottom:none;font-weight:bold;border-top:1px solid var(--red);padding-top:10px;background:rgba(192,57,43,0.04);margin-top:4px;border-radius:0 0 3px 3px;}
+.split-name{color:var(--text);}
+.split-bar{height:10px;background:var(--bg);border-radius:2px;overflow:hidden;}
+.split-fill{height:100%;background:linear-gradient(90deg,var(--green) 0%,var(--gold) 50%,var(--red) 100%);}
+.split-target{color:var(--text3);text-align:right;}
+.split-cum{color:var(--red);text-align:right;font-weight:bold;}
+
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+.warn-box.green{border-color:var(--green);background:rgba(90,138,74,0.07);}
+.warn-box strong{color:var(--text);}
+
+.skip-card{background:var(--surface);border-left:2px solid var(--gold);padding:10px 14px;border-radius:0 3px 3px 0;margin:8px 0;}
+.skip-name{font-size:13px;color:var(--text);margin-bottom:3px;}
+.skip-time{font-size:11px;font-family:monospace;color:var(--gold);margin-right:8px;}
+.skip-desc{font-size:12px;font-family:monospace;color:var(--text2);line-height:1.6;}
+
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}.split-row{grid-template-columns:90px 1fr 50px 60px;font-size:11px;}}
+</style>
+
+<!-- ==== Clean structured data (v2 cleanup, ISO 8601 + timezone) ==== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "스피드런 공략 — 레지던트 이블 레퀴엠(RE9)을 4시간 이내에 클리어하는 방법",
+  "description": "레지던트 이블 레퀴엠의 완전한 스피드런 공략. 4시간 미만 루트, 최적의 무기, 스킵, 그리고 무한 탄약을 활용한 스피드러너 트로피 전략.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-01T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html"
+  },
+  "inLanguage": "ko-KR",
+  "articleSection": "Guides",
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem",
+    "alternateName": "Resident Evil 9",
+    "publisher": "Capcom"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.re9guide.it.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Trophies",
+      "item": "https://www.re9guide.it.com/trophies-hub.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Sub-4-Hour Speedrun"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "레지던트 이블 레퀴엠 4시간 미만 스피드런 루트",
+  "image": "https://www.re9guide.it.com/og-image.png",
+  "totalTime": "PT4H",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "0"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "선택 수집품 스킵",
+      "text": "스피드런 중에는 골동 동전, 선택 파일, 부수적 대화를 무시하세요."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "가능하다면 첫 시도에 커맨더 스킵",
+      "text": "커맨더를 깔끔하게 잡지 못한다면, 재시작 시간 손실은 비슷합니다."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "빅터 기든에서 무한 탄약 활용",
+      "text": "최종 전투가 가장 큰 단일 시간 소모 구간입니다."
+    }
+  ],
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "무한 탄약 해금"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "무한 탄약이 적용된 레퀴엠 리볼버"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Mortal Edge Hatchet"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
+
+
+<style>
+/* Phase 16: smooth scroll + sticky/floating TOC */
+html { scroll-behavior: smooth; }
+
+/* Scroll offset for sticky nav so anchor links don't hide under it */
+h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
+
+/* Sticky TOC behavior */
+@media (min-width: 1100px) {
+  .toc { position: sticky; top: 70px; align-self: flex-start; }
+  body.has-floating-toc .container { position: relative; }
+  body.has-floating-toc .toc {
+    position: fixed;
+    top: 80px;
+    right: calc((100vw - 780px) / 2 - 280px);
+    width: 250px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    z-index: 50;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  body.has-floating-toc .toc::-webkit-scrollbar { width: 4px; }
+  body.has-floating-toc .toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
+  body.has-floating-toc .toc a.active {
+    color: #c0392b !important;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1099px) {
+  .toc { position: static !important; }
+}
+</style>
+<script>
+(function(){
+  function init(){
+    var toc = document.querySelector('.toc');
+    if(!toc) return;
+
+    // Wait until original TOC position is past viewport top, then add class
+    var tocOriginalTop = toc.offsetTop;
+    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+
+    function onScroll(){
+      if(window.innerWidth < 1100) {
+        document.body.classList.remove('has-floating-toc');
+        return;
+      }
+      if(window.scrollY > floatThreshold){
+        document.body.classList.add('has-floating-toc');
+      } else {
+        document.body.classList.remove('has-floating-toc');
+      }
+      // Highlight active TOC item based on visible section
+      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+      var active = null;
+      for(var i = 0; i < sections.length; i++){
+        var rect = sections[i].getBoundingClientRect();
+        if(rect.top < 150) active = sections[i];
+        else break;
+      }
+      if(active){
+        var links = toc.querySelectorAll('a');
+        links.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+        });
+      }
+    }
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
+
+</head>
+<body>
+<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← 모든 공략</a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
+<a href="/speedrun-guide-sub-4-hours.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+</span>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">공략</a> / <span>스피드런</span></div>
+
+<h1>레지던트 이블 레퀴엠을 4시간 이내에 클리어하는 방법 — 스피드런 공략</h1>
+<div class="meta">2026년 5월 게시 · 12분 읽기 · 스피드런 전략</div>
+<!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(186,117,23,0.12);border:0.5px solid #ba7517;color:#ba7517;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ 스포일러 수위: 중간</div>
+<!-- Editorial Info Card - Trust signal for guide credibility -->
+
+
+<p class="lead">레지던트 이블 레퀴엠의 완전한 스피드런 공략입니다. 목표 시간: <em>4시간 미만</em>. 최적 루트, 필수 스킵, 무기 로드아웃, 보스 전략, 그리고 <strong>스피드러너</strong> 실버 트로피를 가장 쉽게 해금하는 방법을 다룹니다. 무한 레퀴엠을 활용한 인새니티 플레이와 결합하면 골드 트로피까지 한 번에 노릴 수 있습니다.</p>
+
+<!-- INFOGRAPHIC: Time splits -->
+<div class="splits-chart">
+  <div class="splits-title">// 목표 구간 기록 · 4:00:00 미만</div>
+  <div class="split-row">
+    <div class="split-name">렌우드 (도입부)</div>
+    <div class="split-bar"><div class="split-fill" style="width:8%;"></div></div>
+    <div class="split-target">12:00</div>
+    <div class="split-cum">0:12</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">케어 센터 (그레이스)</div>
+    <div class="split-bar"><div class="split-fill" style="width:35%;"></div></div>
+    <div class="split-target">55:00</div>
+    <div class="split-cum">1:07</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">케어 센터 (레온)</div>
+    <div class="split-bar"><div class="split-fill" style="width:18%;"></div></div>
+    <div class="split-target">25:00</div>
+    <div class="split-cum">1:32</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">라쿤시티</div>
+    <div class="split-bar"><div class="split-fill" style="width:30%;"></div></div>
+    <div class="split-target">60:00</div>
+    <div class="split-cum">2:32</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">ARK 시설</div>
+    <div class="split-bar"><div class="split-fill" style="width:38%;"></div></div>
+    <div class="split-target">55:00</div>
+    <div class="split-cum">3:27</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">빅터 기든</div>
+    <div class="split-bar"><div class="split-fill" style="width:10%;"></div></div>
+    <div class="split-target">15:00</div>
+    <div class="split-cum">3:42</div>
+  </div>
+  <div class="split-row">
+    <div class="split-name">총 목표</div>
+    <div class="split-bar"><div class="split-fill" style="width:100%;"></div></div>
+    <div class="split-target">─</div>
+    <div class="split-cum">3:42</div>
+  </div>
+</div>
+
+<h2>스피드런 셋업 요건</h2>
+
+<div class="warn-box gold">
+  💡 <strong>최고의 스피드런 조합:</strong> <strong>인새니티 + 무한 레퀴엠 장착</strong>으로 진행하세요. 이렇게 하면 스피드러너 트로피(5시간 미만)와 리마커블 에이전트 트로피(인새니티 클리어)를 한 번의 플레이로 동시에 달성합니다.
+</div>
+
+<h3>// 런 시작 전 해금</h3>
+
+<ol>
+  <li><strong>메인 스토리를 한 번 클리어</strong> — 인새니티 + 스페셜 콘텐츠 스토어 해금</li>
+  <li><strong>무한 레퀴엠 구매</strong> 스페셜 콘텐츠 스토어에서 (~6,000 CP)</li>
+  <li><strong>선택: 무한 RPG-7 구매</strong> (~8,000 CP) — 빅터 보조용</li>
+  <li><strong>이전 런의 Mortal Edge Hatchet 보유</strong> (NG+로 이월됨)</li>
+</ol>
+
+<h3>// 게임 내 설정</h3>
+
+<ul class="normal">
+  <li>옵션 메뉴에서 <strong>컷신 스킵</strong> ON 설정</li>
+  <li><strong>자동 조준</strong>을 STRONG으로 설정 (귀중한 초 단위 절약)</li>
+  <li>더 빠른 전환을 위해 <strong>조준 보조 토글</strong> 비활성화</li>
+  <li><strong>퀵턴</strong>을 편한 버튼에 바인딩</li>
+</ul>
+
+<h2>필수 스킵 (총 ~45분 절약)</h2>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// 6분 절약</span>미스터 라쿤 25개 전부 스킵</div>
+  <div class="skip-desc">신경 쓰지 마세요. 스피드런 루트는 티어 3 무기 업그레이드가 필요 없습니다. 동선 바로 위에 있지 않은 메모리엄은 전부 스킵하세요.</div>
+</div>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// 8분 절약</span>5개 금고 중 4개 스킵 (작업실 금고만 진행)</div>
+  <div class="skip-desc">작업실 금고(R60·L40·R80)는 라쿤 라운드업 지도를 줍니다 — 스피드런에는 쓸모없습니다. 모든 금고를 통째로 스킵하고; No Safe Is Safe 트로피는 포기하세요.</div>
+</div>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// 12분 절약</span>선택 보스 스킵 (셰프 + 청크 #1)</div>
+  <div class="skip-desc">싸우지 마세요. 셰프와 청크 #1은 완전히 스킵 가능합니다. Eye Spy 참은 좋지만 무한 레퀴엠이 있으면 필수가 아닙니다.</div>
+</div>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// 5분 절약</span>파일 75개 전부 스킵</div>
+  <div class="skip-desc">파일은 어떤 진행도 막지 않습니다. 모든 파일을 지나쳐 달리세요. "Case Closed!" 트로피는 수집런용이지 스피드런용이 아닙니다.</div>
+</div>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// 8분 절약</span>정원 사이드 퀘스트 스킵</div>
+  <div class="skip-desc">씨앗 심기 = 선택. 그린 썸 트로피는 스피드러너와 함께 스택되지 않습니다.</div>
+</div>
+
+<div class="skip-card">
+  <div class="skip-name"><span class="skip-time">// 6분 절약</span>룰렛 휠 이스터에그 스킵</div>
+  <div class="skip-desc">RNG 의존적이고 골동 동전 1개만 절약합니다. 시간 투자 대비 가치가 없습니다.</div>
+</div>
+
+<h2>구간별 루트</h2>
+
+<h3>// 렌우드 (목표: 12:00)</h3>
+
+<p>선형 오프닝. 스킵 기회가 없습니다 — 그냥 튜토리얼을 최대한 빠르게 진행하세요. 대사 빠르게 넘기고, 튜토리얼 적을 신속히 패리한 뒤, 복도를 따라가세요.</p>
+
+<ul class="normal">
+  <li>컷신을 즉시 스킵 (버튼 프롬프트)</li>
+  <li>초반 탄약은 줍지 말 것 — 나중에 충분히 얻습니다</li>
+  <li>좀비를 지나쳐 달리고; 교전하지 마세요</li>
+</ul>
+
+<h3>// 케어 센터 그레이스 (목표: 55:00)</h3>
+
+<p>가장 긴 구간. <strong>쿼츠 퍼즐 3개를 빠르게 모두 풀기</strong> — 필수입니다. 그 외에는 전부 스킵.</p>
+
+<ol>
+  <li><strong>태양 쿼츠</strong> (수석 연구원실): 별 · 태양 · 달 · 태양</li>
+  <li><strong>달 쿼츠</strong> (의장실): 달 · 태양 · 별 · 달</li>
+  <li><strong>별 쿼츠</strong> (VIP 스위트): 모래시계 해법 (보통 태양 · 별 · 달 · 별)</li>
+</ol>
+
+<p>중요: <strong>혈액 표본 1번 해결</strong> (변성) — 용혈 주사기 확보를 위해. 나중에 2-3개가 필요합니다. 표본 2번과 3번은 스킵.</p>
+
+<h3>// 케어 센터 레온 (목표: 25:00)</h3>
+
+<p>다락방에서 MSBG 500을 즉시 픽업하세요. 무한 레퀴엠으로 다락방의 청크 #2를 원샷. 안뜰 출구로 곧장 달려가세요.</p>
+
+<h3>// 라쿤시티 (목표: 60:00)</h3>
+
+<p>여러 보스 전투:</p>
+<ul class="normal">
+  <li><strong>미스터 X 추격</strong> — 싸우지 말고 루트만 달리세요 (미스터 X 공략 참조)</li>
+  <li><strong>슈퍼 타이런트</strong> — 무한 레퀴엠으로 심장 사격. ~90초</li>
+  <li><strong>타이탄 스피너</strong> — 무한 레퀴엠으로 엄폐-점사. ~3분</li>
+</ul>
+
+<p>중요: 건샵 켄도의 저장고에서 시간을 낭비하지 마세요 — 무한 레퀴엠만 있으면 충분합니다.</p>
+
+<h3>// ARK 시설 (목표: 55:00)</h3>
+
+<p>플랜트 43 → 커맨더 → 복도 → 빅터:</p>
+<ul class="normal">
+  <li><strong>플랜트 43</strong> — 캐니스터 트럭 폭발 피니셔 노리기 (페이즈 2 스킵)</li>
+  <li><strong>커맨더</strong> — Mortal Edge 패리 사용; 인새니티 + 무한 레퀴엠으로 ~3분</li>
+  <li><strong>ARK 복도</strong> — 순수 달리기 통과. 전투 불필요.</li>
+</ul>
+
+<h3>// 빅터 기든 (목표: 15:00)</h3>
+
+<p>최종 보스. 무한 레퀴엠으로:</p>
+<ol>
+  <li>페이즈 1: 보라색 차지 결정 사격 → 2분</li>
+  <li>페이즈 2: 머리의 농포 파괴 → 코어 → 5-8분</li>
+  <li>QTE 피니셔 프롬프트</li>
+</ol>
+
+<h2>4시간 미만 런용 로드아웃</h2>
+
+<div class="warn-box green">
+  <strong>최적 로드아웃:</strong><br>
+  주무기: <strong>무한 레퀴엠 리볼버</strong> (대부분의 적을 원샷)<br>
+  보조: <strong>무한 RPG-7</strong> (긴급 보스 데미지)<br>
+  근접: <strong>Mortal Edge Hatchet</strong> (패리 전용, 절대 공격하지 말 것)<br>
+  참: <strong>Eye Spy Charm</strong> 획득 가능하면 (랜덤 치명타 세이브)
+</div>
+
+<h2>세이브 전략</h2>
+
+<p>스피드런은 <strong>세이브가 적을수록</strong> 유리합니다:</p>
+
+<ul class="normal">
+  <li>주요 보스 전(미스터 X, 플랜트 43, 커맨더, 빅터) 직전에만 세이브</li>
+  <li>RNG 요소 전(모래시계 퍼즐)에 세이브</li>
+  <li>탐색 중에는 세이브하지 말 것 — 각 세이브당 ~5초 손실</li>
+  <li>같은 슬롯 사용 — 멀티 슬롯 세이브는 시간 낭비</li>
+</ul>
+
+<h2>흔한 시간 손실 실수</h2>
+
+<ul class="normal">
+  <li><strong>파일을 읽으려고 멈추기</strong> — 절대 금지. 전부 스킵 가능합니다.</li>
+  <li><strong>선택 좀비와 교전</strong> — 지나쳐 달리세요. 한 발만 쏴도 2-3초 낭비.</li>
+  <li><strong>불필요한 탄약 줍기</strong> — 무한 레퀴엠으로 의미 없습니다.</li>
+  <li><strong>실수로 사이드 보스 트리거</strong> — 청크 #1과 셰프의 트리거 지점을 알아두세요.</li>
+  <li><strong>너무 자주 세이브</strong> — 세이브 1회당 4-6초 추가.</li>
+  <li><strong>태양 퍼즐을 틀리게 풀기</strong> — 답을 외우고, 단서를 다시 읽지 마세요.</li>
+</ul>
+
+<h2>최상위 기록 벤치마크</h2>
+
+<ul class="normal">
+  <li><strong>캐주얼 스피드런:</strong> 4:30-5:00 (스피드러너 트로피만 목표)</li>
+  <li><strong>평균 인새니티 스피드런:</strong> 3:40-4:00 (무한 탄약 사용)</li>
+  <li><strong>최적화된 인새니티:</strong> 3:15-3:30 (커뮤니티 상위 기록)</li>
+  <li><strong>세계 신기록 (커뮤니티 집계):</strong> 2026년 5월 기준 ~2:55</li>
+</ul>
+
+<h2>트로피 스택 전략</h2>
+
+<p>인새니티에서 효율적인 스피드런은 <strong>한 번의 플레이로 트로피 3개</strong>를 해금합니다:</p>
+
+<ul class="normal">
+  <li>"<strong>리마커블 에이전트</strong>" 골드 — 인새니티 클리어</li>
+  <li>"<strong>스피드러너</strong>" 실버 — 5시간 미만</li>
+  <li>"<strong>레퀴엠 컴플리트</strong>" 골드 — 스토리 클리어 (첫 런에서 이미 달성)</li>
+</ul>
+<div class="cta">
+  <div class="cta-title">관련 공략</div>
+  <a href="how-to-unlock-insanity-difficulty.html">인새니티 해금 방법 (영어/한국어)</a>
+  <a href="/all-49-trophies-platinum-guide.html">트로피 49개 전체 공략 (영어)</a>
+  <a href="how-to-beat-victor-gideon.html">빅터 기든 공략 (영어/한국어)</a>
+  <a href="best-weapons-tier-list.html">최고의 무기 티어 리스트 (영어/한국어)</a>
+  <a href="index.html">모든 공략</a>
+</div>
+
+<!-- Ko-fi support strip (subtle, end-of-article) -->
+<div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
+  <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 가이드가 도움이 되셨다면, Ko-fi에서 더 많은 가이드 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
+  <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+</div>
+
+</div>
+<div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
+  <p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+  <p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
+  <p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+</div>
+
+</body>
+</html>
