@@ -68,6 +68,15 @@ ul.normal li{padding:3px 0;font-size:15px;}
 
 /* SAFE CARD */
 .safe-card{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:18px 20px;margin:16px 0;}
+/* Phase 23: Spoiler-safe code reveal */
+.safe-code-display{position:relative;display:inline-block;min-width:200px;}
+.safe-code-reveal-wrap{position:relative;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.safe-code-hidden{filter:blur(6px);user-select:none;transition:filter 0.3s ease;cursor:pointer;}
+.safe-code-revealed{filter:none;user-select:auto;}
+.reveal-btn{background:var(--red);color:#fff;border:none;font-family:monospace;font-size:11px;letter-spacing:0.06em;padding:5px 12px;border-radius:3px;cursor:pointer;transition:opacity 0.2s;}
+.reveal-btn:hover{opacity:0.85;}
+.reveal-btn.hidden{display:none;}
+
 .safe-num{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.08em;margin-bottom:6px;}
 .safe-title{font-size:18px;color:var(--text);margin-bottom:12px;font-weight:normal;}
 .safe-section{margin-bottom:12px;}
@@ -322,6 +331,14 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 })();
 </script>
 
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wu58ps8e48");
+</script>
 </head>
 <body>
 <div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
@@ -609,6 +626,43 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   });
 });
+</script>
+
+
+<script>
+// Phase 23: click-to-reveal safe codes (spoiler protection + engagement)
+(function(){
+  function init(){
+    document.querySelectorAll('.safe-code-display').forEach(function(code){
+      if(code.dataset.revealInit) return;
+      code.dataset.revealInit = '1';
+      var original = code.innerHTML;
+      var wrap = document.createElement('span');
+      wrap.className = 'safe-code-reveal-wrap';
+      var blurred = document.createElement('span');
+      blurred.className = 'safe-code-hidden';
+      blurred.innerHTML = original;
+      var btn = document.createElement('button');
+      btn.className = 'reveal-btn';
+      btn.type = 'button';
+      btn.textContent = code.dataset.revealLabel || '🔒 Reveal';
+      var reveal = function(){
+        blurred.classList.remove('safe-code-hidden');
+        blurred.classList.add('safe-code-revealed');
+        btn.classList.add('hidden');
+      };
+      btn.addEventListener('click', reveal);
+      blurred.addEventListener('click', reveal);
+      wrap.appendChild(blurred);
+      wrap.appendChild(btn);
+      code.innerHTML = '';
+      code.appendChild(wrap);
+    });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
 </script>
 
 </body>
