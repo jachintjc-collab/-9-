@@ -226,6 +226,43 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
   })(window, document, "clarity", "script", "wu58ps8e48");
 </script>
+<!-- Google Analytics 4 (G-XZJHDN44CF) + smart dev opt-out -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZJHDN44CF"></script>
+<script>
+(function(){
+  // ---- Dev opt-out detection ----
+  var DEV_KEY = 're9guide_dev';
+  var GA_ID = 'G-XZJHDN44CF';
+  // URL param ?dev=1 sets flag, ?dev=0 clears (one-time activation)
+  try {
+    var p = new URLSearchParams(window.location.search);
+    if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON — analytics disabled for this browser'); }
+    if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF — analytics re-enabled'); }
+  } catch(e){}
+  var isDev = false;
+  try { isDev = localStorage.getItem(DEV_KEY) === '1'; } catch(e){}
+
+  // ---- Always set up gtag function (Clarity integration needs window.gtag) ----
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+
+  if (isDev) {
+    // Disable GA4 hits for this user
+    window['ga-disable-' + GA_ID] = true;
+    // Stop Clarity too (script may load before this — call after a tick)
+    setTimeout(function(){ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
+    console.log('[re9guide] Analytics disabled — dev mode active. To re-enable: ?dev=0');
+  } else {
+    gtag('js', new Date());
+    gtag('config', GA_ID, {
+      anonymize_ip: true,
+      page_title: document.title,
+      page_location: window.location.href
+    });
+  }
+})();
+</script>
 </head>
 <body>
 <div class="nav">
