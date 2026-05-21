@@ -557,4 +557,76 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/wrenwood-hotel-walkthrough.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/wrenwood-hotel-walkthrough.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/wrenwood-hotel-walkthrough.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/care-center-walkthrough.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/care-center-walkthrough.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/care-center-walkthrough.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/care-center-basement-walkthrough.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/care-center-basement-walkthrough.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/care-center-basement-walkthrough.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/courtyard-walkthrough.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/courtyard-walkthrough.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/courtyard-walkthrough.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/water-treatment-walkthrough.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/water-treatment-walkthrough.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/water-treatment-walkthrough.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/rpd-orphanage-walkthrough.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/rpd-orphanage-walkthrough.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/rpd-orphanage-walkthrough.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/raccoon-city-walkthrough.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/raccoon-city-walkthrough.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/raccoon-city-walkthrough.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/ark-facility-complete-walkthrough.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/ark-facility-complete-walkthrough.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/ark-facility-complete-walkthrough.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/insanity-chapter-walkthrough.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/insanity-chapter-walkthrough.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/insanity-chapter-walkthrough.html" />
+  </url>
 </urlset>
