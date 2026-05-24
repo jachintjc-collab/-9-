@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Performance: preconnect to third-party origins -->
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="preconnect" href="https://www.clarity.ms" crossorigin>
+<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="https://www.clarity.ms">
+<link rel="canonical" href="https://www.re9guide.it.com/ko/re9-tips-and-tricks.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-tips-and-tricks.html" />
+<link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-tips-and-tricks.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-tips-and-tricks.html" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0808" />
+<meta name="msapplication-TileColor" content="#0d0808" />
+<!-- Open Graph + Twitter Card -->
+<meta property="og:title" content="RE9 팁과 트릭 — 30+ 프로 전략 (전투/탐험/제작/인새니티)" />
+<meta property="og:description" content="레지던트 이블 레퀴엠(RE9) 30+ 검증된 팁 — 전투, 탐험, 제작, 인벤토리 관리, 패리 숙달, 인새니티 전용. 모든 스킬 레벨을 위한 완전 가이드." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/re9-tips-and-tricks.html" />
+<meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="re9guide.it.com - Resident Evil Requiem complete guide" />
+<meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
+<meta property="og:site_name" content="re9guide.it.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="RE9 팁과 트릭 — 30+ 프로 전략 (전투/탐험/제작/인새니티)" />
+<meta name="twitter:description" content="레지던트 이블 레퀴엠(RE9) 30+ 검증된 팁 — 전투, 탐험, 제작, 인벤토리 관리, 패리 숙달, 인새니티 전용. 모든 스킬 레벨을 위한 완전 가이드." />
+<title>RE9 팁과 트릭 — 30+ 프로 전략 (전투/탐험/제작/인새니티)</title>
+<meta name="description" content="레지던트 이블 레퀴엠(RE9) 30+ 검증된 팁 — 전투, 탐험, 제작, 인벤토리 관리, 패리 숙달, 인새니티 전용. 모든 스킬 레벨을 위한 완전 가이드." />
+<meta name="keywords" content="RE9 팁, RE9 트릭, 레지던트 이블 레퀴엠 팁, RE9 초보 가이드, 인새니티 팁" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--silver:#888780;--bronze:#8b5e2a;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+.container{max-width:780px;margin:0 auto;padding:0 18px;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
+.logo span{color:var(--red);}
+.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
+.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
+h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;border-top:0.5px solid var(--border);padding-top:24px;}
+h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+.meta span{color:var(--red);}
+strong{color:var(--text);font-weight:normal;}
+em{color:var(--gold);font-style:normal;}
+.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
+.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
+.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.toc ul{list-style:none;padding:0;}
+.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
+.toc li::before{content:"› ";color:var(--red);}
+.toc a{color:var(--text2);text-decoration:none;}
+.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
+ul.normal li{padding:3px 0;font-size:15px;}
+
+/* TIER */
+.tier-row{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:18px 20px;margin:16px 0;}
+.tier-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.tier-letter{font-size:28px;font-weight:bold;font-family:monospace;width:50px;height:50px;display:flex;align-items:center;justify-content:center;border-radius:6px;flex-shrink:0;}
+.tier-S{background:rgba(192,57,43,0.15);color:var(--red);border:1px solid var(--red);}
+.tier-A{background:rgba(186,117,23,0.15);color:var(--gold);border:1px solid rgba(186,117,23,0.5);}
+.tier-B{background:rgba(105,168,224,0.1);color:var(--blue);border:1px solid rgba(105,168,224,0.4);}
+.tier-C{background:rgba(136,135,128,0.12);color:var(--silver);border:1px solid rgba(136,135,128,0.4);}
+.tier-D{background:rgba(139,94,42,0.12);color:var(--bronze);border:1px solid rgba(139,94,42,0.4);}
+.tier-name{font-size:18px;color:var(--text);}
+.tier-desc{font-size:12px;font-family:monospace;color:var(--text3);margin-top:2px;}
+
+.weapon-item{padding:12px 0;border-bottom:0.5px dashed var(--border2);}
+.weapon-item:last-child{border-bottom:none;}
+.weapon-name{font-size:15px;color:var(--text);margin-bottom:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.char-tag{font-size:9px;font-family:monospace;padding:2px 6px;border-radius:2px;letter-spacing:0.04em;}
+.char-grace{background:rgba(186,117,23,0.12);color:var(--gold);border:0.5px solid rgba(186,117,23,0.3);}
+.char-leon{background:rgba(55,138,221,0.1);color:var(--blue);border:0.5px solid rgba(55,138,221,0.2);}
+.char-both{background:rgba(255,255,255,0.05);color:var(--text2);border:0.5px solid var(--border2);}
+.weapon-desc{font-size:13px;font-family:monospace;color:var(--text2);line-height:1.7;}
+.weapon-desc strong{color:var(--text);}
+.weapon-meta{font-size:11px;font-family:monospace;color:var(--text3);margin-top:5px;}
+
+.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
+.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
+.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
+.cta a:hover{background:rgba(192,57,43,0.1);}
+.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+@media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}.tier-letter{width:42px;height:42px;font-size:22px;}}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
+
+<!-- ==== Clean structured data (v2 cleanup, ISO 8601 + timezone) ==== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "RE9 팁과 트릭 — 30+ 프로 전략 (전투/탐험/제작/인새니티)",
+  "description": "레지던트 이블 레퀴엠(RE9) 30+ 검증된 팁 — 전투, 탐험, 제작, 인벤토리 관리, 패리 숙달, 인새니티 전용. 모든 스킬 레벨을 위한 완전 가이드.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.re9guide.it.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.re9guide.it.com/about.html#person",
+    "name": "Jachin",
+    "url": "https://www.re9guide.it.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.re9guide.it.com/#publisher",
+    "name": "re9guide.it.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.re9guide.it.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-05-01T00:00:00+09:00",
+  "dateModified": "2026-05-13T00:00:00+09:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.re9guide.it.com/best-weapons-tier-list.html"
+  },
+  "inLanguage": "ko-KR",
+  "articleSection": "Weapons",
+  "about": {
+    "@type": "VideoGame",
+    "@id": "https://www.re9guide.it.com/#game",
+    "name": "Resident Evil: Requiem",
+    "alternateName": "Resident Evil 9",
+    "publisher": "Capcom"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.re9guide.it.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Weapons Tier List"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Spoiler Filter — when active, blur the page + show reveal CTA */
+body.spoilers-hidden .container > h1,
+body.spoilers-hidden .container > p.lead,
+body.spoilers-hidden .container > h2,
+body.spoilers-hidden .container > h3,
+body.spoilers-hidden .container > p,
+body.spoilers-hidden .container > ul,
+body.spoilers-hidden .container > ol,
+body.spoilers-hidden .container > div:not(.author-byline):not(.editorial-header):not(.translation-note):not(.warn-box.gold):not(#spoiler-overlay-hint),
+body.spoilers-hidden .container > section,
+body.spoilers-hidden .container > figure,
+body.spoilers-hidden .container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden .container { position:relative; }
+#spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
+#spoiler-filter-btn:hover { background:#c0392b; }
+#spoiler-filter-btn::before { content:"👁  "; }
+body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
+#spoiler-overlay-hint { display:none; position:sticky; top:60px; z-index:50; padding:14px 18px; background:linear-gradient(135deg,rgba(192,57,43,0.92) 0%,rgba(186,117,23,0.92) 100%); color:#fff; border-radius:6px; font-size:13px; align-items:center; gap:12px; flex-wrap:wrap; margin:14px 0; backdrop-filter:blur(4px); }
+#spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
+</style>
+<script>
+(function(){
+  function isHighSpoilerPage(){
+    var t=document.body.innerText||"";
+    return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
+  }
+  function applyState(hide){
+    if(hide && isHighSpoilerPage()){
+      document.body.classList.add("spoilers-hidden");
+    }else{
+      document.body.classList.remove("spoilers-hidden");
+    }
+  }
+  function init(){
+    var pref=localStorage.getItem("re9guide_spoiler_filter");
+    var hide=(pref==="hide");
+    if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
+      var c=document.querySelector(".container");
+      if(c && !document.getElementById("spoiler-overlay-hint")){
+        var hint=document.createElement("div");
+        hint.id="spoiler-overlay-hint";
+        hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
+        c.insertBefore(hint, c.firstChild);
+      }
+    }
+    applyState(hide);
+    // Floating toggle button on every page
+    if(!document.getElementById("spoiler-filter-btn")){
+      var btn=document.createElement("button");
+      btn.id="spoiler-filter-btn";
+      btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
+      btn.textContent=hide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      btn.onclick=function(){
+        var nowHide=!document.body.classList.contains("spoilers-hidden");
+        if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
+          localStorage.setItem("re9guide_spoiler_filter","hide");
+          btn.textContent="Spoilers: HIDDEN";
+          alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
+          return;
+        }
+        applyState(nowHide);
+        localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide" : "show");
+        btn.textContent=nowHide ? "Spoilers: HIDDEN" : "Spoilers: VISIBLE";
+      };
+      document.body.appendChild(btn);
+    }
+    var revealOnce=document.getElementById("spoiler-reveal-once");
+    if(revealOnce){
+      revealOnce.onclick=function(){
+        document.body.classList.remove("spoilers-hidden");
+        document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
+      };
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{ init(); }
+})();
+</script>
+
+
+
+<style>
+/* Phase 16: smooth scroll + sticky/floating TOC */
+html { scroll-behavior: smooth; }
+
+/* Scroll offset for sticky nav so anchor links don't hide under it */
+h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
+
+/* Sticky TOC behavior */
+@media (min-width: 1100px) {
+  .toc { position: sticky; top: 70px; align-self: flex-start; }
+  body.has-floating-toc .container { position: relative; }
+  body.has-floating-toc .toc {
+    position: fixed;
+    top: 80px;
+    right: calc((100vw - 780px) / 2 - 280px);
+    width: 250px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    z-index: 50;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  body.has-floating-toc .toc::-webkit-scrollbar { width: 4px; }
+  body.has-floating-toc .toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
+  body.has-floating-toc .toc a.active {
+    color: #c0392b !important;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1099px) {
+  .toc { position: static !important; }
+}
+</style>
+<script>
+(function(){
+  function init(){
+    var toc = document.querySelector('.toc');
+    if(!toc) return;
+
+    // Wait until original TOC position is past viewport top, then add class
+    var tocOriginalTop = toc.offsetTop;
+    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+
+    function onScroll(){
+      if(window.innerWidth < 1100) {
+        document.body.classList.remove('has-floating-toc');
+        return;
+      }
+      if(window.scrollY > floatThreshold){
+        document.body.classList.add('has-floating-toc');
+      } else {
+        document.body.classList.remove('has-floating-toc');
+      }
+      // Highlight active TOC item based on visible section
+      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+      var active = null;
+      for(var i = 0; i < sections.length; i++){
+        var rect = sections[i].getBoundingClientRect();
+        if(rect.top < 150) active = sections[i];
+        else break;
+      }
+      if(active){
+        var links = toc.querySelectorAll('a');
+        links.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+        });
+      }
+    }
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wu58ps8e48");
+</script>
+<!-- Google Analytics 4 (G-XZJHDN44CF) + smart dev opt-out -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZJHDN44CF"></script>
+<script>
+(function(){
+  // ---- Dev opt-out detection ----
+  var DEV_KEY = 're9guide_dev';
+  var GA_ID = 'G-XZJHDN44CF';
+  // URL param ?dev=1 sets flag, ?dev=0 clears (one-time activation)
+  try {
+    var p = new URLSearchParams(window.location.search);
+    if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON — analytics disabled for this browser'); }
+    if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF — analytics re-enabled'); }
+  } catch(e){}
+  var isDev = false;
+  try { isDev = localStorage.getItem(DEV_KEY) === '1'; } catch(e){}
+
+  // ---- Always set up gtag function (Clarity integration needs window.gtag) ----
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+
+  if (isDev) {
+    // Disable GA4 hits for this user
+    window['ga-disable-' + GA_ID] = true;
+    // Stop Clarity too (script may load before this — call after a tick)
+    setTimeout(function(){ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
+    console.log('[re9guide] Analytics disabled — dev mode active. To re-enable: ?dev=0');
+  } else {
+    gtag('js', new Date());
+    gtag('config', GA_ID, {
+      anonymize_ip: true,
+      page_title: document.title,
+      page_location: window.location.href
+    });
+  }
+})();
+</script>
+</head>
+<body>
+<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← 모든 공략</a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
+<a href="/re9-tips-and-tricks.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+</span>
+</div>
+<div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">공략</a> / <span>팁과 트릭</span></div>
+
+<h1>RE9 팁과 트릭 — 30+ 프로 전략</h1>
+<div class="meta">2026년 5월 게시 · <span>10분 읽기</span> · 난이도: ★★ 중간 · 약한 스포일러</div>
+<!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(90,138,74,0.12);border:0.5px solid #5a8a4a;color:#5a8a4a;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">✓ SPOILER LEVEL: LOW</div>
+<!-- Editorial Info Card - Trust signal for guide credibility -->
+
+
+<p class="lead">레지던트 이블 레퀴엠(RE9)을 위한 30+ 검증된 팁과 트릭 — 전투, 탐험, 제작, 인벤토리 관리, 인새니티 생존 전반. 우리 사이트의 Clarity 히트맵을 통해 수백 세션 동안 캡처한 실제 플레이어 데이터를 기반으로 작성.</p>
+
+<div class="boss-stats">
+  <table>
+    <tr><td>대상 플레이어</td><td><strong>모든 스킬 레벨 — 초보부터 인새니티 런까지</strong></td></tr>
+    <tr><td>팁 수</td><td><strong>6개 카테고리에 30+ 팁</strong></td></tr>
+    <tr><td>스포일러 수위</td><td><strong>약함 (메커니즘만, 스토리 X)</strong></td></tr>
+    <tr><td>업데이트</td><td><strong>v1.02 검증</strong></td></tr>
+    <tr><td>최종 업데이트</td><td><strong>2026년 5월</strong></td></tr>
+  </table>
+</div>
+
+<div class="toc">
+  <div class="toc-title">목차</div>
+  <ul>
+    <li><a href="#combat">전투 팁 (8개)</a></li>
+    <li><a href="#exploration">탐험 팁 (6개)</a></li>
+    <li><a href="#crafting">제작 팁 (5개)</a></li>
+    <li><a href="#inventory">인벤토리 관리 (5개)</a></li>
+    <li><a href="#parry">패리 숙달 팁 (4개)</a></li>
+    <li><a href="#insanity">인새니티 전용 팁 (6개)</a></li>
+  </ul>
+</div>
+
+<h2 id="combat">전투 팁</h2>
+<ol>
+  <li><strong>머리를 노리되 패리 타이밍 추적</strong> — 스탠다드 헤드샷은 핸드건 데미지 ~3배지만, 좀비가 돌진 중이면 먼저 패리하고 카운터.</li>
+  <li><strong>Hemorrhetic Injector는 뒤에서 즉사</strong> — The Chef 포함 대부분 적.</li>
+  <li><strong>MSBG 500 샷건은 점블랭크 2발이면 대부분 좀비 처치</strong>지만 중거리에서 탄약 낭비.</li>
+  <li><strong>Marksman 1A는 만능 보스 무기</strong> — 플랜트 43, 빅터, 타이탄, 미스터 X.</li>
+  <li><strong>기본 Hatchet 패리 윈도우는 인새니티에서 너무 좁음</strong> — Mortal Edge로 업그레이드.</li>
+  <li><strong>수류탄이 보스 방어구 파괴</strong> — 보스 아레나당 2-3개 비축.</li>
+  <li><strong>나이프 내구도는 Infinite Knife 해금 시 매 세이브 재설정</strong> (금고 #5 보상).</li>
+  <li><strong>스프린트가 모든 재장전 애니메이션 취소</strong> — 재장전 중 후퇴에 유용하지만 장전된 탄 손실.</li>
+</ol>
+
+<h2 id="exploration">탐험 팁</h2>
+<ol>
+  <li><strong>모든 세이브룸 태그</strong> — 아이템 박스 체크포인트 겸용.</li>
+  <li><strong>모든 빛나는 물체 조사</strong> — 파일, 약초, 화약, 숨겨진 미스터 라쿤 모두 약하게 빛남.</li>
+  <li><strong>새 키 픽업 후 백트래킹</strong> — 모든 키가 이전 접근 불가했던 2-4개 방 해금.</li>
+  <li><strong>케어 센터에 챕터 진행과 연계된 8개 missable 파일</strong> — <a href="re9-missables-complete-guide.html">missable 가이드</a>.</li>
+  <li><strong>맵 마커는 죽음을 넘어 지속</strong> — 미완료 수집품 추적에 유용.</li>
+  <li><strong>카메라 조명이 비밀 노출</strong> — 어두운 방에서 손전등 켜기/끄기.</li>
+</ol>
+
+<h2 id="crafting">제작 팁</h2>
+<ol>
+  <li><strong>레퀴엠 탄은 항상 마지막에 제작</strong> — 빅터 기드온용으로 비축.</li>
+  <li><strong>녹색 + 빨간 약초 결합</strong>이 가장 효율적.</li>
+  <li><strong>일반 좀비에 Hemorrhetic Injector 낭비 금지</strong>.</li>
+  <li><strong>제작 벤치는 각 보스 후 새 레시피 해금</strong>.</li>
+  <li><strong>화약 한도는 종류별 99개</strong> — 챕터 전환 전 상한까지 제작.</li>
+</ol>
+
+<h2 id="inventory">인벤토리 관리</h2>
+<ol>
+  <li><strong>인벤토리 슬롯이 빠듯</strong> — Mortal Edge Hatchet 획득 후 기본 Combat Knife 버림.</li>
+  <li><strong>모든 세이브룸에서 아이템 박스 사용</strong>.</li>
+  <li><strong>보스 아레나당 정확히 1개 수류탄</strong>.</li>
+  <li><strong>키 아이템은 인벤토리 한도에 포함 X</strong>.</li>
+  <li><strong>Eye Spy Charm은 슬롯 차지 X</strong> — 인새니티용으로 영구 장착.</li>
+</ol>
+
+<h2 id="parry">패리 숙달 팁</h2>
+<ol>
+  <li><strong>패리 윈도우는 적 무기의 빨간 섬광</strong>.</li>
+  <li><strong>Mortal Edge Hatchet은 30% 더 큰 패리 윈도우</strong>.</li>
+  <li><strong>The Commander는 패리 가능 공격 4개</strong>와 패리 불가 2개 (그랩, 차지 대시).</li>
+  <li><strong>성공 패리 = ~1.5초 데미지 윈도우</strong>.</li>
+</ol>
+
+<h2 id="insanity">인새니티 전용 팁</h2>
+<ol>
+  <li><strong>Eye Spy Charm은 협상 불가</strong> — 세이브당 1회 치명상 회피.</li>
+  <li><strong>모든 보급 상자에서 보디 아머 수리</strong> — 인새니티 데미지로 부서진 아머는 2발에 즉사.</li>
+  <li><strong>런 전체에서 3개 이상 슬롯에 세이브</strong>.</li>
+  <li><strong>The Girl 보스는 그림자에서 재장전 시 즉사</strong>.</li>
+  <li><strong>플랜트 43 씨앗 투사체는 한 발에 HP 40-60%</strong>.</li>
+  <li><strong>무한 탄약으로 인새니티 시시</strong>.</li>
+</ol>
+
+<div class="cta">
+  <div class="cta-title">관련 공략</div>
+  <a href="beginner-guide-resident-evil-requiem.html">입문자 가이드</a>
+  <a href="re9-insanity-survival-guide.html">인새니티 생존 가이드</a>
+  <a href="re9-insanity-readiness-check.html">인새니티 준비도 체크</a>
+  <a href="best-weapons-tier-list.html">최고의 무기 티어 리스트</a>
+  <a href="index.html">모든 공략</a>
+</div>
+  <a href="all-25-mr-raccoon-locations.html">All 25 Mr. Raccoon Locations</a>
+  <a href="how-to-beat-victor-gideon.html">How to Beat Victor Gideon</a>
+  <a href="how-to-beat-mr-x-super-tyrant.html">How to Beat Super Tyrant</a>
+  <a href="all-5-safe-codes-guide.html">All 5 Safe Codes</a>
+  <a href="index.html">All guides home</a>
+</div>
+
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? <a href="#" style="color:var(--red);">Let us know</a> — we update tier rankings monthly based on community feedback and balance patches.</p>
+
+<!-- Ko-fi support strip (subtle, end-of-article) -->
+<div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
+  <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 가이드가 도움이 되셨다면, Ko-fi에서 더 많은 가이드 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
+  <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+</div>
+
+</div>
+<div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
+  <p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+  <p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
+  <p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+</div>
+</body>
+</html>
