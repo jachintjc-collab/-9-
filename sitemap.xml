@@ -629,4 +629,28 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/insanity-chapter-walkthrough.html" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/insanity-chapter-walkthrough.html" />
   </url>
+  <url>
+    <loc>https://www.re9guide.it.com/re9-missables-complete-guide.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/re9-missables-complete-guide.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/re9-tips-and-tricks.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/re9-tips-and-tricks.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
