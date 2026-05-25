@@ -45,3 +45,6 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://www.re9guide.it.com/sitemap.xml
+
+# IndexNow key file location (Bing/Yandex IndexNow protocol)
+# https://www.re9guide.it.com/cebd0f739339490594ae3738f31b5ed0.txt
