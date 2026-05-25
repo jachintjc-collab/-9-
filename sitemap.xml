@@ -653,4 +653,73 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Phase 27 — 4 long-tail articles (EN + KO) -->
+  <url>
+    <loc>https://www.re9guide.it.com/puzzle-box-solutions.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/puzzle-box-solutions.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/puzzle-box-solutions.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/puzzle-box-solutions.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/puzzle-box-solutions.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/puzzle-box-solutions.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/puzzle-box-solutions.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/organless-corpse-puzzle.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/organless-corpse-puzzle.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/organless-corpse-puzzle.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/organless-corpse-puzzle.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/organless-corpse-puzzle.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/organless-corpse-puzzle.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/organless-corpse-puzzle.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/blood-specimen-analyzer.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/blood-specimen-analyzer.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/blood-specimen-analyzer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/blood-specimen-analyzer.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/blood-specimen-analyzer.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/blood-specimen-analyzer.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/blood-specimen-analyzer.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/re9-eye-spy-charm-explained.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-eye-spy-charm-explained.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-eye-spy-charm-explained.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-eye-spy-charm-explained.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/re9-eye-spy-charm-explained.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-eye-spy-charm-explained.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-eye-spy-charm-explained.html" />
+  </url>
 </urlset>
