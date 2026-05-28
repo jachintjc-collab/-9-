@@ -902,4 +902,42 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-difficulty-comparison-which-to-play.html" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-difficulty-comparison-which-to-play.html" />
   </url>
+
+  <!-- Phase 37 — RE9 vs RE7 Biohazard comparison -->
+  <url>
+    <loc>https://www.re9guide.it.com/re9-vs-re7-biohazard-which-to-play.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-vs-re7-biohazard-which-to-play.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-vs-re7-biohazard-which-to-play.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-vs-re7-biohazard-which-to-play.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/re9-vs-re7-biohazard-which-to-play.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-vs-re7-biohazard-which-to-play.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-vs-re7-biohazard-which-to-play.html" />
+  </url>
+
+  <!-- Phase 38 — Eveline complete character profile -->
+  <url>
+    <loc>https://www.re9guide.it.com/eveline-character-profile-complete.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/eveline-character-profile-complete.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/eveline-character-profile-complete.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/eveline-character-profile-complete.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/eveline-character-profile-complete.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/eveline-character-profile-complete.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/eveline-character-profile-complete.html" />
+  </url>
 </urlset>
