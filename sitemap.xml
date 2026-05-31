@@ -940,4 +940,23 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/eveline-character-profile-complete.html" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/eveline-character-profile-complete.html" />
   </url>
+
+  <!-- Phase 44 — Grace Ashcroft complete character profile -->
+  <url>
+    <loc>https://www.re9guide.it.com/grace-ashcroft-character-profile-complete.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/grace-ashcroft-character-profile-complete.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/grace-ashcroft-character-profile-complete.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/grace-ashcroft-character-profile-complete.html" />
+  </url>
+  <url>
+    <loc>https://www.re9guide.it.com/ko/grace-ashcroft-character-profile-complete.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/grace-ashcroft-character-profile-complete.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/grace-ashcroft-character-profile-complete.html" />
+  </url>
 </urlset>
