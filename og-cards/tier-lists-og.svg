@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg-tier-lists" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0f0a"/>
+      <stop offset="100%" stop-color="#0d0805"/>
+    </linearGradient>
+    <linearGradient id="accent-tier-lists" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c0392b"/>
+      <stop offset="100%" stop-color="#c0392b" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="glow-tier-lists">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-tier-lists)"/>
+
+  <!-- Accent stripe top -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accent-tier-lists)"/>
+
+  <!-- Side accent bar -->
+  <rect x="60" y="80" width="6" height="500" fill="#c0392b"/>
+
+  <!-- Brand mark (small, top-left) -->
+  <text x="90" y="50" fill="#b0a09a" font-family="monospace" font-size="16" letter-spacing="2">RE9GUIDE.IT.COM</text>
+
+  <!-- Tier badge (top-right) -->
+  <g transform="translate(1050, 60)">
+    <rect x="-15" y="-25" width="120" height="50" fill="rgba(192,57,43,0.15)" stroke="#c0392b" stroke-width="0.5" rx="3"/>
+    <text x="0" y="-5" fill="#c0392b" font-family="monospace" font-size="11" letter-spacing="1.5">TIER LIST</text>
+    <text x="0" y="14" fill="#c0392b" font-family="monospace" font-size="22" font-weight="bold">6 items</text>
+  </g>
+
+  <!-- Main title -->
+  <text x="90" y="240" fill="#f0ebe8" font-family="Georgia, serif" font-size="64" font-weight="bold" filter="url(#glow-tier-lists)">RE9 Tier</text>
+  <text x="90" y="320" fill="#f0ebe8" font-family="Georgia, serif" font-size="64" font-weight="bold">Lists Hub</text>
+
+  <!-- Subtitle -->
+  <text x="90" y="400" fill="#c0392b" font-family="monospace" font-size="26" letter-spacing="1">6 Complete Rankings · 79 Items</text>
+
+  <!-- Bottom strip with S-tier label -->
+  <rect x="60" y="500" width="1080" height="60" fill="rgba(192,57,43,0.08)" stroke="#c0392b" stroke-width="0.5"/>
+
+  <!-- S A B C D tier labels -->
+  <g transform="translate(110, 532)">
+    <text x="0" y="0" fill="#c0392b" font-family="Georgia, serif" font-size="28" font-weight="bold">S</text>
+    <text x="50" y="0" fill="#ba7517" font-family="Georgia, serif" font-size="24">A</text>
+    <text x="95" y="0" fill="#b0a09a" font-family="Georgia, serif" font-size="22">B</text>
+    <text x="135" y="0" fill="#706056" font-family="Georgia, serif" font-size="20">C</text>
+    <text x="170" y="0" fill="#4a3d36" font-family="Georgia, serif" font-size="18">D</text>
+  </g>
+
+  <text x="300" y="540" fill="#b0a09a" font-family="monospace" font-size="14" letter-spacing="1.5">5-DIMENSION METHODOLOGY · v1.02 VERIFIED · UPDATED 2026</text>
+
+  <!-- Bottom-right credit -->
+  <text x="1140" y="610" fill="#706056" font-family="monospace" font-size="10" text-anchor="end">FAN GUIDE · NOT AFFILIATED WITH CAPCOM</text>
+</svg>
