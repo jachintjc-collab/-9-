@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>검색 — re9guide.it.com</title>
+<meta name="description" content="RE9 가이드 모두 검색 — 9개 티어 리스트, 9개 보스 가이드, 9개 공략, 11개 캐릭터 프로필, 130+ 페이지 색인됨.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.re9guide.it.com/ko/search.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/ko/search.html" />
+<link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/search.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/ko/search.html" />
+<meta name="theme-color" content="#1a0f0a">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<style>
+body{margin:0;padding:0;background:#1a0f0a;color:#f0ebe8;font-family:Georgia,serif;line-height:1.6}
+.nav{padding:18px 20px;border-bottom:0.5px solid rgba(192,57,43,0.18);display:flex;gap:15px;align-items:center}
+.logo{color:#c0392b;font-weight:bold;text-decoration:none;font-size:18px}
+.logo span{color:#b0a09a;font-size:14px}
+.container{max-width:900px;margin:40px auto;padding:0 20px}
+h1{color:#c0392b;font-size:32px;margin-bottom:20px;border-bottom:2px solid #c0392b;padding-bottom:10px}
+#search-box{width:100%;padding:18px 20px;font-size:18px;background:rgba(192,57,43,0.08);border:1px solid #c0392b;color:#f0ebe8;border-radius:4px;font-family:inherit;box-sizing:border-box;outline:none}
+#search-box:focus{background:rgba(192,57,43,0.15);box-shadow:0 0 0 2px rgba(192,57,43,0.3)}
+.meta{font-size:12px;color:#706056;margin-top:8px;font-family:monospace}
+#stats{font-size:12px;color:#b0a09a;margin:15px 0;font-family:monospace}
+#results{margin-top:20px}
+.result{padding:18px 0;border-bottom:0.5px solid rgba(192,57,43,0.15)}
+.result-title{color:#ba7517;font-size:18px;font-weight:bold;text-decoration:none;display:block;margin-bottom:6px}
+.result-title:hover{color:#c0392b}
+.result-url{font-size:11px;color:#706056;font-family:monospace;margin-bottom:6px}
+.result-desc{font-size:13px;color:#b0a09a;line-height:1.5}
+.lang-badge{display:inline-block;padding:1px 6px;font-size:9px;font-family:monospace;border-radius:2px;margin-left:8px;border:0.5px solid currentColor}
+.lang-en{color:#66bb6a}
+.lang-ko{color:#ba7517}
+mark{background:#c0392b;color:#fff;padding:0 2px;border-radius:2px}
+.empty{padding:40px 20px;text-align:center;color:#706056;font-style:italic}
+.shortcuts{margin-top:30px;padding:15px;background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;font-size:13px}
+.shortcuts strong{color:#c0392b}
+.shortcuts a{color:#ba7517;text-decoration:none}
+.footer{padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px}
+</style>
+</head>
+<body>
+<div class="nav"><a href="index.html" class="logo">re9guide<span>.it.com</span></a><a href="index.html" style="color:#b0a09a;text-decoration:none;margin-left:auto;">← 모든 공략</a></div>
+
+<div class="container">
+<h1>re9guide.it.com 검색</h1>
+<input type="text" id="search-box" placeholder="가이드 검색... (예: 매그넘, eveline, RPD, S-티어, NG+)" autofocus>
+<div class="meta">Enter 검색 · ESC 지우기 · ↑↓ 탐색</div>
+<div id="stats"></div>
+<div id="results"></div>
+
+<div class="shortcuts">
+<strong>인기 검색:</strong>
+<a href="#" data-query="weapons">무기 티어 리스트</a> ·
+<a href="#" data-query="endings">8개 엔딩 모두</a> ·
+<a href="#" data-query="charms">부적 랭킹</a> ·
+<a href="#" data-query="boss">보스 가이드</a> ·
+<a href="#" data-query="insanity">인새니티 가이드</a> ·
+<a href="#" data-query="grace">Grace Ashcroft</a> ·
+<a href="#" data-query="leon">Leon Kennedy</a>
+</div>
+</div>
+
+<div class="footer">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</div>
+
+<script>
+let searchIndex = [];
+let selectedIdx = -1;
+
+fetch('/search-index.json')
+  .then(r => r.json())
+  .then(data => { searchIndex = data; render(''); });
+
+function escapeHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function highlight(text, query) {
+  if (!query) return escapeHtml(text);
+  const tokens = query.toLowerCase().split(/\s+/).filter(t => t.length >= 2);
+  let result = escapeHtml(text);
+  for (const tok of tokens) {
+    const re = new RegExp('(' + tok.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    result = result.replace(re, '<mark>$1</mark>');
+  }
+  return result;
+}
+
+function score(item, query) {
+  if (!query) return 0;
+  const q = query.toLowerCase();
+  const title = item.title.toLowerCase();
+  const desc = item.desc.toLowerCase();
+  const url = item.url.toLowerCase();
+  let s = 0;
+  // Title exact match
+  if (title.includes(q)) s += 100;
+  // URL slug match
+  if (url.includes(q.replace(/\s+/g, '-'))) s += 80;
+  // Title token matches
+  const tokens = q.split(/\s+/).filter(t => t.length >= 2);
+  for (const t of tokens) {
+    if (title.includes(t)) s += 30;
+    if (desc.includes(t)) s += 10;
+    if (url.includes(t)) s += 15;
+  }
+  return s;
+}
+
+function render(query) {
+  query = query.trim();
+  const resultsDiv = document.getElementById('results');
+  const statsDiv = document.getElementById('stats');
+  if (!query) {
+    statsDiv.textContent = searchIndex.length + ' 페이지 색인됨 · 입력하여 검색';
+    resultsDiv.innerHTML = '';
+    return;
+  }
+  const scored = searchIndex
+    .map(item => ({ item, score: score(item, query) }))
+    .filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 30);
+
+  statsDiv.textContent = scored.length + '"' + query + '"에 대한 ' + scored.length + ' 결과';
+  if (!scored.length) {
+    resultsDiv.innerHTML = '<div class="empty">No results. Try a different keyword.</div>';
+    return;
+  }
+  resultsDiv.innerHTML = scored.map((x, i) => {
+    const item = x.item;
+    const langClass = item.lang === 'ko' ? 'lang-ko' : 'lang-en';
+    const langLabel = item.lang === 'ko' ? 'KO' : 'EN';
+    return '<div class="result" data-idx="' + i + '">' +
+      '<a class="result-title" href="' + item.url + '">' + highlight(item.title, query) +
+      '<span class="lang-badge ' + langClass + '">' + langLabel + '</span></a>' +
+      '<div class="result-url">' + item.url + '</div>' +
+      '<div class="result-desc">' + highlight(item.desc, query) + '</div>' +
+      '</div>';
+  }).join('');
+}
+
+const box = document.getElementById('search-box');
+box.addEventListener('input', e => render(e.target.value));
+box.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { box.value = ''; render(''); }
+});
+
+document.querySelectorAll('.shortcuts a').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const q = a.dataset.query;
+    box.value = q;
+    box.focus();
+    render(q);
+  });
+});
+
+// Pre-populate from URL ?q= param
+const params = new URLSearchParams(window.location.search);
+if (params.get('q')) {
+  box.value = params.get('q');
+  render(box.value);
+}
+</script>
+</body>
+</html>
