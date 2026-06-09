@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<meta name="audience" content="Korean RE9 players">
+<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
+<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#1a0f0a">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -20,7 +23,7 @@
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
-<link rel="canonical" href="https://www.re9guide.it.com/ark-facility-complete-area-guide.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/ark-facility-complete-area-guide.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/ark-facility-complete-area-guide.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/ark-facility-complete-area-guide.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/ark-facility-complete-area-guide.html" />
@@ -37,10 +40,10 @@
 <meta name="theme-color" content="#0d0808" />
 <meta name="msapplication-TileColor" content="#0d0808" />
 <!-- Open Graph + Twitter Card -->
-<meta property="og:title" content="RE9 ARK Facility Complete Area Guide — Finale + 4 Bosses + All 8 Endings" />
-<meta property="og:description" content="Complete RE9 ARK Facility finale walkthrough: Plant 43 -> The Commander -> Chunk Final -> Victor Gideon. Vivien&rsquo;s Lab reveal, all 8 endings paths, QTE parry. v1.02." />
+<meta property="og:title" content="RE9 ARK 시설 완전 영역 가이드 — 피날레 + 4 보스 + 8개 엔딩" />
+<meta property="og:description" content="완전한 RE9 ARK 시설 피날레 공략: Plant 43 -> The Commander -> Chunk 최종 -> Victor Gideon. Vivien의 연구실 공개, 8개 엔딩 경로, QTE 패리. v1.02." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.re9guide.it.com/ark-facility-complete-area-guide.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/ark-facility-complete-area-guide.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-cards/re9-best-moments-ranked-tier-list-og.png"
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -50,15 +53,15 @@
 <meta name="twitter:image:alt" content="RE9 Locations tier list with RPD Main Hall as S-tier" />
 <meta property="og:site_name" content="re9guide.it.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="RE9 ARK Facility Complete Area Guide — Finale + 4 Bosses + All 8 Endings" />
-<meta name="twitter:description" content="Complete RE9 ARK Facility finale walkthrough: Plant 43 -> The Commander -> Chunk Final -> Victor Gideon. Vivien&rsquo;s Lab reveal, all 8 endings paths, QTE parry. v1.02." />
-<title>RE9 ARK Facility Complete Area Guide — Finale + 4 Bosses + All 8 Endings</title>
-<meta name="description" content="Complete RE9 ARK Facility finale walkthrough: Plant 43 -> The Commander -> Chunk Final -> Victor Gideon. Vivien&rsquo;s Lab reveal, all 8 endings paths, QTE parry. v1.02." />
+<meta name="twitter:title" content="RE9 ARK 시설 완전 영역 가이드 — 피날레 + 4 보스 + 8개 엔딩" />
+<meta name="twitter:description" content="완전한 RE9 ARK 시설 피날레 공략: Plant 43 -> The Commander -> Chunk 최종 -> Victor Gideon. Vivien의 연구실 공개, 8개 엔딩 경로, QTE 패리. v1.02." />
+<title>RE9 ARK 시설 완전 영역 가이드 — 피날레 + 4 보스 + 8개 엔딩</title>
+<meta name="description" content="완전한 RE9 ARK 시설 피날레 공략: Plant 43 -> The Commander -> Chunk 최종 -> Victor Gideon. Vivien의 연구실 공개, 8개 엔딩 경로, QTE 패리. v1.02." />
 <meta name="keywords" content="RE9 best charm loadout, RE9 best charms, RE9 charm build, RE9 Insanity charms" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--silver:#888780;--bronze:#8b5e2a;}
-body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
 .logo{font-size:15px;display:flex;align-items:center;gap:8px;}
@@ -121,8 +124,8 @@ ul.normal li{padding:3px 0;font-size:15px;}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "RE9 ARK Facility Complete Area Guide — Finale + 4 Bosses + All 8 Endings",
-  "description": "Complete RE9 ARK Facility finale walkthrough: Plant 43 -> The Commander -> Chunk Final -> Victor Gideon. Vivien&rsquo;s Lab reveal, all 8 endings paths, QTE parry. v1.02.",
+  "headline": "RE9 ARK 시설 완전 영역 가이드 — 피날레 + 4 보스 + 8개 엔딩",
+  "description": "완전한 RE9 ARK 시설 피날레 공략: Plant 43 -> The Commander -> Chunk 최종 -> Victor Gideon. Vivien의 연구실 공개, 8개 엔딩 경로, QTE 패리. v1.02.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -150,7 +153,7 @@ ul.normal li{padding:3px 0;font-size:15px;}
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/best-weapons-tier-list.html"
   },
-  "inLanguage": "en",
+  "inLanguage": "ko-KR",
   "articleSection": "Weapons",
   "about": {
     "@type": "VideoGame",
@@ -397,66 +400,66 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Can I return to ARK Facility after leaving?",
+      "name": "떠난 후 ARK 시설으로 돌아갈 수 있나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not on Standard play. You can revisit on NG+ with free area selection. Plan collectible runs accordingly."
+        "text": "표준 플레이에서는 안 됨. NG+에서 자유 영역 선택으로 재방문 가능. 수집품 런을 그에 맞게 계획."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the minimum playthrough time for ARK Facility?",
+      "name": "ARK 시설의 최소 플레이 시간은?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "~4 hours on first playthrough. NG+ speedrun cuts to 60% of that time with Infinite Magnum (Requiem Revolver infinite ammo)."
+        "text": "첫 플레이 ~4시간. NG+ 스피드런은 무한 매그넘 (Requiem Revolver 무한 탄약)으로 그 시간의 60%로 단축."
       }
     },
     {
       "@type": "Question",
-      "name": "Which charm should I equip for this area?",
+      "name": "이 영역에 어떤 부적을 장착해야 하나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Crafter’s Touch + Iron Skin + Phoenix Down + Survivor’s Will (max defense)."
+        "text": "Crafter의 Touch + Iron Skin + Phoenix Down + Survivor의 Will (최대 방어)."
       }
     },
     {
       "@type": "Question",
-      "name": "Are there missable collectibles in ARK Facility?",
+      "name": "ARK 시설에 놓치기 쉬운 수집품 있나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Eveline’s Locket is mandatory pickup. Marcus family audio only plays on Insanity. Eveline Reference Photo only on NG+ Insanity."
+        "text": "Eveline의 Locket은 필수 픽업. Marcus 가족 오디오는 인새니티에서만 재생. Eveline 참조 사진은 NG+ 인새니티에만."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the ARK Facility hardest moment?",
+      "name": "ARK 시설의 가장 어려운 순간은?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Victor Gideon Phase 3 QTE parry (0.4-second window). Miss = Bad Ending. Practice on lower difficulties first."
+        "text": "Victor Gideon 페이즈 3 QTE 패리 (0.4초 윈도우). 놓침 = 배드 엔딩. 낮은 난이도에서 먼저 연습."
       }
     },
     {
       "@type": "Question",
-      "name": "Does the ARK Facility area have RE callbacks?",
+      "name": "ARK 시설 영역에 RE 콜백 있나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Capcom 40th Anniversary logo on calendar (subtle). Director Nakanishi cameo photo in Vivien lab. RE Engine credit plaque. Mia Winters cameo in helicopter."
+        "text": "달력의 캡콤 40주년 로고 (미묘). Vivien 연구실의 디렉터 Nakanishi 카메오 사진. RE 엔진 크레딧 명판. 헬리콥터의 Mia Winters 카메오."
       }
     },
     {
       "@type": "Question",
-      "name": "How much currency is available in ARK Facility?",
+      "name": "ARK 시설에서 사용 가능한 통화는 얼마인가요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Approximately 45,000 total (3 Antique Coins + dense enemy drops). Spend on T3 Requiem Revolver upgrades."
+        "text": "총 약 45,000 (3 Antique Coins + 밀집 적 드롭). T3 Requiem Revolver 업그레이드에 사용."
       }
     },
     {
       "@type": "Question",
-      "name": "Is ARK Facility different on Insanity NG+?",
+      "name": "인새니티 NG+에서 ARK 시설이 다른가요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Same layout, but enemies scaled +40% HP, player takes 2x damage, pickup spawn -30%. Infinite Magnum unlock makes Requiem Revolver mid-fight crafting unnecessary."
+        "text": "같은 레이아웃, 하지만 적 +40% HP 스케일, 플레이어 2배 데미지 받음, 픽업 스폰 -30%. 무한 매그넘 해금이 Requiem Revolver 전투 중간 제작 불필요하게 만듦."
       }
     }
   ]
@@ -495,16 +498,16 @@ h1 {
 </style>
 </head>
 <body>
-<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
+<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← 모든 공략</a>
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
-<a href="/ko/ark-facility-complete-area-guide.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+<a href="/ark-facility-complete-area-guide.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
 </span>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <span>ARK Facility Complete Area Guide</span></div>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <span>ARK 시설 완전 영역 가이드</span></div>
 
-<h1>ARK Facility Complete Area Guide</h1>
+<h1>ARK 시설 완전 영역 가이드</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
 <p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested across the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
 <p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 + DLC patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
@@ -515,76 +518,76 @@ h1 {
 <!-- Editorial Info Card - Trust signal for guide credibility -->
 
 
-<p class="lead"><strong>ARK Facility is Area 4 of RE9 — the finale that resolves everything.</strong> Four back-to-back bosses (Plant 43, The Commander, Chunk Final, Victor Gideon). Vivien&rsquo;s Lab reveals the Eveline connection. The QTE parry against Victor Gideon (0.4-second window) determines which of 8 endings you get. This is a 4-hour cinematic crescendo.</p>
+<p class="lead"><strong>ARK 시설은 RE9 영역 4 — 모든 것을 해결하는 피날레.</strong> 4개 연속 보스 (Plant 43, The Commander, Chunk 최종, Victor Gideon). Vivien의 연구실이 Eveline 연결 공개. Victor Gideon에 대한 QTE 패리 (0.4초 윈도우)가 8개 엔딩 중 어느 것을 얻을지 결정. 4시간 시네마틱 절정.</p>
 
 <div style="background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;padding:15px;margin:20px 0;font-size:13px;">
-<strong style="color:#ba7517;">📍 Area 4 of 4 · Duration: ~4 hours · Sub-sections: 1</strong>
+<strong style="color:#ba7517;">📍 4개 중 영역 4 · 시간: ~4시간 · 하위 섹션: 1개</strong>
 </div>
 
-<h2 id="overview">Overview &amp; Structure</h2>
-<p>ARK Facility is one of 4 main areas in RE9. The game has no Chapter Select after completion — area progression is strictly linear. You cannot return to this area on a regular save once exited.</p>
+<h2 id="overview">개요 &amp; 구조</h2>
+<p>ARK 시설은 RE9의 4개 주 영역 중 하나. 게임은 클리어 후 챕터 선택 없음 — 영역 진행은 엄격히 선형. 일반 세이브로는 나가면 이 영역으로 돌아갈 수 없음.</p>
 
-<h2 id="walkthroughs">Linked sub-section walkthroughs</h2>
-<p>Each sub-section in ARK Facility has a dedicated walkthrough below.</p>
+<h2 id="walkthroughs">연결된 하위 섹션 공략</h2>
+<p>ARK 시설의 각 하위 섹션에 전용 공략이 있음.</p>
 <ul>
-  <li><a href="ark-facility-complete-walkthrough.html">ARK Facility complete walkthrough (240 min)</a></li><li><a href="insanity-chapter-walkthrough.html">Insanity-specific tactics</a></li>
+  <li><a href="ark-facility-complete-walkthrough.html">ARK 시설 완전 공략 (240분)</a></li><li><a href="insanity-chapter-walkthrough.html">인새니티 전용 전술</a></li>
 </ul>
 
-<h2 id="bosses">Bosses in this area</h2>
-<p>This area has 4 back-to-back boss fights — the longest finale in the franchise.</p><ul><li><a href="how-to-beat-plant-43.html">Plant 43 (first phase)</a></li><li><a href="how-to-beat-the-commander.html">The Commander (mid-section)</a></li><li><a href="how-to-beat-chunk.html">Chunk Final (truth reveal)</a></li><li><a href="how-to-beat-victor-gideon.html">Victor Gideon (final boss + QTE)</a></li></ul>
+<h2 id="bosses">이 영역의 보스</h2>
+<p>이 영역에 4개 연속 보스 전투 — 프랜차이즈 가장 긴 피날레.</p><ul><li><a href="how-to-beat-plant-43.html">Plant 43 (첫 페이즈)</a></li><li><a href="how-to-beat-the-commander.html">The Commander (중간 섹션)</a></li><li><a href="how-to-beat-chunk.html">Chunk 최종 (진실 공개)</a></li><li><a href="how-to-beat-victor-gideon.html">Victor Gideon (최종 보스 + QTE)</a></li></ul>
 
-<h2 id="collectibles">Collectibles in ARK Facility</h2>
-<ul><li><strong>Eveline&rsquo;s Locket</strong> (TROPHY REQUIRED — Vivien lab)</li><li>3 more Antique Coins (6 total game-wide)</li><li>ARK Security Badge (executive office)</li><li>Master Key (NG+ start gift)</li><li>Eveline Reference Photo (Insanity NG+ only)</li><li>Chunk family audio (Insanity-only)</li><li>Phoenix Down charm (NG+ start)</li></ul>
+<h2 id="collectibles">ARK 시설의 수집품</h2>
+<ul><li><strong>Eveline의 Locket</strong> (트로피 필수 — Vivien 연구실)</li><li>3 더 Antique Coins (게임 전체 6개 총)</li><li>ARK Security Badge (임원 사무실)</li><li>Master Key (NG+ 시작 선물)</li><li>Eveline 참조 사진 (인새니티 NG+ 전용)</li><li>Chunk 가족 오디오 (인새니티 전용)</li><li>Phoenix Down 부적 (NG+ 시작)</li></ul>
 
-<h2 id="weapons">Best weapons for ARK Facility</h2>
-<p>Bring everything: <strong>Requiem Revolver T3 + W870 Police T3 + Clatter Carbine T2 + Mortal Edge + Phoenix Down charm</strong>. Final boss requires all weapons.</p>
+<h2 id="weapons">ARK 시설을 위한 최고 무기</h2>
+<p>모든 것 가져오기: <strong>Requiem Revolver T3 + W870 Police T3 + Clatter Carbine T2 + Mortal Edge + Phoenix Down 부적</strong>. 최종 보스가 모든 무기 요구.</p>
 
-<h2 id="insanity-tactics">Insanity-specific tactics</h2>
-<p>Insanity ARK Facility: This is the kill zone. Phoenix Down activates twice. Stock 6+ First Aids, full Requiem Revolver ammo. Crafter&rsquo;s Touch lets you refill mid-chamber. Marcus family audio plays in Chunk fight (don&rsquo;t pause).</p>
+<h2 id="insanity-tactics">인새니티 전용 전술</h2>
+<p>인새니티 ARK 시설: 이게 킬 존. Phoenix Down이 두 번 활성화. 응급처치 6+개, Requiem Revolver 풀 탄약 비축. Crafter의 Touch가 챔버 중간 보충 허용. Chunk 전투에 Marcus 가족 오디오 재생 (일시정지 금지).</p>
 
-<h2 id="trophies">Trophies earned in ARK Facility</h2>
+<h2 id="trophies">ARK 시설에서 획득하는 트로피</h2>
 <ul>
-  <li>"The Catalyst" (Eveline&rsquo;s Locket)</li><li>"True Survivor" (Insanity completion)</li><li>"Speed Demon" (sub-4-hour)</li><li>"Treasure Hunter" (all 6 Antique Coins)</li><li>Multiple ending trophies</li><li>PLATINUM TROPHY (if all complete)</li>
+  <li>"The Catalyst" (Eveline의 Locket)</li><li>"True Survivor" (인새니티 완료)</li><li>"Speed Demon" (4시간 미만)</li><li>"Treasure Hunter" (모든 6 Antique Coins)</li><li>여러 엔딩 트로피</li><li>플래티넘 트로피 (모두 완료 시)</li>
 </ul>
 
-<h2 id="faq">FAQ — ARK Facility</h2>
+<h2 id="faq">FAQ — ARK 시설</h2>
 
-<p><strong>Q: Can I return to ARK Facility after leaving?</strong><br>
-A: Not on Standard play. You can revisit on NG+ with free area selection. Plan collectible runs accordingly.</p>
+<p><strong>Q: 떠난 후 ARK 시설으로 돌아갈 수 있나요?</strong><br>
+A: 표준 플레이에서는 안 됨. NG+에서 자유 영역 선택으로 재방문 가능. 수집품 런을 그에 맞게 계획.</p>
 
-<p><strong>Q: What is the minimum playthrough time for ARK Facility?</strong><br>
-A: ~4 hours on first playthrough. NG+ speedrun cuts to 60% of that time with Infinite Magnum (Requiem Revolver infinite ammo).</p>
+<p><strong>Q: ARK 시설의 최소 플레이 시간은?</strong><br>
+A: 첫 플레이 ~4시간. NG+ 스피드런은 무한 매그넘 (Requiem Revolver 무한 탄약)으로 그 시간의 60%로 단축.</p>
 
-<p><strong>Q: Which charm should I equip for this area?</strong><br>
-A: Crafter&rsquo;s Touch + Iron Skin + Phoenix Down + Survivor&rsquo;s Will (max defense).</p>
+<p><strong>Q: 이 영역에 어떤 부적을 장착해야 하나요?</strong><br>
+A: Crafter의 Touch + Iron Skin + Phoenix Down + Survivor의 Will (최대 방어).</p>
 
-<p><strong>Q: Are there missable collectibles in ARK Facility?</strong><br>
-A: Eveline&rsquo;s Locket is mandatory pickup. Marcus family audio only plays on Insanity. Eveline Reference Photo only on NG+ Insanity.</p>
+<p><strong>Q: ARK 시설에 놓치기 쉬운 수집품 있나요?</strong><br>
+A: Eveline의 Locket은 필수 픽업. Marcus 가족 오디오는 인새니티에서만 재생. Eveline 참조 사진은 NG+ 인새니티에만.</p>
 
-<p><strong>Q: What is the ARK Facility hardest moment?</strong><br>
-A: Victor Gideon Phase 3 QTE parry (0.4-second window). Miss = Bad Ending. Practice on lower difficulties first.</p>
+<p><strong>Q: ARK 시설의 가장 어려운 순간은?</strong><br>
+A: Victor Gideon 페이즈 3 QTE 패리 (0.4초 윈도우). 놓침 = 배드 엔딩. 낮은 난이도에서 먼저 연습.</p>
 
-<p><strong>Q: Does the ARK Facility area have RE callbacks?</strong><br>
-A: Capcom 40th Anniversary logo on calendar (subtle). Director Nakanishi cameo photo in Vivien lab. RE Engine credit plaque. Mia Winters cameo in helicopter.</p>
+<p><strong>Q: ARK 시설 영역에 RE 콜백 있나요?</strong><br>
+A: 달력의 캡콤 40주년 로고 (미묘). Vivien 연구실의 디렉터 Nakanishi 카메오 사진. RE 엔진 크레딧 명판. 헬리콥터의 Mia Winters 카메오.</p>
 
-<p><strong>Q: How much currency is available in ARK Facility?</strong><br>
-A: Approximately 45,000 total (3 Antique Coins + dense enemy drops). Spend on T3 Requiem Revolver upgrades.</p>
+<p><strong>Q: ARK 시설에서 사용 가능한 통화는 얼마인가요?</strong><br>
+A: 총 약 45,000 (3 Antique Coins + 밀집 적 드롭). T3 Requiem Revolver 업그레이드에 사용.</p>
 
-<p><strong>Q: Is ARK Facility different on Insanity NG+?</strong><br>
-A: Same layout, but enemies scaled +40% HP, player takes 2x damage, pickup spawn -30%. Infinite Magnum unlock makes Requiem Revolver mid-fight crafting unnecessary.</p>
+<p><strong>Q: 인새니티 NG+에서 ARK 시설이 다른가요?</strong><br>
+A: 같은 레이아웃, 하지만 적 +40% HP 스케일, 플레이어 2배 데미지 받음, 픽업 스폰 -30%. 무한 매그넘 해금이 Requiem Revolver 전투 중간 제작 불필요하게 만듦.</p>
 
 <div class="cta">
-  <div class="cta-title">Related guides for ARK Facility</div>
-  <a href="tier-lists.html">Complete tier lists hub (13 lists)</a>
-  <a href="re9-chapters-ranked-tier-list.html">All 8 chapters ranked tier list</a>
-  <a href="re9-locations-ranked-tier-list.html">All 16 locations ranked</a>
-  <a href="best-weapons-tier-list.html">17 weapons ranked (Requiem Revolver S-tier)</a>
-  <a href="re9-all-charms-ranked-tier-list.html">18 charms ranked</a>
-  <a href="re9-ng-plus-what-carries-over.html">What carries over to NG+</a>
-  <a href="re9-best-charm-loadout.html">Best charm loadout</a>
-  <a href="re9-most-missable-items.html">Most missable items</a>
-  <a href="re9-which-weapons-to-upgrade-first.html">Weapon upgrade order</a>
-  <a href="index.html">All guides</a>
+  <div class="cta-title">ARK 시설을 위한 관련 가이드</div>
+  <a href="tier-lists.html">완전한 티어 리스트 허브 (영어/한국어)</a>
+  <a href="re9-chapters-ranked-tier-list.html">8개 챕터 모두 랭킹 티어 리스트 (영어/한국어)</a>
+  <a href="re9-locations-ranked-tier-list.html">16개 위치 모두 랭킹 (영어/한국어)</a>
+  <a href="best-weapons-tier-list.html">17개 무기 랭킹 (Requiem Revolver S-티어) (영어/한국어)</a>
+  <a href="re9-all-charms-ranked-tier-list.html">18개 부적 랭킹 (영어/한국어)</a>
+  <a href="re9-ng-plus-what-carries-over.html">NG+로 무엇이 이전되나 (영어/한국어)</a>
+  <a href="re9-best-charm-loadout.html">최고 부적 로드아웃 (영어/한국어)</a>
+  <a href="re9-most-missable-items.html">가장 놓치기 쉬운 아이템 (영어/한국어)</a>
+  <a href="re9-which-weapons-to-upgrade-first.html">무기 업그레이드 순서 (영어/한국어)</a>
+  <a href="index.html">모든 공략</a>
 </div>
   <a href="re9-all-charms-ranked-tier-list.html">All 18 charms ranked</a>
   <a href="re9-ng-plus-what-carries-over.html">What carries over to NG+</a>
