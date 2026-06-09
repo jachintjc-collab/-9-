@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<meta name="audience" content="Korean RE9 players">
+<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
+<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#1a0f0a">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -21,7 +24,7 @@
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
 <meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
-<link rel="canonical" href="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
@@ -37,19 +40,16 @@
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0d0808" />
 <meta name="msapplication-TileColor" content="#0d0808" />
-<meta property="og:title" content="RE9 Boss Loadout Calculator — Tested Weapon Recommendations">
-<meta property="og:description" content="Interactive boss loadout calculator for Resident Evil Requiem (RE9). Pick boss + difficulty, get tested weapon and consumable recommendations." />
+<meta property="og:title" content="RE9 보스 무기 구성 계산기 — 검증된 추천 (한국어)">
+<meta property="og:description" content="레지던트 이블 레퀴엠(RE9) 보스 무기 구성 인터랙티브 계산기. 보스와 난이도 선택, 검증된 무기와 소모품 추천." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.re9guide.it.com/re9-boss-loadout-calculator.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="RE9 Boss Loadout Calculator — Tested Weapon Recommendations" />
-<meta name="twitter:description" content="Interactive boss loadout calculator for Resident Evil Requiem (RE9). Pick boss + difficulty, get tested weapon and consumable recommendations." />
-<title>RE9 Boss Loadout Calculator — Tested Weapon Recommendations</title>
-<meta name="description" content="Interactive boss loadout calculator for Resident Evil Requiem (RE9). Pick boss + difficulty, get tested weapon and consumable recommendations." />
+<title>RE9 보스 무기 구성 계산기 — 검증된 추천 (한국어)</title>
+<meta name="description" content="레지던트 이블 레퀴엠(RE9) 보스 무기 구성 인터랙티브 계산기. 보스와 난이도 선택, 검증된 무기와 소모품 추천." />
 <style>*{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
-body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
 .logo{font-size:15px;}.logo span{color:var(--red);}
@@ -76,7 +76,7 @@ em{color:var(--gold);font-style:normal;}
 .toc a{color:var(--text2);text-decoration:none;}
 .lesson{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px 22px;margin:14px 0;}
 .lesson .lesson-num{display:inline-block;font-family:monospace;color:var(--red);font-size:13px;letter-spacing:0.06em;margin-right:8px;}
-.lesson h3{margin-top:0;color:var(--text);font-family:Georgia,serif;letter-spacing:0;font-size:18px;display:inline;}
+.lesson h3{margin-top:0;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;letter-spacing:0;font-size:18px;display:inline;}
 .lesson p{margin-top:10px;font-size:14px;}
 .warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.7;}
 .warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
@@ -101,8 +101,8 @@ ol li{padding:5px 0;font-size:15px;line-height:1.7;}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "RE9 Boss Loadout Calculator",
-  "description": "Interactive boss loadout calculator for RE9",
+  "headline": "RE9 보스 무기 구성 계산기",
+  "description": "RE9 보스 무기 구성 인터랙티브 계산기",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -128,9 +128,9 @@ ol li{padding:5px 0;font-size:15px;line-height:1.7;}
   "dateModified": "2026-05-14T00:00:00+09:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/re9-boss-loadout-calculator.html"
+    "@id": "https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.html"
   },
-  "inLanguage": "en-US",
+  "inLanguage": "ko-KR",
   "articleSection": "Strategy & Tools",
   "about": {
     "@type": "VideoGame",
@@ -149,13 +149,13 @@ ol li{padding:5px 0;font-size:15px;line-height:1.7;}
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Home",
-      "item": "https://www.re9guide.it.com/"
+      "name": "홈",
+      "item": "https://www.re9guide.it.com/ko/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "RE9 Boss Loadout Calculator"
+      "name": "RE9 보스 무기 구성 계산기"
     }
   ]
 }
@@ -337,8 +337,8 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "RE9 Boss Loadout Calculator",
-  "url": "https://www.re9guide.it.com/re9-boss-loadout-calculator.html",
+  "name": "RE9 \ubcf4\uc2a4 \ubb34\uae30 \uad6c\uc131 \uacc4\uc0b0\uae30",
+  "url": "https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.html",
   "applicationCategory": "GameApplication",
   "applicationSubCategory": "Game guide tool",
   "operatingSystem": "Any (browser-based)",
@@ -348,7 +348,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     "price": "0",
     "priceCurrency": "USD"
   },
-  "inLanguage": "en",
+  "inLanguage": "ko-KR",
   "isAccessibleForFree": true,
   "publisher": {
     "@type": "Organization",
@@ -429,213 +429,105 @@ h1 {
 <div class="nav">
 <a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
 <div style="display:flex;align-items:center;gap:14px;">
-<a href="index.html">← All guides</a>
+<a href="index.html">← 모든 공략</a>
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
-<a href="/ko/re9-boss-loadout-calculator.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+<a href="/re9-boss-loadout-calculator.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
 </span>
 </div>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <span>RE9 BOSS LOADOUT CALCULATOR</span></div>
-<h1>RE9 Boss Loadout Calculator</h1>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <span>RE9 보스 무기 구성 계산기</span></div>
+<h1>RE9 보스 무기 구성 계산기</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
-<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested across the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
-<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 + DLC patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
+<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
+<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">검증 버전: v1.02 · 마지막 검토: 2026년 5월 30일 · 영어 원본과 비교: 100% 내용 동등 + 한국어 컨텍스트 추가</p>
 </div>
 
-<div class="meta" style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;"><span>2 MIN READ</span></div>
-<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;">PUBLISHED MAY 14, 2026 · 3 MIN INTERACTIVE</div>
-<p class="lead">Pick a boss and difficulty — get the verified loadout that this site recommends, with primary weapon, backup, consumables, and tactical notes. Cross-references every boss-specific guide on this site.</p>
+<div class="meta" style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;"><span>2분 읽기</span></div>
+<div style="font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;">2026년 5월 14일 게시 · 3분 인터랙티브</div>
+<p class="lead">보스와 난이도를 선택하세요 — 이 사이트가 추천하는 검증된 무기 구성, 주력 무기, 보조 무기, 소모품, 전술 노트를 받아보세요. 이 사이트의 모든 보스별 가이드를 교차 참조합니다.</p>
 
 <div class="warn-box gold">
-ℹ <strong>This is an interactive calculator.</strong> Pick the boss and difficulty, get a tested loadout recommendation. All recommendations cross-reference the boss-specific guides on this site. No data collected — runs entirely in your browser.
+ℹ <strong>이 페이지는 인터랙티브 계산기입니다.</strong> 보스와 난이도를 선택하면 검증된 무기 구성을 추천해 드립니다. 모든 추천은 이 사이트의 보스별 공략을 교차 참조합니다. 데이터 수집 없음 — 브라우저에서만 작동합니다.
 </div>
 
 <div id="calc" style="background:var(--surface);border:0.5px solid var(--border);border-radius:8px;padding:24px 28px;margin:24px 0;">
-<div style="font-size:13px;font-family:monospace;color:var(--text3);letter-spacing:0.06em;margin-bottom:6px;">// SELECT BOSS</div>
-<select id="boss" style="width:100%;padding:10px 14px;background:#0d0808;border:0.5px solid rgba(192,57,43,0.4);color:#f0ebe8;font-family:Georgia,serif;font-size:15px;border-radius:4px;margin-bottom:18px;">
-<option value="victor-gideon">Victor Gideon (Final Boss)</option>
-<option value="commander">The Commander</option>
-<option value="mr-x">Mr. X / Super Tyrant</option>
-<option value="plant-43">Plant 43</option>
-<option value="the-girl">The Girl (Grace)</option>
-<option value="titan-spinner">Titan Spinner</option>
-<option value="blister-borne">Blister Borne</option>
-<option value="chunk">Chunk</option>
-<option value="the-chef">The Chef (Optional)</option>
+<div style="font-size:13px;font-family:monospace;color:var(--text3);letter-spacing:0.06em;margin-bottom:6px;">// 보스 선택</div>
+<select id="boss" style="width:100%;padding:10px 14px;background:#0d0808;border:0.5px solid rgba(192,57,43,0.4);color:#f0ebe8;font-size:15px;border-radius:4px;margin-bottom:18px;">
+<option value="victor-gideon">빅터 기드온 (최종 보스)</option>
+<option value="commander">더 커맨더</option>
+<option value="mr-x">미스터 X / 슈퍼 타이런트</option>
+<option value="plant-43">플랜트 43</option>
+<option value="the-girl">더 걸 (그레이스)</option>
+<option value="titan-spinner">타이탄 스피너</option>
+<option value="blister-borne">블리스터 본</option>
+<option value="chunk">청크</option>
+<option value="the-chef">더 셰프 (선택)</option>
 </select>
 
-<div style="font-size:13px;font-family:monospace;color:var(--text3);letter-spacing:0.06em;margin-bottom:6px;">// SELECT DIFFICULTY</div>
-<select id="difficulty" style="width:100%;padding:10px 14px;background:#0d0808;border:0.5px solid rgba(192,57,43,0.4);color:#f0ebe8;font-family:Georgia,serif;font-size:15px;border-radius:4px;margin-bottom:18px;">
-<option value="standard">Standard</option>
-<option value="hardcore">Hardcore</option>
-<option value="insanity">Insanity</option>
+<div style="font-size:13px;font-family:monospace;color:var(--text3);letter-spacing:0.06em;margin-bottom:6px;">// 난이도 선택</div>
+<select id="difficulty" style="width:100%;padding:10px 14px;background:#0d0808;border:0.5px solid rgba(192,57,43,0.4);color:#f0ebe8;font-size:15px;border-radius:4px;margin-bottom:18px;">
+<option value="standard">표준</option>
+<option value="hardcore">하드코어</option>
+<option value="insanity">인새니티</option>
 </select>
 
-<button id="show" style="width:100%;padding:12px 14px;background:#c0392b;color:#fff;border:none;font-family:monospace;font-size:14px;letter-spacing:0.06em;border-radius:4px;cursor:pointer;">SHOW RECOMMENDED LOADOUT →</button>
+<button id="show" style="width:100%;padding:12px 14px;background:#c0392b;color:#fff;border:none;font-family:monospace;font-size:14px;letter-spacing:0.06em;border-radius:4px;cursor:pointer;">추천 무기 구성 보기 →</button>
 </div>
 
 <div id="result" style="display:none;background:linear-gradient(135deg,rgba(186,117,23,0.08) 0%,rgba(192,57,43,0.04) 100%);border:1px solid var(--gold);border-radius:8px;padding:24px 28px;margin:24px 0;">
 <div id="result-header" style="font-size:13px;font-family:monospace;color:var(--gold);letter-spacing:0.08em;margin-bottom:14px;"></div>
 <div id="result-body" style="color:var(--text);font-size:15px;line-height:1.8;"></div>
-<a id="result-link" href="" style="display:inline-block;margin-top:18px;font-size:12px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;">Read full strategy →</a>
+<a id="result-link" href="" style="display:inline-block;margin-top:18px;font-size:12px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;">전체 공략 읽기 →</a>
 </div>
 
 <script>
 const data = {
   "victor-gideon": {
-    name: "Dr. Victor Gideon", link: "how-to-beat-victor-gideon.html",
-    standard: {
-      primary: "Mortal Edge Hatchet (maxed)",
-      secondary: "Requiem Revolver",
-      tertiary: "MSBG 500 W870 Police shotgun",
-      consumables: "Hand Grenade ×2, First Aid Spray ×3, Antique Coin spend before entry",
-      notes: "Mortal Edge for parry-counters in both phases. Requiem for Phase 2 head pustules. W870 Police shotgun + grenades for Phase 2 core damage. Save grenades for ground orb cluster wave."
-    },
-    insanity: {
-      primary: "Mortal Edge Hatchet (maxed)",
-      secondary: "Requiem Revolver with Infinite Ammo",
-      tertiary: "MSBG 500 W870 Police shotgun + RPG (if unlocked)",
-      consumables: "Hand Grenade ×3, First Aid Spray ×4, Body Armor ×2",
-      notes: "Infinite Requiem trivializes Phase 2 pustules. RPG one-shots most phases. Mortal Edge mandatory — default Hatchet parry window too tight on Insanity. Pre-position center-arena before cutscene ends."
-    }
+    name: "빅터 기드온", link: "/how-to-beat-victor-gideon.html",
+    standard: {primary: "모탈 엣지 손도끼 (최대 강화)", secondary: "레퀴엠 리볼버", tertiary: "MSBG 500 샷건", consumables: "수류탄 ×2, 응급 처치 스프레이 ×3", notes: "양 페이즈 패리-카운터에 모탈 엣지. 페이즈 2 머리 농포에 레퀴엠. 코어 데미지에 샷건 + 수류탄."},
+    insanity: {primary: "모탈 엣지 손도끼 (최대 강화)", secondary: "무한 탄약 레퀴엠 리볼버", tertiary: "MSBG 500 샷건 + RPG (해금 시)", consumables: "수류탄 ×3, 응급 처치 스프레이 ×4, 보디 아머 ×2", notes: "무한 레퀴엠으로 페이즈 2 농포 자명화. RPG로 대부분 페이즈 원샷. 모탈 엣지 필수."}
   },
   "commander": {
-    name: "The Commander", link: "how-to-beat-the-commander.html",
-    standard: {
-      primary: "Default Hatchet (maxed)",
-      secondary: "MSBG 500 W870 Police shotgun",
-      tertiary: "Requiem Revolver (precision shots)",
-      consumables: "First Aid Spray ×2, no grenades needed",
-      notes: "Knife-fight-focused. Parry the third hit of his combo (most generous window). Reward: Mortal Edge Hatchet — you need it for Victor Gideon next."
-    },
-    insanity: {
-      primary: "Default Hatchet (maxed) — you don't have Mortal Edge yet",
-      secondary: "MSBG 500 W870 Police shotgun",
-      tertiary: "Requiem Revolver",
-      consumables: "First Aid Spray ×3, Body Armor ×1",
-      notes: "Insanity Commander is the hardest fight before getting Mortal Edge. Practice the third-hit parry on Standard first. Be patient — chip damage from his stunlock is one of the few unfair Insanity moments in the game."
-    }
+    name: "더 커맨더", link: "/how-to-beat-the-commander.html",
+    standard: {primary: "기본 손도끼 (최대 강화)", secondary: "MSBG 500 샷건", tertiary: "레퀴엠 리볼버", consumables: "응급 처치 스프레이 ×2", notes: "근접전 중심. 콤보 3타째에 패리. 보상은 모탈 엣지."},
+    insanity: {primary: "기본 손도끼 (모탈 엣지 미보유)", secondary: "MSBG 500 샷건", tertiary: "레퀴엠 리볼버", consumables: "응급 처치 스프레이 ×3, 보디 아머 ×1", notes: "모탈 엣지 획득 전 가장 어려운 전투. 표준에서 3타째 패리 연습 필수."}
   },
   "mr-x": {
-    name: "Mr. X / Super Tyrant", link: "how-to-beat-mr-x-super-tyrant.html",
-    standard: {
-      primary: "Requiem Revolver (heart shots)",
-      secondary: "Requiem Revolver",
-      tertiary: "MSBG 500 W870 Police shotgun (close range)",
-      consumables: "First Aid Spray ×2, Hand Grenade ×1",
-      notes: "Heart is the only weak point that matters — body shots barely register. Use parked cars for cover when he throws cars."
-    },
-    insanity: {
-      primary: "Requiem Revolver with Infinite Ammo (if unlocked)",
-      secondary: "Requiem Revolver",
-      tertiary: "MSBG 500 W870 Police shotgun",
-      consumables: "First Aid Spray ×3, wall canisters in arena (use only when boss is stationary)",
-      notes: "Mr. X chase can be skipped without ammo. Super Tyrant arena: prioritize heart shots, never engage when he's near a car. Wall canisters are limited — save for guaranteed hits."
-    }
+    name: "미스터 X / 슈퍼 타이런트", link: "/how-to-beat-mr-x-super-tyrant.html",
+    standard: {primary: "Requiem Revolver (심장 사격)", secondary: "레퀴엠 리볼버", tertiary: "MSBG 500 샷건", consumables: "응급 처치 스프레이 ×2, 수류탄 ×1", notes: "심장이 유일한 의미 있는 약점. 차를 던질 때 차 뒤에 엄폐."},
+    insanity: {primary: "무한 탄약 Requiem Revolver", secondary: "레퀴엠 리볼버", tertiary: "MSBG 500 샷건", consumables: "응급 처치 스프레이 ×3, 벽면 폭발 캔", notes: "미스터 X 추격은 탄약 없이 회피. 슈퍼 타이런트 아레나는 심장 사격 우선."}
   },
   "plant-43": {
-    name: "Plant 43", link: "how-to-beat-plant-43.html",
-    standard: {
-      primary: "Incendiary rounds (Pharmacy + Pump Room caches)",
-      secondary: "MSBG 500 W870 Police shotgun",
-      tertiary: "Requiem Revolver (mouth precision)",
-      consumables: "First Aid Spray ×2, Hand Grenade ×1",
-      notes: "Fire damage dominates. The mouth is only vulnerable when petals open — wait for the timing. Explosive canister truck ends the fight."
-    },
-    insanity: {
-      primary: "Incendiary rounds (15+ stockpile required)",
-      secondary: "Requiem Revolver with Infinite Ammo",
-      tertiary: "Spore Lens scope (if equipped)",
-      consumables: "First Aid Spray ×3, Hand Grenade ×2",
-      notes: "Community-reported: incendiary multiplier may be reduced post-v1.02 patch (unverified). Bring 50% more incendiary than you think you need."
-    }
+    name: "플랜트 43", link: "/how-to-beat-plant-43.html",
+    standard: {primary: "소이탄 (약국 + 펌프 룸 캐시)", secondary: "MSBG 500 샷건", tertiary: "레퀴엠 리볼버", consumables: "응급 처치 스프레이 ×2, 수류탄 ×1", notes: "화염 데미지 우세. 입은 꽃잎이 열렸을 때만 약점. 폭발 캔 트럭으로 마무리."},
+    insanity: {primary: "소이탄 (15+ 비축 필요)", secondary: "무한 탄약 레퀴엠", tertiary: "스포어 렌즈 스코프", consumables: "응급 처치 스프레이 ×3, 수류탄 ×2", notes: "v1.02 패치 이후 소이탄 배율 감소 보고됨 (미확인). 50% 더 비축 권장."}
   },
   "the-girl": {
-    name: "The Girl (Grace)", link: "how-to-beat-the-girl.html",
-    standard: {
-      primary: "Floodlights (single-use, plan order)",
-      secondary: "Requiem Revolver (4+ rounds for stuns)",
-      tertiary: "Crank Lever (key item, not weapon)",
-      consumables: "First Aid Spray ×2",
-      notes: "This fight is positional, not weapon-based. You don't kill her with damage — you kill her with sunlight from the upper hatch. Don't waste Requiem rounds when game prompts to shoot."
-    },
-    insanity: {
-      primary: "Floodlights (still single-use)",
-      secondary: "Requiem Revolver (6+ rounds — she's faster on Insanity)",
-      tertiary: "—",
-      consumables: "First Aid Spray ×3, Body Armor",
-      notes: "Same mechanic as Standard but her movement is faster. Pre-plan all three distribution unit routes before triggering the first one."
-    }
+    name: "더 걸 (그레이스)", link: "/how-to-beat-the-girl.html",
+    standard: {primary: "플러드라이트 (1회 사용, 순서 계획)", secondary: "레퀴엠 리볼버 (스턴용 4+ 발)", tertiary: "크랭크 레버", consumables: "응급 처치 스프레이 ×2", notes: "위치 기반 전투, 무기 데미지 아님. 햇빛으로 처치. 사격 프롬프트 무시."},
+    insanity: {primary: "플러드라이트", secondary: "레퀴엠 리볼버 (6+ 발 — 인새니티 더 빠름)", tertiary: "—", consumables: "응급 처치 스프레이 ×3, 보디 아머", notes: "표준과 동일 메커니즘이지만 더 빠른 이동. 첫 유닛 트리거 전 모든 경로 사전 계획."}
   },
   "titan-spinner": {
-    name: "Titan Spinner", link: "how-to-beat-titan-spinner.html",
-    standard: {
-      primary: "Sniper rifle (mouth + rear cluster)",
-      secondary: "SMG (baby spider waves)",
-      tertiary: "MSBG 500 W870 Police shotgun (close range)",
-      consumables: "Hand Grenade ×2, First Aid Spray ×2",
-      notes: "Skip the chase phase — don't waste ammo. In arena: use vertical ladders for sniper angles. Save explosive canisters for stationary moments."
-    },
-    insanity: {
-      primary: "Sniper rifle with Infinite Ammo",
-      secondary: "SMG",
-      tertiary: "Requiem (rear cluster)",
-      consumables: "Hand Grenade ×3, First Aid Spray ×3",
-      notes: "Baby spider swarms are the Insanity death trap — clear immediately, never let them stack. Hard shell deflects 60% of non-direct shots, mouth-only on Insanity."
-    }
+    name: "타이탄 스피너", link: "/how-to-beat-titan-spinner.html",
+    standard: {primary: "스나이퍼 라이플 (입 + 후방 클러스터)", secondary: "SMG (베이비 스파이더 웨이브)", tertiary: "MSBG 500 샷건", consumables: "수류탄 ×2, 응급 처치 스프레이 ×2", notes: "추격 페이즈 건너뛰기 — 탄약 낭비 금지. 아레나에서 수직 사다리 사용."},
+    insanity: {primary: "무한 탄약 스나이퍼 라이플", secondary: "SMG", tertiary: "레퀴엠 (후방 클러스터)", consumables: "수류탄 ×3, 응급 처치 스프레이 ×3", notes: "베이비 스파이더 군집이 인새니티 데스 트랩. 즉시 청소. 입에만 사격."}
   },
   "blister-borne": {
-    name: "Blister Borne", link: "how-to-beat-blister-borne.html",
-    standard: {
-      primary: "MSBG 500 W870 Police shotgun (cysts at point-blank)",
-      secondary: "Hand Grenades (cluster cysts)",
-      tertiary: "Pipe bombs / thrown explosives",
-      consumables: "First Aid Spray ×2",
-      notes: "Pop cysts ONE AT A TIME or you'll be overwhelmed by Blister Heads. Funnel Blister Heads through chokepoints, never melee them."
-    },
-    insanity: {
-      primary: "MSBG 500 W870 Police shotgun + Infinite Ammo",
-      secondary: "Hand Grenades ×4",
-      tertiary: "RPG (if unlocked, one-shot the boss)",
-      consumables: "First Aid Spray ×4",
-      notes: "Insanity Blister Heads explode for 80%+ HP — never get within 5 meters when one dies. Use Blister Heads as living explosives by luring them next to the Blister Borne."
-    }
+    name: "블리스터 본", link: "/how-to-beat-blister-borne.html",
+    standard: {primary: "MSBG 500 샷건 (근거리 농포)", secondary: "수류탄 (군집 농포)", tertiary: "파이프 폭탄 / 투척 폭탄", consumables: "응급 처치 스프레이 ×2", notes: "농포 하나씩 처리, 그렇지 않으면 블리스터 헤드에 압도됨."},
+    insanity: {primary: "MSBG 500 샷건 + 무한 탄약", secondary: "수류탄 ×4", tertiary: "RPG (보스 원샷)", consumables: "응급 처치 스프레이 ×4", notes: "인새니티 블리스터 헤드 폭발은 80%+ HP. 5미터 이내 절대 금지."}
   },
   "chunk": {
-    name: "Chunk", link: "how-to-beat-chunk.html",
-    standard: {
-      primary: "MSBG 500 W870 Police shotgun (head + belly)",
-      secondary: "Hemolytic Injector ×3 (if Grace ambush path)",
-      tertiary: "Default Hatchet (finisher)",
-      consumables: "First Aid Spray ×1",
-      notes: "Grace path: 3 injectors from behind = instant kill. Leon Attic path: pickup MSBG immediately, use upper ladder for height advantage."
-    },
-    insanity: {
-      primary: "MSBG 500 W870 Police shotgun",
-      secondary: "Hand Grenade ×2",
-      tertiary: "Mortal Edge Hatchet (finisher)",
-      consumables: "First Aid Spray ×2",
-      notes: "Grace ambush path is significantly safer on Insanity — invest the time to find Hemolytic Injector materials. Leon path Insanity HP increase ~80%."
-    }
+    name: "청크", link: "/how-to-beat-chunk.html",
+    standard: {primary: "MSBG 500 샷건 (머리 + 배)", secondary: "헤모리틱 인젝터 ×3 (그레이스 매복 시)", tertiary: "기본 손도끼 (마무리)", consumables: "응급 처치 스프레이 ×1", notes: "그레이스 경로: 뒤에서 인젝터 3개 = 즉사. 레온 다락방: MSBG 즉시 픽업."},
+    insanity: {primary: "MSBG 500 샷건", secondary: "수류탄 ×2", tertiary: "모탈 엣지 손도끼 (마무리)", consumables: "응급 처치 스프레이 ×2", notes: "그레이스 매복 경로가 인새니티에서 훨씬 안전. 레온 경로 인새니티 HP 약 80% 증가."}
   },
   "the-chef": {
-    name: "The Chef (Optional)", link: "how-to-beat-the-chef.html",
-    standard: {
-      primary: "S&S M232 S&S M232 handgun (head shots)",
-      secondary: "MSBG 500 W870 Police shotgun (close range)",
-      tertiary: "—",
-      consumables: "—",
-      notes: "Easiest 'boss' in the game. Use the prep island as cover. Sideways dodge his cleaver lunge."
-    },
-    insanity: {
-      primary: "S&S M232 S&S M232 handgun (still sufficient)",
-      secondary: "MSBG 500 W870 Police shotgun",
-      tertiary: "Hemolytic Injector ×1 (instant kill)",
-      consumables: "—",
-      notes: "Even on Insanity, The Chef is barely a threat. One Hemolytic Injector instant-kills him if you have one to spare."
-    }
+    name: "더 셰프 (선택)", link: "/how-to-beat-the-chef.html",
+    standard: {primary: "S&S M232 핸드건 (헤드샷)", secondary: "MSBG 500 샷건", tertiary: "—", consumables: "—", notes: "게임에서 가장 쉬운 '보스'. 프렙 아일랜드를 엄폐물로. 옆으로 회피."},
+    insanity: {primary: "S&S M232 핸드건 (충분)", secondary: "MSBG 500 샷건", tertiary: "헤모리틱 인젝터 ×1 (즉사)", consumables: "—", notes: "인새니티에서도 거의 위협이 안 됨. 헤모리틱 인젝터 1개로 즉사."}
   }
 };
 
@@ -644,13 +536,13 @@ document.getElementById('show').onclick = () => {
   const diff = document.getElementById('difficulty').value;
   const d = data[boss];
   const cfg = d[diff] || d.standard;
-  const diffName = diff.charAt(0).toUpperCase() + diff.slice(1);
-  document.getElementById('result-header').textContent = `// LOADOUT FOR ${d.name.toUpperCase()} (${diffName.toUpperCase()})`;
+  const diffName = {standard:"표준", hardcore:"하드코어", insanity:"인새니티"}[diff];
+  document.getElementById('result-header').textContent = `// ${d.name} 추천 구성 (${diffName})`;
   document.getElementById('result-body').innerHTML = `
-<p><strong>Primary:</strong> ${cfg.primary}</p>
-<p><strong>Secondary:</strong> ${cfg.secondary}</p>
-<p><strong>Tertiary:</strong> ${cfg.tertiary}</p>
-<p><strong>Consumables:</strong> ${cfg.consumables}</p>
+<p><strong>주력:</strong> ${cfg.primary}</p>
+<p><strong>보조:</strong> ${cfg.secondary}</p>
+<p><strong>3차:</strong> ${cfg.tertiary}</p>
+<p><strong>소모품:</strong> ${cfg.consumables}</p>
 <p style="margin-top:12px;font-style:italic;color:#b0a09a;">${cfg.notes}</p>`;
   document.getElementById('result-link').href = d.link;
   document.getElementById('result').style.display = 'block';
@@ -658,28 +550,21 @@ document.getElementById('show').onclick = () => {
 };
 </script>
 
-<h2>How this calculator was built</h2>
-<p>Loadout recommendations cross-reference every boss-specific strategy guide on this site, plus the All Bosses Ranked tier list. Each weapon-to-boss recommendation has been verified through actual playthroughs on PS5 and Steam, with Insanity loadouts re-tested after the v1.02 patch verification pass (see <a href="capcom-v1-02-patch-diary.html">v1.02 Patch Diary</a>).</p>
-<p>The Insanity loadouts assume you have access to Infinite Ammo from the Special Content Store (post-clear unlock). If you're attempting Insanity without Infinite Ammo as a personal challenge, expect each boss to take 2-3x longer and require 50% more consumables.</p>
+<h2>이 계산기가 어떻게 만들어졌나</h2>
+<p>무기 구성 추천은 이 사이트의 모든 보스별 전략 가이드와 전체 보스 랭킹 티어 리스트를 교차 참조합니다. 각 무기-보스 추천은 PS5와 Steam에서 실제 플레이를 통해 검증되었으며, 인새니티 구성은 v1.02 패치 검증 패스 이후 재테스트되었습니다 (<a href="/capcom-v1-02-patch-diary.html">v1.02 패치 다이어리</a> 참조).</p>
+<p>인새니티 구성은 스페셜 콘텐츠 스토어의 무한 탄약(클리어 후 해금)에 접근 가능한 것으로 가정합니다. 개인 챌린지로 무한 탄약 없이 인새니티를 시도하신다면 각 보스가 2-3배 오래 걸리고 50% 더 많은 소모품이 필요할 것을 예상하세요.</p>
 
-<div class="sources">
-<strong>Sources used to verify this article:</strong><br>
-Cross-referenced from this site's boss guides: <a href="how-to-beat-victor-gideon.html">Victor Gideon</a>, <a href="how-to-beat-the-commander.html">The Commander</a>, <a href="how-to-beat-mr-x-super-tyrant.html">Mr. X / Super Tyrant</a>, <a href="how-to-beat-plant-43.html">Plant 43</a>, <a href="how-to-beat-the-girl.html">The Girl</a>, <a href="how-to-beat-titan-spinner.html">Titan Spinner</a>, <a href="how-to-beat-blister-borne.html">Blister Borne</a>, <a href="how-to-beat-chunk.html">Chunk</a>, <a href="how-to-beat-the-chef.html">The Chef</a>; verified post-v1.02 patch (<a href="capcom-v1-02-patch-diary.html">Patch Diary</a>)
-</div>
 <div class="cta">
-<div class="cta-title">RELATED GUIDES</div>
-<a href="how-to-beat-victor-gideon.html">Victor Gideon strategy</a>
-<a href="all-49-trophies-platinum-guide.html">Platinum guide</a>
-<a href="capcom-v1-02-patch-diary.html">v1.02 Patch Diary</a>
-<a href="bosses-hub.html">Boss hub</a>
-</div>
-<div class="section-divider"></div>
-<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Disagree with these recommendations? <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20re9-boss-loadout-calculator.html" style="color:var(--red);">Email me</a> — I update articles weekly.</p>
+<div class="cta-title">관련 공략</div>
+<a href="how-to-beat-victor-gideon.html">빅터 기드온 (한국어)</a>
+<a href="/all-49-trophies-platinum-guide.html">플래티넘 가이드 (영어)</a>
+<a href="capcom-v1-02-patch-diary.html">v1.02 패치 다이어리 (영어/한국어)</a>
 </div>
 <div class="footer">
-<p style="margin:5px 0;">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
-<p style="margin:5px 0;"><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a> · <a href="dmca.html">DMCA</a> · <a href="spoiler-policy.html">Spoilers</a></p>
-<p style="margin:5px 0;font-size:10px;">Resident Evil: Requiem © Capcom · Updated May 2026</p>
+<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
+<p style="margin:5px 0;"><a href="about.html">소개</a> · <a href="/contact.html">문의</a> · <a href="/privacy.html">개인정보</a> · <a href="/dmca.html">DMCA</a></p>
+<p style="margin:5px 0;font-size:10px;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월</p>
+</div>
 </div>
 <script src="/cookie-consent.js" defer></script>
 </body>

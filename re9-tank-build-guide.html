@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<meta name="audience" content="Korean RE9 players">
+<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
+<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#1a0f0a">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -20,7 +23,7 @@
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
-<link rel="canonical" href="https://www.re9guide.it.com/re9-tank-build-guide.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/re9-tank-build-guide.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-tank-build-guide.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-tank-build-guide.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-tank-build-guide.html" />
@@ -37,10 +40,10 @@
 <meta name="theme-color" content="#0d0808" />
 <meta name="msapplication-TileColor" content="#0d0808" />
 <!-- Open Graph + Twitter Card -->
-<meta property="og:title" content="RE9 Tank Build Guide — W870 Police + Iron Skin + Survivor&rsquo;s Will (Maximum Defense)" />
-<meta property="og:description" content="Complete RE9 tank build for Insanity: W870 Police shotgun (close combat king), Iron Skin (-15% damage), Survivor&rsquo;s Will (herbs heal +50%), Phoenix Down. Survive Mr. X transformation. v1.02." />
+<meta property="og:title" content="RE9 탱크 빌드 가이드 — W870 Police + Iron Skin + Survivor의 Will (최대 방어)" />
+<meta property="og:description" content="인새니티용 완전한 RE9 탱크 빌드: W870 Police 산탄총 (근접 전투 왕), Iron Skin (-15% 데미지), Survivor의 Will (약초 +50% 회복), Phoenix Down. 미스터 X 변신 생존. v1.02." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.re9guide.it.com/re9-tank-build-guide.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/re9-tank-build-guide.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-cards/re9-best-moments-ranked-tier-list-og.png"
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -50,15 +53,15 @@
 <meta name="twitter:image:alt" content="RE9 Locations tier list with RPD Main Hall as S-tier" />
 <meta property="og:site_name" content="re9guide.it.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="RE9 Tank Build Guide — W870 Police + Iron Skin + Survivor&rsquo;s Will (Maximum Defense)" />
-<meta name="twitter:description" content="Complete RE9 tank build for Insanity: W870 Police shotgun (close combat king), Iron Skin (-15% damage), Survivor&rsquo;s Will (herbs heal +50%), Phoenix Down. Survive Mr. X transformation. v1.02." />
-<title>RE9 Tank Build Guide — W870 Police + Iron Skin + Survivor&rsquo;s Will (Maximum Defense)</title>
-<meta name="description" content="Complete RE9 tank build for Insanity: W870 Police shotgun (close combat king), Iron Skin (-15% damage), Survivor&rsquo;s Will (herbs heal +50%), Phoenix Down. Survive Mr. X transformation. v1.02." />
+<meta name="twitter:title" content="RE9 탱크 빌드 가이드 — W870 Police + Iron Skin + Survivor의 Will (최대 방어)" />
+<meta name="twitter:description" content="인새니티용 완전한 RE9 탱크 빌드: W870 Police 산탄총 (근접 전투 왕), Iron Skin (-15% 데미지), Survivor의 Will (약초 +50% 회복), Phoenix Down. 미스터 X 변신 생존. v1.02." />
+<title>RE9 탱크 빌드 가이드 — W870 Police + Iron Skin + Survivor의 Will (최대 방어)</title>
+<meta name="description" content="인새니티용 완전한 RE9 탱크 빌드: W870 Police 산탄총 (근접 전투 왕), Iron Skin (-15% 데미지), Survivor의 Will (약초 +50% 회복), Phoenix Down. 미스터 X 변신 생존. v1.02." />
 <meta name="keywords" content="RE9 best charm loadout, RE9 best charms, RE9 charm build, RE9 Insanity charms" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--silver:#888780;--bronze:#8b5e2a;}
-body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
 .logo{font-size:15px;display:flex;align-items:center;gap:8px;}
@@ -121,8 +124,8 @@ ul.normal li{padding:3px 0;font-size:15px;}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "RE9 Tank Build Guide — W870 Police + Iron Skin + Survivor&rsquo;s Will (Maximum Defense)",
-  "description": "Complete RE9 tank build for Insanity: W870 Police shotgun (close combat king), Iron Skin (-15% damage), Survivor&rsquo;s Will (herbs heal +50%), Phoenix Down. Survive Mr. X transformation. v1.02.",
+  "headline": "RE9 탱크 빌드 가이드 — W870 Police + Iron Skin + Survivor의 Will (최대 방어)",
+  "description": "인새니티용 완전한 RE9 탱크 빌드: W870 Police 산탄총 (근접 전투 왕), Iron Skin (-15% 데미지), Survivor의 Will (약초 +50% 회복), Phoenix Down. 미스터 X 변신 생존. v1.02.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -150,7 +153,7 @@ ul.normal li{padding:3px 0;font-size:15px;}
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/best-weapons-tier-list.html"
   },
-  "inLanguage": "en",
+  "inLanguage": "ko-KR",
   "articleSection": "Weapons",
   "about": {
     "@type": "VideoGame",
@@ -423,16 +426,16 @@ h1 {
 </style>
 </head>
 <body>
-<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
+<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← 모든 공략</a>
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
-<a href="/ko/re9-tank-build-guide.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+<a href="/re9-tank-build-guide.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
 </span>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <span>RE9 Tank Build (W870 + Iron Skin)</span></div>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <span>RE9 탱크 빌드 (W870 + Iron Skin)</span></div>
 
-<h1>RE9 Tank Build (W870 + Iron Skin)</h1>
+<h1>RE9 탱크 빌드 (W870 + Iron Skin)</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
 <p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested across the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
 <p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 + DLC patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
@@ -443,52 +446,52 @@ h1 {
 <!-- Editorial Info Card - Trust signal for guide credibility -->
 
 
-<p class="lead"><strong>The Tank Build absorbs damage and refuses to die.</strong> Built around W870 Police shotgun (close combat S-tier), Iron Skin charm (-15% damage from all sources), and Survivor&rsquo;s Will (+50% healing from herbs). Trade DPS for survivability.</p>
+<p class="lead"><strong>탱크 빌드는 데미지 흡수하고 죽지 않음.</strong> W870 Police 산탄총 (근접 전투 S-티어), Iron Skin 부적 (모든 출처에서 -15% 데미지), Survivor의 Will (약초로 +50% 회복) 중심으로 구축. 생존을 위해 DPS 거래.</p>
 
-<h2>Complete Loadout</h2>
+<h2>완전한 로드아웃</h2>
 <div class="boss-stats">
   <table>
-    <tr><th>Slot</th><th>Pick</th></tr>
-    <tr><td>Primary weapon</td><td>W870 Police shotgun T3</td></tr>
-<tr><td>Secondary</td><td>Requiem Revolver T2 (boss kills only)</td></tr>
-<tr><td>Charm 1</td><td>Iron Skin (-15% damage)</td></tr>
-<tr><td>Charm 2</td><td>Survivor&rsquo;s Will (herbs +50%)</td></tr>
-<tr><td>Charm 3</td><td>Phoenix Down (revive once)</td></tr>
-<tr><td>NG+ Charm 4</td><td>Crafter&rsquo;s Touch (+25% craft)</td></tr>
-<tr><td>Item</td><td>6+ First Aids (always)</td></tr>
-<tr><td>Best chapter</td><td>Chapter 6 RPD (Mr. X)</td></tr>
+    <tr><th>슬롯</th><th>픽</th></tr>
+    <tr><td>Primary weapon</td><td>W870 Police 산탄총 T3</td></tr>
+<tr><td>Secondary</td><td>Requiem Revolver T2 (보스 처치만)</td></tr>
+<tr><td>Charm 1</td><td>Iron Skin (-15% 데미지)</td></tr>
+<tr><td>Charm 2</td><td>Survivor의 Will (약초 +50%)</td></tr>
+<tr><td>Charm 3</td><td>Phoenix Down (한 번 부활)</td></tr>
+<tr><td>NG+ Charm 4</td><td>Crafter의 Touch (+25% 제작)</td></tr>
+<tr><td>Item</td><td>6+ 응급처치 (항상)</td></tr>
+<tr><td>Best chapter</td><td>챕터 6 RPD (미스터 X)</td></tr>
   </table>
 </div>
 
-<h2>Why this build works</h2>
-<p>This build is balanced for its specific playstyle. Each component serves a clear purpose — weapons handle damage output, charms enhance survivability or efficiency, and items provide specialized utility.</p>
+<h2>이 빌드가 작동하는 이유</h2>
+<p>이 빌드는 특정 플레이 스타일에 맞춰 균형이 맞춰져 있음. 각 구성 요소가 명확한 목적을 수행 — 무기는 데미지 출력 처리, 부적은 생존성이나 효율성 향상, 아이템은 전문 유틸리티 제공.</p>
 
-<h2>Difficulty recommendations</h2>
+<h2>난이도 권장</h2>
 <ul>
-  <li><strong>Casual:</strong> Easy mode, use this build to learn mechanics</li>
-  <li><strong>Standard:</strong> Intended difficulty — this build works well</li>
-  <li><strong>Insanity:</strong> Recommended for skilled players who have completed Standard</li>
-  <li><strong>Insanity NG+:</strong> Optimal — Infinite Magnum and Phoenix Down unlock</li>
+  <li><strong>캐주얼:</strong> 쉬운 모드, 메커닉 학습을 위해 이 빌드 사용</li>
+  <li><strong>표준:</strong> 의도된 난이도 — 이 빌드가 잘 작동</li>
+  <li><strong>인새니티:</strong> 표준 완료한 숙련된 플레이어에게 권장</li>
+  <li><strong>인새니티 NG+:</strong> 최적 — 무한 매그넘과 Phoenix Down 해금</li>
 </ul>
 
-<h2>Recommended playthrough order</h2>
+<h2>권장 플레이 순서</h2>
 <ol>
-  <li>Complete Standard NG first (12-15 hours)</li>
-  <li>Start NG+ with this build equipped</li>
-  <li>Move to Insanity NG+ when comfortable (15-18 hours)</li>
-  <li>Optional: speedrun for Platinum trophy</li>
+  <li>먼저 표준 NG 완료 (12-15시간)</li>
+  <li>이 빌드 장착하고 NG+ 시작</li>
+  <li>익숙해지면 인새니티 NG+로 이동 (15-18시간)</li>
+  <li>선택: 플래티넘 트로피용 스피드런</li>
 </ol>
 
 <div class="cta">
-  <div class="cta-title">Related guides</div>
-  <a href="re9-best-charm-loadout.html">All charm loadouts</a>
-  <a href="re9-all-charms-ranked-tier-list.html">All 18 charms ranked</a>
-  <a href="best-weapons-tier-list.html">All 17 weapons ranked</a>
-  <a href="re9-best-weapon.html">What is the best weapon?</a>
-  <a href="re9-insanity-survival-guide.html">Insanity survival guide</a>
-  <a href="re9-ng-plus-what-carries-over.html">What carries over to NG+</a>
-  <a href="re9-what-difficulty-should-i-play.html">Which difficulty to play</a>
-  <a href="index.html">All guides</a>
+  <div class="cta-title">관련 가이드</div>
+  <a href="re9-best-charm-loadout.html">모든 부적 로드아웃 (영어/한국어)</a>
+  <a href="re9-all-charms-ranked-tier-list.html">18개 부적 모두 랭킹 (영어/한국어)</a>
+  <a href="best-weapons-tier-list.html">17개 무기 모두 랭킹 (영어/한국어)</a>
+  <a href="re9-best-weapon.html">최고 무기는 무엇? (영어/한국어)</a>
+  <a href="re9-insanity-survival-guide.html">인새니티 생존 가이드 (영어/한국어)</a>
+  <a href="re9-ng-plus-what-carries-over.html">NG+로 무엇이 이전되나 (영어/한국어)</a>
+  <a href="re9-what-difficulty-should-i-play.html">어떤 난이도로 플레이 (영어/한국어)</a>
+  <a href="index.html">모든 공략</a>
 </div>
   <a href="re9-all-charms-ranked-tier-list.html">All 18 charms ranked</a>
   <a href="re9-ng-plus-what-carries-over.html">What carries over to NG+</a>
