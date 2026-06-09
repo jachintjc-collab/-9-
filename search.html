@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Search — re9guide.it.com</title>
-<meta name="description" content="Search all RE9 guides — 9 tier lists, 9 boss guides, 9 walkthroughs, 11 character profiles, 130+ pages indexed.">
+<title>검색 — re9guide.it.com</title>
+<meta name="description" content="RE9 가이드 모두 검색 — 9개 티어 리스트, 9개 보스 가이드, 9개 공략, 11개 캐릭터 프로필, 130+ 페이지 색인됨.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://www.re9guide.it.com/search.html" />
-<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/search.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/search.html" />
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/ko/search.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/search.html" />
-<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/search.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/ko/search.html" />
+<meta name="audience" content="Korean RE9 players">
+<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
+<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#1a0f0a">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <style>
@@ -72,28 +75,28 @@ h1 {
 </style>
 </head>
 <body>
-<div class="nav"><a href="index.html" class="logo">re9guide<span>.it.com</span></a><a href="index.html" style="color:#b0a09a;text-decoration:none;margin-left:auto;">← All guides</a></div>
+<div class="nav"><a href="index.html" class="logo">re9guide<span>.it.com</span></a><a href="index.html" style="color:#b0a09a;text-decoration:none;margin-left:auto;">← 모든 공략</a></div>
 
 <div class="container">
-<h1>Search re9guide.it.com</h1>
-<input type="text" id="search-box" placeholder="Search guides... (try: magnum, eveline, RPD, S-tier, NG+)" autofocus>
-<div class="meta">Press Enter to search · ESC to clear · ↑↓ to navigate</div>
+<h1>re9guide.it.com 검색</h1>
+<input type="text" id="search-box" placeholder="가이드 검색... (예: 매그넘, eveline, RPD, S-티어, NG+)" autofocus>
+<div class="meta">Enter 검색 · ESC 지우기 · ↑↓ 탐색</div>
 <div id="stats"></div>
 <div id="results"></div>
 
 <div class="shortcuts">
-<strong>Popular searches:</strong>
-<a href="#" data-query="weapons">weapons tier list</a> ·
-<a href="#" data-query="endings">all 8 endings</a> ·
-<a href="#" data-query="charms">charms ranked</a> ·
-<a href="#" data-query="boss">boss guides</a> ·
-<a href="#" data-query="insanity">insanity guide</a> ·
+<strong>인기 검색:</strong>
+<a href="#" data-query="weapons">무기 티어 리스트</a> ·
+<a href="#" data-query="endings">8개 엔딩 모두</a> ·
+<a href="#" data-query="charms">부적 랭킹</a> ·
+<a href="#" data-query="boss">보스 가이드</a> ·
+<a href="#" data-query="insanity">인새니티 가이드</a> ·
 <a href="#" data-query="grace">Grace Ashcroft</a> ·
 <a href="#" data-query="leon">Leon Kennedy</a>
 </div>
 </div>
 
-<div class="footer">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</div>
+<div class="footer">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</div>
 
 <script>
 let searchIndex = [];
@@ -144,7 +147,7 @@ function render(query) {
   const resultsDiv = document.getElementById('results');
   const statsDiv = document.getElementById('stats');
   if (!query) {
-    statsDiv.textContent = searchIndex.length + ' pages indexed · type to search';
+    statsDiv.textContent = searchIndex.length + ' 페이지 색인됨 · 입력하여 검색';
     resultsDiv.innerHTML = '';
     return;
   }
@@ -154,7 +157,7 @@ function render(query) {
     .sort((a, b) => b.score - a.score)
     .slice(0, 30);
 
-  statsDiv.textContent = scored.length + ' results for "' + query + '"';
+  statsDiv.textContent = scored.length + '"' + query + '"에 대한 ' + scored.length + ' 결과';
   if (!scored.length) {
     resultsDiv.innerHTML = '<div class="empty">No results. Try a different keyword.</div>';
     return;
