@@ -10,6 +10,9 @@
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/ko/search.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/search.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/ko/search.html" />
+<meta name="audience" content="Korean RE9 players">
+<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
+<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#1a0f0a">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <style>
@@ -33,6 +36,12 @@ h1{color:#c0392b;font-size:32px;margin-bottom:20px;border-bottom:2px solid #c039
 .lang-en{color:#66bb6a}
 .lang-ko{color:#ba7517}
 mark{background:#c0392b;color:#fff;padding:0 2px;border-radius:2px}
+
+.cat-chip{background:rgba(192,57,43,0.08);color:#b0a09a;border:0.5px solid rgba(192,57,43,0.3);padding:5px 11px;font-size:11px;font-family:monospace;cursor:pointer;border-radius:3px;letter-spacing:0.5px;text-transform:uppercase}
+.cat-chip:hover{background:rgba(192,57,43,0.18);color:#f0ebe8}
+.cat-chip.active{background:rgba(192,57,43,0.35);color:#f0ebe8;border-color:#c0392b}
+.cat-badge{display:inline-block;background:rgba(186,117,23,0.18);color:#ba7517;font-size:9px;font-family:monospace;padding:2px 6px;border-radius:2px;margin-right:6px;text-transform:uppercase;letter-spacing:0.5px;border:0.5px solid rgba(186,117,23,0.35)}
+
 .empty{padding:40px 20px;text-align:center;color:#706056;font-style:italic}
 .shortcuts{margin-top:30px;padding:15px;background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;font-size:13px}
 .shortcuts strong{color:#c0392b}
@@ -78,6 +87,22 @@ h1 {
 <h1>re9guide.it.com 검색</h1>
 <input type="text" id="search-box" placeholder="가이드 검색... (예: 매그넘, eveline, RPD, S-티어, NG+)" autofocus>
 <div class="meta">Enter 검색 · ESC 지우기 · ↑↓ 탐색</div>
+
+<div id="cat-filters" style="margin:14px 0 10px;display:flex;flex-wrap:wrap;gap:6px;">
+  <button class="cat-chip active" data-cat="all">전체</button>
+  <button class="cat-chip" data-cat="티어">티어</button>
+  <button class="cat-chip" data-cat="공략">공략</button>
+  <button class="cat-chip" data-cat="무기">무기</button>
+  <button class="cat-chip" data-cat="빌드">빌드</button>
+  <button class="cat-chip" data-cat="인새니티">인새니티</button>
+  <button class="cat-chip" data-cat="로어">로어</button>
+  <button class="cat-chip" data-cat="코덱스">코덱스</button>
+  <button class="cat-chip" data-cat="Speculation">RE10</button>
+  <button class="cat-chip" data-cat="비교">비교</button>
+  <button class="cat-chip" data-cat="캐릭터">캐릭터</button>
+  <button class="cat-chip" data-cat="Q&A">Q&A</button>
+  <button class="cat-chip" data-cat="트로피">트로피</button>
+</div>
 <div id="stats"></div>
 <div id="results"></div>
 
@@ -151,6 +176,7 @@ function render(query) {
   const scored = searchIndex
     .map(item => ({ item, score: score(item, query) }))
     .filter(x => x.score > 0)
+    .filter(x => activeCategory === 'all' || x.item.category === activeCategory)
     .sort((a, b) => b.score - a.score)
     .slice(0, 30);
 
@@ -164,7 +190,7 @@ function render(query) {
     const langClass = item.lang === 'ko' ? 'lang-ko' : 'lang-en';
     const langLabel = item.lang === 'ko' ? 'KO' : 'EN';
     return '<div class="result" data-idx="' + i + '">' +
-      '<a class="result-title" href="' + item.url + '">' + highlight(item.title, query) +
+      '<a class="result-title" href="' + item.url + '"><span class="cat-badge">' + (item.category||'Guide') + '</span>' + highlight(item.title, query) +
       '<span class="lang-badge ' + langClass + '">' + langLabel + '</span></a>' +
       '<div class="result-url">' + item.url + '</div>' +
       '<div class="result-desc">' + highlight(item.desc, query) + '</div>' +
