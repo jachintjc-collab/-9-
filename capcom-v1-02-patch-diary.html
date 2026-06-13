@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,9 +10,6 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<meta name="audience" content="Korean RE9 players">
-<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
-<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -24,10 +21,11 @@
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
 <meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
-<link rel="canonical" href="https://www.re9guide.it.com/ko/capcom-v1-02-patch-diary.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/capcom-v1-02-patch-diary.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/capcom-v1-02-patch-diary.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/capcom-v1-02-patch-diary.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/capcom-v1-02-patch-diary.html" />
+
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -40,21 +38,21 @@
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#241410" />
 <meta name="msapplication-TileColor" content="#241410" />
-<meta property="og:title" content="캡콤 RE9 v1.02 패치 다이어리 — 무엇이 바뀌었고 왜인가">
-<meta property="og:description" content="RE9 v1.02 패치 다이어리 — 검증된 변경 사항, 커뮤니티 보고 조정점, 그리고 이 패치가 보스 전략과 스피드런 루트에 미치는 영향." />
+<meta property="og:title" content="Capcom RE9 v1.02 Patch Diary — What Changed & Why">
+<meta property="og:description" content="RE9 v1.02 patch diary — verified changes, community-reported tweaks, what the patch means for boss strategy and speedrun routes." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.re9guide.it.com/ko/capcom-v1-02-patch-diary.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/capcom-v1-02-patch-diary.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="캡콤 RE9 v1.02 패치 다이어리 — 무엇이 바뀌었고 왜인가" />
-<meta name="twitter:description" content="RE9 v1.02 패치 다이어리 — 검증된 변경 사항, 커뮤니티 보고 조정점, 그리고 이 패치가 보스 전략과 스피드런 루트에 미치는 영향." />
-<title>캡콤 RE9 v1.02 패치 다이어리 — 무엇이 바뀌었고 왜인가</title>
-<meta name="description" content="레지던트 이블 레퀴엠(RE9) v1.02 패치 다이어리 — 검증된 변경 사항, 커뮤니티 보고 조정점, 그리고 이 패치가 보스 전략과 스피드런 루트에 의미하는 바." />
-<meta name="keywords" content="RE9 v1.02 패치, 캡콤 패치 노트, 레지던트 이블 레퀴엠 패치, RE9 밸런스 변경, RE9 패치 다이어리" />
+<meta name="twitter:title" content="Capcom RE9 v1.02 Patch Diary — What Changed & Why" />
+<meta name="twitter:description" content="RE9 v1.02 patch diary — verified changes, community-reported tweaks, what the patch means for boss strategy and speedrun routes." />
+<title>Capcom RE9 v1.02 Patch Diary — What Changed & Why</title>
+<meta name="description" content="Resident Evil Requiem (RE9) v1.02 patch diary — verified changes, community-reported tweaks, and what the patch means for boss strategy and speedrun routes." />
+<meta name="keywords" content="RE9 v1.02 patch, Capcom patch notes, Resident Evil Requiem patch, RE9 balance changes, RE9 patch diary" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
 .logo{font-size:15px;}.logo span{color:var(--red);}
@@ -101,7 +99,7 @@ ol li strong{color:var(--text);}
 .footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
 .diary-entry{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:18px 22px;margin:14px 0;}
 .diary-entry .diary-date{font-size:11px;font-family:monospace;color:var(--gold);letter-spacing:0.08em;margin-bottom:8px;}
-.diary-entry h3{margin-top:0;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;letter-spacing:0;font-size:18px;}
+.diary-entry h3{margin-top:0;color:var(--text);font-family:Georgia,serif;letter-spacing:0;font-size:18px;}
 @media (max-width:600px){h1{font-size:24px;}h2{font-size:18px;}body{font-size:15px;}p{font-size:14px;}}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
@@ -110,8 +108,8 @@ ol li strong{color:var(--text);}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "캡콤 RE9 v1.02 패치 다이어리 — 무엇이 바뀌었고 왜인가",
-  "description": "레지던트 이블 레퀴엠(RE9) v1.02 패치 다이어리 — 검증된 변경 사항, 커뮤니티 보고 조정점, 그리고 이 패치가 보스 전략과 스피드런 루트에 의미하는 바.",
+  "headline": "Capcom RE9 v1.02 Patch Diary — What Changed & Why",
+  "description": "Resident Evil Requiem (RE9) v1.02 patch diary — verified changes, community-reported tweaks, and what the patch means for boss strategy and speedrun routes.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -137,11 +135,11 @@ ol li strong{color:var(--text);}
   "dateModified": "2026-05-14T00:00:00+09:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/ko/capcom-v1-02-patch-diary.html"
+    "@id": "https://www.re9guide.it.com/capcom-v1-02-patch-diary.html"
   },
-  "inLanguage": "ko-KR",
+  "inLanguage": "en-US",
   "articleSection": "News & Updates",
-  "keywords": "RE9 v1.02 패치, 캡콤 패치 노트, 레지던트 이블 레퀴엠 패치, RE9 밸런스 변경",
+  "keywords": "RE9 v1.02 patch, Capcom patch notes, Resident Evil Requiem patch, RE9 balance changes",
   "about": {
     "@type": "VideoGame",
     "@id": "https://www.re9guide.it.com/#game",
@@ -210,6 +208,7 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
     var pref=localStorage.getItem("re9guide_spoiler_filter");
     var hide=(pref==="hide");
     if(isHighSpoilerPage()){
+      // Inject overlay reveal button at top of container
       var c=document.querySelector(".container");
       if(c && !document.getElementById("spoiler-overlay-hint")){
         var hint=document.createElement("div");
@@ -219,6 +218,7 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
       }
     }
     applyState(hide);
+    // Floating toggle button on every page
     if(!document.getElementById("spoiler-filter-btn")){
       var btn=document.createElement("button");
       btn.id="spoiler-filter-btn";
@@ -227,6 +227,7 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
       btn.onclick=function(){
         var nowHide=!document.body.classList.contains("spoilers-hidden");
         if(!isHighSpoilerPage() && nowHide){
+          // not a HIGH page — still save preference but no visual change
           localStorage.setItem("re9guide_spoiler_filter","hide");
           btn.textContent="Spoilers: HIDDEN";
           alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
@@ -243,6 +244,7 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
       revealOnce.onclick=function(){
         document.body.classList.remove("spoilers-hidden");
         document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
+        // Don't change localStorage — this is a one-time reveal
       };
     }
   }
@@ -257,7 +259,11 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫  "; }
 <style>
 /* Phase 16: smooth scroll + sticky/floating TOC */
 html { scroll-behavior: smooth; }
+
+/* Scroll offset for sticky nav so anchor links don't hide under it */
 h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
+
+/* Sticky TOC behavior */
 @media (min-width: 1100px) {
   .toc { position: sticky; top: 70px; align-self: flex-start; }
   body.has-floating-toc .container { position: relative; }
@@ -287,8 +293,11 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
   function init(){
     var toc = document.querySelector('.toc');
     if(!toc) return;
+
+    // Wait until original TOC position is past viewport top, then add class
     var tocOriginalTop = toc.offsetTop;
     var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+
     function onScroll(){
       if(window.innerWidth < 1100) {
         document.body.classList.remove('has-floating-toc');
@@ -299,6 +308,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
       } else {
         document.body.classList.remove('has-floating-toc');
       }
+      // Highlight active TOC item based on visible section
       var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
       var active = null;
       for(var i = 0; i < sections.length; i++){
@@ -369,14 +379,27 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 })();
 </script>
 <style id="vintage-theme">
-/* Phase 83: Warm dark brown theme — replaces Phase 82 flat black */
+/* Phase 84: Warm brown + concentric ring texture (matches reference) */
 body {
   background-color: #241410;
   background-image:
-    radial-gradient(ellipse 70% 80% at 50% 0%, rgba(70, 30, 22, 0.45) 0%, transparent 65%),
-    radial-gradient(ellipse 60% 70% at 80% 100%, rgba(48, 22, 16, 0.6) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 60% at 0% 60%, rgba(58, 26, 18, 0.4) 0%, transparent 70%);
+    repeating-radial-gradient(
+      circle at 15% 85%,
+      rgba(60, 30, 22, 0.55) 0px,
+      rgba(60, 30, 22, 0.55) 1px,
+      transparent 1px,
+      transparent 90px
+    ),
+    repeating-radial-gradient(
+      circle at 85% 15%,
+      rgba(48, 22, 16, 0.45) 0px,
+      rgba(48, 22, 16, 0.45) 1px,
+      transparent 1px,
+      transparent 110px
+    ),
+    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
   background-attachment: fixed;
+  background-size: 100% 100%;
 }
 .container {
   background: transparent;
@@ -389,7 +412,7 @@ h1 {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .boss-stats table {
-  background: rgba(48, 22, 16, 0.55);
+  background: rgba(48, 22, 16, 0.7);
   border: 0.5px solid rgba(160, 130, 90, 0.18);
 }
 .boss-stats th {
@@ -406,257 +429,195 @@ h1 {
 <div class="nav">
 <a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
 <div style="display:flex;align-items:center;gap:14px;">
-<a href="index.html">← 모든 공략</a>
+<a href="index.html">← All guides</a>
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="/capcom-v1-02-patch-diary.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
-<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="#" onclick="showKoPendingModal();return false;" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
 </span>
 </div>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <span>캡콤 v1.02 패치 다이어리</span></div>
-<h1>캡콤 RE9 v1.02 패치 다이어리 — 무엇이 바뀌었고 왜인가</h1>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <span>CAPCOM v1.02 PATCH DIARY</span></div>
+<h1>Capcom RE9 v1.02 Patch Diary — What Changed &amp; Why</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
-<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
-<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">검증 버전: v1.02 · 마지막 검토: 2026년 5월 30일 · 영어 원본과 비교: 100% 내용 동등 + 한국어 컨텍스트 추가</p>
+<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested across the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
+<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 + DLC patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
 </div>
 
-<div class="meta">2026년 5월 14일 게시 · 8분 읽기 · <span>연재 시리즈</span></div>
-<p class="lead">캡콤의 패치 노트는 보통 짧고 종종 모호합니다. 이 다이어리는 레지던트 이블: 레퀴엠 v1.02에서 <em>실제로</em> 무엇이 바뀌었는지를 추적합니다 — PS5와 Steam에서 보스전, 금고 코드, 인새니티 콘텐츠를 다시 검증하고, 추적 중이지만 아직 직접 확인하지 않은 커뮤니티 보고 조정점까지 다룹니다. 모든 캡콤 패치를 다룰 연재 시리즈의 첫 회입니다.</p>
-
-
+<div class="meta">PUBLISHED MAY 14, 2026 · 8 MIN READ · <span>RECURRING SERIES</span></div>
+<p class="lead">Capcom's patch notes are usually short and often vague. This diary tracks what actually changed in Resident Evil: Requiem v1.02 — verified by re-running boss fights, safe codes, and Insanity content on PS5 and Steam, plus community-reported tweaks I'm tracking but haven't yet personally confirmed. The inaugural entry in a recurring series that will cover every Capcom patch.</p>
 
 <div class="warn-box gold">
-ℹ <strong>이것은 캡콤 패치 다이어리의 첫 번째 게시물입니다.</strong> 앞으로 레지던트 이블: 레퀴엠에 대한 모든 캡콤 패치는 무엇이 바뀌었고, 무엇이 검증되었으며, 무엇을 다시 테스트해야 하는지 추적하는 다이어리 글이 게시될 예정입니다. 이 페이지를 즐겨찾기에 추가하거나 새로운 패치 발표 후 다시 방문해 주세요.
+ℹ <strong>This is the inaugural Capcom Patch Diary entry.</strong> Going forward, every Capcom-issued patch for Resident Evil: Requiem will get its own diary post tracking what changed, what got verified, and what to re-test. Bookmark this page or check back after each new patch announcement.
 </div>
 
 <div class="toc">
-<div class="toc-title">목차</div>
+<div class="toc-title">Table of contents</div>
 <ul>
-<li><a href="#what-is-this">이 다이어리가 추적하는 것</a></li>
-<li><a href="#methodology">검증 방법론</a></li>
-<li><a href="#v102-status">v1.02 검증 상태 — 이 사이트에서 재테스트한 항목</a></li>
-<li><a href="#community">커뮤니티 보고 관찰 (주의 사항 포함)</a></li>
-<li><a href="#future">v1.03 이후를 위해 할 일</a></li>
-<li><a href="#contribute">발견 사항을 제보하는 방법</a></li>
+<li><a href="#what-is-this">What this diary tracks</a></li>
+<li><a href="#methodology">My verification methodology</a></li>
+<li><a href="#v102-status">v1.02 verification status — what was re-tested on this site</a></li>
+<li><a href="#community">Community-reported observations (with caveats)</a></li>
+<li><a href="#future">What I'll do for v1.03 and beyond</a></li>
+<li><a href="#contribute">How to contribute findings</a></li>
 </ul>
 </div>
 
-<h2 id="what-is-this">이 다이어리가 추적하는 것</h2>
-<p>라이브 레지던트 이블 게임에 대한 캡콤의 모든 패치는 <em>무언가</em>를 바꿉니다 — 때로는 단순한 버그 수정, 때로는 게시된 공략을 조용히 무효화하는 밸런스 조정입니다. 캡콤이 공식 발표하는 패치 노트는 보통 짧고, 종종 모호하며, 거의 모든 변경 사항을 나열하지 않습니다. 패치 다이어리의 역할은 그 격차를 메우는 것입니다.</p>
-<p>각 패치에 대해 이 다이어리는 세 가지를 추적합니다:</p>
+<h2 id="what-is-this">What this diary tracks</h2>
+<p>Every Capcom patch to a live Resident Evil game changes <em>something</em> — sometimes just bug fixes, sometimes balance tweaks that quietly invalidate published guides. The patch notes Capcom officially releases are usually short, often vague, and almost never list every change. The Patch Diary's job is to bridge that gap.</p>
+<p>For each patch, this diary will track three things:</p>
 <ul class="normal">
-<li><strong>검증된 변경 사항</strong> — 패치가 적용된 후 제가 직접 재테스트한 이 사이트의 공략들과, (있다면) 무엇을 업데이트했는지 메모</li>
-<li><strong>커뮤니티 보고 관찰</strong> — Reddit, Discord, X, Steam 커뮤니티, 그리고 한국 / 일본 RE 포럼의 발견 사항들. 각 항목에 출처에 대한 신뢰도 태그가 붙습니다</li>
-<li><strong>플레이에 의미하는 것</strong> — 경쟁 사이트들이 보통 건너뛰는 편집자 레이어. 패치 노트는 무엇이 바뀌었는지 설명하고, 이 다이어리는 그것에 대해 <em>무엇을 해야 할지</em>를 설명합니다</li>
+<li><strong>Verified changes</strong> — guides on this site that I personally re-tested after the patch dropped, with a note of what (if anything) needed updating</li>
+<li><strong>Community-reported observations</strong> — findings from Reddit, Discord, X, Steam Community, and Korean / Japanese RE forums, each tagged with how confident I am in the source</li>
+<li><strong>What this means for play</strong> — the editorial layer competitor sites usually skip. Patch notes describe what changed; this diary describes what to <em>do</em> about it</li>
 </ul>
 
-<h2 id="methodology">검증 방법론</h2>
-<p>각 패치에 대해 PS5 + Steam에서 다음 프로토콜을 실행합니다:</p>
+<h2 id="methodology">My verification methodology</h2>
+<p>For each patch, I run the following protocol on PS5 + Steam:</p>
 <ol>
-<li><strong>두 플랫폼 모두 새로 설치</strong>. PS5가 주력이며, Steam은 크로스 플랫폼 무결성 점검 역할을 합니다.</li>
-<li><strong>스탠다드 난이도에서 명명된 모든 보스 재처치</strong>. 각 전투의 시간을 측정하고, 패리 윈도우, 공격 패턴, 약점 HP가 패치 이전 기록과 다르게 보이는지 메모합니다.</li>
-<li><strong>인새니티 전용 콘텐츠 점검</strong>. 인새니티 전용 데미지 배율과 패리 윈도우 변경은 캡콤이 패치 노트에 나타나지 않는 "스텔스" 밸런스 변경을 가장 자주 하는 부분입니다.</li>
-<li><strong>금고 코드 5개와 쿼츠 퍼즐 해법 전체 재검증</strong>. 코드는 패치 사이에 <em>바뀌면 안 되지만</em> 캡콤은 과거 RE 게임에서 한두 개 조합을 조정한 전례가 있습니다 (특히 RE7과 RE8은 라이프사이클 중간에 금고 코드 변경이 있었습니다).</li>
-<li><strong>두 개의 커뮤니티 소스와 교차 참조</strong>. Reddit r/residentevil 패치 메가스레드와 한국 인벤 RE9 게시판이 주요 외부 점검 대상입니다.</li>
+<li><strong>Fresh install on both platforms</strong>. PS5 is my primary; Steam serves as cross-platform sanity check.</li>
+<li><strong>Re-clear all named bosses on Standard difficulty</strong>. Each fight gets timed and notes are taken on whether parry windows, attack patterns, or weak-point HP appear different from my pre-patch records.</li>
+<li><strong>Spot-check Insanity-only content</strong>. Insanity-specific damage multipliers and parry-window changes are where Capcom most often makes "stealth" balance changes that don't appear in patch notes.</li>
+<li><strong>Re-verify all 5 safe codes and Quartz puzzle solutions</strong>. Codes <em>shouldn't</em> change between patches but Capcom has historically tweaked one or two combinations in past RE games (notably RE7 and RE8 had safe code changes mid-lifecycle).</li>
+<li><strong>Cross-reference with two community sources</strong>. Reddit r/residentevil's patch megathread and the Korean Inven RE9 board are my primary external checks.</li>
 </ol>
-<p>이 사이트의 모든 공략은 편집자 헤더에 "최종 검증" 날짜를 표시합니다. 각 패치 후 그 날짜는 제가 실제로 검증 프로토콜을 다시 실행한 경우에만 업데이트됩니다 — 단순히 시간이 지났다고 해서가 아닙니다.</p>
+<p>Every guide on this site shows a "LAST VERIFIED" date in its editorial header. After each patch, that date updates only if I actually re-ran the verification protocol — not just because time passed.</p>
 
-<h2 id="v102-status">v1.02 검증 상태</h2>
-<p>v1.02 패치는 2026년 5월에 발표되었습니다. 아래는 최신 재테스트 패스 기준 이 사이트의 모든 공략에 대한 검증 상태입니다.</p>
+<h2 id="v102-status">v1.02 verification status</h2>
+<p>The v1.02 patch was issued in May 2026. Below is the verification status of every guide on this site as of the latest re-test pass.</p>
 
 <div class="diary-entry">
-<div class="diary-date">// 검증됨 · 2026년 5월 14일</div>
-<h3>보스 공략 가이드 — 보스 10명 전원 변경 없음 확인</h3>
-<p>빅터 기드온, The Commander, Mr. X / 슈퍼 타이런트, 플랜트 43, The Girl, 타이탄 스피너, 블리스터 본, 청크 (그레이스 및 레온 루트), 그리고 셰프를 스탠다드 난이도에서 재처치했습니다. 공격 패턴, 패리 윈도우, 약점 HP는 v1.02 이전 테스트와 동일하게 작동합니다. <strong>공략 업데이트가 필요하지 않습니다.</strong></p>
+<div class="diary-date">// VERIFIED · MAY 14, 2026</div>
+<h3>Boss strategy guides — all 10 bosses confirmed unchanged</h3>
+<p>Re-cleared Victor Gideon, The Commander, Mr. X / Super Tyrant, Plant 43, The Girl, Titan Spinner, Blister Borne, Chunk (Grace and Leon paths), and The Chef on Standard difficulty. Attack patterns, parry windows, and weak-point HP behave identically to pre-v1.02 testing. <strong>No guide updates required.</strong></p>
 </div>
 
 <div class="diary-entry">
-<div class="diary-date">// 검증됨 · 2026년 5월 14일</div>
-<h3>금고 코드 — 5개 조합 전부 변경 없음</h3>
-<p>v1.02 설치 후 새 세이브 파일에서 모든 금고 조합을 재테스트했습니다. 런칭 버전의 모든 조합이 여전히 유효합니다. 모든 금고 코드 가이드는 수정 없이 그대로 유지됩니다.</p>
+<div class="diary-date">// VERIFIED · MAY 14, 2026</div>
+<h3>Safe codes — all 5 combinations unchanged</h3>
+<p>Re-tested every safe combination on a fresh save file post-v1.02 install. All combinations from the launch version remain valid. The All Safe Codes guide carries forward without modification.</p>
 </div>
 
 <div class="diary-entry">
-<div class="diary-date">// 검증됨 · 2026년 5월 14일</div>
-<h3>트로피 진행도 — 놓치기 쉬운 트로피 동작 변경 없음</h3>
-<p>놓치기 쉬운 트로피 7개 (Truth Seeker, Mr. Raccoon Hunter, Coin Collector 포함)는 런칭 시와 동일하게 발동하고 유지됩니다. 플래티넘 트로피 로드맵은 변경되지 않았습니다.</p>
+<div class="diary-date">// VERIFIED · MAY 14, 2026</div>
+<h3>Trophy progression — no missables behavior change</h3>
+<p>The 7 missable trophies (including Truth Seeker, Mr. Raccoon Hunter, and Coin Collector) trigger and persist identically to launch behavior. Platinum trophy roadmap unchanged.</p>
 </div>
 
 <div class="diary-entry">
-<div class="diary-date">// 부분 검증 · 2026년 5월 14일</div>
-<h3>인새니티 보스 데미지 — 일화성 변경 보고</h3>
-<p>빅터 기드온과 The Commander를 인새니티에서 재처치했습니다. 두 전투 모두 측정 오차 범위 내에서 패치 이전 시도와 동일한 느낌이었습니다. <strong>그러나 r/residentevil과 인벤의 여러 커뮤니티 보고에 따르면 플랜트 43 화염 데미지가 v1.02 이후 감소된 느낌이라고 합니다.</strong> 저는 아직 플랜트 43을 인새니티에서 재처치하여 직접 테스트하지 못했습니다. 재테스트 전까지는 미확인으로 처리합니다.</p>
+<div class="diary-date">// PARTIALLY VERIFIED · MAY 14, 2026</div>
+<h3>Insanity boss damage — anecdotal change reports</h3>
+<p>I re-cleared Victor Gideon and The Commander on Insanity. Both fights felt identical to my pre-patch attempts within margin-of-error timing. <strong>However, multiple community reports on r/residentevil and Inven note that Plant 43 incendiary damage feels reduced post-v1.02.</strong> I have not yet re-cleared Plant 43 on Insanity to test this directly. Treating as unconfirmed pending re-test.</p>
 </div>
 
 <div class="diary-entry">
-<div class="diary-date">// 보류 중 · 2026년 5월 14일</div>
-<h3>스피드런 루트 — 펌프룸 스킵 재테스트 보류</h3>
-<p>4시간 미만 스피드런에 사용되는 프레임 단위 펌프룸 스킵은 v1.02 이후 재테스트되지 않았습니다. 스피드런 커뮤니티는 PC에서는 여전히 작동한다고 보고합니다. PS5 콘솔 측 검증은 보류 중입니다. 4시간 미만 스피드런 가이드는 이 특정 스킵을 제외한 모든 항목에 대해 v1.02 검증으로 표시됩니다.</p>
+<div class="diary-date">// PENDING · MAY 14, 2026</div>
+<h3>Speedrun route — Pump Room skip pending re-test</h3>
+<p>The frame-perfect Pump Room skip used in sub-4-hour speedruns has not been re-tested post-v1.02. Speedrun community reports it still works on PC; PS5 console-side verification pending. The Sub-4-Hour Speedrun Guide remains marked v1.02 verified for everything except this specific skip.</p>
 </div>
 
-<h2 id="community">커뮤니티 보고 관찰 (미검증)</h2>
-<p>다음 변경 사항은 더 넓은 RE9 커뮤니티가 보고했지만 제가 직접 검증하지 않은 것들입니다. 각 항목에는 출처와 현재 신뢰도 수준이 태그되어 있습니다. 재테스트가 완료되면 위의 검증 섹션으로 이동합니다.</p>
+<h2 id="community">Community-reported observations (unverified)</h2>
+<p>The following changes have been reported by the broader RE9 community but I have not personally verified. Each is tagged with the source and my current confidence level. I will move items to the verified section above as I re-test.</p>
 <ul class="normal">
-<li><strong>플랜트 43 화염 배율</strong> — 여러 Reddit 스레드가 v1.02 이후 화염 탄환이 플랜트 43 낭종에 눈에 띄게 적은 데미지를 입힌다고 주장합니다. 출처: r/residentevil 패치 메가스레드 + 인벤 게시판. <em>신뢰도: 중간. 재테스트 보류.</em></li>
-<li><strong>ARK 시설 조명 조정</strong> — 커뮤니티는 ARK 하강 복도의 시야가 조정되었다고 보고하며, 이는 펌프룸 스킵을 약간 덜 안정적으로 만들기 위한 것일 수 있습니다. 출처: speedrun.com 토론. <em>신뢰도: 낮음 — 플라시보일 수 있음.</em></li>
-<li><strong>Mr. Raccoon 충돌 판정</strong> — 이전에 잡기 어려웠던 너구리 (구체적으로 케어 센터 다락방의 것)가 약간 더 잡기 쉬워졌다는 보고 2건. 출처: Discord 스크린샷. <em>신뢰도: 낮음 — 조명 / 카메라 각도 인지 차이일 수 있음.</em></li>
-<li><strong>업적 잠금 해제 타이밍</strong> — 일부 사용자가 "Mr. Raccoon Hunter" 트로피가 이제 다음 저장이 아니라 25번째 너구리 수집 시점에 즉시 팝업된다고 보고하는데, 이는 편의성 개선입니다. 출처: PSNProfiles 포럼. <em>신뢰도: 중상.</em></li>
+<li><strong>Plant 43 incendiary multiplier</strong> — multiple Reddit threads claim incendiary rounds deal noticeably less damage to Plant 43 cysts post-v1.02. Source: r/residentevil patch megathread + Inven board. <em>Confidence: medium. Re-test pending.</em></li>
+<li><strong>ARK Facility lighting tweak</strong> — community notes the ARK descent corridor visibility was adjusted, possibly to make the Pump Room skip slightly less reliable. Source: speedrun.com discussion. <em>Confidence: low — could be placebo.</em></li>
+<li><strong>Mr. Raccoon collision detection</strong> — 2 reports of a previously-difficult Raccoon (specifically the one in the Care Center attic) being slightly easier to grab. Source: Discord screenshots. <em>Confidence: low — could be lighting / camera angle perception.</em></li>
+<li><strong>Achievement unlock timing</strong> — some users report the "Mr. Raccoon Hunter" trophy now pops on the 25th Raccoon collection rather than at next save, which is a quality-of-life improvement. Source: PSNProfiles forum. <em>Confidence: medium-high.</em></li>
 </ul>
 
 <div class="warn-box">
-<strong>커뮤니티 보고에 대한 중요 참고:</strong> 여러 플레이어가 같은 것을 보고하더라도 인지 편향은 실재합니다. 패치 v1.02는 첫 번째 메이저 패치입니다 — 플라시보 효과가 최고조에 달합니다. 저는 회의적인 입장을 기본으로 하고 직접 재검증한 후에만 공략을 업데이트합니다. 직접 테스트하고 커뮤니티 보고를 확인하셨다면, 플랫폼, 세이브 상태, 그리고 짧은 재현 설명과 함께 이메일로 알려주세요.
+<strong>Important note on community reports:</strong> Even when multiple players report something, perception bias is real. Patch v1.02 is the first major patch — placebo effect is at peak. I default to skepticism and only update guides after first-hand re-verification. If you've personally tested and confirmed a community report, please email me with your platform, save state, and a short repro description.
 </div>
 
-<h2 id="future">v1.03 이후를 위해 할 일</h2>
-<p>모든 캡콤 패치는 이 동일한 템플릿을 따라 자체 다이어리 항목을 가질 것입니다. 시리즈 구조는 다음과 같습니다:</p>
+<h2 id="future">What I'll do for v1.03 and beyond</h2>
+<p>Each Capcom patch will get its own diary entry following this same template. The series structure will be:</p>
 <ul class="normal">
-<li><strong>Day 0</strong>: 패치 출시. 공식 패치 노트와 즉각적인 커뮤니티 관찰을 요약하는 초기 다이어리 항목이 4-8시간 내에 게시됨</li>
-<li><strong>Day 1-3</strong>: 모든 28개 공략 페이지에 걸쳐 재검증 프로토콜 실행</li>
-<li><strong>Day 4-7</strong>: 검증된 변경 사항으로 다이어리 업데이트, 공략을 개별적으로 패치하고 "최종 검증" 날짜 갱신</li>
-<li><strong>Week 2+</strong>: 커뮤니티 보고 엣지 케이스와 미확인 주장을 진행 중인 부록에 추적</li>
+<li><strong>Day 0</strong>: Patch drops. Initial diary entry posted within 4-8 hours summarizing official patch notes and immediate community observations</li>
+<li><strong>Day 1-3</strong>: Re-verification protocol runs across all 28 guide pages</li>
+<li><strong>Day 4-7</strong>: Diary updated with verified changes, guides individually patched and "LAST VERIFIED" dates rolled forward</li>
+<li><strong>Week 2+</strong>: Community-reported edge cases and unverified claims tracked in an ongoing addendum</li>
 </ul>
-<p>목표는 이 사이트가 RE9 플레이어가 각 패치 후 기존 전략이 여전히 작동하는지 알기 위해 방문하는 장소가 되는 것입니다. 캡콤의 공식 패치 노트는 그것을 알려주지 않습니다. 패치 다이어리는 알려줄 것입니다.</p>
+<p>The goal is for this site to be the place RE9 players come to know whether their existing strategy still works after each patch. Capcom's official patch notes won't tell you that. The Patch Diary will.</p>
 
-<h2 id="contribute">발견 사항을 제보하는 방법</h2>
-<p>위의 커뮤니티 보고 주장에 대해 직접 1차 검증 (또는 반박)이 있으시다면, 공유하는 가장 쉬운 방법은 <a href="mailto:re9uiem@re9guide.it.com?subject=Patch%20v1.02%20finding" style="color:var(--red);">짧은 보고를 이메일로 보내는 것</a>입니다. 다음을 포함해 주세요:</p>
+<h2 id="contribute">How to contribute findings</h2>
+<p>If you have direct first-hand verification (or contradiction) of any community-reported claim above, the easiest way to share is to <a href="mailto:re9uiem@re9guide.it.com?subject=Patch%20v1.02%20finding" style="color:var(--red);">email a short report</a> with:</p>
 <ul class="normal">
-<li>플랫폼과 버전 (PS5, Xbox Series X|S, Switch 2, PC + GPU)</li>
-<li>무엇을 어떻게 테스트했는지 (예: "플랜트 43 인새니티, 동일한 로드아웃으로 패치 전후 5회 시도")</li>
-<li>관찰 사항 (시간 또는 데미지 수치를 추적했다면 함께)</li>
-<li>일관되게 재현할 수 있는지</li>
+<li>Your platform and version (PS5, Xbox Series X|S, Switch 2, PC + GPU)</li>
+<li>What you tested and how (e.g., "Plant 43 Insanity, ran 5 attempts pre- and post-patch using same loadout")</li>
+<li>Your observation (with timing or damage numbers if you tracked them)</li>
+<li>Whether you can replicate consistently</li>
 </ul>
-<p>저는 매주 제보를 검토하고 다음 다이어리 항목에서 검증된 기여자를 크레딧합니다 (원하시는 핸들 또는 익명으로, 선택은 자유).</p>
+<p>I review submissions weekly and credit verified contributors in the next diary entry (with your handle of choice or anonymously, your call).</p>
 
 <div class="verdict-box">
-<div class="verdict-title">// 결론</div>
-<p>제 검증에 따르면 v1.02는 <strong>조용한 패치</strong>입니다. 주요 보스 전략 무효화도, 금고 코드 변경도, 트로피 진행 깨짐도 없습니다. 커뮤니티 보고 플랜트 43 화염 조정이 잠재적으로 중요하다고 볼 만한 유일한 발견이며, 향후 7일 내 완전 재테스트로 표시해 두고 있습니다. 스피드러너는 WR 루트가 여전히 유효하다고 가정하기 전에 주력 플랫폼에서 펌프룸 스킵을 다시 테스트해야 합니다.</p>
-<p>사이트 업데이트 피드를 구독하시거나 (또는 홈페이지의 최신 업데이트 섹션을 확인하시면) 다음 패치가 떨어지는 순간 v1.03 다이어리 항목을 받으실 수 있습니다.</p>
+<div class="verdict-title">// THE BOTTOM LINE</div>
+<p>v1.02 is, by my verification, a <strong>quiet patch</strong>. No major boss-strategy invalidations, no safe code changes, no trophy progression breaks. The community-reported Plant 43 incendiary tweak is the only finding I'd consider potentially material, and I'm flagging it for full re-test in the next 7 days. Speedrunners should re-test the Pump Room skip on their primary platform before assuming WR routes are still valid.</p>
+<p>Subscribe to the site update feed (or check the homepage's Latest Updates section) to get the v1.03 diary entry the moment the next patch drops.</p>
 </div>
 
 <div class="sources">
-<strong>이 글을 검증하는 데 사용한 출처:</strong><br>
+<strong>Sources used to verify this article:</strong><br>
 
-<a href="https://www.reddit.com/r/residentevil/" target="_blank" rel="nofollow noopener">r/residentevil 패치 메가스레드</a>; 한국 RE 커뮤니티 <a href="https://www.inven.co.kr/" target="_blank" rel="nofollow noopener">인벤 (RE9 게시판)</a>; <a href="https://www.speedrun.com/" target="_blank" rel="nofollow noopener">speedrun.com 커뮤니티 토론</a>; <a href="https://psnprofiles.com/" target="_blank" rel="nofollow noopener">PSNProfiles RE9 트로피 포럼</a>; 사이트 작성자 Jachin의 PS5 및 Steam 1차 검증
+<a href="https://www.reddit.com/r/residentevil/" target="_blank" rel="nofollow noopener">r/residentevil patch megathreads</a>; Korean RE community at <a href="https://www.inven.co.kr/" target="_blank" rel="nofollow noopener">Inven (RE9 board)</a>; <a href="https://www.speedrun.com/" target="_blank" rel="nofollow noopener">speedrun.com community discussion</a>; <a href="https://psnprofiles.com/" target="_blank" rel="nofollow noopener">PSNProfiles RE9 trophy forum</a>; site author Jachin's first-hand verification on PS5 and Steam
 
 </div>
 <div class="cta">
-<div class="cta-title">관련 공략</div>
-  <a href="weekly-roundup-may-14-2026.html">주간 라운드업 (2026년 5월 14일) — 패치 + 커뮤니티</a>
-<a href="how-to-beat-victor-gideon.html">최종 보스: 빅터 기드온</a>
-<a href="/speedrun-guide-sub-4-hours.html">4시간 미만 스피드런</a>
-<a href="/all-49-trophies-platinum-guide.html">플래티넘 가이드</a>
-<a href="bosses-hub.html">모든 보스 허브</a>
+<div class="cta-title">RELATED GUIDES</div>
+  <a href="/ko/capcom-v1-02-patch-diary.html">한국어판 보기 (Korean version)</a>
+  <a href="weekly-roundup-may-14-2026.html">Weekly roundup (May 14 2026) — patch + community</a>
+<a href="how-to-beat-victor-gideon.html">Final boss: Victor Gideon</a>
+<a href="speedrun-guide-sub-4-hours.html">Sub-4-Hour Speedrun</a>
+<a href="all-49-trophies-platinum-guide.html">Platinum Guide</a>
+<a href="bosses-hub.html">All bosses hub</a>
 </div>
 <div class="section-divider"></div>
-<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">제가 놓친 v1.02 변경 사항을 발견하셨나요? <a href="mailto:re9uiem@re9guide.it.com?subject=v1.02%20Patch%20Finding" style="color:var(--red);">이메일을 보내주세요</a> — 검증된 기여자의 발견은 다음 다이어리 항목에 크레딧됩니다.</p>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Found a v1.02 change I missed? <a href="mailto:re9uiem@re9guide.it.com?subject=v1.02%20Patch%20Finding" style="color:var(--red);">Email me</a> — verified contributor findings credited in the next diary entry.</p>
 </div>
 <div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
-<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">패치 다이어리 항목 하나에 8-12시간의 테스트가 들어갑니다. Ko-fi 후원이 이 시리즈의 독립성을 유지해 줍니다. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
-<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">Patch Diary entries take 8-12 hours of testing each. Support on Ko-fi keeps this series independent. <em style="color:#ba7517;font-style:normal;">Every little bit means the world.</em></p>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Support on Ko-fi</a>
 </div>
 <div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
-<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
-<p style="margin:5px 0;"><a href="/about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
-<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+<p style="margin:5px 0;">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
+<p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">About</a> · <a href="contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Contact</a> · <a href="privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Privacy</a> · <a href="dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Spoilers</a></p>
+<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
 </div>
 
-<script src="/cookie-consent.js" defer></script>
-
-<!-- Phase 78: Korean Community Insights as dismissible modal -->
-<style id="ko-insights-modal-style">
-#ko-insights-trigger{position:fixed;bottom:18px;right:18px;z-index:998;background:#43a047;color:#fff;border:none;padding:10px 16px;font-size:13px;font-family:inherit;border-radius:24px;cursor:pointer;box-shadow:0 4px 16px rgba(67,160,71,0.4);font-weight:600;letter-spacing:0.3px}
-#ko-insights-trigger:hover{background:#388e3c;transform:translateY(-1px);box-shadow:0 6px 20px rgba(67,160,71,0.5)}
-#ko-insights-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.78);backdrop-filter:blur(4px);z-index:999;display:none;align-items:center;justify-content:center;padding:20px;box-sizing:border-box}
-#ko-insights-overlay.open{display:flex}
-#ko-insights-modal{background:#241410;border:1px solid rgba(67,160,71,0.4);border-radius:8px;max-width:680px;width:100%;max-height:88vh;overflow-y:auto;padding:28px 32px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.8);font-family:-apple-system,sans-serif;color:#f0ebe8;line-height:1.7;font-size:13px}
-#ko-insights-modal h2{font-family:'Cormorant Garamond',Georgia,serif;color:#43a047;font-weight:400;font-size:20px;margin:20px 0 10px}
-#ko-insights-modal h2:first-of-type{margin-top:0}
-#ko-insights-modal ul{padding-left:20px}
-#ko-insights-modal li{margin-bottom:6px;font-size:13px}
-#ko-insights-modal strong{color:#ba7517}
-#ko-insights-close{position:absolute;top:12px;right:14px;background:none;border:none;color:#b0a09a;font-size:24px;cursor:pointer;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center}
-#ko-insights-close:hover{background:rgba(192,57,43,0.15);color:#c0392b}
-#ko-insights-modal .header-note{background:rgba(67,160,71,0.08);border-left:3px solid #43a047;padding:12px 14px;margin-bottom:18px;font-size:12px;color:#b0a09a}
-#ko-insights-dontshow{display:flex;align-items:center;gap:8px;font-size:12px;color:#706056;margin-top:20px;padding-top:14px;border-top:0.5px solid rgba(192,57,43,0.18);cursor:pointer}
-#ko-insights-dontshow input{cursor:pointer}
-</style>
-<button id="ko-insights-trigger" type="button" aria-label="한국 RE 커뮤니티 인사이트 보기" style="display:none">🇰🇷 커뮤니티 인사이트</button>
-<div id="ko-insights-overlay" role="dialog" aria-modal="true" aria-labelledby="ko-insights-title">
-<div id="ko-insights-modal">
-<button id="ko-insights-close" type="button" aria-label="닫기">×</button>
-<div class="header-note">
-<strong style="color:#43a047">📅 한국 RE 커뮤니티 인사이트 (2026-06-06 업데이트):</strong> 한국 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9 6회 플레이 (Casual, Standard, Insanity NG+ 모두 포함) 후 작성. v1.02 + DLC 패치 후 검증.
-</div>
-<h2 id="ko-insights-title">한국 RE 커뮤니티의 관점</h2>
-<p>한국 RE 커뮤니티 (네이버 카페 + DCInside + Reddit 한국 사용자)에서 이 주제에 대한 주요 토론을 종합:</p>
-<ul>
-  <li><strong>한국 더빙 vs 영어 음성:</strong> 대부분 한국 플레이어는 영어 원본 + 한국어 자막 선호 (Cissy Jones, Lance Henriksen 원작 성우 보존)</li>
-  <li><strong>한국어 텍스트 번역 품질:</strong> v1.02 패치가 일부 번역 개선 (특히 Vivien 연구 노트). 캡콤 코리아 공식 번역.</li>
-  <li><strong>일본 vs 한국 출시:</strong> 동시 출시 (2026년 2월 27일). 일본 더빙 보다 한국어 자막 선호 비율 87%.</li>
-  <li><strong>한국 플레이어의 NG+ 통계:</strong> PSN 한국 서버 데이터 기준 47% 한국 플레이어가 NG+ 진입. 인새니티 NG+ 도달 6%.</li>
-</ul>
-<h2>한국어판 특이 사항</h2>
-<p>한국어판에서 영어판과 다른 점:</p>
-<ul>
-  <li><strong>고유 명사 한글 표기:</strong> Eveline → 에블린, Vivien → 비비안 등 (한국 RE 커뮤니티 표준 표기)</li>
-  <li><strong>기술 용어 영문 유지:</strong> Magnum, NG+, Insanity, Mortal Edge 등은 영문 그대로 (커뮤니티 통용)</li>
-  <li><strong>한국 PSN 트로피:</strong> 한국어 트로피 이름과 영어 이름이 다름 (예: "True Survivor" = "진정한 생존자")</li>
-  <li><strong>한국 RE 시리즈 역사 맥락:</strong> RE2 Remake (2019)가 한국에서 PS4 호환성으로 큰 인기 → RE9 RPD 콜백이 한국 베테랑에게 더 강하게 다가옴.</li>
-</ul>
-<h2>한국 플레이어용 추가 팁</h2>
-<p>한국 PS5 사용자를 위한 추가 고려사항:</p>
-<ul>
-  <li><strong>한국 PSN 가격 (출시):</strong> 79,800원 표준판, 99,800원 디럭스 에디션</li>
-  <li><strong>한국 RE 시리즈 인기 순위:</strong> 1위 RE4 Remake, 2위 RE2 Remake, 3위 RE Village (RE8), 4위 RE9 Requiem (2026년 5월 기준)</li>
-  <li><strong>한국 커뮤니티 별점:</strong> 네이버 게임 4.4/5, DCInside RE 갤러리 평균 9.1/10</li>
-  <li><strong>한국어 공식 패치 노트:</strong> v1.02 패치 변경 사항은 캡콤 코리아 공식 페이지 참조</li>
-</ul>
-<label id="ko-insights-dontshow"><input type="checkbox" id="ko-insights-dontshow-check"> 다음에 다시 표시하지 않기</label>
-</div>
+<!-- Korean translation pending modal -->
+<div id="ko-pending-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:9999;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px);">
+  <div style="max-width:460px;background:#1e1212;border:1px solid #c0392b;border-radius:8px;padding:28px 32px;color:#f0ebe8;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;text-align:center;box-shadow:0 12px 60px rgba(0,0,0,0.5);">
+    <div style="font-size:36px;margin-bottom:14px;">📝</div>
+    <h3 style="font-size:18px;font-weight:normal;margin:0 0 14px;color:#ba7517;">한국어판 준비 중입니다</h3>
+    <p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:0 0 8px;">이 페이지의 한국어 버전은 아직 준비 중입니다.</p>
+    <p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:0 0 20px;">작성자가 우선순위에 따라 빠르게 추가하고 있으니 잠시만 기다려 주세요.</p>
+    <p style="font-size:12px;color:#706056;margin:0 0 22px;line-height:1.6;">Korean version coming soon — author is translating priority pages first.</p>
+    <button onclick="document.getElementById('ko-pending-modal').style.display='none';" style="padding:10px 28px;background:#c0392b;color:#fff;border:none;border-radius:4px;font-family:inherit;font-size:14px;cursor:pointer;letter-spacing:0.02em;">확인 (Close)</button>
+    <div style="margin-top:18px;font-size:12px;color:#706056;">
+      <a href="/ko/index.html" style="color:#69a8e0;text-decoration:none;border-bottom:0.5px dotted;">한국어 홈으로 이동 →</a>
+    </div>
+  </div>
 </div>
 <script>
-(function(){
-  var KEY = 're9_ko_insights_v1';
-  var overlay = document.getElementById('ko-insights-overlay');
-  var trigger = document.getElementById('ko-insights-trigger');
-  var closeBtn = document.getElementById('ko-insights-close');
-  var checkbox = document.getElementById('ko-insights-dontshow-check');
-  if(!overlay) return;
-
-  function show(){ overlay.classList.add('open'); document.body.style.overflow='hidden'; }
-  function hide(){
-    overlay.classList.remove('open');
-    document.body.style.overflow='';
-    if(checkbox && checkbox.checked){
-      try{ localStorage.setItem(KEY, 'dismissed'); }catch(e){}
-      if(trigger) trigger.style.display='none';
-    } else {
-      if(trigger) trigger.style.display='inline-block';
-    }
+function showKoPendingModal(){
+  document.getElementById('ko-pending-modal').style.display='flex';
+}
+// Close on backdrop click
+document.addEventListener('DOMContentLoaded', function(){
+  var modal = document.getElementById('ko-pending-modal');
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal) modal.style.display = 'none';
+    });
   }
-
-  var dismissed = false;
-  try{ dismissed = localStorage.getItem(KEY) === 'dismissed'; }catch(e){}
-
-  if(!dismissed){
-    // Show modal after a short delay (so page renders first)
-    setTimeout(show, 600);
-    if(trigger) trigger.style.display='none';
-  } else {
-    if(trigger) trigger.style.display='inline-block';
-  }
-
-  if(trigger) trigger.addEventListener('click', show);
-  if(closeBtn) closeBtn.addEventListener('click', hide);
-  overlay.addEventListener('click', function(e){
-    if(e.target === overlay) hide();
-  });
+  // Close on Escape key
   document.addEventListener('keydown', function(e){
-    if(e.key === 'Escape' && overlay.classList.contains('open')) hide();
+    if(e.key === 'Escape' && modal && modal.style.display === 'flex'){
+      modal.style.display = 'none';
+    }
   });
-})();
+});
 </script>
 
+<script src="/cookie-consent.js" defer></script>
 </body>
 </html>

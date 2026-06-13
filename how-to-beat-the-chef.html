@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,9 +10,6 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<meta name="audience" content="Korean RE9 players">
-<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
-<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -24,10 +21,11 @@
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
 <meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
-<link rel="canonical" href="https://www.re9guide.it.com/ko/how-to-beat-the-chef.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/how-to-beat-the-chef.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/how-to-beat-the-chef.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-the-chef.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-the-chef.html" />
+
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -40,22 +38,22 @@
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#241410" />
 <meta name="msapplication-TileColor" content="#241410" />
-<meta property="og:title" content="더 셰프 보스 공략 — RE9 선택적 주방 보스" />
-<meta property="og:description" content="레지던트 이블 레퀴엠(RE9)에서 더 셰프 격파법 — 케어 센터 주방의 선택적 클리버 보스. 식료품실 문 열쇠, 헤드 조준 전략, 약초 보급함 보상까지." />
+<meta property="og:title" content="The Chef Boss Guide — RE9 Optional Kitchen Boss" />
+<meta property="og:description" content="Beat The Chef in RE9 — optional cleaver boss in the Care Center kitchen. Pantry Door Key, head-targeting strategy, herb cache reward." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.re9guide.it.com/how-to-beat-the-chef.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="re9guide.it.com - 레지던트 이블 레퀴엠 더 셰프 격파법 (RE9)" />
+<meta property="og:image:alt" content="re9guide.it.com - How to Beat The Chef in Resident Evil Requiem (RE9)" />
 <meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
 <meta property="og:site_name" content="re9guide.it.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="더 셰프 보스 공략 — RE9 선택적 주방 보스" />
-<meta name="twitter:description" content="레지던트 이블 레퀴엠(RE9)에서 더 셰프 격파법 — 케어 센터 주방의 선택적 클리버 보스. 식료품실 문 열쇠, 헤드 조준 전략, 약초 보급함 보상까지." />
-<title>더 셰프 보스 공략 — RE9 선택적 주방 보스</title>
-<meta name="description" content="레지던트 이블 레퀴엠(RE9)에서 더 셰프 격파법 — 케어 센터 주방의 선택적 클리버 보스. 식료품실 문 열쇠, 헤드 조준 전략, 약초 보급함 보상까지." />
-<meta name="keywords" content="더 셰프 RE9, 레지던트 이블 레퀴엠 선택 보스, 케어 센터 주방, 식료품실 문 열쇠, 클리버 보스" />
+<meta name="twitter:title" content="The Chef Boss Guide — RE9 Optional Kitchen Boss" />
+<meta name="twitter:description" content="Beat The Chef in RE9 — optional cleaver boss in the Care Center kitchen. Pantry Door Key, head-targeting strategy, herb cache reward." />
+<title>The Chef Boss Guide — RE9 Optional Kitchen Boss</title>
+<meta name="description" content="Beat The Chef in RE9 — optional cleaver boss in the Care Center kitchen. Pantry Door Key, head-targeting strategy, herb cache reward." />
+<meta name="keywords" content="The Chef RE9, Resident Evil Requiem optional boss, Care Center Kitchen, Pantry Door Key, cleaver boss" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -64,7 +62,7 @@
 --text:#f0ebe8;--text2:#b0a09a;--text3:#706056;
 --gold:#ba7517;--blue:#69a8e0;
 }
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
 .logo{font-size:15px;display:flex;align-items:center;gap:8px;}
@@ -131,8 +129,8 @@ p{font-size:14px;}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "레지던트 이블 레퀴엠에서 더 셰프 격파법 (RE9)",
-  "description": "레지던트 이블 레퀴엠(RE9)에서 선택적 클리버 요리사 더 셰프 격파법. 식료품실 문 열쇠 필요. 그레이스의 주방 조우 전술.",
+  "headline": "How to Beat The Chef in Resident Evil Requiem (RE9)",
+  "description": "How to beat The Chef, the optional cleaver-wielding cook in Resident Evil Requiem (RE9). Requires the Pantry Door Key. Tactics for Grace's kitchen encounter.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -160,9 +158,9 @@ p{font-size:14px;}
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/how-to-beat-the-chef.html"
   },
-  "inLanguage": "ko-KR",
+  "inLanguage": "en-US",
   "articleSection": "Boss Guides",
-  "keywords": "더 셰프 RE9, 레지던트 이블 레퀴엠 선택 보스, 케어 센터 주방, 식료품실 문 열쇠, 클리버 보스",
+  "keywords": "The Chef RE9, Resident Evil Requiem optional boss, Care Center Kitchen, Pantry Door Key, cleaver boss",
   "about": {
     "@type": "VideoGame",
     "@id": "https://www.re9guide.it.com/#game",
@@ -186,13 +184,13 @@ p{font-size:14px;}
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "보스",
+      "name": "Bosses",
       "item": "https://www.re9guide.it.com/bosses-hub.html"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "더 셰프"
+      "name": "The Chef"
     }
   ]
 }
@@ -201,8 +199,8 @@ p{font-size:14px;}
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "레지던트 이블 레퀴엠에서 더 셰프 격파법",
-  "description": "케어 센터 주방의 선택 보스 더 셰프를 처치해 식료품실의 약초와 탄약 보급함에 접근하세요.",
+  "name": "How to Beat The Chef in Resident Evil Requiem",
+  "description": "Defeat the optional Chef boss in the Care Center Kitchen to access the Pantry's herb and ammunition cache.",
   "image": "https://www.re9guide.it.com/og-image.png",
   "totalTime": "PT5M",
   "estimatedCost": {
@@ -476,31 +474,31 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "RE9 The Chef 공략 (선택 보스)",
-  "description": "트로피와 lore 해금을 위해 선택 보스 The Chef 처치.",
+  "name": "How to Beat The Chef in RE9 (Optional Boss)",
+  "description": "Defeat the optional boss The Chef for trophy and lore unlock.",
   "totalTime": "PT4M",
-  "inLanguage": "ko-KR",
+  "inLanguage": "en",
   "supply": [
     {
       "@type": "HowToSupply",
-      "name": "임의의 사이드암"
+      "name": "Any sidearm"
     },
     {
       "@type": "HowToSupply",
-      "name": "인내심"
+      "name": "Patience"
     },
     {
       "@type": "HowToSupply",
-      "name": "나이프"
+      "name": "Knife"
     }
   ],
   "step": [
     {
       "@type": "HowToStep",
       "position": 1,
-      "name": "챕터 4에서 발견",
-      "text": "Chef는 안뜰 뒤 주방에 숨음. 선택 인카운터.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-chef.html#step-1",
+      "name": "Find him in Chapter 4",
+      "text": "The Chef hides in the kitchen behind the courtyard. Optional encounter.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-chef.html#step-1",
       "tip": [
         {
           "@type": "HowToTip",
@@ -515,9 +513,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 2,
-      "name": "스테이크 줍지 말 것",
-      "text": "그는 고기 유인책 던짐. 먹으면 중독. 지나치기.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-chef.html#step-2",
+      "name": "Don't pick up the steak",
+      "text": "He throws meat lures. Eating them poisons you. Walk past.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-chef.html#step-2",
       "tip": [
         {
           "@type": "HowToTip",
@@ -532,9 +530,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 3,
-      "name": "페이즈 1: 칼 던지기 원거리",
-      "text": "Chef가 칼 던짐. 예측 가능한 호 대기, 옆으로 회피, 반격.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-chef.html#step-3",
+      "name": "Phase 1: ranged with knife throws",
+      "text": "Chef throws knives. Wait for the predictable arc, dodge sideways, fire back.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-chef.html#step-3",
       "tip": [
         {
           "@type": "HowToTip",
@@ -549,9 +547,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 4,
-      "name": "페이즈 2: 근접 돌진",
-      "text": "50% HP 후 식칼로 돌진. 옆으로 비키고 나이프 반격 찌르기 — 여기서 나이프 데미지 두 배.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-chef.html#step-4",
+      "name": "Phase 2: melee charge",
+      "text": "After 50% HP, he charges with cleaver. Sidestep into knife counter-stab — knife damage doubled here.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-chef.html#step-4",
       "tip": [
         {
           "@type": "HowToTip",
@@ -566,9 +564,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 5,
-      "name": "보상: \"The Chef\" 트로피 + 레시피 코덱스",
-      "text": "처치로 주방 lore 코덱스 해금 — RE2 팬을 위한 이스터에그.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-chef.html#step-5",
+      "name": "Reward: \"The Chef\" trophy + recipe codex",
+      "text": "Killing him unlocks an unused codex about kitchen lore — easter egg for RE2 fans.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-chef.html#step-5",
       "tip": [
         {
           "@type": "HowToTip",
@@ -584,14 +582,27 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 }
 </script>
 <style id="vintage-theme">
-/* Phase 83: Warm dark brown theme — replaces Phase 82 flat black */
+/* Phase 84: Warm brown + concentric ring texture (matches reference) */
 body {
   background-color: #241410;
   background-image:
-    radial-gradient(ellipse 70% 80% at 50% 0%, rgba(70, 30, 22, 0.45) 0%, transparent 65%),
-    radial-gradient(ellipse 60% 70% at 80% 100%, rgba(48, 22, 16, 0.6) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 60% at 0% 60%, rgba(58, 26, 18, 0.4) 0%, transparent 70%);
+    repeating-radial-gradient(
+      circle at 15% 85%,
+      rgba(60, 30, 22, 0.55) 0px,
+      rgba(60, 30, 22, 0.55) 1px,
+      transparent 1px,
+      transparent 90px
+    ),
+    repeating-radial-gradient(
+      circle at 85% 15%,
+      rgba(48, 22, 16, 0.45) 0px,
+      rgba(48, 22, 16, 0.45) 1px,
+      transparent 1px,
+      transparent 110px
+    ),
+    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
   background-attachment: fixed;
+  background-size: 100% 100%;
 }
 .container {
   background: transparent;
@@ -604,7 +615,7 @@ h1 {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .boss-stats table {
-  background: rgba(48, 22, 16, 0.55);
+  background: rgba(48, 22, 16, 0.7);
   border: 0.5px solid rgba(160, 130, 90, 0.18);
 }
 .boss-stats th {
@@ -620,119 +631,154 @@ h1 {
 <body>
 <div class="nav">
 <a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
-<a href="index.html">← 모든 공략</a>
+<a href="index.html">← All guides</a>
 
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="/how-to-beat-the-chef.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
-<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="/ko/how-to-beat-the-chef.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
 </span>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>더 셰프</span></div>
-<h1>더 셰프 격파법 — 레지던트 이블 레퀴엠 (RE9)</h1>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <a href="bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">BOSSES</a> / <span>HOW TO BEAT THE CHEF IN RESIDENT EVIL REQUIEM (RE9)</span></div>
+<h1>How to Beat The Chef in Resident Evil Requiem (RE9)</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
-<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
-<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">검증 버전: v1.02 · 마지막 검토: 2026년 5월 30일 · 영어 원본과 비교: 100% 내용 동등 + 한국어 컨텍스트 추가</p>
+<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested across the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
+<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 + DLC patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
 </div>
 
-<div class="meta">2026년 5월 게시 · <span>5 분 읽기</span> · 난이도: ★ 쉬움 · 스포일러 포함</div>
-<div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #5a8a4a;color:#5a8a4a;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ 스포일러 수위: 낮음</div>
-<p class="lead">더 셰프는 케어 센터 주방에 있는 선택적 미니 보스입니다 — 클리버를 휘두르는 변이된 요리사로, 약초와 탄약이 든 작은 보급함을 지키고 있습니다. 이 가이드는 식료품실 문 열쇠 요구 사항, 전투 전술, 그리고 다양한 플레이 유형에서 이 전투가 시간을 들일 가치가 있는지 다룹니다.</p>
+<div class="meta">PUBLISHED MAY 2026 · <span>5 MIN READ</span> · DIFFICULTY: ★ EASY · SPOILERS AHEAD</div>
+<div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #5a8a4a;color:#5a8a4a;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ SPOILER LEVEL: LOW</div>
+<p class="lead">The Chef is an optional mini-boss in the Care Center Kitchen — a mutated cook wielding a cleaver, guarding a small cache of herbs and ammunition. This guide covers the Pantry Door Key requirement, combat tactics, and whether the fight is worth your time on different run types.</p>
 
 <div class="warn-box gold">
-ℹ <strong>이 보스는 선택 사항입니다</strong> — 일반 플레이스루에서는 더 셰프를 완전히 건너뛸 수 있습니다. 케어 센터 주방을 조사해 식료품실 문 열쇠를 획득하기로 선택해야만 만나게 됩니다. 건너뛰면 약초와 탄약 보급함을 포함한 몇 가지 유용한 아이템을 놓치지만 스토리 진행은 막히지 않습니다.
+ℹ <strong>This is an optional boss</strong> — The Chef can be entirely skipped during a normal playthrough. He is encountered only if you choose to investigate the Care Center Kitchen and obtain the Pantry Door Key. Skipping costs you several useful items including herbs and an ammunition cache, but does not block story progression.
 </div>
 
 <div class="toc">
-<div class="toc-title">목차</div>
+<div class="toc-title">Table of contents</div>
 <ul>
-<li><a href="#overview">보스 개요: 더 셰프는 누구인가</a></li>
-<li><a href="#access">조우에 진입하는 방법</a></li>
-<li><a href="#strategy">전투 전략</a></li>
-<li><a href="#worth">더 셰프와 싸울 가치가 있나</a></li>
-<li><a href="#after">보상과 다음 단계</a></li>
+<li><a href="#overview">Boss overview: Who is The Chef?</a></li>
+<li><a href="#access">How to access the encounter</a></li>
+<li><a href="#strategy">Combat strategy</a></li>
+<li><a href="#worth">Is The Chef worth fighting?</a></li>
+<li><a href="#after">Rewards and what comes next</a></li>
 </ul>
 </div>
 
-<h2 id="overview">보스 개요: 더 셰프는 누구인가</h2>
-<p>더 셰프는 케어 센터 주방 안쪽에 숨겨진 선택적 미니 보스로, 그레이스 구간 초반에 마주칩니다. 거대한 클리버를 휘두르는 바이러스 변이 요리사로 묘사되며, 약초와 탄약을 포함한 유용한 아이템 보급함을 지키고 있습니다.</p>
-<p>메커니즘상 그는 근접 중심 조우입니다 — 근거리에서 빠른 클리버 휘두르기, 좁은 주방 환경에서 그레이스의 매우 제한적인 이동 옵션, 그리고 원거리 공격 없음. 위험-보상 계산은 단순합니다: 탄약을 쓰고 약간의 데미지를 감수하는 대가로 제작 재료와 케어 센터의 서사를 보완하는 사이드 노트를 얻는 것입니다.</p>
+<h2 id="overview">Boss overview: Who is The Chef?</h2>
+<p>The Chef is an optional mini-boss tucked away in the Care Center Kitchen, encountered early in Grace's section. He's described as a large, virus-mutated cook wielding a massive cleaver, and he guards a small cache of useful items including herbs and ammunition.</p>
+<p>Mechanically, he's a melee-focused encounter — fast cleaver swings at close range, very limited movement options for Grace in a tight kitchen environment, and no ranged attacks. The risk-reward calculation is straightforward: spend ammo and possibly take some damage in exchange for crafting supplies and a side note that fills out the Care Center's narrative.</p>
 
 <div class="boss-stats">
 <table>
-<tr><td>위치</td><td><strong>케어 센터 주방</strong></td></tr>
-<tr><td>플레이 캐릭터</td><td><strong>그레이스 애시크로프트</strong></td></tr>
-<tr><td>보스 유형</td><td><strong>선택</strong> — 스토리 필수 아님</td></tr>
-<tr><td>무기</td><td><strong>클리버</strong> — 근접 전용, 원거리 공격 없음</td></tr>
-<tr><td>필요 열쇠</td><td><strong>식료품실 문 열쇠</strong> — 케어 센터 인근에서 발견</td></tr>
-<tr><td>보상 유형</td><td>약초, 탄약, 서사 보완</td></tr>
+<tr><td>Location</td><td><strong>Care Center Kitchen</strong></td></tr>
+<tr><td>Playable as</td><td><strong>Grace Ashcroft</strong></td></tr>
+<tr><td>Boss type</td><td><strong>Optional</strong> — not story-mandatory</td></tr>
+<tr><td>Weapon</td><td><strong>Cleaver</strong> — melee only, no ranged attacks</td></tr>
+<tr><td>Key required</td><td><strong>Pantry Door Key</strong> — found nearby in the Care Center</td></tr>
+<tr><td>Reward type</td><td>Herbs, ammunition, narrative completion</td></tr>
 </table>
 </div>
 
-<h2 id="access">조우에 진입하는 방법</h2>
-<p>더 셰프는 케어 센터 주방의 잠긴 문 뒤에 봉인되어 있습니다. 조우를 발동시키려면 먼저 케어 센터의 다른 곳에 숨겨진 <strong>식료품실 문 열쇠</strong>를 획득해야 합니다.</p>
-<p>완벽주의 플레이를 하고 있다면 식료품실 문 열쇠는 케어 센터 100% 체크리스트의 일부입니다. 스피드런 중이라면 가장 먼저 건너뛸 항목 중 하나입니다 — 열쇠를 찾고 조우를 처리하는 시간 비용이 자원 획득량보다 큽니다.</p>
+<h2 id="access">How to access the encounter</h2>
+<p>The Chef is sealed behind a locked door in the Care Center Kitchen. To trigger the encounter, you must first obtain the <strong>Pantry Door Key</strong>, which is hidden elsewhere in the Care Center.</p>
+<p>If you're playing a completionist run, the Pantry Door Key is part of the Care Center 100% checklist. If you're speedrunning, this is one of the first items to skip — the time cost of finding the key and clearing the encounter outweighs the resource gain.</p>
 
-<h2 id="strategy">전투 전략</h2>
-<p>더 셰프는 좁은 공간에서 벌어지는 단순한 근접 전투입니다. 주방 구조는 이동을 제한하지만 적에게는 원거리 옵션이 없으므로 포지셔닝이 전투의 전부입니다.</p>
+<h2 id="strategy">Combat strategy</h2>
+<p>The Chef is a straightforward melee fight in a confined space. The kitchen layout limits movement, but the enemy has no ranged options, so positioning is the entire fight.</p>
 
-<h3>// 1단계 — 조리 아일랜드 반대편에 위치</h3>
-<p>주방에는 자연 장벽 역할을 하는 중앙 조리 아일랜드가 있습니다. 이를 활용하세요. 아일랜드를 자신과 더 셰프 사이에 두고 그가 한 방향으로 돌도록 강제한 뒤, 한쪽으로 방향을 잡았을 때 사격하세요.</p>
+<h3>// STEP 1 — STAY ON THE OPPOSITE SIDE OF THE PREP ISLAND</h3>
+<p>The kitchen has a central prep island that acts as a natural barrier. Use it. Keep the island between you and The Chef, force him to circle, and fire shots when he commits to one direction.</p>
 
-<h3>// 2단계 — 머리를 노릴 것</h3>
-<p><em>레지던트 이블 레퀴엠</em>의 대부분 변이 적과 마찬가지로 헤드샷이 가장 효율적인 데미지 유형입니다. S&S M232 핸드건 헤드샷은 경직을 유발하고, 머리에 맞은 샷건은 경직과 함께 매 발마다 큰 체력 덩어리를 깎아냅니다.</p>
+<h3>// STEP 2 — TARGET THE HEAD</h3>
+<p>Like most mutated enemies in <em>Resident Evil: Requiem</em>, headshots are the most efficient damage type. S&S M232 S&S M232 handgun headshots stagger him; W870 Police shotgun blasts at the head stagger and drop chunks of his health per shot.</p>
 
-<h3>// 3단계 — 클리버 돌진 회피</h3>
-<p>더 셰프의 주 공격은 앞으로의 클리버 돌진입니다 — 예고 동작이 분명하지만 매우 빠릅니다. 준비 동작 애니메이션이 보이면 뒤로가 아니라 옆으로 회피하세요. 뒤로 회피하면 그의 공격 콘 안에 머물게 됩니다.</p>
+<h3>// STEP 3 — DODGE THE CLEAVER LUNGE</h3>
+<p>The Chef's primary attack is a forward cleaver lunge — well-telegraphed but very fast. When you see the wind-up animation, dodge sideways, not backward. Backward dodges keep you in his hit cone.</p>
 
-<h3>// 탄약 권장 사항</h3>
-<p>이 전투는 케어 센터 후반 조우를 위한 연습으로 여기세요. Requiem 같은 프리미엄 탄약을 낭비하지 마세요 — S&S M232 핸드건 탄과 표준 샷건 셸로 충분합니다. 전투 전체에서 총 탄약 소모량은 8-12발이 적당합니다.</p>
+<h3>// AMMO RECOMMENDATIONS</h3>
+<p>Treat this fight as practice for the Care Center's later encounters. Don't burn premium ammunition like Requiem bullets — S&S M232 handgun rounds and standard W870 Police shotgun shells are sufficient. Total ammo expenditure should be 8-12 rounds across the fight.</p>
 
-<h2 id="worth">더 셰프와 싸울 가치가 있나</h2>
-<p>첫 플레이스루라면 <strong>예</strong> — 조우는 서사적으로 완결되어 있고 (케어 센터 붕괴에 맥락을 더함), 식료품실 안의 약초 보급함은 이후 다가올 플랜트 43 전투에 의미가 있습니다.</p>
-<p>플래티넘 런이라면 <strong>예</strong> — 모든 선택 조우 완료는 도감에 기여하고 사이드 콘텐츠 트로피를 뒷받침합니다.</p>
-<p>4시간 미만 스피드런이라면 <strong>아니오</strong> — 건너뛰세요. 절약하는 6-8분이 얻을 약초보다 더 가치 있습니다.</p>
+<h2 id="worth">Is The Chef worth fighting?</h2>
+<p>For a first-time playthrough, <strong>yes</strong> — the encounter is narratively complete (it adds context to the Care Center's collapse) and the herb cache inside the pantry is meaningful for the Plant 43 fight coming up later.</p>
+<p>For a Platinum run, <strong>yes</strong> — completing all optional encounters contributes to the bestiary and supports the side-content trophies.</p>
+<p>For a sub-4-hour speedrun, <strong>no</strong> — skip it. The 6-8 minutes you save are more valuable than the herbs you'd gain.</p>
 
-<h2 id="after">보상과 다음 단계</h2>
-<p>더 셰프를 처치하면 다음이 주어집니다:</p>
+<h2 id="after">Rewards and what comes next</h2>
+<p>Defeating The Chef grants:</p>
 <ul class="normal">
-<li>약초가 있는 식료품실 접근 (일반적으로 초록 약초 2-3개와 빨간 약초 1개)</li>
-<li>탄약 보급함 (S&S M232 핸드건과 샷건 탄)</li>
-<li>아웃브레이크 타임라인에서 케어 센터 주방의 역할을 설명하는 서사 문서</li>
-<li>선택 조우 도감 카운트 기여</li>
+<li>Access to the pantry with herbs (typically 2-3 green herbs and 1 red herb)</li>
+<li>Ammunition cache (S&S M232 handgun and W870 Police shotgun rounds)</li>
+<li>Narrative document explaining the Care Center kitchen's role in the outbreak timeline</li>
+<li>Contribution to the optional-encounter bestiary count</li>
 </ul>
-<p>약초가 특히 유용합니다 — 케어 센터 전반에서 초록과 빨간 약초를 비축하면, 데미지를 피하기 어려운 정수처리장의 더 걸 조우를 대비해 강화된 회복 아이템을 제작할 수 있습니다.</p>
+<p>The herbs are particularly useful — by stockpiling green and red herbs through the Care Center, you can craft enhanced healing items for the Water Treatment Facility encounter with The Girl, where damage is harder to avoid.</p>
 
 <div class="sources">
-<strong>이 가이드 검증에 사용된 출처:</strong><br>
+<strong>Sources used to verify this guide:</strong><br>
 
-<a href="https://gamerant.com/resident-evil-requiem-pantry-key-location-how-to-kill-chef/" target="_blank" rel="nofollow noopener">GameRant — 식료품실 문 열쇠 / 더 셰프 처치법</a>; <a href="https://gamerant.com/resident-evil-requiem-all-boss-fights-boss-list-re9/" target="_blank" rel="nofollow noopener">GameRant — 전체 보스 개요</a>; 사이트 작성자 Jachin의 PS5 / v1.02 검증 플레이스루
+<a href="https://gamerant.com/resident-evil-requiem-pantry-key-location-how-to-kill-chef/" target="_blank" rel="nofollow noopener">GameRant — Pantry Door Key / How to Kill the Chef</a>; <a href="https://gamerant.com/resident-evil-requiem-all-boss-fights-boss-list-re9/" target="_blank" rel="nofollow noopener">GameRant — All Bosses overview</a>; site author Jachin's verified playthrough on PS5 / v1.02
 
 </div>
 <div class="cta">
-<div class="cta-title">관련 공략</div>
-<a href="how-to-beat-victor-gideon.html">최종 보스: 빅터 기드온</a>
-<a href="all-bosses-ranked-by-difficulty.html">전체 보스 난이도 랭킹</a>
-<a href="/all-49-trophies-platinum-guide.html">플래티넘 트로피 공략</a>
-<a href="/bosses-hub.html">보스 전략 허브</a>
-  <a href="re9-all-endings-explained.html">8개 엔딩 모두 설명 (영어/한국어)</a>
-  <a href="re9-new-game-plus-complete-guide.html">NG+ 완전 해금 가이드 (영어/한국어)</a>
-  <a href="re9-difficulty-comparison-which-to-play.html">난이도 비교 (Standard vs Insanity) (영어/한국어)</a>
-  <a href="eveline-character-profile-complete.html">Eveline 완전 캐릭터 프로필 (영어/한국어)</a>
-  <a href="re9-hidden-easter-eggs-list.html">10가지 숨겨진 이스터에그 (영어/한국어)</a>
+<div class="cta-title">RELATED GUIDES</div>
+<a href="how-to-beat-victor-gideon.html">Final boss: Victor Gideon</a>
+<a href="all-bosses-ranked-by-difficulty.html">All bosses ranked</a>
+<a href="all-49-trophies-platinum-guide.html">Platinum trophy guide</a>
+<a href="bosses-hub.html">Boss strategies hub</a>
+  <a href="re9-all-endings-explained.html">All 8 endings explained (full spoilers)</a>
+  <a href="re9-new-game-plus-complete-guide.html">NG+ complete unlock guide</a>
+  <a href="re9-difficulty-comparison-which-to-play.html">Difficulty comparison (Standard vs Insanity)</a>
+  <a href="eveline-character-profile-complete.html">Eveline complete character profile</a>
+  <a href="re9-hidden-easter-eggs-list.html">10 hidden Easter eggs</a>
 </div>
 <div class="section-divider"></div>
-<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">이 가이드가 도움이 되셨나요? 잘못된 내용을 발견하셨다면 <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20how-to-beat-the-chef.html" style="color:var(--red);">알려 주세요</a>  — 커뮤니티 피드백을 바탕으로 매주 가이드를 업데이트합니다.</p>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? Found something inaccurate? <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20how-to-beat-the-chef.html" style="color:var(--red);">Let us know</a> — we update guides weekly based on community feedback.</p>
 <div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
-<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 가이드가 도움이 되셨다면, Ko-fi에서 더 많은 가이드 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
-<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">If this guide helped, consider supporting more guides like this on Ko-fi. <em style="color:#ba7517;font-style:normal;">Every little bit means the world.</em></p>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Support on Ko-fi</a>
 </div>
 <div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
-<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
-<p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
-<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+<p style="margin:5px 0;">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
+<p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">About</a> · <a href="contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Contact</a> · <a href="privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Privacy</a> · <a href="dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Spoilers</a></p>
+<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
 </div>
 </div>
+
+<!-- Korean translation pending modal -->
+<div id="ko-pending-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:9999;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px);">
+  <div style="max-width:460px;background:#1e1212;border:1px solid #c0392b;border-radius:8px;padding:28px 32px;color:#f0ebe8;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;text-align:center;box-shadow:0 12px 60px rgba(0,0,0,0.5);">
+    <div style="font-size:36px;margin-bottom:14px;">📝</div>
+    <h3 style="font-size:18px;font-weight:normal;margin:0 0 14px;color:#ba7517;">한국어판 준비 중입니다</h3>
+    <p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:0 0 8px;">이 페이지의 한국어 버전은 아직 준비 중입니다.</p>
+    <p style="font-size:14px;color:#b0a09a;line-height:1.7;margin:0 0 20px;">작성자가 우선순위에 따라 빠르게 추가하고 있으니 잠시만 기다려 주세요.</p>
+    <p style="font-size:12px;color:#706056;margin:0 0 22px;line-height:1.6;">Korean version coming soon — author is translating priority pages first.</p>
+    <button onclick="document.getElementById('ko-pending-modal').style.display='none';" style="padding:10px 28px;background:#c0392b;color:#fff;border:none;border-radius:4px;font-family:inherit;font-size:14px;cursor:pointer;letter-spacing:0.02em;">확인 (Close)</button>
+    <div style="margin-top:18px;font-size:12px;color:#706056;">
+      <a href="/ko/index.html" style="color:#69a8e0;text-decoration:none;border-bottom:0.5px dotted;">한국어 홈으로 이동 →</a>
+    </div>
+  </div>
+</div>
+<script>
+function showKoPendingModal(){
+  document.getElementById('ko-pending-modal').style.display='flex';
+}
+// Close on backdrop click
+document.addEventListener('DOMContentLoaded', function(){
+  var modal = document.getElementById('ko-pending-modal');
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal) modal.style.display = 'none';
+    });
+  }
+  // Close on Escape key
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal && modal.style.display === 'flex'){
+      modal.style.display = 'none';
+    }
+  });
+});
+</script>
 
 <script src="/cookie-consent.js" defer></script>
 </body>
