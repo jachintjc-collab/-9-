@@ -245,12 +245,28 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   .hero{padding:40px 14px 30px}
 }
 
-/* Phase 80: Goal-list collapse — show first 6, hide rest behind toggle */
-.goal-list.is-collapsible li.goal-hidden{display:none}
-.goal-list.is-collapsible.is-expanded li.goal-hidden{display:list-item}
-.goal-toggle{background:none;border:0.5px solid rgba(192,57,43,0.35);color:#ba7517;font-family:monospace;font-size:11px;padding:6px 12px;margin-top:10px;cursor:pointer;border-radius:3px;letter-spacing:0.04em;transition:all 0.15s;text-transform:uppercase}
-.goal-toggle:hover{background:rgba(192,57,43,0.1);border-color:#c0392b;color:#c0392b}
-.goal-toggle:focus{outline:1px solid #c0392b;outline-offset:2px}
+
+/* Phase 81: goal-list = fixed-height scroll container with custom scrollbar */
+.goal-list.is-scrollable{
+  max-height:260px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  overscroll-behavior:contain;
+  padding-right:8px;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(192,57,43,0.5) rgba(192,57,43,0.06);
+  scroll-behavior:smooth;
+  position:relative;
+  mask-image:linear-gradient(180deg,#000 0,#000 calc(100% - 28px),transparent 100%);
+  -webkit-mask-image:linear-gradient(180deg,#000 0,#000 calc(100% - 28px),transparent 100%);
+}
+.goal-list.is-scrollable::-webkit-scrollbar{width:6px}
+.goal-list.is-scrollable::-webkit-scrollbar-track{background:rgba(192,57,43,0.06);border-radius:3px}
+.goal-list.is-scrollable::-webkit-scrollbar-thumb{background:rgba(192,57,43,0.4);border-radius:3px}
+.goal-list.is-scrollable::-webkit-scrollbar-thumb:hover{background:#c0392b}
+.goal-list.is-scrollable.at-bottom{mask-image:none;-webkit-mask-image:none}
+.goal-scroll-hint{font-size:10px;font-family:monospace;color:#706056;letter-spacing:0.06em;margin-top:6px;padding-left:4px;text-transform:uppercase;opacity:0.7;display:flex;align-items:center;gap:6px}
+.goal-scroll-hint::before{content:"↓";color:#c0392b;font-size:11px}
 </style>
 <!-- ==== Homepage FAQPage schema (Phase 3) ==== -->
 <script type="application/ld+json">
@@ -1332,31 +1348,25 @@ h1 {
 </script>
 
 
+
 <script>
-/* Phase 80: Initialize goal-list collapse on each .goal-col (KO) */
+/* Phase 81: Apply is-scrollable to long goal-lists + show scroll hint (KO) */
 (function(){
   var THRESHOLD = 6;
   var lists = document.querySelectorAll('.goal-list');
   lists.forEach(function(ul){
     var items = ul.querySelectorAll(':scope > li');
     if(items.length <= THRESHOLD) return;
-    ul.classList.add('is-collapsible');
-    var hiddenCount = 0;
-    for(var i = THRESHOLD; i < items.length; i++){
-      items[i].classList.add('goal-hidden');
-      hiddenCount++;
-    }
-    var btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'goal-toggle';
-    btn.textContent = '+ ' + hiddenCount + '개 더 보기';
-    btn.setAttribute('aria-expanded', 'false');
-    btn.addEventListener('click', function(){
-      var expanded = ul.classList.toggle('is-expanded');
-      btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-      btn.textContent = expanded ? '− 접기' : '+ ' + hiddenCount + '개 더 보기';
+    ul.classList.add('is-scrollable');
+    var hint = document.createElement('div');
+    hint.className = 'goal-scroll-hint';
+    hint.textContent = (items.length - THRESHOLD) + '개 더 — 스크롤';
+    ul.parentNode.insertBefore(hint, ul.nextSibling);
+    ul.addEventListener('scroll', function(){
+      var atBottom = ul.scrollTop + ul.clientHeight >= ul.scrollHeight - 4;
+      ul.classList.toggle('at-bottom', atBottom);
+      hint.style.opacity = atBottom ? '0' : '0.7';
     });
-    ul.parentNode.insertBefore(btn, ul.nextSibling);
   });
 })();
 </script>
