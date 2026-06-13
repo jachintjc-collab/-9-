@@ -244,6 +244,13 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   .nav-inner-wrap{padding:0 14px}
   .hero{padding:40px 14px 30px}
 }
+
+/* Phase 80: Goal-list collapse — show first 6, hide rest behind toggle */
+.goal-list.is-collapsible li.goal-hidden{display:none}
+.goal-list.is-collapsible.is-expanded li.goal-hidden{display:list-item}
+.goal-toggle{background:none;border:0.5px solid rgba(192,57,43,0.35);color:#ba7517;font-family:monospace;font-size:11px;padding:6px 12px;margin-top:10px;cursor:pointer;border-radius:3px;letter-spacing:0.04em;transition:all 0.15s;text-transform:uppercase}
+.goal-toggle:hover{background:rgba(192,57,43,0.1);border-color:#c0392b;color:#c0392b}
+.goal-toggle:focus{outline:1px solid #c0392b;outline-offset:2px}
 </style>
 <!-- ==== Homepage FAQPage schema (Phase 3) ==== -->
 <script type="application/ld+json">
@@ -1321,6 +1328,36 @@ h1 {
   }
   document.querySelectorAll('.nav').forEach(function(n){ wrap(n, 'nav-inner-wrap'); });
   document.querySelectorAll('.hero').forEach(function(h){ wrap(h, 'hero-inner-wrap'); });
+})();
+</script>
+
+
+<script>
+/* Phase 80: Initialize goal-list collapse on each .goal-col (KO) */
+(function(){
+  var THRESHOLD = 6;
+  var lists = document.querySelectorAll('.goal-list');
+  lists.forEach(function(ul){
+    var items = ul.querySelectorAll(':scope > li');
+    if(items.length <= THRESHOLD) return;
+    ul.classList.add('is-collapsible');
+    var hiddenCount = 0;
+    for(var i = THRESHOLD; i < items.length; i++){
+      items[i].classList.add('goal-hidden');
+      hiddenCount++;
+    }
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'goal-toggle';
+    btn.textContent = '+ ' + hiddenCount + '개 더 보기';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.addEventListener('click', function(){
+      var expanded = ul.classList.toggle('is-expanded');
+      btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      btn.textContent = expanded ? '− 접기' : '+ ' + hiddenCount + '개 더 보기';
+    });
+    ul.parentNode.insertBefore(btn, ul.nextSibling);
+  });
 })();
 </script>
 
