@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RE9 Charm Loadout Optimizer — Best 4-Slot Charm Combo · RE9 Tools · re9guide.it.com</title>
+<meta name="description" content="Tell us your priorities (damage, survival, stealth, etc.) + encounter type; we'll recommend the optimal 4-charm loadout from 18 available.">
+<meta name="theme-color" content="#241410">
+<link rel="canonical" href="https://www.re9guide.it.com/charm-loadout-optimizer.html">
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/charm-loadout-optimizer.html">
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/charm-loadout-optimizer.html">
+<meta property="og:title" content="RE9 Charm Loadout Optimizer — Best 4-Slot Charm Combo">
+<style id="vintage-theme">
+body{background-color:#241410;background-image:repeating-radial-gradient(circle at 15% 85%,rgba(60,30,22,0.55) 0px,rgba(60,30,22,0.55) 1px,transparent 1px,transparent 90px),repeating-radial-gradient(circle at 85% 15%,rgba(48,22,16,0.45) 0px,rgba(48,22,16,0.45) 1px,transparent 1px,transparent 110px),radial-gradient(ellipse 80% 60% at 50% 30%,rgba(70,30,22,0.25) 0%,transparent 70%);background-attachment:fixed;background-size:100% 100%}
+body{font-family:-apple-system,'SF Pro Display',sans-serif;color:#f0ebe8;line-height:1.65;margin:0;padding:0}
+.wrap{max-width:880px;margin:0 auto;padding:30px 20px 60px}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:30px;color:#c0392b;margin:0 0 10px}
+.lead{font-size:14px;color:#b0a09a;margin:14px 0;max-width:760px}
+.fresh{background:rgba(67,160,71,0.1);border-left:3px solid #43a047;padding:12px 16px;margin:18px 0;font-size:12px;color:#b0a09a}
+.tool{background:rgba(46,26,20,0.65);border:0.5px solid rgba(192,57,43,0.2);border-radius:6px;padding:22px 24px;margin:24px 0}
+.tool h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;color:#ba7517;font-size:18px;margin:0 0 14px}
+button{background:#c0392b;border:none;color:#fff;padding:10px 18px;font-size:13px;font-family:monospace;letter-spacing:0.06em;text-transform:uppercase;border-radius:3px;cursor:pointer;font-weight:600}
+button:hover{background:#e54c3a}
+button.secondary{background:transparent;border:0.5px solid rgba(192,57,43,0.4);color:#ba7517}
+button.secondary:hover{background:rgba(192,57,43,0.1);color:#c0392b}
+select,input{background:#241410;border:0.5px solid rgba(192,57,43,0.35);color:#f0ebe8;padding:8px 12px;font-size:13px;font-family:monospace;border-radius:3px;min-width:160px}
+select:focus,input:focus{outline:1px solid #c0392b}
+label{font-size:11px;font-family:monospace;color:#ba7517;letter-spacing:0.06em;text-transform:uppercase;display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:8px 0}
+.result{margin-top:18px;padding:16px 18px;background:rgba(192,57,43,0.06);border-left:3px solid #c0392b;font-size:14px;border-radius:3px}
+.result h3{margin:0 0 10px;color:#c0392b;font-size:16px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:400}
+.result-item{padding:6px 0;border-bottom:0.5px dashed rgba(192,57,43,0.15);font-size:13px}
+.result-item:last-child{border-bottom:none}
+.result-item strong{color:#ba7517}
+.kbd{display:inline-block;padding:1px 7px;font-family:monospace;font-size:11px;background:rgba(192,57,43,0.18);color:#ba7517;border-radius:2px;margin:0 4px;border:0.5px solid rgba(192,57,43,0.35)}
+footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.3);font-size:11px;color:#706056;text-align:center}
+@media (max-width:600px){.wrap{padding:20px 14px 40px}h1{font-size:24px}.tool{padding:18px 16px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "RE9 Charm Loadout Optimizer", "applicationCategory": "GameUtility", "operatingSystem": "Browser", "url": "https://www.re9guide.it.com/charm-loadout-optimizer.html"}</script>
+</head>
+<body><div class="wrap">
+<h1>Charm Loadout Optimizer</h1>
+<p class="lead">Tell us your priorities (damage, survival, stealth, etc.) + encounter type; we'll recommend the optimal 4-charm loadout from 18 available.</p>
+<div class="fresh">📅 <strong>2026-06-13</strong> · Verified v1.02 + DLC · Runs entirely in your browser (no data sent)</div>
+
+<div class="tool">
+<h2>Optimize your charm loadout</h2>
+<p style="font-size:13px;color:#b0a09a;margin:0 0 14px">Tell us your priorities; we'll recommend a charm combo from 18 available. Equip slots = 4.</p>
+<label>Goal 1:
+  <select id="g1"><option>Maximum Damage</option><option>Survival</option><option>Stealth</option><option>Resource Saving</option><option>Speedrun Speed</option><option>Crit Focus</option></select>
+</label>
+<label>Goal 2:
+  <select id="g2"><option>Survival</option><option>Maximum Damage</option><option>Stealth</option><option>Resource Saving</option><option>Speedrun Speed</option><option>Crit Focus</option></select>
+</label>
+<label>Encounter type:
+  <select id="enc"><option>Boss fights</option><option>Crowd / mob</option><option>Stealth segments</option><option>Mixed</option></select>
+</label>
+<div style="margin:18px 0"><button id="opt" type="button">⚙️ Optimize</button></div>
+<div class="result" id="out" style="display:none"></div>
+</div>
+<script>
+var CHARMS={
+  "Iron Skin":{Survival:5,Resource:1,Damage:0,Stealth:0,Speed:0,Crit:0},
+  "Marksman's Eye":{Damage:4,Crit:5,Resource:0,Stealth:0,Speed:0,Survival:0},
+  "Crafter's Touch":{Resource:5,Damage:1,Stealth:0,Speed:0,Survival:1,Crit:0},
+  "Phoenix Down":{Survival:5,Damage:0,Stealth:0,Speed:0,Resource:0,Crit:0},
+  "Predator":{Stealth:4,Damage:3,Speed:1,Crit:2,Survival:0,Resource:0},
+  "Magnetic Hand":{Resource:4,Speed:2,Damage:0,Stealth:0,Survival:0,Crit:0},
+  "Whisper":{Stealth:5,Damage:0,Speed:1,Resource:0,Survival:0,Crit:0},
+  "Lucky Star":{Resource:3,Crit:2,Damage:1,Stealth:1,Speed:0,Survival:1},
+  "Infinite Magnum":{Damage:5,Crit:3,Resource:5,Stealth:0,Speed:0,Survival:0},
+  "Bloodhound":{Stealth:2,Speed:2,Resource:3,Damage:1,Crit:0,Survival:0},
+  "Survivor's Will":{Survival:4,Damage:1,Stealth:0,Speed:0,Resource:1,Crit:0},
+  "Quickstep":{Speed:5,Survival:2,Stealth:1,Damage:1,Resource:0,Crit:0},
+  "Knife Edge":{Damage:3,Crit:4,Stealth:1,Speed:1,Survival:0,Resource:0},
+  "Ammo Hoarder":{Resource:5,Damage:0,Stealth:0,Speed:0,Survival:1,Crit:0},
+  "Iron Will":{Survival:3,Damage:2,Stealth:0,Speed:0,Resource:1,Crit:0},
+  "Eye Spy":{Stealth:3,Crit:2,Speed:0,Damage:1,Survival:0,Resource:0},
+  "Vengeance":{Damage:4,Crit:3,Stealth:0,Speed:1,Survival:0,Resource:0},
+  "Endurance":{Survival:4,Speed:2,Resource:0,Damage:0,Stealth:0,Crit:0}
+};
+var GOAL2KEY={"Maximum Damage":"Damage","Survival":"Survival","Stealth":"Stealth","Resource Saving":"Resource","Speedrun Speed":"Speed","Crit Focus":"Crit"};
+function optimize(){
+  var g1=GOAL2KEY[document.getElementById('g1').value];
+  var g2=GOAL2KEY[document.getElementById('g2').value];
+  var enc=document.getElementById('enc').value;
+  // Score each charm: g1*2 + g2*1 + encounter bonus
+  var scored=Object.keys(CHARMS).map(function(name){
+    var c=CHARMS[name];
+    var s=c[g1]*2 + c[g2];
+    if(enc==='Boss fights') s+=c.Damage+c.Crit;
+    if(enc==='Crowd / mob') s+=c.Survival+c.Speed;
+    if(enc==='Stealth segments') s+=c.Stealth*2;
+    return {name:name,score:s,detail:c};
+  });
+  scored.sort(function(a,b){return b.score-a.score;});
+  var top4=scored.slice(0,4);
+  var out=document.getElementById('out');
+  out.style.display='block';
+  out.innerHTML='<h3>Recommended 4-charm loadout</h3>'+
+    top4.map(function(x,i){
+      return '<div class="result-item">'+
+        '<strong>Slot '+(i+1)+': '+x.name+'</strong> '+
+        '<span style="color:#706056;font-size:11px;font-family:monospace">(score '+x.score+')</span>'+
+        '<br><span style="color:#b0a09a;font-size:12px">Damage '+x.detail.Damage+'/5 · Survival '+x.detail.Survival+'/5 · Stealth '+x.detail.Stealth+'/5 · Speed '+x.detail.Speed+'/5</span>'+
+        '</div>';
+    }).join('')+
+    '<div class="result-item" style="margin-top:12px"><em style="color:#ba7517">Adjust goals + encounter type and re-run to compare loadouts.</em></div>';
+}
+document.getElementById('opt').addEventListener('click',optimize);
+</script>
+
+<footer>re9guide.it.com — fan-made guide, not affiliated with Capcom. Phase 87 interactive tool.</footer>
+</div></body></html>

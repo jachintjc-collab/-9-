@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RE9 Random Build Generator — Challenge Runs & Replay Variety · RE9 Tools · re9guide.it.com</title>
+<meta name="description" content="Roll a random weapon + charm combo with style hint for your next RE9 run. Save up to 10 favorites in your browser.">
+<meta name="theme-color" content="#241410">
+<link rel="canonical" href="https://www.re9guide.it.com/random-build-generator.html">
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/random-build-generator.html">
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/random-build-generator.html">
+<meta property="og:title" content="RE9 Random Build Generator — Challenge Runs & Replay Variety">
+<style id="vintage-theme">
+body{background-color:#241410;background-image:repeating-radial-gradient(circle at 15% 85%,rgba(60,30,22,0.55) 0px,rgba(60,30,22,0.55) 1px,transparent 1px,transparent 90px),repeating-radial-gradient(circle at 85% 15%,rgba(48,22,16,0.45) 0px,rgba(48,22,16,0.45) 1px,transparent 1px,transparent 110px),radial-gradient(ellipse 80% 60% at 50% 30%,rgba(70,30,22,0.25) 0%,transparent 70%);background-attachment:fixed;background-size:100% 100%}
+body{font-family:-apple-system,'SF Pro Display',sans-serif;color:#f0ebe8;line-height:1.65;margin:0;padding:0}
+.wrap{max-width:880px;margin:0 auto;padding:30px 20px 60px}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:30px;color:#c0392b;margin:0 0 10px}
+.lead{font-size:14px;color:#b0a09a;margin:14px 0;max-width:760px}
+.fresh{background:rgba(67,160,71,0.1);border-left:3px solid #43a047;padding:12px 16px;margin:18px 0;font-size:12px;color:#b0a09a}
+.tool{background:rgba(46,26,20,0.65);border:0.5px solid rgba(192,57,43,0.2);border-radius:6px;padding:22px 24px;margin:24px 0}
+.tool h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;color:#ba7517;font-size:18px;margin:0 0 14px}
+button{background:#c0392b;border:none;color:#fff;padding:10px 18px;font-size:13px;font-family:monospace;letter-spacing:0.06em;text-transform:uppercase;border-radius:3px;cursor:pointer;font-weight:600}
+button:hover{background:#e54c3a}
+button.secondary{background:transparent;border:0.5px solid rgba(192,57,43,0.4);color:#ba7517}
+button.secondary:hover{background:rgba(192,57,43,0.1);color:#c0392b}
+select,input{background:#241410;border:0.5px solid rgba(192,57,43,0.35);color:#f0ebe8;padding:8px 12px;font-size:13px;font-family:monospace;border-radius:3px;min-width:160px}
+select:focus,input:focus{outline:1px solid #c0392b}
+label{font-size:11px;font-family:monospace;color:#ba7517;letter-spacing:0.06em;text-transform:uppercase;display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:8px 0}
+.result{margin-top:18px;padding:16px 18px;background:rgba(192,57,43,0.06);border-left:3px solid #c0392b;font-size:14px;border-radius:3px}
+.result h3{margin:0 0 10px;color:#c0392b;font-size:16px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:400}
+.result-item{padding:6px 0;border-bottom:0.5px dashed rgba(192,57,43,0.15);font-size:13px}
+.result-item:last-child{border-bottom:none}
+.result-item strong{color:#ba7517}
+.kbd{display:inline-block;padding:1px 7px;font-family:monospace;font-size:11px;background:rgba(192,57,43,0.18);color:#ba7517;border-radius:2px;margin:0 4px;border:0.5px solid rgba(192,57,43,0.35)}
+footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.3);font-size:11px;color:#706056;text-align:center}
+@media (max-width:600px){.wrap{padding:20px 14px 40px}h1{font-size:24px}.tool{padding:18px 16px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "RE9 Random Build Generator", "applicationCategory": "GameUtility", "operatingSystem": "Browser", "url": "https://www.re9guide.it.com/random-build-generator.html"}</script>
+</head>
+<body><div class="wrap">
+<h1>Random Build Generator</h1>
+<p class="lead">Roll a random weapon + charm combo with style hint for your next RE9 run. Save up to 10 favorites in your browser.</p>
+<div class="fresh">📅 <strong>2026-06-13</strong> · Verified v1.02 + DLC · Runs entirely in your browser (no data sent)</div>
+
+<div class="tool">
+<h2>Generate a random RE9 build</h2>
+<p style="font-size:13px;color:#b0a09a;margin:0 0 14px">Press the button to roll a random weapon + charm combo. Use for replay variety, challenge runs, or breaking out of meta-build fatigue.</p>
+<label>Difficulty target:
+  <select id="diff"><option>Casual</option><option selected>Standard</option><option>Hardcore</option><option>Insanity</option></select>
+</label>
+<label>Style:
+  <select id="style"><option value="">Any</option><option>Stealth</option><option>Aggressive</option><option>Crit</option><option>Tank</option><option>Knife</option></select>
+</label>
+<div style="margin:18px 0"><button id="roll" type="button">🎲 Roll random build</button>
+<button id="save" type="button" class="secondary">Save build</button></div>
+<div class="result" id="out" style="display:none"></div>
+<div id="saves" style="margin-top:18px"></div>
+</div>
+<script>
+var WEAPONS={"S":["Requiem Revolver","S&S M232","Hand Cannon"],"A":["W870 Police","Mortal Edge","Clatter Carbine","990-TAC","Special Magnum (Leon)"],"B":["Silencer 9","Requiem Sniper","Match Pistol","Grenade Launcher"]};
+var CHARMS=["Iron Skin","Marksman's Eye","Crafter's Touch","Phoenix Down","Predator","Magnetic Hand","Whisper","Lucky Star","Infinite Magnum","Bloodhound","Survivor's Will","Quickstep","Knife Edge","Ammo Hoarder"];
+var TIPS={Stealth:"Silenced + Whisper charm. Avoid open spaces.",Aggressive:"High DPS + Quickstep. Engage head-on.",Crit:"Marksman's Eye + Magnum. Aim for headshots.",Tank:"Iron Skin + close-range shotgun. Soak hits.",Knife:"Mortal Edge + Quickstep. Master parries."};
+function pick(arr){return arr[Math.floor(Math.random()*arr.length)];}
+function roll(){
+  var d=document.getElementById('diff').value;
+  var st=document.getElementById('style').value;
+  var tier = d==='Insanity' ? 'S' : (d==='Hardcore' ? (Math.random()<0.6?'S':'A') : pick(['A','A','B','B','S']));
+  var primary=pick(WEAPONS[tier]);
+  var secondary=pick(WEAPONS[pick(['A','B'])].filter(function(x){return x!==primary;}));
+  var charms=[];
+  while(charms.length<4){var c=pick(CHARMS);if(charms.indexOf(c)<0)charms.push(c);}
+  var styleText = st || pick(['Stealth','Aggressive','Crit','Tank','Knife']);
+  var out=document.getElementById('out');
+  out.style.display='block';
+  out.innerHTML='<h3>Your Random Build</h3>'+
+    '<div class="result-item"><strong>Primary:</strong> '+primary+' <span style="color:#706056;font-size:11px;font-family:monospace">('+tier+'-tier)</span></div>'+
+    '<div class="result-item"><strong>Secondary:</strong> '+secondary+'</div>'+
+    '<div class="result-item"><strong>Charms (4):</strong> '+charms.join(' · ')+'</div>'+
+    '<div class="result-item"><strong>Style:</strong> '+styleText+' — <em style="color:#b0a09a">'+(TIPS[styleText]||'')+'</em></div>'+
+    '<div class="result-item"><strong>Difficulty:</strong> '+d+'</div>';
+  window._lastBuild = {primary:primary,secondary:secondary,charms:charms,style:styleText,diff:d,time:Date.now()};
+}
+function save(){
+  if(!window._lastBuild){alert('Roll a build first');return;}
+  var list=JSON.parse(localStorage.getItem('re9_builds')||'[]');
+  list.unshift(window._lastBuild);
+  list=list.slice(0,10);
+  localStorage.setItem('re9_builds',JSON.stringify(list));
+  renderSaves();
+}
+function renderSaves(){
+  var list=JSON.parse(localStorage.getItem('re9_builds')||'[]');
+  if(!list.length){document.getElementById('saves').innerHTML='';return;}
+  document.getElementById('saves').innerHTML='<h2 style="font-family:Cormorant Garamond,Georgia,serif;color:#ba7517;font-size:16px;font-weight:400;margin-top:24px">Saved builds (last 10)</h2>'+
+    list.map(function(b,i){return '<div class="result-item">#'+(i+1)+' <strong>'+b.primary+'</strong> · '+b.style+' · '+b.diff+' <button type="button" class="secondary" style="font-size:10px;padding:3px 8px;margin-left:8px" onclick="del('+i+')">×</button></div>';}).join('');
+}
+function del(i){
+  var list=JSON.parse(localStorage.getItem('re9_builds')||'[]');
+  list.splice(i,1);
+  localStorage.setItem('re9_builds',JSON.stringify(list));
+  renderSaves();
+}
+document.getElementById('roll').addEventListener('click',roll);
+document.getElementById('save').addEventListener('click',save);
+renderSaves();
+</script>
+
+<footer>re9guide.it.com — fan-made guide, not affiliated with Capcom. Phase 87 interactive tool.</footer>
+</div></body></html>

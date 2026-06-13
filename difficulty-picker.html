@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RE9 Difficulty Picker Quiz — Which Difficulty Is Right for You? · RE9 Tools · re9guide.it.com</title>
+<meta name="description" content="Answer 4 quick questions; we recommend Casual, Standard, Hardcore, or Insanity based on RE experience + your goals.">
+<meta name="theme-color" content="#241410">
+<link rel="canonical" href="https://www.re9guide.it.com/difficulty-picker.html">
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/difficulty-picker.html">
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/difficulty-picker.html">
+<meta property="og:title" content="RE9 Difficulty Picker Quiz — Which Difficulty Is Right for You?">
+<style id="vintage-theme">
+body{background-color:#241410;background-image:repeating-radial-gradient(circle at 15% 85%,rgba(60,30,22,0.55) 0px,rgba(60,30,22,0.55) 1px,transparent 1px,transparent 90px),repeating-radial-gradient(circle at 85% 15%,rgba(48,22,16,0.45) 0px,rgba(48,22,16,0.45) 1px,transparent 1px,transparent 110px),radial-gradient(ellipse 80% 60% at 50% 30%,rgba(70,30,22,0.25) 0%,transparent 70%);background-attachment:fixed;background-size:100% 100%}
+body{font-family:-apple-system,'SF Pro Display',sans-serif;color:#f0ebe8;line-height:1.65;margin:0;padding:0}
+.wrap{max-width:880px;margin:0 auto;padding:30px 20px 60px}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:30px;color:#c0392b;margin:0 0 10px}
+.lead{font-size:14px;color:#b0a09a;margin:14px 0;max-width:760px}
+.fresh{background:rgba(67,160,71,0.1);border-left:3px solid #43a047;padding:12px 16px;margin:18px 0;font-size:12px;color:#b0a09a}
+.tool{background:rgba(46,26,20,0.65);border:0.5px solid rgba(192,57,43,0.2);border-radius:6px;padding:22px 24px;margin:24px 0}
+.tool h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;color:#ba7517;font-size:18px;margin:0 0 14px}
+button{background:#c0392b;border:none;color:#fff;padding:10px 18px;font-size:13px;font-family:monospace;letter-spacing:0.06em;text-transform:uppercase;border-radius:3px;cursor:pointer;font-weight:600}
+button:hover{background:#e54c3a}
+button.secondary{background:transparent;border:0.5px solid rgba(192,57,43,0.4);color:#ba7517}
+button.secondary:hover{background:rgba(192,57,43,0.1);color:#c0392b}
+select,input{background:#241410;border:0.5px solid rgba(192,57,43,0.35);color:#f0ebe8;padding:8px 12px;font-size:13px;font-family:monospace;border-radius:3px;min-width:160px}
+select:focus,input:focus{outline:1px solid #c0392b}
+label{font-size:11px;font-family:monospace;color:#ba7517;letter-spacing:0.06em;text-transform:uppercase;display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:8px 0}
+.result{margin-top:18px;padding:16px 18px;background:rgba(192,57,43,0.06);border-left:3px solid #c0392b;font-size:14px;border-radius:3px}
+.result h3{margin:0 0 10px;color:#c0392b;font-size:16px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:400}
+.result-item{padding:6px 0;border-bottom:0.5px dashed rgba(192,57,43,0.15);font-size:13px}
+.result-item:last-child{border-bottom:none}
+.result-item strong{color:#ba7517}
+.kbd{display:inline-block;padding:1px 7px;font-family:monospace;font-size:11px;background:rgba(192,57,43,0.18);color:#ba7517;border-radius:2px;margin:0 4px;border:0.5px solid rgba(192,57,43,0.35)}
+footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.3);font-size:11px;color:#706056;text-align:center}
+@media (max-width:600px){.wrap{padding:20px 14px 40px}h1{font-size:24px}.tool{padding:18px 16px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "RE9 Difficulty Picker", "applicationCategory": "GameUtility", "operatingSystem": "Browser", "url": "https://www.re9guide.it.com/difficulty-picker.html"}</script>
+</head>
+<body><div class="wrap">
+<h1>RE9 Difficulty Picker</h1>
+<p class="lead">Answer 4 quick questions; we recommend Casual, Standard, Hardcore, or Insanity based on RE experience + your goals.</p>
+<div class="fresh">📅 <strong>2026-06-13</strong> · Verified v1.02 + DLC · Runs entirely in your browser (no data sent)</div>
+
+<div class="tool">
+<h2>Which RE9 difficulty should you play?</h2>
+<p style="font-size:13px;color:#b0a09a;margin:0 0 14px">Answer 4 questions; get a personalized recommendation backed by 6+ playthroughs.</p>
+<div id="quiz"></div>
+<div style="margin:18px 0"><button id="result-btn" type="button">📊 See recommendation</button></div>
+<div class="result" id="out" style="display:none"></div>
+</div>
+<script>
+var Q=[
+  {q:"How many RE games have you finished?",opts:[{t:"0-1",v:0},{t:"2-4",v:1},{t:"5-7",v:2},{t:"8+",v:3}]},
+  {q:"What's your priority?",opts:[{t:"Story enjoyment",v:0},{t:"Standard challenge",v:1},{t:"Hard challenge",v:2},{t:"Maximum challenge",v:3}]},
+  {q:"How comfortable are you with frame-perfect dodges?",opts:[{t:"Not at all",v:0},{t:"Some practice",v:1},{t:"Comfortable",v:2},{t:"Expert / FromSoft fan",v:3}]},
+  {q:"How much time do you have for this run?",opts:[{t:"<8 hours (one weekend)",v:0},{t:"10-15h",v:1},{t:"20-30h",v:2},{t:"40+ hours (multi-week)",v:3}]}
+];
+function renderQuiz(){
+  document.getElementById('quiz').innerHTML=Q.map(function(item,i){
+    return '<div style="margin:14px 0"><strong style="color:#ba7517;font-size:13px">Q'+(i+1)+': '+item.q+'</strong><div style="margin-top:6px">'+
+      item.opts.map(function(o,j){
+        return '<label style="display:inline-flex;align-items:center;margin-right:14px;gap:4px;cursor:pointer"><input type="radio" name="q'+i+'" value="'+o.v+'" '+(j===0?'checked':'')+'> <span style="color:#f0ebe8;font-size:13px;font-family:inherit;text-transform:none;letter-spacing:0">'+o.t+'</span></label>';
+      }).join('')+'</div></div>';
+  }).join('');
+}
+function score(){
+  var total=0;
+  for(var i=0;i<Q.length;i++){
+    var v=document.querySelector('input[name="q'+i+'"]:checked');
+    if(v) total+=+v.value;
+  }
+  return total;
+}
+function showResult(){
+  var s=score();
+  var rec, why, links;
+  if(s<=3){
+    rec='Casual';why='Story-first. Enemies do less damage, more checkpoints. Best for first-timers or focusing on lore.';
+    links='re9-what-difficulty-should-i-play.html|how-to-unlock-insanity-difficulty.html';
+  }else if(s<=6){
+    rec='Standard';why='The intended experience. Balanced damage + scarcity. 9-12h playthrough.';
+    links='beginner-guide-resident-evil-requiem.html|re9-first-hour-essential-tips.html';
+  }else if(s<=9){
+    rec='Hardcore';why='Reduced healing, tougher enemies. NG+ recommended after a Standard run for best practice.';
+    links='re9-ng-plus-what-carries-over.html|best-weapons-tier-list.html';
+  }else{
+    rec='Insanity';why='Frame-perfect dodges or die. Only ~6% of players complete this. Master Standard + Hardcore first.';
+    links='how-to-unlock-insanity-difficulty.html|insanity-frame-perfect-matrix.html';
+  }
+  var linkArr=links.split('|');
+  document.getElementById('out').style.display='block';
+  document.getElementById('out').innerHTML='<h3>Recommended: '+rec+'</h3>'+
+    '<div class="result-item">'+why+'</div>'+
+    '<div class="result-item" style="margin-top:10px"><strong>Recommended next reads:</strong> '+
+    linkArr.map(function(l){return '<a href="'+l+'" style="color:#ba7517;text-decoration:none;margin-right:12px">'+l.replace('.html','').replace(/-/g,' ')+'</a>';}).join('')+
+    '</div>';
+}
+document.getElementById('result-btn').addEventListener('click',showResult);
+renderQuiz();
+</script>
+
+<footer>re9guide.it.com — fan-made guide, not affiliated with Capcom. Phase 87 interactive tool.</footer>
+</div></body></html>

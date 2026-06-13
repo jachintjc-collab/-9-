@@ -3274,5 +3274,271 @@
   "desc": "RE9 렌우드 호텔 완벽 공략 — 그레이스의 도입 챕터. 아이템 위치, 첫 세이브룸, 선택 금고 #1, 칼 전투 튜토리얼, 로즈 힐 전환까지.",
   "lang": "ko",
   "category": "Walkthrough"
+ },
+ {
+  "title": "RE9 Weapons Database — All 17 Weapons Searchable",
+  "url": "/weapons-db.html",
+  "desc": "Sortable database of all 17 RE9 weapons with tier, category, damage, ammo data.",
+  "lang": "en",
+  "category": "Database"
+ },
+ {
+  "title": "RE9 Enemies Database — Threat / Area / Weakness",
+  "url": "/enemies-db.html",
+  "desc": "Searchable enemy + boss database with threat tier and weakness.",
+  "lang": "en",
+  "category": "Database"
+ },
+ {
+  "title": "RE9 Chapters Database — All 8 Chapters",
+  "url": "/chapters-db.html",
+  "desc": "Quick reference for chapter duration, area, bosses, key events.",
+  "lang": "en",
+  "category": "Database"
+ },
+ {
+  "title": "RE9 Random Build Generator",
+  "url": "/random-build-generator.html",
+  "desc": "Roll random weapon + charm builds for replay variety.",
+  "lang": "en",
+  "category": "Tool"
+ },
+ {
+  "title": "RE9 Charm Loadout Optimizer",
+  "url": "/charm-loadout-optimizer.html",
+  "desc": "Optimal 4-charm combo recommendation based on your priorities.",
+  "lang": "en",
+  "category": "Tool"
+ },
+ {
+  "title": "RE9 Speedrun Splits Tracker",
+  "url": "/speedrun-splits-tracker.html",
+  "desc": "Sub-4h route splits live timer with delta vs target.",
+  "lang": "en",
+  "category": "Tool"
+ },
+ {
+  "title": "RE9 Resource Calculator",
+  "url": "/resource-calculator.html",
+  "desc": "Crafting yield calculator from materials on hand.",
+  "lang": "en",
+  "category": "Tool"
+ },
+ {
+  "title": "RE9 Difficulty Picker Quiz",
+  "url": "/difficulty-picker.html",
+  "desc": "4-question quiz to recommend Casual/Standard/Hardcore/Insanity.",
+  "lang": "en",
+  "category": "Tool"
+ },
+ {
+  "title": "RE9 vs Dead Space Remake 2023",
+  "url": "/re9-vs-dead-space-remake-2023.html",
+  "desc": "How RE9 compares to Dead Space Remake 2023 — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Dead Space 2 2011",
+  "url": "/re9-vs-dead-space-2-2011.html",
+  "desc": "How RE9 compares to Dead Space 2 2011 — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Dead Space 3 2013",
+  "url": "/re9-vs-dead-space-3-2013.html",
+  "desc": "How RE9 compares to Dead Space 3 2013 — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Alan Wake 2",
+  "url": "/re9-vs-alan-wake-2.html",
+  "desc": "How RE9 compares to Alan Wake 2 — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Silent Hill 2 Remake",
+  "url": "/re9-vs-silent-hill-2-remake.html",
+  "desc": "How RE9 compares to Silent Hill 2 Remake — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Silent Hill 4 The Room",
+  "url": "/re9-vs-silent-hill-4-the-room.html",
+  "desc": "How RE9 compares to Silent Hill 4 The Room — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Silent Hill Short Message",
+  "url": "/re9-vs-silent-hill-short-message.html",
+  "desc": "How RE9 compares to Silent Hill Short Message — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Callisto Protocol",
+  "url": "/re9-vs-callisto-protocol.html",
+  "desc": "How RE9 compares to Callisto Protocol — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Outlast Trials",
+  "url": "/re9-vs-outlast-trials.html",
+  "desc": "How RE9 compares to Outlast Trials — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Outlast 2",
+  "url": "/re9-vs-outlast-2.html",
+  "desc": "How RE9 compares to Outlast 2 — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Until Dawn",
+  "url": "/re9-vs-until-dawn.html",
+  "desc": "How RE9 compares to Until Dawn — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs The Quarry",
+  "url": "/re9-vs-the-quarry.html",
+  "desc": "How RE9 compares to The Quarry — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Fnaf Help Wanted 2",
+  "url": "/re9-vs-fnaf-help-wanted-2.html",
+  "desc": "How RE9 compares to Fnaf Help Wanted 2 — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Visage",
+  "url": "/re9-vs-visage.html",
+  "desc": "How RE9 compares to Visage — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Layers Of Fear 2023",
+  "url": "/re9-vs-layers-of-fear-2023.html",
+  "desc": "How RE9 compares to Layers Of Fear 2023 — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Soma",
+  "url": "/re9-vs-soma.html",
+  "desc": "How RE9 compares to Soma — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Amnesia The Bunker",
+  "url": "/re9-vs-amnesia-the-bunker.html",
+  "desc": "How RE9 compares to Amnesia The Bunker — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Devotion",
+  "url": "/re9-vs-devotion.html",
+  "desc": "How RE9 compares to Devotion — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Detention",
+  "url": "/re9-vs-detention.html",
+  "desc": "How RE9 compares to Detention — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Cry Of Fear",
+  "url": "/re9-vs-cry-of-fear.html",
+  "desc": "How RE9 compares to Cry Of Fear — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs The Medium",
+  "url": "/re9-vs-the-medium.html",
+  "desc": "How RE9 compares to The Medium — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Observer",
+  "url": "/re9-vs-observer.html",
+  "desc": "How RE9 compares to Observer — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Phasmophobia",
+  "url": "/re9-vs-phasmophobia.html",
+  "desc": "How RE9 compares to Phasmophobia — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Lethal Company",
+  "url": "/re9-vs-lethal-company.html",
+  "desc": "How RE9 compares to Lethal Company — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Madison",
+  "url": "/re9-vs-madison.html",
+  "desc": "How RE9 compares to Madison — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Crow Country",
+  "url": "/re9-vs-crow-country.html",
+  "desc": "How RE9 compares to Crow Country — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Tormented Souls",
+  "url": "/re9-vs-tormented-souls.html",
+  "desc": "How RE9 compares to Tormented Souls — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Signalis",
+  "url": "/re9-vs-signalis.html",
+  "desc": "How RE9 compares to Signalis — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Mortuary Assistant",
+  "url": "/re9-vs-mortuary-assistant.html",
+  "desc": "How RE9 compares to Mortuary Assistant — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
+ },
+ {
+  "title": "RE9 vs Resident Evil 4 Remake",
+  "url": "/re9-vs-resident-evil-4-remake.html",
+  "desc": "How RE9 compares to Resident Evil 4 Remake — survival horror comparison.",
+  "lang": "en",
+  "category": "Comparison"
  }
 ]

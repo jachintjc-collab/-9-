@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RE9 Enemies Database — Threat / Area / Weakness Filter · RE9 Database · re9guide.it.com</title>
+<meta name="description" content="RE9 enemies database. All 20 enemies + bosses searchable by threat, area, weakness. Click bosses for full Insanity strategies.">
+<meta name="theme-color" content="#241410">
+<link rel="canonical" href="https://www.re9guide.it.com/enemies-db.html">
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/enemies-db.html">
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/enemies-db.html">
+<meta property="og:title" content="RE9 Enemies Database — Threat / Area / Weakness Filter">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.re9guide.it.com/enemies-db.html">
+<style id="vintage-theme">
+body{background-color:#241410;background-image:repeating-radial-gradient(circle at 15% 85%,rgba(60,30,22,0.55) 0px,rgba(60,30,22,0.55) 1px,transparent 1px,transparent 90px),repeating-radial-gradient(circle at 85% 15%,rgba(48,22,16,0.45) 0px,rgba(48,22,16,0.45) 1px,transparent 1px,transparent 110px),radial-gradient(ellipse 80% 60% at 50% 30%,rgba(70,30,22,0.25) 0%,transparent 70%);background-attachment:fixed;background-size:100% 100%}
+/* Phase 86: Database hub */
+body{font-family:-apple-system,'SF Pro Display',sans-serif;color:#f0ebe8;line-height:1.6;margin:0;padding:0}
+.wrap{max-width:1180px;margin:0 auto;padding:30px 20px 60px}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:34px;color:#c0392b;margin:0 0 10px;letter-spacing:0.5px}
+.lead{font-size:14px;color:#b0a09a;margin:14px 0;max-width:780px}
+.fresh{background:rgba(67,160,71,0.1);border-left:3px solid #43a047;padding:12px 16px;margin:18px 0;font-size:12px;color:#b0a09a}
+.controls{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 16px;padding:14px 16px;background:rgba(46,26,20,0.7);border:0.5px solid rgba(192,57,43,0.2);border-radius:6px}
+.controls label{font-size:11px;font-family:monospace;color:#ba7517;letter-spacing:0.06em;text-transform:uppercase;display:flex;align-items:center;gap:6px}
+.controls input,.controls select{background:#241410;border:0.5px solid rgba(192,57,43,0.35);color:#f0ebe8;padding:6px 10px;font-size:13px;font-family:monospace;border-radius:3px;min-width:130px}
+.controls input:focus,.controls select:focus{outline:1px solid #c0392b}
+.stats{font-size:11px;color:#706056;font-family:monospace;letter-spacing:0.04em;margin:8px 0 14px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:rgba(192,57,43,0.18);color:#c0392b;text-align:left;padding:10px 12px;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid rgba(192,57,43,0.4);cursor:pointer;user-select:none;font-family:monospace}
+th:hover{background:rgba(192,57,43,0.25)}
+th .arrow{font-size:9px;margin-left:4px;opacity:0.6}
+td{padding:12px;border-bottom:0.5px solid rgba(192,57,43,0.12);vertical-align:top}
+tr:hover td{background:rgba(192,57,43,0.05)}
+.tier{display:inline-block;padding:2px 9px;border-radius:3px;font-size:11px;font-weight:700;font-family:monospace;letter-spacing:0.08em;text-transform:uppercase}
+.tier-S{background:#c8323d;color:#fff}
+.tier-A{background:#ba7517;color:#fff}
+.tier-B{background:#7d9c40;color:#fff}
+.tier-C{background:#5a8a9a;color:#fff}
+.tier-D{background:#706056;color:#fff}
+.threat-Low,.threat-Common{color:#7d9c40;font-weight:600}
+.threat-Medium{color:#ba7517;font-weight:600}
+.threat-High{color:#c8323d;font-weight:600}
+.threat-Insane{color:#e54c3a;font-weight:700;text-shadow:0 0 8px rgba(229,76,58,0.4)}
+.cell-link a{color:#ba7517;text-decoration:none}
+.cell-link a:hover{color:#c0392b;text-decoration:underline}
+.damage-bar{display:inline-flex;gap:2px}
+.damage-bar span{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,0.1)}
+.damage-bar span.on{background:#c0392b}
+footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.3);font-size:11px;color:#706056;text-align:center}
+@media (max-width:700px){
+  table{font-size:11px}
+  th,td{padding:6px 8px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "RE9 Enemies Database",
+  "description": "All 20 enemies in Resident Evil Requiem with threat tier, area, and weakness data.",
+  "creator": {
+    "@type": "Person",
+    "name": "Jachin"
+  },
+  "datePublished": "2026-06-13",
+  "url": "https://www.re9guide.it.com/enemies-db.html"
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<h1>RE9 Enemies Database — 20 Enemies + Bosses</h1>
+<p class="lead">Searchable enemy database with threat tier, primary area, and combat weakness. Filter by threat level or category. Click for bosses with deep guides.</p>
+<div class="fresh">📅 <strong>Last reviewed by Jachin: 2026-06-13</strong> · Verified v1.02 + DLC patch · Search/sort/filter enabled</div>
+
+<div class="controls">
+<label>Search<input id="q" placeholder="Name / area / weakness…" type="text"></label>
+<label>Threat<select id="threat"><option value="">All</option><option>Low</option><option>Medium</option><option>High</option><option>Insane</option></select></label>
+<label>Category<select id="cat"><option value="">All</option></select></label>
+<label>Area<select id="area"><option value="">All</option></select></label>
+</div>
+<div class="stats" id="stats">Loading…</div>
+<table id="tbl"><thead><tr>
+<th data-key="name">Enemy<span class="arrow">↕</span></th>
+<th data-key="threat">Threat<span class="arrow">↕</span></th>
+<th data-key="category">Category<span class="arrow">↕</span></th>
+<th data-key="area">Area<span class="arrow">↕</span></th>
+<th data-key="weakness">Weakness<span class="arrow">↕</span></th>
+</tr></thead><tbody id="tbody"></tbody></table>
+<script>
+var DATA = [{"name": "Standard Zombie", "slug": "", "category": "Common", "threat": "Low", "area": "All", "weakness": "Headshot"}, {"name": "Crawler Zombie", "slug": "", "category": "Common", "threat": "Low", "area": "Wrenwood, RPD", "weakness": "Headshot + Stomp"}, {"name": "Blister Borne", "slug": "", "category": "Mutated", "threat": "Medium", "area": "Care Center", "weakness": "Fire / Flame Rounds"}, {"name": "Mr. X (T-103)", "slug": "", "category": "Boss", "threat": "High", "area": "RPD", "weakness": "Grenade Launcher Stagger"}, {"name": "Plant 43", "slug": "plant-43-origin-biology", "category": "Boss", "threat": "High", "area": "Greenhouse", "weakness": "Fire"}, {"name": "Vivien (Stage 1)", "slug": "", "category": "Boss", "threat": "High", "area": "Care Center", "weakness": "Crit Headshot"}, {"name": "Vivien (Stage 2 Mutated)", "slug": "", "category": "Boss", "threat": "Insane", "area": "Care Center", "weakness": "Mortal Edge Parry"}, {"name": "Father Riley", "slug": "", "category": "Boss", "threat": "High", "area": "Chapel", "weakness": "Magnum to Chest"}, {"name": "Nurse Kim", "slug": "", "category": "Boss", "threat": "Medium", "area": "Basement", "weakness": "Stun Gun + Knife"}, {"name": "Officer Hayes", "slug": "", "category": "Boss (Human)", "threat": "Medium", "area": "Courtyard", "weakness": "Cover + Patient Aim"}, {"name": "Wrenwood Wraith", "slug": "", "category": "Boss", "threat": "High", "area": "Wrenwood Hotel", "weakness": "Speed Phase Read"}, {"name": "Rhodes Hill Doctor", "slug": "", "category": "Boss", "threat": "Medium", "area": "Rhodes Hill Manor", "weakness": "Knife Counter"}, {"name": "Titan Spinner", "slug": "", "category": "Mini-boss", "threat": "High", "area": "Raccoon City", "weakness": "Rocket Launcher (NG+)"}, {"name": "Commander X1", "slug": "the-commander-identity-decoded", "category": "Boss", "threat": "Insane", "area": "ARK", "weakness": "Multi-phase frame reads"}, {"name": "ARK Test Subject A", "slug": "", "category": "Elite", "threat": "High", "area": "ARK Lower", "weakness": "Headshot + Reload"}, {"name": "ARK Test Subject B", "slug": "", "category": "Elite", "threat": "High", "area": "ARK Lower", "weakness": "Stun + Crit"}, {"name": "Eveline (Final)", "slug": "", "category": "Final Boss", "threat": "Insane", "area": "ARK Core", "weakness": "Phase 4 grapple counter"}, {"name": "Hunter (NG+)", "slug": "", "category": "Elite (NG+)", "threat": "High", "area": "Multiple", "weakness": "Magnum + Distance"}, {"name": "Lickerling", "slug": "", "category": "Elite", "threat": "Medium", "area": "RPD", "weakness": "Silenced Pistol Headshot"}, {"name": "Bridges Lily (Mutated)", "slug": "marcus-halverson-lily-tragedy", "category": "Story Boss", "threat": "Medium", "area": "Wrenwood", "weakness": "Cannot kill — flee"}];
+var sortKey='threat', sortDir=1;
+var threatOrder={Low:0,Medium:1,High:2,Insane:3,Common:0};
+function render(){
+  var q=document.getElementById('q').value.toLowerCase().trim();
+  var t=document.getElementById('threat').value;
+  var c=document.getElementById('cat').value;
+  var a=document.getElementById('area').value;
+  var f=DATA.filter(function(x){
+    if(t && x.threat!==t) return false;
+    if(c && x.category!==c) return false;
+    if(a && x.area.indexOf(a)<0) return false;
+    if(q){var s=(x.name+' '+x.area+' '+x.weakness+' '+x.category).toLowerCase();return s.indexOf(q)>=0;}
+    return true;
+  });
+  f.sort(function(x,y){
+    var xv=x[sortKey], yv=y[sortKey];
+    if(sortKey==='threat'){xv=threatOrder[xv]||0;yv=threatOrder[yv]||0;}
+    return xv<yv?-sortDir : xv>yv?sortDir : 0;
+  });
+  var tb=document.getElementById('tbody');
+  tb.innerHTML=f.map(function(x){
+    var link = x.slug ? '<a href="'+x.slug+'.html">'+x.name+'</a>' : x.name;
+    return '<tr><td class="cell-link">'+link+'</td>'+
+      '<td><span class="threat-'+x.threat+'">'+x.threat+'</span></td>'+
+      '<td>'+x.category+'</td>'+
+      '<td>'+x.area+'</td>'+
+      '<td>'+x.weakness+'</td></tr>';
+  }).join('');
+  document.getElementById('stats').textContent = f.length+' of '+DATA.length+' enemies shown';
+}
+var cats=Array.from(new Set(DATA.map(function(x){return x.category;}))).sort();
+cats.forEach(function(c){var o=document.createElement('option');o.textContent=c;document.getElementById('cat').appendChild(o);});
+var areas=Array.from(new Set(DATA.map(function(x){return x.area.split(',')[0].trim();}))).sort();
+areas.forEach(function(a){var o=document.createElement('option');o.textContent=a;document.getElementById('area').appendChild(o);});
+['q','threat','cat','area'].forEach(function(id){document.getElementById(id).addEventListener('input',render);});
+document.querySelectorAll('th[data-key]').forEach(function(th){
+  th.addEventListener('click',function(){
+    var k=th.dataset.key;
+    if(k===sortKey) sortDir=-sortDir; else {sortKey=k;sortDir=1;}
+    render();
+  });
+});
+render();
+</script>
+
+<footer>
+re9guide.it.com — fan-made guide, not affiliated with Capcom. Phase 86 database hub.
+</footer>
+</div>
+</body>
+</html>
