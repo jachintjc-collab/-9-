@@ -594,7 +594,7 @@ h1 {
 #ko-insights-dontshow{display:flex;align-items:center;gap:8px;font-size:12px;color:#706056;margin-top:20px;padding-top:14px;border-top:0.5px solid rgba(192,57,43,0.18);cursor:pointer}
 #ko-insights-dontshow input{cursor:pointer}
 </style>
-<button id="ko-insights-trigger" type="button" aria-label="한국 RE 커뮤니티 인사이트 보기" style="display:none">🇰🇷 커뮤니티 인사이트</button>
+<button id="ko-insights-trigger" type="button" aria-label="한국 RE 커뮤니티 인사이트 보기">🇰🇷 커뮤니티 인사이트</button>
 <div id="ko-insights-overlay" role="dialog" aria-modal="true" aria-labelledby="ko-insights-title">
 <div id="ko-insights-modal">
 <button id="ko-insights-close" type="button" aria-label="닫기">×</button>
@@ -625,7 +625,7 @@ h1 {
   <li><strong>한국 커뮤니티 별점:</strong> 네이버 게임 4.4/5, DCInside RE 갤러리 평균 9.1/10</li>
   <li><strong>한국어 공식 패치 노트:</strong> v1.02 패치 변경 사항은 캡콤 코리아 공식 페이지 참조</li>
 </ul>
-<label id="ko-insights-dontshow"><input type="checkbox" id="ko-insights-dontshow-check"> 다음에 다시 표시하지 않기</label>
+
 </div>
 </div>
 <script>
@@ -641,24 +641,12 @@ h1 {
   function hide(){
     overlay.classList.remove('open');
     document.body.style.overflow='';
-    if(checkbox && checkbox.checked){
-      try{ localStorage.setItem(KEY, 'dismissed'); }catch(e){}
-      if(trigger) trigger.style.display='none';
-    } else {
-      if(trigger) trigger.style.display='inline-block';
-    }
-  }
-
-  var dismissed = false;
-  try{ dismissed = localStorage.getItem(KEY) === 'dismissed'; }catch(e){}
-
-  if(!dismissed){
-    // Show modal after a short delay (so page renders first)
-    setTimeout(show, 600);
-    if(trigger) trigger.style.display='none';
-  } else {
+    // Phase 86fix: Always keep trigger button visible
     if(trigger) trigger.style.display='inline-block';
   }
+
+  // Phase 86fix: NO auto-show. Trigger button is the only opener.
+  if(trigger) trigger.style.display='inline-block';
 
   if(trigger) trigger.addEventListener('click', show);
   if(closeBtn) closeBtn.addEventListener('click', hide);
