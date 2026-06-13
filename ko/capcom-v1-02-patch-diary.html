@@ -421,37 +421,7 @@ h1 {
 
 <div class="meta">2026년 5월 14일 게시 · 8분 읽기 · <span>연재 시리즈</span></div>
 <p class="lead">캡콤의 패치 노트는 보통 짧고 종종 모호합니다. 이 다이어리는 레지던트 이블: 레퀴엠 v1.02에서 <em>실제로</em> 무엇이 바뀌었는지를 추적합니다 — PS5와 Steam에서 보스전, 금고 코드, 인새니티 콘텐츠를 다시 검증하고, 추적 중이지만 아직 직접 확인하지 않은 커뮤니티 보고 조정점까지 다룹니다. 모든 캡콤 패치를 다룰 연재 시리즈의 첫 회입니다.</p>
-<div style="background:rgba(67,160,71,0.08);border-left:3px solid #43a047;padding:14px 18px;margin:24px 0;font-size:13px;">
-<strong style="color:#43a047;">📅 한국 RE 커뮤니티 인사이트 (2026-06-06 업데이트):</strong> 한국 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9 6회 플레이 (Casual, Standard, Insanity NG+ 모두 포함) 후 작성. v1.02 + DLC 패치 후 검증.
-</div>
 
-<h2>한국 RE 커뮤니티의 관점</h2>
-<p>한국 RE 커뮤니티 (네이버 카페 + DCInside + Reddit 한국 사용자)에서 이 주제에 대한 주요 토론을 종합:</p>
-
-<ul>
-  <li><strong>한국 더빙 vs 영어 음성:</strong> 대부분 한국 플레이어는 영어 원본 + 한국어 자막 선호 (Cissy Jones, Lance Henriksen 원작 성우 보존)</li>
-  <li><strong>한국어 텍스트 번역 품질:</strong> v1.02 패치가 일부 번역 개선 (특히 Vivien 연구 노트). 캡콤 코리아 공식 번역.</li>
-  <li><strong>일본 vs 한국 출시:</strong> 동시 출시 (2026년 2월 27일). 일본 더빙 보다 한국어 자막 선호 비율 87%.</li>
-  <li><strong>한국 플레이어의 NG+ 통계:</strong> PSN 한국 서버 데이터 기준 47% 한국 플레이어가 NG+ 진입. 인새니티 NG+ 도달 6%.</li>
-</ul>
-
-<h2>한국어판 특이 사항</h2>
-<p>한국어판에서 영어판과 다른 점:</p>
-<ul>
-  <li><strong>고유 명사 한글 표기:</strong> Eveline → 에블린, Vivien → 비비안 등 (한국 RE 커뮤니티 표준 표기)</li>
-  <li><strong>기술 용어 영문 유지:</strong> Magnum, NG+, Insanity, Mortal Edge 등은 영문 그대로 (커뮤니티 통용)</li>
-  <li><strong>한국 PSN 트로피:</strong> 한국어 트로피 이름과 영어 이름이 다름 (예: "True Survivor" = "진정한 생존자")</li>
-  <li><strong>한국 RE 시리즈 역사 맥락:</strong> RE2 Remake (2019)가 한국에서 PS4 호환성으로 큰 인기 → RE9 RPD 콜백이 한국 베테랑에게 더 강하게 다가옴.</li>
-</ul>
-
-<h2>한국 플레이어용 추가 팁</h2>
-<p>한국 PS5 사용자를 위한 추가 고려사항:</p>
-<ul>
-  <li><strong>한국 PSN 가격 (출시):</strong> 79,800원 표준판, 99,800원 디럭스 에디션</li>
-  <li><strong>한국 RE 시리즈 인기 순위:</strong> 1위 RE4 Remake, 2위 RE2 Remake, 3위 RE Village (RE8), 4위 RE9 Requiem (2026년 5월 기준)</li>
-  <li><strong>한국 커뮤니티 별점:</strong> 네이버 게임 4.4/5, DCInside RE 갤러리 평균 9.1/10</li>
-  <li><strong>한국어 공식 패치 노트:</strong> v1.02 패치 변경 사항은 캡콤 코리아 공식 페이지 참조</li>
-</ul>
 
 
 <div class="warn-box gold">
@@ -590,5 +560,101 @@ h1 {
 </div>
 
 <script src="/cookie-consent.js" defer></script>
+
+<!-- Phase 78: Korean Community Insights as dismissible modal -->
+<style id="ko-insights-modal-style">
+#ko-insights-trigger{position:fixed;bottom:18px;right:18px;z-index:998;background:#43a047;color:#fff;border:none;padding:10px 16px;font-size:13px;font-family:inherit;border-radius:24px;cursor:pointer;box-shadow:0 4px 16px rgba(67,160,71,0.4);font-weight:600;letter-spacing:0.3px}
+#ko-insights-trigger:hover{background:#388e3c;transform:translateY(-1px);box-shadow:0 6px 20px rgba(67,160,71,0.5)}
+#ko-insights-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.78);backdrop-filter:blur(4px);z-index:999;display:none;align-items:center;justify-content:center;padding:20px;box-sizing:border-box}
+#ko-insights-overlay.open{display:flex}
+#ko-insights-modal{background:#1a0f0a;border:1px solid rgba(67,160,71,0.4);border-radius:8px;max-width:680px;width:100%;max-height:88vh;overflow-y:auto;padding:28px 32px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.8);font-family:-apple-system,sans-serif;color:#f0ebe8;line-height:1.7;font-size:13px}
+#ko-insights-modal h2{font-family:'Cormorant Garamond',Georgia,serif;color:#43a047;font-weight:400;font-size:20px;margin:20px 0 10px}
+#ko-insights-modal h2:first-of-type{margin-top:0}
+#ko-insights-modal ul{padding-left:20px}
+#ko-insights-modal li{margin-bottom:6px;font-size:13px}
+#ko-insights-modal strong{color:#ba7517}
+#ko-insights-close{position:absolute;top:12px;right:14px;background:none;border:none;color:#b0a09a;font-size:24px;cursor:pointer;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+#ko-insights-close:hover{background:rgba(192,57,43,0.15);color:#c0392b}
+#ko-insights-modal .header-note{background:rgba(67,160,71,0.08);border-left:3px solid #43a047;padding:12px 14px;margin-bottom:18px;font-size:12px;color:#b0a09a}
+#ko-insights-dontshow{display:flex;align-items:center;gap:8px;font-size:12px;color:#706056;margin-top:20px;padding-top:14px;border-top:0.5px solid rgba(192,57,43,0.18);cursor:pointer}
+#ko-insights-dontshow input{cursor:pointer}
+</style>
+<button id="ko-insights-trigger" type="button" aria-label="한국 RE 커뮤니티 인사이트 보기" style="display:none">🇰🇷 커뮤니티 인사이트</button>
+<div id="ko-insights-overlay" role="dialog" aria-modal="true" aria-labelledby="ko-insights-title">
+<div id="ko-insights-modal">
+<button id="ko-insights-close" type="button" aria-label="닫기">×</button>
+<div class="header-note">
+<strong style="color:#43a047">📅 한국 RE 커뮤니티 인사이트 (2026-06-06 업데이트):</strong> 한국 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9 6회 플레이 (Casual, Standard, Insanity NG+ 모두 포함) 후 작성. v1.02 + DLC 패치 후 검증.
+</div>
+<h2 id="ko-insights-title">한국 RE 커뮤니티의 관점</h2>
+<p>한국 RE 커뮤니티 (네이버 카페 + DCInside + Reddit 한국 사용자)에서 이 주제에 대한 주요 토론을 종합:</p>
+<ul>
+  <li><strong>한국 더빙 vs 영어 음성:</strong> 대부분 한국 플레이어는 영어 원본 + 한국어 자막 선호 (Cissy Jones, Lance Henriksen 원작 성우 보존)</li>
+  <li><strong>한국어 텍스트 번역 품질:</strong> v1.02 패치가 일부 번역 개선 (특히 Vivien 연구 노트). 캡콤 코리아 공식 번역.</li>
+  <li><strong>일본 vs 한국 출시:</strong> 동시 출시 (2026년 2월 27일). 일본 더빙 보다 한국어 자막 선호 비율 87%.</li>
+  <li><strong>한국 플레이어의 NG+ 통계:</strong> PSN 한국 서버 데이터 기준 47% 한국 플레이어가 NG+ 진입. 인새니티 NG+ 도달 6%.</li>
+</ul>
+<h2>한국어판 특이 사항</h2>
+<p>한국어판에서 영어판과 다른 점:</p>
+<ul>
+  <li><strong>고유 명사 한글 표기:</strong> Eveline → 에블린, Vivien → 비비안 등 (한국 RE 커뮤니티 표준 표기)</li>
+  <li><strong>기술 용어 영문 유지:</strong> Magnum, NG+, Insanity, Mortal Edge 등은 영문 그대로 (커뮤니티 통용)</li>
+  <li><strong>한국 PSN 트로피:</strong> 한국어 트로피 이름과 영어 이름이 다름 (예: "True Survivor" = "진정한 생존자")</li>
+  <li><strong>한국 RE 시리즈 역사 맥락:</strong> RE2 Remake (2019)가 한국에서 PS4 호환성으로 큰 인기 → RE9 RPD 콜백이 한국 베테랑에게 더 강하게 다가옴.</li>
+</ul>
+<h2>한국 플레이어용 추가 팁</h2>
+<p>한국 PS5 사용자를 위한 추가 고려사항:</p>
+<ul>
+  <li><strong>한국 PSN 가격 (출시):</strong> 79,800원 표준판, 99,800원 디럭스 에디션</li>
+  <li><strong>한국 RE 시리즈 인기 순위:</strong> 1위 RE4 Remake, 2위 RE2 Remake, 3위 RE Village (RE8), 4위 RE9 Requiem (2026년 5월 기준)</li>
+  <li><strong>한국 커뮤니티 별점:</strong> 네이버 게임 4.4/5, DCInside RE 갤러리 평균 9.1/10</li>
+  <li><strong>한국어 공식 패치 노트:</strong> v1.02 패치 변경 사항은 캡콤 코리아 공식 페이지 참조</li>
+</ul>
+<label id="ko-insights-dontshow"><input type="checkbox" id="ko-insights-dontshow-check"> 다음에 다시 표시하지 않기</label>
+</div>
+</div>
+<script>
+(function(){
+  var KEY = 're9_ko_insights_v1';
+  var overlay = document.getElementById('ko-insights-overlay');
+  var trigger = document.getElementById('ko-insights-trigger');
+  var closeBtn = document.getElementById('ko-insights-close');
+  var checkbox = document.getElementById('ko-insights-dontshow-check');
+  if(!overlay) return;
+
+  function show(){ overlay.classList.add('open'); document.body.style.overflow='hidden'; }
+  function hide(){
+    overlay.classList.remove('open');
+    document.body.style.overflow='';
+    if(checkbox && checkbox.checked){
+      try{ localStorage.setItem(KEY, 'dismissed'); }catch(e){}
+      if(trigger) trigger.style.display='none';
+    } else {
+      if(trigger) trigger.style.display='inline-block';
+    }
+  }
+
+  var dismissed = false;
+  try{ dismissed = localStorage.getItem(KEY) === 'dismissed'; }catch(e){}
+
+  if(!dismissed){
+    // Show modal after a short delay (so page renders first)
+    setTimeout(show, 600);
+    if(trigger) trigger.style.display='none';
+  } else {
+    if(trigger) trigger.style.display='inline-block';
+  }
+
+  if(trigger) trigger.addEventListener('click', show);
+  if(closeBtn) closeBtn.addEventListener('click', hide);
+  overlay.addEventListener('click', function(e){
+    if(e.target === overlay) hide();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && overlay.classList.contains('open')) hide();
+  });
+})();
+</script>
+
 </body>
 </html>

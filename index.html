@@ -225,6 +225,11 @@ body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-heigh
 .section{padding:30px 16px;}
 .feedback-title{font-size:18px;}
 }
+
+/* Phase 78: Hero content width unified to match .container (980px) */
+.hero{padding:60px 0 50px}
+.hero > *{max-width:980px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px;box-sizing:border-box}
+@media (max-width:600px){.hero > *{padding-left:16px;padding-right:16px}}
 </style>
 <!-- ==== Homepage FAQPage schema (Phase 3) ==== -->
 <script type="application/ld+json">
