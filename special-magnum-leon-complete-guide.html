@@ -420,14 +420,27 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 }
 </script>
 <style id="vintage-theme">
-/* Phase 83: Warm dark brown theme — replaces Phase 82 flat black */
+/* Phase 84: Warm brown + concentric ring texture (matches reference) */
 body {
   background-color: #241410;
   background-image:
-    radial-gradient(ellipse 70% 80% at 50% 0%, rgba(70, 30, 22, 0.45) 0%, transparent 65%),
-    radial-gradient(ellipse 60% 70% at 80% 100%, rgba(48, 22, 16, 0.6) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 60% at 0% 60%, rgba(58, 26, 18, 0.4) 0%, transparent 70%);
+    repeating-radial-gradient(
+      circle at 15% 85%,
+      rgba(60, 30, 22, 0.55) 0px,
+      rgba(60, 30, 22, 0.55) 1px,
+      transparent 1px,
+      transparent 90px
+    ),
+    repeating-radial-gradient(
+      circle at 85% 15%,
+      rgba(48, 22, 16, 0.45) 0px,
+      rgba(48, 22, 16, 0.45) 1px,
+      transparent 1px,
+      transparent 110px
+    ),
+    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
   background-attachment: fixed;
+  background-size: 100% 100%;
 }
 .container {
   background: transparent;
@@ -440,7 +453,7 @@ h1 {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .boss-stats table {
-  background: rgba(48, 22, 16, 0.55);
+  background: rgba(48, 22, 16, 0.7);
   border: 0.5px solid rgba(160, 130, 90, 0.18);
 }
 .boss-stats th {
