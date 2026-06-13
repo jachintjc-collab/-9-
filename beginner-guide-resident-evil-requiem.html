@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,9 +10,6 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<meta name="audience" content="Korean RE9 players">
-<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
-<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -23,10 +20,11 @@
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
-<link rel="canonical" href="https://www.re9guide.it.com/ko/beginner-guide-resident-evil-requiem.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/beginner-guide-resident-evil-requiem.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/beginner-guide-resident-evil-requiem.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/beginner-guide-resident-evil-requiem.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/beginner-guide-resident-evil-requiem.html" />
+
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -40,10 +38,10 @@
 <meta name="theme-color" content="#241410" />
 <meta name="msapplication-TileColor" content="#241410" />
 <!-- Open Graph + Twitter Card -->
-<meta property="og:title" content="RE9 입문자 공략 — 레지던트 이블 레퀴엠 필수 팁" />
-<meta property="og:description" content="레지던트 이블 레퀴엠(RE9) 입문자 공략. 난이도 선택, 그레이스 vs 레온, RE2 리메이크 배경, Steam Deck 설정, 스토리 길이까지." />
+<meta property="og:title" content="RE9 Beginner's Guide — Resident Evil Requiem Tips" />
+<meta property="og:description" content="Beginner's guide to Resident Evil Requiem (RE9). Difficulty selection, Grace vs Leon, RE2 Remake context, Steam Deck settings, story length." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.re9guide.it.com/ko/beginner-guide-resident-evil-requiem.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/beginner-guide-resident-evil-requiem.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -51,15 +49,15 @@
 <meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
 <meta property="og:site_name" content="re9guide.it.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="RE9 입문자 공략 — 레지던트 이블 레퀴엠 필수 팁" />
-<meta name="twitter:description" content="레지던트 이블 레퀴엠(RE9) 입문자 공략. 난이도 선택, 그레이스 vs 레온, RE2 리메이크 배경, Steam Deck 설정, 스토리 길이까지." />
-<title>RE9 입문자 공략 — 레지던트 이블 레퀴엠 필수 팁</title>
-<meta name="description" content="레지던트 이블 레퀴엠(RE9) 입문자 공략. 난이도 선택, 그레이스 vs 레온, RE2 리메이크 배경, Steam Deck 설정, 스토리 길이까지." />
-<meta name="keywords" content="레지던트 이블 레퀴엠 입문자 공략, RE9 팁, 시작 방법, 난이도, 세이브 전략, 패리, 탄약 제작" />
+<meta name="twitter:title" content="RE9 Beginner's Guide — Resident Evil Requiem Tips" />
+<meta name="twitter:description" content="Beginner's guide to Resident Evil Requiem (RE9). Difficulty selection, Grace vs Leon, RE2 Remake context, Steam Deck settings, story length." />
+<title>RE9 Beginner's Guide — Resident Evil Requiem Tips</title>
+<meta name="description" content="Beginner's guide to Resident Evil Requiem (RE9). Difficulty selection, Grace vs Leon, RE2 Remake context, Steam Deck settings, story length." />
+<meta name="keywords" content="Resident Evil Requiem beginner guide, RE9 tips, how to start, difficulty, save strategy, parry, ammo crafting" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;}
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
 .logo{font-size:15px;display:flex;align-items:center;gap:8px;}
@@ -119,8 +117,8 @@ ol li strong{color:var(--text);}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "레지던트 이블 레퀴엠 입문자 공략 — 팁, 노하우, 피해야 할 실수 (RE9)",
-  "description": "레지던트 이블 레퀴엠(RE9) 입문자 완전 공략",
+  "headline": "Resident Evil Requiem Beginner's Guide — Tips, Tricks &amp; Mistakes to Avoid (RE9)",
+  "description": "Complete beginner",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -148,7 +146,7 @@ ol li strong{color:var(--text);}
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/beginner-guide-resident-evil-requiem.html"
   },
-  "inLanguage": "ko-KR",
+  "inLanguage": "en-US",
   "articleSection": "Beginner Guides",
   "about": {
     "@type": "VideoGame",
@@ -436,363 +434,363 @@ h1 {
 </style>
 </head>
 <body>
-<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← 모든 공략</a>
+<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="/beginner-guide-resident-evil-requiem.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
-<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="/ko/beginner-guide-resident-evil-requiem.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
 </span>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">공략</a> / <span>입문자 공략</span></div>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">GUIDES</a> / <span>BEGINNER'S GUIDE</span></div>
 
-<h1>레지던트 이블 레퀴엠 입문자 공략 — 필수 팁 15가지</h1>
+<h1>Resident Evil Requiem Beginner's Guide — 15 Essential Tips</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
-<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
-<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">검증 버전: v1.02 · 마지막 검토: 2026년 5월 30일 · 영어 원본과 비교: 100% 내용 동등 + 한국어 컨텍스트 추가</p>
+<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested across the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
+<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 + DLC patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
 </div>
 
-<div class="meta">2026년 5월 게시 · <span>12분 읽기</span> · 스포일러 없음</div>
-<!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(90,138,74,0.12);border:0.5px solid #5a8a4a;color:#5a8a4a;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">✓ 스포일러 수위: 낮음</div>
+<div class="meta">PUBLISHED MAY 2026 · <span>12 MIN READ</span> · NO SPOILERS</div>
+<!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(90,138,74,0.12);border:0.5px solid #5a8a4a;color:#5a8a4a;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">✓ SPOILER LEVEL: LOW</div>
 <!-- Editorial Info Card - Trust signal for guide credibility -->
 
 
-<p class="lead">레지던트 이블 레퀴엠(RE9)을 처음 시작하시나요? 이 입문자 공략은 첫 플레이 전에 알아야 할 모든 것을 다룹니다 — 난이도 선택부터 세이브 전략, 패리 메커니즘, 그리고 신규 플레이어가 가장 자주 범하는 15가지 실수까지. 스포일러는 없습니다.</p>
+<p class="lead">Starting Resident Evil Requiem (RE9)? This complete beginner's guide covers everything you need to know before your first playthrough — from difficulty selection to save strategy, parry mechanics, and the 15 most common mistakes new players make. Spoiler-free.</p>
 <div style="background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;padding:15px;margin:20px 0;font-size:13px;">
-<strong style="color:#ba7517;">📍 게임 구조 참고 (v1.02):</strong> RE9은 공식적으로 <strong>4개 주 영역</strong>으로 나뉨: Wrenwood, Rhodes Hill, 라쿤 시티, ARK 시설. 우리의 "8 챕터" 프레이밍은 이 4개 영역 내의 8 하위 섹션 반영. 게임은 클리어 후 <em>챕터 선택 없음</em>이고 <em>자유 탐험 없음</em>. 영역 진행은 엄격히 선형.
+<strong style="color:#ba7517;">📍 Game structure note (v1.02):</strong> RE9 is officially divided into <strong>4 main areas</strong>: Wrenwood, Rhodes Hill, Raccoon City, and ARK Facility. Our "8 chapters" framing reflects the 8 sub-sections within these 4 areas. The game has <em>no Chapter Select</em> after completion and <em>no Free-Roam</em>. Area progression is strictly linear.
 </div>
 <div class="boss-stats">
   <table>
-    <tr><th>주 영역</th><th>하위 섹션 (우리의 "챕터")</th><th>길이</th></tr>
-    <tr><td><strong>1. Wrenwood</strong></td><td>Wrenwood 호텔</td><td>~45분</td></tr>
-    <tr><td><strong>2. Rhodes Hill</strong></td><td>케어 센터 · 지하 · 안뜰 · 정수장</td><td>~3.5시간</td></tr>
-    <tr><td><strong>3. 라쿤 시티</strong></td><td>RPD &amp; 고아원 · 라쿤 시티 광장</td><td>~2.5시간</td></tr>
-    <tr><td><strong>4. ARK 시설</strong></td><td>ARK 시설 (피날레, 멀티 페이즈)</td><td>~4시간</td></tr>
+    <tr><th>Main area</th><th>Sub-sections (our "chapters")</th><th>Length</th></tr>
+    <tr><td><strong>1. Wrenwood</strong></td><td>Wrenwood Hotel</td><td>~45 min</td></tr>
+    <tr><td><strong>2. Rhodes Hill</strong></td><td>Care Center · Basement · Courtyard · Water Treatment</td><td>~3.5 hours</td></tr>
+    <tr><td><strong>3. Raccoon City</strong></td><td>RPD &amp; Orphanage · Raccoon City Square</td><td>~2.5 hours</td></tr>
+    <tr><td><strong>4. ARK Facility</strong></td><td>ARK Facility (finale, multi-phase)</td><td>~4 hours</td></tr>
   </table>
 </div>
 
 
 <div class="toc">
-  <div class="toc-title">목차</div>
+  <div class="toc-title">Table of contents</div>
   <ul>
-    <li><a href="#difficulty">올바른 난이도 선택</a></li>
-    <li><a href="#characters">그레이스 vs 레온 — 차이점은?</a></li>
-    <li><a href="#saves">세이브 전략과 놓치기 쉬운 요소</a></li>
-    <li><a href="#combat">전투 기본기</a></li>
-    <li><a href="#tips15">필수 팁 15가지</a></li>
-    <li><a href="#mistakes">입문자가 흔히 저지르는 실수</a></li>
+    <li><a href="#difficulty">Picking the right difficulty</a></li>
+    <li><a href="#characters">Grace vs Leon — what's the difference?</a></li>
+    <li><a href="#saves">Save strategy and missables</a></li>
+    <li><a href="#combat">Combat fundamentals</a></li>
+    <li><a href="#tips15">15 essential tips</a></li>
+    <li><a href="#mistakes">Common beginner mistakes</a></li>
   </ul>
 </div>
 
-<h2 id="difficulty">올바른 난이도 선택</h2>
+<h2 id="difficulty">Picking the right difficulty</h2>
 
-<p>레지던트 이블 레퀴엠에는 4가지 난이도 옵션과 숨겨진 Insanity 모드가 있습니다. 첫 플레이에 맞는 난이도를 선택하면 경험이 극적으로 달라집니다.</p>
+<p>Resident Evil Requiem has four difficulty options, plus a hidden Insanity mode. Choosing the right one for your first run dramatically affects the experience.</p>
 
 <table class="diff-table">
   <thead>
-    <tr><th>난이도</th><th>세이브 방식</th><th>전투</th><th>추천 대상</th></tr>
+    <tr><th>Difficulty</th><th>Save system</th><th>Combat</th><th>Best for</th></tr>
   </thead>
   <tbody>
     <tr>
       <td class="diff-name">Casual</td>
-      <td>어디서나</td>
-      <td>관대함</td>
-      <td>스토리 중심 플레이어, RE 시리즈 입문자</td>
+      <td>Anywhere</td>
+      <td>Generous</td>
+      <td>Story-focused players, RE newcomers</td>
     </tr>
     <tr>
       <td class="diff-name">Standard (Modern)</td>
-      <td>어디서나</td>
-      <td>밸런스 잡힘</td>
-      <td><strong>대부분의 첫 플레이어</strong></td>
+      <td>Anywhere</td>
+      <td>Balanced</td>
+      <td><strong>Most first-time players</strong></td>
     </tr>
     <tr>
       <td class="diff-name">Standard (Classic)</td>
-      <td>잉크 리본 필요</td>
-      <td>밸런스 + 긴장감 있는 세이브</td>
-      <td>고전 감성을 원하는 RE 베테랑</td>
+      <td>Ink Ribbons required</td>
+      <td>Balanced + tense saves</td>
+      <td>RE veterans seeking the classic feel</td>
     </tr>
     <tr>
       <td class="diff-name">Insanity</td>
-      <td>어디서나</td>
-      <td>잔혹함 — 즉사 일상</td>
-      <td>포스트 게임 도전 전용</td>
+      <td>Anywhere</td>
+      <td>Brutal — one-shots common</td>
+      <td>Post-game challenge only</td>
     </tr>
   </tbody>
 </table>
 
 <div class="warn-box">
-  💡 <strong>추천:</strong> <strong>Standard (Modern)</strong>으로 시작하세요. Casual은 너무 쉬워서 서바이벌 호러 감성을 살리지 못합니다. Classic의 잉크 리본 세이브 시스템은 첫 플레이에서는 큰 이점 없이 답답함만 더합니다. Insanity는 Casual을 포함한 어떤 난이도로든 한 번 클리어하면 잠금 해제됩니다.
+  💡 <strong>Recommendation:</strong> Start with <strong>Standard (Modern)</strong>. Casual is too easy and undersells the survival horror feel. Classic's Ink Ribbon save system adds frustration without much benefit on a first run. Insanity unlocks after any first completion, including Casual.
 </div>
 
-<h2 id="characters">그레이스 vs 레온 — 차이점은?</h2>
+<h2 id="characters">Grace vs Leon — what's the difference?</h2>
 
-<p>RE9에는 완전히 다른 스킬셋을 가진 두 명의 플레이어블 캐릭터가 등장합니다. 스토리는 두 캐릭터를 자동으로 교차하며 진행됩니다.</p>
+<p>RE9 features two playable characters with completely different skillsets. The story alternates between them automatically.</p>
 
-<h3>// 그레이스 애쉬크로프트 (GRACE ASHCROFT)</h3>
+<h3>// GRACE ASHCROFT</h3>
 
 <ul class="normal">
-  <li><strong>혈액 제작(Blood Crafting)</strong> — Blood Collector로 적에게서 감염 혈액(Infected Blood)을 채취하여 탄약, 회복 아이템, 그리고 Hemolytic Injector(즉사 아이템)를 제작</li>
-  <li><strong>금고 해정</strong> — 게임 내 5개의 잠긴 금고는 그레이스만 열 수 있음</li>
-  <li><strong>무기 강화 불가</strong> — 그레이스의 무기 스탯은 기본값으로 고정</li>
-  <li><strong>잠입 중심</strong> — 그레이스의 조우 다수는 전투보다 회피를 전제로 설계됨</li>
+  <li><strong>Blood Crafting</strong> — uses the Blood Collector to harvest Infected Blood from enemies, then crafts ammo, healing items, and Hemolytic Injectors (instant-kill items)</li>
+  <li><strong>Safe-cracking</strong> — only Grace can open the 5 locked safes in the game</li>
+  <li><strong>No weapon upgrades</strong> — her weapons are fixed at baseline stats</li>
+  <li><strong>Stealth-focused</strong> — many of Grace's encounters are designed around avoidance, not combat</li>
 </ul>
 
-<h3>// 레온 S. 케네디 (LEON S. KENNEDY)</h3>
+<h3>// LEON S. KENNEDY</h3>
 
 <ul class="normal">
-  <li><strong>무기 강화</strong> — Supply Box에서 크레딧(Credits)을 사용해 무기 스탯을 Tier 3까지 강화</li>
-  <li><strong>해칫 마무리(Hatchet Finishers)</strong> — 비틀거리는 적에게 강력한 해칫 처형을 수행</li>
-  <li><strong>중화기</strong> — 샷건, 저격소총, Clatter Carbine 사용 가능</li>
-  <li><strong>전투 중심</strong> — 레온의 챕터에는 대부분의 보스전과 강렬한 전투 시퀀스가 집중</li>
+  <li><strong>Weapon upgrades</strong> — uses Credits at Supply Boxes to improve weapon stats up to Tier 3</li>
+  <li><strong>Hatchet finishers</strong> — performs powerful hatchet executions on staggered enemies</li>
+  <li><strong>Heavy weapons</strong> — access to shotguns, sniper rifles, assault rifles</li>
+  <li><strong>Combat-focused</strong> — Leon's sections feature most boss fights and intense combat sequences</li>
 </ul>
 
 <div class="warn-box info">
-  ℹ <strong>프로 팁:</strong> Blood Lab의 <strong>혈액 검체(변성) 퍼즐(Blood Specimen Denatured puzzle)</strong>을 가능한 한 빨리 풀어두세요. Hemolytic Injector 레시피가 잠금 해제되며 — 이걸 뒤에서 사용하면 Chunk와 Chef 같은 미니 보스를 즉사시킬 수 있습니다.
+  ℹ <strong>Pro tip:</strong> Solve the <strong>Blood Specimen (Denatured) puzzle in the Blood Lab</strong> as soon as possible. It unlocks the Hemolytic Injector recipe — these instantly kill mini-bosses like Chunk and the Chef when used from behind.
 </div>
 
-<h2 id="saves">세이브 전략과 놓치기 쉬운 요소</h2>
+<h2 id="saves">Save strategy and missables</h2>
 
-<p>레지던트 이블 레퀴엠은 <strong>완전한 선형 구조</strong>입니다. 챕터 선택이 없고, 엔딩 후 자유 탐험도 없으며, 포인트 오브 노 리턴을 지나면 이전 지역으로 돌아갈 방법도 없습니다. 그래서 세이브 전략이 중요합니다.</p>
+<p>Resident Evil Requiem is <strong>completely linear</strong>. There is no chapter select, no free-roam after credits, and no way to revisit areas once you progress past a point of no return. This makes save strategy critical.</p>
 
-<h3>// 수동 세이브 12슬롯 규칙</h3>
+<h3>// THE 12-SLOT MANUAL SAVE RULE</h3>
 
-<p>수동 세이브 슬롯은 <strong>12개</strong>입니다. 전부 활용하세요. 추천 세이브 전략:</p>
-
-<ol>
-  <li><strong>새 지역에 진입할 때마다 세이브.</strong> 수집품을 놓쳤다면 정확히 그 지점으로 되돌릴 수 있습니다.</li>
-  <li><strong>모든 보스전 직전에 세이브.</strong> 실수는 일어나기 마련 — 깔끔한 재시도 세이브가 30분 손실을 막아줍니다.</li>
-  <li><strong>퍼즐 입력 전 세이브.</strong> 예를 들어 룰렛 휠 이스터에그에는 랜덤 요소가 있습니다. 먼저 세이브하고 필요하면 재시도하세요.</li>
-  <li><strong>세이브를 돌려쓰세요.</strong> 같은 슬롯에 덮어쓰지 말고 — 최소 3개 다른 지점을 유지해 더 멀리까지 되돌아갈 수 있도록 하세요.</li>
-</ol>
-
-<h3>// 놓치기 쉬운 수집품</h3>
-
-<p>너무 진행하면 놓치는 수집품이 여럿 있습니다:</p>
-
-<ul class="normal">
-  <li><strong>Mr. Raccoon 메모리얼 #5</strong> (의약품실) — 레벨 3 손목밴드 필요, 첫 플레이어가 가장 많이 놓침</li>
-  <li><strong>Mr. Raccoon 메모리얼 #9</strong> (전용 연구실) — 레온 챕터 시작 전 마지막 기회</li>
-  <li><strong>Mr. Raccoon 메모리얼 #25</strong> (ARK 운영실) — 빅터 기드온(Victor Gideon) 전 마지막 기회</li>
-  <li><strong>스토리 잠금 방의 파일들</strong> — 스토리 진행 후 영구 봉인되는 지역이 다수</li>
-  <li><strong>선택 보스</strong>(Chef, Chunk #1) — 각각의 스토리 이벤트 후 사라짐</li>
-</ul>
-
-<h2 id="combat">전투 기본기</h2>
-
-<h3>// 패리 시스템 (PARRY SYSTEM)</h3>
-
-<p>해칫 패리는 RE9에서 가장 중요한 단일 전투 메커니즘입니다. 일찍 마스터하세요.</p>
+<p>You have <strong>12 manual save slots</strong>. Use them all. The recommended save strategy:</p>
 
 <ol>
-  <li><strong>적의 공격이 닿기 직전에 L1/LB를 누르세요.</strong> 패리에 성공하면 적이 비틀거리며 데미지 창이 열립니다.</li>
-  <li><strong>패리 후 사격 또는 근접 마무리 모두 가능.</strong> 해칫 카운터에만 묶일 필요 없음 — 즉시 사격해도 작동하며 스태미나도 아낄 수 있습니다.</li>
-  <li><strong>대부분의 적 공격은 패리 가능.</strong> 예외: 던지는 오브젝트(Mr. X의 자동차), 도약 공격, 전기/속성 공격.</li>
-  <li><strong>튜토리얼 패리로 "Untouchable" Trophy 잠금 해제.</strong> 오프닝 시퀀스에서 자동 해금됩니다.</li>
+  <li><strong>Save at the start of every new area.</strong> If you miss a collectible, you can reload to that exact point.</li>
+  <li><strong>Save before any boss fight.</strong> Mistakes happen — having a clean retry save prevents 30-minute losses.</li>
+  <li><strong>Save before puzzle inputs.</strong> The Roulette Wheel easter egg, for example, has a random element. Save first, retry if needed.</li>
+  <li><strong>Rotate your saves.</strong> Don't overwrite the same slot — keep at least 3 different points so you can backtrack further if needed.</li>
 </ol>
 
-<h3>// 해칫 마무리 (HATCHET FINISHERS)</h3>
+<h3>// MISSABLE COLLECTIBLES</h3>
 
-<p>적이 비틀거릴 때(HP 낮음 또는 패리 직후) 해칫 마무리 프롬프트가 나타납니다. 누르면 즉사 처형. 해칫 마무리 3회면 <strong>"Chop Chop"</strong> Trophy가 잠금 해제됩니다. 초반에 자연스럽게 달성됩니다.</p>
-
-<h3>// 탄약 관리 (AMMO MANAGEMENT)</h3>
-
-<p>탄약은 Standard에서 빠듯하고 Insanity에서는 가혹합니다. 아끼세요:</p>
+<p>Several collectibles are missable if you progress too far:</p>
 
 <ul class="normal">
-  <li><strong>퇴각하는 적은 쏘지 마세요</strong> — 위협이 아니므로 총알을 아끼세요</li>
-  <li><strong>HP가 낮은 좀비는 칼로 처리</strong> — 마무리 애니메이션이 재장전보다 빠릅니다</li>
-  <li><strong>레퀴엠 탄(Requiem Bullets)은 보스 약점에만</strong> — 일반 적에게는 절대 낭비 금지</li>
-  <li><strong>그레이스로 제작</strong> — Blood Collector + Scrap으로 Silencer 9 권총 탄약과 Hemolytic Injector를 만듭니다</li>
+  <li><strong>Mr. Raccoon Memoriam #5</strong> (Medication Room) — requires Level 3 Wristband, missed by most first-time players</li>
+  <li><strong>Mr. Raccoon Memoriam #9</strong> (Private Lab) — last chance before Leon's chapter starts</li>
+  <li><strong>Mr. Raccoon Memoriam #25</strong> (ARK Operations Room) — last chance before Victor Gideon</li>
+  <li><strong>Files in story-locked rooms</strong> — many areas seal permanently after story progression</li>
+  <li><strong>Optional bosses</strong> (Chef, Chunk #1) — disappear after their respective story beats</li>
 </ul>
 
-<h2 id="tips15">신규 플레이어를 위한 필수 팁 15가지</h2>
+<h2 id="combat">Combat fundamentals</h2>
+
+<h3>// THE PARRY SYSTEM</h3>
+
+<p>The Hatchet parry is the single most important combat mechanic in RE9. Master it early.</p>
+
+<ol>
+  <li><strong>Press L1/LB just before an enemy attack lands.</strong> Successful parries stagger the enemy and create a damage window.</li>
+  <li><strong>You can shoot OR melee finish after a parry.</strong> Don't feel locked into using the Hatchet counter — shooting immediately also works and conserves stamina.</li>
+  <li><strong>Most enemy attacks are parryable.</strong> Exceptions: thrown objects (cars from Mr. X), leap attacks, and electric/elemental attacks.</li>
+  <li><strong>Tutorial parry unlocks "Untouchable" trophy.</strong> Auto-unlocks during the opening sequence.</li>
+</ol>
+
+<h3>// HATCHET FINISHERS</h3>
+
+<p>When an enemy is staggered (low HP or post-parry), a Hatchet finisher prompt appears. Press it for an instant-kill execution. Three hatchet finishers unlock the <strong>"Chop Chop"</strong> trophy. Comes naturally in the early game.</p>
+
+<h3>// AMMO MANAGEMENT</h3>
+
+<p>Ammo is tight on Standard and brutal on Insanity. Conserve it:</p>
+
+<ul class="normal">
+  <li><strong>Don't shoot retreating enemies</strong> — they're not a threat, save the bullet</li>
+  <li><strong>Use the knife for low-HP zombies</strong> — finisher animation is faster than reloading</li>
+  <li><strong>Save Requiem Bullets for boss weak points only</strong> — never waste them on standard enemies</li>
+  <li><strong>Craft as Grace</strong> — the Blood Collector + Scrap creates Silencer 9 pistol ammo and Hemolytic Injectors</li>
+</ul>
+
+<h2 id="tips15">15 essential tips for new players</h2>
 
 <div class="tip-list">
   <div class="tip-item">
     <div class="tip-num">01</div>
     <div class="tip-content">
-      <div class="tip-title-text">헤드폰을 착용하세요</div>
-      <div class="tip-detail">Mr. Raccoon 메모리얼은 5미터 이내에서 희미한 차임 소리를 냅니다. 오디오 큐는 숨겨진 적을 암시합니다. 헤드폰은 모든 난이도에서 눈에 띄는 이점이 됩니다.</div>
+      <div class="tip-title-text">Wear headphones</div>
+      <div class="tip-detail">Mr. Raccoon Memoriams emit a faint chime within 5 meters. Audio cues hint at hidden enemies. Headphones are a noticeable advantage on every difficulty.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">02</div>
     <div class="tip-content">
-      <div class="tip-title-text">혈액 검체 퍼즐을 가장 먼저 풀어라</div>
-      <div class="tip-detail">그레이스로 Blood Lab에서 검체 1번을 해결(가운데 칸 클릭 — 1단계). 이로써 Hemolytic Injector 제작이 해금되며, Chef와 Chunk 미니 보스를 원샷할 수 있습니다.</div>
+      <div class="tip-title-text">Solve the Blood Specimen puzzle FIRST</div>
+      <div class="tip-detail">In the Blood Lab as Grace, solve Specimen 1 (click middle square — 1 step). This unlocks Hemolytic Injector crafting, which one-shots the Chef and Chunk mini-bosses.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">03</div>
     <div class="tip-content">
-      <div class="tip-title-text">MSBG 500을 즉시 획득하라</div>
-      <div class="tip-detail">레온으로 Care Center 다락방에서, Chunk가 먹고 있던 시체 옆에 놓인 샷건을 즉시 집으세요. 중반 게임 내내 사용할 주력 무기입니다.</div>
+      <div class="tip-title-text">Pick up the MSBG 500 immediately</div>
+      <div class="tip-detail">As Leon in the Care Center Attic, grab the W870 Police shotgun beside the corpse the second Chunk was feeding on. This is your primary weapon for the entire mid-game.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">04</div>
     <div class="tip-content">
-      <div class="tip-title-text">워크샵 금고를 열어 Raccoon Roundup 지도 획득</div>
-      <div class="tip-detail">Care Center 지하 워크샵 금고 조합 R60·L40·R80. 이 지도는 Care Center 내 Mr. Raccoon 9개 위치를 인게임 지도에 표시해 줍니다.</div>
+      <div class="tip-title-text">Open the Workshop safe for the Raccoon Roundup map</div>
+      <div class="tip-detail">Combination R60·L40·R80 in the Care Center Basement Workshop. The map highlights all 9 Care Center Mr. Raccoon locations on your in-game map.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">05</div>
     <div class="tip-content">
-      <div class="tip-title-text">RPD에서 Mr. X와 싸우지 마라</div>
-      <div class="tip-detail">첫 Mr. X 조우는 추격 시퀀스 — 이 형태에서는 죽일 수 없습니다. 쏘지 말고 도망치세요. 진짜 보스전은 Kendo 총포상 이후에 옵니다.</div>
+      <div class="tip-title-text">Don't fight Mr. X in the RPD</div>
+      <div class="tip-detail">The first Mr. X encounter is a chase sequence — he cannot be killed in this form. Run, don't shoot. The real boss fight comes after Gun Shop Kendo.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">06</div>
     <div class="tip-content">
-      <div class="tip-title-text">앤티크 코인은 팔러에서 써라</div>
-      <div class="tip-detail">서관(West Wing)의 팔러(Parlor) 상인은 무기 부착물, 회복 아이템, 제작 재료를 판매합니다. 금고에서 얻은 앤티크 코인은 쉽게 교체되니 — 쌓아두지 마세요.</div>
+      <div class="tip-title-text">Spend Antique Coins at the Parlor</div>
+      <div class="tip-detail">The Parlor merchant in the West Wing offers weapon attachments, healing items, and crafting materials. Antique Coins from safes are easily replaced — don't hoard them.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">07</div>
     <div class="tip-content">
-      <div class="tip-title-text">Eye Spy Charm을 위해 Chunk 처치</div>
-      <div class="tip-detail">선택 사항이지만 권장. Eye Spy Charm은 그레이스가 치명 데미지에서 살아남을 확률을 줍니다. 뒤에서 Hemolytic Injector 3회 = 즉사.</div>
+      <div class="tip-title-text">Kill Chunk for the Eye Spy Charm</div>
+      <div class="tip-detail">Optional but recommended. The Eye Spy Charm gives Grace a chance to survive fatal damage. 3× Hemolytic Injector from behind = instant kill.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">08</div>
     <div class="tip-content">
-      <div class="tip-title-text">Care Center가 끝나기 전 패리 마스터</div>
-      <div class="tip-detail">일반 좀비로 연습하세요. Mr. X와 The Commander에 도달할 즈음에는 패리 타이밍이 본능이 되어 있어야 합니다.</div>
+      <div class="tip-title-text">Master the parry before the Care Center ends</div>
+      <div class="tip-detail">Practice on standard zombies. By the time you reach Mr. X and The Commander, parry timing should be second nature.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">09</div>
     <div class="tip-content">
-      <div class="tip-title-text">모든 보스 전 방어구 수리</div>
-      <div class="tip-detail">Supply Box나 Kendo의 Stash Box를 방문하세요. 보스전에서 방어구가 파괴된 상태는 사실상 사망 확정입니다.</div>
+      <div class="tip-title-text">Repair body armor before every boss</div>
+      <div class="tip-detail">Visit Supply Boxes or the Stash Box at Kendo's. Broken armor in a boss fight is a guaranteed death.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">10</div>
     <div class="tip-content">
-      <div class="tip-title-text">좁은 복도에서는 항상 퀵턴</div>
-      <div class="tip-detail">뒷걸음 버튼을 두드려 즉시 180도 회전. Mr. X 추격과 타이런트 조우를 살아남는 데 필수입니다.</div>
+      <div class="tip-title-text">Always quick-turn in tight corridors</div>
+      <div class="tip-detail">Tap the back-step button to instantly 180. Critical for surviving Mr. X chases and Tyrant encounters.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">11</div>
     <div class="tip-content">
-      <div class="tip-title-text">모든 시체에서 트래킹 모듈 루팅</div>
-      <div class="tip-detail">트래킹 모듈(Tracking Modules)은 적에게서 드롭되어 크레딧으로 변환됩니다. 더 높은 등급(Rare, Epic, Legendary)은 주로 미니 보스에서 드롭됩니다.</div>
+      <div class="tip-title-text">Loot every body for Tracking Modules</div>
+      <div class="tip-detail">Tracking Modules drop from enemies and convert to Credits. Higher rarity (Rare, Epic, Legendary) drops mostly from mini-bosses.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">12</div>
     <div class="tip-content">
-      <div class="tip-title-text">발견한 파일은 전부 읽어라</div>
-      <div class="tip-detail">파일에는 스토리 로어뿐 아니라 퍼즐 힌트 — 금고 코드 단서와 Quartz Puzzle 해법까지 포함됩니다. 전부 읽으면 "Archivist" Trophy가 해금됩니다.</div>
+      <div class="tip-title-text">Read every File you find</div>
+      <div class="tip-detail">Files contain story lore but also puzzle hints — including safe code clues and Quartz Puzzle solutions. Reading them all unlocks the "Archivist" trophy.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">13</div>
     <div class="tip-content">
-      <div class="tip-title-text">Mortal Edge를 위해 The Commander 처치</div>
-      <div class="tip-detail">ARK 시설에서. Mortal Edge Hatchet은 기본 해칫을 훨씬 더 좋은 스탯으로 교체합니다. 빅터 기드온 최종 보스전 필수.</div>
+      <div class="tip-title-text">Defeat The Commander for Mortal Edge</div>
+      <div class="tip-detail">In the ARK Facility. The Mortal Edge Hatchet replaces your default Hatchet with significantly better stats. Mandatory for the Victor Gideon final boss.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">14</div>
     <div class="tip-content">
-      <div class="tip-title-text">로켓 런처를 낭비하지 마라</div>
-      <div class="tip-detail">1회용 RPG가 Raccoon City에서 드롭됩니다. 비상시 보스 처치용으로 아끼세요 — 일반 적에 쓰는 건 큰 실수입니다. 참고: 이것은 잠금 해제 가능한 무한 RPG와 다릅니다.</div>
+      <div class="tip-title-text">Don't waste the Rocket Launcher</div>
+      <div class="tip-detail">The single-use RPG drops in Raccoon City. Save it for an emergency boss kill — wasting it on regular enemies is a costly mistake. Note: this is NOT the unlockable Infinite RPG.</div>
     </div>
   </div>
 
   <div class="tip-item">
     <div class="tip-num">15</div>
     <div class="tip-content">
-      <div class="tip-title-text">슈퍼 타이런트는 심장을 노려라</div>
-      <div class="tip-detail">Mr. X의 맥동하는 심장이 유일한 약점입니다. 몸통 사격은 거의 데미지가 없습니다. 레퀴엠 탄은 심장 사격에만 사용하세요.</div>
+      <div class="tip-title-text">Aim for the heart on Super Tyrant</div>
+      <div class="tip-detail">Mr. X's pulsating heart is his only weak point. Body shots do almost no damage. Save Requiem rounds for heart shots only.</div>
     </div>
   </div>
 </div>
 
-<h2 id="mistakes">입문자가 흔히 저지르는 실수</h2>
+<h2 id="mistakes">Common beginner mistakes</h2>
 
 <div class="warn-box">
-  <strong>❌ 실수 #1:</strong> RPD 추격 시퀀스에서 Mr. X를 처치하려 시도. 이 형태에서는 죽지 않으며 — 도망이 유일한 선택입니다.
+  <strong>❌ Mistake #1:</strong> Trying to kill Mr. X during the RPD chase sequence. He cannot die in this form — running is the only option.
 </div>
 
 <div class="warn-box">
-  <strong>❌ 실수 #2:</strong> 혈액 검체 분석을 건너뛰기. Hemolytic Injector 없이는 선택 보스들이 훨씬 어려워집니다.
+  <strong>❌ Mistake #2:</strong> Skipping Blood Specimen analysis. Without Hemolytic Injectors, optional bosses become significantly harder.
 </div>
 
 <div class="warn-box">
-  <strong>❌ 실수 #3:</strong> 세이브 슬롯 하나만 사용. 놓친 수집품이 있으면 게임을 재시작하지 않고는 복구할 수 없습니다.
+  <strong>❌ Mistake #3:</strong> Only using one save slot. If a missable collectible passes you by, you cannot recover without restarting the game.
 </div>
 
 <div class="warn-box">
-  <strong>❌ 실수 #4:</strong> 일반 적에게 레퀴엠 탄 사용. 레퀴엠은 공급이 제한적이며 보스 약점 전용입니다.
+  <strong>❌ Mistake #4:</strong> Using Requiem Bullets on regular enemies. Requiem has limited supply and is reserved for boss weak points.
 </div>
 
 <div class="warn-box">
-  <strong>❌ 실수 #5:</strong> 던지는 자동차나 도약 공격을 패리하려 시도. 패리 불가 — 회피해야 합니다.
+  <strong>❌ Mistake #5:</strong> Trying to parry thrown cars or leap attacks. These cannot be parried — you must dodge.
 </div>
 
 <div class="warn-box">
-  <strong>❌ 실수 #6:</strong> "자원을 아끼려고" Chef와 Chunk 전투를 회피. 둘 다 귀중한 아이템(Pantry Key, Eye Spy Charm)을 떨어뜨리므로 — 싸울 가치가 있습니다.
+  <strong>❌ Mistake #6:</strong> Avoiding the Chef and Chunk fights to "save resources." Both drop valuable items (Pantry Key, Eye Spy Charm) — they're worth the fight.
 </div>
 
 <div class="warn-box">
-  <strong>❌ 실수 #7:</strong> RE 경험 없이 첫 플레이로 Standard (Classic) 선택. 잉크 리본 세이브 시스템이 게임플레이를 가릴 정도의 답답함을 만듭니다.
+  <strong>❌ Mistake #7:</strong> Selecting Standard (Classic) for a first run without RE experience. The Ink Ribbon save system creates frustration that overshadows the gameplay.
 </div>
 
-<h2 id="next">엔딩 후 할 일</h2>
+<h2 id="next">What to do after you finish</h2>
 
-<p>메인 스토리를 클리어하면 여러 포스트 게임 기능이 잠금 해제됩니다:</p>
+<p>Completing the main story unlocks several post-game features:</p>
 
 <ul class="normal">
-  <li><strong>Insanity 난이도</strong> — New Game에서 선택 가능</li>
-  <li><strong>스페셜 컨텐츠 스토어</strong> — 신무기 구매(Matilda IMP, Clatter Carbine, Ghost Grudge)</li>
-  <li><strong>무한 탄약 잠금 해제</strong> — 무한 레퀴엠과 무한 RPG 포함(Trophy 무효화 없음)</li>
-  <li><strong>컨셉 아트 및 보너스 코스메틱</strong> — 스페셜 컨텐츠 메뉴에서 열람 가능</li>
-  <li><strong>The Final Puzzle</strong> — Marie's Doll과 Severed Hand RNA 시퀀스를 다루는 멀티 스텝 NG+ 퍼즐</li>
+  <li><strong>Insanity difficulty</strong> — selectable from New Game</li>
+  <li><strong>Special Content Store</strong> — buy new weapons (Matilda IMP, Clatter Carbine, Ghost Grudge)</li>
+  <li><strong>Infinite Ammo unlocks</strong> — including Infinite Requiem and Infinite RPG (does not void trophies)</li>
+  <li><strong>Concept art and bonus cosmetics</strong> — viewable in Special Content menu</li>
+  <li><strong>The Final Puzzle</strong> — multi-step NG+ puzzle involving Marie's Doll and the Severed Hand RNA sequence</li>
 </ul>
 
-<p>Platinum Trophy 헌터의 일반적인 경로는: Casual 또는 Standard로 스토리 클리어 → 100% 수집품 정리 → 무한 레퀴엠으로 Insanity 스피드런 순입니다.</p>
+<p>For Platinum trophy hunters, the typical path is: Casual or Standard first run for story → 100% collectible cleanup → Insanity speedrun with Infinite Requiem.</p>
 <div class="cta">
-  <div class="cta-title">다음 추천</div>
-  <a href="best-weapons-tier-list.html">최고의 무기 티어 리스트</a>
-  <a href="all-5-safe-codes-guide.html">금고 코드 5개 전체</a>
-  <a href="/all-25-mr-raccoon-locations.html">Mr. Raccoon 25개 위치</a>
-  <a href="how-to-beat-mr-x-super-tyrant.html">슈퍼 타이런트 공략</a>
-  <a href="index.html">모든 공략 홈</a>
+  <div class="cta-title">RECOMMENDED NEXT</div>
+  <a href="best-weapons-tier-list.html">Best Weapons Tier List</a>
+  <a href="all-5-safe-codes-guide.html">All 5 Safe Codes</a>
+  <a href="all-25-mr-raccoon-locations.html">All 25 Mr. Raccoon Locations</a>
+  <a href="how-to-beat-mr-x-super-tyrant.html">How to Beat Super Tyrant</a>
+  <a href="index.html">All guides home</a>
 </div>
 
-<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">이 공략이 도움이 되었나요? <a href="#" style="color:var(--red);">알려주세요</a> — 커뮤니티 피드백을 기반으로 매주 공략을 업데이트합니다.</p>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? <a href="#" style="color:var(--red);">Let us know</a> — we update guides weekly based on community feedback.</p>
 
 <!-- Ko-fi support strip (subtle, end-of-article) -->
 <div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
-  <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 공략이 도움이 되셨다면, Ko-fi에서 더 많은 공략 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
-  <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+  <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">If this guide helped, consider supporting more guides like this on Ko-fi. <em style="color:#ba7517;font-style:normal;">Every little bit means the world.</em></p>
+  <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Support on Ko-fi</a>
 </div>
 
 </div>
 <div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
-  <p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
-  <p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
-  <p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+  <p style="margin:5px 0;">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
+  <p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">About</a> · <a href="contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Contact</a> · <a href="privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Privacy</a> · <a href="dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Spoilers</a></p>
+  <p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
 </div>
 <script src="/cookie-consent.js" defer></script>
 </body>
