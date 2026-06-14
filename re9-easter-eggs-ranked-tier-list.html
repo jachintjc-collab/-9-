@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<meta name="audience" content="Korean RE9 players">
+<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
+<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -20,7 +23,7 @@
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
-<link rel="canonical" href="https://www.re9guide.it.com/re9-easter-eggs-ranked-tier-list.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/re9-easter-eggs-ranked-tier-list.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/re9-easter-eggs-ranked-tier-list.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/re9-easter-eggs-ranked-tier-list.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/re9-easter-eggs-ranked-tier-list.html" />
@@ -37,10 +40,10 @@
 <meta name="theme-color" content="#241410" />
 <meta name="msapplication-TileColor" content="#241410" />
 <!-- Open Graph + Twitter Card -->
-<meta property="og:title" content="RE9 Easter Eggs Ranked — How Many RE2/RE7 References? (All 16 Decoded)" />
-<meta property="og:description" content="How many RE2 / RE7 / RE8 references are hidden in RE9? 16 confirmed. RPD Main Hall + Vivien Notes + Rusty Spoon are S-tier. Full chapter-by-chapter easter egg decode." />
+<meta property="og:title" content="RE9 이스터에그 랭킹 — RE2/RE7 참조 몇 개? (16개 모두 디코드)" />
+<meta property="og:description" content="RE9에 RE2 / RE7 / RE8 참조 몇 개 숨겨졌나? 16개 확인. RPD 메인 홀 + Vivien 노트 + Rusty Spoon이 S-티어. 챕터별 이스터에그 전체 디코드." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.re9guide.it.com/re9-easter-eggs-ranked-tier-list.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/re9-easter-eggs-ranked-tier-list.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-cards/re9-easter-eggs-ranked-tier-list-og.png"
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -50,15 +53,15 @@
 <meta name="twitter:image:alt" content="RE9 Locations tier list with RPD Main Hall as S-tier" />
 <meta property="og:site_name" content="re9guide.it.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="RE9 Easter Eggs Ranked — How Many RE2/RE7 References? (All 16 Decoded)" />
-<meta name="twitter:description" content="How many RE2 / RE7 / RE8 references are hidden in RE9? 16 confirmed. RPD Main Hall + Vivien Notes + Rusty Spoon are S-tier. Full chapter-by-chapter easter egg decode." />
-<title>RE9 Easter Eggs Ranked — How Many RE2/RE7 References? (All 16 Decoded)</title>
-<meta name="description" content="How many RE2 / RE7 / RE8 references are hidden in RE9? 16 confirmed. RPD Main Hall + Vivien Notes + Rusty Spoon are S-tier. Full chapter-by-chapter easter egg decode." />
-<meta name="keywords" content="RE9 easter eggs, RE9 references, RE9 RE2 callbacks, RE9 RE7 references, RE9 hidden secrets, Resident Evil Requiem easter eggs" />
+<meta name="twitter:title" content="RE9 이스터에그 랭킹 — RE2/RE7 참조 몇 개? (16개 모두 디코드)" />
+<meta name="twitter:description" content="RE9에 RE2 / RE7 / RE8 참조 몇 개 숨겨졌나? 16개 확인. RPD 메인 홀 + Vivien 노트 + Rusty Spoon이 S-티어. 챕터별 이스터에그 전체 디코드." />
+<title>RE9 이스터에그 랭킹 — RE2/RE7 참조 몇 개? (16개 모두 디코드)</title>
+<meta name="description" content="RE9에 RE2 / RE7 / RE8 참조 몇 개 숨겨졌나? 16개 확인. RPD 메인 홀 + Vivien 노트 + Rusty Spoon이 S-티어. 챕터별 이스터에그 전체 디코드." />
+<meta name="keywords" content="RE9 이스터에그, RE9 참조, RE9 RE2 콜백, RE9 RE7 참조, RE9 숨겨진 비밀, 레지던트 이블 레퀴엠 이스터에그" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--silver:#888780;--bronze:#8b5e2a;}
-body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
 .logo{font-size:15px;display:flex;align-items:center;gap:8px;}
@@ -121,8 +124,8 @@ ul.normal li{padding:3px 0;font-size:15px;}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "RE9 Easter Eggs Ranked — How Many RE2/RE7 References? (All 16 Decoded)",
-  "description": "How many RE2 / RE7 / RE8 references are hidden in RE9? 16 confirmed. RPD Main Hall + Vivien Notes + Rusty Spoon are S-tier. Full chapter-by-chapter easter egg decode.",
+  "headline": "RE9 이스터에그 랭킹 — RE2/RE7 참조 몇 개? (16개 모두 디코드)",
+  "description": "RE9에 RE2 / RE7 / RE8 참조 몇 개 숨겨졌나? 16개 확인. RPD 메인 홀 + Vivien 노트 + Rusty Spoon이 S-티어. 챕터별 이스터에그 전체 디코드.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -150,7 +153,7 @@ ul.normal li{padding:3px 0;font-size:15px;}
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/best-weapons-tier-list.html"
   },
-  "inLanguage": "en",
+  "inLanguage": "ko-KR",
   "articleSection": "Weapons",
   "about": {
     "@type": "VideoGame",
@@ -397,66 +400,66 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Are these all canonical easter eggs?",
+      "name": "이게 모두 정사 이스터에그인가요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "16/16 are intentional Capcom placements confirmed via the May 2026 Famitsu director interview. No fan theory entries on this list."
+        "text": "16/16 모두 2026년 5월 Famitsu 디렉터 인터뷰로 확인된 의도적 캡콤 배치. 이 목록에 팬 이론 항목 없음."
       }
     },
     {
       "@type": "Question",
-      "name": "Which easter egg has the deepest RE knowledge requirement?",
+      "name": "어떤 이스터에그가 가장 깊은 RE 지식 요구하나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sherry Birkin Leon Codex (#7) — requires knowing RE6 character status (last seen working with BSAA) to understand the Italy reference."
+        "text": "Sherry Birkin Leon 코덱스 (#7) — 이탈리아 참조를 이해하려면 RE6 캐릭터 상태 (BSAA와 함께 마지막 목격) 알아야 함."
       }
     },
     {
       "@type": "Question",
-      "name": "Are there hidden easter eggs not on this list?",
+      "name": "이 목록에 없는 숨겨진 이스터에그 있나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Two are unconfirmed: a possible \"Wesker reference\" in the ARK Vivien lab background photographs (unconfirmed by Capcom), and a rumored \"Albert Wesker glasses\" item hidden in NG+ Insanity (no datamine confirmation)."
+        "text": "둘 미확인: ARK Vivien 연구실 배경 사진의 가능한 \"Wesker 참조\" (캡콤 미확인), NG+ 인새니티에 숨겨진 소문의 \"Albert Wesker 안경\" 아이템 (데이터마인 확인 없음)."
       }
     },
     {
       "@type": "Question",
-      "name": "Which is the most popular easter egg in the community?",
+      "name": "커뮤니티에서 가장 인기 있는 이스터에그는?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "RPD Main Hall (#1) by a wide margin. Reddit's RE9 subreddit has 12,000+ comments on the RPD reveal moment."
+        "text": "RPD 메인 홀 (#1) 큰 차이로. Reddit의 RE9 서브레딧에 RPD 공개 순간에 대한 12,000+ 댓글."
       }
     },
     {
       "@type": "Question",
-      "name": "Does collecting all easter eggs unlock anything?",
+      "name": "모든 이스터에그 수집이 뭔가를 해금하나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No achievement / trophy for collecting easter eggs. The codex updates with discovery entries but no gameplay reward."
+        "text": "이스터에그 수집에 업적 / 트로피 없음. 코덱스가 발견 항목으로 업데이트되지만 게임플레이 보상 없음."
       }
     },
     {
       "@type": "Question",
-      "name": "Which easter egg should I prioritize on first playthrough?",
+      "name": "첫 플레이에 어떤 이스터에그를 우선해야 하나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vivien's 2009 Research Notes (#2). It's also trophy-required for Platinum (mandatory pickup in Care Center records)."
+        "text": "Vivien의 2009 연구 노트 (#2). 플래티넘에도 트로피 필수 (케어 센터 기록실 필수 픽업)."
       }
     },
     {
       "@type": "Question",
-      "name": "Will RE10 reference RE9's easter eggs?",
+      "name": "RE10이 RE9의 이스터에그를 참조할까요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Director Nakanishi confirmed \"yes — RE9's photo collection from the Vivien lab will reappear\" in his Famitsu interview."
+        "text": "디렉터 Nakanishi가 Famitsu 인터뷰에서 \"네 — RE9의 Vivien 연구실 사진 컬렉션이 다시 등장할 것\" 확인."
       }
     },
     {
       "@type": "Question",
-      "name": "Are there any RE5 / RE6 references in RE9?",
+      "name": "RE9에 RE5 / RE6 참조 있나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sherry Birkin codex (RE6) and a brief Chris Redfield mention in Leon's codex (RE5/RE6). No RE5 setting references."
+        "text": "Sherry Birkin 코덱스 (RE6)와 Leon의 코덱스에 짧은 Chris Redfield 언급 (RE5/RE6). RE5 설정 참조 없음."
       }
     }
   ]
@@ -470,20 +473,20 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Home",
-      "item": "https://www.re9guide.it.com/"
+      "name": "홈",
+      "item": "https://www.re9guide.it.com/ko/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Tier Lists",
-      "item": "https://www.re9guide.it.com/tier-lists.html"
+      "name": "티어 리스트",
+      "item": "https://www.re9guide.it.com/ko/tier-lists.html"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Easter Eggs Ranked",
-      "item": "https://www.re9guide.it.com/re9-easter-eggs-ranked-tier-list.html"
+      "item": "https://www.re9guide.it.com/ko/re9-easter-eggs-ranked-tier-list.html"
     }
   ]
 }
@@ -536,201 +539,201 @@ h1 {
 </style>
 </head>
 <body>
-<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
+<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← 모든 공략</a>
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
-<a href="/ko/re9-easter-eggs-ranked-tier-list.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+<a href="/re9-easter-eggs-ranked-tier-list.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
+<a href="/ko/re9-easter-eggs-ranked-tier-list.html style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
 </span>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <a href="re9-hidden-easter-eggs-list.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">LORE</a> / <span>EASTER EGGS RANKED</span></div>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="re9-hidden-easter-eggs-list.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">LORE</a> / <span>이스터에그 랭킹</span></div>
 
-<h1>RE9 All 16 Easter Eggs Ranked — Tier List S to D</h1>
+<h1>RE9 16개 이스터에그 모두 랭킹 — 티어 리스트 S부터 D까지</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
-<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested across the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
-<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 + DLC patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
+<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
+<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">검증 버전: v1.02 · 마지막 검토: 2026년 5월 30일 · <a href="/about.html" style="color:#c0392b;">작성자 소개</a> · <a href="/terms.html" style="color:#c0392b;">편집 정책</a></p>
 </div>
 
-<div class="meta">PUBLISHED JUNE 2026 · <span>11 MIN READ</span> · 16 EASTER EGGS · ALL CANONICAL</div>
+<div class="meta">2026년 6월 게시 · <span>11분 읽기</span> · 16개 이스터에그 · 모두 정사</div>
 <!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(90,138,74,0.12);border:0.5px solid #5a8a4a;color:#5a8a4a;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">✓ SPOILER LEVEL: LOW</div>
 <!-- Editorial Info Card - Trust signal for guide credibility -->
 
 
-<p class="lead"><strong>All 16 RE9 easter eggs and franchise references ranked S to D by RE series reference depth, discovery difficulty, cultural memorability, and community discussion volume.</strong> From the RPD Main Hall RE2 Remake replica to the Rusty Spoon RE7 callback. Spoilers throughout.</p>
+<p class="lead"><strong>RE9의 16개 이스터에그와 프랜차이즈 참조를 RE 시리즈 참조 깊이, 발견 난이도, 문화적 기억도, 커뮤니티 토론 양으로 S부터 D까지 랭킹.</strong> RPD 메인 홀 RE2 Remake 복제부터 Rusty Spoon RE7 콜백까지. 전반에 걸쳐 스포일러.</p>
 
 <div class="boss-stats">
   <table>
-    <tr><th>Rank</th><th>Easter Egg</th><th>Reference</th><th>Tier</th></tr>
-    <tr><td>#1</td><td><strong>RPD Main Hall Replica</strong></td><td>RE2 Remake exact recreation</td><td><strong style="color:#c0392b;">S-tier</strong></td></tr>
-    <tr><td>#2</td><td><strong>Vivien's 2009 Eveline Research Notes</strong></td><td>RE7 Eveline origin reveal</td><td><strong style="color:#c0392b;">S-tier</strong></td></tr>
-    <tr><td>#3</td><td><strong>Rusty Spoon Item</strong></td><td>RE7 starting inventory callback</td><td><strong style="color:#c0392b;">S-tier</strong></td></tr>
-    <tr><td>#4</td><td><strong>The Chef Optional Boss</strong></td><td>RE2 kitchen sequence homage</td><td><strong>A-tier</strong></td></tr>
-    <tr><td>#5</td><td><strong>Mia Winters EW-2017 Helicopter</strong></td><td>RE7 ending tanker reference</td><td><strong>A-tier</strong></td></tr>
-    <tr><td>#6</td><td><strong>Ada Wong Beacon (NG+ Insanity)</strong></td><td>RE2/RE4 character setup</td><td><strong>A-tier</strong></td></tr>
-    <tr><td>#7</td><td><strong>Sherry Birkin Leon Codex Mention</strong></td><td>RE2 + RE6 connection</td><td><strong>A-tier</strong></td></tr>
-    <tr><td>#8</td><td><strong>Officer Leon Kennedy 1998 Documents</strong></td><td>RE2 first-day rookie</td><td><strong>B-tier</strong></td></tr>
-    <tr><td>#9</td><td><strong>Goddess Statue (RPD)</strong></td><td>RE2 Remake puzzle item</td><td><strong>B-tier</strong></td></tr>
-    <tr><td>#10</td><td><strong>Baker House Mia Flashback</strong></td><td>RE7 setting cameo</td><td><strong>B-tier</strong></td></tr>
-    <tr><td>#11</td><td><strong>Castle Dimitrescu Audio Mention</strong></td><td>RE8 setting reference</td><td><strong>B-tier</strong></td></tr>
-    <tr><td>#12</td><td><strong>S.T.A.R.S. Office Reference</strong></td><td>RE1 + RE2 organization</td><td><strong>B-tier</strong></td></tr>
-    <tr><td>#13</td><td><strong>Capcom 40th Anniversary Logo</strong></td><td>Meta studio reference</td><td><strong>C-tier</strong></td></tr>
-    <tr><td>#14</td><td><strong>Director Nakanishi Photo Cameo</strong></td><td>Developer easter egg</td><td><strong>C-tier</strong></td></tr>
-    <tr><td>#15</td><td><strong>Famitsu Magazine in Records Office</strong></td><td>Industry meta reference</td><td><strong>C-tier</strong></td></tr>
-    <tr><td>#16</td><td><strong>RE Engine Credit in ARK Office</strong></td><td>Engine self-reference</td><td><strong>D-tier</strong></td></tr>
+    <tr><th>순위</th><th>이스터에그</th><th>참조</th><th>티어</th></tr>
+    <tr><td>#1</td><td><strong>RPD 메인 홀 복제</strong></td><td>RE2 Remake 정확한 재현</td><td><strong style="color:#c0392b;">S-티어</strong></td></tr>
+    <tr><td>#2</td><td><strong>Vivien의 2009 Eveline 연구 노트</strong></td><td>RE7 Eveline 기원 공개</td><td><strong style="color:#c0392b;">S-티어</strong></td></tr>
+    <tr><td>#3</td><td><strong>Rusty Spoon 아이템</strong></td><td>RE7 시작 인벤토리 콜백</td><td><strong style="color:#c0392b;">S-티어</strong></td></tr>
+    <tr><td>#4</td><td><strong>The Chef 선택 보스</strong></td><td>RE2 주방 시퀀스 오마주</td><td><strong>A-티어</strong></td></tr>
+    <tr><td>#5</td><td><strong>Mia Winters EW-2017 헬리콥터</strong></td><td>RE7 엔딩 탱커 참조</td><td><strong>A-티어</strong></td></tr>
+    <tr><td>#6</td><td><strong>Ada Wong 비콘 (NG+ 인새니티)</strong></td><td>RE2/RE4 캐릭터 설정</td><td><strong>A-티어</strong></td></tr>
+    <tr><td>#7</td><td><strong>Sherry Birkin Leon 코덱스 언급</strong></td><td>RE2 + RE6 연결</td><td><strong>A-티어</strong></td></tr>
+    <tr><td>#8</td><td><strong>Officer Leon Kennedy 1998 문서</strong></td><td>RE2 첫날 신참</td><td><strong>B-티어</strong></td></tr>
+    <tr><td>#9</td><td><strong>여신상 (RPD)</strong></td><td>RE2 Remake 퍼즐 아이템</td><td><strong>B-티어</strong></td></tr>
+    <tr><td>#10</td><td><strong>Baker 하우스 Mia 회상</strong></td><td>RE7 설정 카메오</td><td><strong>B-티어</strong></td></tr>
+    <tr><td>#11</td><td><strong>Castle Dimitrescu 오디오 언급</strong></td><td>RE8 설정 참조</td><td><strong>B-티어</strong></td></tr>
+    <tr><td>#12</td><td><strong>S.T.A.R.S. 사무실 참조</strong></td><td>RE1 + RE2 조직</td><td><strong>B-티어</strong></td></tr>
+    <tr><td>#13</td><td><strong>캡콤 40주년 로고</strong></td><td>메타 스튜디오 참조</td><td><strong>C-티어</strong></td></tr>
+    <tr><td>#14</td><td><strong>Nakanishi 디렉터 사진 카메오</strong></td><td>개발자 이스터에그</td><td><strong>C-티어</strong></td></tr>
+    <tr><td>#15</td><td><strong>기록실의 Famitsu 매거진</strong></td><td>업계 메타 참조</td><td><strong>C-티어</strong></td></tr>
+    <tr><td>#16</td><td><strong>ARK 사무실의 RE 엔진 크레딧</strong></td><td>엔진 자기 참조</td><td><strong>D-티어</strong></td></tr>
   </table>
 </div>
 
 <div class="toc">
-  <div class="toc-title">Table of contents</div>
+  <div class="toc-title">목차</div>
   <ul>
-    <li><a href="#methodology">Ranking methodology</a></li>
-    <li><a href="#tldr">TL;DR — must-find easter eggs</a></li>
-    <li><a href="#s-tier">S-tier — franchise-defining references</a></li>
-    <li><a href="#a-tier">A-tier — major callbacks</a></li>
-    <li><a href="#b-tier">B-tier — solid references</a></li>
-    <li><a href="#c-tier">C-tier — minor easter eggs</a></li>
-    <li><a href="#d-tier">D-tier — background details</a></li>
-    <li><a href="#chapter-locations">Easter eggs by chapter location</a></li>
-    <li><a href="#missable">Missable easter eggs warning</a></li>
-    <li><a href="#faq">FAQ — RE9 easter eggs</a></li>
+    <li><a href="#methodology">랭킹 방법론</a></li>
+    <li><a href="#tldr">TL;DR — 필수 발견 이스터에그</a></li>
+    <li><a href="#s-tier">S-티어 — 프랜차이즈 정의 참조</a></li>
+    <li><a href="#a-tier">A-티어 — 주요 콜백</a></li>
+    <li><a href="#b-tier">B-티어 — 견실한 참조</a></li>
+    <li><a href="#c-tier">C-티어 — 소소한 이스터에그</a></li>
+    <li><a href="#d-tier">D-티어 — 배경 세부 사항</a></li>
+    <li><a href="#chapter-locations">챕터 위치별 이스터에그</a></li>
+    <li><a href="#missable">놓치기 쉬운 이스터에그 경고</a></li>
+    <li><a href="#faq">FAQ — RE9 이스터에그</a></li>
   </ul>
 </div>
 
-<h2 id="methodology">Ranking methodology</h2>
+<h2 id="methodology">랭킹 방법론</h2>
 <div class="boss-stats">
   <table>
-    <tr><th>Dimension</th><th>What it measures</th><th>Weight</th></tr>
-    <tr><td><strong>Reference depth</strong></td><td>How much RE series knowledge required</td><td>25%</td></tr>
-    <tr><td><strong>Discovery difficulty</strong></td><td>How hidden / obscure the egg is</td><td>20%</td></tr>
-    <tr><td><strong>Cultural memorability</strong></td><td>Will fans share/discuss this?</td><td>20%</td></tr>
-    <tr><td><strong>Community discussion</strong></td><td>Reddit / forum thread count</td><td>20%</td></tr>
-    <tr><td><strong>Narrative significance</strong></td><td>Affects RE9 lore or just decorative?</td><td>15%</td></tr>
+    <tr><th>차원</th><th>측정 대상</th><th>가중치</th></tr>
+    <tr><td><strong>참조 깊이</strong></td><td>요구되는 RE 시리즈 지식</td><td>25%</td></tr>
+    <tr><td><strong>발견 난이도</strong></td><td>이스터에그가 얼마나 숨겨져 있나</td><td>20%</td></tr>
+    <tr><td><strong>문화적 기억도</strong></td><td>팬들이 공유/토론할까?</td><td>20%</td></tr>
+    <tr><td><strong>커뮤니티 토론</strong></td><td>Reddit / 포럼 스레드 수</td><td>20%</td></tr>
+    <tr><td><strong>내러티브 중요성</strong></td><td>RE9 lore에 영향 vs 단순 장식?</td><td>15%</td></tr>
   </table>
 </div>
 
-<h2 id="tldr">TL;DR — must-find easter eggs</h2>
+<h2 id="tldr">TL;DR — 필수 발견 이스터에그</h2>
 <ul>
-  <li><strong>The big one:</strong> RPD Main Hall (#1). Walk into <a href="re9-locations-ranked-tier-list.html">RPD Main Hall</a> as Leon and watch the camera tell 28 years of history.</li>
-  <li><strong>Most lore-significant:</strong> Vivien's 2009 Eveline notes (#2). The smoking gun connecting RE7 to RE9.</li>
-  <li><strong>Easiest to miss:</strong> Rusty Spoon (#3). Looks like junk. Sells for nothing. Pure RE7 reference.</li>
-  <li><strong>Hardest to find:</strong> Capcom 40th Anniversary logo (#13). Requires specific in-game time check.</li>
+  <li><strong>큰 거:</strong> RPD 메인 홀 (#1). Leon으로 <a href="re9-locations-ranked-tier-list.html">RPD 메인 홀</a> 걸어 들어가서 28년 역사를 카메라가 말하는 것을 보세요.</li>
+  <li><strong>가장 lore 중요:</strong> Vivien의 2009 Eveline 노트 (#2). RE7을 RE9에 연결하는 결정적 증거.</li>
+  <li><strong>가장 놓치기 쉬움:</strong> Rusty Spoon (#3). 잡동사니처럼 보임. 아무것도 안 함. 순수 RE7 참조.</li>
+  <li><strong>가장 찾기 어려움:</strong> 캡콤 40주년 로고 (#13). 특정 게임 내 시간 확인 필요.</li>
 </ul>
 
-<h2 id="s-tier">S-tier — franchise-defining references</h2>
+<h2 id="s-tier">S-티어 — 프랜차이즈 정의 참조</h2>
 
-<h3>#1: RPD Main Hall RE2 Remake Replica</h3>
-<p><strong>Why #1:</strong> The single most loaded easter egg in modern RE history. Capcom recreated <a href="rpd-orphanage-walkthrough.html">RPD Main Hall</a> pixel-for-pixel from RE2 Remake, then aged it 28 years. Same fountain. Same Goddess statue. Same staircase. The bloodstains and dust patterns are exactly where they were in 1998. Veterans walk in and immediately recognize the architecture. The camera lingers — Capcom wants you to look.</p>
-<p><strong>RE series knowledge required:</strong> Played RE2 Remake (2019)</p>
+<h3>#1: RPD 메인 홀 RE2 Remake 복제</h3>
+<p><strong>#1인 이유:</strong> 현대 RE 역사상 가장 무거운 이스터에그. 캡콤이 <a href="rpd-orphanage-walkthrough.html">RPD 메인 홀</a>을 RE2 Remake에서 픽셀 단위로 재현하고 28년 노화시킴. 같은 분수. 같은 여신상. 같은 계단. 핏자국과 먼지 패턴이 1998년에 있던 정확한 위치에. 베테랑은 들어가자마자 건축을 인식. 카메라가 머뭇거림 — 캡콤이 당신이 보길 원함.</p>
+<p><strong>필요한 RE 시리즈 지식:</strong> RE2 Remake (2019) 플레이</p>
 
-<h3>#2: Vivien's 2009 Eveline Research Notes</h3>
-<p><strong>Why #2:</strong> The narrative bombshell that restructures the E-series mythology. Found in Care Center records office. Vivien Ashcroft's clinical journal from her time at The Connections — 2009 entries describe Eveline's "behavioral attachment patterns" and Vivien's growing emotional response. This is the document that confirms why Vivien sent Grace to Rhodes Hill 17 years later.</p>
-<p>See our <a href="eveline-character-profile-complete.html">Eveline profile</a>.</p>
+<h3>#2: Vivien의 2009 Eveline 연구 노트</h3>
+<p><strong>#2인 이유:</strong> E-시리즈 신화를 재구성하는 내러티브 폭탄. 케어 센터 기록실에서 발견. The Connections에서의 Vivien Ashcroft의 임상 일지 — 2009 항목이 Eveline의 "행동 애착 패턴"과 Vivien의 증가하는 감정적 반응을 설명. 이것이 17년 후 Vivien이 Grace를 Rhodes Hill로 보낸 이유를 확인하는 문서.</p>
+<p><a href="eveline-character-profile-complete.html">Eveline 프로필</a> 참조.</p>
 
-<h3>#3: Rusty Spoon Item</h3>
-<p><strong>Why #3:</strong> The most subtle franchise reference in RE9. A pickup item in Chapter 1 Wrenwood basement. Description reads simply "Old kitchen utensil. Worn from use." No lore explanation. RE7 veterans immediately recognize it: a rusty spoon is the very first item Mia gives Ethan in RE7's opening. Pure callback.</p>
+<h3>#3: Rusty Spoon 아이템</h3>
+<p><strong>#3인 이유:</strong> RE9에서 가장 미묘한 프랜차이즈 참조. 챕터 1 Wrenwood 지하의 픽업 아이템. 설명이 단순 "오래된 부엌 도구. 사용으로 닳음." Lore 설명 없음. RE7 베테랑은 즉시 인식: 녹슨 스푼은 RE7 오프닝에서 Mia가 Ethan에게 주는 첫 아이템. 순수 콜백.</p>
 
-<h2 id="a-tier">A-tier — major callbacks</h2>
+<h2 id="a-tier">A-티어 — 주요 콜백</h2>
 
-<h3>#4: The Chef Optional Boss</h3>
-<p><strong>Why A-tier:</strong> Found in Chapter 4 Courtyard kitchen. Fights with cleaver and throwing knives. Direct homage to RE2 Remake's kitchen sequence where Leon discovers a chef-turned-zombie. The Chef's recipe codex unlocks lore about RE2's Birkin family.</p>
-<p>See <a href="how-to-beat-the-chef.html">The Chef boss guide</a>.</p>
+<h3>#4: The Chef 선택 보스</h3>
+<p><strong>A-티어 이유:</strong> 챕터 4 안뜰 주방에서 발견. 식칼과 던지는 칼로 싸움. Leon이 셰프-좀비를 발견하는 RE2 Remake 주방 시퀀스에 직접 오마주. The Chef의 레시피 코덱스가 RE2의 Birkin 가족에 대한 lore 해금.</p>
+<p><a href="how-to-beat-the-chef.html">The Chef 보스 가이드</a> 참조.</p>
 
-<h3>#5: Mia Winters EW-2017 Helicopter</h3>
-<p><strong>Why A-tier:</strong> Mia's helicopter in the Grace True Ending is registered as EW-2017 — "EW" for Ethan Winters, "2017" for RE7's release year. Capcom didn't need to do this. They did anyway.</p>
-<p>See <a href="mia-winters-re9-re7-connection.html">Mia Winters cameo explained</a>.</p>
+<h3>#5: Mia Winters EW-2017 헬리콥터</h3>
+<p><strong>A-티어 이유:</strong> Grace True 엔딩에서 Mia의 헬리콥터는 EW-2017로 등록 — "EW"는 Ethan Winters, "2017"은 RE7의 출시 연도. 캡콤이 이렇게 할 필요 없었음. 그럼에도 했음.</p>
+<p><a href="mia-winters-re9-re7-connection.html">Mia Winters 카메오 설명</a> 참조.</p>
 
-<h3>#6: Ada Wong Beacon (NG+ Insanity)</h3>
-<p><strong>Why A-tier:</strong> NG+ Insanity playthrough completion unlocks a radio beacon scene. Leon hears Ada's voice on a satellite frequency. She says only three words before the signal cuts. Sets up Ada's return in DLC or RE10. Pure setup that respects 28 years of fan attachment.</p>
-<p>See <a href="ada-wong-re9-reversal-arc.html">Ada Wong RE9 reversal arc</a>.</p>
+<h3>#6: Ada Wong 비콘 (NG+ 인새니티)</h3>
+<p><strong>A-티어 이유:</strong> NG+ 인새니티 플레이 완료가 라디오 비콘 장면 해금. Leon이 위성 주파수에서 Ada의 목소리 들음. 신호 끊기 전 세 마디만 함. DLC 또는 RE10에서 Ada 복귀 설정. 28년 팬 애착을 존중하는 순수 설정.</p>
+<p><a href="ada-wong-re9-reversal-arc.html">Ada Wong RE9 반전 아크</a> 참조.</p>
 
-<h3>#7: Sherry Birkin Leon Codex Mention</h3>
-<p><strong>Why A-tier:</strong> Leon's personal codex (accessible via inventory menu) contains a line: "Last spoke to Sherry 6 months ago. She's in Italy with the BSAA." First named reference to Sherry in a mainline RE since RE6. Sets up potential DLC.</p>
+<h3>#7: Sherry Birkin Leon 코덱스 언급</h3>
+<p><strong>A-티어 이유:</strong> Leon의 개인 코덱스 (인벤토리 메뉴로 접근)에 한 줄 있음: "Sherry와 마지막 통화 6개월 전. 그녀는 BSAA와 함께 이탈리아에." RE6 이후 메인 RE에서 Sherry에 대한 첫 명명 참조. 잠재적 DLC 설정.</p>
 
-<h2 id="b-tier">B-tier — solid references</h2>
+<h2 id="b-tier">B-티어 — 견실한 참조</h2>
 
-<h3>#8-12: Veteran touchpoints</h3>
-<p><strong>Officer Leon Kennedy 1998 Documents</strong> — paperwork in RPD basement. Time-stamped "September 29, 1998."<br>
-<strong>Goddess Statue (RPD)</strong> — same one from RE2 Remake puzzle. Doesn't function as puzzle here. Just exists.<br>
-<strong>Baker House Mia Flashback</strong> — 30-second cutscene during Grace True Ending. Shows Baker dining table.<br>
-<strong>Castle Dimitrescu Audio Mention</strong> — audio log from a Connections agent references "the Romanian project" gone wrong (RE8).<br>
-<strong>S.T.A.R.S. Office Reference</strong> — locked door in RPD with "S.T.A.R.S." engraving. Not enterable in RE9. Just visible.</p>
+<h3>#8-12: 베테랑 터치 포인트</h3>
+<p><strong>Officer Leon Kennedy 1998 문서</strong> — RPD 지하의 서류. 타임스탬프 "1998년 9월 29일."<br>
+<strong>여신상 (RPD)</strong> — RE2 Remake 퍼즐과 같은 것. 여기서는 퍼즐로 기능하지 않음. 그냥 존재.<br>
+<strong>Baker 하우스 Mia 회상</strong> — Grace True 엔딩 중 30초 컷씬. Baker 식탁 보여줌.<br>
+<strong>Castle Dimitrescu 오디오 언급</strong> — Connections 요원의 오디오 로그가 "루마니아 프로젝트"가 잘못된 것을 참조 (RE8).<br>
+<strong>S.T.A.R.S. 사무실 참조</strong> — RPD의 잠긴 문에 "S.T.A.R.S." 새김. RE9에서 들어갈 수 없음. 그냥 보임.</p>
 
-<h2 id="c-tier">C-tier — minor easter eggs</h2>
+<h2 id="c-tier">C-티어 — 소소한 이스터에그</h2>
 
-<h3>#13-15: Meta references</h3>
-<p><strong>Capcom 40th Anniversary Logo</strong> — appears on the Care Center records office calendar (April 2026 — Capcom's actual 41st anniversary year, but the calendar reads "40th" as a wink).<br>
-<strong>Director Nakanishi Photo Cameo</strong> — Hideki Nakanishi appears as a face on a photograph in Vivien's lab. Hidden among the research files.<br>
-<strong>Famitsu Magazine</strong> — Care Center records office bookshelf has a Famitsu issue with RE9 cover (the actual reveal issue from January 2026).</p>
+<h3>#13-15: 메타 참조</h3>
+<p><strong>캡콤 40주년 로고</strong> — 케어 센터 기록실 달력에 등장 (2026년 4월 — 캡콤의 실제 41주년이지만 달력에 "40주년"으로 표시, 윙크).<br>
+<strong>Nakanishi 디렉터 사진 카메오</strong> — Hideki Nakanishi가 Vivien 연구실의 사진에 얼굴로 등장. 연구 파일 사이에 숨겨짐.<br>
+<strong>Famitsu 매거진</strong> — 케어 센터 기록실 책장에 RE9 표지 Famitsu호 있음 (2026년 1월 실제 공개 호).</p>
 
-<h2 id="d-tier">D-tier — background details</h2>
+<h2 id="d-tier">D-티어 — 배경 세부 사항</h2>
 
-<h3>#16: RE Engine Credit</h3>
-<p><strong>RE Engine Credit in ARK Office</strong> — a plaque in the ARK executive office reads "Powered by RE Engine v9.0." Pure self-reference, no narrative weight.</p>
+<h3>#16: RE 엔진 크레딧</h3>
+<p><strong>ARK 사무실의 RE 엔진 크레딧</strong> — ARK 임원 사무실의 명판에 "RE 엔진 v9.0으로 구동." 순수 자기 참조, 내러티브 무게 없음.</p>
 
-<h2 id="chapter-locations">Easter eggs by chapter location</h2>
+<h2 id="chapter-locations">챕터 위치별 이스터에그</h2>
 
 <div class="boss-stats">
   <table>
-    <tr><th>Chapter</th><th>Easter eggs here</th><th>Difficulty to find</th></tr>
-    <tr><td>Chapter 1: Wrenwood Hotel</td><td>Rusty Spoon</td><td>Medium (basement)</td></tr>
-    <tr><td>Chapter 2: Care Center</td><td>Vivien Research Notes, Capcom 40th Logo, Famitsu Magazine</td><td>Easy</td></tr>
-    <tr><td>Chapter 4: Courtyard</td><td>The Chef (optional encounter)</td><td>Hidden (greenhouse area)</td></tr>
-    <tr><td>Chapter 6: RPD &amp; Orphanage</td><td>RPD Main Hall, Goddess Statue, Officer Leon Docs, S.T.A.R.S. Office, Castle Dimitrescu Audio</td><td>Various</td></tr>
-    <tr><td>Chapter 8: ARK Facility</td><td>Director Nakanishi Photo, RE Engine Credit, Sherry Birkin Codex</td><td>Hidden</td></tr>
-    <tr><td>Grace True Ending</td><td>Mia EW-2017 Helicopter, Baker House Flashback</td><td>Trigger-based</td></tr>
-    <tr><td>NG+ Insanity (post-game)</td><td>Ada Wong Beacon</td><td>Hardest (NG+ Insanity playthrough required)</td></tr>
+    <tr><th>챕터</th><th>여기 이스터에그</th><th>찾기 난이도</th></tr>
+    <tr><td>챕터 1: Wrenwood 호텔</td><td>Rusty Spoon</td><td>중간 (지하)</td></tr>
+    <tr><td>챕터 2: 케어 센터</td><td>Vivien 연구 노트, 캡콤 40주년 로고, Famitsu 매거진</td><td>쉬움</td></tr>
+    <tr><td>챕터 4: 안뜰</td><td>The Chef (선택 인카운터)</td><td>숨겨짐 (온실 영역)</td></tr>
+    <tr><td>챕터 6: RPD &amp; 고아원</td><td>RPD 메인 홀, 여신상, Leon 1998 문서, S.T.A.R.S. 사무실, Castle Dimitrescu 오디오</td><td>다양함</td></tr>
+    <tr><td>챕터 8: ARK 시설</td><td>Nakanishi 디렉터 사진, RE 엔진 크레딧, Sherry Birkin 코덱스</td><td>숨겨짐</td></tr>
+    <tr><td>Grace True 엔딩</td><td>Mia EW-2017 헬리콥터, Baker 하우스 회상</td><td>트리거 기반</td></tr>
+    <tr><td>NG+ 인새니티 (게임 후)</td><td>Ada Wong 비콘</td><td>가장 어려움 (NG+ 인새니티 플레이 필요)</td></tr>
   </table>
 </div>
 
-<h2 id="missable">Missable easter eggs warning</h2>
+<h2 id="missable">놓치기 쉬운 이스터에그 경고</h2>
 <ul>
-  <li><strong>The Chef</strong> — Optional boss, completely skippable. Don't miss it for the codex unlock.</li>
-  <li><strong>Mia EW-2017 Helicopter</strong> — Grace True Ending route only. Other endings don't show the helicopter detail.</li>
-  <li><strong>Ada Wong Beacon</strong> — NG+ Insanity completion required.</li>
-  <li><strong>Director Nakanishi Photo</strong> — Hidden in Vivien's lab among 12 research photos. Easy to miss in the cinematic intensity.</li>
-  <li><strong>Castle Dimitrescu Audio</strong> — Random audio log spawn in RPD. Not guaranteed every playthrough.</li>
+  <li><strong>The Chef</strong> — 선택 보스, 완전히 건너뛸 수 있음. 코덱스 해금을 위해 놓치지 말 것.</li>
+  <li><strong>Mia EW-2017 헬리콥터</strong> — Grace True 엔딩 경로만. 다른 엔딩은 헬리콥터 디테일 보여주지 않음.</li>
+  <li><strong>Ada Wong 비콘</strong> — NG+ 인새니티 완료 필요.</li>
+  <li><strong>Nakanishi 디렉터 사진</strong> — Vivien 연구실의 12개 연구 사진 사이에 숨겨짐. 시네마틱 강도에 놓치기 쉬움.</li>
+  <li><strong>Castle Dimitrescu 오디오</strong> — RPD의 랜덤 오디오 로그 스폰. 매 플레이마다 보장 안 됨.</li>
 </ul>
 
-<h2 id="faq">FAQ — RE9 easter eggs</h2>
+<h2 id="faq">FAQ — RE9 이스터에그</h2>
 
-<p><strong>Q: Are these all canonical easter eggs?</strong><br>
-A: 16/16 are intentional Capcom placements confirmed via the May 2026 Famitsu director interview. No fan theory entries on this list.</p>
+<p><strong>Q: 이게 모두 정사 이스터에그인가요?</strong><br>
+A: 16/16 모두 2026년 5월 Famitsu 디렉터 인터뷰로 확인된 의도적 캡콤 배치. 이 목록에 팬 이론 항목 없음.</p>
 
-<p><strong>Q: Which easter egg has the deepest RE knowledge requirement?</strong><br>
-A: Sherry Birkin Leon Codex (#7) — requires knowing RE6 character status (last seen working with BSAA) to understand the Italy reference.</p>
+<p><strong>Q: 어떤 이스터에그가 가장 깊은 RE 지식 요구하나요?</strong><br>
+A: Sherry Birkin Leon 코덱스 (#7) — 이탈리아 참조를 이해하려면 RE6 캐릭터 상태 (BSAA와 함께 마지막 목격) 알아야 함.</p>
 
-<p><strong>Q: Are there hidden easter eggs not on this list?</strong><br>
-A: Two are unconfirmed: a possible "Wesker reference" in the ARK Vivien lab background photographs (unconfirmed by Capcom), and a rumored "Albert Wesker glasses" item hidden in NG+ Insanity (no datamine confirmation).</p>
+<p><strong>Q: 이 목록에 없는 숨겨진 이스터에그 있나요?</strong><br>
+A: 둘 미확인: ARK Vivien 연구실 배경 사진의 가능한 "Wesker 참조" (캡콤 미확인), NG+ 인새니티에 숨겨진 소문의 "Albert Wesker 안경" 아이템 (데이터마인 확인 없음).</p>
 
-<p><strong>Q: Which is the most popular easter egg in the community?</strong><br>
-A: RPD Main Hall (#1) by a wide margin. Reddit's RE9 subreddit has 12,000+ comments on the RPD reveal moment.</p>
+<p><strong>Q: 커뮤니티에서 가장 인기 있는 이스터에그는?</strong><br>
+A: RPD 메인 홀 (#1) 큰 차이로. Reddit의 RE9 서브레딧에 RPD 공개 순간에 대한 12,000+ 댓글.</p>
 
-<p><strong>Q: Does collecting all easter eggs unlock anything?</strong><br>
-A: No achievement / trophy for collecting easter eggs. The codex updates with discovery entries but no gameplay reward.</p>
+<p><strong>Q: 모든 이스터에그 수집이 뭔가를 해금하나요?</strong><br>
+A: 이스터에그 수집에 업적 / 트로피 없음. 코덱스가 발견 항목으로 업데이트되지만 게임플레이 보상 없음.</p>
 
-<p><strong>Q: Which easter egg should I prioritize on first playthrough?</strong><br>
-A: Vivien's 2009 Research Notes (#2). It's also trophy-required for Platinum (mandatory pickup in Care Center records).</p>
+<p><strong>Q: 첫 플레이에 어떤 이스터에그를 우선해야 하나요?</strong><br>
+A: Vivien의 2009 연구 노트 (#2). 플래티넘에도 트로피 필수 (케어 센터 기록실 필수 픽업).</p>
 
-<p><strong>Q: Will RE10 reference RE9's easter eggs?</strong><br>
-A: Director Nakanishi confirmed "yes — RE9's photo collection from the Vivien lab will reappear" in his Famitsu interview.</p>
+<p><strong>Q: RE10이 RE9의 이스터에그를 참조할까요?</strong><br>
+A: 디렉터 Nakanishi가 Famitsu 인터뷰에서 "네 — RE9의 Vivien 연구실 사진 컬렉션이 다시 등장할 것" 확인.</p>
 
-<p><strong>Q: Are there any RE5 / RE6 references in RE9?</strong><br>
-A: Sherry Birkin codex (RE6) and a brief Chris Redfield mention in Leon's codex (RE5/RE6). No RE5 setting references.</p>
+<p><strong>Q: RE9에 RE5 / RE6 참조 있나요?</strong><br>
+A: Sherry Birkin 코덱스 (RE6)와 Leon의 코덱스에 짧은 Chris Redfield 언급 (RE5/RE6). RE5 설정 참조 없음.</p>
 
 <div class="cta">
-  <div class="cta-title">Related content</div>
-  <a href="raccoon-city-walkthrough.html">Raccoon City walkthrough (RE2 references)</a>
-  <a href="tier-lists.html">View the complete tier lists hub (10 lists)</a>
-  <a href="re9-cutscenes-ranked-tier-list.html">All 16 cutscenes ranked</a>
-  <a href="re9-locations-ranked-tier-list.html">All 16 locations ranked</a>
-  <a href="re9-characters-ranked-tier-list.html">All 16 characters ranked</a>
-  <a href="re9-items-treasures-ranked-tier-list.html">All 18 items ranked</a>
-  <a href="re9-hidden-easter-eggs-list.html">Hidden easter eggs full list</a>
-  <a href="all-resident-evil-games-ranked-2026.html">All RE games ranked</a>
-  <a href="rpd-orphanage-walkthrough.html">RPD walkthrough (Easter Egg #1 location)</a>
-  <a href="mia-winters-re9-re7-connection.html">Mia Winters cameo (Easter Egg #5)</a>
-  <a href="ada-wong-re9-reversal-arc.html">Ada Wong beacon (Easter Egg #6)</a>
-  <a href="index.html">All guides</a>
+  <div class="cta-title">관련 콘텐츠</div>
+  <a href="raccoon-city-walkthrough.html">라쿤 시티 공략 (RE2 참조)</a>
+  <a href="tier-lists.html">완전한 티어 리스트 허브 보기 (10개 리스트) (영어/한국어)</a>
+  <a href="re9-cutscenes-ranked-tier-list.html">16개 컷씬 모두 랭킹 (영어/한국어)</a>
+  <a href="re9-locations-ranked-tier-list.html">16개 위치 모두 랭킹 (영어/한국어)</a>
+  <a href="re9-characters-ranked-tier-list.html">16개 캐릭터 모두 랭킹 (영어/한국어)</a>
+  <a href="re9-items-treasures-ranked-tier-list.html">18개 아이템 모두 랭킹 (영어/한국어)</a>
+  <a href="re9-hidden-easter-eggs-list.html">숨겨진 이스터에그 전체 목록 (영어/한국어)</a>
+  <a href="all-resident-evil-games-ranked-2026.html">모든 RE 게임 랭킹 (영어/한국어)</a>
+  <a href="rpd-orphanage-walkthrough.html">RPD 공략 (이스터에그 #1 위치) (영어/한국어)</a>
+  <a href="mia-winters-re9-re7-connection.html">Mia Winters 카메오 (이스터에그 #5) (영어/한국어)</a>
+  <a href="ada-wong-re9-reversal-arc.html">Ada Wong 비콘 (이스터에그 #6) (영어/한국어)</a>
+  <a href="index.html">모든 공략</a>
 </div>
   <a href="tier-lists.html">View the complete tier lists hub (9 lists)</a>
   <a href="re9-all-endings-explained.html">All 8 endings explained</a>
@@ -811,8 +814,8 @@ A: Sherry Birkin codex (RE6) and a brief Chris Redfield mention in Leon's codex 
 
 <!-- Ko-fi support strip (subtle, end-of-article) -->
 <div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
-  <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">If this guide helped, consider supporting more guides like this on Ko-fi. <em style="color:#ba7517;font-style:normal;">Every little bit means the world.</em></p>
-  <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Support on Ko-fi</a>
+  <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 가이드가 도움이 되셨다면, Ko-fi에서 더 많은 가이드 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
+  <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
 </div>
 
 </div>
