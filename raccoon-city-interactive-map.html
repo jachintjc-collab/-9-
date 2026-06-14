@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Raccoon City — Interactive Area Map · RE9 Guide</title>
+<meta name="description" content="RPD STARS office + sewers + alleyways. Includes Mr. X chase route + RE2 callback locations.">
+<meta name="theme-color" content="#241410">
+<link rel="canonical" href="https://www.re9guide.it.com/raccoon-city-interactive-map.html">
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/raccoon-city-interactive-map.html">
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/raccoon-city-interactive-map.html">
+<style id="vintage-theme">
+body{background-color:#241410;background-image:repeating-radial-gradient(circle at 15% 85%,rgba(60,30,22,0.55) 0px,rgba(60,30,22,0.55) 1px,transparent 1px,transparent 90px),repeating-radial-gradient(circle at 85% 15%,rgba(48,22,16,0.45) 0px,rgba(48,22,16,0.45) 1px,transparent 1px,transparent 110px),radial-gradient(ellipse 80% 60% at 50% 30%,rgba(70,30,22,0.25) 0%,transparent 70%);background-attachment:fixed;background-size:100% 100%}
+body{font-family:-apple-system,'SF Pro Display',sans-serif;color:#f0ebe8;line-height:1.6;margin:0;padding:0}
+.wrap{max-width:880px;margin:0 auto;padding:30px 20px 60px}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:30px;color:#c0392b;margin:0 0 10px}
+.lead{font-size:14px;color:#b0a09a;margin:14px 0;max-width:760px}
+.fresh{background:rgba(67,160,71,0.1);border-left:3px solid #43a047;padding:12px 16px;margin:18px 0;font-size:12px;color:#b0a09a}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 12px}
+.filter-chip{padding:5px 11px;font-size:11px;font-family:monospace;letter-spacing:0.06em;text-transform:uppercase;border:0.5px solid rgba(192,57,43,0.35);color:#b0a09a;background:rgba(46,26,20,0.6);cursor:pointer;border-radius:3px;display:inline-flex;align-items:center;gap:5px}
+.filter-chip.active{background:rgba(192,57,43,0.3);color:#fff;border-color:#c0392b}
+.filter-chip:hover{color:#fff}
+.map-canvas{background:rgba(36,20,16,0.85);border:0.5px solid rgba(192,57,43,0.2);border-radius:6px;margin:18px 0;overflow:auto}
+svg{display:block;max-width:100%;height:auto}
+.marker{cursor:pointer;transition:transform 0.15s}
+.marker:hover{transform:scale(1.3)}
+.popup{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#2e1a14;border:1px solid #c0392b;border-radius:6px;padding:20px 24px;max-width:380px;width:90%;z-index:100;box-shadow:0 20px 50px rgba(0,0,0,0.6);display:none}
+.popup.open{display:block}
+.popup-bg{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.6);z-index:99;display:none}
+.popup-bg.open{display:block}
+.popup h3{margin:0 0 8px;color:#c0392b;font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:18px}
+.popup-type{display:inline-block;padding:2px 8px;font-size:10px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;border-radius:2px;margin-bottom:8px}
+.popup-desc{font-size:13px;color:#f0ebe8;line-height:1.7;margin:8px 0 14px}
+.popup-ref{font-size:12px}
+.popup-ref a{color:#ba7517;text-decoration:none}
+.popup-ref a:hover{color:#c0392b;text-decoration:underline}
+.popup-close{position:absolute;top:8px;right:10px;background:none;border:none;color:#b0a09a;font-size:24px;cursor:pointer;width:32px;height:32px}
+.popup-close:hover{color:#c0392b}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin:14px 0;padding:10px 14px;background:rgba(46,26,20,0.4);border-radius:4px;font-size:12px}
+.legend span{display:inline-flex;align-items:center;gap:4px;color:#b0a09a}
+footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.3);font-size:11px;color:#706056;text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Raccoon City — Interactive Area Map", "applicationCategory": "GameMap", "operatingSystem": "Browser", "description": "RPD STARS office + sewers + alleyways. Includes Mr. X chase route + RE2 callback locations.", "url": "https://www.re9guide.it.com/raccoon-city-interactive-map.html"}</script>
+</head>
+<body>
+<div class="wrap">
+<h1>Raccoon City — Interactive Area Map</h1>
+<p class="lead">RPD STARS office + sewers + alleyways. Includes Mr. X chase route + RE2 callback locations.</p>
+<div class="fresh">📅 <strong>2026-06-14</strong> · 15 markers · Click any marker for details. Filter by category.</div>
+
+<div class="filters">
+<button class="filter-chip active" data-cat="all">All (15)</button>
+<button class="filter-chip" data-cat="raccoon">🦝 Raccoons</button>
+<button class="filter-chip" data-cat="safe">🔒 Safes</button>
+<button class="filter-chip" data-cat="weapon">🔫 Weapons</button>
+<button class="filter-chip" data-cat="item">📦 Items</button>
+<button class="filter-chip" data-cat="audio">🎙 Audio Logs</button>
+<button class="filter-chip" data-cat="note">📝 Notes</button>
+<button class="filter-chip" data-cat="boss">⚔️ Bosses</button>
+</div>
+
+<div class="map-canvas">
+<svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" id="mapsvg" role="img" aria-label="Raccoon City interactive area map">
+<g><rect x="80" y="80" width="180" height="140" fill="rgba(46,26,20,0.6)" stroke="rgba(192,57,43,0.35)" stroke-width="0.5" rx="4"/><text x="88" y="98" font-size="11" font-family="monospace" fill="#ba7517">RPD Main Hall</text></g><g><rect x="80" y="230" width="180" height="80" fill="rgba(46,26,20,0.6)" stroke="rgba(192,57,43,0.35)" stroke-width="0.5" rx="4"/><text x="88" y="248" font-size="11" font-family="monospace" fill="#ba7517">RPD STARS Office</text></g><g><rect x="80" y="320" width="180" height="80" fill="rgba(46,26,20,0.6)" stroke="rgba(192,57,43,0.35)" stroke-width="0.5" rx="4"/><text x="88" y="338" font-size="11" font-family="monospace" fill="#ba7517">RPD Evidence Room</text></g><g><rect x="280" y="80" width="160" height="100" fill="rgba(46,26,20,0.6)" stroke="rgba(192,57,43,0.35)" stroke-width="0.5" rx="4"/><text x="288" y="98" font-size="11" font-family="monospace" fill="#ba7517">Marvin's Office</text></g><g><rect x="280" y="190" width="160" height="100" fill="rgba(46,26,20,0.6)" stroke="rgba(192,57,43,0.35)" stroke-width="0.5" rx="4"/><text x="288" y="208" font-size="11" font-family="monospace" fill="#ba7517">Library</text></g><g><rect x="280" y="300" width="160" height="100" fill="rgba(46,26,20,0.6)" stroke="rgba(192,57,43,0.35)" stroke-width="0.5" rx="4"/><text x="288" y="318" font-size="11" font-family="monospace" fill="#ba7517">Sewer Entry</text></g><g><rect x="460" y="80" width="140" height="150" fill="rgba(46,26,20,0.6)" stroke="rgba(192,57,43,0.35)" stroke-width="0.5" rx="4"/><text x="468" y="98" font-size="11" font-family="monospace" fill="#ba7517">Alleyways</text></g><g><rect x="460" y="240" width="140" height="160" fill="rgba(46,26,20,0.6)" stroke="rgba(192,57,43,0.35)" stroke-width="0.5" rx="4"/><text x="468" y="258" font-size="11" font-family="monospace" fill="#ba7517">Garage</text></g>
+<g id="markers"></g>
+</svg>
+</div>
+
+<div class="legend">
+<span>🦝 Mr. Raccoon</span>
+<span>🔒 Safe</span>
+<span>🔫 Weapon</span>
+<span>📦 Item</span>
+<span>🎙 Audio Log</span>
+<span>📝 Note/Lore</span>
+<span>⚔️ Boss</span>
+</div>
+
+<div class="popup-bg" id="bg"></div>
+<div class="popup" id="popup" role="dialog">
+<button class="popup-close" id="close" aria-label="Close">×</button>
+<div class="popup-type" id="ptype"></div>
+<h3 id="pname"></h3>
+<div class="popup-desc" id="pdesc"></div>
+<div class="popup-ref" id="pref"></div>
+</div>
+
+<footer>re9guide.it.com · Phase 90 interactive map. Fan-made, not affiliated with Capcom.</footer>
+</div>
+
+<script>
+var MARKERS = [{"x": 140, "y": 130, "type": "raccoon", "name": "Raccoon #10", "desc": "Reception desk drawer", "ref": ""}, {"x": 210, "y": 130, "type": "note", "name": "Welcome to RPD", "desc": "RE2 RPD callback", "ref": "rpd-full-history-through-re-series"}, {"x": 130, "y": 270, "type": "safe", "name": "STARS Office Safe", "desc": "Code: 924 (whiteboard)", "ref": "all-5-safe-codes-guide"}, {"x": 210, "y": 270, "type": "weapon", "name": "S&S M232", "desc": "Wesker's locker", "ref": "ss-m232-handgun-complete-guide"}, {"x": 130, "y": 360, "type": "audio", "name": "Mr. X creation files", "desc": "Dr. Wilson evidence tapes", "ref": "audio-log-mr-x-creation"}, {"x": 210, "y": 360, "type": "raccoon", "name": "Raccoon #11", "desc": "Evidence locker top shelf", "ref": ""}, {"x": 340, "y": 120, "type": "boss", "name": "Mr. X (T-103)", "desc": "Spawns after STARS Office", "ref": ""}, {"x": 400, "y": 150, "type": "raccoon", "name": "Raccoon #12", "desc": "Marvin's safe", "ref": ""}, {"x": 340, "y": 230, "type": "item", "name": "Hunting Rifle", "desc": "Library upper floor", "ref": ""}, {"x": 400, "y": 260, "type": "raccoon", "name": "Raccoon #13", "desc": "Library bookcase", "ref": ""}, {"x": 340, "y": 350, "type": "weapon", "name": "Grenade Launcher", "desc": "Sewer hidden compartment", "ref": "grenade-launcher-complete-guide"}, {"x": 520, "y": 130, "type": "raccoon", "name": "Raccoon #14", "desc": "Alley dumpster", "ref": ""}, {"x": 520, "y": 180, "type": "boss", "name": "Titan Spinner", "desc": "Mini-boss in alleys", "ref": ""}, {"x": 520, "y": 290, "type": "raccoon", "name": "Raccoon #15", "desc": "Garage tool rack", "ref": ""}, {"x": 520, "y": 340, "type": "raccoon", "name": "Raccoon #16", "desc": "Behind tow truck", "ref": ""}];
+var ICONS = {"raccoon":["🦝","#ba7517"],"safe":["🔒","#c0392b"],"weapon":["🔫","#7d9c40"],"item":["📦","#5a8a9a"],"audio":["🎙","#9b69e0"],"note":["📝","#69a8e0"],"boss":["⚔️","#e54c3a"]};
+var activeFilter='all';
+
+function renderMarkers(){
+  var g=document.getElementById('markers');
+  g.innerHTML='';
+  MARKERS.forEach(function(m,i){
+    if(activeFilter!=='all' && m.type!==activeFilter) return;
+    var ic=ICONS[m.type]||["?","#fff"];
+    var t=document.createElementNS('http://www.w3.org/2000/svg','text');
+    t.setAttribute('x',m.x);
+    t.setAttribute('y',m.y+5);
+    t.setAttribute('text-anchor','middle');
+    t.setAttribute('font-size','16');
+    t.setAttribute('class','marker');
+    t.setAttribute('data-i',i);
+    t.textContent=ic[0];
+    t.setAttribute('aria-label',m.name);
+    t.style.cursor='pointer';
+    g.appendChild(t);
+  });
+}
+
+function openPopup(m){
+  var ic=ICONS[m.type]||["?","#fff"];
+  document.getElementById('ptype').textContent=ic[0]+' '+m.type.toUpperCase();
+  document.getElementById('ptype').style.background='rgba(192,57,43,0.18)';
+  document.getElementById('ptype').style.color=ic[1];
+  document.getElementById('pname').textContent=m.name;
+  document.getElementById('pdesc').textContent=m.desc;
+  document.getElementById('pref').innerHTML = m.ref ? '→ <a href="'+m.ref+'.html">Read full guide</a>' : '';
+  document.getElementById('popup').classList.add('open');
+  document.getElementById('bg').classList.add('open');
+}
+function closePopup(){
+  document.getElementById('popup').classList.remove('open');
+  document.getElementById('bg').classList.remove('open');
+}
+
+document.getElementById('markers').addEventListener('click',function(e){
+  if(e.target.classList.contains('marker')){
+    var i=+e.target.dataset.i;
+    openPopup(MARKERS[i]);
+  }
+});
+
+document.getElementById('close').addEventListener('click',closePopup);
+document.getElementById('bg').addEventListener('click',closePopup);
+
+document.querySelectorAll('.filter-chip').forEach(function(ch){
+  ch.addEventListener('click',function(){
+    document.querySelectorAll('.filter-chip').forEach(function(c){c.classList.remove('active');});
+    ch.classList.add('active');
+    activeFilter=ch.dataset.cat;
+    renderMarkers();
+  });
+});
+
+renderMarkers();
+</script>
+<div class="nav-min" style="position:sticky;top:0;z-index:50;background:#241410;border-bottom:0.5px solid rgba(192,57,43,0.18);padding:10px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;font-family:-apple-system,sans-serif">
+<a href="/" style="color:#c0392b;font-weight:700;text-decoration:none;font-size:15px">re9guide<span style="color:#b0a09a">.it.com</span></a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center">
+<a href="/raccoon-city-interactive-map.html" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:700">EN</a>
+<a href="/ko/" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none">한국어</a>
+</span>
+</div>
+</body>
+</html>
