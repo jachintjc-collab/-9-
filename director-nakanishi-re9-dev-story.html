@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,9 +10,6 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<meta name="audience" content="Korean RE9 players">
-<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
-<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -23,7 +20,7 @@
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
-<link rel="canonical" href="https://www.re9guide.it.com/ko/director-nakanishi-re9-dev-story.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/director-nakanishi-re9-dev-story.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/director-nakanishi-re9-dev-story.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/director-nakanishi-re9-dev-story.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/director-nakanishi-re9-dev-story.html" />
@@ -40,10 +37,10 @@
 <meta name="theme-color" content="#241410" />
 <meta name="msapplication-TileColor" content="#241410" />
 <!-- Open Graph + Twitter Card -->
-<meta property="og:title" content="디렉터 Hideki Nakanishi RE9 — 비하인드 더 신 개발 스토리 + 인터뷰 디코드" />
-<meta property="og:description" content="Hideki Nakanishi RE9 개발: 5년 여정, Mortal Edge 패리 디자인, RPD 픽셀 재현, Marcus Halverson 배경, 2026년 5월 Famitsu 인터뷰 디코드. v1.02." />
+<meta property="og:title" content="Director Hideki Nakanishi RE9 — Behind-the-Scenes Dev Story + Interview Decoded" />
+<meta property="og:description" content="Hideki Nakanishi RE9 development: 5-year journey, Mortal Edge parry design, RPD pixel recreation, Marcus Halverson backstory, May 2026 Famitsu interview decoded. v1.02." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.re9guide.it.com/ko/director-nakanishi-re9-dev-story.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/director-nakanishi-re9-dev-story.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-cards/re9-best-moments-ranked-tier-list-og.png"
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -53,15 +50,15 @@
 <meta name="twitter:image:alt" content="RE9 Locations tier list with RPD Main Hall as S-tier" />
 <meta property="og:site_name" content="re9guide.it.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="디렉터 Hideki Nakanishi RE9 — 비하인드 더 신 개발 스토리 + 인터뷰 디코드" />
-<meta name="twitter:description" content="Hideki Nakanishi RE9 개발: 5년 여정, Mortal Edge 패리 디자인, RPD 픽셀 재현, Marcus Halverson 배경, 2026년 5월 Famitsu 인터뷰 디코드. v1.02." />
-<title>디렉터 Hideki Nakanishi RE9 — 비하인드 더 신 개발 스토리 + 인터뷰 디코드</title>
-<meta name="description" content="Hideki Nakanishi RE9 개발: 5년 여정, Mortal Edge 패리 디자인, RPD 픽셀 재현, Marcus Halverson 배경, 2026년 5월 Famitsu 인터뷰 디코드. v1.02." />
+<meta name="twitter:title" content="Director Hideki Nakanishi RE9 — Behind-the-Scenes Dev Story + Interview Decoded" />
+<meta name="twitter:description" content="Hideki Nakanishi RE9 development: 5-year journey, Mortal Edge parry design, RPD pixel recreation, Marcus Halverson backstory, May 2026 Famitsu interview decoded. v1.02." />
+<title>Director Hideki Nakanishi RE9 — Behind-the-Scenes Dev Story + Interview Decoded</title>
+<meta name="description" content="Hideki Nakanishi RE9 development: 5-year journey, Mortal Edge parry design, RPD pixel recreation, Marcus Halverson backstory, May 2026 Famitsu interview decoded. v1.02." />
 <meta name="keywords" content="RE9 best charm loadout, RE9 best charms, RE9 charm build, RE9 Insanity charms" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--silver:#888780;--bronze:#8b5e2a;}
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
 .logo{font-size:15px;display:flex;align-items:center;gap:8px;}
@@ -124,8 +121,8 @@ ul.normal li{padding:3px 0;font-size:15px;}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "디렉터 Hideki Nakanishi RE9 — 비하인드 더 신 개발 스토리 + 인터뷰 디코드",
-  "description": "Hideki Nakanishi RE9 개발: 5년 여정, Mortal Edge 패리 디자인, RPD 픽셀 재현, Marcus Halverson 배경, 2026년 5월 Famitsu 인터뷰 디코드. v1.02.",
+  "headline": "Director Hideki Nakanishi RE9 — Behind-the-Scenes Dev Story + Interview Decoded",
+  "description": "Hideki Nakanishi RE9 development: 5-year journey, Mortal Edge parry design, RPD pixel recreation, Marcus Halverson backstory, May 2026 Famitsu interview decoded. v1.02.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -153,7 +150,7 @@ ul.normal li{padding:3px 0;font-size:15px;}
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/best-weapons-tier-list.html"
   },
-  "inLanguage": "ko-KR",
+  "inLanguage": "en",
   "articleSection": "Weapons",
   "about": {
     "@type": "VideoGame",
@@ -443,14 +440,14 @@ h1 {
 <body>
 <div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
-<a href="/ko/eveline-complete-timeline-2009-2026.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+<a href="/director-nakanishi-re9-dev-story.html style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="/ko/director-nakanishi-re9-dev-story.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
 </span>
 </div>
 <div class="container">
 <div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <span>Eveline Complete Timeline (2009-2026)</span></div>
 
-<h1>디렉터 Nakanishi — RE9 개발 스토리</h1>
+<h1>Director Nakanishi — RE9 Development Story</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
 <p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested across the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
 <p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 + DLC patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
@@ -461,33 +458,33 @@ h1 {
 <!-- Editorial Info Card - Trust signal for guide credibility -->
 
 
-<p class="lead"><strong>Hideki Nakanishi가 5년에 걸쳐 RE9 감독.</strong> 2021 개념부터 2026 출시까지. 그의 Famitsu 인터뷰가 개발 결정 공개, Marcus Halverson의 비극이 인새니티 오디오에 필수인 이유 포함. 이것이 완전한 개발 스토리.</p>
-<h2>완전한 시간순 분석</h2>
-<div class="boss-stats"><table><tr><th>시기</th><th>사건</th></tr><tr><td><strong>2021 개념</strong></td><td>Nakanishi가 RE9 디렉터 임명. 초기 개념: Eveline 아크 계속. RE8 5년 후 설정. 듀얼 주인공 (Grace + Leon).</td></tr>
-<tr><td><strong>2022 프로토타입 페이즈</strong></td><td>Mortal Edge 패리 메커닉 프로토타입. 0.6초 윈도우가 &ldquo;RE4R 0.3초 나이프 패리보다 더 관대 — 플레이어가 만족스러운 전투 원함&rdquo;으로 선택.</td></tr>
-<tr><td><strong>2022 RPD 재현</strong></td><td>Nakanishi가 RPD 참조를 위해 버려진 위치 직접 방문. 결정: 28년 노화된 픽셀 단위 RE2 Remake 재현.</td></tr>
-<tr><td><strong>2023 Marcus Halverson 캐릭터</strong></td><td>&ldquo;Chunk는 우리가 작성한 가장 비극적 배경. Marcus 오디오 필수 — 플레이어가 RE9를 기억하기 원하는 방식.&rdquo;</td></tr>
-<tr><td><strong>2023-2024 성우 작업</strong></td><td>Maya Chen이 Grace 캐스팅. Lance Henriksen이 Chunk/Marcus. Cissy Jones가 Mia로 복귀 (그녀의 커리어 최고 작업). Matthew Mercer가 Leon으로 복귀.</td></tr>
-<tr><td><strong>2025 인새니티 NG+ 디자인</strong></td><td>인새니티 전용 콘텐츠 결정: &ldquo;일부 플레이어가 6회 플레이할 것. 우리는 그들에게 보상하고 싶다.&rdquo; Chunk 가족 오디오, Ada 비콘, Eveline 참조 사진 추가.</td></tr>
-<tr><td><strong>2025 RPD 콜백</strong></td><td>&ldquo;RPD 메인 홀 공략이 10분이어야 한다. 플레이어가 28년 프랜차이즈 역사 흡수 필요.&rdquo;</td></tr>
-<tr><td><strong>2026년 2월 출시</strong></td><td>RE9이 PS5, Xbox Series X|S, Switch 2, PC에서 동시 출시. 첫날 v1.02 패치.</td></tr>
-<tr><td><strong>2026년 5월 Famitsu 인터뷰</strong></td><td>Nakanishi 확인: Ada DLC 가능성. RE10 개발 중. 불가리아 설정 암시. Grace가 RE10 주인공으로 복귀.</td></tr>
-<tr><td><strong>디렉터의 유산 성명</strong></td><td>&ldquo;플레이어가 RE9에서 하나의 순간만 기억한다면, Marcus가 Lily에게 잠자리 동화 읽는 것이기를 원한다. 그것이 게임의 영혼.&rdquo;</td></tr>
-<tr><td><strong>RE10 연결</strong></td><td>Nakanishi가 RE10 디렉터로 남음. 듀얼 주인공 형식 계속 가능성 확인. 새 캐릭터 데뷔 예정.</td></tr></table></div>
-<h2>이것이 왜 중요한가</h2>
-<p>이 lore 디코드는 RE 프랜차이즈에 걸친 실타래 연결. 관련 가이드와 함께 읽기가 완전한 그림 구축.</p>
+<p class="lead"><strong>Hideki Nakanishi directed RE9 over 5 years.</strong> From 2021 concept to 2026 release. His Famitsu interview reveals development decisions, including why Marcus Halverson&rsquo;s tragedy is mandatory Insanity audio. This is the complete dev story.</p>
+<h2>Complete chronological breakdown</h2>
+<div class="boss-stats"><table><tr><th>When</th><th>Event</th></tr><tr><td><strong>2021 concept</strong></td><td>Nakanishi appointed RE9 director. Initial concept: continue Eveline arc. Set 5 years post-RE8. Dual protagonist (Grace + Leon).</td></tr>
+<tr><td><strong>2022 prototype phase</strong></td><td>Mortal Edge parry mechanic prototyped. 0.6s window chosen as &ldquo;more forgiving than RE4R 0.3s knife parry — players want satisfying combat.&rdquo;</td></tr>
+<tr><td><strong>2022 RPD recreation</strong></td><td>Nakanishi personally visits abandoned location reference for RPD. Decision: pixel-for-pixel RE2 Remake recreation, aged 28 years.</td></tr>
+<tr><td><strong>2023 Marcus Halverson character</strong></td><td>&ldquo;Chunk has the most tragic backstory we&rsquo;ve ever written. The Marcus audio is mandatory — it&rsquo;s how we want players to remember RE9.&rdquo;</td></tr>
+<tr><td><strong>2023-2024 voice acting</strong></td><td>Maya Chen cast as Grace. Lance Henriksen as Chunk/Marcus. Cissy Jones returns as Mia (her career-best work). Matthew Mercer returns as Leon.</td></tr>
+<tr><td><strong>2025 Insanity NG+ design</strong></td><td>Insanity-only content decision: &ldquo;Some players will play 6 playthroughs. We want them rewarded.&rdquo; Chunk family audio, Ada beacon, Eveline reference photo added.</td></tr>
+<tr><td><strong>2025 RPD callback</strong></td><td>&ldquo;The RPD Main Hall walkthrough must be 10 minutes. Players need to absorb 28 years of franchise history.&rdquo;</td></tr>
+<tr><td><strong>February 2026 release</strong></td><td>RE9 launches simultaneous on PS5, Xbox Series X|S, Switch 2, and PC. Day-one v1.02 patch.</td></tr>
+<tr><td><strong>May 2026 Famitsu interview</strong></td><td>Nakanishi confirms: Ada DLC likely. RE10 in development. Bulgaria setting hinted. Grace returns as RE10 protagonist.</td></tr>
+<tr><td><strong>Director&rsquo;s legacy statement</strong></td><td>&ldquo;If players only remember one moment from RE9, I want it to be Marcus reading the bedtime story to Lily. That&rsquo;s the soul of the game.&rdquo;</td></tr>
+<tr><td><strong>Connection to RE10</strong></td><td>Nakanishi remains director for RE10. Confirmed dual-protagonist format may continue. New character to debut.</td></tr></table></div>
+<h2>Why this matters</h2>
+<p>This lore decode connects threads across the RE franchise. Reading this alongside related guides builds the complete picture.</p>
 <div class="cta">
-  <div class="cta-title">관련 Lore 콘텐츠</div>
-  <a href="eveline-complete-timeline-2009-2026.html">Eveline 완전 타임라인 (영어/한국어)</a>
-  <a href="vivien-ashcroft-2009-connections-research.html">Vivien Ashcroft 연구 (영어/한국어)</a>
-  <a href="marcus-halverson-lily-tragedy.html">Marcus + Lily 비극 (영어/한국어)</a>
-  <a href="rpd-full-history-through-re-series.html">RPD 전체 역사 (영어/한국어)</a>
-  <a href="mia-winters-complete-journey.html">Mia Winters 여정 (영어/한국어)</a>
-  <a href="ark-facility-full-history.html">ARK 시설 전체 역사 (영어/한국어)</a>
-  <a href="plant-43-origin-biology.html">Plant 43 기원 + 생물학 (영어/한국어)</a>
-  <a href="ada-wong-re9-backstory-decoded.html">Ada Wong RE9 배경 스토리 (영어/한국어)</a>
-  <a href="re9-characters-ranked-tier-list.html">16개 캐릭터 모두 랭킹 (영어/한국어)</a>
-  <a href="index.html">모든 공략</a>
+  <div class="cta-title">Related lore content</div>
+  <a href="eveline-complete-timeline-2009-2026.html">Eveline complete timeline</a>
+  <a href="vivien-ashcroft-2009-connections-research.html">Vivien Ashcroft research</a>
+  <a href="marcus-halverson-lily-tragedy.html">Marcus + Lily tragedy</a>
+  <a href="rpd-full-history-through-re-series.html">RPD full history</a>
+  <a href="mia-winters-complete-journey.html">Mia Winters journey</a>
+  <a href="ark-facility-full-history.html">ARK Facility full history</a>
+  <a href="plant-43-origin-biology.html">Plant 43 origin + biology</a>
+  <a href="ada-wong-re9-backstory-decoded.html">Ada Wong RE9 backstory</a>
+  <a href="re9-characters-ranked-tier-list.html">All 16 characters ranked</a>
+  <a href="index.html">All guides</a>
 </div>
   <a href="eveline-complete-timeline-2009-2026.html">Eveline complete timeline</a>
   <a href="vivien-ashcroft-2009-connections-research.html">Vivien Ashcroft research</a>

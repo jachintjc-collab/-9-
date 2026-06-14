@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,9 +10,6 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<meta name="audience" content="Korean RE9 players">
-<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
-<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -23,10 +20,11 @@
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
-<link rel="canonical" href="https://www.re9guide.it.com/ko/how-to-beat-the-commander.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/how-to-beat-the-commander.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/how-to-beat-the-commander.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-the-commander.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-the-commander.html" />
+
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -42,10 +40,10 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
 
 <!-- Open Graph + Twitter Card -->
-<meta property="og:title" content="더 커맨더 보스 공략 — RE9 ARK 나이프 결투" />
-<meta property="og:description" content="레지던트 이블 레퀴엠(RE9)에서 더 커맨더 격파법 — 나이프 중심 패리 보스, Mortal Edge Hatchet 드롭. 페이즈 전략과 무기 로드아웃." />
+<meta property="og:title" content="The Commander Boss Guide — RE9 ARK Knife Fight" />
+<meta property="og:description" content="Beat The Commander in Resident Evil Requiem (RE9) — knife-focused parry boss, drops Mortal Edge Hatchet. Phase strategy and weapon loadout." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-the-commander.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/how-to-beat-the-commander.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -53,15 +51,15 @@
 <meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
 <meta property="og:site_name" content="re9guide.it.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="더 커맨더 보스 공략 — RE9 ARK 나이프 결투" />
-<meta name="twitter:description" content="레지던트 이블 레퀴엠(RE9)에서 더 커맨더 격파법 — 나이프 중심 패리 보스, Mortal Edge Hatchet 드롭. 페이즈 전략과 무기 로드아웃." />
-<title>더 커맨더 보스 공략 — RE9 ARK 나이프 결투</title>
-<meta name="description" content="레지던트 이블 레퀴엠(RE9)에서 더 커맨더 격파법 — 나이프 중심 패리 보스, Mortal Edge Hatchet 드롭. 페이즈 전략과 무기 로드아웃." />
-<meta name="keywords" content="더 커맨더 RE9, HUNK 보스, 레지던트 이블 레퀴엠, Mortal Edge Hatchet, 패리 공략" />
+<meta name="twitter:title" content="The Commander Boss Guide — RE9 ARK Knife Fight" />
+<meta name="twitter:description" content="Beat The Commander in Resident Evil Requiem (RE9) — knife-focused parry boss, drops Mortal Edge Hatchet. Phase strategy and weapon loadout." />
+<title>The Commander Boss Guide — RE9 ARK Knife Fight</title>
+<meta name="description" content="Beat The Commander in Resident Evil Requiem (RE9) — knife-focused parry boss, drops Mortal Edge Hatchet. Phase strategy and weapon loadout." />
+<meta name="keywords" content="The Commander RE9, HUNK boss, Resident Evil Requiem, Mortal Edge Hatchet, parry guide" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;}
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
 .logo{font-size:15px;display:flex;align-items:center;gap:8px;}
@@ -121,8 +119,8 @@ ol li strong{color:var(--text);}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "더 커맨더 격파법 — 레지던트 이블 레퀴엠 HUNK 타입 보스 공략 (RE9)",
-  "description": "레지던트 이블 레퀴엠에서 더 커맨더(HUNK 타입) 보스의 완전 공략. 패리 타이밍, 공격 패턴, 그리고 최종 보스를 위한 Mortal Edge Hatchet 획득 방법.",
+  "headline": "How to Beat The Commander in Resident Evil Requiem — HUNK Boss Guide (RE9)",
+  "description": "Complete strategy for The Commander boss (HUNK-type) in Resident Evil Requiem. Parry timing, attack patterns, and how to unlock the Mortal Edge Hatchet for the final boss.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -150,7 +148,7 @@ ol li strong{color:var(--text);}
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/how-to-beat-the-commander.html"
   },
-  "inLanguage": "ko-KR",
+  "inLanguage": "en-US",
   "articleSection": "Guides",
   "about": {
     "@type": "VideoGame",
@@ -459,31 +457,31 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "RE9 The Commander 공략",
-  "description": "ARK 시설 중간 보스 The Commander 처치.",
+  "name": "How to Beat The Commander in RE9",
+  "description": "Defeat The Commander, the mid-ARK Facility boss.",
   "totalTime": "PT4M",
-  "inLanguage": "ko-KR",
+  "inLanguage": "en",
   "supply": [
     {
       "@type": "HowToSupply",
-      "name": "Requiem Revolver + 10발"
+      "name": "Requiem Revolver + 10 ammo"
     },
     {
       "@type": "HowToSupply",
-      "name": "W870 Police 산탄총 + 6발"
+      "name": "W870 Police shotgun + 6 ammo"
     },
     {
       "@type": "HowToSupply",
-      "name": "Iron Skin + Phoenix Down 부적"
+      "name": "Iron Skin + Phoenix Down charms"
     }
   ],
   "step": [
     {
       "@type": "HowToStep",
       "position": 1,
-      "name": "페이즈 1: 그의 방패 메커닉",
-      "text": "Commander가 에너지 방패 전개. 방패가 떨어질 때까지 대기 (매 4초) 그 후 Requiem Revolver 헤드샷.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-commander.html#step-1",
+      "name": "Phase 1: His shield mechanic",
+      "text": "Commander deploys energy shield. Wait for the shield to drop (every 4 seconds) then Requiem Revolver headshot.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-commander.html#step-1",
       "tip": [
         {
           "@type": "HowToTip",
@@ -498,9 +496,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 2,
-      "name": "페이즈 2: 쌍둥이 소환 부하",
-      "text": "미니 적 2마리 소환. W870 Police 산탄총으로 처치 — Commander가 부하 소환 중 일시정지.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-commander.html#step-2",
+      "name": "Phase 2: Twin spawn ads",
+      "text": "He spawns 2 mini-enemies. Use W870 Police shotgun to clear them — Commander pauses during ad spawning.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-commander.html#step-2",
       "tip": [
         {
           "@type": "HowToTip",
@@ -515,9 +513,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 3,
-      "name": "페이즈 3: 스텔스-그리고-타격",
-      "text": "최종 페이즈는 예측 불가하게 텔레포트. 엄폐물 뒤 숨고 오디오 단서 대기, 그 후 헤드샷.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-commander.html#step-3",
+      "name": "Phase 3: Stealth-and-strike",
+      "text": "His final phase teleports unpredictably. Hide behind cover and wait for the audio cue, then headshot.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-commander.html#step-3",
       "tip": [
         {
           "@type": "HowToTip",
@@ -532,9 +530,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 4,
-      "name": "Phoenix Down 클러치",
-      "text": "페이즈 3 중 죽으면 Phoenix Down 부활. 50% HP 버퍼로 마무리.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-commander.html#step-4",
+      "name": "Phoenix Down clutch",
+      "text": "If you die during phase 3, Phoenix Down revives you. Use the 50% HP buffer to finish him.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-commander.html#step-4",
       "tip": [
         {
           "@type": "HowToTip",
@@ -549,9 +547,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 5,
-      "name": "보너스: Chunk 오디오 로그",
-      "text": "Commander 처치로 Chunk 기원 오디오 로그 해금. Chunk 기원 가이드 참조.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-commander.html#step-5",
+      "name": "Bonus: chunk audio log",
+      "text": "Defeating Commander unlocks an audio log about Chunk's origin. See our Chunk origin guide.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-commander.html#step-5",
       "tip": [
         {
           "@type": "HowToTip",
@@ -614,210 +612,210 @@ h1 {
 </style>
 </head>
 <body>
-<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← 모든 공략</a>
+<div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="/how-to-beat-the-commander.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
-<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+<a href="/how-to-beat-the-commander.html style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="/ko/how-to-beat-the-commander.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
 </span>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>더 커맨더</span></div>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">BOSSES</a> / <span>THE COMMANDER</span></div>
 
-<h1>더 커맨더 격파법 — 레지던트 이블 레퀴엠</h1>
+<h1>How to Beat The Commander in Resident Evil Requiem</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
-<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
-<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">검증 버전: v1.02 · 마지막 검토: 2026년 5월 30일 · 영어 원본과 비교: 100% 내용 동등 + 한국어 컨텍스트 추가</p>
+<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested across the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
+<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 + DLC patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
 </div>
 
-<div class="meta">2026년 5월 게시 · <span>9분 읽기</span> · 난이도: ★★★★ 어려움 · 스포일러 포함</div>
-<!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #c0392b;color:#c0392b;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ 스포일러 수위: 높음</div>
+<div class="meta">PUBLISHED MAY 2026 · <span>9 MIN READ</span> · DIFFICULTY: ★★★★ HARD · SPOILERS</div>
+<!-- Spoiler tag --><div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #c0392b;color:#c0392b;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ SPOILER LEVEL: HIGH</div>
 <!-- Editorial Info Card - Trust signal for guide credibility -->
 
 
-<p class="lead">더 커맨더는 RE9의 HUNK 타입 보스로 — RE4의 Krauser처럼 움직이는 나이프 파이터입니다. 게임에서 두 번째로 어려운 전투이자 빅터 기드온과 마주하기 전 반드시 거쳐야 할 관문입니다. 이 보스를 처치하면 <em>Mortal Edge Hatchet</em>을 보상으로 받게 되며, 이는 최종 보스에 사실상 필수인 장비입니다.</p>
+<p class="lead">The Commander is RE9's HUNK-type boss — a knife-fighter who moves like Krauser from RE4. The second-hardest fight in the game and a mandatory step before facing Victor Gideon. Beating him rewards the <em>Mortal Edge Hatchet</em>, which is essentially required for the final boss.</p>
 
 <div class="boss-stats">
   <table>
-    <tr><td>위치</td><td><strong>ARK 시설 — 내부 복도</strong></td></tr>
-    <tr><td>플레이 캐릭터</td><td><strong>레온 S. 케네디</strong></td></tr>
-    <tr><td>난이도</td><td><strong>★★★★ 어려움</strong> (9/10)</td></tr>
-    <tr><td>필수 기술</td><td><strong>패리 숙련</strong></td></tr>
-    <tr><td>보상</td><td><strong>Mortal Edge Hatchet</strong> (빅터 전 필수)</td></tr>
-    <tr><td>트로피</td><td><strong>"Hand to Hand"</strong> (브론즈)</td></tr>
+    <tr><td>Location</td><td><strong>ARK Facility — interior corridors</strong></td></tr>
+    <tr><td>Playable as</td><td><strong>Leon S. Kennedy</strong></td></tr>
+    <tr><td>Difficulty</td><td><strong>★★★★ Hard</strong> (9/10)</td></tr>
+    <tr><td>Required tech</td><td><strong>Parry mastery</strong></td></tr>
+    <tr><td>Reward</td><td><strong>Mortal Edge Hatchet</strong> (mandatory for Victor)</td></tr>
+    <tr><td>Trophy</td><td><strong>"Hand to Hand"</strong> (Bronze)</td></tr>
   </table>
 </div>
 
-<h2>보스 개요: HUNK의 부활</h2>
+<h2>Boss overview: HUNK reborn</h2>
 
-<p>더 커맨더는 ARK 시설 후반부에 등장하여 작전실로 향하는 레온의 길을 가로막습니다. 외형상으로는 레지던트 이블 2의 HUNK에 대한 명백한 오마주입니다 — 검은 전술 장비, 가스 마스크, 군인의 자세까지. 하지만 전투 스타일은 RE4의 Krauser 그 자체입니다: 잔혹한 근접 콤보를 구사하는 나이프 전문가.</p>
+<p>The Commander appears late in the ARK Facility, blocking Leon's path to the Operations Room. Visually, he's a clear callback to HUNK from Resident Evil 2 — black tactical gear, gas mask, military bearing. But his fighting style is pure Krauser from RE4: a knife specialist with brutal close-quarters combos.</p>
 
-<p>이 전투는 RE9에서 <strong>샷건 난사로는 절대 이길 수 없는</strong> 첫 번째 전투입니다. 더 커맨더는 총격을 패리하고, 투사체를 회피하며, 근접전을 강요합니다. 여기서는 Hatchet 패리 시스템을 반드시 숙달해야 합니다 — 그리고 그것이 정확히 이 전투의 목적입니다. 캡콤은 이 전투를 최종 보스 전에 거치는 패리 숙련도 시험으로 설계했습니다.</p>
+<p>This is the first fight in RE9 where you <strong>cannot win by spamming the W870 Police shotgun</strong>. The Commander parries gunfire, dodges projectiles, and forces close engagement. You need to master the Hatchet parry system here — and that's exactly the point. Capcom designed this fight as the parry skill check before the final boss.</p>
 
-<h2>공격 패턴 타이밍 차트</h2>
+<h2>Attack pattern timing chart</h2>
 
 <!-- INFOGRAPHIC: Attack timing -->
 <div class="timing-chart">
-  <div class="timing-title">// 공격 패턴 · 패리 윈도우</div>
+  <div class="timing-title">// ATTACK PATTERNS · PARRY WINDOWS</div>
   <div class="attack-row">
-    <div class="attack-name">나이프 슬래시 (1)</div>
+    <div class="attack-name">Knife slash (1)</div>
     <div class="attack-bar">
       <div class="attack-bar-windup" style="width:40%;"></div>
       <div class="attack-bar-window" style="left:35%;width:20%;"></div>
     </div>
-    <div class="attack-meter">빠름</div>
+    <div class="attack-meter">FAST</div>
   </div>
   <div class="attack-row">
-    <div class="attack-name">나이프 슬래시 (2)</div>
+    <div class="attack-name">Knife slash (2)</div>
     <div class="attack-bar">
       <div class="attack-bar-windup" style="width:35%;"></div>
       <div class="attack-bar-window" style="left:30%;width:18%;"></div>
     </div>
-    <div class="attack-meter">빠름</div>
+    <div class="attack-meter">FAST</div>
   </div>
   <div class="attack-row">
-    <div class="attack-name">나이프 슬래시 (3타 마무리)</div>
+    <div class="attack-name">Knife slash (3 finisher)</div>
     <div class="attack-bar">
       <div class="attack-bar-windup" style="width:50%;"></div>
       <div class="attack-bar-window" style="left:45%;width:25%;"></div>
     </div>
-    <div class="attack-meter">중간</div>
+    <div class="attack-meter">MEDIUM</div>
   </div>
   <div class="attack-row">
-    <div class="attack-name">스윕 킥</div>
+    <div class="attack-name">Sweep kick</div>
     <div class="attack-bar">
       <div class="attack-bar-windup" style="width:55%;"></div>
       <div class="attack-bar-window" style="left:50%;width:22%;"></div>
     </div>
-    <div class="attack-meter">중간</div>
+    <div class="attack-meter">MEDIUM</div>
   </div>
   <div class="attack-row">
-    <div class="attack-name">차지 대시</div>
+    <div class="attack-name">Charge dash</div>
     <div class="attack-bar">
       <div class="attack-bar-windup" style="width:70%;"></div>
       <div class="attack-bar-window" style="left:65%;width:25%;"></div>
     </div>
-    <div class="attack-meter">느림</div>
+    <div class="attack-meter">SLOW</div>
   </div>
   <div class="attack-row">
-    <div class="attack-name">잡기 시도</div>
+    <div class="attack-name">Grab attempt</div>
     <div class="attack-bar">
       <div class="attack-bar-windup" style="width:30%;background:rgba(192,57,43,0.3);"></div>
       <div class="attack-bar-window" style="left:25%;width:0%;"></div>
     </div>
-    <div class="attack-meter">회피</div>
+    <div class="attack-meter">DODGE</div>
   </div>
   <div class="legend">
-    <span><span class="legend-color" style="background:rgba(186,117,23,0.4);"></span>준비 동작</span>
-    <span><span class="legend-color" style="background:rgba(192,57,43,0.6);"></span>패리 윈도우</span>
+    <span><span class="legend-color" style="background:rgba(186,117,23,0.4);"></span>Wind-up</span>
+    <span><span class="legend-color" style="background:rgba(192,57,43,0.6);"></span>Parry window</span>
   </div>
 </div>
 
-<h2>전투 전 준비</h2>
+<h2>Pre-fight preparation</h2>
 
-<p>필수 준비 사항:</p>
+<p>Required prep:</p>
 
 <ol>
-  <li><strong>이전 보급 상자에서 Hatchet을 Tier 2 최대까지 강화</strong>하세요. 기본 Hatchet의 패리 윈도우는 스탠다드에서도 빠듯하고, Insanity에서는 사실상 불가능합니다.</li>
-  <li><strong>방어구 수리</strong> — 더 커맨더의 콤보는 2-3회 타격으로 방어구를 파괴합니다.</li>
-  <li><strong>응급 처치 스프레이 3개 이상 비축</strong> — 특히 첫 시도에서는 반드시 맞게 됩니다.</li>
-  <li><strong>Eye Spy Charm 고려</strong> — 랜덤 치명 데미지 방어가 깔끔한 전투와 세이브 리로드의 차이를 만들 수 있습니다.</li>
-  <li><strong>컷씬 발동 전 세이브</strong> — 전투 중간 체크포인트는 없습니다.</li>
+  <li><strong>Upgrade your Hatchet to max Tier 2</strong> at the previous Supply Box. Default Hatchet's parry window is too tight on Standard, almost impossible on Insanity.</li>
+  <li><strong>Repair body armor</strong> — The Commander's combos break armor in 2-3 hits.</li>
+  <li><strong>Stock 3+ First Aid Sprays</strong> — you will get hit, especially during your first attempts.</li>
+  <li><strong>Consider Eye Spy Charm</strong> — random fatal damage save can be the difference between a clean fight and a save reload.</li>
+  <li><strong>Save before triggering the cutscene</strong> — there's no checkpoint mid-fight.</li>
 </ol>
 
-<h2>단계별 전략</h2>
+<h2>Step-by-step strategy</h2>
 
-<h3>// 페이즈 구조</h3>
+<h3>// PHASE STRUCTURE</h3>
 
-<p>더 커맨더에게는 페이즈가 하나뿐이지만, HP에 따라 행동이 변화합니다:</p>
+<p>The Commander has only one phase, but his behavior shifts based on his HP:</p>
 
 <ul class="normal">
-  <li><strong>100-70% HP</strong> — 단발/이중 나이프 슬래시, 스윕 킥 사용. 공격적이지만 예측 가능.</li>
-  <li><strong>70-40% HP</strong> — 3타 마무리 콤보와 차지 대시 추가.</li>
-  <li><strong>40-0% HP</strong> — 가장 공격적. 잡기 시도 빈도 증가와 빠른 콤보 연계.</li>
+  <li><strong>100-70% HP</strong> — uses single and double knife slashes, sweep kicks. Aggressive but predictable.</li>
+  <li><strong>70-40% HP</strong> — adds the three-hit finisher combo and charge dash.</li>
+  <li><strong>40-0% HP</strong> — most aggressive. Frequent grab attempts and rapid combo chains.</li>
 </ul>
 
-<h3>// 핵심 루프</h3>
+<h3>// CORE LOOP</h3>
 
 <ol>
-  <li><strong>그가 공격을 시작할 때까지 대기</strong> — 선제 공격은 절대 금물.</li>
-  <li><strong>L1/LB로 패리</strong>를 충돌 직전에 입력 (무기의 붉은 섬광 = 패리 타이밍).</li>
-  <li><strong>패리 성공 시 약 1.5초간 기절</strong> — 데미지 윈도우입니다.</li>
-  <li><strong>Hatchet 카운터</strong>로 확정 데미지, 또는<br>
-      <strong>Requiem으로 빠르게 전환 후 헤드샷</strong>으로 더 큰 데미지 (단, 위험도 증가).</li>
-  <li><strong>처벌 후 즉시 후퇴</strong> — 두 번째 공격을 시도하지 마세요. 회복이 빠릅니다.</li>
+  <li><strong>Wait for him to commit to an attack</strong> — never strike preemptively.</li>
+  <li><strong>Parry with L1/LB</strong> just before impact (red flash glow on his weapon = parry timing).</li>
+  <li><strong>Successful parry stuns him for ~1.5 seconds</strong> — your damage window.</li>
+  <li><strong>Hatchet counter</strong> for guaranteed damage, OR<br>
+      <strong>Quick switch to Requiem and headshot</strong> for higher damage but more risk.</li>
+  <li><strong>Back off after the punish</strong> — don't try a second attack, he recovers fast.</li>
 </ol>
 
 <div class="warn-box gold">
-  💡 <strong>잡기 시도는 가장 위험한 동작입니다:</strong> 더 커맨더가 반대쪽 손으로 돌진할 때는 레온을 잡으려는 시도입니다. <strong>잡기를 패리하려 하지 마세요</strong> — 불가능합니다. 옆으로 회피하거나 뒤로 굴러야 합니다. 잡힘 = 큰 데미지 + Insanity에서는 즉사 가능.
+  💡 <strong>The grab attempt is the most dangerous move:</strong> When The Commander lunges with his off-hand, he's trying to grab Leon. <strong>Do NOT try to parry the grab</strong> — you can't. Just sidestep or roll backward. Successful grab = severe damage + possible execute on Insanity.
 </div>
 
-<h2>피해야 할 일반적인 실수</h2>
+<h2>Common mistakes to avoid</h2>
 
 <ul class="normal">
-  <li><strong>실수 #1:</strong> 샷건으로 거리를 유지하려는 시도. 더 커맨더는 재장전보다 빠르게 거리를 좁힙니다.</li>
-  <li><strong>실수 #2:</strong> 패리 버튼 연타. 윈도우는 관대하지만 연타 패리는 스태미나를 소모하고 애니메이션에 묶입니다.</li>
-  <li><strong>실수 #3:</strong> 잡기 시도를 패리하려 함. 패리할 수 없습니다.</li>
-  <li><strong>실수 #4:</strong> 구석에 위치. 360도 회피 공간이 필요합니다.</li>
-  <li><strong>실수 #5:</strong> Requiem 탄을 아낌. 이 전투는 Requiem이 빛을 발하는 몇 안 되는 전투 중 하나입니다 — 패리 기절 후 사용하세요.</li>
+  <li><strong>Mistake #1:</strong> Trying to keep distance with the W870 Police shotgun. The Commander closes gaps faster than you can reload.</li>
+  <li><strong>Mistake #2:</strong> Spamming parry button. The window is generous but spam-parry uses stamina and locks you in animation.</li>
+  <li><strong>Mistake #3:</strong> Trying to parry the grab attempt. It cannot be parried.</li>
+  <li><strong>Mistake #4:</strong> Standing in corners. You need 360° dodge space.</li>
+  <li><strong>Mistake #5:</strong> Saving Requiem rounds. This is one of the few fights where Requiem is great — use them after parry-stuns.</li>
 </ul>
 
-<h2>Insanity 난이도 팁</h2>
+<h2>Insanity difficulty tips</h2>
 
 <div class="warn-box">
-  ⚠ Insanity에서 더 커맨더는 약 3배 데미지를 줍니다. 3타 콤보가 성공하면 레온은 즉사합니다. Mortal Edge가 절대적으로 필요하지만 — 아직 가지고 있지 않습니다 (이 전투를 이겨야 획득 가능).
+  ⚠ On Insanity, The Commander deals roughly 3x damage. A successful 3-hit combo will kill Leon outright. Mortal Edge is non-negotiable here — but you don't have it yet (you GET it from beating this fight).
 </div>
 
-<p>Insanity 전용 접근법:</p>
+<p>Insanity-specific approach:</p>
 
 <ul class="normal">
-  <li><strong>이 전투까지의 모든 보급 상자에서 강화된 Hatchet을 미리 구매</strong>하세요</li>
-  <li><strong>해금했다면 무한 탄약 사용</strong> — 무한 Requiem은 기절 후 원샷</li>
-  <li><strong>방어구가 깨진 상태에서는 잡기가 즉사</strong>. 전투 전에 반드시 수리하세요.</li>
-  <li><strong>공격성보다 인내</strong> — 모든 교전을 그가 시작하게 하세요</li>
-  <li><strong>페이즈 2-3 셋업을 망쳤다면 안전한 세이브로 리셋</strong>. 응급 처치 스프레이를 소진하느니 다시 시도하는 편이 낫습니다.</li>
+  <li><strong>Pre-buy the upgraded Hatchet at every Supply Box</strong> leading up to this fight</li>
+  <li><strong>Use Infinite Ammo if unlocked</strong> — Infinite Requiem one-shots him after stagger</li>
+  <li><strong>The grab one-shots</strong> if your armor is broken. Repair it pre-fight.</li>
+  <li><strong>Patience over aggression</strong> — let him initiate every exchange</li>
+  <li><strong>Reset to a safe save</strong> if you mess up Phase 2-3 setup. Better to retry than burn through First Aid Sprays.</li>
 </ul>
 
-<h2>보상: Mortal Edge Hatchet</h2>
+<h2>Reward: The Mortal Edge Hatchet</h2>
 
-<p>더 커맨더를 처치하면 <strong>Mortal Edge Hatchet</strong>을 보상으로 획득합니다 — 레온의 기본 Hatchet 강화 버전으로 다음과 같은 이점이 있습니다:</p>
+<p>Defeating The Commander rewards the <strong>Mortal Edge Hatchet</strong> — the upgraded version of Leon's default Hatchet with these benefits:</p>
 
 <div class="tip-row">
-  <div class="tip-card"><h4>// 패리 윈도우</h4><p>훨씬 넓은 패리 윈도우 — 타이밍 맞추기 더 쉬움.</p></div>
-  <div class="tip-card"><h4>// 스윙 속도</h4><p>더 빠른 스윙 애니메이션 = 기절 윈도우당 카운터 횟수 증가.</p></div>
-  <div class="tip-card"><h4>// 마무리 데미지</h4><p>Hatchet 마무리 데미지가 기본의 약 2배.</p></div>
-  <div class="tip-card"><h4>// 빅터 전투</h4><p>모든 난이도의 빅터 기드온 전투에 사실상 필수.</p></div>
+  <div class="tip-card"><h4>// PARRY WINDOW</h4><p>Significantly larger parry window — easier to time successfully.</p></div>
+  <div class="tip-card"><h4>// SWING SPEED</h4><p>Faster swing animation = more counter-attacks per stun window.</p></div>
+  <div class="tip-card"><h4>// FINISHER DMG</h4><p>Hatchet finisher damage roughly 2x the default.</p></div>
+  <div class="tip-card"><h4>// VICTOR FIGHT</h4><p>Effectively required for the Victor Gideon fight on any difficulty.</p></div>
 </div>
 
-<h2>다음 단계</h2>
+<h2>What comes next</h2>
 
-<p>더 커맨더를 처치한 후, 레온은 ARK 시설 깊은 곳으로 진입합니다. 마지막 조우는 <strong>닥터 빅터 기드온</strong> — 진정한 최종 보스이자 게임에서 가장 어려운 전투입니다.</p>
+<p>After defeating The Commander, Leon proceeds deeper into the ARK Facility. Your final encounter is <strong>Dr. Victor Gideon</strong> — the true final boss and the hardest fight in the game.</p>
 
-<p>빅터의 컷씬을 발동하기 전에 복도를 수색하여 Mr. Raccoon Memoriam (위치 가이드 #23), 파일, 그리고 남은 탄약을 모두 회수하세요. 빅터의 챔버에 들어가면 되돌아갈 수 없습니다.</p>
+<p>Before triggering Victor's cutscene, sweep the corridor for the Mr. Raccoon Memoriam (#23 in our locations guide), files, and any remaining ammo pickups. Once you enter Victor's chamber, there is no going back.</p>
 <div class="cta">
-  <div class="cta-title">관련 공략</div>
-  <a href="how-to-beat-victor-gideon.html">빅터 기드온 격파법</a>
-  <a href="how-to-beat-plant-43.html">플랜트 43 격파법</a>
-  <a href="all-bosses-ranked-by-difficulty.html">전체 보스 난이도 랭킹</a>
-  <a href="best-weapons-tier-list.html">최고의 무기 티어 리스트</a>
-  <a href="index.html">모든 공략</a>
-  <a href="re9-all-endings-explained.html">8개 엔딩 모두 설명 (영어/한국어)</a>
-  <a href="re9-new-game-plus-complete-guide.html">NG+ 완전 해금 가이드 (영어/한국어)</a>
-  <a href="re9-difficulty-comparison-which-to-play.html">난이도 비교 (Standard vs Insanity) (영어/한국어)</a>
-  <a href="eveline-character-profile-complete.html">Eveline 완전 캐릭터 프로필 (영어/한국어)</a>
-  <a href="re9-hidden-easter-eggs-list.html">10가지 숨겨진 이스터에그 (영어/한국어)</a>
+  <div class="cta-title">RELATED GUIDES</div>
+  <a href="how-to-beat-victor-gideon.html">How to Beat Victor Gideon</a>
+  <a href="how-to-beat-plant-43.html">How to Beat Plant 43</a>
+  <a href="all-bosses-ranked-by-difficulty.html">All Bosses Ranked</a>
+  <a href="best-weapons-tier-list.html">Best Weapons Tier List</a>
+  <a href="index.html">All guides</a>
+  <a href="re9-all-endings-explained.html">All 8 endings explained (full spoilers)</a>
+  <a href="re9-new-game-plus-complete-guide.html">NG+ complete unlock guide</a>
+  <a href="re9-difficulty-comparison-which-to-play.html">Difficulty comparison (Standard vs Insanity)</a>
+  <a href="eveline-character-profile-complete.html">Eveline complete character profile</a>
+  <a href="re9-hidden-easter-eggs-list.html">10 hidden Easter eggs</a>
 </div>
 
 <!-- Ko-fi support strip (subtle, end-of-article) -->
 <div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
-  <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 가이드가 도움이 되셨다면, Ko-fi에서 더 많은 가이드 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
-  <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+  <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">If this guide helped, consider supporting more guides like this on Ko-fi. <em style="color:#ba7517;font-style:normal;">Every little bit means the world.</em></p>
+  <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Support on Ko-fi</a>
 </div>
 
 </div>
 <div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
-  <p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
-  <p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
-  <p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+  <p style="margin:5px 0;">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
+  <p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">About</a> · <a href="contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Contact</a> · <a href="privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Privacy</a> · <a href="dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Spoilers</a></p>
+  <p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
 </div>
 <script src="/cookie-consent.js" defer></script>
 </body>
