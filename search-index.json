@@ -4527,5 +4527,502 @@
   "desc": "Frame-perfect WR route.",
   "lang": "en",
   "category": "Speedrun"
+ },
+ {
+  "title": "Bosses Q&A Hub — RE9",
+  "url": "/qa-hub-bosses.html",
+  "desc": "10 verified Q&A on Bosses",
+  "lang": "en",
+  "category": "QA"
+ },
+ {
+  "title": "Bosses Q&A 허브",
+  "url": "/ko/qa-hub-bosses.html",
+  "desc": "RE9 Bosses 질문/답변",
+  "lang": "ko",
+  "category": "QA"
+ },
+ {
+  "title": "Builds Q&A Hub — RE9",
+  "url": "/qa-hub-builds.html",
+  "desc": "10 verified Q&A on Builds",
+  "lang": "en",
+  "category": "QA"
+ },
+ {
+  "title": "Builds Q&A 허브",
+  "url": "/ko/qa-hub-builds.html",
+  "desc": "RE9 Builds 질문/답변",
+  "lang": "ko",
+  "category": "QA"
+ },
+ {
+  "title": "Charms Q&A Hub — RE9",
+  "url": "/qa-hub-charms.html",
+  "desc": "10 verified Q&A on Charms",
+  "lang": "en",
+  "category": "QA"
+ },
+ {
+  "title": "Charms Q&A 허브",
+  "url": "/ko/qa-hub-charms.html",
+  "desc": "RE9 Charms 질문/답변",
+  "lang": "ko",
+  "category": "QA"
+ },
+ {
+  "title": "Speedrun Q&A Hub — RE9",
+  "url": "/qa-hub-speedrun.html",
+  "desc": "10 verified Q&A on Speedrun",
+  "lang": "en",
+  "category": "QA"
+ },
+ {
+  "title": "Speedrun Q&A 허브",
+  "url": "/ko/qa-hub-speedrun.html",
+  "desc": "RE9 Speedrun 질문/답변",
+  "lang": "ko",
+  "category": "QA"
+ },
+ {
+  "title": "Ng-Plus Q&A Hub — RE9",
+  "url": "/qa-hub-ng-plus.html",
+  "desc": "10 verified Q&A on Ng-Plus",
+  "lang": "en",
+  "category": "QA"
+ },
+ {
+  "title": "Ng-Plus Q&A 허브",
+  "url": "/ko/qa-hub-ng-plus.html",
+  "desc": "RE9 Ng-Plus 질문/답변",
+  "lang": "ko",
+  "category": "QA"
+ },
+ {
+  "title": "Insanity Q&A Hub — RE9",
+  "url": "/qa-hub-insanity.html",
+  "desc": "10 verified Q&A on Insanity",
+  "lang": "en",
+  "category": "QA"
+ },
+ {
+  "title": "Insanity Q&A 허브",
+  "url": "/ko/qa-hub-insanity.html",
+  "desc": "RE9 Insanity 질문/답변",
+  "lang": "ko",
+  "category": "QA"
+ },
+ {
+  "title": "Story Q&A Hub — RE9",
+  "url": "/qa-hub-story.html",
+  "desc": "10 verified Q&A on Story",
+  "lang": "en",
+  "category": "QA"
+ },
+ {
+  "title": "Story Q&A 허브",
+  "url": "/ko/qa-hub-story.html",
+  "desc": "RE9 Story 질문/답변",
+  "lang": "ko",
+  "category": "QA"
+ },
+ {
+  "title": "Trophies Q&A Hub — RE9",
+  "url": "/qa-hub-trophies.html",
+  "desc": "10 verified Q&A on Trophies",
+  "lang": "en",
+  "category": "QA"
+ },
+ {
+  "title": "Trophies Q&A 허브",
+  "url": "/ko/qa-hub-trophies.html",
+  "desc": "RE9 Trophies 질문/답변",
+  "lang": "ko",
+  "category": "QA"
+ },
+ {
+  "title": "Lore Q&A Hub — RE9",
+  "url": "/qa-hub-lore.html",
+  "desc": "10 verified Q&A on Lore",
+  "lang": "en",
+  "category": "QA"
+ },
+ {
+  "title": "Lore Q&A 허브",
+  "url": "/ko/qa-hub-lore.html",
+  "desc": "RE9 Lore 질문/답변",
+  "lang": "ko",
+  "category": "QA"
+ },
+ {
+  "title": "Tech Q&A Hub — RE9",
+  "url": "/qa-hub-tech.html",
+  "desc": "10 verified Q&A on Tech",
+  "lang": "en",
+  "category": "QA"
+ },
+ {
+  "title": "Tech Q&A 허브",
+  "url": "/ko/qa-hub-tech.html",
+  "desc": "RE9 Tech 질문/답변",
+  "lang": "ko",
+  "category": "QA"
+ },
+ {
+  "title": "Worst Re9 Weapon Design",
+  "url": "/worst-re9-weapon-design.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Chapter Pacing",
+  "url": "/worst-re9-chapter-pacing.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Boss Encounters",
+  "url": "/worst-re9-boss-encounters.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Endings",
+  "url": "/worst-re9-endings.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Design Choices",
+  "url": "/worst-re9-design-choices.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Charms",
+  "url": "/worst-re9-charms.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Collectibles",
+  "url": "/worst-re9-collectibles.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Dialogue",
+  "url": "/worst-re9-dialogue.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Puzzles",
+  "url": "/worst-re9-puzzles.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Cutscenes",
+  "url": "/worst-re9-cutscenes.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Difficulty",
+  "url": "/worst-re9-difficulty.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Locations",
+  "url": "/worst-re9-locations.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Music",
+  "url": "/worst-re9-music.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Sound Design",
+  "url": "/worst-re9-sound-design.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Art Direction",
+  "url": "/worst-re9-art-direction.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Camera",
+  "url": "/worst-re9-camera.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Inventory",
+  "url": "/worst-re9-inventory.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Crafting",
+  "url": "/worst-re9-crafting.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Save Points",
+  "url": "/worst-re9-save-points.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Worst Re9 Tutorial",
+  "url": "/worst-re9-tutorial.html",
+  "desc": "Critical analysis of RE9 weaknesses.",
+  "lang": "en",
+  "category": "Critical"
+ },
+ {
+  "title": "Audio Design — Mr X Footsteps",
+  "url": "/audio-design-mr-x-footsteps.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Vivien Voice",
+  "url": "/audio-design-vivien-voice.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Eveline Whispers",
+  "url": "/audio-design-eveline-whispers.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Environmental Rpd",
+  "url": "/audio-design-environmental-rpd.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Binaural Headphones",
+  "url": "/audio-design-binaural-headphones.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Boss Roars",
+  "url": "/audio-design-boss-roars.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Firearm Impact",
+  "url": "/audio-design-firearm-impact.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Melee Knife",
+  "url": "/audio-design-melee-knife.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Eveline Baby",
+  "url": "/audio-design-eveline-baby.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Radio Static",
+  "url": "/audio-design-radio-static.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Piano Music",
+  "url": "/audio-design-piano-music.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Rain Thunder",
+  "url": "/audio-design-rain-thunder.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Vivien Piano",
+  "url": "/audio-design-vivien-piano.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Ark Machinery",
+  "url": "/audio-design-ark-machinery.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Creature Blister",
+  "url": "/audio-design-creature-blister.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Audio Design — Ambient Care Center",
+  "url": "/audio-design-ambient-care-center.html",
+  "desc": "RE9 sound engineering analysis.",
+  "lang": "en",
+  "category": "Audio"
+ },
+ {
+  "title": "Platform Guide — Ps5 Vs Xbox Series X Fps",
+  "url": "/ps5-vs-xbox-series-x-fps.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Ps5 Vs Steam Deck Portable",
+  "url": "/ps5-vs-steam-deck-portable.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Pc Graphics Settings Guide",
+  "url": "/pc-graphics-settings-guide.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Dlss Vs Fsr Rtx Cards",
+  "url": "/dlss-vs-fsr-rtx-cards.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Hdr Tv Settings Re9",
+  "url": "/hdr-tv-settings-re9.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — 120Fps Mode Comparison",
+  "url": "/120fps-mode-comparison.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Input Lag Controllers",
+  "url": "/input-lag-controllers.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Audio Output Binaural 7 1",
+  "url": "/audio-output-binaural-7-1.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Switch 2 Port Analysis",
+  "url": "/switch-2-port-analysis.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Steam Vs Epic Vs Gog",
+  "url": "/steam-vs-epic-vs-gog.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Frame Pacing Analysis",
+  "url": "/frame-pacing-analysis.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Ssd Vs Hdd Load Times",
+  "url": "/ssd-vs-hdd-load-times.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Ray Tracing Impact Benchmark",
+  "url": "/ray-tracing-impact-benchmark.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Ultrawide 3440X1440 Support",
+  "url": "/ultrawide-3440x1440-support.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
+ },
+ {
+  "title": "Platform Guide — Nvidia Reflex Settings",
+  "url": "/nvidia-reflex-settings.html",
+  "desc": "RE9 platform comparison + settings.",
+  "lang": "en",
+  "category": "Platform"
  }
 ]
