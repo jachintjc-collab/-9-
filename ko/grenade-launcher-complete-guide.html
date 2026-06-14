@@ -10,7 +10,10 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<meta name="theme-color" content="#1a0f0a">
+<meta name="audience" content="Korean RE9 players">
+<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
+<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
+<meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
 
@@ -34,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0392b" />
 <link rel="manifest" href="/site.webmanifest" />
-<meta name="theme-color" content="#0d0808" />
-<meta name="msapplication-TileColor" content="#0d0808" />
+<meta name="theme-color" content="#241410" />
+<meta name="msapplication-TileColor" content="#241410" />
 <!-- Open Graph + Twitter Card -->
 <meta property="og:title" content="RE9 Grenade Launcher 완전 가이드 — 군중 제어 + Plant 43 스킵" />
 <meta property="og:description" content="완전한 Grenade Launcher 가이드: AOE 데미지, 4종 수류탄 (파편, 화염, 슬로우, EMP), 타이탄 스피너 + Plant 43 페이즈 2 스킵에 최고. v1.02." />
@@ -57,10 +60,10 @@
 <meta name="keywords" content="RE9 best charm loadout, RE9 best charms, RE9 charm build, RE9 Insanity charms" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
-:root{--red:#c0392b;--bg:#0d0808;--surface:#1e1212;--surface2:#251616;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--silver:#888780;--bronze:#8b5e2a;}
+:root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--silver:#888780;--bronze:#8b5e2a;}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#0d0808;z-index:10;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
 .logo{font-size:15px;display:flex;align-items:center;gap:8px;}
 .logo span{color:var(--red);}
 .nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
@@ -417,30 +420,45 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 }
 </script>
 <style id="vintage-theme">
-/* Phase 74 hhh: Vintage Document theme */
+/* Phase 84: Warm brown + concentric ring texture (matches reference) */
 body {
-  background-color: #1a0f0a;
-  background-image: radial-gradient(ellipse at top, rgba(60, 40, 30, 0.4) 0%, transparent 60%),
-    repeating-radial-gradient(circle at 12% 15%, rgba(80, 60, 40, 0.08) 0px, transparent 60px),
-    repeating-radial-gradient(circle at 85% 70%, rgba(70, 50, 30, 0.06) 0px, transparent 70px);
+  background-color: #241410;
+  background-image:
+    repeating-radial-gradient(
+      circle at 15% 85%,
+      rgba(60, 30, 22, 0.55) 0px,
+      rgba(60, 30, 22, 0.55) 1px,
+      transparent 1px,
+      transparent 90px
+    ),
+    repeating-radial-gradient(
+      circle at 85% 15%,
+      rgba(48, 22, 16, 0.45) 0px,
+      rgba(48, 22, 16, 0.45) 1px,
+      transparent 1px,
+      transparent 110px
+    ),
+    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 .container {
-  background: linear-gradient(180deg, rgba(38, 25, 18, 0.85) 0%, rgba(26, 15, 10, 0.75) 100%);
-  border: 0.5px solid rgba(160, 130, 90, 0.18);
-  box-shadow: inset 0 0 70px rgba(120, 90, 60, 0.06);
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 h1 {
   font-family: Georgia, serif;
   letter-spacing: 0.5px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .boss-stats table {
-  background: rgba(28, 18, 12, 0.5);
-  border: 0.5px solid rgba(160, 130, 90, 0.15);
+  background: rgba(48, 22, 16, 0.7);
+  border: 0.5px solid rgba(160, 130, 90, 0.18);
 }
 .boss-stats th {
-  background: rgba(192, 57, 43, 0.18);
-  border-bottom: 0.5px solid rgba(192, 57, 43, 0.3);
+  background: rgba(192, 57, 43, 0.22);
+  border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
 }
 .lead {
   font-style: italic;
@@ -452,7 +470,7 @@ h1 {
 <div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← 모든 공략</a>
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
 <a href="/grenade-launcher-complete-guide.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
-<a href="" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+<a href="/ko/grenade-launcher-complete-guide.html style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
 </span>
 </div>
 <div class="container">
