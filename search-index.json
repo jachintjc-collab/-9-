@@ -3540,5 +3540,593 @@
   "desc": "How RE9 compares to Resident Evil 4 Remake — survival horror comparison.",
   "lang": "en",
   "category": "Comparison"
+ },
+ {
+  "title": "Wrenwood Interactive Map — RE9",
+  "url": "/wrenwood-interactive-map.html",
+  "desc": "Click any marker for collectibles, safes, weapons.",
+  "lang": "en",
+  "category": "Map"
+ },
+ {
+  "title": "Rhodes Hill Interactive Map — RE9",
+  "url": "/rhodes-hill-interactive-map.html",
+  "desc": "Click any marker for collectibles, safes, weapons.",
+  "lang": "en",
+  "category": "Map"
+ },
+ {
+  "title": "Raccoon City Interactive Map — RE9",
+  "url": "/raccoon-city-interactive-map.html",
+  "desc": "Click any marker for collectibles, safes, weapons.",
+  "lang": "en",
+  "category": "Map"
+ },
+ {
+  "title": "Ark Facility Interactive Map — RE9",
+  "url": "/ark-facility-interactive-map.html",
+  "desc": "Click any marker for collectibles, safes, weapons.",
+  "lang": "en",
+  "category": "Map"
+ },
+ {
+  "title": "Re9 × Re2 Leon Arc Connection",
+  "url": "/re9-re2-leon-arc-connection.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Re7 Mia Baker Thread",
+  "url": "/re9-re7-mia-baker-thread.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Re5 Wesker Legacy",
+  "url": "/re9-re5-wesker-legacy.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Code Veronica Spencer",
+  "url": "/re9-code-veronica-spencer.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Re3 Jill Cameo",
+  "url": "/re9-re3-jill-cameo.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Revelations Bsaa History",
+  "url": "/re9-revelations-bsaa-history.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Re4 Leon Handoff",
+  "url": "/re9-re4-leon-handoff.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Re6 Ada Wong Bridge",
+  "url": "/re9-re6-ada-wong-bridge.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Vendetta Ny Laboratory",
+  "url": "/re9-vendetta-ny-laboratory.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Resistance Survivor Cast",
+  "url": "/re9-resistance-survivor-cast.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Re Village Eveline Aftermath",
+  "url": "/re9-re-village-eveline-aftermath.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Darkside Chronicles",
+  "url": "/re9-darkside-chronicles.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Umbrella Chronicles",
+  "url": "/re9-umbrella-chronicles.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Re0 Marcus Research",
+  "url": "/re9-re0-marcus-research.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Degeneration Pharmaceutical",
+  "url": "/re9-degeneration-pharmaceutical.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Survivor Prologue Canon",
+  "url": "/re9-survivor-prologue-canon.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Dead Aim Bioweapon Trafficking",
+  "url": "/re9-dead-aim-bioweapon-trafficking.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Outbreak Civilian Survivors",
+  "url": "/re9-outbreak-civilian-survivors.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × The Mercenaries 3D",
+  "url": "/re9-the-mercenaries-3d.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "Re9 × Resistance 2 Ai Callbacks",
+  "url": "/re9-resistance-2-ai-callbacks.html",
+  "desc": "Cross-game RE continuity analysis.",
+  "lang": "en",
+  "category": "Lore"
+ },
+ {
+  "title": "True Survivor Trophy Guide",
+  "url": "/trophy-true-survivor.html",
+  "desc": "RE9 True Survivor trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "True Survivor 트로피",
+  "url": "/ko/trophy-true-survivor.html",
+  "desc": "RE9 True Survivor 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "First Blood Trophy Guide",
+  "url": "/trophy-first-blood.html",
+  "desc": "RE9 First Blood trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "First Blood 트로피",
+  "url": "/ko/trophy-first-blood.html",
+  "desc": "RE9 First Blood 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Hotel Survivor Trophy Guide",
+  "url": "/trophy-hotel-survivor.html",
+  "desc": "RE9 Hotel Survivor trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Hotel Survivor 트로피",
+  "url": "/ko/trophy-hotel-survivor.html",
+  "desc": "RE9 Hotel Survivor 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Knife Novice Trophy Guide",
+  "url": "/trophy-knife-novice.html",
+  "desc": "RE9 Knife Novice trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Knife Novice 트로피",
+  "url": "/ko/trophy-knife-novice.html",
+  "desc": "RE9 Knife Novice 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Knife Master Trophy Guide",
+  "url": "/trophy-knife-master.html",
+  "desc": "RE9 Knife Master trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Knife Master 트로피",
+  "url": "/ko/trophy-knife-master.html",
+  "desc": "RE9 Knife Master 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Collector Trophy Guide",
+  "url": "/trophy-collector.html",
+  "desc": "RE9 Collector trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Collector 트로피",
+  "url": "/ko/trophy-collector.html",
+  "desc": "RE9 Collector 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Lorekeeper Trophy Guide",
+  "url": "/trophy-lorekeeper.html",
+  "desc": "RE9 Lorekeeper trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Lorekeeper 트로피",
+  "url": "/ko/trophy-lorekeeper.html",
+  "desc": "RE9 Lorekeeper 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "All Raccoons Trophy Guide",
+  "url": "/trophy-all-raccoons.html",
+  "desc": "RE9 All Raccoons trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "All Raccoons 트로피",
+  "url": "/ko/trophy-all-raccoons.html",
+  "desc": "RE9 All Raccoons 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "All Safes Opened Trophy Guide",
+  "url": "/trophy-all-safes-opened.html",
+  "desc": "RE9 All Safes Opened trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "All Safes Opened 트로피",
+  "url": "/ko/trophy-all-safes-opened.html",
+  "desc": "RE9 All Safes Opened 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Grace True Ending Trophy Guide",
+  "url": "/trophy-grace-true-ending.html",
+  "desc": "RE9 Grace True Ending trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Grace True Ending 트로피",
+  "url": "/ko/trophy-grace-true-ending.html",
+  "desc": "RE9 Grace True Ending 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Leon True Ending Trophy Guide",
+  "url": "/trophy-leon-true-ending.html",
+  "desc": "RE9 Leon True Ending trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Leon True Ending 트로피",
+  "url": "/ko/trophy-leon-true-ending.html",
+  "desc": "RE9 Leon True Ending 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Secret Ending Trophy Guide",
+  "url": "/trophy-secret-ending.html",
+  "desc": "RE9 Secret Ending trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Secret Ending 트로피",
+  "url": "/ko/trophy-secret-ending.html",
+  "desc": "RE9 Secret Ending 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Eveline Defeated Trophy Guide",
+  "url": "/trophy-eveline-defeated.html",
+  "desc": "RE9 Eveline Defeated trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Eveline Defeated 트로피",
+  "url": "/ko/trophy-eveline-defeated.html",
+  "desc": "RE9 Eveline Defeated 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Insanity Conqueror Trophy Guide",
+  "url": "/trophy-insanity-conqueror.html",
+  "desc": "RE9 Insanity Conqueror trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Insanity Conqueror 트로피",
+  "url": "/ko/trophy-insanity-conqueror.html",
+  "desc": "RE9 Insanity Conqueror 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "No Death Trophy Guide",
+  "url": "/trophy-no-death.html",
+  "desc": "RE9 No Death trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "No Death 트로피",
+  "url": "/ko/trophy-no-death.html",
+  "desc": "RE9 No Death 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Speedrunner Trophy Guide",
+  "url": "/trophy-speedrunner.html",
+  "desc": "RE9 Speedrunner trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Speedrunner 트로피",
+  "url": "/ko/trophy-speedrunner.html",
+  "desc": "RE9 Speedrunner 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Knife Only Trophy Guide",
+  "url": "/trophy-knife-only.html",
+  "desc": "RE9 Knife Only trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Knife Only 트로피",
+  "url": "/ko/trophy-knife-only.html",
+  "desc": "RE9 Knife Only 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "No Heal Trophy Guide",
+  "url": "/trophy-no-heal.html",
+  "desc": "RE9 No Heal trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "No Heal 트로피",
+  "url": "/ko/trophy-no-heal.html",
+  "desc": "RE9 No Heal 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Perfect Vivien Trophy Guide",
+  "url": "/trophy-perfect-vivien.html",
+  "desc": "RE9 Perfect Vivien trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Perfect Vivien 트로피",
+  "url": "/ko/trophy-perfect-vivien.html",
+  "desc": "RE9 Perfect Vivien 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Perfect Mr X Trophy Guide",
+  "url": "/trophy-perfect-mr-x.html",
+  "desc": "RE9 Perfect Mr X trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Perfect Mr X 트로피",
+  "url": "/ko/trophy-perfect-mr-x.html",
+  "desc": "RE9 Perfect Mr X 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Ng Plus Master Trophy Guide",
+  "url": "/trophy-ng-plus-master.html",
+  "desc": "RE9 Ng Plus Master trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Ng Plus Master 트로피",
+  "url": "/ko/trophy-ng-plus-master.html",
+  "desc": "RE9 Ng Plus Master 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "All Weapons Trophy Guide",
+  "url": "/trophy-all-weapons.html",
+  "desc": "RE9 All Weapons trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "All Weapons 트로피",
+  "url": "/ko/trophy-all-weapons.html",
+  "desc": "RE9 All Weapons 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "All Charms Trophy Guide",
+  "url": "/trophy-all-charms.html",
+  "desc": "RE9 All Charms trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "All Charms 트로피",
+  "url": "/ko/trophy-all-charms.html",
+  "desc": "RE9 All Charms 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Headshot Master Trophy Guide",
+  "url": "/trophy-headshot-master.html",
+  "desc": "RE9 Headshot Master trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Headshot Master 트로피",
+  "url": "/ko/trophy-headshot-master.html",
+  "desc": "RE9 Headshot Master 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Explosive Master Trophy Guide",
+  "url": "/trophy-explosive-master.html",
+  "desc": "RE9 Explosive Master trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Explosive Master 트로피",
+  "url": "/ko/trophy-explosive-master.html",
+  "desc": "RE9 Explosive Master 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Stealth Master Trophy Guide",
+  "url": "/trophy-stealth-master.html",
+  "desc": "RE9 Stealth Master trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Stealth Master 트로피",
+  "url": "/ko/trophy-stealth-master.html",
+  "desc": "RE9 Stealth Master 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Rpd Veteran Trophy Guide",
+  "url": "/trophy-rpd-veteran.html",
+  "desc": "RE9 Rpd Veteran trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Rpd Veteran 트로피",
+  "url": "/ko/trophy-rpd-veteran.html",
+  "desc": "RE9 Rpd Veteran 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Ark Explorer Trophy Guide",
+  "url": "/trophy-ark-explorer.html",
+  "desc": "RE9 Ark Explorer trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Ark Explorer 트로피",
+  "url": "/ko/trophy-ark-explorer.html",
+  "desc": "RE9 Ark Explorer 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Pacifist Trophy Guide",
+  "url": "/trophy-pacifist.html",
+  "desc": "RE9 Pacifist trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Pacifist 트로피",
+  "url": "/ko/trophy-pacifist.html",
+  "desc": "RE9 Pacifist 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
+ },
+ {
+  "title": "Detective Trophy Guide",
+  "url": "/trophy-detective.html",
+  "desc": "RE9 Detective trophy: trigger, missable check, Insanity variant.",
+  "lang": "en",
+  "category": "Trophy"
+ },
+ {
+  "title": "Detective 트로피",
+  "url": "/ko/trophy-detective.html",
+  "desc": "RE9 Detective 트로피 가이드 (Korean).",
+  "lang": "ko",
+  "category": "Trophy"
  }
 ]
