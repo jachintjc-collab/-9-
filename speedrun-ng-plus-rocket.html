@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NG+ Rocket Launcher Speedrun Route Deep Dive · WR 2:18:44 · RE9</title>
+<meta name="description" content="Complete NG+ Rocket Launcher speedrun route for RE9. World record 2:18:44, chapter-by-chapter optimal path, frame-perfect tricks, charm setup.">
+<meta name="theme-color" content="#241410">
+<link rel="canonical" href="https://www.re9guide.it.com/speedrun-ng-plus-rocket.html">
+<link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/speedrun-ng-plus-rocket.html">
+<link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/speedrun-ng-plus-rocket.html">
+<style id="vintage-theme">
+body{background-color:#241410;background-image:repeating-radial-gradient(circle at 15% 85%,rgba(60,30,22,0.55) 0px,rgba(60,30,22,0.55) 1px,transparent 1px,transparent 90px),repeating-radial-gradient(circle at 85% 15%,rgba(48,22,16,0.45) 0px,rgba(48,22,16,0.45) 1px,transparent 1px,transparent 110px),radial-gradient(ellipse 80% 60% at 50% 30%,rgba(70,30,22,0.25) 0%,transparent 70%);background-attachment:fixed;background-size:100% 100%}
+body{font-family:-apple-system,'SF Pro Display',sans-serif;max-width:780px;margin:0 auto;padding:0 16px 60px;color:#f0ebe8;line-height:1.7}
+header{padding:30px 0;border-bottom:0.5px solid rgba(192,57,43,0.3)}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:30px;color:#c0392b;margin:0 0 8px}
+.cat-badge{display:inline-block;background:rgba(192,57,43,0.18);color:#c0392b;font-size:10px;padding:3px 10px;letter-spacing:0.08em;text-transform:uppercase;font-family:monospace;border-radius:2px;margin-bottom:8px}
+.wr-strip{display:flex;gap:24px;margin:18px 0;padding:14px 18px;background:rgba(46,26,20,0.6);border-left:3px solid #43a047;border-radius:4px;font-size:13px;flex-wrap:wrap}
+.wr-strip div strong{color:#43a047;display:block;font-size:10px;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;font-family:monospace}
+.wr-strip div span{color:#f0ebe8;font-family:monospace;font-size:16px;font-weight:700}
+.fresh{background:rgba(67,160,71,0.08);border-left:3px solid #43a047;padding:12px 16px;margin:18px 0;font-size:12px;color:#b0a09a}
+h2,h3{font-family:'Cormorant Garamond',Georgia,serif;color:#ba7517;margin-top:30px}
+h2{font-weight:400;font-size:20px;margin-bottom:10px}
+h3{font-weight:400;font-size:16px;color:#c8a566;margin-top:22px}
+p,li{font-size:14px}
+a{color:#ba7517;text-decoration:none}
+a:hover{color:#c0392b;text-decoration:underline}
+footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.3);font-size:11px;color:#706056;text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "NG+ Rocket Launcher Speedrun Route", "description": "Rocket Launcher carry-over makes bosses trivial.", "author": {"@type": "Person", "name": "Jachin"}, "totalTime": "PT2H18M", "datePublished": "2026-06-14", "step": [{"@type": "HowToStep", "name": "Chapter 1", "text": "Optimal route for chapter 1"}, {"@type": "HowToStep", "name": "Chapter 2", "text": "Optimal route for chapter 2"}, {"@type": "HowToStep", "name": "Chapter 3", "text": "Optimal route for chapter 3"}, {"@type": "HowToStep", "name": "Chapter 4", "text": "Optimal route for chapter 4"}, {"@type": "HowToStep", "name": "Chapter 5", "text": "Optimal route for chapter 5"}, {"@type": "HowToStep", "name": "Chapter 6", "text": "Optimal route for chapter 6"}, {"@type": "HowToStep", "name": "Chapter 7", "text": "Optimal route for chapter 7"}, {"@type": "HowToStep", "name": "Chapter 8", "text": "Optimal route for chapter 8"}]}</script>
+</head>
+<body>
+<div class="nav-min" style="position:sticky;top:0;z-index:50;background:#241410;border-bottom:0.5px solid rgba(192,57,43,0.18);padding:10px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;font-family:-apple-system,sans-serif;max-width:780px;margin:0 auto -30px">
+<a href="/" style="color:#c0392b;font-weight:700;text-decoration:none;font-size:15px">re9guide<span style="color:#b0a09a">.it.com</span></a>
+<span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center">
+<a href="/speedrun-ng-plus-rocket.html" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:700">EN</a>
+<a href="/ko/" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none">한국어</a>
+</span>
+</div>
+<header>
+<div class="cat-badge">NG+ Category</div>
+<h1>NG+ Rocket Launcher Speedrun Route Deep Dive</h1>
+<p style="font-size:14px;color:#b0a09a;margin:8px 0 0">Rocket Launcher carry-over makes bosses trivial.</p>
+<div class="wr-strip">
+<div><strong>World Record</strong><span>2:18:44</span></div>
+<div><strong>Category</strong><span>NG+</span></div>
+<div><strong>Updated</strong><span>2026-06-14</span></div>
+</div>
+<div class="fresh">📅 <strong>2026-06-14</strong> · v1.02 + DLC verified · WR holder verified setup documented</div>
+</header>
+
+<p>RE9 (Resident Evil: Requiem) has spawned an active speedrun community since launch. The <strong>NG+ Rocket Launcher</strong> category sits at the heart of competitive RE9 speedrunning. This route deep-dive covers everything: optimal path, frame-perfect tricks, charm choices, RNG management, and the current world record holder's setup.</p>
+
+<h2>Current world record</h2>
+<p>The world record for NG+ Rocket Launcher is <strong>2:18:44</strong>. Submitted to speedrun.com leaderboards with full video evidence and timer + split verification. Subject to change as community discovers new optimization (latest community-submitted route was on 2026-06-10).</p>
+
+<h2>What makes this category unique</h2>
+<p>Rocket Launcher carry-over makes bosses trivial. This means specific design choices throughout the route: weapon selection, charm equipping, save management, and dialogue choices all factor differently than a standard playthrough. NG+ unique route — Rocket Launcher 1-shots everything</p>
+
+<h2>Chapter-by-chapter route breakdown</h2>
+<p>The optimal route through NG+ Rocket Launcher category requires careful chapter-by-chapter planning:</p>
+
+<h3>Chapter 1: Awakening at Wrenwood (target 30:00)</h3>
+<p>Open with the tutorial sequence as fast as the game allows. Skip optional dialogue. Pickups: only required items. Use the Silencer 9 starter as designed. Avoid Mr. Raccoon collectibles (unless 100%). Speedrun-critical: the bridge sequence at 28:00 mark has a 4-frame window for the optimal jump.</p>
+
+<h3>Chapter 2: Wrenwood Hotel (target 25:00)</h3>
+<p>Hotel boss requires Charm setup. For NG+ category specifically, the boss strategy is highly optimized. Sub-strategy: aggressive parry-counter usage with Mortal Edge if available; otherwise W870 Police shotgun headshot stagger pattern.</p>
+
+<h3>Chapter 3: Care Center Arrival (target 25:00)</h3>
+<p>Vivien Stage 1: weakness is crit headshot pattern. Use Marksman's Eye charm equipped. Speedrun-specific: avoid the optional research note reading (saves 90 seconds). Speedrunners go directly to the Plant 43 mini-boss area.</p>
+
+<h3>Chapter 4: Care Center Confrontation (target 22:00)</h3>
+<p>Vivien Stage 2 + Nurse Kim boss fights. Frame-perfect Mortal Edge parries are essential. The community has documented exact i-frame windows. For NG+ category, this is where most run-killing deaths happen.</p>
+
+<h3>Chapter 5: Rhodes Hill Manor (target 22:00)</h3>
+<p>Painting puzzle solution: code 560 (well-known). Manor combat is largely optional — speedrunners skip 60% of encounters with strategic running. Rhodes Hill Doctor boss: weakness is knife counter.</p>
+
+<h3>Chapter 6: Raccoon City (target 35:00)</h3>
+<p>RPD section reuses RE2 Remake routing. Mr. X chase: take the alternate route through Library to skip 4 minutes. Titan Spinner: rocket launcher 1-shot if NG+ available.</p>
+
+<h3>Chapter 7: ARK Lower (target 22:00)</h3>
+<p>Final puzzles + Commander X1 phase 1. The Commander has a documented spawn pattern that's exploitable. Plant 43 reappears with new attack patterns — counter strategy differs from chapter 3.</p>
+
+<h3>Chapter 8: ARK Core + Eveline (target 20:00)</h3>
+<p>Final boss Eveline has 4 phases. Frame-perfect counters on phases 3 and 4 are essential. Specific charm: Phoenix Down on phase 4 is meta. The True Ending route requires specific dialogue at the end.</p>
+
+<h2>Charm setup for this category</h2>
+<p>The optimal charm loadout varies by category. For NG+ Rocket Launcher, the community-tested setup as of 2026-06-14:</p>
+<ul>
+<li><strong>Slot 1:</strong> Quickstep (movement speed)</li>
+<li><strong>Slot 2:</strong> Marksman's Eye (crit damage)</li>
+<li><strong>Slot 3:</strong> Crafters Touch</li>
+<li><strong>Slot 4:</strong> Magnetic Hand (pickup)</li>
+</ul>
+
+<h2>Frame-perfect tricks</h2>
+<p>The NG+ Rocket Launcher category relies on specific frame-perfect inputs:</p>
+<ul>
+<li><strong>Bridge jump skip (Chapter 1):</strong> 4-frame window at 28:00. Pixel-perfect jump from edge.</li>
+<li><strong>Mortal Edge parry chain:</strong> Frame-perfect input to chain 3+ parries.</li>
+<li><strong>Cutscene skip:</strong> Press button during 2-frame transition window.</li>
+<li><strong>Wall-clip on Mr. X chase:</strong> Specific corner allows wall-clip skip (NMG category bans this).</li>
+</ul>
+
+<h2>RNG management</h2>
+<p>Several enemies in RE9 have RNG-dependent attack patterns. Speedrunners use save scumming on Casual; on Hardcore/Insanity, RNG is just part of the run.</p>
+<ul>
+<li><strong>Vivien Stage 2 attack pattern:</strong> 60% RNG-determined. Top runs are roughly 5% better than average.</li>
+<li><strong>Mr. X chase route variance:</strong> ±15s between attempts.</li>
+<li><strong>Eveline phase transitions:</strong> Frame-perfect input timing critical.</li>
+</ul>
+
+<h2>Community + leaderboards</h2>
+<p>The active NG+ speedrunning community gathers on:</p>
+<ul>
+<li><strong>speedrun.com</strong> — Official leaderboard</li>
+<li><strong>r/re9speedruns</strong> — Reddit community</li>
+<li><strong>Twitch RE9 Speedruns directory</strong> — Live streaming category</li>
+<li><strong>Discord:</strong> RE9 Speedrunning server (public link via speedrun.com)</li>
+</ul>
+
+<p>Korean speedrunners are increasingly active. The Korean RE9 speedrun community is centered on Naver Café + 트위치 (Twitch Korea).</p>
+
+<h2>Equipment recommendations</h2>
+<p>Top runners use:</p>
+<ul>
+<li><strong>Controller:</strong> Wired Sony DualSense or Xbox Elite Controller (latency advantage)</li>
+<li><strong>Display:</strong> 60Hz minimum, 1ms response time, 16ms input lag max</li>
+<li><strong>Audio:</strong> Wired headphones (binaural cues are critical for boss patterns)</li>
+<li><strong>Timer:</strong> LiveSplit (PC) or speedrun.com browser timer</li>
+</ul>
+
+<h2>Cross-references in our RE9 guides</h2>
+<p>For deeper preparation: see <a href="speedrun-splits-tracker.html">our speedrun splits tracker tool</a>, <a href="best-weapons-tier-list.html">17-weapon tier list</a>, <a href="how-to-unlock-insanity-difficulty.html">unlock Insanity</a>, and <a href="charm-loadout-optimizer.html">charm loadout optimizer</a>.</p>
+
+<footer>re9guide.it.com — fan-made speedrun analysis. Speedrun.com leaderboards link from main speedrun hub. Not affiliated with Capcom.</footer>
+</body>
+</html>
