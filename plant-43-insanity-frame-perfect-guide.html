@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<meta name="audience" content="Korean RE9 players">
+<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
+<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -20,7 +23,7 @@
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
-<link rel="canonical" href="https://www.re9guide.it.com/plant-43-insanity-frame-perfect-guide.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/ko/plant-43-insanity-frame-perfect-guide.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/plant-43-insanity-frame-perfect-guide.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/plant-43-insanity-frame-perfect-guide.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/plant-43-insanity-frame-perfect-guide.html" />
@@ -37,10 +40,10 @@
 <meta name="theme-color" content="#241410" />
 <meta name="msapplication-TileColor" content="#241410" />
 <!-- Open Graph + Twitter Card -->
-<meta property="og:title" content="Plant 43 Insanity Frame-Perfect Guide — Spore Cloud Avoidance + Core Strategy" />
-<meta property="og:description" content="Plant 43 Insanity tactical: 3 root cluster destruction order, spore cloud DoT timing, core opening sequence, Flame Rounds skip mechanic. v1.02." />
+<meta property="og:title" content="Plant 43 인새니티 프레임 퍼펙트 가이드 — 포자 구름 회피 + 코어 전략" />
+<meta property="og:description" content="Plant 43 인새니티 전술: 3 뿌리 클러스터 파괴 순서, 포자 구름 DoT 타이밍, 코어 열림 시퀀스, Flame Rounds 스킵 메커닉. v1.02." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.re9guide.it.com/plant-43-insanity-frame-perfect-guide.html" />
+<meta property="og:url" content="https://www.re9guide.it.com/ko/plant-43-insanity-frame-perfect-guide.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-cards/re9-best-moments-ranked-tier-list-og.png"
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -50,15 +53,15 @@
 <meta name="twitter:image:alt" content="RE9 Locations tier list with RPD Main Hall as S-tier" />
 <meta property="og:site_name" content="re9guide.it.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Plant 43 Insanity Frame-Perfect Guide — Spore Cloud Avoidance + Core Strategy" />
-<meta name="twitter:description" content="Plant 43 Insanity tactical: 3 root cluster destruction order, spore cloud DoT timing, core opening sequence, Flame Rounds skip mechanic. v1.02." />
-<title>Plant 43 Insanity Frame-Perfect Guide — Spore Cloud Avoidance + Core Strategy</title>
-<meta name="description" content="Plant 43 Insanity tactical: 3 root cluster destruction order, spore cloud DoT timing, core opening sequence, Flame Rounds skip mechanic. v1.02." />
+<meta name="twitter:title" content="Plant 43 인새니티 프레임 퍼펙트 가이드 — 포자 구름 회피 + 코어 전략" />
+<meta name="twitter:description" content="Plant 43 인새니티 전술: 3 뿌리 클러스터 파괴 순서, 포자 구름 DoT 타이밍, 코어 열림 시퀀스, Flame Rounds 스킵 메커닉. v1.02." />
+<title>Plant 43 인새니티 프레임 퍼펙트 가이드 — 포자 구름 회피 + 코어 전략</title>
+<meta name="description" content="Plant 43 인새니티 전술: 3 뿌리 클러스터 파괴 순서, 포자 구름 DoT 타이밍, 코어 열림 시퀀스, Flame Rounds 스킵 메커닉. v1.02." />
 <meta name="keywords" content="RE9 best charm loadout, RE9 best charms, RE9 charm build, RE9 Insanity charms" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--silver:#888780;--bronze:#8b5e2a;}
-body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
 .logo{font-size:15px;display:flex;align-items:center;gap:8px;}
@@ -121,8 +124,8 @@ ul.normal li{padding:3px 0;font-size:15px;}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Plant 43 Insanity Frame-Perfect Guide — Spore Cloud Avoidance + Core Strategy",
-  "description": "Plant 43 Insanity tactical: 3 root cluster destruction order, spore cloud DoT timing, core opening sequence, Flame Rounds skip mechanic. v1.02.",
+  "headline": "Plant 43 인새니티 프레임 퍼펙트 가이드 — 포자 구름 회피 + 코어 전략",
+  "description": "Plant 43 인새니티 전술: 3 뿌리 클러스터 파괴 순서, 포자 구름 DoT 타이밍, 코어 열림 시퀀스, Flame Rounds 스킵 메커닉. v1.02.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -150,7 +153,7 @@ ul.normal li{padding:3px 0;font-size:15px;}
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/best-weapons-tier-list.html"
   },
-  "inLanguage": "en",
+  "inLanguage": "ko-KR",
   "articleSection": "Weapons",
   "about": {
     "@type": "VideoGame",
@@ -440,8 +443,8 @@ h1 {
 <body>
 <div class="nav"><a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a><a href="index.html">← All guides</a>
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="/plant-43-insanity-frame-perfect-guide.html style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
-<a href="/ko/plant-43-insanity-frame-perfect-guide.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+<a href="/plant-43-insanity-frame-perfect-guide.html" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="/ko/eveline-complete-timeline-2009-2026.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
 </span>
 </div>
 <div class="container">
@@ -458,199 +461,52 @@ h1 {
 <!-- Editorial Info Card - Trust signal for guide credibility -->
 
 
-<p class="lead"><strong>Plant 43 Insanity has 8-second spore DoT.</strong> Run to room edge immediately when purple cloud releases. Clatter Carbine on roots — 15 bullets each. Flame Rounds skip Phase 2 entirely.</p>
+<p class="lead"><strong>Plant 43 인새니티가 8초 포자 DoT 보유.</strong> 보라색 구름 방출 시 즉시 방 가장자리로 달리기. 뿌리에 Clatter Carbine — 각 15발. Flame Rounds가 페이즈 2 완전히 건너뜀.</p>
 
-<h2>Insanity-specific requirements</h2>
-<p>Before engaging Plant 43 on Insanity NG+, equip the recommended charm loadout and stock the recommended weapons. This fight punishes underprepared players.</p>
+<h2>인새니티 전용 요구사항</h2>
+<p>인새니티 NG+에서 Plant 43와 교전하기 전, 권장 부적 로드아웃 장착하고 권장 무기 비축. 이 전투가 준비 부족 플레이어 처벌.</p>
 
-<h2>Required charm loadout (Insanity NG+)</h2>
+<h2>필수 부적 로드아웃 (인새니티 NG+)</h2>
 <ul>
-  <li><strong>Crafter&rsquo;s Touch</strong> — ammo crafting +25%</li>
-  <li><strong>Iron Skin</strong> — -15% damage reduction</li>
-  <li><strong>Phoenix Down</strong> — revive once per chapter at 50% HP</li>
-  <li><strong>4th NG+ slot:</strong> Marksman&rsquo;s Eye OR Survivor&rsquo;s Will based on phase</li>
+  <li><strong>Crafter의 Touch</strong> — 탄약 제작 +25%</li>
+  <li><strong>Iron Skin</strong> — -15% 데미지 감소</li>
+  <li><strong>Phoenix Down</strong> — 챕터당 한 번 50% HP로 부활</li>
+  <li><strong>4번째 NG+ 슬롯:</strong> 페이즈에 따라 Marksman의 Eye 또는 Survivor의 Will</li>
 </ul>
 
-<h2>Required weapons</h2>
+<h2>필수 무기</h2>
 <ul>
-  <li><strong>Requiem Revolver T3</strong> + Infinite Magnum charm (NG+ unlock)</li>
-  <li><strong>W870 Police shotgun T3</strong> for close phases</li>
-  <li><strong>Mortal Edge</strong> for parry timing</li>
-  <li><strong>Clatter Carbine T2</strong> as backup DPS</li>
+  <li><strong>Requiem Revolver T3</strong> + 무한 매그넘 부적 (NG+ 해금)</li>
+  <li>근접 페이즈용 <strong>W870 Police 산탄총 T3</strong></li>
+  <li>패리 타이밍용 <strong>Mortal Edge</strong></li>
+  <li>예비 DPS용 <strong>Clatter Carbine T2</strong></li>
 </ul>
 
-<h2>Frame-perfect timing data</h2>
-<p>Each boss has specific attack windows requiring sub-second precision. Practice on Standard difficulty first to memorize the patterns, then attempt Insanity NG+ with confidence.</p>
+<h2>프레임 퍼펙트 타이밍 데이터</h2>
+<p>각 보스가 1초 미만 정확도 요구하는 특정 공격 윈도우 보유. 패턴 기억하기 위해 표준 난이도에서 먼저 연습, 그 다음 자신감으로 인새니티 NG+ 시도.</p>
 
-<h2>Common Insanity NG+ mistakes</h2>
+<h2>일반적 인새니티 NG+ 실수</h2>
 <ul>
-  <li><strong>Not equipping Phoenix Down</strong> — One mistake = death without it</li>
-  <li><strong>Healing mid-phase</strong> — Wastes spray, phase transitions reset arena</li>
-  <li><strong>Wrong weapon for phase</strong> — Match weapon to mechanic</li>
-  <li><strong>Panic parries</strong> — Mistimed parry = punishment damage</li>
+  <li><strong>Phoenix Down 장착 안 함</strong> — 그것 없으면 한 번 실수 = 사망</li>
+  <li><strong>페이즈 중간 회복</strong> — 스프레이 낭비, 페이즈 전환이 아레나 리셋</li>
+  <li><strong>페이즈에 잘못된 무기</strong> — 무기를 메커닉에 맞춤</li>
+  <li><strong>패닉 패리</strong> — 잘못된 타이밍 패리 = 처벌 데미지</li>
 </ul>
 
-<h2>Insanity-only rewards</h2>
-<p>Defeating Plant 43 on Insanity NG+ unlocks specific audio logs, codex entries, and trophy progress. Many players miss these because they only play Standard difficulty.</p>
+<h2>인새니티 전용 보상</h2>
+<p>인새니티 NG+에서 Plant 43 패배가 특정 오디오 로그, 코덱스 항목, 트로피 진행 해금. 많은 플레이어가 표준 난이도만 플레이하기 때문에 이것들을 놓침.</p>
 
 <div class="cta">
-  <div class="cta-title">Related boss content</div>
-  <a href="re9-best-bosses-ranked-tier-list.html">All 10 bosses ranked</a>
-  <a href="all-bosses-ranked-by-difficulty.html">Bosses by difficulty</a>
-  <a href="re9-best-boss-strategy.html">Best boss strategy</a>
-  <a href="re9-insanity-survival-guide.html">Insanity survival guide</a>
-  <a href="re9-best-charm-loadout.html">Best charm loadout</a>
-  <a href="re9-best-weapon.html">What is the best weapon?</a>
-  <a href="requiem-revolver-complete-guide.html">Requiem Revolver guide</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="eveline-character-profile-complete.html">Eveline complete profile</a>
-  <a href="grace-ashcroft-character-profile-complete.html">Grace Ashcroft profile</a>
-  <a href="leon-kennedy-character-profile-complete.html">Leon Kennedy profile</a>
-  <a href="mia-winters-re9-re7-connection.html">Mia Winters cameo explained</a>
-  <a href="chunk-origin-mystery-explained.html">Chunk origin mystery</a>
-  <a href="re9-characters-ranked-tier-list.html">All 16 characters ranked</a>
-  <a href="re9-cutscenes-ranked-tier-list.html">All 16 cutscenes ranked</a>
-  <a href="re9-easter-eggs-ranked-tier-list.html">All 16 easter eggs</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="best-weapons-tier-list.html">All 17 weapons ranked</a>
-  <a href="re9-best-weapon.html">What is the best weapon?</a>
-  <a href="re9-which-weapons-to-upgrade-first.html">Weapon upgrade order</a>
-  <a href="re9-best-charm-loadout.html">Best charm loadout</a>
-  <a href="re9-best-boss-strategy.html">Best boss strategy</a>
-  <a href="re9-ng-plus-what-carries-over.html">What carries over to NG+</a>
-  <a href="re9-insanity-survival-guide.html">Insanity survival guide</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="re9-all-charms-ranked-tier-list.html">All 18 charms ranked</a>
-  <a href="re9-ng-plus-what-carries-over.html">What carries over to NG+</a>
-  <a href="re9-insanity-survival-guide.html">Insanity survival guide</a>
-  <a href="best-weapons-tier-list.html">Best weapons (pair with charms)</a>
-  <a href="speedrun-guide-sub-4-hours.html">Speedrun guide</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="tier-lists.html">View the complete tier lists hub (13 lists)</a>
-  <a href="ada-wong-re9-reversal-arc.html">Ada Wong RE9 reversal arc</a>
-  <a href="mia-winters-re9-re7-connection.html">Mia Winters cameo explained</a>
-  <a href="chunk-origin-mystery-explained.html">Chunk origin mystery (Marcus Halverson)</a>
-  <a href="eveline-character-profile-complete.html">Eveline complete profile</a>
-  <a href="will-grace-return-in-re10.html">Will Grace return in RE10?</a>
-  <a href="bsaa-re9-new-direction.html">BSAA RE9 new direction</a>
-  <a href="re9-best-endings-ranked-tier-list.html">All 8 endings ranked</a>
-  <a href="re9-characters-ranked-tier-list.html">All 16 characters ranked</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="tier-lists.html">View the complete tier lists hub (12 lists)</a>
-  <a href="re9-difficulty-comparison-which-to-play.html">Difficulty comparison guide</a>
-  <a href="re9-new-game-plus-complete-guide.html">NG+ complete guide</a>
-  <a href="how-to-unlock-insanity-difficulty.html">How to unlock Insanity</a>
-  <a href="insanity-chapter-walkthrough.html">Insanity playbook</a>
-  <a href="re9-insanity-survival-guide.html">Insanity survival tips</a>
-  <a href="re9-insanity-readiness-check.html">Insanity readiness check</a>
-  <a href="speedrun-guide-sub-4-hours.html">Sub-4-hour speedrun guide</a>
-  <a href="all-49-trophies-platinum-guide.html">Platinum trophy guide</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="tier-lists.html">View the complete tier lists hub (11 lists)</a>
-  <a href="re9-cutscenes-ranked-tier-list.html">All 16 cutscenes ranked</a>
-  <a href="re9-best-bosses-ranked-tier-list.html">All 10 bosses ranked</a>
-  <a href="re9-locations-ranked-tier-list.html">All 16 locations ranked</a>
-  <a href="re9-easter-eggs-ranked-tier-list.html">All 16 easter eggs ranked</a>
-  <a href="re9-characters-ranked-tier-list.html">All 16 characters ranked</a>
-  <a href="rpd-orphanage-walkthrough.html">RPD walkthrough (Moment #1)</a>
-  <a href="ark-facility-complete-walkthrough.html">ARK Facility walkthrough (Moment #2)</a>
-  <a href="how-to-beat-mr-x-super-tyrant.html">Mr. X guide (Moment #3)</a>
-  <a href="chunk-origin-mystery-explained.html">Chunk origin (Moment #4)</a>
-  <a href="how-to-beat-victor-gideon.html">Victor Gideon guide (Moment #5)</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="tier-lists.html">View the complete tier lists hub (10 lists)</a>
-  <a href="re9-cutscenes-ranked-tier-list.html">All 16 cutscenes ranked</a>
-  <a href="re9-locations-ranked-tier-list.html">All 16 locations ranked</a>
-  <a href="re9-characters-ranked-tier-list.html">All 16 characters ranked</a>
-  <a href="re9-items-treasures-ranked-tier-list.html">All 18 items ranked</a>
-  <a href="re9-hidden-easter-eggs-list.html">Hidden easter eggs full list</a>
-  <a href="all-resident-evil-games-ranked-2026.html">All RE games ranked</a>
-  <a href="rpd-orphanage-walkthrough.html">RPD walkthrough (Easter Egg #1 location)</a>
-  <a href="mia-winters-re9-re7-connection.html">Mia Winters cameo (Easter Egg #5)</a>
-  <a href="ada-wong-re9-reversal-arc.html">Ada Wong beacon (Easter Egg #6)</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="tier-lists.html">View the complete tier lists hub (9 lists)</a>
-  <a href="re9-all-endings-explained.html">All 8 endings explained</a>
-  <a href="re9-best-endings-ranked-tier-list.html">Endings tier list</a>
-  <a href="re9-best-bosses-ranked-tier-list.html">Bosses tier list</a>
-  <a href="re9-characters-ranked-tier-list.html">Characters tier list</a>
-  <a href="re9-locations-ranked-tier-list.html">Locations tier list</a>
-  <a href="mia-winters-re9-re7-connection.html">Mia Winters cameo explained</a>
-  <a href="chunk-origin-mystery-explained.html">Chunk Family Audio breakdown</a>
-  <a href="how-to-beat-victor-gideon.html">Victor Gideon boss guide</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="tier-lists.html">View the complete tier lists hub (8 lists)</a>
-  <a href="re9-chapters-ranked-tier-list.html">All 8 chapters ranked (companion)</a>
-  <a href="re9-best-bosses-ranked-tier-list.html">All 10 bosses ranked</a>
-  <a href="re9-best-endings-ranked-tier-list.html">All 8 endings ranked</a>
-  <a href="re9-items-treasures-ranked-tier-list.html">All 18 items ranked</a>
-  <a href="re9-characters-ranked-tier-list.html">All 16 characters ranked</a>
-  <a href="rpd-orphanage-walkthrough.html">RPD/Orphanage walkthrough (top 2 locations)</a>
-  <a href="ark-facility-complete-walkthrough.html">ARK Facility walkthrough (top S-tier)</a>
-  <a href="organless-corpse-puzzle.html">Anatomy Lab puzzle (#5 location)</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="tier-lists.html">View the complete tier lists hub</a>
-  <a href="grace-ashcroft-character-profile-complete.html">Grace Ashcroft complete profile</a>
-  <a href="leon-kennedy-character-profile-complete.html">Leon Kennedy complete profile</a>
-  <a href="eveline-character-profile-complete.html">Eveline complete profile</a>
-  <a href="mia-winters-re9-re7-connection.html">Mia Winters cameo explained</a>
-  <a href="chunk-origin-mystery-explained.html">Chunk origin mystery</a>
-  <a href="re9-best-bosses-ranked-tier-list.html">All 10 bosses ranked</a>
-  <a href="re9-best-endings-ranked-tier-list.html">All 8 endings ranked</a>
-  <a href="re9-all-charms-ranked-tier-list.html">All 18 charms ranked</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="tier-lists.html">View the complete tier lists hub (6 lists)</a>
-  <a href="best-weapons-tier-list.html">All 17 weapons ranked</a>
-  <a href="re9-best-bosses-ranked-tier-list.html">All 10 bosses ranked</a>
-  <a href="re9-best-endings-ranked-tier-list.html">All 8 endings ranked</a>
-  <a href="re9-chapters-ranked-tier-list.html">All 8 chapters ranked</a>
-  <a href="re9-all-charms-ranked-tier-list.html">All 18 charms ranked</a>
-  <a href="all-75-files-locations-guide.html">All 75 files locations</a>
-  <a href="all-quartz-puzzle-solutions.html">Quartz puzzle solutions</a>
-  <a href="re9-new-game-plus-complete-guide.html">NG+ complete guide</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="best-weapons-tier-list.html">All 17 weapons ranked S to D</a>
-  <a href="re9-best-bosses-ranked-tier-list.html">All 10 bosses ranked best to worst</a>
-  <a href="re9-best-endings-ranked-tier-list.html">All 8 endings ranked tier list</a>
-  <a href="re9-chapters-ranked-tier-list.html">All 8 chapters ranked S to C</a>
-  <a href="all-bosses-ranked-by-difficulty.html">Bosses by difficulty</a>
-  <a href="best-crafting-recipes-ammo-guide.html">Requiem Revolver ammo farming</a>
-  <a href="re9-new-game-plus-complete-guide.html">NG+ complete guide</a>
-  <a href="all-75-files-locations-guide.html">All 75 files locations</a>
-  <a href="insanity-chapter-walkthrough.html">Insanity playbook</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="re9-best-bosses-ranked-tier-list.html">All 10 bosses ranked (tier list)</a>
-  <a href="re9-best-endings-ranked-tier-list.html">All 8 endings ranked (tier list)</a>
-  <a href="best-weapons-tier-list.html">All 17 weapons ranked S to D</a>
-  <a href="all-bosses-ranked-by-difficulty.html">Bosses ranked by difficulty</a>
-  <a href="re9-difficulty-comparison-which-to-play.html">Difficulty comparison guide</a>
-  <a href="ark-facility-complete-walkthrough.html">Chapter 8 walkthrough (#1)</a>
-  <a href="rpd-orphanage-walkthrough.html">Chapter 6 walkthrough (#2)</a>
-  <a href="re9-new-game-plus-complete-guide.html">NG+ complete guide</a>
-  <a href="insanity-chapter-walkthrough.html">Insanity playbook</a>
-  <a href="index.html">All guides</a>
-</div>
-  <a href="re9-eye-spy-charm-explained.html">Eye Spy Charm explained (S-tier equipment)</a>
-  <a href="best-crafting-recipes-ammo-guide.html">Best crafting recipes &amp; ammo</a>
-  <a href="all-25-mr-raccoon-locations.html">All 25 Mr. Raccoon Locations</a>
-  <a href="how-to-beat-victor-gideon.html">How to Beat Victor Gideon</a>
-  <a href="how-to-beat-mr-x-super-tyrant.html">How to Beat Super Tyrant</a>
-  <a href="all-5-safe-codes-guide.html">All 5 Safe Codes</a>
-  <a href="index.html">All guides home</a>
-</div>
+  <div class="cta-title">관련 보스 콘텐츠</div>
+  <a href="re9-best-bosses-ranked-tier-list.html">10개 보스 모두 랭킹 (영어/한국어)</a>
+  <a href="all-bosses-ranked-by-difficulty.html">난이도별 보스 (영어/한국어)</a>
+  <a href="re9-best-boss-strategy.html">최고 보스 전략 (영어/한국어)</a>
+  <a href="re9-insanity-survival-guide.html">인새니티 생존 가이드 (영어/한국어)</a>
+  <a href="re9-best-charm-loadout.html">최고 부적 로드아웃 (영어/한국어)</a>
+  <a href="re9-best-weapon.html">최고 무기는 무엇? (영어/한국어)</a>
+  <a href="requiem-revolver-complete-guide.html">Requiem Revolver 가이드 (영어/한국어)</a>
+  <a href="index.html">모든 공략</a>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 
 <p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? <a href="#" style="color:var(--red);">Let us know</a> — we update tier rankings monthly based on community feedback and balance patches.</p>
 
