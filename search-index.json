@@ -5024,5 +5024,635 @@
   "desc": "RE9 platform comparison + settings.",
   "lang": "en",
   "category": "Platform"
+ },
+ {
+  "title": "Beginner — First Time Playing Re9",
+  "url": "/beginner-first-time-playing-re9.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — First Time Playing Re9",
+  "url": "/ko/beginner-first-time-playing-re9.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — No Re Series Experience",
+  "url": "/beginner-no-re-series-experience.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — No Re Series Experience",
+  "url": "/ko/beginner-no-re-series-experience.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — How Scary Is Re9",
+  "url": "/beginner-how-scary-is-re9.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — How Scary Is Re9",
+  "url": "/ko/beginner-how-scary-is-re9.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Standard Vs Deluxe Edition",
+  "url": "/beginner-standard-vs-deluxe-edition.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Standard Vs Deluxe Edition",
+  "url": "/ko/beginner-standard-vs-deluxe-edition.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Which Platform Buy",
+  "url": "/beginner-which-platform-buy.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Which Platform Buy",
+  "url": "/ko/beginner-which-platform-buy.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Difficulty Recommendation",
+  "url": "/beginner-difficulty-recommendation.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Difficulty Recommendation",
+  "url": "/ko/beginner-difficulty-recommendation.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Control Scheme Options",
+  "url": "/beginner-control-scheme-options.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Control Scheme Options",
+  "url": "/ko/beginner-control-scheme-options.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Save System Explained",
+  "url": "/beginner-save-system-explained.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Save System Explained",
+  "url": "/ko/beginner-save-system-explained.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Tutorial Mode",
+  "url": "/beginner-tutorial-mode.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Tutorial Mode",
+  "url": "/ko/beginner-tutorial-mode.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Spoiler Policy",
+  "url": "/beginner-spoiler-policy.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Spoiler Policy",
+  "url": "/ko/beginner-spoiler-policy.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Controller Vs Keyboard",
+  "url": "/beginner-controller-vs-keyboard.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Controller Vs Keyboard",
+  "url": "/ko/beginner-controller-vs-keyboard.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Time Commitment",
+  "url": "/beginner-time-commitment.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Time Commitment",
+  "url": "/ko/beginner-time-commitment.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Required Internet",
+  "url": "/beginner-required-internet.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Required Internet",
+  "url": "/ko/beginner-required-internet.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Photosensitive Warning",
+  "url": "/beginner-photosensitive-warning.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Photosensitive Warning",
+  "url": "/ko/beginner-photosensitive-warning.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Beginner — Co Op Multiplayer",
+  "url": "/beginner-co-op-multiplayer.html",
+  "desc": "RE9 newcomer guide.",
+  "lang": "en",
+  "category": "Beginner"
+ },
+ {
+  "title": "신규자 — Co Op Multiplayer",
+  "url": "/ko/beginner-co-op-multiplayer.html",
+  "desc": "RE9 신규자 가이드.",
+  "lang": "ko",
+  "category": "Beginner"
+ },
+ {
+  "title": "Cosplay Grace Ashcroft Tutorial",
+  "url": "/cosplay-grace-ashcroft-tutorial.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Cosplay Leon Kennedy Jacket",
+  "url": "/cosplay-leon-kennedy-jacket.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Cosplay Eveline Cosplay Makeup",
+  "url": "/cosplay-eveline-cosplay-makeup.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Cosplay Vivien Davies Tutorial",
+  "url": "/cosplay-vivien-davies-tutorial.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Cosplay Father Riley Vestments",
+  "url": "/cosplay-father-riley-vestments.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Merch Grace Figure Review",
+  "url": "/merch-grace-figure-review.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Merch Mr X Statue Review",
+  "url": "/merch-mr-x-statue-review.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Merch Re9 Art Book Deluxe",
+  "url": "/merch-re9-art-book-deluxe.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Merch Re9 Soundtrack Vinyl",
+  "url": "/merch-re9-soundtrack-vinyl.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Merch Re9 Clothing Line",
+  "url": "/merch-re9-clothing-line.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Art Grace Fan Art Spotlight",
+  "url": "/art-grace-fan-art-spotlight.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Art Leon Evolution Art Comparison",
+  "url": "/art-leon-evolution-art-comparison.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Merch Re9 Controller Skins",
+  "url": "/merch-re9-controller-skins.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Merch Re9 Keychain Collectibles",
+  "url": "/merch-re9-keychain-collectibles.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Merch Re9 Trading Card Game",
+  "url": "/merch-re9-trading-card-game.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Cosplay Budget Build Guide",
+  "url": "/cosplay-budget-build-guide.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Cosplay Photoshoot Locations",
+  "url": "/cosplay-photoshoot-locations.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Art Mr X Tyrant Art Evolution",
+  "url": "/art-mr-x-tyrant-art-evolution.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Merch Re9 Amiibo Vs Figures",
+  "url": "/merch-re9-amiibo-vs-figures.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Cosplay Makeup Zombie Tutorial",
+  "url": "/cosplay-makeup-zombie-tutorial.html",
+  "desc": "RE9 cosplay & merchandise.",
+  "lang": "en",
+  "category": "Cosplay"
+ },
+ {
+  "title": "Relationship Map — Grace Cast",
+  "url": "/relationship-map-grace-cast.html",
+  "desc": "Character relationship visualization.",
+  "lang": "en",
+  "category": "RelMap"
+ },
+ {
+  "title": "Relationship Map — Eveline Arc",
+  "url": "/relationship-map-eveline-arc.html",
+  "desc": "Character relationship visualization.",
+  "lang": "en",
+  "category": "RelMap"
+ },
+ {
+  "title": "Relationship Map — Vivien Connections",
+  "url": "/relationship-map-vivien-connections.html",
+  "desc": "Character relationship visualization.",
+  "lang": "en",
+  "category": "RelMap"
+ },
+ {
+  "title": "Relationship Map — Rpd Families",
+  "url": "/relationship-map-rpd-families.html",
+  "desc": "Character relationship visualization.",
+  "lang": "en",
+  "category": "RelMap"
+ },
+ {
+  "title": "Relationship Map — Wesker Bloodline",
+  "url": "/relationship-map-wesker-bloodline.html",
+  "desc": "Character relationship visualization.",
+  "lang": "en",
+  "category": "RelMap"
+ },
+ {
+  "title": "Relationship Map — Bsaa Leadership",
+  "url": "/relationship-map-bsaa-leadership.html",
+  "desc": "Character relationship visualization.",
+  "lang": "en",
+  "category": "RelMap"
+ },
+ {
+  "title": "Relationship Map — Ark Research Staff",
+  "url": "/relationship-map-ark-research-staff.html",
+  "desc": "Character relationship visualization.",
+  "lang": "en",
+  "category": "RelMap"
+ },
+ {
+  "title": "Relationship Map — Cult Fellowship",
+  "url": "/relationship-map-cult-fellowship.html",
+  "desc": "Character relationship visualization.",
+  "lang": "en",
+  "category": "RelMap"
+ },
+ {
+  "title": "Relationship Map — Cross Game Leon",
+  "url": "/relationship-map-cross-game-leon.html",
+  "desc": "Character relationship visualization.",
+  "lang": "en",
+  "category": "RelMap"
+ },
+ {
+  "title": "Relationship Map — Villains Shared",
+  "url": "/relationship-map-villains-shared.html",
+  "desc": "Character relationship visualization.",
+  "lang": "en",
+  "category": "RelMap"
+ },
+ {
+  "title": "Virology — T Virus Mechanism",
+  "url": "/virology-t-virus-mechanism.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — G Virus Tier 2",
+  "url": "/virology-g-virus-tier-2.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — C Virus Pandemic Model",
+  "url": "/virology-c-virus-pandemic-model.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — E Virus Eveline Pathology",
+  "url": "/virology-e-virus-eveline-pathology.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — X Virus Prediction Re10",
+  "url": "/virology-x-virus-prediction-re10.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Progenitor Cyanobacteria",
+  "url": "/virology-progenitor-cyanobacteria.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Las Plagas Parasitology",
+  "url": "/virology-las-plagas-parasitology.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Uroboros Mechanism",
+  "url": "/virology-uroboros-mechanism.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Fungal Mold System",
+  "url": "/virology-fungal-mold-system.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Tyrant Genetic Engineering",
+  "url": "/virology-tyrant-genetic-engineering.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Licker Evolution",
+  "url": "/virology-licker-evolution.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Zombie Decomposition",
+  "url": "/virology-zombie-decomposition.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Crimson Head Mutation",
+  "url": "/virology-crimson-head-mutation.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Cerberus Canine Biology",
+  "url": "/virology-cerberus-canine-biology.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Hunter Amphibian Design",
+  "url": "/virology-hunter-amphibian-design.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Vivien Research Ethics",
+  "url": "/virology-vivien-research-ethics.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Bioweapon Pricing Economics",
+  "url": "/virology-bioweapon-pricing-economics.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Vaccine Development Models",
+  "url": "/virology-vaccine-development-models.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Quarantine Protocols",
+  "url": "/virology-quarantine-protocols.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Marcus Prototype Research",
+  "url": "/virology-marcus-prototype-research.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Wesker Genetic Enhancement",
+  "url": "/virology-wesker-genetic-enhancement.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Real World Bioethics",
+  "url": "/virology-real-world-bioethics.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Plant 43 Bio Design",
+  "url": "/virology-plant-43-bio-design.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Commander X1 Biology",
+  "url": "/virology-commander-x1-biology.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Blister Borne Pathology",
+  "url": "/virology-blister-borne-pathology.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Bioterror Detection Tech",
+  "url": "/virology-bioterror-detection-tech.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Aerosol Transmission",
+  "url": "/virology-aerosol-transmission.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Cryopreservation",
+  "url": "/virology-cryopreservation.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Gene Therapy Implications",
+  "url": "/virology-gene-therapy-implications.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
+ },
+ {
+  "title": "Virology — Future Virus Prediction",
+  "url": "/virology-future-virus-prediction.html",
+  "desc": "RE9 scientific deep dive.",
+  "lang": "en",
+  "category": "Virology"
  }
 ]
