@@ -93,5 +93,43 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <p>For deeper context, see our coverage of RE9's <a href="best-weapons-tier-list.html">17-weapon tier list</a>, <a href="re9-all-endings-explained.html">all 8 endings explained</a>, and <a href="insanity-frame-perfect-matrix.html">Insanity boss frame data</a>. For the broader RE timeline, see our <a href="all-resident-evil-games-ranked-2026.html">all RE games ranked 2026</a>.</p>
 
 <footer>re9guide.it.com — fan-made comparison · The Callisto Protocol © Striking Distance. RE9 © Capcom. All rights belong to their respective owners.</footer>
+<script>
+/* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
+(function(){
+  function fix(){
+    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+    if (!slug || slug === 'ko/' || slug === '') slug = '';
+
+    document.querySelectorAll('a').forEach(function(a){
+      var txt = (a.textContent || '').trim();
+      if (txt !== 'EN' && txt !== '한국어') return;
+      // Compute correct target
+      var target;
+      if (txt === 'EN') {
+        target = slug ? '/' + slug : '/';
+      } else {
+        target = slug ? '/ko/' + slug : '/ko/';
+      }
+      // Set proper href (overwrites any broken attribute)
+      a.setAttribute('href', target);
+      // Defensive click handler — force-navigate if browser didn't
+      a.addEventListener('click', function(e){
+        var t = target;
+        setTimeout(function(){
+          if (location.pathname !== new URL(t, location.href).pathname) {
+            location.href = t;
+          }
+        }, 50);
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fix);
+  } else {
+    fix();
+  }
+})();
+</script>
 </body>
 </html>
