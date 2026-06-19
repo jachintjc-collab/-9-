@@ -569,5 +569,43 @@ h1 {
 <p style="margin:10px 0 0;color:#b0a09a;font-size:12px;font-style:italic">23년 RE 시리즈 팬 Jachin (서울)이 PS5/Steam에서 6회 플레이 후 작성. v1.02 + DLC 검증.</p>
 </aside>
 
+<script>
+/* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
+(function(){
+  function fix(){
+    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+    if (!slug || slug === 'ko/' || slug === '') slug = '';
+
+    document.querySelectorAll('a').forEach(function(a){
+      var txt = (a.textContent || '').trim();
+      if (txt !== 'EN' && txt !== '한국어') return;
+      // Compute correct target
+      var target;
+      if (txt === 'EN') {
+        target = slug ? '/' + slug : '/';
+      } else {
+        target = slug ? '/ko/' + slug : '/ko/';
+      }
+      // Set proper href (overwrites any broken attribute)
+      a.setAttribute('href', target);
+      // Defensive click handler — force-navigate if browser didn't
+      a.addEventListener('click', function(e){
+        var t = target;
+        setTimeout(function(){
+          if (location.pathname !== new URL(t, location.href).pathname) {
+            location.href = t;
+          }
+        }, 50);
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fix);
+  } else {
+    fix();
+  }
+})();
+</script>
 </body>
 </html>
