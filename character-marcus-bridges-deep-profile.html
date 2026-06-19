@@ -50,5 +50,43 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 </div>
 <h2>Background & Origin</h2><p>Marcus Bridges's background is grounded in RE9's wider continuity. Originally from Wrenwood mechanic, the character enters RE9 at age 42, carrying years of context that earlier RE veterans will recognize. Capcom's narrative team carefully positioned Marcus Bridges within both the modern RE9 cast and the older lore framework — connecting back to the original Raccoon City incident (1998), the Wesker era (2009), and the modern bioterror landscape (2026).</p><p>The character's pre-RE9 life is communicated through audio logs, environmental items, and optional dialogue. Players who skip these miss roughly 40% of the emotional weight that Marcus Bridges's on-screen moments carry. The choice to keep this context optional (rather than mandatory cutscenes) reflects Capcom's continuing commitment to player respect — they trust you to dig if you want depth.</p><h2>Role & Chapter Appearances</h2><p>Marcus Bridges appears throughout Wrenwood (Chs 1-2). This positioning shapes how their arc unfolds: early appearances establish setup; mid-game appearances deepen complexity; late appearances pay off the setup with consequence. Marcus Bridges's presence isn't constant — Capcom deliberately staged the character to maintain narrative pacing.</p><p>Cross-referencing other guides: see our <a href="/character-marcus-bridges-deep-profile.html">Marcus Bridges profile</a> (if exists) or related character pages for additional context on specific chapter interactions.</p><h2>Core Motivation</h2><p>What drives Marcus Bridges? At the core, the character is motivated by a mix of personal history, current circumstance, and adversarial pressure. The motivation is intentionally complex — Capcom's writers avoided one-dimensional villain or one-dimensional hero archetypes. Marcus Bridges acts on layered reasoning that becomes clear only by the end of the game.</p><p>This complexity is intentional. RE9's writing team has stated in interviews (when asked about character philosophy) that they wanted every major character to feel like they have their own internal narrative, not just function as plot devices. Marcus Bridges embodies this design philosophy strongly.</p><h2>Voice Cast & Performance</h2><p>Marcus Bridges is voiced by <strong>David Vincent</strong>, whose performance shapes the character's reception. The voice direction balances civilian npc pragmatism with moments of vulnerability. Audio engineers used dynamic range to emphasize emotional inflection — quieter delivery for private moments, deliberate emphasis on key plot reveals.</p><p>Korean dub: Capcom Korea's localization team adapted the performance for Korean players. Key emotional beats are preserved, with idiomatic adjustments for cultural resonance. Most Korean players prefer English original with Korean subtitles (87% per Naver survey).</p><h2>Significance in the RE Series</h2><p>Within the broader RE franchise, Marcus Bridges serves as a connection point between RE9's modern continuity and the franchise's older era. Capcom's narrative team uses Marcus Bridges to either: (1) introduce the character for future RE games (setup), (2) culminate a long-running arc (payoff), or (3) provide bridge context for new players (gateway).</p><p>RE veterans will catch references that newcomers miss. These include item description callbacks, environmental Easter eggs, and audio log mentions that explicitly reference earlier RE games. Most of these are optional — RE9 works without them — but they reward attention.</p><h2>Controversial Choices</h2><p>Like every RE character, Marcus Bridges has decisions that divide fans. Specific moments include: motivation choices that some players find unconvincing; outcome consequences that others feel are unfair; voice direction interpretations that some feel underplay or overplay emotional beats; design choices that affect how the character is perceived visually or behaviorally.</p><p>These controversies are part of the discourse. Korean RE communities (네이버 카페 + DCInside) have had extensive discussions, with majority opinion landing in the 'effective but flawed' camp for most characters. English communities (Reddit, Capcom Unity) are more polarized.</p><h2>Community Reception</h2><p>RE community reception of Marcus Bridges has been measured. Korean RE community ratings (Naver Café 4.2/5, DCInside 8.9/10 average), English Reddit (mostly positive with critique), Twitter/X (varied). Specific moments draw extra attention: the introduction scene, the mid-game turning point, the late-game pay-off, and any controversial decisions.</p><p>Cosplay popularity: Marcus Bridges ranks in the top 1 of RE9 character cosplays at Korean Comic Con 2026 and at PAX East 2026. Fan art volume on ArtStation has steadily grown since release.</p><h2>RE10 Outlook</h2><p>Will Marcus Bridges return in RE10? Based on RE9's specific ending choices for this character (subject to story arc completion), the probability is roughly 40%. Capcom's pattern for returning characters: protagonists usually return in supporting roles; supporting cast either ages out or gets resolved arcs; antagonists rarely return (their stories typically end definitively).</p><p>Watch for: (1) Capcom's June 2028 showcase for any reveals; (2) RE10 trailers when announced; (3) datamined references in RE9 patches. Until then, this is speculation — fun but uncertain.</p>
 <footer>re9guide.it.com — fan-made guide, not affiliated with Capcom Co., Ltd.</footer>
+<script>
+/* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
+(function(){
+  function fix(){
+    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+    if (!slug || slug === 'ko/' || slug === '') slug = '';
+
+    document.querySelectorAll('a').forEach(function(a){
+      var txt = (a.textContent || '').trim();
+      if (txt !== 'EN' && txt !== '한국어') return;
+      // Compute correct target
+      var target;
+      if (txt === 'EN') {
+        target = slug ? '/' + slug : '/';
+      } else {
+        target = slug ? '/ko/' + slug : '/ko/';
+      }
+      // Set proper href (overwrites any broken attribute)
+      a.setAttribute('href', target);
+      // Defensive click handler — force-navigate if browser didn't
+      a.addEventListener('click', function(e){
+        var t = target;
+        setTimeout(function(){
+          if (location.pathname !== new URL(t, location.href).pathname) {
+            location.href = t;
+          }
+        }, 50);
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fix);
+  } else {
+    fix();
+  }
+})();
+</script>
 </body>
 </html>
