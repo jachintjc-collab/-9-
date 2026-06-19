@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <!-- Phase 58k: Core Web Vitals — Connection hints -->
@@ -10,9 +10,6 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<meta name="audience" content="Korean RE9 players">
-<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
-<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -24,10 +21,11 @@
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
 <meta name="google-site-verification" content="450_eOmCEy1bJaABBR9sm0fq9D1xQG93sfFiyhHyB3Y" />
-<link rel="canonical" href="https://www.re9guide.it.com/ko/how-to-beat-the-girl.html" />
+<link rel="canonical" href="https://www.re9guide.it.com/how-to-beat-the-girl.html" />
 <link rel="alternate" hreflang="en" href="https://www.re9guide.it.com/how-to-beat-the-girl.html" />
 <link rel="alternate" hreflang="ko" href="https://www.re9guide.it.com/ko/how-to-beat-the-girl.html" />
 <link rel="alternate" hreflang="x-default" href="https://www.re9guide.it.com/how-to-beat-the-girl.html" />
+
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -40,22 +38,22 @@
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#241410" />
 <meta name="msapplication-TileColor" content="#241410" />
-<meta property="og:title" content="더 걸 보스 공략 — RE9 정수처리장 전략" />
-<meta property="og:description" content="레지던트 이블 레퀴엠(RE9)에서 더 걸 격파법 — 그레이스의 주적. 빛 약점 활용, 세 개의 배전반, 상층 해치 햇빛 처치까지." />
+<meta property="og:title" content="The Girl Boss Guide — RE9 Water Treatment Strategy" />
+<meta property="og:description" content="Beat The Girl in RE9 — Grace's recurring antagonist. Light-weakness exploit, three power distribution units, and the upper-level hatch sunlight kill." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.re9guide.it.com/how-to-beat-the-girl.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="re9guide.it.com - 레지던트 이블 레퀴엠 더 걸 격파법 (RE9)" />
+<meta property="og:image:alt" content="re9guide.it.com - How to Beat The Girl in Resident Evil Requiem (RE9)" />
 <meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
 <meta property="og:site_name" content="re9guide.it.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="더 걸 보스 공략 — RE9 정수처리장 전략" />
-<meta name="twitter:description" content="레지던트 이블 레퀴엠(RE9)에서 더 걸 격파법 — 그레이스의 주적. 빛 약점 활용, 세 개의 배전반, 상층 해치 햇빛 처치까지." />
-<title>더 걸 보스 공략 — RE9 정수처리장 전략</title>
-<meta name="description" content="레지던트 이블 레퀴엠(RE9)에서 더 걸 격파법 — 그레이스의 주적. 빛 약점 활용, 세 개의 배전반, 상층 해치 햇빛 처치까지." />
-<meta name="keywords" content="더 걸 RE9, 레지던트 이블 레퀴엠 더 걸, 정수처리장 보스, 그레이스 애시크로프트 보스, 배전반" />
+<meta name="twitter:title" content="The Girl Boss Guide — RE9 Water Treatment Strategy" />
+<meta name="twitter:description" content="Beat The Girl in RE9 — Grace's recurring antagonist. Light-weakness exploit, three power distribution units, and the upper-level hatch sunlight kill." />
+<title>The Girl Boss Guide — RE9 Water Treatment Strategy</title>
+<meta name="description" content="Beat The Girl in RE9 — Grace's recurring antagonist. Light-weakness exploit, three power distribution units, and the upper-level hatch sunlight kill." />
+<meta name="keywords" content="The Girl RE9, Resident Evil Requiem The Girl, Water Treatment Facility boss, Grace Ashcroft boss, power distribution units" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -64,7 +62,7 @@
 --text:#f0ebe8;--text2:#b0a09a;--text3:#706056;
 --gold:#ba7517;--blue:#69a8e0;
 }
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
 .container{max-width:780px;margin:0 auto;padding:0 18px;}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
 .logo{font-size:15px;display:flex;align-items:center;gap:8px;}
@@ -131,8 +129,8 @@ p{font-size:14px;}
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "레지던트 이블 레퀴엠에서 더 걸 격파법 (RE9)",
-  "description": "레지던트 이블 레퀴엠(RE9)에서 더 걸 격파법. 그레이스의 주적, 빛 약점, 세 개의 배전반 전략.",
+  "headline": "How to Beat The Girl in Resident Evil Requiem (RE9)",
+  "description": "How to beat The Girl in Resident Evil Requiem (RE9). Grace's recurring antagonist, light weakness, three power distribution units strategy.",
   "image": {
     "@type": "ImageObject",
     "url": "https://www.re9guide.it.com/og-image.png",
@@ -160,9 +158,9 @@ p{font-size:14px;}
     "@type": "WebPage",
     "@id": "https://www.re9guide.it.com/how-to-beat-the-girl.html"
   },
-  "inLanguage": "ko-KR",
+  "inLanguage": "en-US",
   "articleSection": "Boss Guides",
-  "keywords": "더 걸 RE9, 레지던트 이블 레퀴엠 더 걸, 정수처리장 보스, 그레이스 애시크로프트 보스, 배전반",
+  "keywords": "The Girl RE9, Resident Evil Requiem The Girl, Water Treatment Facility boss, Grace Ashcroft boss, power distribution units",
   "about": {
     "@type": "VideoGame",
     "@id": "https://www.re9guide.it.com/#game",
@@ -186,13 +184,13 @@ p{font-size:14px;}
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "보스",
+      "name": "Bosses",
       "item": "https://www.re9guide.it.com/bosses-hub.html"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "더 걸"
+      "name": "The Girl"
     }
   ]
 }
@@ -201,8 +199,8 @@ p{font-size:14px;}
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "레지던트 이블 레퀴엠에서 더 걸 격파법",
-  "description": "조명등과 세 개의 배전반을 활용해 정수처리장에서 더 걸을 처치하세요.",
+  "name": "How to Beat The Girl in Resident Evil Requiem",
+  "description": "Defeat The Girl in the Water Treatment Facility using floodlights and the three power distribution units.",
   "image": "https://www.re9guide.it.com/og-image.png",
   "totalTime": "PT15M",
   "estimatedCost": {
@@ -472,31 +470,31 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "RE9 The Girl 공략",
-  "description": "정수장 The Girl 보스 처치.",
+  "name": "How to Beat The Girl in RE9",
+  "description": "Defeat The Girl boss in the Water Treatment Plant.",
   "totalTime": "PT6M",
-  "inLanguage": "ko-KR",
+  "inLanguage": "en",
   "supply": [
     {
       "@type": "HowToSupply",
-      "name": "W870 Police 산탄총 + 12발"
+      "name": "W870 Police shotgun + 12 ammo"
     },
     {
       "@type": "HowToSupply",
-      "name": "Requiem Revolver + 4발"
+      "name": "Requiem Revolver + 4 ammo"
     },
     {
       "@type": "HowToSupply",
-      "name": "Bloodhound 부적"
+      "name": "Bloodhound charm"
     }
   ],
   "step": [
     {
       "@type": "HowToStep",
       "position": 1,
-      "name": "스텔스 접근 필수",
-      "text": "The Girl는 경계 상태에서 데미지 안 받음. Bloodhound로 추적하고 사각에서 접근.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-girl.html#step-1",
+      "name": "Stealth approach mandatory",
+      "text": "The Girl can't be damaged in alert state. Use Bloodhound to track and approach from blind spots.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-girl.html#step-1",
       "tip": [
         {
           "@type": "HowToTip",
@@ -511,9 +509,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 2,
-      "name": "첫 타격: 등에 W870 Police 산탄총",
-      "text": "등에 스텔스 W870 Police 산탄총 발사가 다운 상태 트리거. 중요한 오프닝.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-girl.html#step-2",
+      "name": "First strike: W870 Police shotgun to back",
+      "text": "Stealth W870 Police shotgun blast to her back triggers downed state. Critical opening.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-girl.html#step-2",
       "tip": [
         {
           "@type": "HowToTip",
@@ -528,9 +526,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 3,
-      "name": "페이즈 2: 물 플랫폼 전투",
-      "text": "물 플랫폼으로 도망. 수영하는 동안 Requiem Revolver 헤드샷 (각 0.8초 4 윈도우).",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-girl.html#step-3",
+      "name": "Phase 2: water platform combat",
+      "text": "She flees to the water platform. Requiem Revolver headshots while she swims (4 windows of 0.8s each).",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-girl.html#step-3",
       "tip": [
         {
           "@type": "HowToTip",
@@ -545,9 +543,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 4,
-      "name": "물 그랩 회피",
-      "text": "물에 끌려가면 초당 40% 데미지. 플랫폼 위 유지.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-girl.html#step-4",
+      "name": "Avoid the water grab",
+      "text": "If she pulls you into water, you take 40% damage per second. Stay on platforms.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-girl.html#step-4",
       "tip": [
         {
           "@type": "HowToTip",
@@ -562,9 +560,9 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
     {
       "@type": "HowToStep",
       "position": 5,
-      "name": "마무리: 익사 처형",
-      "text": "패배하면 그랩 프롬프트로 물 아래로 밀어 처치. True 엔딩 루트에 필수.",
-      "url": "https://www.re9guide.it.com/ko/how-to-beat-the-girl.html#step-5",
+      "name": "Finisher: drowning execution",
+      "text": "When she's defeated, press grab prompt to push her underwater for the kill. This is required for True Ending route.",
+      "url": "https://www.re9guide.it.com/how-to-beat-the-girl.html#step-5",
       "tip": [
         {
           "@type": "HowToTip",
@@ -629,156 +627,131 @@ h1 {
 <body>
 <div class="nav">
 <a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
-<a href="index.html">← 모든 공략</a>
+<a href="index.html">← All guides</a>
 
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
-<a href="/how-to-beat-the-girl.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">EN</a>
-<a href="/ko/how-to-beat-the-girl.html" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">한국어</a>
+<a href="/how-to-beat-the-girl.html" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
+<a href="/ko/how-to-beat-the-girl.html" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
 </span>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>더 걸</span></div>
-<h1>더 걸 격파법 — 레지던트 이블 레퀴엠 (RE9)</h1>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <a href="bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">BOSSES</a> / <span>HOW TO BEAT THE GIRL IN RESIDENT EVIL REQUIEM (RE9)</span></div>
+<h1>How to Beat The Girl in Resident Evil Requiem (RE9)</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
-<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
-<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">검증 버전: v1.02 · 마지막 검토: 2026년 5월 30일 · 영어 원본과 비교: 100% 내용 동등 + 한국어 컨텍스트 추가</p>
+<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested across the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
+<p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 + DLC patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
 </div>
 
-<div class="meta">2026년 5월 게시 · <span>8 분 읽기</span> · 난이도: ★★ 보통 · 스포일러 포함</div>
-<div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #ba7517;color:#ba7517;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ 스포일러 수위: 중간</div>
-<p class="lead">더 걸은 케어 센터 전반에 걸쳐 그레이스 애시크로프트를 끈질기게 따라다니는 주적으로, 정수처리장에서 빛 약점을 활용해 마침내 처치할 수 있습니다. 이 가이드는 세 개의 배전반, 조명등 관리, 그리고 마지막 해치 시퀀스까지 모두 다룹니다.</p>
+<div class="meta">PUBLISHED MAY 2026 · <span>8 MIN READ</span> · DIFFICULTY: ★★ MODERATE · SPOILERS AHEAD</div>
+<div class="spoiler-level-tag" style="display:inline-block;background:rgba(192,57,43,0.12);border:0.5px solid #ba7517;color:#ba7517;font-size:10px;font-family:monospace;padding:3px 10px;border-radius:2px;margin-bottom:8px;letter-spacing:0.06em;">⚠ SPOILER LEVEL: MEDIUM</div>
+<p class="lead">The Girl is Grace Ashcroft's recurring antagonist throughout the Care Center, finally killable at the Water Treatment Facility by exploiting her light weakness. This guide covers all three power distribution units, floodlight management, and the final hatch sequence.</p>
 
 <div class="toc">
-<div class="toc-title">목차</div>
+<div class="toc-title">Table of contents</div>
 <ul>
-<li><a href="#overview">보스 개요</a></li>
-<li><a href="#early">첫 두 번의 조우: 회피하고 교전하지 말 것</a></li>
-<li><a href="#prep">전투 전 준비</a></li>
-<li><a href="#strategy">정수처리장 전략</a></li>
-<li><a href="#units">세 개의 배전반 재시동</a></li>
-<li><a href="#after">보상과 다음 단계</a></li>
+<li><a href="#overview">Boss overview</a></li>
+<li><a href="#early">First two encounters: avoid, don't engage</a></li>
+<li><a href="#prep">Pre-fight preparation</a></li>
+<li><a href="#strategy">Water Treatment Facility strategy</a></li>
+<li><a href="#units">Restarting the three power distribution units</a></li>
+<li><a href="#after">Rewards and what comes next</a></li>
 </ul>
 </div>
 
-<h2 id="overview">보스 개요: 더 걸은 누구인가</h2>
-<p>더 걸은 케어 센터 구간에서 그레이스 애시크로프트가 여러 번 마주치는 주적입니다 — 케어 센터 간호사실과 지하실을 포함해서요. 그녀에게는 빛에 대한 치명적인 약점이 있습니다 — 강한 조명 아래에서는 피부가 타들어 가며 도망칩니다. 보스전은 바로 이 메커니즘을 중심으로 돌아갑니다.</p>
-<p>핵심: <strong>처음 두 번의 조우에서는 더 걸을 처치할 수 없습니다</strong>. 첫 두 번은 <em>Requiem 퓨즈</em>와 <em>지게차 키</em> 같은 아이템을 수집하는 잠입/회피 구간입니다. 실제 보스 전투는 그레이스가 정수처리장에 도달해 산업용 작업등과 상층 해치에 접근할 수 있게 된 이후에야 시작됩니다.</p>
+<h2 id="overview">Boss overview: Who is The Girl?</h2>
+<p>The Girl is a recurring antagonist that Grace Ashcroft encounters several times during the Care Center section, including the Care Center Nurse's Station and the Care Center Basement. She has a mortal weakness to light — her skin burns under bright illumination, causing her to flee. This is the mechanic the boss fight revolves around.</p>
+<p>Critically: <strong>you cannot kill The Girl in your first two encounters</strong>. The first two are stealth/avoidance segments while you collect items like the <em>Requiem fuse</em> and the <em>forklift key</em>. The actual boss fight begins only after you reach the Water Treatment Facility, where Grace gains access to industrial-grade work lights and the upper-level hatch.</p>
 
 <div class="boss-stats">
 <table>
-<tr><td>위치</td><td><strong>정수처리장 (하층)</strong></td></tr>
-<tr><td>플레이 캐릭터</td><td><strong>그레이스 애시크로프트</strong></td></tr>
-<tr><td>이전 조우</td><td>케어 센터 간호사실과 지하실 (아직 처치 불가)</td></tr>
-<tr><td>페이즈</td><td><strong>1</strong>개 페이즈 + 3개 세부 목표 (배전반)</td></tr>
-<tr><td>약점</td><td><strong>빛</strong> — 조명등은 기절, 햇빛은 처치</td></tr>
-<tr><td>필수 아이템</td><td><strong>크랭크 레버</strong> (문서 보관실에서 획득)</td></tr>
+<tr><td>Location</td><td><strong>Water Treatment Facility (lower level)</strong></td></tr>
+<tr><td>Playable as</td><td><strong>Grace Ashcroft</strong></td></tr>
+<tr><td>Encountered earlier</td><td>Care Center Nurse's Station &amp; Basement (cannot kill yet)</td></tr>
+<tr><td>Phases</td><td><strong>1</strong> with 3 sub-objectives (distribution units)</td></tr>
+<tr><td>Weakness</td><td><strong>Light</strong> — floodlights stun, sunlight kills</td></tr>
+<tr><td>Key items needed</td><td><strong>Crank Lever</strong> (found in Filing Room)</td></tr>
 </table>
 </div>
 
-<h2 id="early">첫 두 번의 조우: 회피하고 교전하지 말 것</h2>
-<p>케어 센터 간호사실과 지하실에서 더 걸은 전투가 아닌 잠입 퍼즐입니다. Requiem으로 일시적으로 기절시킬 수는 있지만 이 구역에서는 처치할 수 없습니다. Requiem 탄약은 반드시 필요할 때만 사용하세요 — 예를 들어 지하실에서 세 개의 조인트 플러그를 회수하기 위해 그녀가 막고 있는 복도를 지나야 할 때입니다.</p>
-<p>그녀를 발견하면 곧바로 조명이 밝은 방으로 달려가세요. 케어 센터에는 곳곳에 작업등과 천장 조명이 있어 잠깐 동안 그녀를 후퇴시킬 수 있습니다. 이렇게 확보한 몇 초가 그녀를 우회하는 데 필요한 시간을 만들어 줍니다.</p>
+<h2 id="early">First two encounters: avoid, don't engage</h2>
+<p>In the Care Center Nurse's Station and Basement, The Girl is a stealth puzzle, not a fight. The Requiem can stun her temporarily but cannot kill her in these zones. Spend your Requiem bullets only when you absolutely must — for example, when she blocks a corridor you need to traverse to retrieve the three joint plugs in the Basement.</p>
+<p>Run for well-lit rooms whenever you spot her. The Care Center has scattered work lights and ceiling fixtures that briefly cause her to retreat. This buys you the seconds you need to maneuver around her.</p>
 
-<h2 id="prep">전투 전 준비</h2>
-<p>본격적인 보스 전투를 위해 정수처리장 하층으로 내려가기 전에:</p>
+<h2 id="prep">Pre-fight preparation</h2>
+<p>Before descending to the lower level of the Water Treatment Plant for the boss fight proper:</p>
 <ol>
-<li><strong>최소 4발의 Requiem 탄약을 비상 기절용으로 휴대</strong>하세요. 기본적으로 조명등에 의존하겠지만, 조명 사이에 끼였을 때 Requiem 탄약이 안전망이 되어 줍니다.</li>
-<li><strong>응급 처치 스프레이 최소 2개</strong>를 준비하세요. 더 걸의 공격은 큰 데미지를 주며, 잡기 한 번에도 체력의 40-50%가 깎입니다.</li>
-<li><strong>조명등 사용 순서를 미리 계획</strong>하세요 — 구역 전체에 걸쳐 세 번 작동시킬 텐데, 한 번 사용한 조명등은 재사용할 수 없습니다.</li>
+<li><strong>Carry at least 4 Requiem bullets</strong> as backup stuns. You'll rely on floodlights primarily, but Requiem rounds give you a safety net if you're caught between lights.</li>
+<li><strong>Bring 2 First Aid Sprays minimum</strong>. The Girl's attacks deal heavy damage; even a single grab takes 40-50% of your health.</li>
+<li><strong>Plan your floodlight order</strong> in advance — you'll trigger them three times across the area, and they don't refresh once used.</li>
 </ol>
 
-<h2 id="strategy">정수처리장 전략</h2>
-<p>보스 전투는 그레이스가 해치 컨트롤에 전력을 재분배하기 위해 하층으로 내려가는 순간 시작됩니다. 더 걸은 이 구역을 끊임없이 순찰하며, 잠입 우선 접근법을 강력히 권장합니다.</p>
-<p>세 개의 배전반은 지도에 목표 지점으로 표시되어 있으며 세 개의 특정 방에 위치합니다: <strong>창고</strong>, <strong>침전조</strong>, <strong>약품 처리실</strong>입니다. 엘리베이터를 타고 상층으로 돌아가 해치 햇빛을 작동시키려면 세 곳 모두 재가동해야 합니다.</p>
+<h2 id="strategy">Water Treatment Facility strategy</h2>
+<p>The boss fight begins when Grace descends to the lower level to redistribute power to the hatch controls. The Girl patrols this area continuously, and a stealth-first approach is strongly recommended.</p>
+<p>The three power distribution units are marked as objectives on the map and located in three specific rooms: <strong>Storage</strong>, <strong>Sedimentation</strong>, and <strong>Chemical Treatment</strong>. You must reactivate all three before you can ride the elevator back up and trigger the hatch sunlight.</p>
 
-<h3>// 조명등 — 당신의 주력 무기</h3>
-<p>시설 곳곳에 산업용 조명등이 설치되어 있습니다. 상호작용해 켜면 더 걸을 약 15초간 기절시킵니다. 중요한 제약 사항:</p>
+<h3>// THE FLOODLIGHTS — YOUR PRIMARY WEAPON</h3>
+<p>Industrial floodlights are mounted around the facility. Interacting with one switches it on and stuns The Girl for approximately 15 seconds. Critical limitations:</p>
 <ul class="normal">
-<li><strong>각 조명등은 1회용</strong> — 한 번 작동시키면 재사용 불가.</li>
-<li><strong>작동 전에 탈출 경로를 계획</strong>하세요 — 빛이 사라질 때 잡히면 사형 선고입니다.</li>
-<li><strong>조명등을 낭비하지 마세요</strong> — 그녀가 적극적으로 추격 중이거나 목표 지점으로 가는 길을 막고 있을 때만 사용하세요.</li>
+<li><strong>Each floodlight is single-use</strong> — once activated, it cannot be reused.</li>
+<li><strong>Plan your escape route before triggering</strong> — being caught when the light fades is a death sentence.</li>
+<li><strong>Don't waste floodlights</strong> — only use them when she's actively in pursuit or blocking your path to an objective.</li>
 </ul>
 
-<h2 id="units">세 개의 배전반 재시동</h2>
+<h2 id="units">Restarting the three power distribution units</h2>
 
-<h3>// 1번 — 창고</h3>
-<p>창고의 배전반은 드럼통 더미 옆에 있습니다. 그레이스가 접근하면 더 걸이 드럼통을 쓰러뜨리며 등장합니다. 근처의 조명등을 켜서 그녀를 기절시킨 뒤, 몸을 우회해 배전반에 도달해 작동시키세요.</p>
+<h3>// UNIT 1 — STORAGE</h3>
+<p>The Storage unit sits next to a stack of barrels. As Grace approaches, The Girl knocks over the barrels and emerges. Switch on the nearby floodlight to stun her, then maneuver around her body to reach and activate the distribution unit.</p>
 
-<h3>// 2번 — 침전조 (관제실 + 문서 보관실)</h3>
-<p>창고에서 관제실로 향한 다음, 그곳의 배전반을 지나 인접한 문서 보관실로 들어가세요. 그곳 선반에서 <strong>크랭크 레버</strong>를 챙기세요. 더 걸이 문서 보관실까지 따라올 텐데 — 그녀가 들어오기를 기다렸다가 우회해서 나오세요. 관제실로 돌아와 방금 회수한 크랭크 레버로 침전조 배전반과 상호작용하세요.</p>
+<h3>// UNIT 2 — SEDIMENTATION (CONTROL ROOM + FILING ROOM)</h3>
+<p>From Storage, head to the Control Room and continue past its distribution unit into the adjoining Filing Room. Pick up the <strong>Crank Lever</strong> from the shelf there. The Girl will follow you into Filing Room — wait for her to enter, then loop around her and exit. Return to the Control Room and interact with the Sedimentation distribution unit using the Crank Lever you just retrieved.</p>
 
-<h3>// 3번 — 약품 처리실</h3>
-<p>마지막 배전반은 막혀 있어 작동에 <strong>10초간 상호작용 버튼 누르기</strong>가 필요합니다. 중간에 중단할 수 없기 때문에 가장 위험한 배전반입니다.</p>
-<p>더 걸을 분리 유리 반대편 조명등 쪽으로 유인한 뒤 조명을 작동시키고, 그녀가 기절한 사이 오른쪽 경로를 통해 우회하세요. 기절이 풀리기 전에 약품 처리실 배전반에 도달해 10초 누르기를 완료할 시간이 가까스로 확보됩니다.</p>
+<h3>// UNIT 3 — CHEMICAL TREATMENT</h3>
+<p>The final distribution unit is jammed and requires a <strong>10-second hold</strong> on the interact button to activate. This is the most dangerous unit because you cannot break off the interaction mid-way.</p>
+<p>Lure The Girl over to the floodlight on the other side of the dividing window, trigger the light, then take the right-hand path to maneuver around her while she's stunned. You'll have just enough window to reach the Chemical Treatment unit and complete the 10-second hold before the stun wears off.</p>
 
-<h3>// 마지막 해치</h3>
-<p>세 개의 배전반이 모두 가동되면 엘리베이터를 타고 상층으로 돌아갑니다. 더 걸이 추격합니다. 상층의 조명등을 사용해 마지막으로 한 번 더 기절시킨 뒤 해치 스위치를 작동시키세요. 머리 위로 해치가 열립니다.</p>
-<p><strong>게임이 그녀를 쏘라고 안내하지만 — 절대 탄약을 낭비하지 마세요.</strong> 거리를 유지하고 열린 해치를 통해 쏟아지는 여과되지 않은 햇빛이 일을 처리하게 두세요. 빛이 남은 살을 태우며 더 걸이 녹아내립니다.</p>
+<h3>// THE FINAL HATCH</h3>
+<p>With all three units online, take the elevator to return to the upper level. The Girl pursues. Use the upper-level floodlight to stun her one final time, then activate the hatch switch. The hatch opens overhead.</p>
+<p><strong>The game prompts you to shoot her — do not waste your ammunition.</strong> Maintain distance, and let the unfiltered sunlight pouring through the opened hatch do the work. The Girl melts as the light burns her remaining flesh.</p>
 
-<h2 id="after">보상과 다음 단계</h2>
-<p>더 걸을 처치하면 다음이 해금됩니다:</p>
+<h2 id="after">Rewards and what comes next</h2>
+<p>Defeating The Girl unlocks:</p>
 <ul class="normal">
-<li>정수처리장을 넘어 다음 스토리 구간으로의 진행</li>
-<li>케어 센터 탈출 경로 확정</li>
-<li>그레이스와 레온의 시점이 교차되는 이후 구역으로의 접근</li>
+<li>Progress past the Water Treatment Facility into the next story segment</li>
+<li>Confirmation of the Care Center exit route</li>
+<li>Access to subsequent areas where you transition between Grace and Leon's perspectives</li>
 </ul>
-<p>이 전투는 <em>레지던트 이블 레퀴엠</em>에서 탄약 절약보다 공간 인지가 더 중요한 몇 안 되는 보스전 중 하나입니다. 여기서는 순수 데미지가 아니라 조명등 관리가 성패를 좌우합니다.</p>
+<p>This is one of the few boss fights in <em>Resident Evil: Requiem</em> where ammo conservation matters less than spatial awareness. Your floodlight management dictates success here, not raw damage output.</p>
 
 <div class="sources">
-<strong>이 가이드 검증에 사용된 출처:</strong><br>
+<strong>Sources used to verify this guide:</strong><br>
 
-<a href="https://www.pcgamesn.com/resident-evil-requiem/bosses" target="_blank" rel="nofollow noopener">PCGamesN — 레지던트 이블 레퀴엠 전체 보스</a>; <a href="https://gamerant.com/resident-evil-requiem-all-boss-fights-boss-list-re9/" target="_blank" rel="nofollow noopener">GameRant — 전체 보스 격파법</a>; 사이트 작성자 Jachin의 PS5 / v1.02 검증 플레이스루
+<a href="https://www.pcgamesn.com/resident-evil-requiem/bosses" target="_blank" rel="nofollow noopener">PCGamesN — All Resident Evil Requiem bosses</a>; <a href="https://gamerant.com/resident-evil-requiem-all-boss-fights-boss-list-re9/" target="_blank" rel="nofollow noopener">GameRant — How to Beat All Bosses</a>; site author Jachin's verified playthrough on PS5 / v1.02
 
 </div>
 <div class="cta">
-<div class="cta-title">관련 공략</div>
-<a href="how-to-beat-victor-gideon.html">최종 보스: 빅터 기드온</a>
-<a href="all-bosses-ranked-by-difficulty.html">전체 보스 난이도 랭킹</a>
-<a href="/all-49-trophies-platinum-guide.html">플래티넘 트로피 공략</a>
-<a href="/bosses-hub.html">보스 전략 허브</a>
-  <a href="re9-all-endings-explained.html">8개 엔딩 모두 설명 (영어/한국어)</a>
-  <a href="re9-new-game-plus-complete-guide.html">NG+ 완전 해금 가이드 (영어/한국어)</a>
-  <a href="re9-difficulty-comparison-which-to-play.html">난이도 비교 (Standard vs Insanity) (영어/한국어)</a>
-  <a href="eveline-character-profile-complete.html">Eveline 완전 캐릭터 프로필 (영어/한국어)</a>
-  <a href="re9-hidden-easter-eggs-list.html">10가지 숨겨진 이스터에그 (영어/한국어)</a>
+<div class="cta-title">RELATED GUIDES</div>
+<a href="how-to-beat-victor-gideon.html">Final boss: Victor Gideon</a>
+<a href="all-bosses-ranked-by-difficulty.html">All bosses ranked</a>
+<a href="all-49-trophies-platinum-guide.html">Platinum trophy guide</a>
+<a href="bosses-hub.html">Boss strategies hub</a>
+  <a href="re9-all-endings-explained.html">All 8 endings explained (full spoilers)</a>
+  <a href="re9-new-game-plus-complete-guide.html">NG+ complete unlock guide</a>
+  <a href="re9-difficulty-comparison-which-to-play.html">Difficulty comparison (Standard vs Insanity)</a>
+  <a href="eveline-character-profile-complete.html">Eveline complete character profile</a>
+  <a href="re9-hidden-easter-eggs-list.html">10 hidden Easter eggs</a>
 </div>
 <div class="section-divider"></div>
-<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">이 가이드가 도움이 되셨나요? 잘못된 내용을 발견하셨다면 <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20how-to-beat-the-girl.html" style="color:var(--red);">알려 주세요</a>  — 커뮤니티 피드백을 바탕으로 매주 가이드를 업데이트합니다.</p>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? Found something inaccurate? <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20how-to-beat-the-girl.html" style="color:var(--red);">Let us know</a> — we update guides weekly based on community feedback.</p>
 <div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
-<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">이 가이드가 도움이 되셨다면, Ko-fi에서 더 많은 가이드 작성을 후원해 주세요. <em style="color:#ba7517;font-style:normal;">여러분의 작은 응원이 큰 힘이 됩니다.</em></p>
-<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi에서 후원하기</a>
+<p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">If this guide helped, consider supporting more guides like this on Ko-fi. <em style="color:#ba7517;font-style:normal;">Every little bit means the world.</em></p>
+<a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Support on Ko-fi</a>
 </div>
 <div class="footer" style="padding:24px 18px;text-align:center;font-size:11px;font-family:monospace;color:#706056;border-top:0.5px solid rgba(192,57,43,0.18);margin-top:40px;line-height:2;">
-<p style="margin:5px 0;">re9guide.it.com · 팬 메이드 공략 · 캡콤과 무관함</p>
-<p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">소개</a> · <a href="/contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">문의</a> · <a href="/privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">개인정보</a> · <a href="/dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="/spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">스포일러 정책</a></p>
-<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · 한국어판 · 2026년 5월 업데이트</p>
+<p style="margin:5px 0;">re9guide.it.com · Fan-made guide · Not affiliated with Capcom</p>
+<p style="margin:5px 0;"><a href="about.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">About</a> · <a href="contact.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Contact</a> · <a href="privacy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Privacy</a> · <a href="dmca.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">DMCA</a> · <a href="spoiler-policy.html" style="color:#b0a09a;text-decoration:none;margin:0 6px;">Spoilers</a></p>
+<p style="margin:5px 0;font-size:10px;color:#706056;">Resident Evil: Requiem © Capcom · Primary language: English · Updated May 2026</p>
 </div>
 </div>
 <script src="/cookie-consent.js" defer></script>
-
-<aside style="margin:24px 0;padding:18px 22px;background:rgba(67,160,71,0.1);border-left:3px solid #43a047;border-radius:4px;font-size:13px;color:#f0ebe8;line-height:1.8">
-<strong style="color:#43a047;font-size:14px;display:block;margin-bottom:10px">🇰🇷 한국 RE 커뮤니티 전용 인사이트 (2026-06-15 업데이트)</strong>
-
-<p style="margin:8px 0">이 페이지는 단순한 영어 원본의 한국어 번역이 아닙니다. 네이버 카페 RE 갤러리와 DCInside RE 갤러리의 토론을 종합하여 한국 플레이어를 위한 맞춤 정보를 추가했습니다.</p>
-
-<h3 style="color:#ba7517;font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:16px;margin:14px 0 8px">한국 플레이어 통계</h3>
-<ul style="padding-left:20px;margin:8px 0">
-<li><strong>한국 플레이어 평균 클리어 시간:</strong> 11.4시간 (표준 난이도 기준)</li>
-<li><strong>네이버 게임 평점:</strong> 4.4/5</li>
-<li><strong>DCInside RE 갤러리 평균 평점:</strong> 9.1/10</li>
-<li><strong>NG+ 진입률:</strong> 한국 PSN 사용자의 47%</li>
-<li><strong>한국어 자막 선호 비율:</strong> 87%</li>
-</ul>
-
-<h3 style="color:#ba7517;font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:16px;margin:14px 0 8px">한국어판 고유 정보</h3>
-<ul style="padding-left:20px;margin:8px 0">
-<li><strong>한국 PSN 가격:</strong> 79,800원 (표준판), 99,800원 (디럭스)</li>
-<li><strong>주요 캐릭터 한글 표기:</strong> Eveline → 에블린, Vivien → 비비안, Grace → 그레이스</li>
-<li><strong>한국 RE 인기 순위:</strong> 1위 RE4 Remake, 2위 RE2 Remake, 3위 RE Village, 4위 RE9</li>
-</ul>
-
-<p style="margin:10px 0 0;color:#b0a09a;font-size:12px;font-style:italic">23년 RE 시리즈 팬 Jachin (서울)이 PS5/Steam에서 6회 플레이 후 작성. v1.02 + DLC 검증.</p>
-</aside>
-
 </body>
 </html>

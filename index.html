@@ -1276,28 +1276,5 @@ h1 {
 })();
 </script>
 
-<script>
-/* Phase 119: Defensive nav — guarantee EN/KO buttons navigate even if other JS misbehaves */
-(function(){
-  document.addEventListener('DOMContentLoaded', function(){
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt === 'EN' || txt === '한국어') {
-        a.addEventListener('click', function(e){
-          var href = a.getAttribute('href');
-          if (href && href !== '' && href !== '#') {
-            // Force navigation as backup
-            setTimeout(function(){
-              if (document.location.href.indexOf(href) === -1 && href.indexOf('://') === -1) {
-                window.location.href = href;
-              }
-            }, 100);
-          }
-        }, true);
-      }
-    });
-  });
-})();
-</script>
 </body>
 </html>
