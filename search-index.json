@@ -6550,5 +6550,439 @@
   "desc": "Character index table.",
   "lang": "en",
   "category": "Index"
+ },
+ {
+  "title": "Re9 Launch Month Summary Feb 2026",
+  "url": "/re9-launch-month-summary-feb-2026.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 March 2026 Report",
+  "url": "/re9-march-2026-report.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 April 2026 Report",
+  "url": "/re9-april-2026-report.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 May 2026 Report",
+  "url": "/re9-may-2026-report.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 June 2026 Report",
+  "url": "/re9-june-2026-report.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 Q1 2026 Quarterly",
+  "url": "/re9-q1-2026-quarterly.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 Q2 2026 Quarterly",
+  "url": "/re9-q2-2026-quarterly.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 6 Month Anniversary",
+  "url": "/re9-6-month-anniversary.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 9 Month Anniversary",
+  "url": "/re9-9-month-anniversary.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 1 Year Anniversary",
+  "url": "/re9-1-year-anniversary.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 Patch V1 01 Detail",
+  "url": "/re9-patch-v1-01-detail.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 Patch V1 02 Detail",
+  "url": "/re9-patch-v1-02-detail.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 Patch V1 03 Detail",
+  "url": "/re9-patch-v1-03-detail.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Weekly Report 2026 May 21",
+  "url": "/weekly-report-2026-may-21.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Weekly Report 2026 May 28",
+  "url": "/weekly-report-2026-may-28.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Weekly Report 2026 Jun 4",
+  "url": "/weekly-report-2026-jun-4.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Weekly Report 2026 Jun 11",
+  "url": "/weekly-report-2026-jun-11.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Weekly Report 2026 Jun 18",
+  "url": "/weekly-report-2026-jun-18.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Weekly Report 2026 Jun 25",
+  "url": "/weekly-report-2026-jun-25.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Re9 Summer 2026 Roundup",
+  "url": "/re9-summer-2026-roundup.html",
+  "desc": "RE9 periodic summary.",
+  "lang": "en",
+  "category": "Summary"
+ },
+ {
+  "title": "Video Script Opening Cinematic",
+  "url": "/video-script-opening-cinematic.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Grace Introduction",
+  "url": "/video-script-grace-introduction.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Vivien Reveal",
+  "url": "/video-script-vivien-reveal.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Mr X Encounter",
+  "url": "/video-script-mr-x-encounter.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Father Riley Confrontation",
+  "url": "/video-script-father-riley-confrontation.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Eveline Final",
+  "url": "/video-script-eveline-final.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script True Ending",
+  "url": "/video-script-true-ending.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Post Credits",
+  "url": "/video-script-post-credits.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Leon Farewell",
+  "url": "/video-script-leon-farewell.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Mia Cameo",
+  "url": "/video-script-mia-cameo.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Bridges Tragedy",
+  "url": "/video-script-bridges-tragedy.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Rpd Arrival",
+  "url": "/video-script-rpd-arrival.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Ark Entry",
+  "url": "/video-script-ark-entry.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Vivien Stage 2 Defeat",
+  "url": "/video-script-vivien-stage-2-defeat.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Commander Defeat",
+  "url": "/video-script-commander-defeat.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Soundtrack Track By Track Disc 1",
+  "url": "/soundtrack-track-by-track-disc-1.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Soundtrack Track By Track Disc 2",
+  "url": "/soundtrack-track-by-track-disc-2.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Soundtrack Grace Theme Analysis",
+  "url": "/soundtrack-grace-theme-analysis.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Soundtrack Vivien Theme Analysis",
+  "url": "/soundtrack-vivien-theme-analysis.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Soundtrack Eveline Theme Analysis",
+  "url": "/soundtrack-eveline-theme-analysis.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Soundtrack Mr X Pursuit Theme",
+  "url": "/soundtrack-mr-x-pursuit-theme.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Trailer 1",
+  "url": "/video-script-trailer-1.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Trailer 2",
+  "url": "/video-script-trailer-2.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Trailer 3",
+  "url": "/video-script-trailer-3.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Script Trailer Launch",
+  "url": "/video-script-trailer-launch.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Cutscene Walkthrough Chapter 1",
+  "url": "/video-cutscene-walkthrough-chapter-1.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Cutscene Walkthrough Chapter 4",
+  "url": "/video-cutscene-walkthrough-chapter-4.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Cutscene Walkthrough Chapter 8",
+  "url": "/video-cutscene-walkthrough-chapter-8.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video Mr X Pursuit Route",
+  "url": "/video-mr-x-pursuit-route.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Video True Ending Checklist",
+  "url": "/video-true-ending-checklist.html",
+  "desc": "RE9 video script/transcript.",
+  "lang": "en",
+  "category": "Video"
+ },
+ {
+  "title": "Modding — Pc Setup Guide",
+  "url": "/modding-pc-setup-guide.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Nexus Mods Popular",
+  "url": "/modding-nexus-mods-popular.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Steam Workshop",
+  "url": "/modding-steam-workshop.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Reshade Presets",
+  "url": "/modding-reshade-presets.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Texture Upscale",
+  "url": "/modding-texture-upscale.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Character Skins",
+  "url": "/modding-character-skins.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Weapon Replacers",
+  "url": "/modding-weapon-replacers.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Difficulty Mods",
+  "url": "/modding-difficulty-mods.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Quality Of Life",
+  "url": "/modding-quality-of-life.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Community Discord",
+  "url": "/modding-community-discord.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Tool Creation",
+  "url": "/modding-tool-creation.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
+ },
+ {
+  "title": "Modding — Uninstall Guide",
+  "url": "/modding-uninstall-guide.html",
+  "desc": "RE9 PC mod guide.",
+  "lang": "en",
+  "category": "Modding"
  }
 ]
