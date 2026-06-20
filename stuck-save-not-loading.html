@@ -103,8 +103,8 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <footer>re9guide.it.com, fan-made guide, not affiliated with Capcom Co., Ltd.</footer>
 <script>
 /* Phase 120: Defensive nav guarantee; runs at DOM ready, ensures EN/KO nav works */
-(function{
- function fix{
+(function(){
+ function fix(){
  var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
  if (!slug || slug === 'ko/' || slug === '') slug = '';
@@ -124,7 +124,7 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
  // Defensive click handler — force-navigate if browser didn't
  a.addEventListener('click', function(e){
  var t = target;
- setTimeout(function{
+ setTimeout(function(){
  if (location.pathname!== new URL(t, location.href).pathname) {
  location.href = t;
  }
@@ -135,13 +135,13 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
  if (document.readyState === 'loading') {
  document.addEventListener('DOMContentLoaded', fix);
  } else {
- fix;
+ fix();
  }
-});
+})();
 </script>
 <script>
 /* Phase 123: Runtime self-check. detects path vs content language mismatch */
-(function{
+(function(){
  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
@@ -172,8 +172,8 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
  banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
  banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
  document.body.insertBefore(banner, document.body.firstChild);
- setTimeout(function{ location.href = correctPath; }, 3000);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
  }
-});
+})();
 </script>
 </body></html>

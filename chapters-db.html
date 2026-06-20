@@ -75,7 +75,7 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <script>
 var DATA = [{"num": 1, "name": "Awakening at Wrenwood", "duration": "45 min", "area": "Wrenwood", "bosses": "None", "key": "Silencer 9 starter, tutorial"}, {"num": 2, "name": "Wrenwood Hotel", "duration": "1.5h", "area": "Wrenwood", "bosses": "Wrenwood Wraith", "key": "Lily encounter, first lore drops"}, {"num": 3, "name": "Care Center Arrival", "duration": "2h", "area": "Rhodes Hill", "bosses": "Blister Borne (sub-boss)", "key": "Vivien research notes, Plant 43"}, {"num": 4, "name": "Care Center Confrontation", "duration": "1.5h", "area": "Rhodes Hill", "bosses": "Vivien Stage 1, Nurse Kim", "key": "Father Riley intro, basement"}, {"num": 5, "name": "Rhodes Hill Manor", "duration": "2h", "area": "Rhodes Hill", "bosses": "Rhodes Hill Doctor", "key": "Painting puzzle, safe code 560"}, {"num": 6, "name": "Raccoon City Descent", "duration": "2.5h", "area": "Raccoon City", "bosses": "Mr. X (T-103), Titan Spinner", "key": "RPD STARS office, RE2 callbacks"}, {"num": 7, "name": "ARK Lower Levels", "duration": "2h", "area": "ARK", "bosses": "Plant 43, Commander X1 (Phase 1)", "key": "Final puzzles, Vivien revelation"}, {"num": 8, "name": "ARK Core — Finale", "duration": "2h", "area": "ARK", "bosses": "Commander X1 (Final), Eveline", "key": "8 ending branches, NG+ unlock"}];
 var sortKey='num', sortDir=1;
-function render{
+function render(){
  var q=document.getElementById('q').value.toLowerCase.trim;
  var a=document.getElementById('area').value;
  var f=DATA.filter(function(x){
@@ -101,7 +101,7 @@ var areas=Array.from(new Set(DATA.map(function(x){return x.area;}))).sort;
 areas.forEach(function(a){var o=document.createElement('option');o.textContent=a;document.getElementById('area').appendChild(o);});
 ['q','area'].forEach(function(id){document.getElementById(id).addEventListener('input',render);});
 document.querySelectorAll('th[data-key]').forEach(function(th){
- th.addEventListener('click',function{
+ th.addEventListener('click',function(){
  var k=th.dataset.key;
  if(k===sortKey) sortDir=-sortDir; else {sortKey=k;sortDir=1;}
  render;
@@ -116,8 +116,8 @@ re9guide.it.com — fan-made guide, not affiliated with Capcom. Phase 86 databas
 </div>
 <script>
 /* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
-(function{
- function fix{
+(function(){
+ function fix(){
  var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
  if (!slug || slug === 'ko/' || slug === '') slug = '';
@@ -137,7 +137,7 @@ re9guide.it.com — fan-made guide, not affiliated with Capcom. Phase 86 databas
  // Defensive click handler — force-navigate if browser didn't
  a.addEventListener('click', function(e){
  var t = target;
- setTimeout(function{
+ setTimeout(function(){
  if (location.pathname!== new URL(t, location.href).pathname) {
  location.href = t;
  }
@@ -148,13 +148,13 @@ re9guide.it.com — fan-made guide, not affiliated with Capcom. Phase 86 databas
  if (document.readyState === 'loading') {
  document.addEventListener('DOMContentLoaded', fix);
  } else {
- fix;
+ fix();
  }
-});
+})();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
-(function{
+(function(){
  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
@@ -185,9 +185,9 @@ re9guide.it.com — fan-made guide, not affiliated with Capcom. Phase 86 databas
  banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
  banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
  document.body.insertBefore(banner, document.body.firstChild);
- setTimeout(function{ location.href = correctPath; }, 3000);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
  }
-});
+})();
 </script>
 </body>
 </html>

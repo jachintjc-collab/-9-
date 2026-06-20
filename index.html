@@ -230,8 +230,8 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
 #spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
 </style>
 <script>
-(function{
- function isHighSpoilerPage{
+(function(){
+ function isHighSpoilerPage(){
  var t=document.body.innerText||"";
  return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
  }
@@ -242,7 +242,7 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
  document.body.classList.remove("spoilers-hidden");
  }
  }
- function init{
+ function init(){
  var pref=localStorage.getItem("re9guide_spoiler_filter");
  var hide=(pref==="hide");
  if(isHighSpoilerPage){
@@ -262,7 +262,7 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
  btn.id="spoiler-filter-btn";
  btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
  btn.textContent=hide? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
- btn.onclick=function{
+ btn.onclick=function(){
  var nowHide=!document.body.classList.contains("spoilers-hidden");
  if(!isHighSpoilerPage && nowHide){
  // not a HIGH page, still save preference but no visual change
@@ -279,7 +279,7 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
  }
  var revealOnce=document.getElementById("spoiler-reveal-once");
  if(revealOnce){
- revealOnce.onclick=function{
+ revealOnce.onclick=function(){
  document.body.classList.remove("spoilers-hidden");
  document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
  // Don't change localStorage, this is a one-time reveal
@@ -288,8 +288,8 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
  }
  if(document.readyState==="loading"){
  document.addEventListener("DOMContentLoaded", init);
- }else{ init; }
-});
+ }else{ init(); }
+})();
 </script>
 
 
@@ -325,8 +325,8 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 }
 </style>
 <script>
-(function{
- function init{
+(function(){
+ function init(){
  var toc = document.querySelector('.toc');
  if(!toc) return;
 
@@ -334,7 +334,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  var tocOriginalTop = toc.offsetTop;
  var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
 
- function onScroll{
+ function onScroll(){
  if(window.innerWidth < 1100) {
  document.body.classList.remove('has-floating-toc');
  return;
@@ -361,18 +361,18 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  }
  window.addEventListener('scroll', onScroll, {passive: true});
  window.addEventListener('resize', onScroll);
- onScroll;
+ onScroll();
  }
  if(document.readyState === 'loading'){
  document.addEventListener('DOMContentLoaded', init);
- } else { init; }
-});
+ } else { init(); }
+})();
 </script>
 
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
  (function(c,l,a,r,i,t,y){
- c[a]=c[a]||function{(c[a].q=c[a].q||[]).push(arguments)};
+ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
  })(window, document, "clarity", "script", "wu58ps8e48");
@@ -380,7 +380,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 <!-- Google Analytics 4 (G-XZJHDN44CF) + smart dev opt-out -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZJHDN44CF"></script>
 <script>
-(function{
+(function(){
  // ---- Dev opt-out detection ----
  var DEV_KEY = 're9guide_dev';
  var GA_ID = 'G-XZJHDN44CF';
@@ -395,14 +395,14 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 
  // ---- Always set up gtag function (Clarity integration needs window.gtag) ----
  window.dataLayer = window.dataLayer || [];
- function gtag{dataLayer.push(arguments);}
+ function gtag(){dataLayer.push(arguments);}
  window.gtag = gtag;
 
  if (isDev) {
  // Disable GA4 hits for this user
  window['ga-disable-' + GA_ID] = true;
  // Stop Clarity too (script may load before this; call after a tick)
- setTimeout(function{ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
+ setTimeout(function(){ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
  console.log('[re9guide] Analytics disabled — dev mode active. To re-enable:?dev=0');
  } else {
  gtag('js', new Date);
@@ -412,7 +412,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  page_location: window.location.href
  });
  }
-});
+})();
 </script>
 <style id="vintage-theme">
 /* Phase 84: Warm brown + concentric ring texture (matches reference) */
@@ -460,6 +460,7 @@ h1 {
 <body>
 <!-- NAV -->
 <div class="nav">
+<div class="nav-inner-wrap" style="max-width:980px;width:100%;display:flex;align-items:center;justify-content:space-between;padding:0 20px;box-sizing:border-box;flex-wrap:wrap;gap:8px;margin:0 auto;">
 <a href="index.html" class="logo" style="text-decoration:none;color:inherit;">re9guide<span>.it.com</span></a>
 <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
 <div class="nav-links">
@@ -474,8 +475,10 @@ h1 {
 </span>
 </div>
 </div>
+</div>
 <!-- SECTION 1: HERO -->
 <div class="hero">
+<div class="hero-inner-wrap" style="max-width:980px;margin:0 auto;">
 <div class="hero-tag">// RELEASED FEB 27, 2026 · RE9</div>
 <h1>Resident Evil: Requiem<br>Complete Guide</h1>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:30px 0;">
@@ -514,6 +517,7 @@ h1 {
 <span class="plat">Xbox Series</span>
 <span class="plat">Switch 2</span>
 <span class="plat">PC / Steam</span>
+</div>
 </div>
 </div>
 <div class="container">
@@ -1123,7 +1127,7 @@ h1 {
 
 <script>
 /* Phase 79: Wrap nav + hero content in centering inner-wrap div */
-(function{
+(function(){
  function wrap(parent, className){
  if(!parent) return;
  if(parent.querySelector(':scope >.' + className)) return;
@@ -1136,14 +1140,14 @@ h1 {
  }
  document.querySelectorAll('.nav').forEach(function(n){ wrap(n, 'nav-inner-wrap'); });
  document.querySelectorAll('.hero').forEach(function(h){ wrap(h, 'hero-inner-wrap'); });
-});
+})();
 </script>
 
 
 
 <script>
 /* Phase 81: Apply is-scrollable to long goal-lists + show scroll hint */
-(function{
+(function(){
  var THRESHOLD = 6;
  var lists = document.querySelectorAll('.goal-list');
  lists.forEach(function(ul){
@@ -1155,19 +1159,19 @@ h1 {
  hint.className = 'goal-scroll-hint';
  hint.textContent = 'Scroll for ' + (items.length - THRESHOLD) + ' more';
  ul.parentNode.insertBefore(hint, ul.nextSibling);
- ul.addEventListener('scroll', function{
+ ul.addEventListener('scroll', function(){
  var atBottom = ul.scrollTop + ul.clientHeight >= ul.scrollHeight - 4;
  ul.classList.toggle('at-bottom', atBottom);
  hint.style.opacity = atBottom? '0': '0.7';
  });
  });
-});
+})();
 </script>
 
 <script>
 /* Phase 119: Defensive nav. guarantee EN/KO buttons navigate even if other JS misbehaves */
-(function{
- document.addEventListener('DOMContentLoaded', function{
+(function(){
+ document.addEventListener('DOMContentLoaded', function(){
  document.querySelectorAll('a').forEach(function(a){
  var txt = (a.textContent || '').trim;
  if (txt === 'EN' || txt === '한국어') {
@@ -1175,7 +1179,7 @@ h1 {
  var href = a.getAttribute('href');
  if (href && href!== '' && href!== '#') {
  // Force navigation as backup
- setTimeout(function{
+ setTimeout(function(){
  if (document.location.href.indexOf(href) === -1 && href.indexOf('://') === -1) {
  window.location.href = href;
  }
@@ -1185,12 +1189,12 @@ h1 {
  }
  });
  });
-});
+})();
 </script>
 <script>
 /* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
-(function{
- function fix{
+(function(){
+ function fix(){
  var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
  if (!slug || slug === 'ko/' || slug === '') slug = '';
@@ -1210,7 +1214,7 @@ h1 {
  // Defensive click handler; force-navigate if browser didn't
  a.addEventListener('click', function(e){
  var t = target;
- setTimeout(function{
+ setTimeout(function(){
  if (location.pathname!== new URL(t, location.href).pathname) {
  location.href = t;
  }
@@ -1221,13 +1225,13 @@ h1 {
  if (document.readyState === 'loading') {
  document.addEventListener('DOMContentLoaded', fix);
  } else {
- fix;
+ fix();
  }
-});
+})();
 </script>
 <script>
 /* Phase 123: Runtime self-check, detects path vs content language mismatch */
-(function{
+(function(){
  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
@@ -1258,9 +1262,9 @@ h1 {
  banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
  banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
  document.body.insertBefore(banner, document.body.firstChild);
- setTimeout(function{ location.href = correctPath; }, 3000);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
  }
-});
+})();
 </script>
 </body>
 </html>
