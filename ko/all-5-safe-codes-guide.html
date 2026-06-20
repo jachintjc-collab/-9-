@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<!-- Phase 58k: Core Web Vitals — Connection hints -->
+<!-- Phase 58k: Core Web Vitals ; Connection hints -->
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.clarity.ms">
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
 <meta name="audience" content="Korean RE9 players">
 <meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
-<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
+<meta property="article:section" content="Resident Evil Requiem (RE9) , Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -36,11 +36,11 @@
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#241410" />
 <meta property="og:title" content="RE9 금고 코드 5개 — 카페, 실험실, 모니터링룸 (스탠다드 + 인새니티)">
-<meta property="og:description" content="RE9 5개 금고 코드 전체 — Bar & Lounge (카페), 검사실, 보일러실, 실험실 (Sterilization Chamber), 모니터링룸. 스탠다드 + 인새니티 v1.02 검증." />
+<meta property="og:description" content="RE9 5개 금고 코드 전체 , Bar & Lounge (카페), 검사실, 보일러실, 실험실 (Sterilization Chamber), 모니터링룸. 스탠다드 + 인새니티 v1.02 검증." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.re9guide.it.com/ko/all-5-safe-codes-guide.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/og-image.png" />
-<title>RE9 금고 코드 5개 — 카페, 실험실, 모니터링룸 (스탠다드 + 인새니티)</title>
+<title>RE9 금고 코드 5개 , 카페, 실험실, 모니터링룸 (스탠다드 + 인새니티)</title>
 <meta name="description" content="RE9 5개 금고 코드 전체 — Bar & Lounge (카페), 검사실, 보일러실, 실험실 (Sterilization Chamber), 모니터링룸. 스탠다드 + 인새니티 v1.02 검증." />
 <style>*{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;}
@@ -74,10 +74,10 @@ strong{color:var(--text);font-weight:bold;}em{color:var(--gold);font-style:norma
 .reveal-btn:hover{opacity:0.85;}
 .reveal-btn.hidden{display:none;}
 
-.safe-card .safe-id{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.08em;}
-.safe-card .safe-name{font-size:17px;color:var(--text);margin:6px 0 12px;}
-.safe-card .code-line{font-family:monospace;font-size:15px;color:var(--gold);margin:6px 0;}
-.safe-card .code-line strong{color:var(--text);font-weight:normal;background:rgba(186,117,23,0.15);padding:2px 8px;border-radius:3px;}
+.safe-card.safe-id{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.08em;}
+.safe-card.safe-name{font-size:17px;color:var(--text);margin:6px 0 12px;}
+.safe-card.code-line{font-family:monospace;font-size:15px;color:var(--gold);margin:6px 0;}
+.safe-card.code-line strong{color:var(--text);font-weight:normal;background:rgba(186,117,23,0.15);padding:2px 8px;border-radius:3px;}
 .boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
 .boss-stats table{width:100%;font-size:14px;}
 .boss-stats td{padding:5px 0;color:var(--text2);}
@@ -99,201 +99,201 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
 html { scroll-behavior: smooth; }
 h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 @media (min-width: 1100px) {
-  body.has-floating-toc .toc {
-    position: fixed; top: 80px;
-    right: calc((100vw - 780px) / 2 - 280px);
-    width: 250px; max-height: calc(100vh - 110px);
-    overflow-y: auto; z-index: 50;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  }
-  body.has-floating-toc .toc a.active { color: #c0392b !important; font-weight: bold; }
+ body.has-floating-toc.toc {
+ position: fixed; top: 80px;
+ right: calc((100vw - 780px) / 2 - 280px);
+ width: 250px; max-height: calc(100vh - 110px);
+ overflow-y: auto; z-index: 50;
+ box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+ }
+ body.has-floating-toc.toc a.active { color: #c0392b !important; font-weight: bold; }
 }
-@media (max-width: 1099px) { .toc { position: static !important; } }
+@media (max-width: 1099px) {.toc { position: static !important; } }
 </style>
 <script>
 (function(){
-  function init(){
-    var toc = document.querySelector('.toc'); if(!toc) return;
-    var tocOriginalTop = toc.offsetTop;
-    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
-    function onScroll(){
-      if(window.innerWidth < 1100){ document.body.classList.remove('has-floating-toc'); return; }
-      if(window.scrollY > floatThreshold) document.body.classList.add('has-floating-toc');
-      else document.body.classList.remove('has-floating-toc');
-      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
-      var active = null;
-      for(var i = 0; i < sections.length; i++){
-        if(sections[i].getBoundingClientRect().top < 150) active = sections[i];
-        else break;
-      }
-      if(active){
-        toc.querySelectorAll('a').forEach(function(a){
-          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
-        });
-      }
-    }
-    window.addEventListener('scroll', onScroll, {passive: true});
-    window.addEventListener('resize', onScroll); onScroll();
-  }
-  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
+ function init(){
+ var toc = document.querySelector('.toc'); if(!toc) return;
+ var tocOriginalTop = toc.offsetTop;
+ var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+ function onScroll(){
+ if(window.innerWidth < 1100){ document.body.classList.remove('has-floating-toc'); return; }
+ if(window.scrollY > floatThreshold) document.body.classList.add('has-floating-toc');
+ else document.body.classList.remove('has-floating-toc');
+ var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+ var active = null;
+ for(var i = 0; i < sections.length; i++){
+ if(sections[i].getBoundingClientRect().top < 150) active = sections[i];
+ else break;
+ }
+ if(active){
+ toc.querySelectorAll('a').forEach(function(a){
+ a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+ });
+ }
+ }
+ window.addEventListener('scroll', onScroll, {passive: true});
+ window.addEventListener('resize', onScroll); onScroll();
+ }
+ if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+ else init();
 })();
 </script>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "RE9 모든 금고 비밀번호 5개 — Normal과 Insanity",
-  "description": "레지던트 이블 레퀴엠(RE9)의 모든 5개 금고 조합 — Normal과 Insanity 난이도용. 'No Safe Is Safe' 트로피 + 앤틱 코인 + 탄약 + 회복 아이템.",
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://www.re9guide.it.com/og-image.png",
-    "width": 1200,
-    "height": 630
-  },
-  "author": {
-    "@type": "Person",
-    "@id": "https://www.re9guide.it.com/about.html#person",
-    "name": "Jachin",
-    "url": "https://www.re9guide.it.com/about.html"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "@id": "https://www.re9guide.it.com/#publisher",
-    "name": "re9guide.it.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.re9guide.it.com/og-image.png"
-    }
-  },
-  "datePublished": "2026-05-14T00:00:00+09:00",
-  "dateModified": "2026-05-16T00:00:00+09:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/ko/all-5-safe-codes-guide.html"
-  },
-  "inLanguage": "ko-KR",
-  "translationOfWork": {
-    "@type": "CreativeWork",
-    "@id": "https://www.re9guide.it.com/all-5-safe-codes-guide.html"
-  },
-  "about": {
-    "@type": "VideoGame",
-    "@id": "https://www.re9guide.it.com/#game",
-    "name": "Resident Evil: Requiem"
-  }
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "RE9 모든 금고 비밀번호 5개 . Normal과 Insanity",
+ "description": "레지던트 이블 레퀴엠(RE9)의 모든 5개 금고 조합 , Normal과 Insanity 난이도용. 'No Safe Is Safe' 트로피 + 앤틱 코인 + 탄약 + 회복 아이템.",
+ "image": {
+ "@type": "ImageObject",
+ "url": "https://www.re9guide.it.com/og-image.png",
+ "width": 1200,
+ "height": 630
+ },
+ "author": {
+ "@type": "Person",
+ "@id": "https://www.re9guide.it.com/about.html#person",
+ "name": "Jachin",
+ "url": "https://www.re9guide.it.com/about.html"
+ },
+ "publisher": {
+ "@type": "Organization",
+ "@id": "https://www.re9guide.it.com/#publisher",
+ "name": "re9guide.it.com",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "https://www.re9guide.it.com/og-image.png"
+ }
+ },
+ "datePublished": "2026-05-14T00:00:00+09:00",
+ "dateModified": "2026-05-16T00:00:00+09:00",
+ "mainEntityOfPage": {
+ "@type": "WebPage",
+ "@id": "https://www.re9guide.it.com/ko/all-5-safe-codes-guide.html"
+ },
+ "inLanguage": "ko-KR",
+ "translationOfWork": {
+ "@type": "CreativeWork",
+ "@id": "https://www.re9guide.it.com/all-5-safe-codes-guide.html"
+ },
+ "about": {
+ "@type": "VideoGame",
+ "@id": "https://www.re9guide.it.com/#game",
+ "name": "Resident Evil: Requiem"
+ }
 }
 </script>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "홈",
-      "item": "https://www.re9guide.it.com/ko/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "RE9 모든 금고 비밀번호 5개 — Normal과 Insanity"
-    }
-  ]
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ {
+ "@type": "ListItem",
+ "position": 1,
+ "name": "홈",
+ "item": "https://www.re9guide.it.com/ko/"
+ },
+ {
+ "@type": "ListItem",
+ "position": 2,
+ "name": "RE9 모든 금고 비밀번호 5개 — Normal과 Insanity"
+ }
+ ]
 }
 </script>
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "wu58ps8e48");
+ (function(c,l,a,r,i,t,y){
+ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+ t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+ })(window, document, "clarity", "script", "wu58ps8e48");
 </script>
 <!-- Google Analytics 4 (G-XZJHDN44CF) + smart dev opt-out -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZJHDN44CF"></script>
 <script>
 (function(){
-  // ---- Dev opt-out detection ----
-  var DEV_KEY = 're9guide_dev';
-  var GA_ID = 'G-XZJHDN44CF';
-  // URL param ?dev=1 sets flag, ?dev=0 clears (one-time activation)
-  try {
-    var p = new URLSearchParams(window.location.search);
-    if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON — analytics disabled for this browser'); }
-    if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF — analytics re-enabled'); }
-  } catch(e){}
-  var isDev = false;
-  try { isDev = localStorage.getItem(DEV_KEY) === '1'; } catch(e){}
+ // ---- Dev opt-out detection ----
+ var DEV_KEY = 're9guide_dev';
+ var GA_ID = 'G-XZJHDN44CF';
+ // URL param ?dev=1 sets flag, ?dev=0 clears (one-time activation)
+ try {
+ var p = new URLSearchParams(window.location.search);
+ if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON , analytics disabled for this browser'); }
+ if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF ; analytics re-enabled'); }
+ } catch(e){}
+ var isDev = false;
+ try { isDev = localStorage.getItem(DEV_KEY) === '1'; } catch(e){}
 
-  // ---- Always set up gtag function (Clarity integration needs window.gtag) ----
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  window.gtag = gtag;
+ // ---- Always set up gtag function (Clarity integration needs window.gtag) ----
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ window.gtag = gtag;
 
-  if (isDev) {
-    // Disable GA4 hits for this user
-    window['ga-disable-' + GA_ID] = true;
-    // Stop Clarity too (script may load before this — call after a tick)
-    setTimeout(function(){ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
-    console.log('[re9guide] Analytics disabled — dev mode active. To re-enable: ?dev=0');
-  } else {
-    gtag('js', new Date());
-    gtag('config', GA_ID, {
-      anonymize_ip: true,
-      page_title: document.title,
-      page_location: window.location.href
-    });
-  }
+ if (isDev) {
+ // Disable GA4 hits for this user
+ window['ga-disable-' + GA_ID] = true;
+ // Stop Clarity too (script may load before this — call after a tick)
+ setTimeout(function(){ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
+ console.log('[re9guide] Analytics disabled . dev mode active. To re-enable: ?dev=0');
+ } else {
+ gtag('js', new Date());
+ gtag('config', GA_ID, {
+ anonymize_ip: true,
+ page_title: document.title,
+ page_location: window.location.href
+ });
+ }
 })();
 </script>
 <style id="vintage-theme">
 /* Phase 84: Warm brown + concentric ring texture (matches reference) */
 body {
-  background-color: #241410;
-  background-image:
-    repeating-radial-gradient(
-      circle at 15% 85%,
-      rgba(60, 30, 22, 0.55) 0px,
-      rgba(60, 30, 22, 0.55) 1px,
-      transparent 1px,
-      transparent 90px
-    ),
-    repeating-radial-gradient(
-      circle at 85% 15%,
-      rgba(48, 22, 16, 0.45) 0px,
-      rgba(48, 22, 16, 0.45) 1px,
-      transparent 1px,
-      transparent 110px
-    ),
-    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
-  background-attachment: fixed;
-  background-size: 100% 100%;
+ background-color: #241410;
+ background-image:
+ repeating-radial-gradient(
+ circle at 15% 85%,
+ rgba(60, 30, 22, 0.55) 0px,
+ rgba(60, 30, 22, 0.55) 1px,
+ transparent 1px,
+ transparent 90px
+ ),
+ repeating-radial-gradient(
+ circle at 85% 15%,
+ rgba(48, 22, 16, 0.45) 0px,
+ rgba(48, 22, 16, 0.45) 1px,
+ transparent 1px,
+ transparent 110px
+ ),
+ radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
+ background-attachment: fixed;
+ background-size: 100% 100%;
 }
 .container {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+ background: transparent;
+ border: none;
+ box-shadow: none;
 }
 h1 {
-  font-family: Georgia, serif;
-  letter-spacing: 0.5px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+ font-family: Georgia, serif;
+ letter-spacing: 0.5px;
+ text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .boss-stats table {
-  background: rgba(48, 22, 16, 0.7);
-  border: 0.5px solid rgba(160, 130, 90, 0.18);
+ background: rgba(48, 22, 16, 0.7);
+ border: 0.5px solid rgba(160, 130, 90, 0.18);
 }
 .boss-stats th {
-  background: rgba(192, 57, 43, 0.22);
-  border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
+ background: rgba(192, 57, 43, 0.22);
+ border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
 }
 .lead {
-  font-style: italic;
-  color: #d8cfc4;
+ font-style: italic;
+ color: #d8cfc4;
 }
 </style>
 </head>
@@ -309,10 +309,11 @@ h1 {
 </div>
 </div>
 <div class="container">
-<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/collectibles-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">수집 요소</a> / <span>RE9 모든 금고 비밀번호 5개 — Normal과 Insanity</span></div>
+<div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/collectibles-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">수집 요소</a> / <span>RE9 모든 금고 비밀번호 5개 ; Normal과 Insanity</span></div>
 <h1>RE9 모든 금고 비밀번호 5개 — Normal과 Insanity</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
 <p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
+<aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>The S&S M232's reputation is inflated. It loses to the Hand Cannon in NG+ and most players won't admit it.</aside>
 <p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">검증 버전: v1.02 · 마지막 검토: 2026년 5월 30일 · 영어 원본과 비교: 100% 내용 동등 + 한국어 컨텍스트 추가</p>
 </div>
 
@@ -320,7 +321,7 @@ h1 {
 <div class="translation-note">
 <strong>한국어판 안내:</strong> 영어 원본의 한국어 번역. 작성자(서울 거주)가 직접 검수했으며, Mortal Edge / Insanity / NG+ 등 영어 표기는 한국 RE 커뮤니티 관행을 따라 그대로 사용했습니다.
 </div>
-<p class="lead">레지던트 이블 레퀴엠(RE9)의 모든 금고 조합 — Normal과 Insanity 난이도 모두. 5개의 금고를 모두 열면 "No Safe Is Safe" 트로피와 중요한 앤틱 코인, 탄약, 회복 아이템을 얻습니다. <strong>오직 그레이스만 금고를 열 수 있습니다</strong> — 레온은 불가능.</p>
+<p class="lead">레지던트 이블 레퀴엠(RE9)의 모든 금고 조합 . Normal과 Insanity 난이도 모두. 5개의 금고를 모두 열면 "No Safe Is Safe" 트로피와 중요한 앤틱 코인, 탄약, 회복 아이템을 얻습니다. <strong>오직 그레이스만 금고를 열 수 있습니다</strong> ; 레온은 불가능.</p>
 
 <div class="warn-box">⚠ <strong>중요:</strong> 인새니티 난이도는 Normal과 완전히 다른 조합을 사용합니다. 인새니티에서 Normal 코드를 시도하지 마세요 — 작동하지 않습니다.</div>
 <p><strong>방향 표기:</strong> L = 왼쪽 (시계방향), R = 오른쪽 (반시계방향)</p>
@@ -329,11 +330,11 @@ h1 {
 <div class="toc-title">금고 빠른 이동</div>
 <ul>
 <li><a href="#quick">빠른 참조: 모든 금고 한눈에</a></li>
-<li><a href="#safe1">금고 #1 — Bar &amp; Lounge (카페 금고)</a></li>
-<li><a href="#safe2">금고 #2 — Examination Room</a></li>
+<li><a href="#safe1">금고 #1 . Bar &amp; Lounge (카페 금고)</a></li>
+<li><a href="#safe2">금고 #2 . Examination Room</a></li>
 <li><a href="#safe3">금고 #3 — Furnace Room</a></li>
-<li><a href="#safe4">금고 #4 — Sterilization Chamber (실험실 금고)</a></li>
-<li><a href="#safe5">금고 #5 — Monitor Control Room (관찰실 금고)</a></li>
+<li><a href="#safe4">금고 #4 , Sterilization Chamber (실험실 금고)</a></li>
+<li><a href="#safe5">금고 #5 . Monitor Control Room (관찰실 금고)</a></li>
 <li><a href="#tips">팁, 트릭, 트로피 보상</a></li>
 <li><a href="#speedrun">스피드런 전략</a></li>
 </ul>
@@ -354,10 +355,10 @@ h1 {
 <h2 id="safe1">금고 #1 — Bar &amp; Lounge (카페 금고) // 케어 센터 서 윙</h2>
 <p>대부분의 플레이어가 처음 만나는 금고. 바 카운터 뒤에 숨겨져 있어 놓치기 쉽습니다.</p>
 <div class="safe-card">
-<div class="safe-id">// 금고 #1 — Bar &amp; Lounge (카페 금고) Safe</div>
+<div class="safe-id">// 금고 #1 , Bar &amp; Lounge (카페 금고) Safe</div>
 <p class="code-line">Normal: <strong>L10 · R80 · L30</strong></p>
 <p class="code-line">Insanity: <strong>L40 · R70 · L20</strong></p>
-<p><strong>위치:</strong> 바 카운터 뒤, 꽃 장식 오른쪽. Bar &amp; Lounge의 좀비를 먼저 정리하세요 — 다이얼 입력을 방해할 수 있습니다.</p>
+<p><strong>위치:</strong> 바 카운터 뒤, 꽃 장식 오른쪽. Bar &amp; Lounge의 좀비를 먼저 정리하세요 . 다이얼 입력을 방해할 수 있습니다.</p>
 <p><strong>코드 단서:</strong> 서 윙 사무실 책상 근처 클립보드에서 발견.</p>
 <p><strong>보상:</strong> 앤틱 코인 3개 (Parlor에서 사용)</p>
 </div>
@@ -365,7 +366,7 @@ h1 {
 <h2 id="safe2">금고 #2 — Examination Room // 케어 센터 동 윙 1층</h2>
 <p>동 윙 1층 Examination Room. 코너 캐비닛에 자리잡고 있어 지나치기 쉽습니다.</p>
 <div class="safe-card">
-<div class="safe-id">// 금고 #2 — Examination Room Safe</div>
+<div class="safe-id">// 금고 #2 ; Examination Room Safe</div>
 <p class="code-line">Normal: <strong>R30 · L10 · R50</strong></p>
 <p class="code-line">Insanity: <strong>R60 · L20 · R40</strong></p>
 <p><strong>위치:</strong> Examination Room의 먼 코너, 바닥의 금속 캐비닛 안. 캐비닛에 눈에 보이는 긁힌 자국.</p>
@@ -373,10 +374,10 @@ h1 {
 <p><strong>보상:</strong> 앤틱 코인 3개</p>
 </div>
 
-<h2 id="safe3">금고 #3 — Furnace Room // 케어 센터 지하</h2>
+<h2 id="safe3">금고 #3 . Furnace Room // 케어 센터 지하</h2>
 <p>접근이 가장 어려운 금고 중 하나 — 동 윙 2층의 첫 번째 Quartz Puzzle Box를 풀어서 얻는 Level 1 Wristband 필요. 이 퍼즐을 완료하기 전에 이 금고에 도달하려 하지 마세요.</p>
 <div class="safe-card">
-<div class="safe-id">// 금고 #3 — Furnace Room Safe (Basement)</div>
+<div class="safe-id">// 금고 #3 , Furnace Room Safe (Basement)</div>
 <p class="code-line">Normal: <strong>L60 · R20 · L40</strong></p>
 <p class="code-line">Insanity: <strong>L30 · R50 · L70</strong></p>
 <p><strong>위치:</strong> 케어 센터 지하의 Furnace Room 안. 지하 보안 문 접근을 위해 Level 1 ID Wristband 필요.</p>
@@ -386,21 +387,21 @@ h1 {
 
 <div class="warn-box gold">💡 <strong>보너스 팁:</strong> 지하의 Workshop에는 별도의 금고(R60·L40·R80)가 있으며 <strong>Raccoon Roundup 지도</strong>를 포함합니다. 이 지도는 모든 케어 센터 미스터 라쿤 메모리엄을 지도에 강조 표시합니다. 100% 런에 강력히 권장.</div>
 
-<h2 id="safe4">금고 #4 — Sterilization Chamber (실험실 금고) // 케어 센터 멸균</h2>
+<h2 id="safe4">금고 #4 ; Sterilization Chamber (실험실 금고) // 케어 센터 멸균</h2>
 <p>이 금고는 케어 센터의 중반 최고 보상 일부를 포함하며, 청크와 셰프 같은 미니 보스를 한 방에 처치하는 헤모리틱 인젝터도 포함됩니다.</p>
 <div class="safe-card">
 <div class="safe-id">// 금고 #4 — Sterilization Chamber (실험실 금고) Safe</div>
 <p class="code-line">Normal: <strong>R70 · L50 · R10</strong></p>
 <p class="code-line">Insanity: <strong>R20 · L80 · R60</strong></p>
-<p><strong>위치:</strong> Bioweapon Repository 근처 안방. 금고는 나무 상자 뒤에 부분적으로 숨겨져 있음 — 옆으로 밀거나 쏴서 분해하세요.</p>
+<p><strong>위치:</strong> Bioweapon Repository 근처 안방. 금고는 나무 상자 뒤에 부분적으로 숨겨져 있음 . 옆으로 밀거나 쏴서 분해하세요.</p>
 <p><strong>코드 단서:</strong> Sterilization Chamber 청정 구역 안의 연구 노트에서.</p>
 <p><strong>보상:</strong> 헤모리틱 인젝터 2개 + 앤틱 코인 1개</p>
 </div>
 
-<h2 id="safe5">금고 #5 — Monitor Control Room (관찰실 금고) // 라쿤 시티</h2>
+<h2 id="safe5">금고 #5 . Monitor Control Room (관찰실 금고) // 라쿤 시티</h2>
 <p>최종 금고는 라쿤 시티에 있으며, 케어 센터에서 멀리 떨어져 있습니다. <strong>매우 미스 가능</strong> — Bioweapon Repository 시퀀스를 지나가면 여기로 돌아올 수 없습니다.</p>
 <div class="safe-card">
-<div class="safe-id">// 금고 #5 — 최종 금고 — Monitor Control Room Safe</div>
+<div class="safe-id">// 금고 #5 . 최종 금고 . Monitor Control Room Safe</div>
 <p class="code-line">Normal: <strong>L90 · R30 · L60</strong></p>
 <p class="code-line">Insanity: <strong>L20 · R40 · L80</strong></p>
 <p><strong>위치:</strong> Bioweapon Repository 05, 가장 오른쪽 열린 컨테이너. "Monitor Control"이라고 표시된 금속 락커를 찾으세요.</p>
@@ -420,7 +421,7 @@ h1 {
 </ul>
 
 <h3>// 왜 그레이스만 금고를 열 수 있나</h3>
-<p>금고 크래킹은 Blood Crafting처럼 그레이스 애쉬크로프트의 캐릭터 전용 능력 중 하나입니다. 레온은 금고와 전혀 상호작용 불가 — 프롬프트조차 보이지 않습니다. 레온으로 플레이하면서 금고를 열려 하면, 스토리에서 그레이스 섹션으로 다시 전환하거나 Grace 전용 세이브를 사용하세요.</p>
+<p>금고 크래킹은 Blood Crafting처럼 그레이스 애쉬크로프트의 캐릭터 전용 능력 중 하나입니다. 레온은 금고와 전혀 상호작용 불가 ; 프롬프트조차 보이지 않습니다. 레온으로 플레이하면서 금고를 열려 하면, 스토리에서 그레이스 섹션으로 다시 전환하거나 Grace 전용 세이브를 사용하세요.</p>
 
 <h3>// "No Safe Is Safe" 트로피</h3>
 <p>5개 금고를 모두 여는 것(난이도 무관)이 "No Safe Is Safe" Silver 트로피를 해금합니다. 이 가이드를 손에 들고 있으면 게임에서 더 쉬운 수집품 기반 트로피 중 하나입니다.</p>
@@ -432,7 +433,7 @@ h1 {
 <p>4시간 미만 스피드런을 노린다면, <strong>코드를 외우는 것</strong>이 결정적입니다. 각 금고의 단서를 찾는 데 평균 3-5분이 걸리며, 이 가이드의 코드를 사용하면 직접 코드 입력이 60-90초입니다.</p>
 <ul class="normal">
 <li>스피드런 런: 5개 금고 모두 직접 입력 = ~7-8분 절약</li>
-<li>금고 #3과 #4는 케어 센터의 우회 — 코어 스토리에 영향 없음</li>
+<li>금고 #3과 #4는 케어 센터의 우회 . 코어 스토리에 영향 없음</li>
 <li>금고 #5(라쿤 시티)는 가장 가치 있는 보상 — 우선순위</li>
 </ul>
 <h2 id="faq">자주 묻는 질문</h2>
@@ -451,7 +452,7 @@ h1 {
 
 <details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
 <summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;font-weight:bold;">RE9에 관찰실 금고가 있나요?<span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
-<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">네 — "관찰실(Observation Room) 금고"는 라쿤 시티 구역의 <strong>Monitor Control Room 금고 (Safe #5)</strong>를 부르는 별칭입니다. CCTV 모니터 벽 때문에 정식 명칭은 Monitor Control Room이지만, 관찰 데크 구조 때문에 Observation Room으로 불립니다.</p>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">네 , "관찰실(Observation Room) 금고"는 라쿤 시티 구역의 <strong>Monitor Control Room 금고 (Safe #5)</strong>를 부르는 별칭입니다. CCTV 모니터 벽 때문에 정식 명칭은 Monitor Control Room이지만, 관찰 데크 구조 때문에 Observation Room으로 불립니다.</p>
 </details>
 
 <details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
@@ -461,7 +462,7 @@ h1 {
 
 <details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
 <summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;font-weight:bold;">금고 코드는 플레이마다 바뀌나요?<span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
-<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">아니요 — 난이도별로 <strong>고정</strong>입니다. 스탠다드 코드는 모든 스탠다드 런에서 동일, 인새니티 코드는 모든 인새니티 런에서 동일.</p>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">아니요 ; 난이도별로 <strong>고정</strong>입니다. 스탠다드 코드는 모든 스탠다드 런에서 동일, 인새니티 코드는 모든 인새니티 런에서 동일.</p>
 </details>
 
 <details style="padding:14px 0;">
@@ -473,23 +474,23 @@ h1 {
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "inLanguage": "ko-KR",
-  "mainEntity": [
-    {"@type": "Question", "name": "RE9 카페 금고 코드는 어디에 있나요?",
-     "acceptedAnswer": {"@type": "Answer", "text": "카페 금고는 케어 센터 서윙의 Bar & Lounge 금고 (Safe #1)입니다. 스탠다드 코드: L10 · R80 · L30. 인새니티: L40 · R70 · L20."}},
-    {"@type": "Question", "name": "RE9 실험실 금고 코드는?",
-     "acceptedAnswer": {"@type": "Answer", "text": "실험실 금고는 케어 센터 지하의 Sterilization Chamber 금고 (Safe #4)입니다."}},
-    {"@type": "Question", "name": "RE9에 관찰실 금고가 있나요?",
-     "acceptedAnswer": {"@type": "Answer", "text": "네 — 관찰실 금고는 라쿤 시티 Monitor Control Room 금고 (Safe #5)의 별칭입니다."}},
-    {"@type": "Question", "name": "RE9에 금고가 총 몇 개 있나요?",
-     "acceptedAnswer": {"@type": "Answer", "text": "총 5개입니다: Bar & Lounge, 검사실, 보일러실, Sterilization Chamber, Monitor Control Room."}},
-    {"@type": "Question", "name": "금고 코드는 플레이마다 바뀌나요?",
-     "acceptedAnswer": {"@type": "Answer", "text": "아니요 — 난이도별로 고정입니다."}},
-    {"@type": "Question", "name": "금고를 영원히 놓칠 수 있나요?",
-     "acceptedAnswer": {"@type": "Answer", "text": "네 — 금고 #1-#4은 케어 센터를 떠나면 영원히 놓칠 수 있습니다."}}
-  ]
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "inLanguage": "ko-KR",
+ "mainEntity": [
+ {"@type": "Question", "name": "RE9 카페 금고 코드는 어디에 있나요?",
+ "acceptedAnswer": {"@type": "Answer", "text": "카페 금고는 케어 센터 서윙의 Bar & Lounge 금고 (Safe #1)입니다. 스탠다드 코드: L10 · R80 · L30. 인새니티: L40 · R70 · L20."}},
+ {"@type": "Question", "name": "RE9 실험실 금고 코드는?",
+ "acceptedAnswer": {"@type": "Answer", "text": "실험실 금고는 케어 센터 지하의 Sterilization Chamber 금고 (Safe #4)입니다."}},
+ {"@type": "Question", "name": "RE9에 관찰실 금고가 있나요?",
+ "acceptedAnswer": {"@type": "Answer", "text": "네 ; 관찰실 금고는 라쿤 시티 Monitor Control Room 금고 (Safe #5)의 별칭입니다."}},
+ {"@type": "Question", "name": "RE9에 금고가 총 몇 개 있나요?",
+ "acceptedAnswer": {"@type": "Answer", "text": "총 5개입니다: Bar & Lounge, 검사실, 보일러실, Sterilization Chamber, Monitor Control Room."}},
+ {"@type": "Question", "name": "금고 코드는 플레이마다 바뀌나요?",
+ "acceptedAnswer": {"@type": "Answer", "text": "아니요 ; 난이도별로 고정입니다."}},
+ {"@type": "Question", "name": "금고를 영원히 놓칠 수 있나요?",
+ "acceptedAnswer": {"@type": "Answer", "text": "네 — 금고 #1-#4은 케어 센터를 떠나면 영원히 놓칠 수 있습니다."}}
+ ]
 }
 </script>
 
@@ -510,36 +511,36 @@ h1 {
 <script>
 // Phase 23: click-to-reveal safe codes (spoiler protection + engagement)
 (function(){
-  function init(){
-    document.querySelectorAll('.safe-code-display').forEach(function(code){
-      if(code.dataset.revealInit) return;
-      code.dataset.revealInit = '1';
-      var original = code.innerHTML;
-      var wrap = document.createElement('span');
-      wrap.className = 'safe-code-reveal-wrap';
-      var blurred = document.createElement('span');
-      blurred.className = 'safe-code-hidden';
-      blurred.innerHTML = original;
-      var btn = document.createElement('button');
-      btn.className = 'reveal-btn';
-      btn.type = 'button';
-      btn.textContent = code.dataset.revealLabel || '🔒 코드 보기';
-      var reveal = function(){
-        blurred.classList.remove('safe-code-hidden');
-        blurred.classList.add('safe-code-revealed');
-        btn.classList.add('hidden');
-      };
-      btn.addEventListener('click', reveal);
-      blurred.addEventListener('click', reveal);
-      wrap.appendChild(blurred);
-      wrap.appendChild(btn);
-      code.innerHTML = '';
-      code.appendChild(wrap);
-    });
-  }
-  if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', init);
-  } else { init(); }
+ function init(){
+ document.querySelectorAll('.safe-code-display').forEach(function(code){
+ if(code.dataset.revealInit) return;
+ code.dataset.revealInit = '1';
+ var original = code.innerHTML;
+ var wrap = document.createElement('span');
+ wrap.className = 'safe-code-reveal-wrap';
+ var blurred = document.createElement('span');
+ blurred.className = 'safe-code-hidden';
+ blurred.innerHTML = original;
+ var btn = document.createElement('button');
+ btn.className = 'reveal-btn';
+ btn.type = 'button';
+ btn.textContent = code.dataset.revealLabel || '🔒 코드 보기';
+ var reveal = function(){
+ blurred.classList.remove('safe-code-hidden');
+ blurred.classList.add('safe-code-revealed');
+ btn.classList.add('hidden');
+ };
+ btn.addEventListener('click', reveal);
+ blurred.addEventListener('click', reveal);
+ wrap.appendChild(blurred);
+ wrap.appendChild(btn);
+ code.innerHTML = '';
+ code.appendChild(wrap);
+ });
+ }
+ if(document.readyState === 'loading'){
+ document.addEventListener('DOMContentLoaded', init);
+ } else { init(); }
 })();
 </script>
 
@@ -566,82 +567,82 @@ h1 {
 <li><strong>한국 RE 인기 순위:</strong> 1위 RE4 Remake, 2위 RE2 Remake, 3위 RE Village, 4위 RE9</li>
 </ul>
 
-<p style="margin:10px 0 0;color:#b0a09a;font-size:12px;font-style:italic">23년 RE 시리즈 팬 Jachin (서울)이 PS5/Steam에서 6회 플레이 후 작성. v1.02 + DLC 검증.</p>
+<p style="margin:10px 0 0;color:#b0a09a;font-size:12px;font-style:italic">23년 RE 시리즈 팬 Jachin (서울)이 PS5/Steam에서 6회 플레이 후 작성. v1.02 검증.</p>
 </aside>
 
 <script>
-/* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
+/* Phase 120: Defensive nav guarantee , runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler ; force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body>

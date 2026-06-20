@@ -48,7 +48,8 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <div class="wrap">
 <h1>RE9 Difficulty Picker</h1>
 <p class="lead">Answer 4 quick questions; we recommend Casual, Standard, Hardcore, or Insanity based on RE experience + your goals.</p>
-<div class="fresh">📅 <strong>2026-06-13</strong> · Verified v1.02 + DLC · Runs entirely in your browser (no data sent)</div>
+<aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>Eight endings sounds generous until you realize five of them are minor variations of two outcomes.</aside>
+
 
 <div class="tool">
 <h2>Which RE9 difficulty should you play?</h2>
@@ -59,50 +60,50 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 </div>
 <script>
 var Q=[
-  {q:"How many RE games have you finished?",opts:[{t:"0-1",v:0},{t:"2-4",v:1},{t:"5-7",v:2},{t:"8+",v:3}]},
-  {q:"What's your priority?",opts:[{t:"Story enjoyment",v:0},{t:"Standard challenge",v:1},{t:"Hard challenge",v:2},{t:"Maximum challenge",v:3}]},
-  {q:"How comfortable are you with frame-perfect dodges?",opts:[{t:"Not at all",v:0},{t:"Some practice",v:1},{t:"Comfortable",v:2},{t:"Expert / FromSoft fan",v:3}]},
-  {q:"How much time do you have for this run?",opts:[{t:"<8 hours (one weekend)",v:0},{t:"10-15h",v:1},{t:"20-30h",v:2},{t:"40+ hours (multi-week)",v:3}]}
+ {q:"How many RE games have you finished?",opts:[{t:"0-1",v:0},{t:"2-4",v:1},{t:"5-7",v:2},{t:"8+",v:3}]},
+ {q:"What's your priority?",opts:[{t:"Story enjoyment",v:0},{t:"Standard challenge",v:1},{t:"Hard challenge",v:2},{t:"Maximum challenge",v:3}]},
+ {q:"How comfortable are you with frame-perfect dodges?",opts:[{t:"Not at all",v:0},{t:"Some practice",v:1},{t:"Comfortable",v:2},{t:"Expert / FromSoft fan",v:3}]},
+ {q:"How much time do you have for this run?",opts:[{t:"<8 hours (one weekend)",v:0},{t:"10-15h",v:1},{t:"20-30h",v:2},{t:"40+ hours (multi-week)",v:3}]}
 ];
 function renderQuiz(){
-  document.getElementById('quiz').innerHTML=Q.map(function(item,i){
-    return '<div style="margin:14px 0"><strong style="color:#ba7517;font-size:13px">Q'+(i+1)+': '+item.q+'</strong><div style="margin-top:6px">'+
-      item.opts.map(function(o,j){
-        return '<label style="display:inline-flex;align-items:center;margin-right:14px;gap:4px;cursor:pointer"><input type="radio" name="q'+i+'" value="'+o.v+'" '+(j===0?'checked':'')+'> <span style="color:#f0ebe8;font-size:13px;font-family:inherit;text-transform:none;letter-spacing:0">'+o.t+'</span></label>';
-      }).join('')+'</div></div>';
-  }).join('');
+ document.getElementById('quiz').innerHTML=Q.map(function(item,i){
+ return '<div style="margin:14px 0"><strong style="color:#ba7517;font-size:13px">Q'+(i+1)+': '+item.q+'</strong><div style="margin-top:6px">'+
+ item.opts.map(function(o,j){
+ return '<label style="display:inline-flex;align-items:center;margin-right:14px;gap:4px;cursor:pointer"><input type="radio" name="q'+i+'" value="'+o.v+'" '+(j===0?'checked':'')+'> <span style="color:#f0ebe8;font-size:13px;font-family:inherit;text-transform:none;letter-spacing:0">'+o.t+'</span></label>';
+ }).join('')+'</div></div>';
+ }).join('');
 }
 function score(){
-  var total=0;
-  for(var i=0;i<Q.length;i++){
-    var v=document.querySelector('input[name="q'+i+'"]:checked');
-    if(v) total+=+v.value;
-  }
-  return total;
+ var total=0;
+ for(var i=0;i<Q.length;i++){
+ var v=document.querySelector('input[name="q'+i+'"]:checked');
+ if(v) total+=+v.value;
+ }
+ return total;
 }
 function showResult(){
-  var s=score();
-  var rec, why, links;
-  if(s<=3){
-    rec='Casual';why='Story-first. Enemies do less damage, more checkpoints. Best for first-timers or focusing on lore.';
-    links='re9-what-difficulty-should-i-play.html|how-to-unlock-insanity-difficulty.html';
-  }else if(s<=6){
-    rec='Standard';why='The intended experience. Balanced damage + scarcity. 9-12h playthrough.';
-    links='beginner-guide-resident-evil-requiem.html|re9-first-hour-essential-tips.html';
-  }else if(s<=9){
-    rec='Hardcore';why='Reduced healing, tougher enemies. NG+ recommended after a Standard run for best practice.';
-    links='re9-ng-plus-what-carries-over.html|best-weapons-tier-list.html';
-  }else{
-    rec='Insanity';why='Frame-perfect dodges or die. Only ~6% of players complete this. Master Standard + Hardcore first.';
-    links='how-to-unlock-insanity-difficulty.html|insanity-frame-perfect-matrix.html';
-  }
-  var linkArr=links.split('|');
-  document.getElementById('out').style.display='block';
-  document.getElementById('out').innerHTML='<h3>Recommended: '+rec+'</h3>'+
-    '<div class="result-item">'+why+'</div>'+
-    '<div class="result-item" style="margin-top:10px"><strong>Recommended next reads:</strong> '+
-    linkArr.map(function(l){return '<a href="'+l+'" style="color:#ba7517;text-decoration:none;margin-right:12px">'+l.replace('.html','').replace(/-/g,' ')+'</a>';}).join('')+
-    '</div>';
+ var s=score();
+ var rec, why, links;
+ if(s<=3){
+ rec='Casual';why='Story-first. Enemies do less damage, more checkpoints. Best for first-timers or focusing on lore.';
+ links='re9-what-difficulty-should-i-play.html|how-to-unlock-insanity-difficulty.html';
+ }else if(s<=6){
+ rec='Standard';why='The intended experience. Balanced damage + scarcity. 9-12h playthrough.';
+ links='beginner-guide-resident-evil-requiem.html|re9-first-hour-essential-tips.html';
+ }else if(s<=9){
+ rec='Hardcore';why='Reduced healing, tougher enemies. NG+ recommended after a Standard run for best practice.';
+ links='re9-ng-plus-what-carries-over.html|best-weapons-tier-list.html';
+ }else{
+ rec='Insanity';why='Frame-perfect dodges or die. Only ~6% of players complete this. Master Standard + Hardcore first.';
+ links='how-to-unlock-insanity-difficulty.html|insanity-frame-perfect-matrix.html';
+ }
+ var linkArr=links.split('|');
+ document.getElementById('out').style.display='block';
+ document.getElementById('out').innerHTML='<h3>Recommended: '+rec+'</h3>'+
+ '<div class="result-item">'+why+'</div>'+
+ '<div class="result-item" style="margin-top:10px"><strong>Recommended next reads:</strong> '+
+ linkArr.map(function(l){return '<a href="'+l+'" style="color:#ba7517;text-decoration:none;margin-right:12px">'+l.replace('.html','').replace(/-/g,' ')+'</a>';}).join('')+
+ '</div>';
 }
 document.getElementById('result-btn').addEventListener('click',showResult);
 renderQuiz();
@@ -112,76 +113,76 @@ renderQuiz();
 </div><script>
 /* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler — force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body></html>

@@ -37,8 +37,9 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <header>
 <h1>Immortal Trophy</h1>
 <p class="lead">Complete the game without dying once. — Step-by-step guide with missable checkpoints + Insanity variant differences.</p>
-<div class="fresh">📅 <strong>2026-06-14</strong> · Verified v1.02 + DLC</div>
+
 </header>
+<aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>Insanity isn't hard, it's just RNG-tolerant. Big difference.</aside>
 
 <p>Complete guide to earning the <strong>Immortal</strong> trophy in RE9. This is a <strong>Gold</strong>-tier trophy, with Insanity-specific challenges.</p>
 
@@ -46,14 +47,14 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <div style="width:44px;height:44px;border-radius:50%;background:#d4a429;display:flex;align-items:center;justify-content:center;color:#241410;font-weight:700;font-size:13px;font-family:monospace">G</div>
 <div>
 <div style="color:#d4a429;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:0.08em">Gold Tier</div>
-<div style="color:#b0a09a;font-size:12px;margin-top:2px">✓ Not missable  ·  ⚔️ Insanity-related</div>
+<div style="color:#b0a09a;font-size:12px;margin-top:2px">✓ Not missable · ⚔️ Insanity-related</div>
 </div>
 </div>
 
 <h2>Trigger condition</h2>
 <p>Zero deaths</p>
 
-<h2>Step-by-step</h2>
+<h2>Where players slip up</h2>
 <p>For most players, this trophy unlocks during natural progression. Specific verification:</p>
 <ol>
 <li>Confirm the trigger event happens at the correct chapter</li>
@@ -62,13 +63,13 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <li>For missable trophies, restart the chapter if the window passed</li>
 </ol>
 
-<h2>Missable check</h2>
+<h2>Recoverable?</h2>
 <p>This trophy is NOT missable. You can earn it at any point during your playthrough without restart concerns.</p>
 
-<h2>Insanity variant</h2>
+<h2>Insanity wrinkle</h2>
 <p>This trophy has Insanity-specific requirements or difficulty. The trigger window is narrower, enemies do more damage, and frame-perfect dodges may be required. See our <a href="/insanity-frame-perfect-matrix.html">Insanity frame-perfect matrix</a> for boss-specific timings.</p>
 
-<h2>Related trophies</h2>
+<h2>What pairs</h2>
 <p>For complete trophy guide coverage:</p>
 <ul>
 <li><a href="/all-49-trophies-platinum-guide.html">All 49 trophies platinum guide</a></li>
@@ -81,76 +82,76 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <script>
 /* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler — force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body>

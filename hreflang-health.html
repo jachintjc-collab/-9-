@@ -8,8 +8,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 14
 h1 { color: #c0392b; border-bottom: 2px solid #c0392b; padding-bottom: 10px; }
 .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
 .stat { background: rgba(192, 57, 43, 0.1); border-left: 3px solid #c0392b; padding: 15px; }
-.stat .num { font-size: 28px; font-weight: bold; color: #c0392b; }
-.stat .lbl { font-size: 12px; text-transform: uppercase; color: #b0a09a; }
+.stat.num { font-size: 28px; font-weight: bold; color: #c0392b; }
+.stat.lbl { font-size: 12px; text-transform: uppercase; color: #b0a09a; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 20px; }
 th, td { padding: 8px 12px; text-align: left; border-bottom: 0.5px solid rgba(192,57,43,0.18); vertical-align: top; }
 th { background: rgba(192,57,43,0.15); color: #c0392b; font-size: 11px; text-transform: uppercase; }
@@ -25,47 +25,47 @@ code { background: rgba(192,57,43,0.1); padding: 2px 6px; border-radius: 2px; fo
 <style id="vintage-theme">
 /* Phase 84: Warm brown + concentric ring texture (matches reference) */
 body {
-  background-color: #241410;
-  background-image:
-    repeating-radial-gradient(
-      circle at 15% 85%,
-      rgba(60, 30, 22, 0.55) 0px,
-      rgba(60, 30, 22, 0.55) 1px,
-      transparent 1px,
-      transparent 90px
-    ),
-    repeating-radial-gradient(
-      circle at 85% 15%,
-      rgba(48, 22, 16, 0.45) 0px,
-      rgba(48, 22, 16, 0.45) 1px,
-      transparent 1px,
-      transparent 110px
-    ),
-    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
-  background-attachment: fixed;
-  background-size: 100% 100%;
+ background-color: #241410;
+ background-image:
+ repeating-radial-gradient(
+ circle at 15% 85%,
+ rgba(60, 30, 22, 0.55) 0px,
+ rgba(60, 30, 22, 0.55) 1px,
+ transparent 1px,
+ transparent 90px
+ ),
+ repeating-radial-gradient(
+ circle at 85% 15%,
+ rgba(48, 22, 16, 0.45) 0px,
+ rgba(48, 22, 16, 0.45) 1px,
+ transparent 1px,
+ transparent 110px
+ ),
+ radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
+ background-attachment: fixed;
+ background-size: 100% 100%;
 }
 .container {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+ background: transparent;
+ border: none;
+ box-shadow: none;
 }
 h1 {
-  font-family: Georgia, serif;
-  letter-spacing: 0.5px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+ font-family: Georgia, serif;
+ letter-spacing: 0.5px;
+ text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .boss-stats table {
-  background: rgba(48, 22, 16, 0.7);
-  border: 0.5px solid rgba(160, 130, 90, 0.18);
+ background: rgba(48, 22, 16, 0.7);
+ border: 0.5px solid rgba(160, 130, 90, 0.18);
 }
 .boss-stats th {
-  background: rgba(192, 57, 43, 0.22);
-  border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
+ background: rgba(192, 57, 43, 0.22);
+ border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
 }
 .lead {
-  font-style: italic;
-  color: #d8cfc4;
+ font-style: italic;
+ color: #d8cfc4;
 }
 </style>
 </head>
@@ -86,1254 +86,1254 @@ h1 {
 </div>
 
 <div class="summary-grid">
-  <div class="stat"><div class="num">166</div><div class="lbl">Pages scanned</div></div>
-  <div class="stat"><div class="num">165</div><div class="lbl">Clean hreflang</div></div>
-  <div class="stat"><div class="num">1</div><div class="lbl">With issues</div></div>
-  <div class="stat"><div class="num">85</div><div class="lbl">EN pages</div></div>
-  <div class="stat"><div class="num">83</div><div class="lbl">KO pages</div></div>
+ <div class="stat"><div class="num">166</div><div class="lbl">Pages scanned</div></div>
+ <div class="stat"><div class="num">165</div><div class="lbl">Clean hreflang</div></div>
+ <div class="stat"><div class="num">1</div><div class="lbl">With issues</div></div>
+ <div class="stat"><div class="num">85</div><div class="lbl">EN pages</div></div>
+ <div class="stat"><div class="num">83</div><div class="lbl">KO pages</div></div>
 </div>
 
 <table>
 <thead><tr><th>Status</th><th>File</th><th>Canonical</th><th>Hreflang tags</th></tr></thead>
 <tbody>
 <tr class="fail">
-    <td><span class="badge fail">ISSUES</span></td>
-    <td><code>terms.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/terms.html</code></td>
-    <td>2</td>
-  </tr>
-  <tr class='detail'><td colspan='4'><ul class="issues"><li>missing hreflang: ko</li></ul></td></tr>
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>404.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/404.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>about.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/about.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ada-wong-re9-reversal-arc.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ada-wong-re9-reversal-arc.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>all-22-antique-coins-locations.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/all-22-antique-coins-locations.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>all-25-mr-raccoon-locations.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/all-25-mr-raccoon-locations.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>all-49-trophies-platinum-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/all-49-trophies-platinum-guide.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>all-5-safe-codes-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/all-5-safe-codes-guide.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>all-75-files-locations-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/all-75-files-locations-guide.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>all-bosses-ranked-by-difficulty.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/all-bosses-ranked-by-difficulty....</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>all-quartz-puzzle-solutions.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/all-quartz-puzzle-solutions.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>all-resident-evil-games-ranked-2026.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/all-resident-evil-games-ranked-2...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ark-facility-complete-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ark-facility-complete-walkthroug...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>beginner-guide-resident-evil-requiem.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/beginner-guide-resident-evil-req...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>best-crafting-recipes-ammo-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/best-crafting-recipes-ammo-guide...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>best-weapons-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/best-weapons-tier-list.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>blood-specimen-analyzer.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/blood-specimen-analyzer.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>bosses-hub.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/bosses-hub.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>bsaa-re9-new-direction.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/bsaa-re9-new-direction.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>capcom-v1-02-patch-diary.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/capcom-v1-02-patch-diary.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>care-center-basement-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/care-center-basement-walkthrough...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>care-center-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/care-center-walkthrough.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>chunk-origin-mystery-explained.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/chunk-origin-mystery-explained.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>collectibles-hub.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/collectibles-hub.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>contact.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/contact.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>courtyard-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/courtyard-walkthrough.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>dmca.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/dmca.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>eveline-character-profile-complete.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/eveline-character-profile-comple...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>eveline-re9-foreshadowing-explained.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/eveline-re9-foreshadowing-explai...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>grace-ashcroft-character-profile-complete.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/grace-ashcroft-character-profile...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>grace-vs-leon-character-differences.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/grace-vs-leon-character-differen...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>how-to-beat-blister-borne.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-blister-borne.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>how-to-beat-chunk.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-chunk.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>how-to-beat-mr-x-super-tyrant.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-mr-x-super-tyrant.ht...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>how-to-beat-plant-43.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-plant-43.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>how-to-beat-the-chef.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-the-chef.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>how-to-beat-the-commander.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-the-commander.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>how-to-beat-the-girl.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-the-girl.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>how-to-beat-titan-spinner.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-titan-spinner.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>how-to-beat-victor-gideon.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-victor-gideon.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>how-to-unlock-insanity-difficulty.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-unlock-insanity-difficult...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>index.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>insanity-chapter-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/insanity-chapter-walkthrough.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>is-resident-evil-requiem-worth-playing.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/is-resident-evil-requiem-worth-p...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/404.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/404.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/about.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/about.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/ada-wong-re9-reversal-arc.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/ada-wong-re9-reversal-arc.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/all-22-antique-coins-locations.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-22-antique-coins-location...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/all-25-mr-raccoon-locations.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-25-mr-raccoon-locations.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/all-49-trophies-platinum-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-49-trophies-platinum-guid...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/all-5-safe-codes-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-5-safe-codes-guide.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/all-75-files-locations-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-75-files-locations-guide....</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/all-bosses-ranked-by-difficulty.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-bosses-ranked-by-difficul...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/all-quartz-puzzle-solutions.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-quartz-puzzle-solutions.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/all-resident-evil-games-ranked-2026.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-resident-evil-games-ranke...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/ark-facility-complete-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/ark-facility-complete-walkthr...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/beginner-guide-resident-evil-requiem.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/beginner-guide-resident-evil-...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/best-crafting-recipes-ammo-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/best-crafting-recipes-ammo-gu...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/best-weapons-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/best-weapons-tier-list.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/blood-specimen-analyzer.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/blood-specimen-analyzer.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/bosses-hub.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/bosses-hub.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/bsaa-re9-new-direction.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/bsaa-re9-new-direction.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/capcom-v1-02-patch-diary.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/capcom-v1-02-patch-diary.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/care-center-basement-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/care-center-basement-walkthro...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/care-center-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/care-center-walkthrough.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/chunk-origin-mystery-explained.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/chunk-origin-mystery-explaine...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/collectibles-hub.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/collectibles-hub.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/contact.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/contact.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/courtyard-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/courtyard-walkthrough.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/dmca.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/dmca.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/eveline-character-profile-complete.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/eveline-character-profile-com...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/eveline-re9-foreshadowing-explained.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/eveline-re9-foreshadowing-exp...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/grace-ashcroft-character-profile-complete.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/grace-ashcroft-character-prof...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/grace-vs-leon-character-differences.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/grace-vs-leon-character-diffe...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/how-to-beat-blister-borne.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-blister-borne.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/how-to-beat-chunk.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-chunk.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/how-to-beat-mr-x-super-tyrant.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-mr-x-super-tyrant...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/how-to-beat-plant-43.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-plant-43.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/how-to-beat-the-chef.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-the-chef.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/how-to-beat-the-commander.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-the-commander.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/how-to-beat-the-girl.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-the-girl.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/how-to-beat-titan-spinner.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-titan-spinner.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/how-to-beat-victor-gideon.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-victor-gideon.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/how-to-unlock-insanity-difficulty.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-unlock-insanity-diffic...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/index.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/</code></td>
-    <td>6</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/insanity-chapter-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/insanity-chapter-walkthrough....</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/is-resident-evil-requiem-worth-playing.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/is-resident-evil-requiem-wort...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/leon-kennedy-character-profile-complete.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/leon-kennedy-character-profil...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/mia-winters-re9-re7-connection.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/mia-winters-re9-re7-connectio...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/ng-plus-final-puzzle-rna-solution.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/ng-plus-final-puzzle-rna-solu...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/organless-corpse-puzzle.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/organless-corpse-puzzle.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/privacy.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/privacy.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/puzzle-box-solutions.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/puzzle-box-solutions.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/raccoon-city-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/raccoon-city-walkthrough.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-all-charms-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-all-charms-ranked-tier-li...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-all-endings-explained.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-all-endings-explained.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-best-bosses-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-best-bosses-ranked-tier-l...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-best-endings-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-best-endings-ranked-tier-...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-boss-loadout-calculator.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-chapters-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-chapters-ranked-tier-list...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-characters-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-characters-ranked-tier-li...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-cutscenes-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-cutscenes-ranked-tier-lis...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-difficulty-comparison-which-to-play.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-difficulty-comparison-whi...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-eye-spy-charm-explained.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-eye-spy-charm-explained.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-hidden-easter-eggs-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-hidden-easter-eggs-list.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-insanity-readiness-check.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-insanity-readiness-check....</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-insanity-survival-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-insanity-survival-guide.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-items-treasures-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-items-treasures-ranked-ti...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-locations-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-locations-ranked-tier-lis...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-missables-complete-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-missables-complete-guide....</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-new-game-plus-complete-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-new-game-plus-complete-gu...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-tips-and-tricks.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-tips-and-tricks.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-vs-re2-remake-which-to-play-first.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-vs-re2-remake-which-to-pl...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-vs-re7-biohazard-which-to-play.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-vs-re7-biohazard-which-to...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/re9-vs-re8-village-which-to-play.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-vs-re8-village-which-to-p...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/release-elpis-ending-explained.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/release-elpis-ending-explaine...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/rpd-orphanage-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/rpd-orphanage-walkthrough.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/should-i-play-grace-or-leon-first.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/should-i-play-grace-or-leon-f...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/speedrun-guide-sub-4-hours.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/speedrun-guide-sub-4-hours.ht...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/spoiler-policy.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/spoiler-policy.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/terms.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/terms.html</code></td>
-    <td>5</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/tier-lists.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/tier-lists.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/trophies-hub.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/trophies-hub.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/water-treatment-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/water-treatment-walkthrough.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/weekly-roundup-may-14-2026.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/weekly-roundup-may-14-2026.ht...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/will-grace-return-in-re10.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/will-grace-return-in-re10.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ko/wrenwood-hotel-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/wrenwood-hotel-walkthrough.ht...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>leon-kennedy-character-profile-complete.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/leon-kennedy-character-profile-c...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>mia-winters-re9-re7-connection.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/mia-winters-re9-re7-connection.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>ng-plus-final-puzzle-rna-solution.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/ng-plus-final-puzzle-rna-solutio...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>organless-corpse-puzzle.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/organless-corpse-puzzle.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>privacy.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/privacy.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>puzzle-box-solutions.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/puzzle-box-solutions.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>raccoon-city-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/raccoon-city-walkthrough.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-all-charms-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-all-charms-ranked-tier-list....</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-all-endings-explained.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-all-endings-explained.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-best-bosses-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-best-bosses-ranked-tier-list...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-best-endings-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-best-endings-ranked-tier-lis...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-boss-loadout-calculator.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-boss-loadout-calculator.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-chapters-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-chapters-ranked-tier-list.ht...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-characters-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-characters-ranked-tier-list....</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-cutscenes-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-cutscenes-ranked-tier-list.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-difficulty-comparison-which-to-play.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-difficulty-comparison-which-...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-eye-spy-charm-explained.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-eye-spy-charm-explained.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-hidden-easter-eggs-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-hidden-easter-eggs-list.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-insanity-readiness-check.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-insanity-readiness-check.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-insanity-survival-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-insanity-survival-guide.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-items-treasures-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-items-treasures-ranked-tier-...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-locations-ranked-tier-list.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-locations-ranked-tier-list.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-missables-complete-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-missables-complete-guide.htm...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-new-game-plus-complete-guide.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-new-game-plus-complete-guide...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-tips-and-tricks.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-tips-and-tricks.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-vs-re2-remake-which-to-play-first.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-vs-re2-remake-which-to-play-...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-vs-re7-biohazard-which-to-play.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-vs-re7-biohazard-which-to-pl...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>re9-vs-re8-village-which-to-play.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-vs-re8-village-which-to-play...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>release-elpis-ending-explained.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/release-elpis-ending-explained.h...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>rpd-orphanage-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/rpd-orphanage-walkthrough.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>should-i-play-grace-or-leon-first.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/should-i-play-grace-or-leon-firs...</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>speedrun-guide-sub-4-hours.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>spoiler-policy.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/spoiler-policy.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>tier-lists.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/tier-lists.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>trophies-hub.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/trophies-hub.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>water-treatment-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/water-treatment-walkthrough.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>weekly-roundup-may-14-2026.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/weekly-roundup-may-14-2026.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>will-grace-return-in-re10.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/will-grace-return-in-re10.html</code></td>
-    <td>3</td>
-  </tr>
-  
-<tr class="ok">
-    <td><span class="badge ok">CLEAN</span></td>
-    <td><code>wrenwood-hotel-walkthrough.html</code></td>
-    <td><code style="font-size:11px;">https://www.re9guide.it.com/wrenwood-hotel-walkthrough.html</code></td>
-    <td>3</td>
-  </tr>
-  
+ <td><span class="badge fail">ISSUES</span></td>
+ <td><code>terms.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/terms.html</code></td>
+ <td>2</td>
+ </tr>
+ <tr class='detail'><td colspan='4'><ul class="issues"><li>missing hreflang: ko</li></ul></td></tr>
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>404.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/404.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>about.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/about.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ada-wong-re9-reversal-arc.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ada-wong-re9-reversal-arc.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>all-22-antique-coins-locations.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/all-22-antique-coins-locations.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>all-25-mr-raccoon-locations.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/all-25-mr-raccoon-locations.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>all-49-trophies-platinum-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/all-49-trophies-platinum-guide.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>all-5-safe-codes-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/all-5-safe-codes-guide.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>all-75-files-locations-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/all-75-files-locations-guide.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>all-bosses-ranked-by-difficulty.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/all-bosses-ranked-by-difficulty....</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>all-quartz-puzzle-solutions.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/all-quartz-puzzle-solutions.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>all-resident-evil-games-ranked-2026.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/all-resident-evil-games-ranked-2...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ark-facility-complete-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ark-facility-complete-walkthroug...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>beginner-guide-resident-evil-requiem.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/beginner-guide-resident-evil-req...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>best-crafting-recipes-ammo-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/best-crafting-recipes-ammo-guide...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>best-weapons-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/best-weapons-tier-list.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>blood-specimen-analyzer.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/blood-specimen-analyzer.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>bosses-hub.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/bosses-hub.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>bsaa-re9-new-direction.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/bsaa-re9-new-direction.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>capcom-v1-02-patch-diary.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/capcom-v1-02-patch-diary.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>care-center-basement-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/care-center-basement-walkthrough...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>care-center-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/care-center-walkthrough.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>chunk-origin-mystery-explained.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/chunk-origin-mystery-explained.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>collectibles-hub.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/collectibles-hub.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>contact.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/contact.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>courtyard-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/courtyard-walkthrough.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>dmca.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/dmca.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>eveline-character-profile-complete.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/eveline-character-profile-comple...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>eveline-re9-foreshadowing-explained.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/eveline-re9-foreshadowing-explai...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>grace-ashcroft-character-profile-complete.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/grace-ashcroft-character-profile...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>grace-vs-leon-character-differences.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/grace-vs-leon-character-differen...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>how-to-beat-blister-borne.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-blister-borne.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>how-to-beat-chunk.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-chunk.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>how-to-beat-mr-x-super-tyrant.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-mr-x-super-tyrant.ht...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>how-to-beat-plant-43.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-plant-43.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>how-to-beat-the-chef.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-the-chef.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>how-to-beat-the-commander.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-the-commander.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>how-to-beat-the-girl.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-the-girl.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>how-to-beat-titan-spinner.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-titan-spinner.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>how-to-beat-victor-gideon.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-beat-victor-gideon.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>how-to-unlock-insanity-difficulty.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/how-to-unlock-insanity-difficult...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>index.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>insanity-chapter-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/insanity-chapter-walkthrough.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>is-resident-evil-requiem-worth-playing.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/is-resident-evil-requiem-worth-p...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/404.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/404.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/about.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/about.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/ada-wong-re9-reversal-arc.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/ada-wong-re9-reversal-arc.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/all-22-antique-coins-locations.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-22-antique-coins-location...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/all-25-mr-raccoon-locations.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-25-mr-raccoon-locations.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/all-49-trophies-platinum-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-49-trophies-platinum-guid...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/all-5-safe-codes-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-5-safe-codes-guide.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/all-75-files-locations-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-75-files-locations-guide....</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/all-bosses-ranked-by-difficulty.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-bosses-ranked-by-difficul...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/all-quartz-puzzle-solutions.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-quartz-puzzle-solutions.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/all-resident-evil-games-ranked-2026.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/all-resident-evil-games-ranke...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/ark-facility-complete-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/ark-facility-complete-walkthr...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/beginner-guide-resident-evil-requiem.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/beginner-guide-resident-evil-...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/best-crafting-recipes-ammo-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/best-crafting-recipes-ammo-gu...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/best-weapons-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/best-weapons-tier-list.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/blood-specimen-analyzer.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/blood-specimen-analyzer.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/bosses-hub.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/bosses-hub.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/bsaa-re9-new-direction.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/bsaa-re9-new-direction.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/capcom-v1-02-patch-diary.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/capcom-v1-02-patch-diary.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/care-center-basement-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/care-center-basement-walkthro...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/care-center-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/care-center-walkthrough.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/chunk-origin-mystery-explained.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/chunk-origin-mystery-explaine...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/collectibles-hub.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/collectibles-hub.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/contact.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/contact.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/courtyard-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/courtyard-walkthrough.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/dmca.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/dmca.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/eveline-character-profile-complete.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/eveline-character-profile-com...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/eveline-re9-foreshadowing-explained.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/eveline-re9-foreshadowing-exp...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/grace-ashcroft-character-profile-complete.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/grace-ashcroft-character-prof...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/grace-vs-leon-character-differences.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/grace-vs-leon-character-diffe...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/how-to-beat-blister-borne.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-blister-borne.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/how-to-beat-chunk.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-chunk.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/how-to-beat-mr-x-super-tyrant.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-mr-x-super-tyrant...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/how-to-beat-plant-43.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-plant-43.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/how-to-beat-the-chef.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-the-chef.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/how-to-beat-the-commander.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-the-commander.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/how-to-beat-the-girl.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-the-girl.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/how-to-beat-titan-spinner.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-titan-spinner.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/how-to-beat-victor-gideon.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-beat-victor-gideon.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/how-to-unlock-insanity-difficulty.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/how-to-unlock-insanity-diffic...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/index.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/</code></td>
+ <td>6</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/insanity-chapter-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/insanity-chapter-walkthrough....</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/is-resident-evil-requiem-worth-playing.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/is-resident-evil-requiem-wort...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/leon-kennedy-character-profile-complete.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/leon-kennedy-character-profil...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/mia-winters-re9-re7-connection.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/mia-winters-re9-re7-connectio...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/ng-plus-final-puzzle-rna-solution.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/ng-plus-final-puzzle-rna-solu...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/organless-corpse-puzzle.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/organless-corpse-puzzle.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/privacy.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/privacy.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/puzzle-box-solutions.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/puzzle-box-solutions.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/raccoon-city-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/raccoon-city-walkthrough.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-all-charms-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-all-charms-ranked-tier-li...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-all-endings-explained.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-all-endings-explained.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-best-bosses-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-best-bosses-ranked-tier-l...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-best-endings-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-best-endings-ranked-tier-...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-boss-loadout-calculator.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-boss-loadout-calculator.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-chapters-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-chapters-ranked-tier-list...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-characters-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-characters-ranked-tier-li...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-cutscenes-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-cutscenes-ranked-tier-lis...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-difficulty-comparison-which-to-play.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-difficulty-comparison-whi...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-eye-spy-charm-explained.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-eye-spy-charm-explained.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-hidden-easter-eggs-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-hidden-easter-eggs-list.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-insanity-readiness-check.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-insanity-readiness-check....</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-insanity-survival-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-insanity-survival-guide.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-items-treasures-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-items-treasures-ranked-ti...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-locations-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-locations-ranked-tier-lis...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-missables-complete-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-missables-complete-guide....</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-new-game-plus-complete-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-new-game-plus-complete-gu...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-tips-and-tricks.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-tips-and-tricks.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-vs-re2-remake-which-to-play-first.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-vs-re2-remake-which-to-pl...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-vs-re7-biohazard-which-to-play.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-vs-re7-biohazard-which-to...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/re9-vs-re8-village-which-to-play.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/re9-vs-re8-village-which-to-p...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/release-elpis-ending-explained.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/release-elpis-ending-explaine...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/rpd-orphanage-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/rpd-orphanage-walkthrough.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/should-i-play-grace-or-leon-first.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/should-i-play-grace-or-leon-f...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/speedrun-guide-sub-4-hours.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/speedrun-guide-sub-4-hours.ht...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/spoiler-policy.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/spoiler-policy.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/terms.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/terms.html</code></td>
+ <td>5</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/tier-lists.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/tier-lists.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/trophies-hub.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/trophies-hub.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/water-treatment-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/water-treatment-walkthrough.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/weekly-roundup-may-14-2026.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/weekly-roundup-may-14-2026.ht...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/will-grace-return-in-re10.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/will-grace-return-in-re10.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ko/wrenwood-hotel-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ko/wrenwood-hotel-walkthrough.ht...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>leon-kennedy-character-profile-complete.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/leon-kennedy-character-profile-c...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>mia-winters-re9-re7-connection.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/mia-winters-re9-re7-connection.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>ng-plus-final-puzzle-rna-solution.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/ng-plus-final-puzzle-rna-solutio...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>organless-corpse-puzzle.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/organless-corpse-puzzle.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>privacy.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/privacy.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>puzzle-box-solutions.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/puzzle-box-solutions.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>raccoon-city-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/raccoon-city-walkthrough.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-all-charms-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-all-charms-ranked-tier-list....</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-all-endings-explained.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-all-endings-explained.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-best-bosses-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-best-bosses-ranked-tier-list...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-best-endings-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-best-endings-ranked-tier-lis...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-boss-loadout-calculator.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-boss-loadout-calculator.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-chapters-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-chapters-ranked-tier-list.ht...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-characters-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-characters-ranked-tier-list....</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-cutscenes-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-cutscenes-ranked-tier-list.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-difficulty-comparison-which-to-play.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-difficulty-comparison-which-...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-eye-spy-charm-explained.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-eye-spy-charm-explained.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-hidden-easter-eggs-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-hidden-easter-eggs-list.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-insanity-readiness-check.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-insanity-readiness-check.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-insanity-survival-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-insanity-survival-guide.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-items-treasures-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-items-treasures-ranked-tier-...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-locations-ranked-tier-list.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-locations-ranked-tier-list.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-missables-complete-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-missables-complete-guide.htm...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-new-game-plus-complete-guide.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-new-game-plus-complete-guide...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-tips-and-tricks.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-tips-and-tricks.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-vs-re2-remake-which-to-play-first.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-vs-re2-remake-which-to-play-...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-vs-re7-biohazard-which-to-play.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-vs-re7-biohazard-which-to-pl...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>re9-vs-re8-village-which-to-play.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/re9-vs-re8-village-which-to-play...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>release-elpis-ending-explained.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/release-elpis-ending-explained.h...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>rpd-orphanage-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/rpd-orphanage-walkthrough.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>should-i-play-grace-or-leon-first.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/should-i-play-grace-or-leon-firs...</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>speedrun-guide-sub-4-hours.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/speedrun-guide-sub-4-hours.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>spoiler-policy.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/spoiler-policy.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>tier-lists.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/tier-lists.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>trophies-hub.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/trophies-hub.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>water-treatment-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/water-treatment-walkthrough.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>weekly-roundup-may-14-2026.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/weekly-roundup-may-14-2026.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>will-grace-return-in-re10.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/will-grace-return-in-re10.html</code></td>
+ <td>3</td>
+ </tr>
+ 
+<tr class="ok">
+ <td><span class="badge ok">CLEAN</span></td>
+ <td><code>wrenwood-hotel-walkthrough.html</code></td>
+ <td><code style="font-size:11px;">https://www.re9guide.it.com/wrenwood-hotel-walkthrough.html</code></td>
+ <td>3</td>
+ </tr>
+ 
 </tbody>
 </table>
 
 <script>
 /* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler — force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body>

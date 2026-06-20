@@ -28,7 +28,7 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:34px
 table{width:100%;border-collapse:collapse;font-size:13px}
 th{background:rgba(192,57,43,0.18);color:#c0392b;text-align:left;padding:10px 12px;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid rgba(192,57,43,0.4);cursor:pointer;user-select:none;font-family:monospace}
 th:hover{background:rgba(192,57,43,0.25)}
-th .arrow{font-size:9px;margin-left:4px;opacity:0.6}
+th.arrow{font-size:9px;margin-left:4px;opacity:0.6}
 td{padding:12px;border-bottom:0.5px solid rgba(192,57,43,0.12);vertical-align:top}
 tr:hover td{background:rgba(192,57,43,0.05)}
 .tier{display:inline-block;padding:2px 9px;border-radius:3px;font-size:11px;font-weight:700;font-family:monospace;letter-spacing:0.08em;text-transform:uppercase}
@@ -48,22 +48,22 @@ tr:hover td{background:rgba(192,57,43,0.05)}
 .damage-bar span.on{background:#c0392b}
 footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.3);font-size:11px;color:#706056;text-align:center}
 @media (max-width:700px){
-  table{font-size:11px}
-  th,td{padding:6px 8px}
+ table{font-size:11px}
+ th,td{padding:6px 8px}
 }
 </style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Dataset",
-  "name": "RE9 All 8 Chapters Database",
-  "description": "Quick-reference database of all 8 RE9 chapters with duration, area, bosses, and key events.",
-  "creator": {
-    "@type": "Person",
-    "name": "Jachin"
-  },
-  "datePublished": "2026-06-13",
-  "url": "https://www.re9guide.it.com/chapters-db.html"
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "name": "RE9 All 8 Chapters Database",
+ "description": "Quick-reference database of all 8 RE9 chapters with duration, area, bosses, and key events.",
+ "creator": {
+ "@type": "Person",
+ "name": "Jachin"
+ },
+ "datePublished": "2026-06-13",
+ "url": "https://www.re9guide.it.com/chapters-db.html"
 }
 </script>
 </head>
@@ -79,7 +79,8 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <div class="wrap">
 <h1>RE9 Chapters Database — All 8 Chapters</h1>
 <p class="lead">Quick reference for all 8 chapters with average duration, area, bosses encountered, and the chapter's key story event.</p>
-<div class="fresh">📅 <strong>Last reviewed by Jachin: 2026-06-13</strong> · Verified v1.02 + DLC patch · Search/sort/filter enabled</div>
+<aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>Speedrun routes lie about Insanity-NG+ being clean. The Eveline phase 4 RNG window is brutal.</aside>
+
 
 <div class="controls">
 <label>Search<input id="q" placeholder="Name / key event…" type="text"></label>
@@ -98,36 +99,36 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 var DATA = [{"num": 1, "name": "Awakening at Wrenwood", "duration": "45 min", "area": "Wrenwood", "bosses": "None", "key": "Silencer 9 starter, tutorial"}, {"num": 2, "name": "Wrenwood Hotel", "duration": "1.5h", "area": "Wrenwood", "bosses": "Wrenwood Wraith", "key": "Lily encounter, first lore drops"}, {"num": 3, "name": "Care Center Arrival", "duration": "2h", "area": "Rhodes Hill", "bosses": "Blister Borne (sub-boss)", "key": "Vivien research notes, Plant 43"}, {"num": 4, "name": "Care Center Confrontation", "duration": "1.5h", "area": "Rhodes Hill", "bosses": "Vivien Stage 1, Nurse Kim", "key": "Father Riley intro, basement"}, {"num": 5, "name": "Rhodes Hill Manor", "duration": "2h", "area": "Rhodes Hill", "bosses": "Rhodes Hill Doctor", "key": "Painting puzzle, safe code 560"}, {"num": 6, "name": "Raccoon City Descent", "duration": "2.5h", "area": "Raccoon City", "bosses": "Mr. X (T-103), Titan Spinner", "key": "RPD STARS office, RE2 callbacks"}, {"num": 7, "name": "ARK Lower Levels", "duration": "2h", "area": "ARK", "bosses": "Plant 43, Commander X1 (Phase 1)", "key": "Final puzzles, Vivien revelation"}, {"num": 8, "name": "ARK Core — Finale", "duration": "2h", "area": "ARK", "bosses": "Commander X1 (Final), Eveline", "key": "8 ending branches, NG+ unlock"}];
 var sortKey='num', sortDir=1;
 function render(){
-  var q=document.getElementById('q').value.toLowerCase().trim();
-  var a=document.getElementById('area').value;
-  var f=DATA.filter(function(x){
-    if(a && x.area!==a) return false;
-    if(q){var s=(x.name+' '+x.key+' '+x.bosses).toLowerCase();return s.indexOf(q)>=0;}
-    return true;
-  });
-  f.sort(function(x,y){
-    return x[sortKey]<y[sortKey]?-sortDir : x[sortKey]>y[sortKey]?sortDir : 0;
-  });
-  var tb=document.getElementById('tbody');
-  tb.innerHTML=f.map(function(x){
-    return '<tr><td style="color:#ba7517;font-weight:700;font-family:monospace">'+x.num+'</td>'+
-      '<td><strong>'+x.name+'</strong></td>'+
-      '<td style="color:#b0a09a;font-family:monospace">'+x.duration+'</td>'+
-      '<td>'+x.area+'</td>'+
-      '<td>'+x.bosses+'</td>'+
-      '<td style="color:#b0a09a">'+x.key+'</td></tr>';
-  }).join('');
-  document.getElementById('stats').textContent = f.length+' of '+DATA.length+' chapters shown';
+ var q=document.getElementById('q').value.toLowerCase().trim();
+ var a=document.getElementById('area').value;
+ var f=DATA.filter(function(x){
+ if(a && x.area!==a) return false;
+ if(q){var s=(x.name+' '+x.key+' '+x.bosses).toLowerCase();return s.indexOf(q)>=0;}
+ return true;
+ });
+ f.sort(function(x,y){
+ return x[sortKey]<y[sortKey]?-sortDir: x[sortKey]>y[sortKey]?sortDir: 0;
+ });
+ var tb=document.getElementById('tbody');
+ tb.innerHTML=f.map(function(x){
+ return '<tr><td style="color:#ba7517;font-weight:700;font-family:monospace">'+x.num+'</td>'+
+ '<td><strong>'+x.name+'</strong></td>'+
+ '<td style="color:#b0a09a;font-family:monospace">'+x.duration+'</td>'+
+ '<td>'+x.area+'</td>'+
+ '<td>'+x.bosses+'</td>'+
+ '<td style="color:#b0a09a">'+x.key+'</td></tr>';
+ }).join('');
+ document.getElementById('stats').textContent = f.length+' of '+DATA.length+' chapters shown';
 }
 var areas=Array.from(new Set(DATA.map(function(x){return x.area;}))).sort();
 areas.forEach(function(a){var o=document.createElement('option');o.textContent=a;document.getElementById('area').appendChild(o);});
 ['q','area'].forEach(function(id){document.getElementById(id).addEventListener('input',render);});
 document.querySelectorAll('th[data-key]').forEach(function(th){
-  th.addEventListener('click',function(){
-    var k=th.dataset.key;
-    if(k===sortKey) sortDir=-sortDir; else {sortKey=k;sortDir=1;}
-    render();
-  });
+ th.addEventListener('click',function(){
+ var k=th.dataset.key;
+ if(k===sortKey) sortDir=-sortDir; else {sortKey=k;sortDir=1;}
+ render();
+ });
 });
 render();
 </script>
@@ -139,76 +140,76 @@ re9guide.it.com — fan-made guide, not affiliated with Capcom. Phase 86 databas
 <script>
 /* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler — force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body>

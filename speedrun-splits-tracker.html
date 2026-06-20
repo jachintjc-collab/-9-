@@ -48,7 +48,8 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <div class="wrap">
 <h1>Speedrun Splits Tracker</h1>
 <p class="lead">Time your splits against the verified sub-4h any% route. Live timer + delta vs target per chapter. Saved in your browser.</p>
-<div class="fresh">📅 <strong>2026-06-13</strong> · Verified v1.02 + DLC · Runs entirely in your browser (no data sent)</div>
+<aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>Korean players overrate Hand Cannon and underrate the Match Pistol. That's just my read of forum threads, take it or leave it.</aside>
+<div class="fresh">📅 <strong>2026-06-13</strong> · Tested on v1.02 · Runs entirely in your browser (no data sent)</div>
 
 <div class="tool">
 <h2>Sub-4-hour speedrun splits tracker</h2>
@@ -63,14 +64,14 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 </div>
 <script>
 var ROUTE=[
-  {name:"Chapter 1: Awakening",target:"45:00"},
-  {name:"Chapter 2: Wrenwood Hotel",target:"30:00"},
-  {name:"Chapter 3: Care Center Arrival",target:"35:00"},
-  {name:"Chapter 4: Vivien Confrontation",target:"25:00"},
-  {name:"Chapter 5: Rhodes Hill",target:"25:00"},
-  {name:"Chapter 6: Raccoon City",target:"40:00"},
-  {name:"Chapter 7: ARK Lower",target:"25:00"},
-  {name:"Chapter 8: Finale + Eveline",target:"15:00"}
+ {name:"Chapter 1: Awakening",target:"45:00"},
+ {name:"Chapter 2: Wrenwood Hotel",target:"30:00"},
+ {name:"Chapter 3: Care Center Arrival",target:"35:00"},
+ {name:"Chapter 4: Vivien Confrontation",target:"25:00"},
+ {name:"Chapter 5: Rhodes Hill",target:"25:00"},
+ {name:"Chapter 6: Raccoon City",target:"40:00"},
+ {name:"Chapter 7: ARK Lower",target:"25:00"},
+ {name:"Chapter 8: Finale + Eveline",target:"15:00"}
 ];
 function parseTime(s){var p=s.split(':');return parseInt(p[0])*60+parseInt(p[1]);}
 function fmt(secs){var m=Math.floor(secs/60),s=secs%60;return (m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
@@ -78,48 +79,48 @@ function load(){return JSON.parse(localStorage.getItem('re9_splits')||'{}');}
 function save(s){localStorage.setItem('re9_splits',JSON.stringify(s));}
 var startTime=null,currentSplit=0;
 function render(){
-  var saved=load();
-  document.getElementById('splits').innerHTML=ROUTE.map(function(r,i){
-    var ach=saved[i]||'-';
-    var target=parseTime(r.target);
-    var achSec = ach==='-' ? null : parseTime(ach);
-    var delta='';
-    if(achSec!==null){
-      var d=achSec-target;
-      delta = ' <span style="color:'+(d<=0?'#7d9c40':'#c8323d')+';font-size:11px;font-family:monospace">'+(d<=0?'-':'+')+fmt(Math.abs(d))+'</span>';
-    }
-    return '<div class="result-item" style="display:flex;justify-content:space-between;align-items:center">'+
-      '<span><strong>#'+(i+1)+'</strong> '+r.name+'</span>'+
-      '<span style="font-family:monospace;font-size:13px">'+
-      '<span style="color:#706056">target '+r.target+'</span> · '+
-      '<span style="color:#ba7517">you '+ach+'</span>'+delta+
-      '</span></div>';
-  }).join('');
-  // Total
-  var sum=0,allAch=true;
-  for(var i=0;i<ROUTE.length;i++){if(saved[i]) sum+=parseTime(saved[i]); else allAch=false;}
-  if(sum>0){
-    var pace = allAch ? (sum<14400?'on pace for sub-4h':'over 4 hours') : 'partial';
-    document.getElementById('total').innerHTML='<h3>Running total: '+fmt(sum)+'</h3>'+
-      '<div class="result-item">Target sub-4h = 4:00:00 ('+(4*60*60)+'s) — you '+pace+'</div>';
-  } else {
-    document.getElementById('total').innerHTML='';
-  }
+ var saved=load();
+ document.getElementById('splits').innerHTML=ROUTE.map(function(r,i){
+ var ach=saved[i]||'-';
+ var target=parseTime(r.target);
+ var achSec = ach==='-' ? null: parseTime(ach);
+ var delta='';
+ if(achSec!==null){
+ var d=achSec-target;
+ delta = ' <span style="color:'+(d<=0?'#7d9c40':'#c8323d')+';font-size:11px;font-family:monospace">'+(d<=0?'-':'+')+fmt(Math.abs(d))+'</span>';
+ }
+ return '<div class="result-item" style="display:flex;justify-content:space-between;align-items:center">'+
+ '<span><strong>#'+(i+1)+'</strong> '+r.name+'</span>'+
+ '<span style="font-family:monospace;font-size:13px">'+
+ '<span style="color:#706056">target '+r.target+'</span> · '+
+ '<span style="color:#ba7517">you '+ach+'</span>'+delta+
+ '</span></div>';
+ }).join('');
+ // Total
+ var sum=0,allAch=true;
+ for(var i=0;i<ROUTE.length;i++){if(saved[i]) sum+=parseTime(saved[i]); else allAch=false;}
+ if(sum>0){
+ var pace = allAch ? (sum<14400?'on pace for sub-4h':'over 4 hours'): 'partial';
+ document.getElementById('total').innerHTML='<h3>Running total: '+fmt(sum)+'</h3>'+
+ '<div class="result-item">Target sub-4h = 4:00:00 ('+(4*60*60)+'s) — you '+pace+'</div>';
+ } else {
+ document.getElementById('total').innerHTML='';
+ }
 }
 document.getElementById('start').addEventListener('click',function(){startTime=Date.now();currentSplit=0;alert('Run started. Press Split when each chapter ends.');});
 document.getElementById('split').addEventListener('click',function(){
-  if(!startTime){alert('Press Start first');return;}
-  if(currentSplit>=ROUTE.length){alert('All chapters done!');return;}
-  var elapsed=Math.floor((Date.now()-startTime)/1000);
-  // For split: use elapsed since last split or 0
-  var saved=load();
-  var prev=0;
-  for(var i=0;i<currentSplit;i++)if(saved[i])prev+=parseTime(saved[i]);
-  var chapSec=elapsed-prev;
-  saved[currentSplit]=fmt(chapSec);
-  save(saved);
-  currentSplit++;
-  render();
+ if(!startTime){alert('Press Start first');return;}
+ if(currentSplit>=ROUTE.length){alert('All chapters done!');return;}
+ var elapsed=Math.floor((Date.now()-startTime)/1000);
+ // For split: use elapsed since last split or 0
+ var saved=load();
+ var prev=0;
+ for(var i=0;i<currentSplit;i++)if(saved[i])prev+=parseTime(saved[i]);
+ var chapSec=elapsed-prev;
+ saved[currentSplit]=fmt(chapSec);
+ save(saved);
+ currentSplit++;
+ render();
 });
 document.getElementById('reset').addEventListener('click',function(){if(confirm('Clear all splits?')){localStorage.removeItem('re9_splits');startTime=null;currentSplit=0;render();}});
 render();
@@ -129,76 +130,76 @@ render();
 </div><script>
 /* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler — force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body></html>

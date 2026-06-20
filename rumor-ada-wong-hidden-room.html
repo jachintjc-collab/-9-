@@ -22,11 +22,11 @@ a:hover{color:#c0392b;text-decoration:underline}
 .verdict{margin:20px 0;padding:16px 18px;background:rgba(67,160,71,0.06);border-left:3px solid #43a047;border-radius:3px}
 .verdict strong{color:#43a047}
 .myth-card{margin:20px 0;padding:16px 18px;background:rgba(192,57,43,0.06);border-left:3px solid #c0392b;border-radius:3px}
-.myth-card .label{color:#c0392b;font-size:11px;font-family:monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px}
+.myth-card.label{color:#c0392b;font-size:11px;font-family:monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px}
 .fact-card{margin:20px 0;padding:16px 18px;background:rgba(67,160,71,0.06);border-left:3px solid #43a047;border-radius:3px}
-.fact-card .label{color:#43a047;font-size:11px;font-family:monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px}
+.fact-card.label{color:#43a047;font-size:11px;font-family:monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px}
 .stuck-step{display:flex;gap:14px;margin:18px 0;padding:14px 18px;background:rgba(46,26,20,0.6);border:0.5px solid rgba(192,57,43,0.2);border-radius:4px}
-.stuck-step .num{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:#c0392b;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:monospace}
+.stuck-step.num{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:#c0392b;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:monospace}
 footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.3);font-size:11px;color:#706056;text-align:center}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ClaimReview", "author": {"@type": "Person", "name": "Jachin"}, "datePublished": "2026-06-15", "itemReviewed": {"@type": "Claim", "author": "RE community", "claimReviewed": "Hidden room theory examined"}, "reviewRating": {"@type": "Rating", "ratingValue": "1", "bestRating": "5", "worstRating": "1", "alternateName": "False"}}</script>
@@ -43,8 +43,9 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <div class="tag">Rumor Debunk</div>
 <h1>Hidden Ada Wong Encounter Room — Real or Myth?</h1>
 <p class="lead">Hidden room theory examined</p>
-<div class="fresh">📅 <strong>2026-06-15</strong> · Verified v1.02 + DLC · Authored by Jachin</div>
+
 </header>
+<aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>Mortal Edge made the knife-only run trivial. Worse, it made the regular run boring.</aside>
 <p>The Resident Evil community generates extensive fan theories. Some hold up to scrutiny; others don't. This article addresses <strong>hidden ada wong encounter room — real or myth?</strong>, a popular RE9 community theory, and examines the evidence for and against.</p>
 
 <div class="myth-card">
@@ -58,7 +59,7 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <li>The theory points to specific dialogue moments as "evidence"</li>
 <li>Some interpret environmental items (photographs, clippings) as supporting</li>
 <li>Specific characters' behaviors are cited as suggestive</li>
-<li>Korean RE community has discussed extensively (네이버 카페 thread reaches 4,000+ comments)</li>
+<li>Korean RE forums have discussed extensively (네이버 카페 thread reaches 4,000+ comments)</li>
 </ul>
 
 <h2>The actual canon evidence</h2>
@@ -85,8 +86,8 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <li>Speculation is fun, even when wrong</li>
 </ol>
 
-<h2>Korean RE community discussion</h2>
-<p>In Korean RE community (네이버 카페), this rumor has been actively discussed:</p>
+<h2>Korean RE forums discussion</h2>
+<p>In Korean RE forums (네이버 카페), this rumor has been actively discussed:</p>
 <ul>
 <li>Initial post triggered 4,200+ comments</li>
 <li>Major debate between "supports" (40%) and "debunkers" (60%)</li>
@@ -111,76 +112,76 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <script>
 /* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler — force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body></html>

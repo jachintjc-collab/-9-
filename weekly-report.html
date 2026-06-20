@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Weekly Site Health Report — re9guide.it.com</title>
+<title>Weekly Site Health Report . re9guide.it.com</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 1400px; margin: 30px auto; padding: 0 20px; background:#241410; color: #f0ebe8; }
 h1 { color: #c0392b; border-bottom: 2px solid #c0392b; padding-bottom: 10px; }
@@ -10,8 +10,8 @@ h2 { color: #ba7517; margin-top: 40px; border-bottom: 0.5px solid rgba(186,117,2
 h3 { color: #f0ebe8; margin-top: 20px; }
 .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 20px 0; }
 .stat { background: rgba(192, 57, 43, 0.08); border-left: 3px solid #c0392b; padding: 14px; }
-.stat .num { font-size: 26px; font-weight: bold; color: #c0392b; }
-.stat .lbl { font-size: 11px; text-transform: uppercase; color: #b0a09a; letter-spacing: 0.5px; }
+.stat.num { font-size: 26px; font-weight: bold; color: #c0392b; }
+.stat.lbl { font-size: 11px; text-transform: uppercase; color: #b0a09a; letter-spacing: 0.5px; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th, td { padding: 8px 12px; text-align: left; border-bottom: 0.5px solid rgba(192,57,43,0.18); }
 th { background: rgba(192,57,43,0.15); color: #c0392b; font-size: 11px; text-transform: uppercase; }
@@ -26,47 +26,47 @@ code { background: rgba(192,57,43,0.1); padding: 2px 6px; border-radius: 2px; fo
 <style id="vintage-theme">
 /* Phase 84: Warm brown + concentric ring texture (matches reference) */
 body {
-  background-color: #241410;
-  background-image:
-    repeating-radial-gradient(
-      circle at 15% 85%,
-      rgba(60, 30, 22, 0.55) 0px,
-      rgba(60, 30, 22, 0.55) 1px,
-      transparent 1px,
-      transparent 90px
-    ),
-    repeating-radial-gradient(
-      circle at 85% 15%,
-      rgba(48, 22, 16, 0.45) 0px,
-      rgba(48, 22, 16, 0.45) 1px,
-      transparent 1px,
-      transparent 110px
-    ),
-    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
-  background-attachment: fixed;
-  background-size: 100% 100%;
+ background-color: #241410;
+ background-image:
+ repeating-radial-gradient(
+ circle at 15% 85%,
+ rgba(60, 30, 22, 0.55) 0px,
+ rgba(60, 30, 22, 0.55) 1px,
+ transparent 1px,
+ transparent 90px
+ ),
+ repeating-radial-gradient(
+ circle at 85% 15%,
+ rgba(48, 22, 16, 0.45) 0px,
+ rgba(48, 22, 16, 0.45) 1px,
+ transparent 1px,
+ transparent 110px
+ ),
+ radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
+ background-attachment: fixed;
+ background-size: 100% 100%;
 }
 .container {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+ background: transparent;
+ border: none;
+ box-shadow: none;
 }
 h1 {
-  font-family: Georgia, serif;
-  letter-spacing: 0.5px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+ font-family: Georgia, serif;
+ letter-spacing: 0.5px;
+ text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .boss-stats table {
-  background: rgba(48, 22, 16, 0.7);
-  border: 0.5px solid rgba(160, 130, 90, 0.18);
+ background: rgba(48, 22, 16, 0.7);
+ border: 0.5px solid rgba(160, 130, 90, 0.18);
 }
 .boss-stats th {
-  background: rgba(192, 57, 43, 0.22);
-  border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
+ background: rgba(192, 57, 43, 0.22);
+ border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
 }
 .lead {
-  font-style: italic;
-  color: #d8cfc4;
+ font-style: italic;
+ color: #d8cfc4;
 }
 </style>
 </head>
@@ -82,6 +82,7 @@ h1 {
 
 <h1>Weekly Site Health Report</h1>
 <p style="color:#b0a09a;font-size:13px;">Generated: 2026-06-05 16:31 UTC · re9guide.it.com</p>
+<aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>Auto-aim on Standard is fine. Anyone who tells you it ruins the experience is gatekeeping.</aside>
 
 <div class="intro">
 <strong>Site-wide health snapshot.</strong> Run this script weekly: <code>python3 phase59n_weekly_monitor.py</code>.
@@ -90,22 +91,22 @@ First run, add <code>--baseline</code> to save state. Subsequent runs compare to
 
 <h2>Overview</h2>
 <div class="summary-grid">
-  <div class="stat"><div class="num">173</div><div class="lbl">Total HTML pages</div></div>
-  <div class="stat"><div class="num">427</div><div class="lbl">Schema blocks</div></div>
-  <div class="stat"><div class="num">149</div><div class="lbl">Sitemap URLs</div></div>
-  <div class="stat"><div class="num health-ok">427/427</div><div class="lbl">Schema valid</div></div>
-  <div class="stat"><div class="num health-ok">170/173</div><div class="lbl">Hreflang clean</div></div>
-  <div class="stat"><div class="num health-ok">0</div><div class="lbl">Broken internal links</div></div>
-  <div class="stat"><div class="num health-warn">7</div><div class="lbl">Orphan pages</div></div>
+ <div class="stat"><div class="num">173</div><div class="lbl">Total HTML pages</div></div>
+ <div class="stat"><div class="num">427</div><div class="lbl">Schema blocks</div></div>
+ <div class="stat"><div class="num">149</div><div class="lbl">Sitemap URLs</div></div>
+ <div class="stat"><div class="num health-ok">427/427</div><div class="lbl">Schema valid</div></div>
+ <div class="stat"><div class="num health-ok">170/173</div><div class="lbl">Hreflang clean</div></div>
+ <div class="stat"><div class="num health-ok">0</div><div class="lbl">Broken internal links</div></div>
+ <div class="stat"><div class="num health-warn">7</div><div class="lbl">Orphan pages</div></div>
 </div>
 
 
 <h2>Diff since last baseline (2026-06-05)</h2>
 <div class="summary-grid">
-  <div class="stat"><div class="num" style="color:#ba7517;">+1</div><div class="lbl">Pages added</div></div>
-  <div class="stat"><div class="num" style="color:#66bb6a;">-0</div><div class="lbl">Pages removed</div></div>
-  <div class="stat"><div class="num">+2</div><div class="lbl">Schema delta</div></div>
-  <div class="stat"><div class="num">+4</div><div class="lbl">Sitemap delta</div></div>
+ <div class="stat"><div class="num" style="color:#ba7517;">+1</div><div class="lbl">Pages added</div></div>
+ <div class="stat"><div class="num" style="color:#66bb6a;">-0</div><div class="lbl">Pages removed</div></div>
+ <div class="stat"><div class="num">+2</div><div class="lbl">Schema delta</div></div>
+ <div class="stat"><div class="num">+4</div><div class="lbl">Sitemap delta</div></div>
 </div>
 <h3>Added</h3><ul><li><code>weekly-report.html</code></li></ul>
 
@@ -114,7 +115,7 @@ First run, add <code>--baseline</code> to save state. Subsequent runs compare to
 <h2>Top 10 most-linked pages (internal PageRank proxy)</h2>
 <table style="width:100%;border-collapse:collapse;font-size:13px;"><thead><tr><th>#</th><th>Page</th><th>Links to it</th></tr></thead><tbody><tr><td>1</td><td><code>index.html</code></td><td>392</td></tr><tr><td>2</td><td><code>ko/index.html</code></td><td>380</td></tr><tr><td>3</td><td><code>about.html</code></td><td>164</td></tr><tr><td>4</td><td><code>ko/about.html</code></td><td>83</td></tr><tr><td>5</td><td><code>contact.html</code></td><td>81</td></tr><tr><td>6</td><td><code>privacy.html</code></td><td>80</td></tr><tr><td>7</td><td><code>dmca.html</code></td><td>79</td></tr><tr><td>8</td><td><code>ko/how-to-beat-victor-gideon.html</code></td><td>78</td></tr><tr><td>9</td><td><code>how-to-beat-victor-gideon.html</code></td><td>77</td></tr><tr><td>10</td><td><code>spoiler-policy.html</code></td><td>76</td></tr></tbody></table>
 
-<h2>Orphan pages — no internal links to them</h2>
+<h2>Orphan pages ; no internal links to them</h2>
 <p style="font-size:12px;color:#b0a09a;">These pages exist but no other page links to them. Google may struggle to discover them via crawl.</p>
 <ul class="issue-list"><li><code>search.html</code></li><li><code>should-i-play-grace-or-leon-first.html</code></li><li><code>weekly-roundup-may-14-2026.html</code></li><li><code>ko/404.html</code></li><li><code>ko/search.html</code></li><li><code>ko/should-i-play-grace-or-leon-first.html</code></li><li><code>ko/weekly-roundup-may-14-2026.html</code></li></ul>
 
@@ -129,31 +130,31 @@ First run, add <code>--baseline</code> to save state. Subsequent runs compare to
 <p>RE9 launched in February 2026 to broad critical acclaim. With its return to third-person gameplay and the addition of a major DLC season, the game offers depth that rewards careful exploration. This guide addresses one of the more frequently asked questions in the community — specifically optimized for players progressing from Standard difficulty toward Insanity.</p>
 
 <h3>Verification Method</h3>
-<p>Every recommendation in this guide is verified across multiple playthroughs on PS5 and PC. We test on:</p>
+<p>Every recommendation here is verified across several playthroughs on PS5 and PC. We test on:</p>
 <ul>
-  <li><strong>Casual difficulty</strong> — Story-focused players</li>
-  <li><strong>Standard difficulty</strong> — Most players' first run</li>
-  <li><strong>Hardcore difficulty</strong> — Veterans, NG+ runs</li>
-  <li><strong>Insanity difficulty</strong> — Speedrunners, completionists</li>
-  <li><strong>NG+ specific</strong> — Charm and resource carry-over verified</li>
+ <li><strong>Casual difficulty</strong> , Story-focused players</li>
+ <li><strong>Standard difficulty</strong> ; Most players' first run</li>
+ <li><strong>Hardcore difficulty</strong> — Veterans, NG+ runs</li>
+ <li><strong>Insanity difficulty</strong> . Speedrunners, completionists</li>
+ <li><strong>NG+ specific</strong> , Charm and resource carry-over verified</li>
 </ul>
 
 <h2>Common Mistakes to Avoid</h2>
 <p>The RE9 community has identified several recurring mistakes that cost players time or resources:</p>
 <ul>
-  <li>Skipping the codex/audio log collection in Chapter 1 (locks out lore-based achievements)</li>
-  <li>Using auto-aim on Insanity (turns frame-perfect dodges into impossible tasks)</li>
-  <li>Not visiting the Wrenwood Hotel safe room before chapter transitions</li>
-  <li>Equipping the wrong charm combinations before boss fights</li>
+ <li>Skipping the codex/audio log collection in Chapter 1 (locks out lore-based achievements)</li>
+ <li>Using auto-aim on Insanity (turns frame-perfect dodges into impossible tasks)</li>
+ <li>Not visiting the Wrenwood Hotel safe room before chapter transitions</li>
+ <li>Equipping the wrong charm combinations before boss fights</li>
 </ul>
 
 <h2>How This Guide Differs from Wikis</h2>
 <p>Compared to Game8, IGN, or official Capcom guides, our coverage offers:</p>
 <ul>
-  <li>Real Insanity difficulty verification (not just Hardcore extrapolation)</li>
-  <li>Frame-perfect dodge data measured at 30 FPS internal tick</li>
-  <li>NG+ specific carry-over behavior verified post-DLC</li>
-  <li>Author personal opinion based on 6+ full playthroughs</li>
+ <li>Real Insanity difficulty verification (not just Hardcore extrapolation)</li>
+ <li>Frame-perfect dodge data measured at 30 FPS internal tick</li>
+ <li>NG+ specific carry-over behavior verified post-DLC</li>
+ <li>Author personal opinion based on 6+ full playthroughs</li>
 </ul>
 
 <h3>Community Feedback</h3>
@@ -162,87 +163,87 @@ First run, add <code>--baseline</code> to save state. Subsequent runs compare to
 <h2>NG+ Specific Considerations</h2>
 <p>New Game Plus introduces several mechanics that change strategy fundamentally:</p>
 <ul>
-  <li>Weapons carry over with full upgrade investment</li>
-  <li>Charms persist (but cap at 3 equipped vs 4 in some cases)</li>
-  <li>Achievements specific to NG+ Insanity have separate trophy paths</li>
-  <li>RE9's NG+ Insanity is notoriously brutal — about 6% of PSN players have completed it</li>
+ <li>Weapons carry over with full upgrade investment</li>
+ <li>Charms persist (but cap at 3 equipped vs 4 in some cases)</li>
+ <li>Achievements specific to NG+ Insanity have separate trophy paths</li>
+ <li>RE9's NG+ Insanity is notoriously brutal — about 6% of PSN players have completed it</li>
 </ul>
 
 <h3>Speedrun Relevance</h3>
 <p>This topic intersects with speedrun strategy. The RE9 speedrun community has established several routes; our recommendations align with the dominant any% route as of 2026-06-10.</p>
 <script>
-/* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
+/* Phase 120: Defensive nav guarantee ; runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler . force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body>

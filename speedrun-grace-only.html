@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Grace Solo Speedrun Route Deep Dive · WR 4:15:20 · RE9</title>
+<title>Grace Solo Speedrun Route Look · WR 4:15:20 · RE9</title>
 <meta name="description" content="Complete Grace Solo speedrun route for RE9. World record 4:15:20, chapter-by-chapter optimal path, frame-perfect tricks, charm setup.">
 <meta name="theme-color" content="#241410">
 <link rel="canonical" href="https://www.re9guide.it.com/speedrun-grace-only.html">
@@ -39,17 +39,18 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 </div>
 <header>
 <div class="cat-badge">Story Category</div>
-<h1>Grace Solo Speedrun Route Deep Dive</h1>
+<h1>Grace Solo Speedrun Route Look</h1>
 <p style="font-size:14px;color:#b0a09a;margin:8px 0 0">Skip Leon route, max Grace-only progression.</p>
 <div class="wr-strip">
 <div><strong>World Record</strong><span>4:15:20</span></div>
 <div><strong>Category</strong><span>Story</span></div>
 <div><strong>Updated</strong><span>2026-06-14</span></div>
 </div>
-<div class="fresh">📅 <strong>2026-06-14</strong> · v1.02 + DLC verified · WR holder verified setup documented</div>
+<div class="fresh">📅 <strong>2026-06-14</strong> · v1.02 verified · WR holder verified setup documented</div>
 </header>
+<aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>Mortal Edge made the knife-only run trivial. Worse, it made the regular run boring.</aside>
 
-<p>RE9 (Resident Evil: Requiem) has spawned an active speedrun community since launch. The <strong>Grace Solo</strong> category sits at the heart of competitive RE9 speedrunning. This route deep-dive covers everything: optimal path, frame-perfect tricks, charm choices, RNG management, and the current world record holder's setup.</p>
+<p>RE9 (Resident Evil: Requiem) has spawned an active speedrun community since launch. The <strong>Grace Solo</strong> category sits at the heart of competitive RE9 speedrunning. This route look covers everything: optimal path, frame-perfect tricks, charm choices, RNG management, and the current world record holder's setup.</p>
 
 <h2>Current world record</h2>
 <p>The world record for Grace Solo is <strong>4:15:20</strong>. Submitted to speedrun.com leaderboards with full video evidence and timer + split verification. Subject to change as community discovers new optimization (latest community-submitted route was on 2026-06-10).</p>
@@ -73,13 +74,13 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <p>Vivien Stage 2 + Nurse Kim boss fights. Frame-perfect Mortal Edge parries are essential. The community has documented exact i-frame windows. For Story category, this is where most run-killing deaths happen.</p>
 
 <h3>Chapter 5: Rhodes Hill Manor (target 22:00)</h3>
-<p>Painting puzzle solution: code 560 (well-known). Manor combat is largely optional — speedrunners skip 60% of encounters with strategic running. Rhodes Hill Doctor boss: weakness is knife counter.</p>
+<p>Painting puzzle solution: code 560 (well-known). Manor combat is largely optional , speedrunners skip 60% of encounters with strategic running. Rhodes Hill Doctor boss: weakness is knife counter.</p>
 
 <h3>Chapter 6: Raccoon City (target 35:00)</h3>
 <p>RPD section reuses RE2 Remake routing. Mr. X chase: take the alternate route through Library to skip 4 minutes. Titan Spinner: rocket launcher 1-shot if NG+ available.</p>
 
 <h3>Chapter 7: ARK Lower (target 22:00)</h3>
-<p>Final puzzles + Commander X1 phase 1. The Commander has a documented spawn pattern that's exploitable. Plant 43 reappears with new attack patterns — counter strategy differs from chapter 3.</p>
+<p>Final puzzles + Commander X1 phase 1. The Commander has a documented spawn pattern that's exploitable. Plant 43 reappears with new attack patterns , counter strategy differs from chapter 3.</p>
 
 <h3>Chapter 8: ARK Core + Eveline (target 20:00)</h3>
 <p>Final boss Eveline has 4 phases. Frame-perfect counters on phases 3 and 4 are essential. Specific charm: Phoenix Down on phase 4 is meta. The True Ending route requires specific dialogue at the end.</p>
@@ -114,8 +115,8 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <p>The active Story speedrunning community gathers on:</p>
 <ul>
 <li><strong>speedrun.com</strong> — Official leaderboard</li>
-<li><strong>r/re9speedruns</strong> — Reddit community</li>
-<li><strong>Twitch RE9 Speedruns directory</strong> — Live streaming category</li>
+<li><strong>r/re9speedruns</strong> , Reddit community</li>
+<li><strong>Twitch RE9 Speedruns directory</strong> . Live streaming category</li>
 <li><strong>Discord:</strong> RE9 Speedrunning server (public link via speedrun.com)</li>
 </ul>
 
@@ -135,78 +136,78 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 
 <footer>re9guide.it.com — fan-made speedrun analysis. Speedrun.com leaderboards link from main speedrun hub. Not affiliated with Capcom.</footer>
 <script>
-/* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
+/* Phase 120: Defensive nav guarantee ; runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler , force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body>

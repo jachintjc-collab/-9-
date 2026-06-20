@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<!-- Phase 58k: Core Web Vitals — Connection hints -->
+<!-- Phase 58k: Core Web Vitals . Connection hints -->
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.clarity.ms">
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
 <meta name="audience" content="Korean RE9 players">
 <meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
-<meta property="article:section" content="Resident Evil Requiem (RE9) — Korean Guide">
+<meta property="article:section" content="Resident Evil Requiem (RE9) , Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -65,10 +65,10 @@ strong{color:var(--text);font-weight:bold;}em{color:var(--gold);font-style:norma
 .warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
 .warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
 .safe-card{background:var(--surface);border:0.5px solid var(--border);border-radius:6px;padding:16px 20px;margin:14px 0;}
-.safe-card .safe-id{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.08em;}
-.safe-card .safe-name{font-size:17px;color:var(--text);margin:6px 0 12px;}
-.safe-card .code-line{font-family:monospace;font-size:15px;color:var(--gold);margin:6px 0;}
-.safe-card .code-line strong{color:var(--text);font-weight:normal;background:rgba(186,117,23,0.15);padding:2px 8px;border-radius:3px;}
+.safe-card.safe-id{font-size:11px;font-family:monospace;color:var(--red);letter-spacing:0.08em;}
+.safe-card.safe-name{font-size:17px;color:var(--text);margin:6px 0 12px;}
+.safe-card.code-line{font-family:monospace;font-size:15px;color:var(--gold);margin:6px 0;}
+.safe-card.code-line strong{color:var(--text);font-weight:normal;background:rgba(186,117,23,0.15);padding:2px 8px;border-radius:3px;}
 .boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
 .boss-stats table{width:100%;font-size:14px;}
 .boss-stats td{padding:5px 0;color:var(--text2);}
@@ -90,201 +90,201 @@ ol{margin:10px 0 14px 22px;color:var(--text2);}ol li{padding:5px 0;font-size:15p
 html { scroll-behavior: smooth; }
 h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 @media (min-width: 1100px) {
-  body.has-floating-toc .toc {
-    position: fixed; top: 80px;
-    right: calc((100vw - 780px) / 2 - 280px);
-    width: 250px; max-height: calc(100vh - 110px);
-    overflow-y: auto; z-index: 50;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  }
-  body.has-floating-toc .toc a.active { color: #c0392b !important; font-weight: bold; }
+ body.has-floating-toc.toc {
+ position: fixed; top: 80px;
+ right: calc((100vw - 780px) / 2 - 280px);
+ width: 250px; max-height: calc(100vh - 110px);
+ overflow-y: auto; z-index: 50;
+ box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+ }
+ body.has-floating-toc.toc a.active { color: #c0392b !important; font-weight: bold; }
 }
-@media (max-width: 1099px) { .toc { position: static !important; } }
+@media (max-width: 1099px) {.toc { position: static !important; } }
 </style>
 <script>
 (function(){
-  function init(){
-    var toc = document.querySelector('.toc'); if(!toc) return;
-    var tocOriginalTop = toc.offsetTop;
-    var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
-    function onScroll(){
-      if(window.innerWidth < 1100){ document.body.classList.remove('has-floating-toc'); return; }
-      if(window.scrollY > floatThreshold) document.body.classList.add('has-floating-toc');
-      else document.body.classList.remove('has-floating-toc');
-      var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
-      var active = null;
-      for(var i = 0; i < sections.length; i++){
-        if(sections[i].getBoundingClientRect().top < 150) active = sections[i];
-        else break;
-      }
-      if(active){
-        toc.querySelectorAll('a').forEach(function(a){
-          a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
-        });
-      }
-    }
-    window.addEventListener('scroll', onScroll, {passive: true});
-    window.addEventListener('resize', onScroll); onScroll();
-  }
-  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
+ function init(){
+ var toc = document.querySelector('.toc'); if(!toc) return;
+ var tocOriginalTop = toc.offsetTop;
+ var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
+ function onScroll(){
+ if(window.innerWidth < 1100){ document.body.classList.remove('has-floating-toc'); return; }
+ if(window.scrollY > floatThreshold) document.body.classList.add('has-floating-toc');
+ else document.body.classList.remove('has-floating-toc');
+ var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
+ var active = null;
+ for(var i = 0; i < sections.length; i++){
+ if(sections[i].getBoundingClientRect().top < 150) active = sections[i];
+ else break;
+ }
+ if(active){
+ toc.querySelectorAll('a').forEach(function(a){
+ a.classList.toggle('active', a.getAttribute('href') === '#' + active.id);
+ });
+ }
+ }
+ window.addEventListener('scroll', onScroll, {passive: true});
+ window.addEventListener('resize', onScroll); onScroll();
+ }
+ if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+ else init();
 })();
 </script>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "RE9 전체 10 보스 난이도 랭킹 — 최난이도부터 최쉬움까지",
-  "description": "레지던트 이블 레퀴엠(RE9) 10명의 보스 난이도 순위. S 티어부터 B 티어까지, 데미지/공격 패턴/패리 난이도/인새니티 스케일링 5요소 기반.",
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://www.re9guide.it.com/og-image.png",
-    "width": 1200,
-    "height": 630
-  },
-  "author": {
-    "@type": "Person",
-    "@id": "https://www.re9guide.it.com/about.html#person",
-    "name": "Jachin",
-    "url": "https://www.re9guide.it.com/about.html"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "@id": "https://www.re9guide.it.com/#publisher",
-    "name": "re9guide.it.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.re9guide.it.com/og-image.png"
-    }
-  },
-  "datePublished": "2026-05-14T00:00:00+09:00",
-  "dateModified": "2026-05-16T00:00:00+09:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.re9guide.it.com/ko/all-bosses-ranked-by-difficulty.html"
-  },
-  "inLanguage": "ko-KR",
-  "translationOfWork": {
-    "@type": "CreativeWork",
-    "@id": "https://www.re9guide.it.com/all-bosses-ranked-by-difficulty.html"
-  },
-  "about": {
-    "@type": "VideoGame",
-    "@id": "https://www.re9guide.it.com/#game",
-    "name": "Resident Evil: Requiem"
-  }
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "RE9 전체 10 보스 난이도 랭킹 — 최난이도부터 최쉬움까지",
+ "description": "레지던트 이블 레퀴엠(RE9) 10명의 보스 난이도 순위. S 티어부터 B 티어까지, 데미지/공격 패턴/패리 난이도/인새니티 스케일링 5요소 기반.",
+ "image": {
+ "@type": "ImageObject",
+ "url": "https://www.re9guide.it.com/og-image.png",
+ "width": 1200,
+ "height": 630
+ },
+ "author": {
+ "@type": "Person",
+ "@id": "https://www.re9guide.it.com/about.html#person",
+ "name": "Jachin",
+ "url": "https://www.re9guide.it.com/about.html"
+ },
+ "publisher": {
+ "@type": "Organization",
+ "@id": "https://www.re9guide.it.com/#publisher",
+ "name": "re9guide.it.com",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "https://www.re9guide.it.com/og-image.png"
+ }
+ },
+ "datePublished": "2026-05-14T00:00:00+09:00",
+ "dateModified": "2026-05-16T00:00:00+09:00",
+ "mainEntityOfPage": {
+ "@type": "WebPage",
+ "@id": "https://www.re9guide.it.com/ko/all-bosses-ranked-by-difficulty.html"
+ },
+ "inLanguage": "ko-KR",
+ "translationOfWork": {
+ "@type": "CreativeWork",
+ "@id": "https://www.re9guide.it.com/all-bosses-ranked-by-difficulty.html"
+ },
+ "about": {
+ "@type": "VideoGame",
+ "@id": "https://www.re9guide.it.com/#game",
+ "name": "Resident Evil: Requiem"
+ }
 }
 </script>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "홈",
-      "item": "https://www.re9guide.it.com/ko/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "RE9 전체 10 보스 난이도 랭킹 — 최난이도부터 최쉬움까지"
-    }
-  ]
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ {
+ "@type": "ListItem",
+ "position": 1,
+ "name": "홈",
+ "item": "https://www.re9guide.it.com/ko/"
+ },
+ {
+ "@type": "ListItem",
+ "position": 2,
+ "name": "RE9 전체 10 보스 난이도 랭킹 ; 최난이도부터 최쉬움까지"
+ }
+ ]
 }
 </script>
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "wu58ps8e48");
+ (function(c,l,a,r,i,t,y){
+ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+ t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+ })(window, document, "clarity", "script", "wu58ps8e48");
 </script>
 <!-- Google Analytics 4 (G-XZJHDN44CF) + smart dev opt-out -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZJHDN44CF"></script>
 <script>
 (function(){
-  // ---- Dev opt-out detection ----
-  var DEV_KEY = 're9guide_dev';
-  var GA_ID = 'G-XZJHDN44CF';
-  // URL param ?dev=1 sets flag, ?dev=0 clears (one-time activation)
-  try {
-    var p = new URLSearchParams(window.location.search);
-    if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON — analytics disabled for this browser'); }
-    if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF — analytics re-enabled'); }
-  } catch(e){}
-  var isDev = false;
-  try { isDev = localStorage.getItem(DEV_KEY) === '1'; } catch(e){}
+ // ---- Dev opt-out detection ----
+ var DEV_KEY = 're9guide_dev';
+ var GA_ID = 'G-XZJHDN44CF';
+ // URL param ?dev=1 sets flag, ?dev=0 clears (one-time activation)
+ try {
+ var p = new URLSearchParams(window.location.search);
+ if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON , analytics disabled for this browser'); }
+ if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF — analytics re-enabled'); }
+ } catch(e){}
+ var isDev = false;
+ try { isDev = localStorage.getItem(DEV_KEY) === '1'; } catch(e){}
 
-  // ---- Always set up gtag function (Clarity integration needs window.gtag) ----
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  window.gtag = gtag;
+ // ---- Always set up gtag function (Clarity integration needs window.gtag) ----
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ window.gtag = gtag;
 
-  if (isDev) {
-    // Disable GA4 hits for this user
-    window['ga-disable-' + GA_ID] = true;
-    // Stop Clarity too (script may load before this — call after a tick)
-    setTimeout(function(){ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
-    console.log('[re9guide] Analytics disabled — dev mode active. To re-enable: ?dev=0');
-  } else {
-    gtag('js', new Date());
-    gtag('config', GA_ID, {
-      anonymize_ip: true,
-      page_title: document.title,
-      page_location: window.location.href
-    });
-  }
+ if (isDev) {
+ // Disable GA4 hits for this user
+ window['ga-disable-' + GA_ID] = true;
+ // Stop Clarity too (script may load before this . call after a tick)
+ setTimeout(function(){ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
+ console.log('[re9guide] Analytics disabled , dev mode active. To re-enable: ?dev=0');
+ } else {
+ gtag('js', new Date());
+ gtag('config', GA_ID, {
+ anonymize_ip: true,
+ page_title: document.title,
+ page_location: window.location.href
+ });
+ }
 })();
 </script>
 <style id="vintage-theme">
 /* Phase 84: Warm brown + concentric ring texture (matches reference) */
 body {
-  background-color: #241410;
-  background-image:
-    repeating-radial-gradient(
-      circle at 15% 85%,
-      rgba(60, 30, 22, 0.55) 0px,
-      rgba(60, 30, 22, 0.55) 1px,
-      transparent 1px,
-      transparent 90px
-    ),
-    repeating-radial-gradient(
-      circle at 85% 15%,
-      rgba(48, 22, 16, 0.45) 0px,
-      rgba(48, 22, 16, 0.45) 1px,
-      transparent 1px,
-      transparent 110px
-    ),
-    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
-  background-attachment: fixed;
-  background-size: 100% 100%;
+ background-color: #241410;
+ background-image:
+ repeating-radial-gradient(
+ circle at 15% 85%,
+ rgba(60, 30, 22, 0.55) 0px,
+ rgba(60, 30, 22, 0.55) 1px,
+ transparent 1px,
+ transparent 90px
+ ),
+ repeating-radial-gradient(
+ circle at 85% 15%,
+ rgba(48, 22, 16, 0.45) 0px,
+ rgba(48, 22, 16, 0.45) 1px,
+ transparent 1px,
+ transparent 110px
+ ),
+ radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
+ background-attachment: fixed;
+ background-size: 100% 100%;
 }
 .container {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+ background: transparent;
+ border: none;
+ box-shadow: none;
 }
 h1 {
-  font-family: Georgia, serif;
-  letter-spacing: 0.5px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+ font-family: Georgia, serif;
+ letter-spacing: 0.5px;
+ text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .boss-stats table {
-  background: rgba(48, 22, 16, 0.7);
-  border: 0.5px solid rgba(160, 130, 90, 0.18);
+ background: rgba(48, 22, 16, 0.7);
+ border: 0.5px solid rgba(160, 130, 90, 0.18);
 }
 .boss-stats th {
-  background: rgba(192, 57, 43, 0.22);
-  border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
+ background: rgba(192, 57, 43, 0.22);
+ border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
 }
 .lead {
-  font-style: italic;
-  color: #d8cfc4;
+ font-style: italic;
+ color: #d8cfc4;
 }
 </style>
 </head>
@@ -301,9 +301,10 @@ h1 {
 </div>
 <div class="container">
 <div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="/bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스</a> / <span>RE9 전체 10 보스 난이도 랭킹 — 최난이도부터 최쉬움까지</span></div>
-<h1>RE9 전체 10 보스 난이도 랭킹 — 최난이도부터 최쉬움까지</h1>
+<h1>RE9 전체 10 보스 난이도 랭킹 , 최난이도부터 최쉬움까지</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
 <p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
+<aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>Chapter 6 RPD callbacks work for RE2 vets and confuse everyone else. Capcom didn't split the difference cleanly.</aside>
 <p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">검증 버전: v1.02 · 마지막 검토: 2026년 5월 30일 · 영어 원본과 비교: 100% 내용 동등 + 한국어 컨텍스트 추가</p>
 </div>
 
@@ -314,13 +315,13 @@ h1 {
 <p class="lead">레지던트 이블 레퀴엠의 모든 보스를 데미지 출력, 공격 패턴, 패리 난이도, 인새니티 모드 성능 기반으로 가장 어려움부터 가장 쉬움까지 순위 매겼습니다. 무엇이 다가올지 알고 미리 준비하는 데 사용하세요.</p>
 
 <div class="boss-stats"><table>
-<tr><td>#1</td><td><strong>빅터 기드온</strong> — 10/10</td></tr>
+<tr><td>#1</td><td><strong>빅터 기드온</strong> . 10/10</td></tr>
 <tr><td>#2</td><td><strong>더 커맨더</strong> — 9/10</td></tr>
-<tr><td>#3</td><td><strong>미스터 X (타이런트)</strong> — 8/10</td></tr>
-<tr><td>#4</td><td><strong>타이탄 스피너</strong> — 7.5/10</td></tr>
+<tr><td>#3</td><td><strong>미스터 X (타이런트)</strong> . 8/10</td></tr>
+<tr><td>#4</td><td><strong>타이탄 스피너</strong> , 7.5/10</td></tr>
 <tr><td>#5</td><td><strong>플랜트 43</strong> — 6.5/10</td></tr>
-<tr><td>#6</td><td><strong>청크 #2 (다락방)</strong> — 5.5/10</td></tr>
-<tr><td>#7</td><td><strong>청크 #1 (동 윙)</strong> — 4.5/10</td></tr>
+<tr><td>#6</td><td><strong>청크 #2 (다락방)</strong> . 5.5/10</td></tr>
+<tr><td>#7</td><td><strong>청크 #1 (동 윙)</strong> , 4.5/10</td></tr>
 <tr><td>#8</td><td><strong>더 셰프</strong> — 2.5/10</td></tr>
 </table></div>
 
@@ -328,8 +329,8 @@ h1 {
 <div class="toc-title">목차</div>
 <ul>
 <li><a href="#how">랭킹 기준</a></li>
-<li><a href="#s">S 티어 — 잔혹한 전투</a></li>
-<li><a href="#a">A 티어 — 도전적인 전투</a></li>
+<li><a href="#s">S 티어 ; 잔혹한 전투</a></li>
+<li><a href="#a">A 티어 , 도전적인 전투</a></li>
 <li><a href="#b">B 티어 — 관리 가능한 전투</a></li>
 <li><a href="#order">캠페인 진행 순서</a></li>
 <li><a href="#prep">전투 전 체크리스트</a></li>
@@ -339,11 +340,11 @@ h1 {
 <h2 id="how">랭킹 기준</h2>
 <p>각 보스는 다섯 가지 요소로 평가됩니다:</p>
 <ul class="normal">
-<li><strong>데미지 출력</strong> — 공격이 얼마나 강한지</li>
-<li><strong>공격 패턴 복잡도</strong> — 몇 가지 동작이 있고 얼마나 읽기 쉬운지</li>
+<li><strong>데미지 출력</strong> ; 공격이 얼마나 강한지</li>
+<li><strong>공격 패턴 복잡도</strong> . 몇 가지 동작이 있고 얼마나 읽기 쉬운지</li>
 <li><strong>패리 난이도</strong> — 패리 윈도우가 얼마나 빡빡한지</li>
-<li><strong>자원 소모</strong> — 탄약/회복 아이템을 얼마나 소비하는지</li>
-<li><strong>인새니티 스케일링</strong> — 최고 난이도에서 얼마나 가혹해지는지</li>
+<li><strong>자원 소모</strong> ; 탄약/회복 아이템을 얼마나 소비하는지</li>
+<li><strong>인새니티 스케일링</strong> , 최고 난이도에서 얼마나 가혹해지는지</li>
 </ul>
 <p>목록은 가장 어려움(#1)부터 가장 쉬움(#8)까지. 순서가 중요합니다: 무엇이 올지 알면 올바른 전투에 자원을 아낄 수 있습니다.</p>
 
@@ -354,17 +355,17 @@ h1 {
 <p><em>CANON ENDING · 2-PHASE · LEON</em></p>
 
 <h3>#2 더 커맨더 (HUNK 타입) // ARK 복도 ★★★★★</h3>
-<p>RE4의 크라우저처럼 칼싸움. 빠른 공격에 읽기 쉬운 텔레그래프. 게임에서 가장 기술 집약적인 전투. 보상: <strong>Mortal Edge Hatchet</strong> — 빅터에 필수.</p>
+<p>RE4의 크라우저처럼 칼싸움. 빠른 공격에 읽기 쉬운 텔레그래프. 게임에서 가장 기술 집약적인 전투. 보상: <strong>Mortal Edge Hatchet</strong> , 빅터에 필수.</p>
 <p><em>PARRY-FOCUSED · LEON</em></p>
 
-<h3>#3 미스터 X — 슈퍼 타이런트 // RPD 외부 ★★★★★</h3>
+<h3>#3 미스터 X . 슈퍼 타이런트 // RPD 외부 ★★★★★</h3>
 <p>차 던지기와 도약 공격을 가진 상징적 보스. <strong>심장을 노리세요</strong> — 몸통 사격은 거의 데미지가 없습니다. 추격 시퀀스 먼저의 2 페이즈.</p>
 <p><em>CHASE+FIGHT · LEON · HEART WEAKPOINT</em></p>
 
-<h2 id="a">A 티어 — 도전적인 전투</h2>
+<h2 id="a">A 티어 . 도전적인 전투</h2>
 
 <h3>#4 타이탄 스피너 // 라쿤 시티 광장 ★★★★★</h3>
-<p>거대한 회전 바이오웨폰. 회전 공격은 <strong>패리 불가</strong> — 엄폐물을 사용해야 합니다. 버스트 데미지가 일시적 스턴 윈도우를 트리거. 스턴용 레퀴엠 라운드를 아껴두세요.</p>
+<p>거대한 회전 바이오웨폰. 회전 공격은 <strong>패리 불가</strong> , 엄폐물을 사용해야 합니다. 버스트 데미지가 일시적 스턴 윈도우를 트리거. 스턴용 레퀴엠 라운드를 아껴두세요.</p>
 <p><em>COVER-BASED · LEON</em></p>
 
 <h3>#5 플랜트 43 // ARK 입구 ★★★★★</h3>
@@ -382,19 +383,19 @@ h1 {
 <p><em>OPTIONAL · GRACE · CHARM REWARD</em></p>
 
 <h3>#8 더 셰프 // 서 윙 주방 ★★★★★</h3>
-<p>게임에서 가장 쉬운 "보스". 선택 조우 — 무료 보급을 위한 팬트리 키 드롭. <strong>헤모리틱 인젝터 한 개로 즉사</strong>. 스피드런에서는 쉽게 건너뜁니다.</p>
+<p>게임에서 가장 쉬운 "보스". 선택 조우 . 무료 보급을 위한 팬트리 키 드롭. <strong>헤모리틱 인젝터 한 개로 즉사</strong>. 스피드런에서는 쉽게 건너뜁니다.</p>
 <p><em>OPTIONAL · GRACE/LEON</em></p>
 
 <h2 id="order">캠페인 진행 순서</h2>
 <p>스토리 계획을 위해, 보스를 만나는 순서:</p>
 <ol>
-<li><strong>더 셰프</strong> (케어 센터 주방) — 선택, 매우 초기</li>
+<li><strong>더 셰프</strong> (케어 센터 주방) . 선택, 매우 초기</li>
 <li><strong>청크 #1</strong> (동 윙) — 선택, Eye Spy 부적용 권장</li>
-<li><strong>청크 #2</strong> (케어 센터 다락방) — 필수, 중간 게임</li>
-<li><strong>미스터 X / 슈퍼 타이런트</strong> (RPD 외부) — 필수, 케어 센터 이후</li>
+<li><strong>청크 #2</strong> (케어 센터 다락방) , 필수, 중간 게임</li>
+<li><strong>미스터 X / 슈퍼 타이런트</strong> (RPD 외부) . 필수, 케어 센터 이후</li>
 <li><strong>타이탄 스피너</strong> (라쿤 시티 광장) — 필수, 라쿤 시티 중간</li>
-<li><strong>플랜트 43</strong> (ARK 입구) — 필수, ARK 초기</li>
-<li><strong>더 커맨더</strong> (ARK 복도) — 필수, ARK 중간</li>
+<li><strong>플랜트 43</strong> (ARK 입구) ; 필수, ARK 초기</li>
+<li><strong>더 커맨더</strong> (ARK 복도) ; 필수, ARK 중간</li>
 <li><strong>빅터 기드온</strong> (ARK 최종 챔버) — 최종 보스</li>
 </ol>
 
@@ -411,7 +412,7 @@ h1 {
 
 <div class="cta">
 <div class="cta-title">관련 공략</div>
-  <a href="re9-best-bosses-ranked-tier-list.html">최고 보스 랭킹 (티어 리스트) (영어/한국어)</a>
+ <a href="re9-best-bosses-ranked-tier-list.html">최고 보스 랭킹 (티어 리스트) (영어/한국어)</a>
 <a href="how-to-beat-victor-gideon.html">빅터 기드온 (최종)</a>
 <a href="how-to-beat-mr-x-super-tyrant.html">미스터 X / 슈퍼 타이런트</a>
 <a href="re9-boss-loadout-calculator.html">무기 구성 계산기</a>
@@ -445,82 +446,82 @@ h1 {
 <li><strong>한국 RE 인기 순위:</strong> 1위 RE4 Remake, 2위 RE2 Remake, 3위 RE Village, 4위 RE9</li>
 </ul>
 
-<p style="margin:10px 0 0;color:#b0a09a;font-size:12px;font-style:italic">23년 RE 시리즈 팬 Jachin (서울)이 PS5/Steam에서 6회 플레이 후 작성. v1.02 + DLC 검증.</p>
+<p style="margin:10px 0 0;color:#b0a09a;font-size:12px;font-style:italic">23년 RE 시리즈 팬 Jachin (서울)이 PS5/Steam에서 6회 플레이 후 작성. v1.02 검증.</p>
 </aside>
 
 <script>
-/* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
+/* Phase 120: Defensive nav guarantee ; runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler , force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body>

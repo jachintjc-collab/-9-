@@ -48,71 +48,72 @@ footer{margin-top:50px;padding-top:20px;border-top:0.5px solid rgba(192,57,43,0.
 <div class="wrap">
 <h1>Charm Loadout Optimizer</h1>
 <p class="lead">Tell us your priorities (damage, survival, stealth, etc.) + encounter type; we'll recommend the optimal 4-charm loadout from 18 available.</p>
-<div class="fresh">📅 <strong>2026-06-13</strong> · Verified v1.02 + DLC · Runs entirely in your browser (no data sent)</div>
+<aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>The Wrenwood Wraith is the most underrated boss in the game. People skip it on speedrun routes because they don't get it.</aside>
+
 
 <div class="tool">
 <h2>Optimize your charm loadout</h2>
 <p style="font-size:13px;color:#b0a09a;margin:0 0 14px">Tell us your priorities; we'll recommend a charm combo from 18 available. Equip slots = 4.</p>
 <label>Goal 1:
-  <select id="g1"><option>Maximum Damage</option><option>Survival</option><option>Stealth</option><option>Resource Saving</option><option>Speedrun Speed</option><option>Crit Focus</option></select>
+ <select id="g1"><option>Maximum Damage</option><option>Survival</option><option>Stealth</option><option>Resource Saving</option><option>Speedrun Speed</option><option>Crit Focus</option></select>
 </label>
 <label>Goal 2:
-  <select id="g2"><option>Survival</option><option>Maximum Damage</option><option>Stealth</option><option>Resource Saving</option><option>Speedrun Speed</option><option>Crit Focus</option></select>
+ <select id="g2"><option>Survival</option><option>Maximum Damage</option><option>Stealth</option><option>Resource Saving</option><option>Speedrun Speed</option><option>Crit Focus</option></select>
 </label>
 <label>Encounter type:
-  <select id="enc"><option>Boss fights</option><option>Crowd / mob</option><option>Stealth segments</option><option>Mixed</option></select>
+ <select id="enc"><option>Boss fights</option><option>Crowd / mob</option><option>Stealth segments</option><option>Mixed</option></select>
 </label>
 <div style="margin:18px 0"><button id="opt" type="button">⚙️ Optimize</button></div>
 <div class="result" id="out" style="display:none"></div>
 </div>
 <script>
 var CHARMS={
-  "Iron Skin":{Survival:5,Resource:1,Damage:0,Stealth:0,Speed:0,Crit:0},
-  "Marksman's Eye":{Damage:4,Crit:5,Resource:0,Stealth:0,Speed:0,Survival:0},
-  "Crafter's Touch":{Resource:5,Damage:1,Stealth:0,Speed:0,Survival:1,Crit:0},
-  "Phoenix Down":{Survival:5,Damage:0,Stealth:0,Speed:0,Resource:0,Crit:0},
-  "Predator":{Stealth:4,Damage:3,Speed:1,Crit:2,Survival:0,Resource:0},
-  "Magnetic Hand":{Resource:4,Speed:2,Damage:0,Stealth:0,Survival:0,Crit:0},
-  "Whisper":{Stealth:5,Damage:0,Speed:1,Resource:0,Survival:0,Crit:0},
-  "Lucky Star":{Resource:3,Crit:2,Damage:1,Stealth:1,Speed:0,Survival:1},
-  "Infinite Magnum":{Damage:5,Crit:3,Resource:5,Stealth:0,Speed:0,Survival:0},
-  "Bloodhound":{Stealth:2,Speed:2,Resource:3,Damage:1,Crit:0,Survival:0},
-  "Survivor's Will":{Survival:4,Damage:1,Stealth:0,Speed:0,Resource:1,Crit:0},
-  "Quickstep":{Speed:5,Survival:2,Stealth:1,Damage:1,Resource:0,Crit:0},
-  "Knife Edge":{Damage:3,Crit:4,Stealth:1,Speed:1,Survival:0,Resource:0},
-  "Ammo Hoarder":{Resource:5,Damage:0,Stealth:0,Speed:0,Survival:1,Crit:0},
-  "Iron Will":{Survival:3,Damage:2,Stealth:0,Speed:0,Resource:1,Crit:0},
-  "Eye Spy":{Stealth:3,Crit:2,Speed:0,Damage:1,Survival:0,Resource:0},
-  "Vengeance":{Damage:4,Crit:3,Stealth:0,Speed:1,Survival:0,Resource:0},
-  "Endurance":{Survival:4,Speed:2,Resource:0,Damage:0,Stealth:0,Crit:0}
+ "Iron Skin":{Survival:5,Resource:1,Damage:0,Stealth:0,Speed:0,Crit:0},
+ "Marksman's Eye":{Damage:4,Crit:5,Resource:0,Stealth:0,Speed:0,Survival:0},
+ "Crafter's Touch":{Resource:5,Damage:1,Stealth:0,Speed:0,Survival:1,Crit:0},
+ "Phoenix Down":{Survival:5,Damage:0,Stealth:0,Speed:0,Resource:0,Crit:0},
+ "Predator":{Stealth:4,Damage:3,Speed:1,Crit:2,Survival:0,Resource:0},
+ "Magnetic Hand":{Resource:4,Speed:2,Damage:0,Stealth:0,Survival:0,Crit:0},
+ "Whisper":{Stealth:5,Damage:0,Speed:1,Resource:0,Survival:0,Crit:0},
+ "Lucky Star":{Resource:3,Crit:2,Damage:1,Stealth:1,Speed:0,Survival:1},
+ "Infinite Magnum":{Damage:5,Crit:3,Resource:5,Stealth:0,Speed:0,Survival:0},
+ "Bloodhound":{Stealth:2,Speed:2,Resource:3,Damage:1,Crit:0,Survival:0},
+ "Survivor's Will":{Survival:4,Damage:1,Stealth:0,Speed:0,Resource:1,Crit:0},
+ "Quickstep":{Speed:5,Survival:2,Stealth:1,Damage:1,Resource:0,Crit:0},
+ "Knife Edge":{Damage:3,Crit:4,Stealth:1,Speed:1,Survival:0,Resource:0},
+ "Ammo Hoarder":{Resource:5,Damage:0,Stealth:0,Speed:0,Survival:1,Crit:0},
+ "Iron Will":{Survival:3,Damage:2,Stealth:0,Speed:0,Resource:1,Crit:0},
+ "Eye Spy":{Stealth:3,Crit:2,Speed:0,Damage:1,Survival:0,Resource:0},
+ "Vengeance":{Damage:4,Crit:3,Stealth:0,Speed:1,Survival:0,Resource:0},
+ "Endurance":{Survival:4,Speed:2,Resource:0,Damage:0,Stealth:0,Crit:0}
 };
 var GOAL2KEY={"Maximum Damage":"Damage","Survival":"Survival","Stealth":"Stealth","Resource Saving":"Resource","Speedrun Speed":"Speed","Crit Focus":"Crit"};
 function optimize(){
-  var g1=GOAL2KEY[document.getElementById('g1').value];
-  var g2=GOAL2KEY[document.getElementById('g2').value];
-  var enc=document.getElementById('enc').value;
-  // Score each charm: g1*2 + g2*1 + encounter bonus
-  var scored=Object.keys(CHARMS).map(function(name){
-    var c=CHARMS[name];
-    var s=c[g1]*2 + c[g2];
-    if(enc==='Boss fights') s+=c.Damage+c.Crit;
-    if(enc==='Crowd / mob') s+=c.Survival+c.Speed;
-    if(enc==='Stealth segments') s+=c.Stealth*2;
-    return {name:name,score:s,detail:c};
-  });
-  scored.sort(function(a,b){return b.score-a.score;});
-  var top4=scored.slice(0,4);
-  var out=document.getElementById('out');
-  out.style.display='block';
-  out.innerHTML='<h3>Recommended 4-charm loadout</h3>'+
-    top4.map(function(x,i){
-      return '<div class="result-item">'+
-        '<strong>Slot '+(i+1)+': '+x.name+'</strong> '+
-        '<span style="color:#706056;font-size:11px;font-family:monospace">(score '+x.score+')</span>'+
-        '<br><span style="color:#b0a09a;font-size:12px">Damage '+x.detail.Damage+'/5 · Survival '+x.detail.Survival+'/5 · Stealth '+x.detail.Stealth+'/5 · Speed '+x.detail.Speed+'/5</span>'+
-        '</div>';
-    }).join('')+
-    '<div class="result-item" style="margin-top:12px"><em style="color:#ba7517">Adjust goals + encounter type and re-run to compare loadouts.</em></div>';
+ var g1=GOAL2KEY[document.getElementById('g1').value];
+ var g2=GOAL2KEY[document.getElementById('g2').value];
+ var enc=document.getElementById('enc').value;
+ // Score each charm: g1*2 + g2*1 + encounter bonus
+ var scored=Object.keys(CHARMS).map(function(name){
+ var c=CHARMS[name];
+ var s=c[g1]*2 + c[g2];
+ if(enc==='Boss fights') s+=c.Damage+c.Crit;
+ if(enc==='Crowd / mob') s+=c.Survival+c.Speed;
+ if(enc==='Stealth segments') s+=c.Stealth*2;
+ return {name:name,score:s,detail:c};
+ });
+ scored.sort(function(a,b){return b.score-a.score;});
+ var top4=scored.slice(0,4);
+ var out=document.getElementById('out');
+ out.style.display='block';
+ out.innerHTML='<h3>Recommended 4-charm loadout</h3>'+
+ top4.map(function(x,i){
+ return '<div class="result-item">'+
+ '<strong>Slot '+(i+1)+': '+x.name+'</strong> '+
+ '<span style="color:#706056;font-size:11px;font-family:monospace">(score '+x.score+')</span>'+
+ '<br><span style="color:#b0a09a;font-size:12px">Damage '+x.detail.Damage+'/5 · Survival '+x.detail.Survival+'/5 · Stealth '+x.detail.Stealth+'/5 · Speed '+x.detail.Speed+'/5</span>'+
+ '</div>';
+ }).join('')+
+ '<div class="result-item" style="margin-top:12px"><em style="color:#ba7517">Adjust goals + encounter type and re-run to compare loadouts.</em></div>';
 }
 document.getElementById('opt').addEventListener('click',optimize);
 </script>
@@ -121,76 +122,76 @@ document.getElementById('opt').addEventListener('click',optimize);
 </div><script>
 /* Phase 120: Defensive nav guarantee — runs at DOM ready, ensures EN/KO nav works */
 (function(){
-  function fix(){
-    var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
-    if (!slug || slug === 'ko/' || slug === '') slug = '';
+ function fix(){
+ var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
+ if (!slug || slug === 'ko/' || slug === '') slug = '';
 
-    document.querySelectorAll('a').forEach(function(a){
-      var txt = (a.textContent || '').trim();
-      if (txt !== 'EN' && txt !== '한국어') return;
-      // Compute correct target
-      var target;
-      if (txt === 'EN') {
-        target = slug ? '/' + slug : '/';
-      } else {
-        target = slug ? '/ko/' + slug : '/ko/';
-      }
-      // Set proper href (overwrites any broken attribute)
-      a.setAttribute('href', target);
-      // Defensive click handler — force-navigate if browser didn't
-      a.addEventListener('click', function(e){
-        var t = target;
-        setTimeout(function(){
-          if (location.pathname !== new URL(t, location.href).pathname) {
-            location.href = t;
-          }
-        }, 50);
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fix);
-  } else {
-    fix();
-  }
+ document.querySelectorAll('a').forEach(function(a){
+ var txt = (a.textContent || '').trim();
+ if (txt !== 'EN' && txt !== '한국어') return;
+ // Compute correct target
+ var target;
+ if (txt === 'EN') {
+ target = slug ? '/' + slug: '/';
+ } else {
+ target = slug ? '/ko/' + slug: '/ko/';
+ }
+ // Set proper href (overwrites any broken attribute)
+ a.setAttribute('href', target);
+ // Defensive click handler — force-navigate if browser didn't
+ a.addEventListener('click', function(e){
+ var t = target;
+ setTimeout(function(){
+ if (location.pathname !== new URL(t, location.href).pathname) {
+ location.href = t;
+ }
+ }, 50);
+ });
+ });
+ }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', fix);
+ } else {
+ fix();
+ }
 })();
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
 (function(){
-  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
-  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
-  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
-  var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
+ var pathIsJa = location.pathname.indexOf('/ja/') === 0;
+ var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
+ var contentLang = (document.documentElement.lang || '').toLowerCase();
 
-  var mismatch = false;
-  if (pathIsKo && contentLang !== 'ko') mismatch = true;
-  else if (pathIsJa && contentLang !== 'ja') mismatch = true;
-  else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
-  else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ var mismatch = false;
+ if (pathIsKo && contentLang !== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang !== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
+ else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
 
-  if (mismatch) {
-    console.error('[Phase 123] Path/content language mismatch detected!');
-    console.error('  URL path: ' + location.pathname);
-    console.error('  Content lang: ' + contentLang);
-    console.error('  This indicates a deployment file mix-up. Auto-correcting...');
+ if (mismatch) {
+ console.error('[Phase 123] Path/content language mismatch detected!');
+ console.error(' URL path: ' + location.pathname);
+ console.error(' Content lang: ' + contentLang);
+ console.error(' This indicates a deployment file mix-up. Auto-correcting...');
 
-    // Compute the URL that matches the content's actual language
-    var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
-    var correctPath;
-    if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug : '/ko/';
-    else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug : '/ja/';
-    else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug : '/zh-CN/';
-    else correctPath = slug ? '/' + slug : '/';
+ // Compute the URL that matches the content's actual language
+ var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
+ var correctPath;
+ if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug ? '/' + slug: '/';
 
-    // Show a non-blocking alert and redirect
-    var banner = document.createElement('div');
-    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(function(){ location.href = correctPath; }, 3000);
-  }
+ // Show a non-blocking alert and redirect
+ var banner = document.createElement('div');
+ banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
+ banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
+ document.body.insertBefore(banner, document.body.firstChild);
+ setTimeout(function(){ location.href = correctPath; }, 3000);
+ }
 })();
 </script>
 </body></html>
