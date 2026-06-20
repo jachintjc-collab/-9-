@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<!-- Phase 58k: Core Web Vitals ; Connection hints -->
+<!-- Phase 58k: Core Web Vitals; Connection hints -->
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.clarity.ms">
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
@@ -37,7 +37,7 @@
 <meta name="theme-color" content="#241410" />
 <meta name="msapplication-TileColor" content="#241410" />
 <!-- Open Graph + Twitter Card -->
-<meta property="og:title" content="RE9 Difficulty Comparison , Standard vs Hardcore vs Insanity (Full Tech Breakdown)" />
+<meta property="og:title" content="RE9 Difficulty Comparison, Standard vs Hardcore vs Insanity (Full Tech Breakdown)" />
 <meta property="og:description" content="Complete RE9 difficulty comparison — exact HP/damage multipliers for Casual/Standard/Hardcore/Insanity, Insanity-only boss attack patterns, save-limit math, completion rewards, and which difficulty to play first." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.re9guide.it.com/re9-difficulty-comparison-which-to-play.html" />
@@ -48,68 +48,25 @@
 <meta name="twitter:image" content="https://www.re9guide.it.com/og-image.png" />
 <meta property="og:site_name" content="re9guide.it.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="RE9 Difficulty Comparison . Standard vs Hardcore vs Insanity (Full Tech Breakdown)" />
-<meta name="twitter:description" content="Complete RE9 difficulty comparison , exact HP/damage multipliers for Casual/Standard/Hardcore/Insanity, Insanity-only boss attack patterns, save-limit math, completion rewards, and which difficulty to play first." />
+<meta name="twitter:title" content="RE9 Difficulty Comparison. Standard vs Hardcore vs Insanity (Full Tech Breakdown)" />
+<meta name="twitter:description" content="Complete RE9 difficulty comparison, exact HP/damage multipliers for Casual/Standard/Hardcore/Insanity, Insanity-only boss attack patterns, save-limit math, completion rewards, and which difficulty to play first." />
 <title>RE9 Difficulty Comparison — Standard vs Hardcore vs Insanity (Full Tech Breakdown)</title>
-<meta name="description" content="Complete RE9 difficulty comparison ; exact HP/damage multipliers for Casual/Standard/Hardcore/Insanity, Insanity-only boss attack patterns, save-limit math, completion rewards, and which difficulty to play first." />
+<meta name="description" content="Complete RE9 difficulty comparison; exact HP/damage multipliers for Casual/Standard/Hardcore/Insanity, Insanity-only boss attack patterns, save-limit math, completion rewards, and which difficulty to play first." />
 <meta name="keywords" content="RE9 difficulty, RE9 which difficulty, RE9 Insanity worth it, RE9 Hardcore vs Insanity, RE9 difficulty comparison, RE9 difficulty multipliers, RE9 easy mode" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--silver:#888780;--bronze:#8b5e2a;}
-body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
-.container{max-width:780px;margin:0 auto;padding:0 18px;}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
-.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
-.logo span{color:var(--red);}
-.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
-.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}.container{max-width:780px;margin:0 auto;padding:0 18px;}.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}.logo{font-size:15px;display:flex;align-items:center;gap:8px;}.logo span{color:var(--red);}.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
 h1{font-size:28px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
 h2{font-size:20px;font-weight:normal;color:var(--text);margin:32px 0 12px;border-top:0.5px solid var(--border);padding-top:24px;}
 h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
-p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
-.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
-.meta span{color:var(--red);}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}.meta span{color:var(--red);}
 strong{color:var(--text);font-weight:normal;}
-em{color:var(--gold);font-style:normal;}
-.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
-.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
-.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
-.toc ul{list-style:none;padding:0;}
-.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
-.toc li::before{content:"› ";color:var(--red);}
-.toc a{color:var(--text2);text-decoration:none;}
-.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
+em{color:var(--gold);font-style:normal;}.lead{font-size:16px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}.toc ul{list-style:none;padding:0;}.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;font-family:monospace;color:var(--text2);line-height:1.7;}
 ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
 ul.normal li{padding:3px 0;font-size:15px;}
 
-/* TIER */
-.tier-row{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:18px 20px;margin:16px 0;}
-.tier-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
-.tier-letter{font-size:28px;font-weight:bold;font-family:monospace;width:50px;height:50px;display:flex;align-items:center;justify-content:center;border-radius:6px;flex-shrink:0;}
-.tier-S{background:rgba(192,57,43,0.15);color:var(--red);border:1px solid var(--red);}
-.tier-A{background:rgba(186,117,23,0.15);color:var(--gold);border:1px solid rgba(186,117,23,0.5);}
-.tier-B{background:rgba(105,168,224,0.1);color:var(--blue);border:1px solid rgba(105,168,224,0.4);}
-.tier-C{background:rgba(136,135,128,0.12);color:var(--silver);border:1px solid rgba(136,135,128,0.4);}
-.tier-D{background:rgba(139,94,42,0.12);color:var(--bronze);border:1px solid rgba(139,94,42,0.4);}
-.tier-name{font-size:18px;color:var(--text);}
-.tier-desc{font-size:12px;font-family:monospace;color:var(--text3);margin-top:2px;}
-
-.weapon-item{padding:12px 0;border-bottom:0.5px dashed var(--border2);}
-.weapon-item:last-child{border-bottom:none;}
-.weapon-name{font-size:15px;color:var(--text);margin-bottom:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
-.char-tag{font-size:9px;font-family:monospace;padding:2px 6px;border-radius:2px;letter-spacing:0.04em;}
-.char-grace{background:rgba(186,117,23,0.12);color:var(--gold);border:0.5px solid rgba(186,117,23,0.3);}
-.char-leon{background:rgba(55,138,221,0.1);color:var(--blue);border:0.5px solid rgba(55,138,221,0.2);}
-.char-both{background:rgba(255,255,255,0.05);color:var(--text2);border:0.5px solid var(--border2);}
-.weapon-desc{font-size:13px;font-family:monospace;color:var(--text2);line-height:1.7;}
-.weapon-desc strong{color:var(--text);}
-.weapon-meta{font-size:11px;font-family:monospace;color:var(--text3);margin-top:5px;}
-
-.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
-.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
-.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
-.cta a:hover{background:rgba(192,57,43,0.1);}
-.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+/* TIER */.tier-row{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:18px 20px;margin:16px 0;}.tier-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}.tier-letter{font-size:28px;font-weight:bold;font-family:monospace;width:50px;height:50px;display:flex;align-items:center;justify-content:center;border-radius:6px;flex-shrink:0;}.tier-S{background:rgba(192,57,43,0.15);color:var(--red);border:1px solid var(--red);}.tier-A{background:rgba(186,117,23,0.15);color:var(--gold);border:1px solid rgba(186,117,23,0.5);}.tier-B{background:rgba(105,168,224,0.1);color:var(--blue);border:1px solid rgba(105,168,224,0.4);}.tier-C{background:rgba(136,135,128,0.12);color:var(--silver);border:1px solid rgba(136,135,128,0.4);}.tier-D{background:rgba(139,94,42,0.12);color:var(--bronze);border:1px solid rgba(139,94,42,0.4);}.tier-name{font-size:18px;color:var(--text);}.tier-desc{font-size:12px;font-family:monospace;color:var(--text3);margin-top:2px;}.weapon-item{padding:12px 0;border-bottom:0.5px dashed var(--border2);}.weapon-item:last-child{border-bottom:none;}.weapon-name{font-size:15px;color:var(--text);margin-bottom:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}.char-tag{font-size:9px;font-family:monospace;padding:2px 6px;border-radius:2px;letter-spacing:0.04em;}.char-grace{background:rgba(186,117,23,0.12);color:var(--gold);border:0.5px solid rgba(186,117,23,0.3);}.char-leon{background:rgba(55,138,221,0.1);color:var(--blue);border:0.5px solid rgba(55,138,221,0.2);}.char-both{background:rgba(255,255,255,0.05);color:var(--text2);border:0.5px solid var(--border2);}.weapon-desc{font-size:13px;font-family:monospace;color:var(--text2);line-height:1.7;}.weapon-desc strong{color:var(--text);}.weapon-meta{font-size:11px;font-family:monospace;color:var(--text3);margin-top:5px;}.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}.cta a:hover{background:rgba(192,57,43,0.1);}.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
 @media (max-width:600px){h1{font-size:22px;}h2{font-size:17px;}body{font-size:15px;}p{font-size:14px;}.tier-letter{width:42px;height:42px;font-size:22px;}}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
@@ -119,7 +76,7 @@ ul.normal li{padding:3px 0;font-size:15px;}
 {
  "@context": "https://schema.org",
  "@type": "Article",
- "headline": "RE9 Difficulty Comparison ; Standard vs Hardcore vs Insanity (Full Tech Breakdown)",
+ "headline": "RE9 Difficulty Comparison; Standard vs Hardcore vs Insanity (Full Tech Breakdown)",
  "description": "Complete RE9 difficulty comparison — exact HP/damage multipliers for Casual/Standard/Hardcore/Insanity, Insanity-only boss attack patterns, save-limit math, completion rewards, and which difficulty to play first.",
  "image": {
  "@type": "ImageObject",
@@ -130,7 +87,7 @@ ul.normal li{padding:3px 0;font-size:15px;}
  "author": {
  "@type": "Person",
  "@id": "https://www.re9guide.it.com/about.html#person",
- "name": "Jachin",
+ "name": "the writer",
  "url": "https://www.re9guide.it.com/about.html"
  },
  "publisher": {
@@ -180,7 +137,7 @@ ul.normal li{padding:3px 0;font-size:15px;}
 </script>
 
 <style>
-/* Spoiler Filter , when active, blur the page + show reveal CTA */
+/* Spoiler Filter, when active, blur the page + show reveal CTA */
 body.spoilers-hidden.container > h1,
 body.spoilers-hidden.container > p.lead,
 body.spoilers-hidden.container > h2,
@@ -192,7 +149,7 @@ body.spoilers-hidden.container > div:not(.author-byline):not(.editorial-header):
 body.spoilers-hidden.container > section,
 body.spoilers-hidden.container > figure,
 body.spoilers-hidden.container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
-body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex!important; }
 body.spoilers-hidden.container { position:relative; }
 #spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
 #spoiler-filter-btn:hover { background:#c0392b; }
@@ -202,25 +159,25 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
 #spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
 </style>
 <script>
-(function(){
- function isHighSpoilerPage(){
+(function{
+ function isHighSpoilerPage{
  var t=document.body.innerText||"";
  return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
  }
  function applyState(hide){
- if(hide && isHighSpoilerPage()){
+ if(hide && isHighSpoilerPage){
  document.body.classList.add("spoilers-hidden");
  }else{
  document.body.classList.remove("spoilers-hidden");
  }
  }
- function init(){
+ function init{
  var pref=localStorage.getItem("re9guide_spoiler_filter");
  var hide=(pref==="hide");
- if(isHighSpoilerPage()){
+ if(isHighSpoilerPage){
  // Inject overlay reveal button at top of container
  var c=document.querySelector(".container");
- if(c && !document.getElementById("spoiler-overlay-hint")){
+ if(c &&!document.getElementById("spoiler-overlay-hint")){
  var hint=document.createElement("div");
  hint.id="spoiler-overlay-hint";
  hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
@@ -233,25 +190,25 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
  var btn=document.createElement("button");
  btn.id="spoiler-filter-btn";
  btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
- btn.textContent=hide ? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
- btn.onclick=function(){
+ btn.textContent=hide? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
+ btn.onclick=function{
  var nowHide=!document.body.classList.contains("spoilers-hidden");
- if(!isHighSpoilerPage() && nowHide){
- // not a HIGH page ; still save preference but no visual change
+ if(!isHighSpoilerPage && nowHide){
+ // not a HIGH page; still save preference but no visual change
  localStorage.setItem("re9guide_spoiler_filter","hide");
  btn.textContent="Spoilers: HIDDEN";
  alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
  return;
  }
  applyState(nowHide);
- localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide": "show");
- btn.textContent=nowHide ? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
+ localStorage.setItem("re9guide_spoiler_filter", nowHide? "hide": "show");
+ btn.textContent=nowHide? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
  };
  document.body.appendChild(btn);
  }
  var revealOnce=document.getElementById("spoiler-reveal-once");
  if(revealOnce){
- revealOnce.onclick=function(){
+ revealOnce.onclick=function{
  document.body.classList.remove("spoilers-hidden");
  document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
  // Don't change localStorage — this is a one-time reveal
@@ -260,8 +217,8 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
  }
  if(document.readyState==="loading"){
  document.addEventListener("DOMContentLoaded", init);
- }else{ init(); }
-})();
+ }else{ init; }
+});
 </script>
 
 
@@ -274,8 +231,7 @@ html { scroll-behavior: smooth; }
 h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 
 /* Sticky TOC behavior */
-@media (min-width: 1100px) {
-.toc { position: sticky; top: 70px; align-self: flex-start; }
+@media (min-width: 1100px) {.toc { position: sticky; top: 70px; align-self: flex-start; }
  body.has-floating-toc.container { position: relative; }
  body.has-floating-toc.toc {
  position: fixed;
@@ -290,17 +246,16 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  body.has-floating-toc.toc::-webkit-scrollbar { width: 4px; }
  body.has-floating-toc.toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
  body.has-floating-toc.toc a.active {
- color: #c0392b !important;
+ color: #c0392b!important;
  font-weight: bold;
  }
 }
-@media (max-width: 1099px) {
-.toc { position: static !important; }
+@media (max-width: 1099px) {.toc { position: static!important; }
 }
 </style>
 <script>
-(function(){
- function init(){
+(function{
+ function init{
  var toc = document.querySelector('.toc');
  if(!toc) return;
 
@@ -308,7 +263,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  var tocOriginalTop = toc.offsetTop;
  var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
 
- function onScroll(){
+ function onScroll{
  if(window.innerWidth < 1100) {
  document.body.classList.remove('has-floating-toc');
  return;
@@ -322,7 +277,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
  var active = null;
  for(var i = 0; i < sections.length; i++){
- var rect = sections[i].getBoundingClientRect();
+ var rect = sections[i].getBoundingClientRect;
  if(rect.top < 150) active = sections[i];
  else break;
  }
@@ -335,18 +290,18 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  }
  window.addEventListener('scroll', onScroll, {passive: true});
  window.addEventListener('resize', onScroll);
- onScroll();
+ onScroll;
  }
  if(document.readyState === 'loading'){
  document.addEventListener('DOMContentLoaded', init);
- } else { init(); }
-})();
+ } else { init; }
+});
 </script>
 
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
  (function(c,l,a,r,i,t,y){
- c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+ c[a]=c[a]||function{(c[a].q=c[a].q||[]).push(arguments)};
  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
  })(window, document, "clarity", "script", "wu58ps8e48");
@@ -354,39 +309,39 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 <!-- Google Analytics 4 (G-XZJHDN44CF) + smart dev opt-out -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZJHDN44CF"></script>
 <script>
-(function(){
+(function{
  // ---- Dev opt-out detection ----
  var DEV_KEY = 're9guide_dev';
  var GA_ID = 'G-XZJHDN44CF';
- // URL param ?dev=1 sets flag, ?dev=0 clears (one-time activation)
+ // URL param?dev=1 sets flag,?dev=0 clears (one-time activation)
  try {
  var p = new URLSearchParams(window.location.search);
- if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON , analytics disabled for this browser'); }
- if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF , analytics re-enabled'); }
+ if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON, analytics disabled for this browser'); }
+ if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF, analytics re-enabled'); }
  } catch(e){}
  var isDev = false;
  try { isDev = localStorage.getItem(DEV_KEY) === '1'; } catch(e){}
 
  // ---- Always set up gtag function (Clarity integration needs window.gtag) ----
  window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
+ function gtag{dataLayer.push(arguments);}
  window.gtag = gtag;
 
  if (isDev) {
  // Disable GA4 hits for this user
  window['ga-disable-' + GA_ID] = true;
  // Stop Clarity too (script may load before this — call after a tick)
- setTimeout(function(){ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
- console.log('[re9guide] Analytics disabled ; dev mode active. To re-enable: ?dev=0');
+ setTimeout(function{ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
+ console.log('[re9guide] Analytics disabled; dev mode active. To re-enable:?dev=0');
  } else {
- gtag('js', new Date());
+ gtag('js', new Date);
  gtag('config', GA_ID, {
  anonymize_ip: true,
  page_title: document.title,
  page_location: window.location.href
  });
  }
-})();
+});
 </script>
 <style id="vintage-theme">
 /* Phase 84: Warm brown + concentric ring texture (matches reference) */
@@ -410,8 +365,7 @@ body {
  radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
  background-attachment: fixed;
  background-size: 100% 100%;
-}
-.container {
+}.container {
  background: transparent;
  border: none;
  box-shadow: none;
@@ -420,16 +374,13 @@ h1 {
  font-family: Georgia, serif;
  letter-spacing: 0.5px;
  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-.boss-stats table {
+}.boss-stats table {
  background: rgba(48, 22, 16, 0.7);
  border: 0.5px solid rgba(160, 130, 90, 0.18);
-}
-.boss-stats th {
+}.boss-stats th {
  background: rgba(192, 57, 43, 0.22);
  border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
-}
-.lead {
+}.lead {
  font-style: italic;
  color: #d8cfc4;
 }
@@ -445,9 +396,9 @@ h1 {
 <div class="container">
 <div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <a href="all-49-trophies-platinum-guide.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">PLATINUM</a> / <span>DIFFICULTY COMPARISON</span></div>
 
-<h1>RE9 Difficulty Comparison . Standard vs Hardcore vs Insanity</h1>
+<h1>RE9 Difficulty Comparison. Standard vs Hardcore vs Insanity</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
-<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested on the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
+<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>the writer</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested on the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
 <aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>The Charm system is RE9's quiet best feature. It does what NG+ in older RE games failed to.</aside>
 <p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
 </div>
@@ -457,13 +408,13 @@ h1 {
 <!-- Editorial Info Card - Trust signal for guide credibility -->
 
 
-<p class="lead"><strong>The technical breakdown of every RE9 difficulty — Casual, Standard, Hardcore, Insanity.</strong> Exact HP/damage multipliers, enemy attack pattern changes, save-limit math, unlock requirements, and the answer to "which difficulty should I play first?" , built from 50+ hours of comparison runs on PS5 (v1.02+DLC patch).</p>
+<p class="lead"><strong>The technical breakdown of every RE9 difficulty — Casual, Standard, Hardcore, Insanity.</strong> Exact HP/damage multipliers, enemy attack pattern changes, save-limit math, unlock requirements, and the answer to "which difficulty should I play first?", built from 50+ hours of comparison runs on PS5 (v1.02+DLC patch).</p>
 
 <div class="boss-stats">
  <table>
  <tr><td>Total difficulties</td><td><strong>4</strong> (Casual, Standard, Hardcore, Insanity)</td></tr>
  <tr><td>Selectable at game start</td><td><strong>3</strong> (Casual, Standard, Hardcore). Insanity is post-game unlock.</td></tr>
- <tr><td>Hardest difficulty</td><td><strong>Insanity</strong> ; Capcom's most punishing RE difficulty in 20+ years</td></tr>
+ <tr><td>Hardest difficulty</td><td><strong>Insanity</strong>; Capcom's most punishing RE difficulty in 20+ years</td></tr>
  <tr><td>Required for Platinum</td><td><strong>Insanity</strong> (3 trophies are Insanity-exclusive)</td></tr>
  <tr><td>Difficulty can be changed mid-run</td><td>Only downward (e.g., Insanity → Hardcore, but not the reverse)</td></tr>
  <tr><td>Verified on</td><td>v1.02 + post-launch DLC patch</td></tr>
@@ -481,8 +432,8 @@ h1 {
  <li><a href="#rewards">Difficulty completion rewards</a></li>
  <li><a href="#path">Recommended difficulty progression path</a></li>
  <li><a href="#worth">Is Insanity worth it? (Honest verdict)</a></li>
- <li><a href="#troubleshoot">"I'm stuck on difficulty X" , decision tree</a></li>
- <li><a href="#faq">FAQ , RE9 difficulty mechanics</a></li>
+ <li><a href="#troubleshoot">"I'm stuck on difficulty X", decision tree</a></li>
+ <li><a href="#faq">FAQ, RE9 difficulty mechanics</a></li>
  </ul>
 </div>
 
@@ -514,7 +465,7 @@ h1 {
  </table>
 </div>
 
-<p><strong>Critical insight:</strong> The jump from Hardcore → Insanity is much steeper than Standard → Hardcore. Insanity's 2.2x enemy HP + 2.4x damage taken + 0.4x ammo means you're fighting more enemies, with more bullets, while taking more damage . a triple-stack difficulty curve.</p>
+<p><strong>Critical insight:</strong> The jump from Hardcore → Insanity is much steeper than Standard → Hardcore. Insanity's 2.2x enemy HP + 2.4x damage taken + 0.4x ammo means you're fighting more enemies, with more bullets, while taking more damage. a triple-stack difficulty curve.</p>
 
 <h2 id="enemy-changes">Enemy behavior changes per difficulty</h2>
 <p>Stat multipliers are only half the story. RE9's AI also gets more sophisticated on higher difficulties:</p>
@@ -536,15 +487,15 @@ h1 {
 <p>Several bosses gain entirely new attacks on Insanity that don't exist on lower difficulties:</p>
 
 <ul>
- <li><strong><a href="how-to-beat-victor-gideon.html">Victor Gideon</a></strong> ; Insanity adds a Phase 4 "Mortal Edge spam" sequence: 6 consecutive Mortal Edge attacks in 4 seconds. Requires perfect parry timing or instant death. This phase doesn't exist on Hardcore or below.</li>
+ <li><strong><a href="how-to-beat-victor-gideon.html">Victor Gideon</a></strong>; Insanity adds a Phase 4 "Mortal Edge spam" sequence: 6 consecutive Mortal Edge attacks in 4 seconds. Requires perfect parry timing or instant death. This phase doesn't exist on Hardcore or below.</li>
 
- <li><strong><a href="how-to-beat-the-commander.html">The Commander</a></strong> — Insanity adds an instant-execute "command override" attack when player HP drops below 30%. Counters Eye Spy Charm . the charm CAN'T save you from this attack. Only avoidable via dodge-roll cancel.</li>
+ <li><strong><a href="how-to-beat-the-commander.html">The Commander</a></strong> — Insanity adds an instant-execute "command override" attack when player HP drops below 30%. Counters Eye Spy Charm. the charm CAN'T save you from this attack. Only avoidable via dodge-roll cancel.</li>
 
- <li><strong><a href="how-to-beat-titan-spinner.html">Titan Spinner</a></strong> ; Insanity adds an entire 4th phase: after defeating the main body, an exposed core appears with 5x damage attacks. Total fight length doubles.</li>
+ <li><strong><a href="how-to-beat-titan-spinner.html">Titan Spinner</a></strong>; Insanity adds an entire 4th phase: after defeating the main body, an exposed core appears with 5x damage attacks. Total fight length doubles.</li>
 
  <li><strong><a href="how-to-beat-chunk.html">Chunk</a></strong> — Insanity changes the final QTE prompt from 5 seconds to 3 seconds. Misses default to "Destroy Sample" (same as lower difficulties), but the time pressure means many players accidentally fail the prompt entirely.</li>
 
- <li><strong><a href="how-to-beat-mr-x-super-tyrant.html">Mr. X / Super Tyrant</a></strong> , Insanity makes Mr. X effectively un-stunnable. Even Requiem Revolver headshots only stagger him for 0.3 seconds (vs 2 seconds on Hardcore).</li>
+ <li><strong><a href="how-to-beat-mr-x-super-tyrant.html">Mr. X / Super Tyrant</a></strong>, Insanity makes Mr. X effectively un-stunnable. Even Requiem Revolver headshots only stagger him for 0.3 seconds (vs 2 seconds on Hardcore).</li>
 </ul>
 
 <h2 id="saves">Save system mechanics &amp; typewriter ribbon math</h2>
@@ -562,7 +513,7 @@ h1 {
 
 <p><strong>The Insanity save strategy:</strong> Save only before bosses and major decision points. Treat each ribbon as gold; never save "just in case." Many Insanity completionists end the campaign with 1-2 ribbons unused because they've trained themselves to push through.</p>
 
-<p><strong>NG+ ribbon carry:</strong> Unused ribbons DO carry to NG+. If you finish Hardcore with 5 unused ribbons, your NG+ Hardcore run starts with 8 (3 base + 5 carryover) , a significant safety buffer.</p>
+<p><strong>NG+ ribbon carry:</strong> Unused ribbons DO carry to NG+. If you finish Hardcore with 5 unused ribbons, your NG+ Hardcore run starts with 8 (3 base + 5 carryover), a significant safety buffer.</p>
 
 <h2 id="rewards">Difficulty completion rewards</h2>
 
@@ -594,13 +545,13 @@ h1 {
 
 <p><strong>For lore enthusiasts:</strong> Highly recommended. Insanity unlocks the full Chunk codex (Marcus Halverson backstory), the Eveline vat appearance, and the 47-name dev thank-you card. See our <a href="chunk-origin-mystery-explained.html">Chunk origin mystery</a> for what you'd miss.</p>
 
-<p><strong>For pure gameplay enjoyment:</strong> Depends. Insanity's boss-fight changes are mechanically interesting ; Victor Gideon's Phase 4 and Titan Spinner's expanded fight are genuinely better designed than their Standard versions. But the constant ammo scarcity can feel grindy.</p>
+<p><strong>For pure gameplay enjoyment:</strong> Depends. Insanity's boss-fight changes are mechanically interesting; Victor Gideon's Phase 4 and Titan Spinner's expanded fight are genuinely better designed than their Standard versions. But the constant ammo scarcity can feel grindy.</p>
 
 <p><strong>The honest "skip Insanity" case:</strong> If you finished Hardcore and felt "I got what I wanted from this game," skipping Insanity is reasonable. You miss 3 trophies and some codex content. The 8-12 hour replay isn't for everyone.</p>
 
 <p><strong>The honest "play Insanity" case:</strong> If you enjoyed Hardcore's tension and want the deepest RE combat experience the franchise has ever offered, Insanity is the franchise's peak technical achievement. The Victor Gideon Phase 4 fight alone is widely cited as the best single boss encounter in RE history.</p>
 
-<h2 id="troubleshoot">"I'm stuck on difficulty X" . decision tree</h2>
+<h2 id="troubleshoot">"I'm stuck on difficulty X". decision tree</h2>
 
 <p><strong>Stuck on Standard's Chunk fight?</strong> → Drop to Casual to finish the campaign. Standard is hard if you skip optional resource gathering. Don't feel bad; ~30% of players downshift here.</p>
 
@@ -612,13 +563,13 @@ h1 {
 
 <p><strong>Stuck on Insanity's ammo scarcity?</strong> → Make crafting your primary income source. Carry 8+ knives for melee finishers (knife kills don't spend ammo and give +1 crafting yield).</p>
 
-<h2 id="faq">FAQ , RE9 difficulty mechanics</h2>
+<h2 id="faq">FAQ, RE9 difficulty mechanics</h2>
 
 <p><strong>Q: Can I change difficulty mid-playthrough?</strong><br>
 A: Only downward. Insanity → Hardcore is allowed at any save point. Going up (Standard → Hardcore) is locked once you start a difficulty.</p>
 
 <p><strong>Q: Does difficulty affect endings?</strong><br>
-A: Mostly no ; all 8 endings are accessible across difficulties EXCEPT: Grace Insanity and Leon Insanity endings require Insanity-difficulty clear. See <a href="re9-all-endings-explained.html">our endings guide</a> for full conditions.</p>
+A: Mostly no; all 8 endings are accessible across difficulties EXCEPT: Grace Insanity and Leon Insanity endings require Insanity-difficulty clear. See <a href="re9-all-endings-explained.html">our endings guide</a> for full conditions.</p>
 
 <p><strong>Q: Do trophies carry across NG+ difficulty changes?</strong><br>
 A: Yes. Earned trophies persist. If you got "Hardcore Complete" on PT1, it's yours even if you replay on Casual.</p>
@@ -644,13 +595,13 @@ A: Yes, but with one caveat: The Commander's Insanity-only "command override" in
  <a href="re9-eye-spy-charm-explained.html">Eye Spy Charm — Insanity essential equipment</a>
  <a href="how-to-unlock-insanity-difficulty.html">How to unlock Insanity difficulty</a>
  <a href="re9-all-endings-explained.html">All 8 endings (which difficulty unlocks what)</a>
- <a href="how-to-beat-victor-gideon.html">Victor Gideon ; Phase 4 Insanity strategy</a>
+ <a href="how-to-beat-victor-gideon.html">Victor Gideon; Phase 4 Insanity strategy</a>
  <a href="all-49-trophies-platinum-guide.html">Platinum trophy guide (Insanity-required trophies)</a>
  <a href="speedrun-guide-sub-4-hours.html">Sub-4-hour speedrun guide</a>
  <a href="index.html">All guides home</a>
 </div></div>
 
-<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? <a href="#" style="color:var(--red);">Let us know</a> , we update tier rankings monthly based on community feedback and balance patches.</p>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Was this guide helpful? <a href="#" style="color:var(--red);">Let us know</a>, we update tier rankings monthly based on community feedback and balance patches.</p>
 
 <!-- Ko-fi support strip (subtle, end-of-article) -->
 <div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
@@ -680,11 +631,11 @@ A: Yes, but with one caveat: The Commander's Insanity-only "command override" in
  </div>
 </div>
 <script>
-function showKoPendingModal(){
+function showKoPendingModal{
  document.getElementById('ko-pending-modal').style.display='flex';
 }
 // Close on backdrop click
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function{
  var modal = document.getElementById('ko-pending-modal');
  if(modal){
  modal.addEventListener('click', function(e){
@@ -702,30 +653,30 @@ document.addEventListener('DOMContentLoaded', function(){
 
 <script src="/cookie-consent.js" defer></script>
 <script>
-/* Phase 120: Defensive nav guarantee ; runs at DOM ready, ensures EN/KO nav works */
-(function(){
- function fix(){
+/* Phase 120: Defensive nav guarantee; runs at DOM ready, ensures EN/KO nav works */
+(function{
+ function fix{
  var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
  if (!slug || slug === 'ko/' || slug === '') slug = '';
 
  document.querySelectorAll('a').forEach(function(a){
- var txt = (a.textContent || '').trim();
- if (txt !== 'EN' && txt !== '한국어') return;
+ var txt = (a.textContent || '').trim;
+ if (txt!== 'EN' && txt!== '한국어') return;
  // Compute correct target
  var target;
  if (txt === 'EN') {
- target = slug ? '/' + slug: '/';
+ target = slug? '/' + slug: '/';
  } else {
- target = slug ? '/ko/' + slug: '/ko/';
+ target = slug? '/ko/' + slug: '/ko/';
  }
  // Set proper href (overwrites any broken attribute)
  a.setAttribute('href', target);
- // Defensive click handler . force-navigate if browser didn't
+ // Defensive click handler. force-navigate if browser didn't
  a.addEventListener('click', function(e){
  var t = target;
- setTimeout(function(){
- if (location.pathname !== new URL(t, location.href).pathname) {
+ setTimeout(function{
+ if (location.pathname!== new URL(t, location.href).pathname) {
  location.href = t;
  }
  }, 50);
@@ -735,23 +686,23 @@ document.addEventListener('DOMContentLoaded', function(){
  if (document.readyState === 'loading') {
  document.addEventListener('DOMContentLoaded', fix);
  } else {
- fix();
+ fix;
  }
-})();
+});
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
-(function(){
+(function{
  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
- var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var contentLang = (document.documentElement.lang || '').toLowerCase;
 
  var mismatch = false;
- if (pathIsKo && contentLang !== 'ko') mismatch = true;
- else if (pathIsJa && contentLang !== 'ja') mismatch = true;
- else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
- else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ if (pathIsKo && contentLang!== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang!== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh')!== 0) mismatch = true;
+ else if (!pathIsKo &&!pathIsJa &&!pathIsZh && contentLang!== 'en' && contentLang!== '') mismatch = true;
 
  if (mismatch) {
  console.error('[Phase 123] Path/content language mismatch detected!');
@@ -762,19 +713,19 @@ document.addEventListener('DOMContentLoaded', function(){
  // Compute the URL that matches the content's actual language
  var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
  var correctPath;
- if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
- else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
- else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
- else correctPath = slug ? '/' + slug: '/';
+ if (contentLang === 'ko') correctPath = slug? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug? '/' + slug: '/';
 
  // Show a non-blocking alert and redirect
  var banner = document.createElement('div');
  banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
  banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
  document.body.insertBefore(banner, document.body.firstChild);
- setTimeout(function(){ location.href = correctPath; }, 3000);
+ setTimeout(function{ location.href = correctPath; }, 3000);
  }
-})();
+});
 </script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<!-- Phase 58k: Core Web Vitals . Connection hints -->
+<!-- Phase 58k: Core Web Vitals. Connection hints -->
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.clarity.ms">
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
@@ -11,8 +11,8 @@
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
 <meta name="audience" content="Korean RE9 players">
-<meta property="article:author" content="Jachin (Seoul-based, 23-year RE fan)">
-<meta property="article:section" content="Resident Evil Requiem (RE9) . Korean Guide">
+<meta property="article:author" content="the writer (Seoul-based, 23-year RE fan)">
+<meta property="article:section" content="Resident Evil Requiem (RE9). Korean Guide">
 <meta name="theme-color" content="#241410">
 <meta name="color-scheme" content="dark">
 <!-- /Phase 58k -->
@@ -45,65 +45,24 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.re9guide.it.com/ko/how-to-beat-victor-gideon.html" />
 <meta property="og:image" content="https://www.re9guide.it.com/infographic-victor-weakness-ko.png" />
-<title>빅터 기드온 공략 (RE9 레퀴엠) ; 최종 보스 가이드 (한국어)</title>
-<meta name="description" content="빅터 기드온 공략 , 레지던트 이블 레퀴엠(RE9)의 최종 보스. 두 페이즈, 인새니티 팁, 무기 구성, 노 데미지 전략. 한국어 공략." />
+<title>빅터 기드온 공략 (RE9 레퀴엠); 최종 보스 가이드 (한국어)</title>
+<meta name="description" content="빅터 기드온 공략, 레지던트 이블 레퀴엠(RE9)의 최종 보스. 두 페이즈, 인새니티 팁, 무기 구성, 노 데미지 전략. 한국어 공략." />
 <meta name="keywords" content="빅터 기드온 공략, RE9 최종 보스, 레지던트 이블 레퀴엠 보스, 인새니티 공략" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;}
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}
-.container{max-width:780px;margin:0 auto;padding:0 18px;}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
-.logo{font-size:15px;}.logo span{color:var(--red);}
-.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
-.lang-switch a{padding:3px 8px;border:0.5px solid var(--border);border-radius:3px;color:var(--text2);text-decoration:none;margin:0 2px;font-family:monospace;font-size:11px;}
-.lang-switch a.active{background:var(--red);color:#fff;border-color:var(--red);}
-.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.7;font-size:16px;}.container{max-width:780px;margin:0 auto;padding:0 18px;}.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}.logo{font-size:15px;}.logo span{color:var(--red);}.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}.lang-switch a{padding:3px 8px;border:0.5px solid var(--border);border-radius:3px;color:var(--text2);text-decoration:none;margin:0 2px;font-family:monospace;font-size:11px;}.lang-switch a.active{background:var(--red);color:#fff;border-color:var(--red);}.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
 h1{font-size:26px;font-weight:normal;color:var(--text);line-height:1.4;margin-bottom:10px;}
 h2{font-size:20px;font-weight:normal;color:var(--text);margin:28px 0 12px;padding-top:22px;border-top:0.5px solid var(--border);}
 h3{font-size:16px;color:var(--red);margin:18px 0 10px;font-family:monospace;letter-spacing:0.05em;}
-p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}
-.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:20px;letter-spacing:0.05em;}
-.meta span{color:var(--red);}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.9;}.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:20px;letter-spacing:0.05em;}.meta span{color:var(--red);}
 strong{color:var(--text);font-weight:bold;}
-em{color:var(--gold);font-style:normal;}
-.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}
-.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;color:var(--text2);line-height:1.5;flex-wrap:wrap;}
-.author-byline.byline-mark{font-size:11px;color:var(--text3);font-family:monospace;letter-spacing:0.08em;}
-.author-byline.byline-name{color:var(--text);}
-.author-byline.byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}
-.author-byline.byline-creds{color:var(--text3);font-size:12px;}
-.editorial-header{background:rgba(186,117,23,0.05);border:0.5px solid rgba(186,117,23,0.3);border-radius:4px;padding:10px 14px;margin:14px 0;font-size:11px;font-family:monospace;color:#b0a09a;line-height:1.7;}
-.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
-.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
-.toc ul{list-style:none;padding:0;}
-.toc li{font-size:14px;color:var(--text2);padding:3px 0;}
-.toc li::before{content:"› ";color:var(--red);}
-.toc a{color:var(--text2);text-decoration:none;}
-.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}
-.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
+em{color:var(--gold);font-style:normal;}.lead{font-size:16px;color:var(--text);margin:18px 0 24px;padding:12px 16px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.8;}.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;color:var(--text2);line-height:1.5;flex-wrap:wrap;}.author-byline.byline-mark{font-size:11px;color:var(--text3);font-family:monospace;letter-spacing:0.08em;}.author-byline.byline-name{color:var(--text);}.author-byline.byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}.author-byline.byline-creds{color:var(--text3);font-size:12px;}.editorial-header{background:rgba(186,117,23,0.05);border:0.5px solid rgba(186,117,23,0.3);border-radius:4px;padding:10px 14px;margin:14px 0;font-size:11px;font-family:monospace;color:#b0a09a;line-height:1.7;}.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}.toc-title{font-size:12px;color:var(--text3);margin-bottom:8px;font-weight:bold;}.toc ul{list-style:none;padding:0;}.toc li{font-size:14px;color:var(--text2);padding:3px 0;}.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}.warn-box{background:rgba(192,57,43,0.07);border-left:2px solid var(--red);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.8;}.warn-box.gold{border-color:var(--gold);background:rgba(186,117,23,0.06);}
 ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
 ul.normal li{padding:3px 0;font-size:15px;}
 ol{margin:10px 0 14px 22px;color:var(--text2);}
 ol li{padding:5px 0;font-size:15px;line-height:1.8;}
-ol li strong{color:var(--text);}
-.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}
-.boss-stats table{width:100%;font-size:14px;}
-.boss-stats td{padding:5px 0;color:var(--text2);}
-.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}
-.boss-stats td strong{color:var(--text);}
-.tip-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:14px 0;}
-.tip-card{background:var(--surface);border-left:2px solid var(--red);padding:10px 14px;border-radius:0 4px 4px 0;}
-.tip-card h4{font-size:11px;font-family:monospace;color:var(--red);margin-bottom:4px;}
-.tip-card p{font-size:13px;color:var(--text2);line-height:1.7;margin:0;}
-.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
-.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
-.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}
-.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
-.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}
-.translation-note strong{color:var(--text);}
-.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}
-.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
+ol li strong{color:var(--text);}.boss-stats{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:14px 0;}.boss-stats table{width:100%;font-size:14px;}.boss-stats td{padding:5px 0;color:var(--text2);}.boss-stats td:first-child{color:var(--text3);width:140px;font-weight:bold;}.boss-stats td strong{color:var(--text);}.tip-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:14px 0;}.tip-card{background:var(--surface);border-left:2px solid var(--red);padding:10px 14px;border-radius:0 4px 4px 0;}.tip-card h4{font-size:11px;font-family:monospace;color:var(--red);margin-bottom:4px;}.tip-card p{font-size:13px;color:var(--text2);line-height:1.7;margin:0;}.section-divider{height:0.5px;background:var(--border);margin:28px 0;}.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}.cta-title{font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:bold;}.cta a{display:inline-block;font-size:13px;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}.translation-note{background:rgba(105,168,224,0.06);border:0.5px solid rgba(105,168,224,0.3);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;padding:10px 14px;margin:18px 0;font-size:12px;color:var(--text2);line-height:1.7;}.translation-note strong{color:var(--text);}.footer{padding:24px 18px;text-align:center;font-size:12px;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;line-height:2;}.footer a{color:var(--text2);text-decoration:none;margin:0 6px;}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
 <!-- Korean Victor Gideon schemas -->
@@ -122,7 +81,7 @@ ol li strong{color:var(--text);}
  "author": {
  "@type": "Person",
  "@id": "https://www.re9guide.it.com/about.html#person",
- "name": "Jachin",
+ "name": "the writer",
  "url": "https://www.re9guide.it.com/about.html"
  },
  "publisher": {
@@ -183,7 +142,7 @@ ol li strong{color:var(--text);}
 </script>
 
 <style>
-/* Spoiler Filter ; when active, blur the page + show reveal CTA */
+/* Spoiler Filter; when active, blur the page + show reveal CTA */
 body.spoilers-hidden.container > h1,
 body.spoilers-hidden.container > p.lead,
 body.spoilers-hidden.container > h2,
@@ -195,7 +154,7 @@ body.spoilers-hidden.container > div:not(.author-byline):not(.editorial-header):
 body.spoilers-hidden.container > section,
 body.spoilers-hidden.container > figure,
 body.spoilers-hidden.container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
-body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex!important; }
 body.spoilers-hidden.container { position:relative; }
 #spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
 #spoiler-filter-btn:hover { background:#c0392b; }
@@ -205,25 +164,25 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
 #spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
 </style>
 <script>
-(function(){
- function isHighSpoilerPage(){
+(function{
+ function isHighSpoilerPage{
  var t=document.body.innerText||"";
  return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
  }
  function applyState(hide){
- if(hide && isHighSpoilerPage()){
+ if(hide && isHighSpoilerPage){
  document.body.classList.add("spoilers-hidden");
  }else{
  document.body.classList.remove("spoilers-hidden");
  }
  }
- function init(){
+ function init{
  var pref=localStorage.getItem("re9guide_spoiler_filter");
  var hide=(pref==="hide");
- if(isHighSpoilerPage()){
+ if(isHighSpoilerPage){
  // Inject overlay reveal button at top of container
  var c=document.querySelector(".container");
- if(c && !document.getElementById("spoiler-overlay-hint")){
+ if(c &&!document.getElementById("spoiler-overlay-hint")){
  var hint=document.createElement("div");
  hint.id="spoiler-overlay-hint";
  hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
@@ -236,25 +195,25 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
  var btn=document.createElement("button");
  btn.id="spoiler-filter-btn";
  btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
- btn.textContent=hide ? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
- btn.onclick=function(){
+ btn.textContent=hide? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
+ btn.onclick=function{
  var nowHide=!document.body.classList.contains("spoilers-hidden");
- if(!isHighSpoilerPage() && nowHide){
- // not a HIGH page , still save preference but no visual change
+ if(!isHighSpoilerPage && nowHide){
+ // not a HIGH page, still save preference but no visual change
  localStorage.setItem("re9guide_spoiler_filter","hide");
  btn.textContent="Spoilers: HIDDEN";
  alert("Spoiler filter activated. HIGH spoiler pages will be hidden when you open them.");
  return;
  }
  applyState(nowHide);
- localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide": "show");
- btn.textContent=nowHide ? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
+ localStorage.setItem("re9guide_spoiler_filter", nowHide? "hide": "show");
+ btn.textContent=nowHide? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
  };
  document.body.appendChild(btn);
  }
  var revealOnce=document.getElementById("spoiler-reveal-once");
  if(revealOnce){
- revealOnce.onclick=function(){
+ revealOnce.onclick=function{
  document.body.classList.remove("spoilers-hidden");
  document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
  // Don't change localStorage — this is a one-time reveal
@@ -263,8 +222,8 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
  }
  if(document.readyState==="loading"){
  document.addEventListener("DOMContentLoaded", init);
- }else{ init(); }
-})();
+ }else{ init; }
+});
 </script>
 
 
@@ -277,8 +236,7 @@ html { scroll-behavior: smooth; }
 h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 
 /* Sticky TOC behavior */
-@media (min-width: 1100px) {
-.toc { position: sticky; top: 70px; align-self: flex-start; }
+@media (min-width: 1100px) {.toc { position: sticky; top: 70px; align-self: flex-start; }
  body.has-floating-toc.container { position: relative; }
  body.has-floating-toc.toc {
  position: fixed;
@@ -293,17 +251,16 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  body.has-floating-toc.toc::-webkit-scrollbar { width: 4px; }
  body.has-floating-toc.toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
  body.has-floating-toc.toc a.active {
- color: #c0392b !important;
+ color: #c0392b!important;
  font-weight: bold;
  }
 }
-@media (max-width: 1099px) {
-.toc { position: static !important; }
+@media (max-width: 1099px) {.toc { position: static!important; }
 }
 </style>
 <script>
-(function(){
- function init(){
+(function{
+ function init{
  var toc = document.querySelector('.toc');
  if(!toc) return;
 
@@ -311,7 +268,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  var tocOriginalTop = toc.offsetTop;
  var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
 
- function onScroll(){
+ function onScroll{
  if(window.innerWidth < 1100) {
  document.body.classList.remove('has-floating-toc');
  return;
@@ -325,7 +282,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
  var active = null;
  for(var i = 0; i < sections.length; i++){
- var rect = sections[i].getBoundingClientRect();
+ var rect = sections[i].getBoundingClientRect;
  if(rect.top < 150) active = sections[i];
  else break;
  }
@@ -338,18 +295,18 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  }
  window.addEventListener('scroll', onScroll, {passive: true});
  window.addEventListener('resize', onScroll);
- onScroll();
+ onScroll;
  }
  if(document.readyState === 'loading'){
  document.addEventListener('DOMContentLoaded', init);
- } else { init(); }
-})();
+ } else { init; }
+});
 </script>
 
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
  (function(c,l,a,r,i,t,y){
- c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+ c[a]=c[a]||function{(c[a].q=c[a].q||[]).push(arguments)};
  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
  })(window, document, "clarity", "script", "wu58ps8e48");
@@ -357,39 +314,39 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 <!-- Google Analytics 4 (G-XZJHDN44CF) + smart dev opt-out -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZJHDN44CF"></script>
 <script>
-(function(){
+(function{
  // ---- Dev opt-out detection ----
  var DEV_KEY = 're9guide_dev';
  var GA_ID = 'G-XZJHDN44CF';
- // URL param ?dev=1 sets flag, ?dev=0 clears (one-time activation)
+ // URL param?dev=1 sets flag,?dev=0 clears (one-time activation)
  try {
  var p = new URLSearchParams(window.location.search);
- if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON ; analytics disabled for this browser'); }
- if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF ; analytics re-enabled'); }
+ if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON; analytics disabled for this browser'); }
+ if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF; analytics re-enabled'); }
  } catch(e){}
  var isDev = false;
  try { isDev = localStorage.getItem(DEV_KEY) === '1'; } catch(e){}
 
  // ---- Always set up gtag function (Clarity integration needs window.gtag) ----
  window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
+ function gtag{dataLayer.push(arguments);}
  window.gtag = gtag;
 
  if (isDev) {
  // Disable GA4 hits for this user
  window['ga-disable-' + GA_ID] = true;
  // Stop Clarity too (script may load before this — call after a tick)
- setTimeout(function(){ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
- console.log('[re9guide] Analytics disabled , dev mode active. To re-enable: ?dev=0');
+ setTimeout(function{ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
+ console.log('[re9guide] Analytics disabled, dev mode active. To re-enable:?dev=0');
  } else {
- gtag('js', new Date());
+ gtag('js', new Date);
  gtag('config', GA_ID, {
  anonymize_ip: true,
  page_title: document.title,
  page_location: window.location.href
  });
  }
-})();
+});
 </script>
 <script type="application/ld+json" data-schema="howto">
 {
@@ -427,7 +384,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  "tip": [
  {
  "@type": "HowToTip",
- "text": "Aim for the head ; body shots stagger less"
+ "text": "Aim for the head; body shots stagger less"
  },
  {
  "@type": "HowToTip",
@@ -528,8 +485,7 @@ body {
  radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
  background-attachment: fixed;
  background-size: 100% 100%;
-}
-.container {
+}.container {
  background: transparent;
  border: none;
  box-shadow: none;
@@ -538,16 +494,13 @@ h1 {
  font-family: Georgia, serif;
  letter-spacing: 0.5px;
  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-.boss-stats table {
+}.boss-stats table {
  background: rgba(48, 22, 16, 0.7);
  border: 0.5px solid rgba(160, 130, 90, 0.18);
-}
-.boss-stats th {
+}.boss-stats th {
  background: rgba(192, 57, 43, 0.22);
  border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
-}
-.lead {
+}.lead {
  font-style: italic;
  color: #d8cfc4;
 }
@@ -568,14 +521,14 @@ h1 {
 <div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">홈</a> / <a href="../bosses-hub.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">보스 (영어)</a> / <span>빅터 기드온</span></div>
 <h1>빅터 기드온 공략 — 레지던트 이블: 레퀴엠 최종 보스 가이드 (RE9)</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
-<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 Jachin이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
+<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">한국어판 작성자 노트:</strong> 이 페이지는 단순한 영어 번역이 아닙니다. 서울 거주 RE 시리즈 23년 팬 the writer이 PS5/Steam에서 RE9을 직접 6회 플레이 (Casual → Insanity → NG+ Insanity)한 후 작성. 한국 RE 커뮤니티에서 통용되는 영어 용어(Mortal Edge, NG+, Insanity 등)는 그대로 유지하면서 한국어 독자에게 적합한 표현으로 구성했습니다.</p>
 <aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>Speedrun routes lie about Insanity-NG+ being clean. The Eveline phase 4 RNG window is brutal.</aside>
 <p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">검증 버전: v1.02 · 마지막 검토: 2026년 5월 30일 · 영어 원본과 비교: 100% 내용 동등 + 한국어 컨텍스트 추가</p>
 </div>
 
 <div class="meta">2026년 5월 14일 게시 · <span>10분 읽기</span> · 난이도: ★★★★ 잔혹 · 스포일러 포함</div>
 <div class="translation-note"><strong>한국어판 안내:</strong> 이 공략은 영어 원본을 한국어로 옮기고 작성자(서울 거주)가 직접 검수했습니다. Mortal Edge, Insanity, NG+ 등 게임 내 영어 표기는 한국 RE 커뮤니티 관행에 따라 그대로 두었습니다.</div>
-<p class="lead">빅터 기드온 박사는 레지던트 이블: 레퀴엠의 진정한 최종 보스이며, 게임 전체에서 가장 어려운 전투입니다. 이 가이드는 두 페이즈, 정확한 공격 패턴, 무기 우선순위, 인새니티 난이도 팁 . 프로 플레이어가 사용하는 노 데미지 전략 포함 , 을 모두 다룹니다.</p>
+<p class="lead">빅터 기드온 박사는 레지던트 이블: 레퀴엠의 진정한 최종 보스이며, 게임 전체에서 가장 어려운 전투입니다. 이 가이드는 두 페이즈, 정확한 공격 패턴, 무기 우선순위, 인새니티 난이도 팁. 프로 플레이어가 사용하는 노 데미지 전략 포함, 을 모두 다룹니다.</p>
 
 <figure style="margin:22px 0;text-align:center;">
 <svg style="max-width:100%;height:auto;display:block;margin:0 auto;border:0.5px solid rgba(192,57,43,0.18);border-radius:6px;background:#241410;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" preserveAspectRatio="xMidYMid meet">
@@ -611,14 +564,14 @@ h1 {
  <!-- Phase 1 Weak point: HEAD -->
  <circle cx="300" cy="265" r="8" fill="#c0392b" stroke="#fff" stroke-width="2"/>
  <line x1="310" y1="270" x2="395" y2="240" stroke="#c0392b" stroke-width="2"/>
- <text x="405" y="240" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="16" font-weight="bold" fill="#c0392b">머리 ; 관대한 패리</text>
+ <text x="405" y="240" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="16" font-weight="bold" fill="#c0392b">머리; 관대한 패리</text>
  <text x="405" y="260" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#b0a09a">Mortal Edge로 패리 후</text>
  <text x="405" y="278" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#b0a09a">즉시 카운터 사격</text>
 
  <!-- Phase 1 Weak point: CHEST -->
  <circle cx="300" cy="350" r="8" fill="#ba7517" stroke="#fff" stroke-width="2"/>
  <line x1="310" y1="350" x2="395" y2="370" stroke="#ba7517" stroke-width="2"/>
- <text x="405" y="370" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="16" font-weight="bold" fill="#ba7517">가슴 ; 주력 데미지</text>
+ <text x="405" y="370" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="16" font-weight="bold" fill="#ba7517">가슴; 주력 데미지</text>
  <text x="405" y="390" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#b0a09a">샷건 / 레퀴엠 리볼버</text>
 
  <!-- Phase 1 bottom note -->
@@ -687,16 +640,16 @@ h1 {
 </div>
 
 <h2 id="overview">보스 개요: 빅터 기드온은 누구인가?</h2>
-<p>빅터 기드온 박사는 로즈 힐 만성 케어 센터의 원장이자, 캠페인 전체에 걸쳐 배후에서 조종해 온 적대자입니다. 레온이 ARK 터미널에서 엘피스를 방출하면 . 그것이 동시에 T-바이러스의 치료제이기도 . 빅터는 인간성을 완전히 포기합니다. 왼팔을 거대한 변이 촉수로 교체하고 ARK 시설 바닥에서 마지막 결전을 펼칩니다.</p>
+<p>빅터 기드온 박사는 로즈 힐 만성 케어 센터의 원장이자, 캠페인 전체에 걸쳐 배후에서 조종해 온 적대자입니다. 레온이 ARK 터미널에서 엘피스를 방출하면. 그것이 동시에 T-바이러스의 치료제이기도. 빅터는 인간성을 완전히 포기합니다. 왼팔을 거대한 변이 촉수로 교체하고 ARK 시설 바닥에서 마지막 결전을 펼칩니다.</p>
 <p>이 보스는 진정한 2단계 최종 보스입니다. 페이즈 1은 촉수 팔을 가진 인간형 빅터와의 통제된 근접전입니다. 페이즈 2는 그를 완전한 네메시스 클론으로 변신시킵니다 — 몸 전체에 빛나는 빨간 농포, 휩쓸어 치는 팔 공격, 긴장감 넘치는 QTE 피니셔.</p>
 
 <div class="boss-stats">
 <table>
-<tr><td>위치</td><td><strong>ARK 시설 , 최종 챔버</strong></td></tr>
+<tr><td>위치</td><td><strong>ARK 시설, 최종 챔버</strong></td></tr>
 <tr><td>플레이 캐릭터</td><td><strong>레온 S. 케네디</strong></td></tr>
 <tr><td>필요 엔딩</td><td><strong>엘피스 방출</strong> (정통 엔딩)</td></tr>
 <tr><td>페이즈</td><td><strong>2</strong> (변이 인간 → 네메시스 형태)</td></tr>
-<tr><td>난이도</td><td><strong>★★★★ 잔혹</strong> , 게임 내 최난이도 보스전</td></tr>
+<tr><td>난이도</td><td><strong>★★★★ 잔혹</strong>, 게임 내 최난이도 보스전</td></tr>
 <tr><td>권장 무기</td><td><strong>모탈 엣지 손도끼, 레퀴엠 리볼버, MSBG 500 샷건</strong></td></tr>
 </table>
 </div>
@@ -713,7 +666,7 @@ h1 {
 </ol>
 
 <div class="warn-box gold">
-⚡ <strong>치트 팁:</strong> 스페셜 콘텐츠 스토어에서 무한 탄약 또는 무한 RPG를 해금했다면, 이 전투는 사소해집니다. RPG는 대부분의 보스 페이즈를 한 방에 제거합니다. 치트는 트로피를 무효화하지 <strong>않습니다</strong> ; 인새니티에서도 안전하게 사용 가능합니다.
+⚡ <strong>치트 팁:</strong> 스페셜 콘텐츠 스토어에서 무한 탄약 또는 무한 RPG를 해금했다면, 이 전투는 사소해집니다. RPG는 대부분의 보스 페이즈를 한 방에 제거합니다. 치트는 트로피를 무효화하지 <strong>않습니다</strong>; 인새니티에서도 안전하게 사용 가능합니다.
 </div>
 
 <h2 id="phase1">페이즈 1: 변이된 인간 형태</h2>
@@ -722,10 +675,10 @@ h1 {
 <h3>// 공격 패턴 개요</h3>
 <p>빅터의 촉수 팔은 이 페이즈에서 4가지 주요 근접 공격을 제공합니다:</p>
 <ul class="normal">
-<li><strong>단일 휘두르기</strong> ; 빠른 수평 공격, 패리 윈도우는 관대함.</li>
+<li><strong>단일 휘두르기</strong>; 빠른 수평 공격, 패리 윈도우는 관대함.</li>
 <li><strong>이중 휘두르기</strong> — 연속 두 번 휘두르기; 둘 다 패리하거나, 첫 번째를 패리하고 두 번째를 회피.</li>
-<li><strong>3연타 콤보</strong> . 가장 큰 데미지. 셋 다 패리하거나 콤보 전체를 굴러서 피하세요.</li>
-<li><strong>찌르기 공격</strong> , 긴 거리를 커버. 마지막 순간에 패리하거나 옆으로 비키세요.</li>
+<li><strong>3연타 콤보</strong>. 가장 큰 데미지. 셋 다 패리하거나 콤보 전체를 굴러서 피하세요.</li>
+<li><strong>찌르기 공격</strong>, 긴 거리를 커버. 마지막 순간에 패리하거나 옆으로 비키세요.</li>
 </ul>
 <p>이 모든 공격은 강하게 텔레그래프됩니다. 와인드업 프레임이 명확하게 보입니다. <strong>모탈 엣지 손도끼</strong>로 패리한 후, 즉시 레퀴엠 리볼버나 샷건의 사격으로 후속타를 넣으세요.</p>
 
@@ -733,8 +686,8 @@ h1 {
 <p>주기적으로 빅터는 아레나 가장자리의 큰 고철 더미 위로 뛰어올라 순수 전기를 충전하기 시작합니다. 정확한 폭발 구역을 나타내는 밝게 빛나는 선이 바닥에 나타납니다.</p>
 <p>이 때 두 가지 선택이 있습니다:</p>
 <ol>
-<li><strong>충전 중 그를 사격</strong> , 결과적인 폭발 위력을 줄이지만, 좋은 탄약 낭비라고 봅니다.</li>
-<li><strong>빛나는 영역에서 스프린트로 빠져나가기</strong> . 권장. 바닥 마커를 보고, 안전한 지점으로 이동하고, 후속 점프-슬램에 대비하세요.</li>
+<li><strong>충전 중 그를 사격</strong>, 결과적인 폭발 위력을 줄이지만, 좋은 탄약 낭비라고 봅니다.</li>
+<li><strong>빛나는 영역에서 스프린트로 빠져나가기</strong>. 권장. 바닥 마커를 보고, 안전한 지점으로 이동하고, 후속 점프-슬램에 대비하세요.</li>
 </ol>
 <p>전기 폭발 후, 빅터는 "슈퍼히어로 포즈"로 착지하고 약 2초간 움직이지 않습니다. <strong>이것이 페이즈 1의 가장 큰 데미지 윈도우입니다.</strong> 회복 중인 그의 머리에 레퀴엠 라운드를 비웁니다.</p>
 
@@ -762,10 +715,10 @@ h1 {
 <h3>// 페이즈 2 공격 패턴</h3>
 <p>이 페이즈에서 빅터는 모탈 엣지 손도끼로 모두 패리할 수 있는 몇 가지 공격만 가지고 있습니다:</p>
 <ul class="normal">
-<li><strong>단일 팔 내려치기</strong> . 좌우로 비키세요.</li>
-<li><strong>교차 이중 내려치기</strong> . 계속 움직이세요, 멈추지 마세요.</li>
+<li><strong>단일 팔 내려치기</strong>. 좌우로 비키세요.</li>
+<li><strong>교차 이중 내려치기</strong>. 계속 움직이세요, 멈추지 마세요.</li>
 <li><strong>오버헤드 양팔 내려치기</strong> — 가장 큰 데미지, 동시에 가장 큰 패리 윈도우.</li>
-<li><strong>빠른 지면 슬램 콤보</strong> ; 그의 하반신 농포를 파괴한 후 발생. 거리를 두고 기다리세요.</li>
+<li><strong>빠른 지면 슬램 콤보</strong>; 그의 하반신 농포를 파괴한 후 발생. 거리를 두고 기다리세요.</li>
 </ul>
 
 <div class="tip-row">
@@ -774,7 +727,7 @@ h1 {
 </div>
 
 <h3>// 그랩 및 QTE 피니셔</h3>
-<p>충분한 농포 웨이브를 파괴하면, 빅터가 팔 중 하나로 <strong>레온을 잡습니다</strong>. 당황하지 마세요 . 이는 의도된 것입니다. 화면에 일련의 버튼 프롬프트가 나타납니다. 표시된 버튼을 탭하세요 (기본: 사각형/X 반복, 다음 삼각형/Y) 탈출.</p>
+<p>충분한 농포 웨이브를 파괴하면, 빅터가 팔 중 하나로 <strong>레온을 잡습니다</strong>. 당황하지 마세요. 이는 의도된 것입니다. 화면에 일련의 버튼 프롬프트가 나타납니다. 표시된 버튼을 탭하세요 (기본: 사각형/X 반복, 다음 삼각형/Y) 탈출.</p>
 <p>QTE를 성공적으로 완료하면 최종 시네마틱 킬 시퀀스가 트리거됩니다. 레온이 빅터의 노출된 코어에 손도끼 피니셔를 가하고, 화면이 검게 변하고, 시설이 무너지며, 공식적으로 레지던트 이블 레퀴엠을 생존하게 됩니다.</p>
 
 <h2 id="insanity">인새니티 난이도: 무엇이 달라지나</h2>
@@ -784,8 +737,8 @@ h1 {
 <p>인새니티에서의 빅터 기드온 전투는 잔혹하지만 불공정하지 않습니다. 동일한 메커니즘이 적용되지만, 다음과 같은 주요 차이가 있습니다:</p>
 <ul class="normal">
 <li><strong>데미지 배율 ~3배</strong> — 페이즈 1 촉수 공격은 체력의 70-80%를 제거. 페이즈 2 지면 슬램은 최대 HP가 아니면 즉사 가능.</li>
-<li><strong>축소된 패리 윈도우</strong> , 모탈 엣지가 필수; 기본 손도끼의 패리 윈도우는 일관되게 반응하기 너무 빡빡합니다.</li>
-<li><strong>농포 HP 증가</strong> . 페이즈 2 약점 파괴에 약 두 배의 데미지가 필요. 더 많은 탄약을 챙기세요.</li>
+<li><strong>축소된 패리 윈도우</strong>, 모탈 엣지가 필수; 기본 손도끼의 패리 윈도우는 일관되게 반응하기 너무 빡빡합니다.</li>
+<li><strong>농포 HP 증가</strong>. 페이즈 2 약점 파괴에 약 두 배의 데미지가 필요. 더 많은 탄약을 챙기세요.</li>
 <li><strong>전기 공격 추적</strong> — 바닥 마커가 약간 더 공격적입니다. 일찍 스프린트, 늦게 X.</li>
 </ul>
 <p>인새니티 런의 경우, 최적 전략은 <strong>레퀴엠 리볼버에 무한 탄약 사용</strong>입니다 (포스트게임 스페셜 콘텐츠 스토어에서 구매). 이는 농포 파괴 페이즈를 사소화하고 회피에만 집중할 수 있게 해줍니다.</p>
@@ -793,7 +746,7 @@ h1 {
 <h2 id="nodmg">노 데미지 전략 (고급)</h2>
 <p>프로 플레이어들은 표준 난이도에서 단 한 번도 맞지 않고 이 전투를 완료했습니다. 핵심 요약:</p>
 <ol>
-<li><strong>페이즈 1 ; 절대 근접전에 참여하지 말 것.</strong> 패리-카운터 후 또는 전기 점프-슬램 회복 후에만 공격. 공격 사이클당 두 개의 안전 공격 윈도우.</li>
+<li><strong>페이즈 1; 절대 근접전에 참여하지 말 것.</strong> 패리-카운터 후 또는 전기 점프-슬램 회복 후에만 공격. 공격 사이클당 두 개의 안전 공격 윈도우.</li>
 <li>페이즈 2의 농포 웨이브 동안 <strong>최대 거리 유지</strong>. 마크스맨 1A 또는 스코프가 있는 모든 스나이퍼를 사용.</li>
 <li><strong>오버헤드 슬램 패리, 다른 모든 것 회피.</strong> 오버헤드 슬램은 전체 전투에서 가장 관대한 패리 윈도우를 가집니다.</li>
 <li><strong>지면 구체 군집의 경우</strong>, 빅터가 쓰러지자마자 수류탄을 던지세요. 한 번에 모든 구체를 파괴하고 근거리 노출을 피할 수 있습니다.</li>
@@ -803,10 +756,10 @@ h1 {
 <h2 id="after">보상 및 후속 콘텐츠</h2>
 <p>빅터 기드온을 처치하면 메인 스토리가 완료되고 여러 항목이 한 번에 해금됩니다:</p>
 <ul class="normal">
-<li><strong>"레퀴엠 컴플리트"</strong> , 골드 트로피.</li>
+<li><strong>"레퀴엠 컴플리트"</strong>, 골드 트로피.</li>
 <li><strong>인새니티 난이도</strong> — 새 게임 메뉴에서 선택 가능.</li>
-<li><strong>스페셜 콘텐츠 스토어</strong> , 새 무기 (마틸다 IMP, 클래터 카빈, 고스트 그러지, 리뎀션) 및 무한 탄약 해금이 열림.</li>
-<li><strong>컨셉 아트 및 보너스 코스튬</strong> ; 스페셜 콘텐츠 메뉴에서 볼 수 있음.</li>
+<li><strong>스페셜 콘텐츠 스토어</strong>, 새 무기 (마틸다 IMP, 클래터 카빈, 고스트 그러지, 리뎀션) 및 무한 탄약 해금이 열림.</li>
+<li><strong>컨셉 아트 및 보너스 코스튬</strong>; 스페셜 콘텐츠 메뉴에서 볼 수 있음.</li>
 </ul>
 <p>이번이 첫 플레이였다면, 다음 단계는 캐리오버 무기와 무한 레퀴엠을 사용하는 인새니티 New Game+ 런이어야 합니다. 무한 탄약 장착 시, 전체 게임을 4시간 미만으로 클리어할 수 있고, 단일 런에서 <em>스피드러너</em>와 <em>리마커블 에이전트</em> 트로피를 해금할 수 있습니다.</p>
 
@@ -815,7 +768,7 @@ h1 {
 
 <details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
 <summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>모탈 엣지 손도끼 없이 빅터 기드온을 이길 수 있나요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
-<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">예, 가능하지만 기본 손도끼의 패리 윈도우는 매우 빡빡하며, 인새니티 난이도에서는 신뢰할 수 없게 됩니다. 더 커맨더 전을 건너뛰셨다면 (모탈 엣지가 보상으로 주어지는 곳), 빅터 기드온에 도전하기 전에 돌아가서 완료하세요 , 업그레이드는 첫 30초 안에 본전을 뽑습니다.</p>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">예, 가능하지만 기본 손도끼의 패리 윈도우는 매우 빡빡하며, 인새니티 난이도에서는 신뢰할 수 없게 됩니다. 더 커맨더 전을 건너뛰셨다면 (모탈 엣지가 보상으로 주어지는 곳), 빅터 기드온에 도전하기 전에 돌아가서 완료하세요, 업그레이드는 첫 30초 안에 본전을 뽑습니다.</p>
 </details>
 
 <details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
@@ -830,7 +783,7 @@ h1 {
 
 <details style="padding:14px 0;border-bottom:0.5px solid var(--border2);">
 <summary style="font-size:15px;color:var(--text);cursor:pointer;list-style:none;position:relative;padding-right:22px;outline:none;"><strong>QTE 피니셔에서 죽을 수 있나요?</strong><span style="position:absolute;right:0;top:0;font-size:18px;color:var(--red);">+</span></summary>
-<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">예 ; 버튼 프롬프트를 실패하면 레온이 사망하고 페이즈 2 재시작을 강제합니다. 기본 매핑은 사각형/X 반복 후 삼각형/Y입니다. 버튼 프롬프트는 캠페인 전체에서 사용되는 동일한 패턴이므로 이전 QTE 순간에서 연습하여 근육 기억을 만드세요.</p>
+<p style="font-size:14px;color:var(--text2);line-height:1.8;margin:10px 0 0;padding-top:10px;border-top:0.5px dashed var(--border2);">예; 버튼 프롬프트를 실패하면 레온이 사망하고 페이즈 2 재시작을 강제합니다. 기본 매핑은 사각형/X 반복 후 삼각형/Y입니다. 버튼 프롬프트는 캠페인 전체에서 사용되는 동일한 패턴이므로 이전 QTE 순간에서 연습하여 근육 기억을 만드세요.</p>
 </details>
 
 </div>
@@ -844,7 +797,7 @@ h1 {
 <a href="../all-49-trophies-platinum-guide.html">플래티넘 트로피 (영어)</a>
 </div>
 <div class="section-divider"></div>
-<p style="font-size:13px;color:var(--text3);text-align:center;">한국어 번역에 어색한 부분이 있나요? <a href="mailto:re9uiem@re9guide.it.com?subject=한국어판%20피드백%20(빅터%20기드온)" style="color:var(--red);">알려주세요</a> , 검토 후 반영합니다.</p>
+<p style="font-size:13px;color:var(--text3);text-align:center;">한국어 번역에 어색한 부분이 있나요? <a href="mailto:re9uiem@re9guide.it.com?subject=한국어판%20피드백%20(빅터%20기드온)" style="color:var(--red);">알려주세요</a>, 검토 후 반영합니다.</p>
 <div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
 <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.7;font-style:italic;">이 가이드가 도움이 되었다면 Ko-fi에서 한 잔 사 주시는 것을 고려해 주세요. <em style="color:#ba7517;font-style:normal;">작은 도움도 큰 의미가 있습니다.</em></p>
 <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Ko-fi 후원</a>
@@ -878,34 +831,34 @@ h1 {
 <li><strong>한국 RE 인기 순위:</strong> 1위 RE4 Remake, 2위 RE2 Remake, 3위 RE Village, 4위 RE9</li>
 </ul>
 
-<p style="margin:10px 0 0;color:#b0a09a;font-size:12px;font-style:italic">23년 RE 시리즈 팬 Jachin (서울)이 PS5/Steam에서 6회 플레이 후 작성. v1.02 검증.</p>
+<p style="margin:10px 0 0;color:#b0a09a;font-size:12px;font-style:italic">23년 RE 시리즈 팬 the writer (서울)이 PS5/Steam에서 6회 플레이 후 작성. v1.02 검증.</p>
 </aside>
 
 <script>
-/* Phase 120: Defensive nav guarantee . runs at DOM ready, ensures EN/KO nav works */
-(function(){
- function fix(){
+/* Phase 120: Defensive nav guarantee. runs at DOM ready, ensures EN/KO nav works */
+(function{
+ function fix{
  var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
  if (!slug || slug === 'ko/' || slug === '') slug = '';
 
  document.querySelectorAll('a').forEach(function(a){
- var txt = (a.textContent || '').trim();
- if (txt !== 'EN' && txt !== '한국어') return;
+ var txt = (a.textContent || '').trim;
+ if (txt!== 'EN' && txt!== '한국어') return;
  // Compute correct target
  var target;
  if (txt === 'EN') {
- target = slug ? '/' + slug: '/';
+ target = slug? '/' + slug: '/';
  } else {
- target = slug ? '/ko/' + slug: '/ko/';
+ target = slug? '/ko/' + slug: '/ko/';
  }
  // Set proper href (overwrites any broken attribute)
  a.setAttribute('href', target);
  // Defensive click handler — force-navigate if browser didn't
  a.addEventListener('click', function(e){
  var t = target;
- setTimeout(function(){
- if (location.pathname !== new URL(t, location.href).pathname) {
+ setTimeout(function{
+ if (location.pathname!== new URL(t, location.href).pathname) {
  location.href = t;
  }
  }, 50);
@@ -915,23 +868,23 @@ h1 {
  if (document.readyState === 'loading') {
  document.addEventListener('DOMContentLoaded', fix);
  } else {
- fix();
+ fix;
  }
-})();
+});
 </script>
 <script>
-/* Phase 123: Runtime self-check ; detects path vs content language mismatch */
-(function(){
+/* Phase 123: Runtime self-check; detects path vs content language mismatch */
+(function{
  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
- var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var contentLang = (document.documentElement.lang || '').toLowerCase;
 
  var mismatch = false;
- if (pathIsKo && contentLang !== 'ko') mismatch = true;
- else if (pathIsJa && contentLang !== 'ja') mismatch = true;
- else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
- else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ if (pathIsKo && contentLang!== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang!== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh')!== 0) mismatch = true;
+ else if (!pathIsKo &&!pathIsJa &&!pathIsZh && contentLang!== 'en' && contentLang!== '') mismatch = true;
 
  if (mismatch) {
  console.error('[Phase 123] Path/content language mismatch detected!');
@@ -942,19 +895,19 @@ h1 {
  // Compute the URL that matches the content's actual language
  var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
  var correctPath;
- if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
- else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
- else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
- else correctPath = slug ? '/' + slug: '/';
+ if (contentLang === 'ko') correctPath = slug? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug? '/' + slug: '/';
 
  // Show a non-blocking alert and redirect
  var banner = document.createElement('div');
  banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
  banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
  document.body.insertBefore(banner, document.body.firstChild);
- setTimeout(function(){ location.href = correctPath; }, 3000);
+ setTimeout(function{ location.href = correctPath; }, 3000);
  }
-})();
+});
 </script>
 </body>
 </html>

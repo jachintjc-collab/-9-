@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<!-- Phase 58k: Core Web Vitals . Connection hints -->
+<!-- Phase 58k: Core Web Vitals. Connection hints -->
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.clarity.ms">
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
@@ -57,60 +57,18 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{--red:#c0392b;--bg:#241410;--surface:#2e1a14;--surface2:#38221b;--border:rgba(192,57,43,0.18);--border2:rgba(255,255,255,0.07);--text:#f0ebe8;--text2:#b0a09a;--text3:#706056;--gold:#ba7517;--blue:#69a8e0;--green:#5a8a4a;}
-body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}
-.container{max-width:780px;margin:0 auto;padding:0 18px;}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}
-.logo{font-size:15px;display:flex;align-items:center;gap:8px;}
-.logo span{color:var(--red);}
-.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}
-.nav a:hover{color:var(--red);}
-.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}
-.breadcrumb a{color:var(--text2);text-decoration:none;}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7;font-size:16px;}.container{max-width:780px;margin:0 auto;padding:0 18px;}.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:#241410;z-index:10;}.logo{font-size:15px;display:flex;align-items:center;gap:8px;}.logo span{color:var(--red);}.nav a{font-size:12px;font-family:monospace;color:var(--text2);text-decoration:none;}.nav a:hover{color:var(--red);}.breadcrumb{font-size:11px;font-family:monospace;color:var(--text3);padding:18px 0 8px;letter-spacing:0.05em;}.breadcrumb a{color:var(--text2);text-decoration:none;}
 h1{font-size:30px;font-weight:normal;color:var(--text);line-height:1.3;margin-bottom:10px;}
 h2{font-size:21px;font-weight:normal;color:var(--text);margin:32px 0 12px;padding-top:24px;border-top:0.5px solid var(--border);}
 h3{font-size:16px;font-weight:normal;color:var(--red);font-family:monospace;letter-spacing:0.05em;margin:20px 0 10px;}
-p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
-.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
+p{font-size:15px;color:var(--text2);margin-bottom:14px;line-height:1.8;}.meta{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:22px;letter-spacing:0.05em;}
 strong{color:var(--text);font-weight:normal;}
-em{color:var(--gold);font-style:normal;}
-.lead{font-size:17px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}
-.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;font-family:monospace;color:var(--text2);line-height:1.5;flex-wrap:wrap;}
-.author-byline.byline-mark{font-size:11px;color:var(--text3);letter-spacing:0.08em;}
-.author-byline.byline-name{color:var(--text);}
-.author-byline.byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}
-.author-byline.byline-creds{color:var(--text3);font-size:11px;}
-.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}
-.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
-.toc ul{list-style:none;padding:0;}
-.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}
-.toc li::before{content:"› ";color:var(--red);}
-.toc a{color:var(--text2);text-decoration:none;}
-.cmp-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px;background:var(--surface);border:0.5px solid var(--border);border-radius:4px;overflow:hidden;}
-.cmp-table th{background:rgba(192,57,43,0.12);color:var(--text);padding:10px 12px;text-align:left;font-weight:normal;font-family:monospace;font-size:12px;letter-spacing:0.04em;border-bottom:1px solid var(--border);}
-.cmp-table td{padding:10px 12px;color:var(--text2);border-bottom:0.5px solid var(--border2);}
-.cmp-table tr:last-child td{border-bottom:none;}
-.cmp-table td:first-child{color:var(--text3);font-family:monospace;font-size:12px;width:30%;}
-.rank-card{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:12px 0;}
-.rank-card.rank-num{font-family:monospace;color:var(--red);font-size:24px;font-weight:bold;display:inline-block;width:50px;}
-.rank-card.rank-title{font-size:17px;color:var(--text);display:inline-block;}
-.rank-card.rank-meta{font-size:11px;font-family:monospace;color:var(--text3);margin:6px 0 8px 50px;letter-spacing:0.04em;}
-.rank-card.rank-desc{font-size:14px;color:var(--text2);margin-left:50px;line-height:1.7;}
-.verdict-box{background:linear-gradient(135deg,rgba(186,117,23,0.08) 0%,rgba(192,57,43,0.04) 100%);border:1px solid var(--gold);border-radius:6px;padding:18px 22px;margin:24px 0;}
-.verdict-title{font-size:13px;font-family:monospace;color:var(--gold);letter-spacing:0.08em;margin-bottom:10px;text-transform:uppercase;}
-.verdict-box p{color:var(--text);font-size:15px;}
+em{color:var(--gold);font-style:normal;}.lead{font-size:17px;color:var(--text);font-style:italic;margin:18px 0 24px;padding:14px 18px;background:var(--surface);border-left:2px solid var(--red);border-radius:0 4px 4px 0;line-height:1.7;}.author-byline{display:flex;align-items:center;gap:10px;padding:10px 0;margin:8px 0 18px;border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);font-size:13px;font-family:monospace;color:var(--text2);line-height:1.5;flex-wrap:wrap;}.author-byline.byline-mark{font-size:11px;color:var(--text3);letter-spacing:0.08em;}.author-byline.byline-name{color:var(--text);}.author-byline.byline-name a{color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;}.author-byline.byline-creds{color:var(--text3);font-size:11px;}.toc{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:18px 0 24px;}.toc-title{font-size:11px;font-family:monospace;color:var(--text3);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}.toc ul{list-style:none;padding:0;}.toc li{font-size:13px;font-family:monospace;color:var(--text2);padding:3px 0;}.toc li::before{content:"› ";color:var(--red);}.toc a{color:var(--text2);text-decoration:none;}.cmp-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px;background:var(--surface);border:0.5px solid var(--border);border-radius:4px;overflow:hidden;}.cmp-table th{background:rgba(192,57,43,0.12);color:var(--text);padding:10px 12px;text-align:left;font-weight:normal;font-family:monospace;font-size:12px;letter-spacing:0.04em;border-bottom:1px solid var(--border);}.cmp-table td{padding:10px 12px;color:var(--text2);border-bottom:0.5px solid var(--border2);}.cmp-table tr:last-child td{border-bottom:none;}.cmp-table td:first-child{color:var(--text3);font-family:monospace;font-size:12px;width:30%;}.rank-card{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:14px 18px;margin:12px 0;}.rank-card.rank-num{font-family:monospace;color:var(--red);font-size:24px;font-weight:bold;display:inline-block;width:50px;}.rank-card.rank-title{font-size:17px;color:var(--text);display:inline-block;}.rank-card.rank-meta{font-size:11px;font-family:monospace;color:var(--text3);margin:6px 0 8px 50px;letter-spacing:0.04em;}.rank-card.rank-desc{font-size:14px;color:var(--text2);margin-left:50px;line-height:1.7;}.verdict-box{background:linear-gradient(135deg,rgba(186,117,23,0.08) 0%,rgba(192,57,43,0.04) 100%);border:1px solid var(--gold);border-radius:6px;padding:18px 22px;margin:24px 0;}.verdict-title{font-size:13px;font-family:monospace;color:var(--gold);letter-spacing:0.08em;margin-bottom:10px;text-transform:uppercase;}.verdict-box p{color:var(--text);font-size:15px;}
 ul.normal{margin:10px 0 14px 18px;color:var(--text2);}
 ul.normal li{padding:3px 0;font-size:15px;}
 ol{margin:10px 0 14px 22px;color:var(--text2);}
 ol li{padding:5px 0;font-size:15px;line-height:1.7;}
-ol li strong{color:var(--text);}
-.section-divider{height:0.5px;background:var(--border);margin:28px 0;}
-.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}
-.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}
-.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}
-.sources{font-size:11px;font-family:monospace;color:var(--text3);margin:30px 0 10px;line-height:1.7;padding:14px 18px;background:rgba(105,168,224,0.04);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;}
-.sources strong{color:var(--text2);}
-.sources a{color:var(--blue);text-decoration:none;border-bottom:0.5px dotted;}
-.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
+ol li strong{color:var(--text);}.section-divider{height:0.5px;background:var(--border);margin:28px 0;}.cta{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:16px 20px;margin:24px 0;text-align:center;}.cta-title{font-size:11px;font-family:monospace;color:var(--text3);margin-bottom:8px;letter-spacing:0.08em;}.cta a{display:inline-block;font-size:13px;font-family:monospace;color:var(--red);text-decoration:none;border:0.5px solid var(--red);padding:6px 14px;border-radius:3px;margin:3px;}.sources{font-size:11px;font-family:monospace;color:var(--text3);margin:30px 0 10px;line-height:1.7;padding:14px 18px;background:rgba(105,168,224,0.04);border-left:2px solid var(--blue);border-radius:0 4px 4px 0;}.sources strong{color:var(--text2);}.sources a{color:var(--blue);text-decoration:none;border-bottom:0.5px dotted;}.footer{padding:20px 18px;text-align:center;font-size:11px;font-family:monospace;color:var(--text3);border-top:0.5px solid var(--border);margin-top:40px;}
 @media (max-width:600px){h1{font-size:24px;}h2{font-size:18px;}body{font-size:15px;}p{font-size:14px;}.cmp-table{font-size:13px;}.cmp-table th,.cmp-table td{padding:8px 10px;}}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033025151379385" crossorigin="anonymous"></script>
@@ -130,7 +88,7 @@ ol li strong{color:var(--text);}
  "author": {
  "@type": "Person",
  "@id": "https://www.re9guide.it.com/about.html#person",
- "name": "Jachin",
+ "name": "the writer",
  "url": "https://www.re9guide.it.com/about.html"
  },
  "publisher": {
@@ -181,7 +139,7 @@ ol li strong{color:var(--text);}
 </script>
 
 <style>
-/* Spoiler Filter , when active, blur the page + show reveal CTA */
+/* Spoiler Filter, when active, blur the page + show reveal CTA */
 body.spoilers-hidden.container > h1,
 body.spoilers-hidden.container > p.lead,
 body.spoilers-hidden.container > h2,
@@ -193,7 +151,7 @@ body.spoilers-hidden.container > div:not(.author-byline):not(.editorial-header):
 body.spoilers-hidden.container > section,
 body.spoilers-hidden.container > figure,
 body.spoilers-hidden.container > table { filter:blur(8px) brightness(0.4); pointer-events:none; user-select:none; transition:filter 0.2s; }
-body.spoilers-hidden #spoiler-overlay-hint { display:flex !important; }
+body.spoilers-hidden #spoiler-overlay-hint { display:flex!important; }
 body.spoilers-hidden.container { position:relative; }
 #spoiler-filter-btn { position:fixed; bottom:20px; right:20px; z-index:9999; padding:8px 14px; background:rgba(13,8,8,0.92); color:#f0ebe8; border:1px solid #c0392b; border-radius:20px; font-family:monospace; font-size:11px; cursor:pointer; backdrop-filter:blur(4px); transition:all 0.15s; letter-spacing:0.04em; }
 #spoiler-filter-btn:hover { background:#c0392b; }
@@ -203,25 +161,25 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
 #spoiler-overlay-hint button { padding:6px 14px; background:#fff; color:#c0392b; border:none; border-radius:3px; cursor:pointer; font-family:monospace; font-size:11px; font-weight:bold; }
 </style>
 <script>
-(function(){
- function isHighSpoilerPage(){
+(function{
+ function isHighSpoilerPage{
  var t=document.body.innerText||"";
  return /SPOILER LEVEL: HIGH|스포일러 등급: HIGH/i.test(t);
  }
  function applyState(hide){
- if(hide && isHighSpoilerPage()){
+ if(hide && isHighSpoilerPage){
  document.body.classList.add("spoilers-hidden");
  }else{
  document.body.classList.remove("spoilers-hidden");
  }
  }
- function init(){
+ function init{
  var pref=localStorage.getItem("re9guide_spoiler_filter");
  var hide=(pref==="hide");
- if(isHighSpoilerPage()){
+ if(isHighSpoilerPage){
  // Inject overlay reveal button at top of container
  var c=document.querySelector(".container");
- if(c && !document.getElementById("spoiler-overlay-hint")){
+ if(c &&!document.getElementById("spoiler-overlay-hint")){
  var hint=document.createElement("div");
  hint.id="spoiler-overlay-hint";
  hint.innerHTML='<span>🚫 HIGH spoiler content hidden by your filter preference.</span><button id="spoiler-reveal-once">Reveal anyway</button>';
@@ -234,10 +192,10 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
  var btn=document.createElement("button");
  btn.id="spoiler-filter-btn";
  btn.title="Toggle Spoiler Filter (hides HIGH spoiler pages by default)";
- btn.textContent=hide ? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
- btn.onclick=function(){
+ btn.textContent=hide? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
+ btn.onclick=function{
  var nowHide=!document.body.classList.contains("spoilers-hidden");
- if(!isHighSpoilerPage() && nowHide){
+ if(!isHighSpoilerPage && nowHide){
  // not a HIGH page — still save preference but no visual change
  localStorage.setItem("re9guide_spoiler_filter","hide");
  btn.textContent="Spoilers: HIDDEN";
@@ -245,24 +203,24 @@ body.spoilers-hidden #spoiler-filter-btn::before { content:"🚫 "; }
  return;
  }
  applyState(nowHide);
- localStorage.setItem("re9guide_spoiler_filter", nowHide ? "hide": "show");
- btn.textContent=nowHide ? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
+ localStorage.setItem("re9guide_spoiler_filter", nowHide? "hide": "show");
+ btn.textContent=nowHide? "Spoilers: HIDDEN": "Spoilers: VISIBLE";
  };
  document.body.appendChild(btn);
  }
  var revealOnce=document.getElementById("spoiler-reveal-once");
  if(revealOnce){
- revealOnce.onclick=function(){
+ revealOnce.onclick=function{
  document.body.classList.remove("spoilers-hidden");
  document.getElementById("spoiler-filter-btn").textContent="Spoilers: VISIBLE";
- // Don't change localStorage ; this is a one-time reveal
+ // Don't change localStorage; this is a one-time reveal
  };
  }
  }
  if(document.readyState==="loading"){
  document.addEventListener("DOMContentLoaded", init);
- }else{ init(); }
-})();
+ }else{ init; }
+});
 </script>
 
 
@@ -275,8 +233,7 @@ html { scroll-behavior: smooth; }
 h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 
 /* Sticky TOC behavior */
-@media (min-width: 1100px) {
-.toc { position: sticky; top: 70px; align-self: flex-start; }
+@media (min-width: 1100px) {.toc { position: sticky; top: 70px; align-self: flex-start; }
  body.has-floating-toc.container { position: relative; }
  body.has-floating-toc.toc {
  position: fixed;
@@ -291,17 +248,16 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  body.has-floating-toc.toc::-webkit-scrollbar { width: 4px; }
  body.has-floating-toc.toc::-webkit-scrollbar-thumb { background: rgba(192,57,43,0.4); border-radius: 2px; }
  body.has-floating-toc.toc a.active {
- color: #c0392b !important;
+ color: #c0392b!important;
  font-weight: bold;
  }
 }
-@media (max-width: 1099px) {
-.toc { position: static !important; }
+@media (max-width: 1099px) {.toc { position: static!important; }
 }
 </style>
 <script>
-(function(){
- function init(){
+(function{
+ function init{
  var toc = document.querySelector('.toc');
  if(!toc) return;
 
@@ -309,7 +265,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  var tocOriginalTop = toc.offsetTop;
  var floatThreshold = tocOriginalTop + toc.offsetHeight - 100;
 
- function onScroll(){
+ function onScroll{
  if(window.innerWidth < 1100) {
  document.body.classList.remove('has-floating-toc');
  return;
@@ -323,7 +279,7 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  var sections = document.querySelectorAll('h2[id], h3[id], section[id]');
  var active = null;
  for(var i = 0; i < sections.length; i++){
- var rect = sections[i].getBoundingClientRect();
+ var rect = sections[i].getBoundingClientRect;
  if(rect.top < 150) active = sections[i];
  else break;
  }
@@ -336,18 +292,18 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
  }
  window.addEventListener('scroll', onScroll, {passive: true});
  window.addEventListener('resize', onScroll);
- onScroll();
+ onScroll;
  }
  if(document.readyState === 'loading'){
  document.addEventListener('DOMContentLoaded', init);
- } else { init(); }
-})();
+ } else { init; }
+});
 </script>
 
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
  (function(c,l,a,r,i,t,y){
- c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+ c[a]=c[a]||function{(c[a].q=c[a].q||[]).push(arguments)};
  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
  })(window, document, "clarity", "script", "wu58ps8e48");
@@ -355,14 +311,14 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 <!-- Google Analytics 4 (G-XZJHDN44CF) + smart dev opt-out -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZJHDN44CF"></script>
 <script>
-(function(){
+(function{
  // ---- Dev opt-out detection ----
  var DEV_KEY = 're9guide_dev';
  var GA_ID = 'G-XZJHDN44CF';
- // URL param ?dev=1 sets flag, ?dev=0 clears (one-time activation)
+ // URL param?dev=1 sets flag,?dev=0 clears (one-time activation)
  try {
  var p = new URLSearchParams(window.location.search);
- if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON ; analytics disabled for this browser'); }
+ if (p.get('dev') === '1') { localStorage.setItem(DEV_KEY, '1'); console.log('[re9guide] dev mode ON; analytics disabled for this browser'); }
  if (p.get('dev') === '0') { localStorage.removeItem(DEV_KEY); console.log('[re9guide] dev mode OFF — analytics re-enabled'); }
  } catch(e){}
  var isDev = false;
@@ -370,24 +326,24 @@ h2[id], h3[id], section[id] { scroll-margin-top: 80px; }
 
  // ---- Always set up gtag function (Clarity integration needs window.gtag) ----
  window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
+ function gtag{dataLayer.push(arguments);}
  window.gtag = gtag;
 
  if (isDev) {
  // Disable GA4 hits for this user
  window['ga-disable-' + GA_ID] = true;
- // Stop Clarity too (script may load before this . call after a tick)
- setTimeout(function(){ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
- console.log('[re9guide] Analytics disabled . dev mode active. To re-enable: ?dev=0');
+ // Stop Clarity too (script may load before this. call after a tick)
+ setTimeout(function{ if (window.clarity) try { window.clarity('stop'); } catch(e){} }, 100);
+ console.log('[re9guide] Analytics disabled. dev mode active. To re-enable:?dev=0');
  } else {
- gtag('js', new Date());
+ gtag('js', new Date);
  gtag('config', GA_ID, {
  anonymize_ip: true,
  page_title: document.title,
  page_location: window.location.href
  });
  }
-})();
+});
 </script>
 <style id="vintage-theme">
 /* Phase 84: Warm brown + concentric ring texture (matches reference) */
@@ -411,8 +367,7 @@ body {
  radial-gradient(ellipse 80% 60% at 50% 30%, rgba(70, 30, 22, 0.25) 0%, transparent 70%);
  background-attachment: fixed;
  background-size: 100% 100%;
-}
-.container {
+}.container {
  background: transparent;
  border: none;
  box-shadow: none;
@@ -421,16 +376,13 @@ h1 {
  font-family: Georgia, serif;
  letter-spacing: 0.5px;
  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-.boss-stats table {
+}.boss-stats table {
  background: rgba(48, 22, 16, 0.7);
  border: 0.5px solid rgba(160, 130, 90, 0.18);
-}
-.boss-stats th {
+}.boss-stats th {
  background: rgba(192, 57, 43, 0.22);
  border-bottom: 0.5px solid rgba(192, 57, 43, 0.35);
-}
-.lead {
+}.lead {
  font-style: italic;
  color: #d8cfc4;
 }
@@ -443,14 +395,14 @@ h1 {
 
 <span style="font-size:11px;font-family:monospace;display:inline-flex;gap:4px;align-items:center;margin-left:4px;">
 <a href="/is-resident-evil-requiem-worth-playing.html" style="padding:3px 8px;border:0.5px solid #c0392b;border-radius:3px;background:#c0392b;color:#fff;text-decoration:none;font-weight:bold;">EN</a>
-<a href="/ko/is-resident-evil-requiem-worth-playing.html" onclick="showKoPendingModal();return false;" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
+<a href="/ko/is-resident-evil-requiem-worth-playing.html" onclick="showKoPendingModal;return false;" style="padding:3px 8px;border:0.5px solid rgba(192,57,43,0.18);border-radius:3px;color:#b0a09a;text-decoration:none;">한국어</a>
 </span>
 </div>
 <div class="container">
 <div class="breadcrumb"><a href="index.html" style="color:inherit;text-decoration:none;border-bottom:0.5px dotted currentColor;">HOME</a> / <span>IS RESIDENT EVIL REQUIEM WORTH PLAYING? AN HONEST </span></div>
 <h1>Is Resident Evil Requiem Worth Playing? An Honest 2026 Review</h1>
 <div style="background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:14px 18px;margin:18px 0;font-size:13px;color:#f0ebe8;line-height:1.7;border-radius:0 3px 3px 0;">
-<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>Jachin</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested on the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
+<p style="margin:0 0 8px 0;"><strong style="color:#c0392b;">Author note:</strong> Written by <strong>the writer</strong>, a 23-year Resident Evil series fan based in Seoul, South Korea. This guide is based on 6 full RE9 playthroughs on PS5 and Steam (Casual → Insanity → NG+ Insanity completions). All strategies, timings, and locations have been personally tested on the v1.02 patch. AI tools were used only for grammar review and note organization; no AI-generated content appears in strategy analysis.</p>
 <aside class="phase128-opinion" style="margin:18px 0;padding:14px 18px;background:rgba(186,117,23,0.08);border-left:3px solid #ba7517;border-radius:3px;font-style:italic;color:#f0ebe8;font-size:14px"><span style="color:#ba7517;font-size:11px;font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;margin-right:8px">My take:</span>Eight endings sounds generous until you realize five of them are minor variations of two outcomes.</aside>
 <p style="margin:0;font-size:11px;font-family:monospace;color:#b0a09a;">Verified on: v1.02 patch · Last reviewed: May 30, 2026 · <a href="about.html" style="color:#c0392b;">About the author</a> · <a href="terms.html" style="color:#c0392b;">Editorial policies</a></p>
 </div>
@@ -475,7 +427,7 @@ h1 {
 
 <div class="verdict-box">
 <div class="verdict-title">// THE SHORT VERSION</div>
-<p><strong>Yes , Resident Evil: Requiem is worth playing.</strong> With a Metacritic score of 88 across 116 critic reviews, RE9 is the best-reviewed mainline Resident Evil since RE4 (2005), more than 20 years ago. IGN scored it 9 / 10 and called it "the return of a series legend"; GameSpot gave it 8 / 10 noting it "refines the formula to a fine point." For Resident Evil fans, the answer is unambiguously buy. For newcomers, the answer is conditional , see below for which player profile fits.</p>
+<p><strong>Yes, Resident Evil: Requiem is worth playing.</strong> With a Metacritic score of 88 across 116 critic reviews, RE9 is the best-reviewed mainline Resident Evil since RE4 (2005), more than 20 years ago. IGN scored it 9 / 10 and called it "the return of a series legend"; GameSpot gave it 8 / 10 noting it "refines the formula to a fine point." For Resident Evil fans, the answer is unambiguously buy. For newcomers, the answer is conditional, see below for which player profile fits.</p>
 </div>
 
 <h2 id="scorecard">The verdict in 30 seconds</h2>
@@ -488,14 +440,14 @@ h1 {
 <table class="cmp-table">
 <thead><tr><th>Outlet</th><th>Score</th><th>Key takeaway</th></tr></thead>
 <tbody>
-<tr><td>Metacritic aggregate</td><td><strong>88 / 100</strong></td><td>116 critic reviews . best mainline RE Meta since RE4 (2005)</td></tr>
+<tr><td>Metacritic aggregate</td><td><strong>88 / 100</strong></td><td>116 critic reviews. best mainline RE Meta since RE4 (2005)</td></tr>
 <tr><td>IGN</td><td><strong>9 / 10</strong></td><td>"Splices two strains of survival horror together"</td></tr>
 <tr><td>GameSpot</td><td><strong>8 / 10</strong></td><td>"Refines the formula" but leans on nostalgia</td></tr>
 <tr><td>OpenCritic Top Critic Avg</td><td><strong>89 / 100</strong></td><td>95% of critics recommend</td></tr>
 </tbody>
 </table>
 
-<p>Per VideoGamesChronicle and Insider Gaming reporting, RE9: Requiem has been one of the best-received games of 2026 ; strong enough that Capcom is positioning it as a "return to form" comparable to the RE7 reinvention.</p>
+<p>Per VideoGamesChronicle and Insider Gaming reporting, RE9: Requiem has been one of the best-received games of 2026; strong enough that Capcom is positioning it as a "return to form" comparable to the RE7 reinvention.</p>
 
 <h2 id="strengths">What RE9 does right</h2>
 
@@ -514,7 +466,7 @@ h1 {
 <h2 id="weaknesses">Where RE9 falls short</h2>
 
 <h3>// PACING ISSUES IN GRACE'S MIDDLE CHAPTERS</h3>
-<p>GameSpot noted some pacing issues, particularly in Grace's middle Care Center chapters. The horror tension is well-executed but extends slightly longer than necessary , some players will feel the second Care Center loop drag.</p>
+<p>GameSpot noted some pacing issues, particularly in Grace's middle Care Center chapters. The horror tension is well-executed but extends slightly longer than necessary, some players will feel the second Care Center loop drag.</p>
 
 <h3>// HEAVY NOSTALGIA RELIANCE</h3>
 <p>Several reviews flagged that RE9 leans heavily on Resident Evil 2 nostalgia, especially in the Raccoon City Center and ruins of the RPD. For series veterans this is a strength; for newcomers, much of the emotional weight evaporates because you don't have the context.</p>
@@ -527,19 +479,19 @@ h1 {
 
 <h2 id="who">Who should buy it</h2>
 <ul class="normal">
-<li><strong>Resident Evil franchise fans of any era</strong> , RE9 is the best mainline entry in 20+ years per Metacritic</li>
+<li><strong>Resident Evil franchise fans of any era</strong>, RE9 is the best mainline entry in 20+ years per Metacritic</li>
 <li><strong>RE2 Remake / RE4 Remake fans</strong> — the modern engine, combat polish, and storytelling style carry over directly</li>
-<li><strong>RE7 / Village fans</strong> , Grace's chapters land closest to those games' horror tone</li>
-<li><strong>Players who want a definitive Leon Kennedy chapter</strong> , RE9 is Leon's most narratively mature appearance to date</li>
+<li><strong>RE7 / Village fans</strong>, Grace's chapters land closest to those games' horror tone</li>
+<li><strong>Players who want a definitive Leon Kennedy chapter</strong>, RE9 is Leon's most narratively mature appearance to date</li>
 <li><strong>Trophy hunters / 100% completionists</strong> — 49 trophies, NG+ unlocks, Insanity difficulty, and a deep collectible system</li>
 </ul>
 
 <h2 id="whoNot">Who should skip or wait</h2>
 <ul class="normal">
-<li><strong>Players who explicitly disliked RE7's body horror</strong> . RE9 is at least as intense in Grace's chapters</li>
-<li><strong>Budget-conscious newcomers</strong> ; RE2 Remake at $15-20 is a strictly better starting point</li>
+<li><strong>Players who explicitly disliked RE7's body horror</strong>. RE9 is at least as intense in Grace's chapters</li>
+<li><strong>Budget-conscious newcomers</strong>; RE2 Remake at $15-20 is a strictly better starting point</li>
 <li><strong>Steam Deck-primary players</strong> — the game is verified Playable, not fully Verified, so expect some compromise in visuals and battery life</li>
-<li><strong>Players bothered by microtransactions in singleplayer games</strong> . even though they're entirely optional, their presence may be a deal-breaker</li>
+<li><strong>Players bothered by microtransactions in singleplayer games</strong>. even though they're entirely optional, their presence may be a deal-breaker</li>
 </ul>
 
 <h2 id="pricing">Is it worth full price?</h2>
@@ -550,7 +502,7 @@ h1 {
 <div class="sources">
 <strong>Sources used to verify this article:</strong><br>
 
-<a href="https://www.metacritic.com/game/resident-evil-requiem/" target="_blank" rel="nofollow noopener">Metacritic . RE Requiem aggregate score 88</a>; <a href="https://www.gamespot.com/reviews/resident-evil-requiem-review-two-headed-mutant/1900-6418464/" target="_blank" rel="nofollow noopener">GameSpot review (8/10)</a>; <a href="https://www.videogameschronicle.com/news/resident-evil-requiem-currently-has-the-highest-user-score-of-all-time-on-metacritic/" target="_blank" rel="nofollow noopener">VideoGamesChronicle — User score coverage</a>; <a href="https://insider-gaming.com/resident-evil-requiem-tops-metacritics-greatest-games-ever/" target="_blank" rel="nofollow noopener">Insider Gaming ; Reception</a>; <a href="https://x.com/IGN/status/2026677592166703118" target="_blank" rel="nofollow noopener">IGN Review (9/10)</a>
+<a href="https://www.metacritic.com/game/resident-evil-requiem/" target="_blank" rel="nofollow noopener">Metacritic. RE Requiem aggregate score 88</a>; <a href="https://www.gamespot.com/reviews/resident-evil-requiem-review-two-headed-mutant/1900-6418464/" target="_blank" rel="nofollow noopener">GameSpot review (8/10)</a>; <a href="https://www.videogameschronicle.com/news/resident-evil-requiem-currently-has-the-highest-user-score-of-all-time-on-metacritic/" target="_blank" rel="nofollow noopener">VideoGamesChronicle — User score coverage</a>; <a href="https://insider-gaming.com/resident-evil-requiem-tops-metacritics-greatest-games-ever/" target="_blank" rel="nofollow noopener">Insider Gaming; Reception</a>; <a href="https://x.com/IGN/status/2026677592166703118" target="_blank" rel="nofollow noopener">IGN Review (9/10)</a>
 
 </div>
 <div class="cta">
@@ -562,7 +514,7 @@ h1 {
 <a href="bosses-hub.html">All bosses hub</a>
 </div>
 <div class="section-divider"></div>
-<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Disagree with this take? <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20is-resident-evil-requiem-worth-playing.html" style="color:var(--red);">Tell me why</a> . I update articles based on community feedback.</p>
+<p style="font-size:13px;font-family:monospace;color:var(--text3);text-align:center;">Disagree with this take? <a href="mailto:re9uiem@re9guide.it.com?subject=Feedback%20on%20is-resident-evil-requiem-worth-playing.html" style="color:var(--red);">Tell me why</a>. I update articles based on community feedback.</p>
 <div style="background:rgba(186,117,23,0.06);border:0.5px solid rgba(186,117,23,0.3);border-radius:6px;padding:18px 22px;margin:24px 0 0;text-align:center;">
 <p style="font-size:13px;color:#f0ebe8;margin-bottom:10px;line-height:1.6;font-style:italic;">If this article helped, consider supporting more like this on Ko-fi. <em style="color:#ba7517;font-style:normal;">Every little bit means the world.</em></p>
 <a href="https://ko-fi.com/re9guide" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:12px;font-family:monospace;text-decoration:none;color:#ba7517;border:0.5px solid #ba7517;padding:7px 16px;border-radius:3px;background:rgba(186,117,23,0.08);">☕ Support on Ko-fi</a>
@@ -589,11 +541,11 @@ h1 {
  </div>
 </div>
 <script>
-function showKoPendingModal(){
+function showKoPendingModal{
  document.getElementById('ko-pending-modal').style.display='flex';
 }
 // Close on backdrop click
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function{
  var modal = document.getElementById('ko-pending-modal');
  if(modal){
  modal.addEventListener('click', function(e){
@@ -611,30 +563,30 @@ document.addEventListener('DOMContentLoaded', function(){
 
 <script src="/cookie-consent.js" defer></script>
 <script>
-/* Phase 120: Defensive nav guarantee ; runs at DOM ready, ensures EN/KO nav works */
-(function(){
- function fix(){
+/* Phase 120: Defensive nav guarantee; runs at DOM ready, ensures EN/KO nav works */
+(function{
+ function fix{
  var isKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\//, '');
  if (!slug || slug === 'ko/' || slug === '') slug = '';
 
  document.querySelectorAll('a').forEach(function(a){
- var txt = (a.textContent || '').trim();
- if (txt !== 'EN' && txt !== '한국어') return;
+ var txt = (a.textContent || '').trim;
+ if (txt!== 'EN' && txt!== '한국어') return;
  // Compute correct target
  var target;
  if (txt === 'EN') {
- target = slug ? '/' + slug: '/';
+ target = slug? '/' + slug: '/';
  } else {
- target = slug ? '/ko/' + slug: '/ko/';
+ target = slug? '/ko/' + slug: '/ko/';
  }
  // Set proper href (overwrites any broken attribute)
  a.setAttribute('href', target);
- // Defensive click handler , force-navigate if browser didn't
+ // Defensive click handler, force-navigate if browser didn't
  a.addEventListener('click', function(e){
  var t = target;
- setTimeout(function(){
- if (location.pathname !== new URL(t, location.href).pathname) {
+ setTimeout(function{
+ if (location.pathname!== new URL(t, location.href).pathname) {
  location.href = t;
  }
  }, 50);
@@ -644,23 +596,23 @@ document.addEventListener('DOMContentLoaded', function(){
  if (document.readyState === 'loading') {
  document.addEventListener('DOMContentLoaded', fix);
  } else {
- fix();
+ fix;
  }
-})();
+});
 </script>
 <script>
 /* Phase 123: Runtime self-check — detects path vs content language mismatch */
-(function(){
+(function{
  var pathIsKo = location.pathname.indexOf('/ko/') === 0 || location.pathname === '/ko' || location.pathname === '/ko/';
  var pathIsJa = location.pathname.indexOf('/ja/') === 0;
  var pathIsZh = location.pathname.indexOf('/zh-CN/') === 0;
- var contentLang = (document.documentElement.lang || '').toLowerCase();
+ var contentLang = (document.documentElement.lang || '').toLowerCase;
 
  var mismatch = false;
- if (pathIsKo && contentLang !== 'ko') mismatch = true;
- else if (pathIsJa && contentLang !== 'ja') mismatch = true;
- else if (pathIsZh && contentLang.indexOf('zh') !== 0) mismatch = true;
- else if (!pathIsKo && !pathIsJa && !pathIsZh && contentLang !== 'en' && contentLang !== '') mismatch = true;
+ if (pathIsKo && contentLang!== 'ko') mismatch = true;
+ else if (pathIsJa && contentLang!== 'ja') mismatch = true;
+ else if (pathIsZh && contentLang.indexOf('zh')!== 0) mismatch = true;
+ else if (!pathIsKo &&!pathIsJa &&!pathIsZh && contentLang!== 'en' && contentLang!== '') mismatch = true;
 
  if (mismatch) {
  console.error('[Phase 123] Path/content language mismatch detected!');
@@ -671,19 +623,19 @@ document.addEventListener('DOMContentLoaded', function(){
  // Compute the URL that matches the content's actual language
  var slug = location.pathname.replace(/^\/ko\//, '/').replace(/^\/ja\//, '/').replace(/^\/zh-CN\//, '/').replace(/^\//, '');
  var correctPath;
- if (contentLang === 'ko') correctPath = slug ? '/ko/' + slug: '/ko/';
- else if (contentLang === 'ja') correctPath = slug ? '/ja/' + slug: '/ja/';
- else if (contentLang.indexOf('zh') === 0) correctPath = slug ? '/zh-CN/' + slug: '/zh-CN/';
- else correctPath = slug ? '/' + slug: '/';
+ if (contentLang === 'ko') correctPath = slug? '/ko/' + slug: '/ko/';
+ else if (contentLang === 'ja') correctPath = slug? '/ja/' + slug: '/ja/';
+ else if (contentLang.indexOf('zh') === 0) correctPath = slug? '/zh-CN/' + slug: '/zh-CN/';
+ else correctPath = slug? '/' + slug: '/';
 
  // Show a non-blocking alert and redirect
  var banner = document.createElement('div');
  banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#c0392b;color:#fff;padding:14px 20px;font-family:monospace;font-size:13px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.3)';
  banner.innerHTML = '⚠ Wrong file deployed at this URL. Redirecting to correct version in 3s... <a href="' + correctPath + '" style="color:#fff;text-decoration:underline">Click here</a> if not redirected.';
  document.body.insertBefore(banner, document.body.firstChild);
- setTimeout(function(){ location.href = correctPath; }, 3000);
+ setTimeout(function{ location.href = correctPath; }, 3000);
  }
-})();
+});
 </script>
 </body>
 </html>
